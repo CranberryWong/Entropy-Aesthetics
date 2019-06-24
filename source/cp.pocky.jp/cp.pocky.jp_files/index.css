@@ -1,0 +1,70 @@
+@charset "Shift_JIS";
+
+#contents_block .index_bg {
+	min-width:982px;
+	background-color: #E9E9E9;
+	padding: 0 0 30px 0;
+}
+
+#contents_block .index_header {
+	width: 100%;
+	height: 100px;
+	min-width:980px;
+	background-color: #e60012;
+}
+
+#contents_block .index_header_box {
+	width: 980px;
+	margin: 0 auto;
+}
+
+
+#contents_block h1 {
+	width:318px;
+	height: 100px;
+	background-image: url(img/17_index_title.png);
+	background-repeat: no-repeat;
+	text-indent: -9999px;
+	text-decoration: none;
+	margin: 0 auto;
+	float: left;
+}
+
+#contents_block .pocky_top a {
+	width: 120px;
+	height: 30px;
+	background-image: url(img/16_btn_pocky.gif);
+	background-repeat: no-repeat;
+	text-indent: -9999px;
+	text-decoration: none;
+	margin: 10px 0 0 0;
+	float: right;
+}
+
+#contents_block .index_area {
+	width: 980px;
+	margin: 50px auto 0 auto;
+	padding: 0;
+}
+
+#contents_block .index_area a {text-decoration: none;}
+
+#contents_block .index_area li {
+	width: 980px;
+	background-color: #FFF;
+	margin: 0 0 40px 0;
+	padding: 0;
+	border: none;
+	list-style: none;
+	font-size: 14px;
+	line-height: 180%;
+	text-align: left;
+}
+
+#contents_block .index_area li a {color:#1F1F1F;}
+
+#contents_block .index_area li p {
+	padding: 8px 8px 8px 15px;
+}
+
+

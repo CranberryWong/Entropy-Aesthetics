@@ -1,0 +1,194 @@
+/* print styles go here */
+@media print {
+    body {
+        font-size: 16px;
+        line-height: 1.5;
+        margin: 0;
+        color: #000;
+        font-family: Helvetica, Arial, sans-serif;
+    }
+
+    p, li, pre, figure, blockquote {
+        page-break-inside: avoid;
+    }
+
+    section {
+        /* Absolute units are great for print stylesheets */
+        margin-bottom: 2cm;
+
+        /* Section always get their own page */
+        page-break-before: always;
+    }
+
+    *,
+    *:before,
+    *:after {
+        background: transparent !important;
+        color: #000 !important; /* Black prints faster */
+        -webkit-box-shadow: none !important;
+        box-shadow: none !important;
+        text-shadow: none !important;
+    }
+
+    a,
+    a:visited {
+        text-decoration: underline;
+    }
+
+    /*  a[href]:after {
+          content: " (" attr(href) ")";
+      }
+
+      abbr[title]:after {
+          content: " (" attr(title) ")";
+      }*/
+
+    /*
+       * Don't show links that are fragment identifiers,
+       * or use the `javascript:` pseudo protocol
+       */
+
+    a[href^="#"]:after,
+    a[href^="javascript:"]:after {
+        content: "";
+    }
+
+    pre {
+        white-space: pre-wrap !important;
+        border: 1px solid #999;
+        padding: 10px;
+        page-break-inside: avoid;
+    }
+
+    blockquote {
+        border-left: 4px solid #000;
+        padding-left: 10px;
+        page-break-inside: avoid;
+    }
+
+    /*
+     * Printing Tables:
+     * http://css-discuss.incutio.com/wiki/Printing_Tables
+     */
+
+    thead {
+        display: table-header-group;
+    }
+
+    tr,
+    img {
+        page-break-inside: avoid;
+    }
+
+    p,
+    h2,
+    h3 {
+        orphans: 3;
+        widows: 3;
+    }
+
+    h2,
+    h3 {
+        margin-top: 36px;
+        page-break-after: avoid;
+    }
+
+    h1, h2, h3, h4, h5 {
+        font-family: Georgia, Times, serif;
+    }
+
+    /* page specific styles */
+    @page {
+        margin: 1in 0.5in 0.5in;
+        orphans: 4;
+        widows: 3;
+    }
+
+    /* Specific */
+    #topInfo,
+    .top_explain,
+    .search_cls,
+    .menu,
+    #header .qcon,
+    .submenu,
+    .all_topics,
+    .breadcrumbs,
+    .langs,
+    .logo p,
+    .title_canvas img,
+    .intbt,
+    #spanLikeContent,
+    #toggleLikeContent,
+    .author_general em,
+    .sh_t,
+    .gray_section_related,
+    .f_sponsorship,
+    .related_sponsors,
+    .related,
+    #comment_here,
+    .comments,
+    .article_page_right,
+    #footer,
+    .footer_bg,
+    .footer,
+    .bottomContent,
+    .authModal,
+    #id_geo_banner,
+    #loginFrame,
+    .popup-box,
+    .psa-close,
+    .psa-icon,
+    #overlay_comments,
+    #replyPopup,
+    #editCommentPopup,
+    #messagePopup,
+    .related_editorial,
+    .newsletter,
+    .all_comments,
+    #downloadForm,
+    #exitFullScreenMode,
+    .presentation_type,
+    .download_presentation,
+    #playerContainer,
+    .rightSide,
+    .vcr_optional,
+    .rhs_b,
+    .sumome-share-client-wrapper,
+    .rate-article,
+    .rate-comments,
+    #id_300x250_banner_top,
+    #id_300x250_banner_bottom,
+    div[class*=" sumome"],
+    div[id*=" id_300x250_banner"] {
+        display: none;
+    }
+
+    .logo {
+        text-align: center;
+        display: block;
+        margin: 20px auto;
+    }
+
+    #content {
+        max-width: 7in;
+        width: 100%;
+        margin: 0 auto;
+    }
+
+    .text_info_article img,
+    .ebook .img_cover img {
+        margin: 0 auto;
+        display: block;
+    }
+
+    .article_page_left {
+        float: left;
+        width: 99%;
+    }
+
+    .article_page_right {
+        float: right;
+        width: 1%;
+    }
+
+}

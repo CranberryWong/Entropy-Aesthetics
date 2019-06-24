@@ -1,0 +1,1 @@
+document.write('\<iframe src=\"https://media.winbetaffiliates.bg/uploads/world_cup_promo/animation/300x600/index.html?clickTag=https%3A%2F%2Frecord.winbetaffiliates.bg%2F_Fq3Nsj-Qps6srOas2y1pEnnUeHleQh7d%2F1%2F\" frameborder=\"0\"  width=\"300\" height=\"600\" style=\"\" scrolling=\"no\"  allowtransparency=\"%ALLOWTRANSPARENCY%%\" \>\</iframe\>');

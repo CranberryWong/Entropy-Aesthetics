@@ -1,0 +1,27 @@
+<!DOCTYPE html>
+<html class="bbutton-html-wrapper" lang="ja"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><meta charset="utf-8">
+<title>はてなブックマークボタン</title>
+<link rel="canonical" href="http://b.hatena.ne.jp/entry/s/www.gmo.jp/">
+<link rel="stylesheet" href="a_data/reset.css" type="text/css" media="all">
+<link rel="stylesheet" href="a_data/entry-button.css" type="text/css" media="all">
+<script>
+  function clickHandler() {
+    var match = window.name.match(/^(\w+)\|((https?:\/\/[^\/?#]+)[^#]*)/);
+    if (!match) return;
+    window.parent.postMessage('HBMessage@{"type": "click"}', match[3]);
+  }
+</script>
+</head><body>
+
+  <div class="btn-standard lang-ja show-text" onclick="if (event.button === 0) { clickHandler(); return false; }">
+    <a href="http://b.hatena.ne.jp/entry/s/www.gmo.jp/" target="_top" title="このエントリーをはてなブックマークに追加 (12 users)">
+      <span class="icon"></span>
+      <span class="hidden-text">ブックマーク</span>
+    </a>
+    
+  </div>
+
+
+
+</body></html>

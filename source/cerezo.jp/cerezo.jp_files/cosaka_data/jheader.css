@@ -1,0 +1,449 @@
+@charset "UTF-8";
+.jheader {
+  background-color: #fff;
+}
+
+.headInner {
+  margin: 0 auto;
+  position: relative;
+  padding: 6px 0;
+  height: 68px;
+  overflow: hidden;
+}
+#jheader_sendai .headInner {
+  width: 980px;
+}
+#jheader_yamagata .headInner {
+  width: 980px;
+}
+#jheader_kashima .headInner {
+  width: 995px;
+}
+#jheader_urawa .headInner {
+  width: 990px;
+}
+#jheader_kashiwa .headInner {
+  width: 1024px;
+}
+#jheader_ftokyo .headInner {
+  width: 982px;
+}
+#jheader_kawasakif .headInner {
+  width: 980px;
+}
+#jheader_yokohamafm .headInner {
+  width: 980px;
+}
+#jheader_shonan .headInner {
+  width: 960px;
+}
+#jheader_kofu .headInner {
+  width: 990px;
+}
+#jheader_matsumoto .headInner {
+  width: 992px;
+}
+#jheader_niigata .headInner {
+  width: 950px;
+}
+#jheader_shimizu .headInner {
+  width: 1140px;
+}
+#jheader_nagoya .headInner {
+  width: 1000px;
+}
+#jheader_gosaka .headInner {
+  width: 1000px;
+}
+#jheader_kobe .headInner {
+  width: 984px;
+}
+#jheader_hiroshima .headInner {
+  width: 980px;
+}
+#jheader_tosu .headInner {
+  width: 1000px;
+}
+#jheader_sapporo .headInner {
+  width: 940px;
+}
+#jheader_mito .headInner {
+  width: 1000px;
+}
+#jheader_tochigi .headInner {
+  width: 900px;
+}
+#jheader_tochigi .headInner .jEmb {
+  margin-left: 70px;
+}
+#jheader_tochigi .headInner .jEmb .leagueBtn li {
+  margin: 0 9px 0 0;
+}
+#jheader_kusatsu .headInner {
+  width: 910px;
+}
+#jheader_kusatsu .headInner .jEmb {
+  margin-left: 70px;
+}
+#jheader_kusatsu .headInner .jEmb .leagueBtn li {
+  margin: 0 10px 0 0;
+}
+#jheader_omiya .headInner {
+  width: 970px;
+}
+#jheader_chiba .headInner {
+  width: 1100px;
+}
+#jheader_tokyov .headInner {
+  width: 960px;
+}
+#jheader_yokohamafc .headInner {
+  width: 1000px;
+}
+#jheader_kanazawa .headInner {
+  width: 1028px;
+}
+#jheader_iwata .headInner {
+  width: 988px;
+}
+#jheader_gifu .headInner {
+  width: 980px;
+}
+#jheader_kyoto .headInner {
+  width: 990px;
+}
+#jheader_cosaka .headInner {
+  width: 1025px;
+}
+#jheader_okayama .headInner {
+  width: 950px;
+}
+#jheader_sanuki .headInner {
+  width: 1054px;
+}
+#jheader_tokushima .headInner {
+  width: 990px;
+}
+#jheader_ehime .headInner {
+  width: 964px;
+}
+#jheader_fukuoka .headInner {
+  width: 952px;
+}
+#jheader_kitakyushu .headInner {
+  width: 1000px;
+}
+#jheader_nagasaki .headInner {
+  width: 1024px;
+}
+#jheader_kumamoto .headInner {
+  width: 960px;
+}
+#jheader_oita .headInner {
+  width: 980px;
+}
+#jheader_morioka .headInner {
+  width: 900px;
+}
+#jheader_akita .headInner {
+  width: 960px;
+}
+#jheader_fukushima .headInner {
+  width: 1000px;
+}
+#jheader_machida .headInner {
+  width: 970px;
+}
+#jheader_ysyokohama .headInner {
+  width: 950px;
+}
+#jheader_sagamihara .headInner {
+  width: 1150px;
+}
+#jheader_nagano .headInner {
+  width: 990px;
+}
+#jheader_toyama .headInner {
+  width: 880px;
+}
+#jheader_fujieda .headInner {
+  width: 980px;
+}
+#jheader_tottori .headInner {
+  width: 980px;
+}
+#jheader_yamaguchi .headInner {
+  width: 950px;
+}
+#jheader_ryukyu .headInner {
+  width: 982px;
+}
+#jheader_numazu .headInner{
+  width: 960px;
+}
+
+.topJtitle {
+  width: 64px;
+  height: 68px;
+  display: block;
+  text-indent: 100%;
+  white-space: nowrap;
+  overflow: hidden;
+  background: url("/img/jheader/jheader_jlogo.png") no-repeat;
+  background-position: 0px 0px;
+  /*background-size: 60px 204px;*/
+  position: absolute;
+  left: 4px;
+  top: 6px;
+}
+.topJtitle.J1 {
+  background-position: 0 0;
+}
+.topJtitle.J2 {
+  background-position: 0 -68px;
+}
+.topJtitle.J3 {
+  background-position: 0 -136px;
+}
+
+.jEmb {
+  overflow: hidden;
+  float: left;
+  margin-left: 80px;
+  padding-top: 5px;
+}
+.jEmb .leagueBtn {
+  overflow: hidden;
+  margin-bottom: 5px;
+}
+.jEmb .leagueBtn li {
+  width: 25px;
+  height: 25px;
+  float: left;
+  margin: 0 12px 0 0;
+}
+.jEmb .leagueBtn li:last-child {
+  margin-right: 0;
+}
+
+.adArea {
+  float: right;
+  padding-top: 4px;
+}
+.adArea ul {
+  overflow: hidden;
+}
+.adArea ul li {
+  float: left;
+  margin-right: 10px;
+}
+.adArea ul li:last-child {
+  margin-right: 0;
+}
+.adArea ul li a img {
+  vertical-align: top;
+}
+.adArea ul li a:hover img {
+  filter: alpha(opacity=75);
+  -moz-opacity: 0.75;
+  opacity: 0.75;
+}
+
+/*================================================================
+
+    エンブレム（25px 25px）
+
+==================================================================*/
+.embS {
+  background: url("/img/jheader/jheader_team_emb_s_bw.png") no-repeat;
+  /*background-size: 200px 200px;*/
+  display: block;
+  width: 25px;
+  height: 25px;
+  overflow: hidden;
+  text-indent: 100%;
+  white-space: nowrap;
+}
+a.embS:hover {
+  background-image: url("/img/jheader/jheader_team_emb_s.png");
+  /*background-size: 200px 200px;*/
+}
+
+.embS.embCon, .embS.embSapporo {
+  background-position: -25px 0px;
+}
+.embS.embBla, .embS.embAkita {
+  background-position: -50px 0px;
+}
+.embS.embGrm, .embS.embMorioka {
+  background-position: -75px 0px;
+}
+.embS.embVeg, .embS.embSendai {
+  background-position: -100px 0px;
+}
+.embS.embMon, .embS.embYamagata {
+  background-position: -125px 0px;
+}
+.embS.embFku, .embS.embFukushima {
+  background-position: -150px 0px;
+}
+.embS.embAnt, .embS.embKashima {
+  background-position: -175px 0px;
+}
+.embS.embHol, .embS.embMito {
+  background-position: 0px -25px;
+}
+.embS.embToc, .embS.embTochigi {
+  background-position: -25px -25px;
+}
+.embS.embThe, .embS.embKusatsu {
+  background-position: -50px -25px;
+}
+.embS.embRed, .embS.embUrawa {
+  background-position: -75px -25px;
+}
+.embS.embArd, .embS.embOmiya {
+  background-position: -100px -25px;
+}
+.embS.embJef, .embS.embChiba {
+  background-position: -125px -25px;
+}
+.embS.embRey, .embS.embKashiwa {
+  background-position: -150px -25px;
+}
+.embS.embFct, .embS.embFctokyo {
+  background-position: -175px -25px;
+}
+.embS.embVer, .embS.embTokyov {
+  background-position: 0px -50px;
+}
+.embS.embFcm, .embS.embMachida {
+  background-position: -25px -50px;
+}
+.embS.embFro, .embS.embKawasakif {
+  background-position: -50px -50px;
+}
+.embS.embMar, .embS.embYokohamafm {
+  background-position: -75px -50px;
+}
+.embS.embYfc, .embS.embYokohamafc {
+  background-position: -100px -50px;
+}
+.embS.embYsc, .embS.embYsyokohama {
+  background-position: -125px -50px;
+}
+.embS.embSgm, .embS.embSagamihara {
+  background-position: -150px -50px;
+}
+.embS.embBel, .embS.embShonan {
+  background-position: -175px -50px;
+}
+.embS.embVen, .embS.embKofu {
+  background-position: 0px -75px;
+}
+.embS.embNgp, .embS.embNagano {
+  background-position: -25px -75px;
+}
+.embS.embMfc, .embS.embMatsumoto {
+  background-position: -50px -75px;
+}
+.embS.embAlb, .embS.embNiigata {
+  background-position: -75px -75px;
+}
+.embS.embKat, .embS.embToyama {
+  background-position: -100px -75px;
+}
+.embS.embZwk, .embS.embKanazawa {
+  background-position: -125px -75px;
+}
+.embS.embSpu, .embS.embShimizu {
+  background-position: -150px -75px;
+}
+.embS.embJub, .embS.embIwata {
+  background-position: -175px -75px;
+}
+.embS.embFmy, .embS.embFujieda {
+  background-position: 0px -100px;
+}
+.embS.embGra, .embS.embNagoya {
+  background-position: -25px -100px;
+}
+.embS.embFcg, .embS.embGifu {
+  background-position: -50px -100px;
+}
+.embS.embPur, .embS.embKyoto {
+  background-position: -75px -100px;
+}
+.embS.embGam, .embS.embGosaka {
+  background-position: -100px -100px;
+}
+.embS.embCer, .embS.embCosaka {
+  background-position: -125px -100px;
+}
+.embS.embVis, .embS.embKobe {
+  background-position: -150px -100px;
+}
+.embS.embGat, .embS.embTottori {
+  background-position: -175px -100px;
+}
+.embS.embFag, .embS.embOkayama {
+  background-position: 0px -125px;
+}
+.embS.embSan, .embS.embHiroshima {
+  background-position: -25px -125px;
+}
+.embS.embKam, .embS.embSanuki {
+  background-position: -50px -125px;
+}
+.embS.embVor, .embS.embTokushima {
+  background-position: -75px -125px;
+}
+.embS.embEfc, .embS.embEhime {
+  background-position: -100px -125px;
+}
+.embS.embAvi, .embS.embFukuoka {
+  background-position: -125px -125px;
+}
+.embS.embGkk, .embS.embKitakyushu {
+  background-position: -150px -125px;
+}
+.embS.embSag, .embS.embTosu {
+  background-position: -175px -125px;
+}
+.embS.embVvn, .embS.embNagasaki {
+  background-position: 0px -150px;
+}
+.embS.embRoa, .embS.embKumamoto {
+  background-position: -25px -150px;
+}
+.embS.embTri, .embS.embOita {
+  background-position: -50px -150px;
+}
+.embS.embFcr, .embS.embRyukyu {
+  background-position: -75px -150px;
+}
+.embS.embU22, .embS.embJ22 {
+  background-position: -100px -150px;
+}
+.embS.embRya, .embS.embYamaguchi {
+  background-position: -125px -150px;
+}
+.embS.embKAGOSHIMA {
+  background-position: -150px -150px;
+}
+.embS.embGosaka23 {
+  background-position: -175px -150px;
+}
+.embS.embFctokyo23 {
+  background-position: 0 -175px;
+}
+.embS.embCosaka23 {
+  background-position: -25px -175px;
+}
+.embS.embAzu {
+  background-position: -50px -175px;
+}
+
+
+
+

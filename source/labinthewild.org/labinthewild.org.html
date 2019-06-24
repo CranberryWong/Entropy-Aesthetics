@@ -1,0 +1,419 @@
+<!DOCTYPE html>
+<html><head>
+<title>LabintheWild</title>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta property="og:title" content="Lab in the Wild">
+<meta property="og:image" content="http://www.labinthewild.org/images/litwGlobe.png">
+<meta property="og:type" content="website">
+<meta property="og:description" content="LabintheWild provides you with personalized feedback, letting you compare yourself to people of other countries.">
+<!--[if lt IE 7]>
+<meta http-equiv="imagetoolbar" content="no" />
+<![endif]-->
+<link rel="stylesheet" href="labinthewild.org_files/bootstrap.css" type="text/css">
+<link rel="stylesheet" href="labinthewild.org_files/custom.css" type="text/css">
+<link rel="icon" type="image/png" href="http://www.labinthewild.org/favicon.png">
+<!--[if lt IE 7]>
+<link rel="stylesheet" href="css/ie6.min.css" type="text/css" />
+<![endif]-->
+<!--[if lt IE 8]><link rel="stylesheet" href="css/bootstrap-ie7buttonfix.css"><![endif]-->
+<!--[if IE 8]><link rel="stylesheet" href="css/bootstrap-ie8buttonfix.css"><![endif]-->
+
+<script type="text/javascript" async="" src="labinthewild.org_files/ga.js"></script><script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-32982292-1']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+</head>
+<body id="top" data-spy="scroll" data-target=".navbar">
+  <div id="currentLang" data-lang="en"></div>  <div class="container"> <!-- For entire webpage -->
+    <!--[if lt IE 7]><div style=' clear: both; height: 59px; padding:0 0 0 15px; position: relative;'> <a href='http://windows.microsoft.com/en-US/internet-explorer/products/ie/home?ocid=ie6_countdown_bannercode'><img src='http://storage.ie6countdown.com/assets/100/images/banners/warning_bar_0000_us.jpg' border='0' height='42' width='820' alt='You are using an outdated browser. For a faster, safer browsing experience, upgrade for free today.' /></a></div> <![endif]-->
+
+    <!-- translation banner option 2 -->
+    <div id="translation_banner" class="pull-right" style="position: absolute; margin-left: 975px">
+      <img src="labinthewild.org_files/translation_banner4.png">
+    </div>
+
+    <div class="row">
+      <div class="navbar">
+        <div class="navbar-inner">
+          <ul class="nav">
+            <li id="experiment-item" class="active"><a href="#" id="experiment-link">Our Experiments</a></li>
+            <li id="data-item"><a href="http://www.labinthewild.org/data/index.php" id="data-link">Findings &amp; Data Sets</a></li>
+            <li id="blog-item"><a href="http://www.labinthewild.org/blog.php" id="blog-link">Blog</a></li>
+            <li id="researchers-item"><a href="http://www.labinthewild.org/researchers.php" id="researchers-link">For Researchers</a></li>
+            <li id="about-item"><a href="http://www.labinthewild.org/about.php" id="about-link">About Us</a></li>
+          </ul>
+          <ul class="nav pull-right">
+            <li class="dropdown">              
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown">English <b class="caret"></b></a><ul class="dropdown-menu" role="menu" aria-labelledby="Language Selection Menu"><li><a class="language-selection" href="#" onclick="changeLang(this)" data-lang="de">Deutsch</a></li><li><a class="language-selection" href="#" onclick="changeLang(this)" data-lang="es">Español</a></li><li><a class="language-selection" href="#" onclick="changeLang(this)" data-lang="fr">Français</a></li><li><a class="language-selection" href="#" onclick="changeLang(this)" data-lang="ja">日本語</a></li><li><a class="language-selection" href="#" onclick="changeLang(this)" data-lang="pt">Português</a></li><li><a class="language-selection" href="#" onclick="changeLang(this)" data-lang="ru">Русский</a></li><li><a class="language-selection" href="#" onclick="changeLang(this)" data-lang="zh">中文</a></li></ul>
+<script type="text/javascript">
+function changeLang(language) {
+	var lang = language.getAttribute("data-lang");
+	$.ajax({
+		// using absolute path here since the data and publications page does not use the shared header file, and therefore relative links get messed up
+		//url: (document.URL.match(/^http:\/\/www/)) ? 'http://www.labinthewild.org/tmp12345/include/setCookieLang.php' : 'http://labinthewild.org/tmp12345/include/setCookieLang.php',
+
+		//url: 'http://www.labinthewild.org/tmp12345/include/setCookieLang.php',
+		//url: "/include/setCookieLang.php",
+		url: "include/setCookieLang.php",
+		data: {lang: lang},
+		method: "POST"
+	}).done(function() {
+		window.location.href = window.location.href.split('?')[0].split("#")[0];
+		//$('form[name="langForm"]').attr('action', window.location.href.split('?')[0]);
+		//$('input[name="locale"]').attr('value', $(this).data('lang'));
+		//$('form[name="langForm"]').submit();
+	});
+}
+</script>            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+    <div style="display:none;"><form name="langForm" action="" method="GET">
+      <input name="locale" value="" type="hidden">
+    </form></div>
+
+
+    <!--translation banner option 1
+    <div class="row" id="logorow">
+      <div class="span6 text-center">
+        <img src="images/LabintheWild_withGlobe.png" alt="logo" id="main-logo" class="pull-left" height="100" width="417"/>
+      </div>
+      <div>
+        <div id="translation_banner" class="pull-right" style="margin-right:50px;">
+          <img src="images/translation_banner3.png" />
+        </div>
+    
+        <div class="span4 well well-small pull-right" id="statbox">
+          <div id="stat-carousel" class="carousel slide">
+            <div class="carousel-inner">
+
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  -->
+
+    
+    <!-- translation banner option 2 -->
+    <div class="row" id="logorow">
+      <div class="span6 text-center">
+        <img src="labinthewild.org_files/LabintheWild_withGlobe.png" alt="logo" id="main-logo" class="pull-left" width="417" height="100">
+      </div>
+      <div>
+        
+    
+        <div class="span4 well well-small pull-right" id="statbox">
+          <div id="stat-carousel" class="carousel slide">
+            <div class="carousel-inner"><div class="item"><h3 id="statnum"><b>598</b></h3><div id="stat-text"><p class="lead"> participants from Hungary last month</p></div></div><div class="item active left"><h3 id="statnum"><b>1,346</b></h3><div id="stat-text"><p class="lead"> participants from Greece last month</p></div></div><div class="item next left"><h3 id="statnum"><b>797</b></h3><div id="stat-text"><p class="lead"> participants from Germany last month</p></div></div><div class="item"><h3 id="statnum"><b>109</b></h3><div id="stat-text"><p class="lead"> number of native languages spoken by participants</p></div></div><div class="item"><h3 id="statnum"><b>3,964,935</b></h3><div id="stat-text"><p class="lead"> total participants</p></div></div><div class="item"><h3 id="statnum"><b>48,146</b></h3><div id="stat-text"><p class="lead"> participants last month</p></div></div><div class="item"><h3 id="statnum"><b>1,181</b></h3><div id="stat-text"><p class="lead"> participants from India last month</p></div></div><div class="item"><h3 id="statnum"><b>4,444</b></h3><div id="stat-text"><p class="lead"> participants from United Kingdom last month</p></div></div><div class="item"><h3 id="statnum"><b>21,447</b></h3><div id="stat-text"><p class="lead"> participants from United States last month</p></div></div><div class="item"><h3 id="statnum"><b>2,293</b></h3><div id="stat-text"><p class="lead"> participants from Canada last month</p></div></div><div class="item"><h3 id="statnum"><b>623</b></h3><div id="stat-text"><p class="lead"> participants from Denmark last month</p></div></div><div class="item"><h3 id="statnum"><b>627</b></h3><div id="stat-text"><p class="lead"> participants from Sweden last month</p></div></div><div class="item"><h3 id="statnum"><b>232</b></h3><div id="stat-text"><p class="lead"> participating countries</p></div></div><div class="item"><h3 id="statnum"><b>2,436</b></h3><div id="stat-text"><p class="lead"> participants from Australia last month</p></div></div></div>
+          </div>
+        </div>
+      </div>
+    </div>    
+
+    <br>  
+    <div id="langModal" class="modal hide fade" role="dialog" tabindex="-1" aria-label="Choose another language for this test" aria-hidden="true">
+  <div class="modal-header">
+    <button type="button" class="close" data-dismiss="modal" aria-hidden="true">×</button>
+    <h3>Choose Your Language</h3>
+  </div>
+  <div class="modal-body" style="overflow: visible">
+    <p>The test you have selected is not available in your language. 
+Please select an available language below, or press cancel to return to 
+the main page.</p>
+    <form id="testLangForm" method="get" action="#">
+    	<select name="locale">
+    		<!-- Jquery adds selection items -->
+    	</select>
+    </form>
+  </div>
+  <div class="modal-footer">
+    <a href="#" class="btn" data-dismiss="modal">Cancel</a>
+    <input form="testLangForm" class="btn btn-primary" value="Take Test" type="submit">
+  </div>
+</div>
+
+
+<div class="row">
+	<div class="span12 well" id="test-well">
+		<ul class="thumbnails">
+			
+
+<li class="span4">
+      <div class="thumbnail">
+      <div id="thumb1">
+      <img class="img-rounded" src="labinthewild.org_files/LITWGlobe_new.png" alt="" style="height: 100px; width: 150px"><img class="img-english-only" src="labinthewild.org_files/english-only-stamp.png"><h4 class="test-title">What will the next study be called on LabintheWild?</h4>
+	  <p class="test-desc">Come up with future study slogans for 
+LabintheWild and see where in the world your fellow contributors are 
+from!  This will take around 5 minutes.</p></div>
+	  <div class="text-center"><a class="btn btn-custom-lighten test-btn" href="http://slogans.labinthewild.org/" data-lang="en" data-url="http://slogans.labinthewild.org/" id="test1">Participate now!</a>
+	  </div></div></li><li class="span4">
+      <div class="thumbnail">
+      <div id="thumb2">
+      <img class="img-rounded" src="labinthewild.org_files/virtual-chinrest.jpg" alt="" style="height: 100px; width: 150px"><img class="img-english-only" src="labinthewild.org_files/english-only-stamp.png"><h4 class="test-title">How accurate is your peripheral vision?</h4>
+	  <p class="test-desc">Are you curious about how accurate your 
+peripheral vision is compared to others? Learn more about your visual 
+perception by doing these fun tasks! This test takes around 8 minutes.</p></div>
+	  <div class="text-center"><a class="btn btn-custom-lighten test-btn" href="http://www.labinthewild.org/studies/peripheral-vision/" data-lang="en" data-url="studies/peripheral-vision/" id="test2">Participate now!</a>
+	  </div></div></li><li class="span4">
+      <div class="thumbnail">
+      <div id="thumb3">
+      <img class="img-rounded" src="labinthewild.org_files/graphs-small.png" alt="" style="height: 100px; width: 150px"><h4 class="test-title">What do you see?</h4>
+	  <p class="test-desc">How well you can read different types of graphs?
+ Learn what type of graph is best for you, and you can help us invent 
+new graph types. This experiment takes about 10 minutes and requires a 
+laptop or tablet.</p></div>
+	  <div class="text-center"><a class="btn btn-custom-lighten test-btn" href="http://graphs.labinthewild.org/" data-lang="en es" data-url="http://graphs.labinthewild.org/" id="test3">Participate now!</a>
+	  </div></div></li><li class="span4">
+      <div class="thumbnail">
+      <div id="thumb4">
+      <img class="img-rounded" src="labinthewild.org_files/messaging-small.jpg" alt="" style="height: 100px; width: 150px"><img class="img-english-only" src="labinthewild.org_files/english-only-stamp.png"><h4 class="test-title">How knowledgable are you about privacy?</h4>
+	  <p class="test-desc">Find out how well you know your favorite texting
+ apps and how your knowledge compares to others'. This study takes 
+around 10 minutes.</p></div>
+	  <div class="text-center"><a class="btn btn-custom-lighten test-btn" href="http://www.labinthewild.org/studies/texting-behavior/" data-lang="en" data-url="studies/texting-behavior/" id="test4">Participate now!</a>
+	  </div></div></li><li class="span4">
+      <div class="thumbnail">
+      <div id="thumb5">
+      <img class="img-rounded" src="labinthewild.org_files/privacy-iot-logo-small.png" alt="" style="height: 100px; width: 150px"><h4 class="test-title">What is your privacy profile?</h4>
+	  <p class="test-desc">Find out how your data sharing behavior compares
+ to others and learn about the Internet of Things. This study takes 
+around 10 minutes.</p></div>
+	  <div class="text-center"><a class="btn btn-custom-lighten test-btn" href="http://www.labinthewild.org/studies/privacy-iot/" data-lang="en pt" data-url="studies/privacy-iot/" id="test5">Participate now!</a>
+	  </div></div></li><li class="span4">
+      <div class="thumbnail">
+      <div id="thumb6">
+      <img class="img-rounded" src="labinthewild.org_files/perceptual-models.jpeg" alt="" style="height: 100px; width: 150px"><img class="img-english-only" src="labinthewild.org_files/english-only-stamp.png"><h4 class="test-title">Do you see websites like others?</h4>
+	  <p class="test-desc">How do you perceive the colorfulness and visual 
+complexity of websites, and what does this say about how you see colors 
+and clutter? Take this 10 minute experiment to find out!</p></div>
+	  <div class="text-center"><a class="btn btn-custom-lighten test-btn" href="http://www.labinthewild.org/studies/perceptual_models/" data-lang="en" data-url="studies/perceptual_models/" id="test6">Participate now!</a>
+	  </div></div></li><li class="span4">
+      <div class="thumbnail">
+      <div id="thumb7">
+      <img class="img-rounded" src="labinthewild.org_files/thinking.png" alt="" style="height: 100px; width: 150px"><h4 class="test-title">How quickly do you learn?</h4>
+	  <p class="test-desc">This experiment tests how good you are at 
+accumulating knowledge and experiences over time — a process that is 
+referred to as implicit memorization. This experiment takes around 8 
+minutes.</p></div>
+	  <div class="text-center"><a class="btn btn-custom-lighten test-btn" href="http://www.labinthewild.org/studies/implicit_memory/" data-lang="de en es fr ja pt ru zh" data-url="studies/implicit_memory/" id="test7">Participate now!</a>
+	  </div></div></li><li class="span4">
+      <div class="thumbnail">
+      <div id="thumb8">
+      <img class="img-rounded" src="labinthewild.org_files/brain.png" alt="" style="height: 100px; width: 150px"><h4 class="test-title">What is your thinking style?</h4>
+	  <p class="test-desc">Find out how your thinking style compares to others. This experiment takes around 5 minutes.</p></div>
+	  <div class="text-center"><a class="btn btn-custom-lighten test-btn" href="http://www.labinthewild.org/studies/analytic_test/" data-lang="de en es fr ja pt ru zh" data-url="studies/analytic_test/" id="test8">Participate now!</a>
+	  </div></div></li><li class="span4">
+      <div class="thumbnail">
+      <div id="thumb9">
+      <img class="img-rounded" src="labinthewild.org_files/memory-small.png" alt="" style="height: 100px; width: 150px"><h4 class="test-title">How fast is your memory?</h4>
+	  <p class="test-desc">See how quickly you can retrieve information you have just memorized. This experiment takes around 10 minutes.</p></div>
+	  <div class="text-center"><a class="btn btn-custom-lighten test-btn" href="http://www.labinthewild.org/studies/memory/" data-lang="de en es fr ja pt ru zh" data-url="studies/memory/" id="test9">Participate now!</a>
+	  </div></div></li><li class="span4">
+      <div class="thumbnail">
+      <div id="thumb10">
+      <img class="img-rounded" src="labinthewild.org_files/color_age-150x100.png" alt="" style="height: 100px; width: 150px"><h4 class="test-title">Can we guess your age?</h4>
+	  <p class="test-desc">Test how old you are based on how well you can distinguish between colors! This test will take around 5 minutes.</p></div>
+	  <div class="text-center"><a class="btn btn-custom-lighten test-btn" href="http://www.labinthewild.org/studies/color_age/" data-lang="en es zh" data-url="studies/color_age/" id="test10">Participate now!</a>
+	  </div></div></li><li class="span4">
+      <div class="thumbnail">
+      <div id="thumb11">
+      <img class="img-rounded" src="labinthewild.org_files/happy-150x100.png" alt="" style="height: 100px; width: 150px"><img class="img-english-only" src="labinthewild.org_files/english-only-stamp.png"><h4 class="test-title">What makes you happy?</h4>
+	  <p class="test-desc">Find out for yourself in less than 3 minutes, and see how you compare to others!</p></div>
+	  <div class="text-center"><a class="btn btn-custom-lighten test-btn" href="http://www.labinthewild.org/studies/happiness/" data-lang="en" data-url="studies/happiness/" id="test11">Participate now!</a>
+	  </div></div></li><li class="span4">
+      <div class="thumbnail">
+      <div id="thumb12">
+      <img class="img-rounded" src="labinthewild.org_files/computer-behaviors.jpg" alt="" style="height: 100px; width: 150px"><img class="img-english-only" src="labinthewild.org_files/english-only-stamp.png"><h4 class="test-title">What is your natural risk preference?</h4>
+	  <p class="test-desc">Help us understand how people's natural risk tendency affects their behavior online. This experiment takes around 15 minutes.</p></div>
+	  <div class="text-center"><a class="btn btn-custom-lighten test-btn" href="http://www.labinthewild.org/studies/computer-behaviors/" data-lang="en" data-url="studies/computer-behaviors/" id="test12">Participate now!</a>
+	  </div></div></li><li class="span4">
+      <div class="thumbnail">
+      <div id="thumb13">
+      <img class="img-rounded" src="labinthewild.org_files/listen.jpg" alt="" style="height: 100px; width: 150px"><img class="img-english-only" src="labinthewild.org_files/english-only-stamp.png"><h4 class="test-title">How fast can you process words?</h4>
+	  <p class="test-desc">Have you ever wondered how quickly you can 
+process spoken information? Put your listening skills to the test in 
+this 5-minute experiment!</p></div>
+	  <div class="text-center"><a class="btn btn-custom-lighten test-btn" href="http://www.labinthewild.org/studies/fast_listener/" data-lang="en" data-url="studies/fast_listener/" id="test13">Participate now!</a>
+	  </div></div></li><li class="span4">
+      <div class="thumbnail">
+      <div id="thumb14">
+      <img class="img-rounded" src="labinthewild.org_files/aesthetics_around_the_world.jpg" alt="" style="height: 100px; width: 150px"><img class="img-english-only" src="labinthewild.org_files/english-only-stamp.png"><h4 class="test-title">Where in the world does your taste live?</h4>
+	  <p class="test-desc">Judge the visual appeal of website screenshots and we will tell you the country that your taste matches up with.</p></div>
+	  <div class="text-center"><a class="btn btn-custom-lighten test-btn" href="http://www.labinthewild.org/studies/aesthetics/" data-lang="en" data-url="studies/aesthetics/" id="test14">Participate now!</a>
+	  </div></div></li><li class="span4">
+      <div class="thumbnail">
+      <div id="thumb15">
+      <img class="img-rounded" src="labinthewild.org_files/vegetables-200.jpg" alt="" style="height: 100px; width: 150px"><img class="img-english-only" src="labinthewild.org_files/english-only-stamp.png"><h4 class="test-title">How good is your nutrition knowledge?</h4>
+	  <p class="test-desc">How good is your nutrition gut? Can you tell 
+just by looking at a meal whether it is a significant source of protein,
+ fat, or carbohydrates? This test takes about 10 minutes.</p></div>
+	  <div class="text-center"><a class="btn btn-custom-lighten test-btn" href="http://food.labinthewild.org/study1/" data-lang="en" data-url="http://food.labinthewild.org/study1/" id="test15">Participate now!</a>
+	  </div></div></li><li class="span4">
+      <div class="thumbnail">
+      <div id="thumb16">
+      <img class="img-rounded" src="labinthewild.org_files/color_perception.png" alt="" style="height: 100px; width: 150px"><img class="img-english-only" src="labinthewild.org_files/english-only-stamp.png"><h4 class="test-title">What is your color perception score?</h4>
+	  <p class="test-desc">How does your color perception compares to 
+others? Performing color sorting and color naming tasks to find out! 
+This experiment takes around 12 minutes.</p></div>
+	  <div class="text-center"><a class="btn btn-custom-lighten test-btn" href="http://www.labinthewild.org/studies/color_perception/" data-lang="en" data-url="studies/color_perception/" id="test16">Participate now!</a>
+	  </div></div></li><li class="span4">
+      <div class="thumbnail">
+      <div id="thumb17">
+      <img class="img-rounded" src="labinthewild.org_files/multitasking.png" alt="" style="height: 100px; width: 150px"><img class="img-english-only" src="labinthewild.org_files/english-only-stamp.png"><h4 class="test-title">Multitasking Test</h4>
+	  <p class="test-desc">How well can you multitask? Compare yourself to others by taking this test! Takes about 10 minutes.</p></div>
+	  <div class="text-center"><a class="btn btn-custom-lighten test-btn" href="http://multitasking.labinthewild.org/multitasking/" data-lang="en" data-url="http://multitasking.labinthewild.org/multitasking/" id="test17">Participate now!</a>
+	  </div></div></li><li class="span4">
+      <div class="thumbnail">
+      <div id="thumb18">
+      <img class="img-rounded" src="labinthewild.org_files/intelligence2.png" alt="" style="height: 100px; width: 150px"><img class="img-english-only" src="labinthewild.org_files/english-only-stamp.png"><h4 class="test-title">Test your social intelligence!</h4>
+	  <p class="test-desc">Test how well you can read emotions of others just by looking at their eyes. This experiment takes around 10 minutes.</p></div>
+	  <div class="text-center"><a class="btn btn-custom-lighten test-btn" href="http://socialintelligence.labinthewild.org/mite/?" data-lang="en" data-url="http://socialintelligence.labinthewild.org/mite/?" id="test18">Participate now!</a>
+	  </div></div></li>      <!--
+			<li class="span4">
+				<div class="thumbnail" align="center">
+					<a href='http://lessweird.org' target='_blank'><img src="images/lessweird.png" alt="" class="img-rounded" height='100' width='150' align="middle"></a>	
+					<h4 class="test-title" >Looking for more studies?</h4>
+          <p class="test-desc">We have joined forces with <a href='http://testmybrain.org' target='_blank'>TestMyBrain</a> and <a href='http://www.gameswithwords.org' target='_blank'>GamesWithWords</a>! Learn about your brain, test your language sense, and participate in other studies on <a href='http://lessweird.org' target='_blank'>LessWeird.org</a>.</p>
+				</div>
+			</li>
+    -->
+		</ul>
+	</div>
+</div>
+    <div class="row">
+      <div class="span12 well">
+        <div class="row" id="footer-row">
+          <div class="span4">
+            <h3>News From The Wild</h3>
+              <div class="media"><p style="font-size:17.5px;"><a style="color:black;font-weight:normal;" href="http://www.labinthewild.org/blog.php#post0">August 28, 2017</a></p>Online forum users from India send more messages containing emoticons than German users.<br><a href="http://www.labinthewild.org/blog.php#post0">Read more</a></div><div class="media"><p style="font-size:17.5px;"><a style="color:black;font-weight:normal;" href="http://www.labinthewild.org/blog.php#post1">August 4, 2017</a></p>Hello fellow reader.<br><a href="http://www.labinthewild.org/blog.php#post1">Read more</a></div>          </div>
+          <div class="span4">
+            <h3>Why Participate?</h3>
+            <p>LabintheWild provides you with personalized feedback, letting you compare yourself to people of other countries. </p>
+            <p>By participating, you contribute to research on people's 
+similarities and differences around the world when interacting with 
+technology. </p>
+          </div>
+          <div class="span4">
+            
+<!-- Email submission form starts here -->
+<h3> Join the Wilderness</h3>
+
+<a href="http://www.weibo.com/u/5577081773?topnav=1&amp;wvr=6&amp;topsug=1" target="_blank" class="sharebutt">
+	<img src="labinthewild.org_files/weibo.png" alt="Weibo" title="Weibo" width="32" height="32">
+</a>
+<a href="http://facebook.com/labinthewild" target="_blank" class="sharebutt">
+	<img src="labinthewild.org_files/facebook_32.png" alt="Facebook" title="Facebook" width="32" height="32">
+</a>
+<a href="https://twitter.com/labinthewild" target="_blank" class="sharebutt">
+	<img src="labinthewild.org_files/twitter_32.png" alt="Twitter" title="Twitter" width="32" height="32">
+</a>
+<a href="http://labinthewild.tumblr.com/" target="_blank" class="sharebutt">
+	<img src="labinthewild.org_files/tumblr_32.png" alt="Tumblr" title="Tumblr" width="32" height="32">
+</a>
+<br>
+<br>
+<p>Subscribe to our newsletter to find out about new studies and breakthrough results:</p>
+
+<a href="http://eepurl.com/csCxcT" target="_blank"><img src="labinthewild.org_files/mailchimp.png" alt="Subscribe to LabintheWild Newsletter" title="Subscribe to LabintheWild Newsletter" width="50%">
+</a>
+</div>
+          </div>
+        </div>
+      </div>
+    </div>
+
+<br>
+<div class="row text-center">
+  <div class="span12">
+     <p><small>Copyright © by LabintheWild.org</small></p>
+  </div>
+</div>
+<!-- end container -->
+
+<script type="text/javascript" src="labinthewild.org_files/jquery-1.js"></script>
+<script type="text/javascript" src="labinthewild.org_files/bootstrap.js"></script>
+<script type="text/javascript" src="labinthewild.org_files/navhelp.js"></script>
+<script type="text/javascript" src="labinthewild.org_files/langHelp.js"></script>
+<div id="carousel-js-here">
+
+<script>
+	$(".carousel-inner").html("<div style='text-align: center; padding-top: 20px'>" + 
+		"<img src='images/ajax-loader.gif' alt='Loading stats...' style='display: inline-block' />" + 
+		"<p>Loading Statistics...</p></div>"); 
+	$.ajax({
+		url : "include/analytics.php", 
+		success : function(r) {
+			$(".carousel-inner").empty(); 
+			$("#carousel-js-here").append(r); 
+		}
+	}); 
+</script>
+
+
+<script>
+  $("#email_complete").hide();
+
+  var myFacts = [
+    [{ "fact":  " total participants" , "num": 3964935 }],
+    [{ "fact":  " participants last month", "num": 48146 }],
+    //[{ "fact": " the average age of participants", "num": "33"}],
+    [{ "fact":  " participating countries", "num": 232 }],
+    //[{ "fact": " percent of participants living in multiple countries", "num": "28"}],
+    [{ "fact":  " number of native languages spoken by participants", "num": 109 }]
+    ];
+
+
+  var countries_visitors = {"United States":"21447","United Kingdom":"4444","Australia":"2436","Canada":"2293","Greece":"1346","India":"1181","Germany":"797","Sweden":"627","Denmark":"623","Hungary":"598"};
+  // since we have a list of 10 countries sorted descendingly by number of visitors and the first has already been printed
+  // adding the rest of them to the array
+  for(country in countries_visitors)
+  {
+    myFacts.push([{
+      fact: " participants from " + country + " last month",
+      num: countries_visitors[country]
+    }]);
+  }
+  
+  myFacts = shuffle(myFacts);
+
+
+  $.each(myFacts, function (index,value) {
+    $('.carousel-inner').append('<div class="item"><h3 id="statnum"><b>' + numberWithCommas(value[0]['num']) + '</b></h3><div id="stat-text"><p class="lead">'+value[0]['fact']+'</p></div></div>');
+  });
+  $('.carousel-inner > div').first().addClass('active');
+  $('.carousel').carousel({
+    interval: 4500
+  });
+
+
+function numberWithCommas(x) {
+    return x.toString().replace(/\B(?=(\d{3})+(?!\d))/g, ",");
+}
+
+function shuffle(o){
+    for(var j, x, i = o.length; i; j = Math.floor(Math.random() * i), x = o[--i], o[i] = o[j], o[j] = x);
+    return o;
+}
+
+</script></div>
+<script type="text/javascript" src="labinthewild.org_files/email.html"></script>
+<!--[if lt IE 7]>
+<script type="text/javascript" src="../js/ie6.min.js"></script>
+<![endif]-->
+
+
+
+</body></html>

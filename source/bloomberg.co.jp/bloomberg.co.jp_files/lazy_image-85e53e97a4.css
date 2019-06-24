@@ -1,0 +1,1 @@
+.bb-lazy-img{display:inline-block;position:relative;line-height:0}.bb-lazy-img:before{content:"";display:block;width:100%}.bb-lazy-img__image{position:absolute;top:0;left:0;right:0;bottom:0;width:100%;height:100%;filter:blur(5px)}.bb-lazy-img--loaded:before{display:none}.bb-lazy-img--loaded .bb-lazy-img__image{position:relative;filter:none;height:auto}

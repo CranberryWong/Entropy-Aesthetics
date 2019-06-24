@@ -1,0 +1,40 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <!-- base href="https://www.bloomberg.co.jp/markets/components/securities-widget/ja/indices" -->
+    <meta name="robots" content="noindex">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="bonds_data/securities_widget_layout-32d1dbc1ac.css">
+  </head>
+
+  <body class="fixed-height">
+    <script src="bonds_data/securities_widget-b38bcad843.js"></script>
+    <div class="securities-widget"><section class="securities-widget__container" lang="ja"> <h1 class="securities-widget__title"> 主要株価指数 </h1><table class="securities-widget__table"> <tbody class="securities-widget__list">  <tr class="securities-widget__security"> <td class="securities-widget__security-name"> <a href="https://www.bloomberg.co.jp/quote/NKY:IND">日経平均株価</a> </td> <td class="securities-widget__value-field"> 22,582.76 </td> <td class="securities-widget__change down"> 31.49 </td> </tr>  <tr class="securities-widget__security"> <td class="securities-widget__security-name"> <a href="https://www.bloomberg.co.jp/quote/TPX:IND">TOPIX (東証株価指数)</a> </td> <td class="securities-widget__value-field"> 1,764.89 </td> <td class="securities-widget__change up"> 11.41 </td> </tr>  <tr class="securities-widget__security"> <td class="securities-widget__security-name"> <a href="https://www.bloomberg.co.jp/quote/INDU:IND">NYﾀﾞｳ 工業株30種</a> </td> <td class="securities-widget__value-field"> 25,414.10 </td> <td class="securities-widget__change up"> 172.16 </td> </tr>  <tr class="securities-widget__security"> <td class="securities-widget__security-name"> <a href="https://www.bloomberg.co.jp/quote/SPX:IND">S&amp;P 500種</a> </td> <td class="securities-widget__value-field"> 2,846.07 </td> <td class="securities-widget__change up"> 25.67 </td> </tr>  <tr class="securities-widget__security"> <td class="securities-widget__security-name"> <a href="https://www.bloomberg.co.jp/quote/HSI:IND">香港 ﾊﾝｾﾝ指数</a> </td> <td class="securities-widget__value-field"> 28,693.04 </td> <td class="securities-widget__change down"> 227.86 </td> </tr>  <tr class="securities-widget__security"> <td class="securities-widget__security-name"> <a href="https://www.bloomberg.co.jp/quote/CCMP:IND">ﾅｽﾀﾞｯｸ 総合指数</a> </td> <td class="securities-widget__value-field"> 7,932.24 </td> <td class="securities-widget__change up"> 91.47 </td> </tr>  </tbody> </table><div class="securities-widget__link-container"> <a class="securities-widget__link" href="https://www.bloomberg.co.jp/markets/stocks/world-indexes/asia-pacific">株価指数一覧</a> </div> </section></div>
+  
+
+  <script type="text/javascript">
+      (function() {
+          var $ = require("jquery");
+          var appView = require("components/SecuritiesWidgetView");
+          var appConfig = JSON.parse('{"type":"indices","locale":"ja","tracking":{"gtm":{"id":"GTM-NV5B7R","schema":{"adCode":"string","contentCategories":"string","contentId":"string","contentSubCategory":"string","contentType":"string","pageBrand":"string","pageSection":"string","pageType":"string","primaryCategory":"string","referrer":"string","typeOfContent":"string"}}}}');
+
+          var locale = appConfig.locale || "en";
+          var type = appConfig.type;
+
+          var SecuritiesWidget = require("code/SecuritiesWidget");
+          var securitiesWidget = new SecuritiesWidget({
+              locale: locale,
+              type: type
+          });
+
+          var app = new appView({
+              model: securitiesWidget,
+              el: $(".securities-widget"),
+              appConfig: appConfig
+          });
+
+          app.setup();
+      })();
+  </script>
+
+
+</body></html>

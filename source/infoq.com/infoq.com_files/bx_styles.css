@@ -1,0 +1,34 @@
+/* @override http://localhost/bxslider_v3_plugin/css/styles.css */
+
+/*
+ * To change the color scheme of slider change each 
+ * background property for each of the five styles below
+ */
+
+/*next button*/
+.default .bx-next { position:absolute; top:0%; right:-200%; z-index:999; width: 200%; height: 319px; text-indent: -999999px; background: #fff url(rightArrowBtn.png) no-repeat -100% -100%; }
+/*previous button*/
+.default .bx-prev { position:absolute; top:0%; left:-200%; right:auto !important; z-index:999; width: 200%; height: 319px; text-indent: -999999px; background: #fff url(leftArrowBtn.png) no-repeat -100% -100%; }
+/*pager wrapper*/
+.default .bx-pager { text-align:center; padding: 0px; margin:0 auto; position:absolute; z-index:9999 !important; top:-18px; left:50%; font-size:12px; color:#666; }
+/*pager links*/
+.default .bx-pager a { width:11px; height:11px; margin-right:5px; display:inline; background:url(slide.jpg) no-repeat left center; text-align:left; text-indent:-3999px; background-position:100% 0px; float:left; }
+/*pager links hover and active states*/
+.default .bx-pager .pager-active, .default .bx-pager a:hover { background-position:0% 0px; }
+/*auto start button*/
+.default .bx-auto .start { background: url(gray_auto.png) no-repeat 0 2px; padding-left: 13px; }
+/*auto stop button*/
+.default .bx-auto .stop { background: url(gray_auto.png) no-repeat 0 -14px; padding-left: 13px; }
+/*
+ * End color scheme styles
+ */
+
+
+/*next/prev button hover state*/
+.default .bx-next:hover, .default .bx-next.active { background-position: 5% 50% !important; background-color:#ffcb08; }
+.default .bx-prev:hover, .default .bx-prev.active { background-position: 95% 50% !important; background-color:#ffcb08; }
+/*captions*/
+.default .bx-captions { text-align:center; font-size: 12px; padding: 7px 0; color: #666; }
+/*auto controls*/
+.default .bx-auto { text-align: center; padding-top: 15px; }
+.default .bx-auto a { color: #666; font-size: 12px; }

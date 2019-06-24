@@ -1,0 +1,1 @@
+DCInfosCallback({"country":"JP","region":"20","city":"Kochi","latitude":33.5597,"longitude":133.5311,"postal_code":"780-0850","browser":"Mozilla Firefox","ip":"222.229.69.61","traffic":null})

@@ -1,0 +1,171 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+  <title>language menu</title>
+  <meta charset="utf-8">
+  <!-- base href="https://dev-wix-languages.appspot.com/app/index.html?cacheKiller=1532945172127&compId=comp-jc6e3qxj&deviceType=desktop&height=32&instance=j2Pa3LUbx6lRNzKsWx26SoYWET56StR6H_hwMfPlync.eyJpbnN0YW5jZUlkIjoiMjAwMmFkZmQtYTUwNS00MWJhLTg2YjAtMzlmN2Y0NTNlYjI2IiwiYXBwRGVmSWQiOiIxM2RiZTJiMi0zOTZhLWRlOTQtYzVhYi0wOTNiYmEzOGUwNzMiLCJtZXRhU2l0ZUlkIjoiNGNlYjkxYTAtOTI5YS00NGM4LTg4NWItZmQ4NjRhZTExOGU3Iiwic2lnbkRhdGUiOiIyMDE4LTA3LTMwVDEwOjA3OjUzLjc5N1oiLCJ1aWQiOm51bGwsImlwQW5kUG9ydCI6IjIyMi4yMjkuNjkuNjEvNTczMDAiLCJ2ZW5kb3JQcm9kdWN0SWQiOm51bGwsImRlbW9Nb2RlIjpmYWxzZSwiYWlkIjoiZDczMjE5NmEtMmFlMy00NWIzLWIzZDgtMGM1OGQ5MWNkNWNlIiwiYmlUb2tlbiI6IjZjZTkzYzVkLTM3OWYtMDU3Mi0wZWViLWM0NzFiZWIyZjNjMSIsInNpdGVPd25lcklkIjoiNDZiNmZlMzMtMDM2YS00NGQwLThkZTMtNzc1MGFmNGJkODI0In0&locale=en&pageId=masterPage&viewMode=site&vsi=822a945f-ee86-496b-bbed-bca23bae572b&width=259" -->
+  <meta name="description" content="language menu app">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="index_data/8bcacfbf.css">
+  <!--@formatter:off-->
+  <style wix-style="" type="text/css">
+    body {
+    background-color: rgba(57,63,68,0);
+    }
+    .app {
+    border-color: rgba(57,63,68,0);
+    }
+    .separator {
+    border-color: rgba(57,63,68,0);
+    }
+    language {
+    font:normal normal normal 11px/13px helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif;;
+    color: #6d6d72;
+    }
+    language:hover {
+    font:normal normal normal 11px/13px helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif; ;
+    color: #8e8e93;
+
+    }
+    .language-selected {
+    font:normal normal normal 11px/13px helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif;;
+    color: #000000;
+    }
+  </style>
+  <!--@formatter:on-->
+  <script type="text/javascript" src="index_data/wix-private.js"></script>
+<style wix-style="">.Title{ font:normal normal normal 32px/1.25em helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif; } .Menu{ font:normal normal normal 14px/1.43em "open sans",sans-serif; } .Page-title{ font:normal normal normal 40px/1.25em helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif; } .Heading-XL{ font:normal normal normal 88px/1.14em helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif; } .Heading-L{ font:normal normal normal 72px/1.18em helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif; } .Heading-M{ font:normal normal normal 56px/1.25em helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif; } .Heading-S{ font:normal normal normal 48px/1.25em helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif; } .Body-L{ font:normal normal normal 24px/1.46em helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif; } .Body-M{ font:normal normal normal 20px/1.5em helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif; } .Body-S{ font:normal normal normal 16px/1.55em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif; } .Body-XS{ font:normal normal normal 14px/1.43em "open sans",sans-serif; } }</style><link type="text/css" rel="stylesheet" href="index_data_002/languages.css"></head>
+<body data-ng-app="wixApp" class="ng-scope">
+
+<!-- ngView:  --><div id="appContainer" tabindex="-1" role="list" class="app ng-scope" data-ng-view=""><div id="languages-list" class="ng-scope">
+  <span class="allign-middle" aria-hidden="true"></span>
+  <!-- ngRepeat: language in params.siteLanguages --><language ng-click="navigateToHomeLanguagePage(language)" class="separator ng-scope ng-isolate-scope language-selected isShort" tabindex="-1" ng-repeat="language in params.siteLanguages" ng-class="{'language-selected': isLanguagesEqual(language, selectedSiteLanguage),
+                     'language-bold': params.languageNameFontStyle.bold,
+                     'language-italic': params.languageNameFontStyle.italic,
+                     'language-hover-bold': params.languageHoverFontStyle.bold,
+                     'language-hover-italic': params.languageHoverFontStyle.italic,
+                     'language-selected-bold': params.currentLanguageFontStyle.bold,
+                     'language-selected-italic': params.currentLanguageFontStyle.italic,
+                     'isLong': params.showLanguageName,
+                     'isShort': !params.showLanguageName}" language="language" showflags="params.showFlags" showname="params.showLanguageName" first-flag="$first" last-flag="$last" my-event="$event" index="$index" enter-event="navigateToHomeLanguagePage(language)"><div style="display: inline-block; outline: 0px" tabindex="0" role="link" ng-attr-aria-label="{{langLabel}}" id="lang-0" aria-label="English Usa">
+    <img ng-attr-alt="{{language.language.flag }} Flag" ng-show="showFlags" ng-src="images/flags/Usa.png" tabindex="-1" aria-hidden="true" class="langBorder ng-hide" alt="Usa Flag" src="index_data/Usa.png">
+    <span ng-show="showName" tabindex="-1" class="ng-hide">
+        <span ng-show="language.language.nativeName" tabindex="-1" class="langBorder ng-binding ng-hide"></span>
+        <span ng-show="!language.language.nativeName" tabindex="-1" class="langBorder ng-binding">English (USA)</span>
+    </span>
+    <span ng-show="!showName" tabindex="-1" aria-hidden="true" ng-attr-aria-label="{{langLabel}}" aria-label="English Usa">
+        <span tabindex="-1" class="langBorder ng-binding">EN</span>
+    </span>
+</div></language><!-- end ngRepeat: language in params.siteLanguages --><language ng-click="navigateToHomeLanguagePage(language)" class="separator ng-scope ng-isolate-scope isShort" tabindex="-1" ng-repeat="language in params.siteLanguages" ng-class="{'language-selected': isLanguagesEqual(language, selectedSiteLanguage),
+                     'language-bold': params.languageNameFontStyle.bold,
+                     'language-italic': params.languageNameFontStyle.italic,
+                     'language-hover-bold': params.languageHoverFontStyle.bold,
+                     'language-hover-italic': params.languageHoverFontStyle.italic,
+                     'language-selected-bold': params.currentLanguageFontStyle.bold,
+                     'language-selected-italic': params.currentLanguageFontStyle.italic,
+                     'isLong': params.showLanguageName,
+                     'isShort': !params.showLanguageName}" language="language" showflags="params.showFlags" showname="params.showLanguageName" first-flag="$first" last-flag="$last" my-event="$event" index="$index" enter-event="navigateToHomeLanguagePage(language)"><div style="display: inline-block; outline: 0px" tabindex="0" role="link" ng-attr-aria-label="{{langLabel}}" id="lang-1" aria-label="español">
+    <img ng-attr-alt="{{language.language.flag }} Flag" ng-show="showFlags" ng-src="images/flags/Spain.png" tabindex="-1" aria-hidden="true" class="langBorder ng-hide" alt="Spain Flag" src="index_data/Spain.png">
+    <span ng-show="showName" tabindex="-1" class="ng-hide">
+        <span ng-show="language.language.nativeName" tabindex="-1" class="langBorder ng-binding">Español</span>
+        <span ng-show="!language.language.nativeName" tabindex="-1" class="langBorder ng-binding ng-hide">Spanish (SPAIN)</span>
+    </span>
+    <span ng-show="!showName" tabindex="-1" aria-hidden="true" ng-attr-aria-label="{{langLabel}}" aria-label="español">
+        <span tabindex="-1" class="langBorder ng-binding">ES</span>
+    </span>
+</div></language><!-- end ngRepeat: language in params.siteLanguages --><language ng-click="navigateToHomeLanguagePage(language)" class="separator ng-scope ng-isolate-scope isShort" tabindex="-1" ng-repeat="language in params.siteLanguages" ng-class="{'language-selected': isLanguagesEqual(language, selectedSiteLanguage),
+                     'language-bold': params.languageNameFontStyle.bold,
+                     'language-italic': params.languageNameFontStyle.italic,
+                     'language-hover-bold': params.languageHoverFontStyle.bold,
+                     'language-hover-italic': params.languageHoverFontStyle.italic,
+                     'language-selected-bold': params.currentLanguageFontStyle.bold,
+                     'language-selected-italic': params.currentLanguageFontStyle.italic,
+                     'isLong': params.showLanguageName,
+                     'isShort': !params.showLanguageName}" language="language" showflags="params.showFlags" showname="params.showLanguageName" first-flag="$first" last-flag="$last" my-event="$event" index="$index" enter-event="navigateToHomeLanguagePage(language)"><div style="display: inline-block; outline: 0px" tabindex="0" role="link" ng-attr-aria-label="{{langLabel}}" id="lang-2" aria-label="Русский">
+    <img ng-attr-alt="{{language.language.flag }} Flag" ng-show="showFlags" ng-src="images/flags/Russia.png" tabindex="-1" aria-hidden="true" class="langBorder ng-hide" alt="Russia Flag" src="index_data/Russia.png">
+    <span ng-show="showName" tabindex="-1" class="ng-hide">
+        <span ng-show="language.language.nativeName" tabindex="-1" class="langBorder ng-binding">Русский</span>
+        <span ng-show="!language.language.nativeName" tabindex="-1" class="langBorder ng-binding ng-hide">Russian (RUSSIA)</span>
+    </span>
+    <span ng-show="!showName" tabindex="-1" aria-hidden="true" ng-attr-aria-label="{{langLabel}}" aria-label="Русский">
+        <span tabindex="-1" class="langBorder ng-binding">RU</span>
+    </span>
+</div></language><!-- end ngRepeat: language in params.siteLanguages --><language ng-click="navigateToHomeLanguagePage(language)" class="separator ng-scope ng-isolate-scope isShort" tabindex="-1" ng-repeat="language in params.siteLanguages" ng-class="{'language-selected': isLanguagesEqual(language, selectedSiteLanguage),
+                     'language-bold': params.languageNameFontStyle.bold,
+                     'language-italic': params.languageNameFontStyle.italic,
+                     'language-hover-bold': params.languageHoverFontStyle.bold,
+                     'language-hover-italic': params.languageHoverFontStyle.italic,
+                     'language-selected-bold': params.currentLanguageFontStyle.bold,
+                     'language-selected-italic': params.currentLanguageFontStyle.italic,
+                     'isLong': params.showLanguageName,
+                     'isShort': !params.showLanguageName}" language="language" showflags="params.showFlags" showname="params.showLanguageName" first-flag="$first" last-flag="$last" my-event="$event" index="$index" enter-event="navigateToHomeLanguagePage(language)"><div style="display: inline-block; outline: 0px" tabindex="0" role="link" ng-attr-aria-label="{{langLabel}}" id="lang-3" aria-label="português">
+    <img ng-attr-alt="{{language.language.flag }} Flag" ng-show="showFlags" ng-src="images/flags/Portugal.png" tabindex="-1" aria-hidden="true" class="langBorder ng-hide" alt="Portugal Flag" src="index_data/Portugal.png">
+    <span ng-show="showName" tabindex="-1" class="ng-hide">
+        <span ng-show="language.language.nativeName" tabindex="-1" class="langBorder ng-binding">Português</span>
+        <span ng-show="!language.language.nativeName" tabindex="-1" class="langBorder ng-binding ng-hide">Portuguese (PORTUGAL)</span>
+    </span>
+    <span ng-show="!showName" tabindex="-1" aria-hidden="true" ng-attr-aria-label="{{langLabel}}" aria-label="português">
+        <span tabindex="-1" class="langBorder ng-binding">PT</span>
+    </span>
+</div></language><!-- end ngRepeat: language in params.siteLanguages --><language ng-click="navigateToHomeLanguagePage(language)" class="separator ng-scope ng-isolate-scope isShort" tabindex="-1" ng-repeat="language in params.siteLanguages" ng-class="{'language-selected': isLanguagesEqual(language, selectedSiteLanguage),
+                     'language-bold': params.languageNameFontStyle.bold,
+                     'language-italic': params.languageNameFontStyle.italic,
+                     'language-hover-bold': params.languageHoverFontStyle.bold,
+                     'language-hover-italic': params.languageHoverFontStyle.italic,
+                     'language-selected-bold': params.currentLanguageFontStyle.bold,
+                     'language-selected-italic': params.currentLanguageFontStyle.italic,
+                     'isLong': params.showLanguageName,
+                     'isShort': !params.showLanguageName}" language="language" showflags="params.showFlags" showname="params.showLanguageName" first-flag="$first" last-flag="$last" my-event="$event" index="$index" enter-event="navigateToHomeLanguagePage(language)"><div style="display: inline-block; outline: 0px" tabindex="0" role="link" ng-attr-aria-label="{{langLabel}}" id="lang-4" aria-label="italiano">
+    <img ng-attr-alt="{{language.language.flag }} Flag" ng-show="showFlags" ng-src="images/flags/Italy.png" tabindex="-1" aria-hidden="true" class="langBorder ng-hide" alt="Italy Flag" src="index_data/Italy.png">
+    <span ng-show="showName" tabindex="-1" class="ng-hide">
+        <span ng-show="language.language.nativeName" tabindex="-1" class="langBorder ng-binding">Italiano</span>
+        <span ng-show="!language.language.nativeName" tabindex="-1" class="langBorder ng-binding ng-hide">Italian (ITALY)</span>
+    </span>
+    <span ng-show="!showName" tabindex="-1" aria-hidden="true" ng-attr-aria-label="{{langLabel}}" aria-label="italiano">
+        <span tabindex="-1" class="langBorder ng-binding">IT</span>
+    </span>
+</div></language><!-- end ngRepeat: language in params.siteLanguages --><language ng-click="navigateToHomeLanguagePage(language)" class="separator ng-scope ng-isolate-scope isShort" tabindex="-1" ng-repeat="language in params.siteLanguages" ng-class="{'language-selected': isLanguagesEqual(language, selectedSiteLanguage),
+                     'language-bold': params.languageNameFontStyle.bold,
+                     'language-italic': params.languageNameFontStyle.italic,
+                     'language-hover-bold': params.languageHoverFontStyle.bold,
+                     'language-hover-italic': params.languageHoverFontStyle.italic,
+                     'language-selected-bold': params.currentLanguageFontStyle.bold,
+                     'language-selected-italic': params.currentLanguageFontStyle.italic,
+                     'isLong': params.showLanguageName,
+                     'isShort': !params.showLanguageName}" language="language" showflags="params.showFlags" showname="params.showLanguageName" first-flag="$first" last-flag="$last" my-event="$event" index="$index" enter-event="navigateToHomeLanguagePage(language)"><div style="display: inline-block; outline: 0px" tabindex="0" role="link" ng-attr-aria-label="{{langLabel}}" id="lang-5" aria-label="français">
+    <img ng-attr-alt="{{language.language.flag }} Flag" ng-show="showFlags" ng-src="images/flags/France.png" tabindex="-1" aria-hidden="true" class="langBorder ng-hide" alt="France Flag" src="index_data/France.png">
+    <span ng-show="showName" tabindex="-1" class="ng-hide">
+        <span ng-show="language.language.nativeName" tabindex="-1" class="langBorder ng-binding">Français</span>
+        <span ng-show="!language.language.nativeName" tabindex="-1" class="langBorder ng-binding ng-hide">French (FRANCE)</span>
+    </span>
+    <span ng-show="!showName" tabindex="-1" aria-hidden="true" ng-attr-aria-label="{{langLabel}}" aria-label="français">
+        <span tabindex="-1" class="langBorder ng-binding">FR</span>
+    </span>
+</div></language><!-- end ngRepeat: language in params.siteLanguages --><language ng-click="navigateToHomeLanguagePage(language)" class="separator ng-scope ng-isolate-scope isShort" tabindex="-1" ng-repeat="language in params.siteLanguages" ng-class="{'language-selected': isLanguagesEqual(language, selectedSiteLanguage),
+                     'language-bold': params.languageNameFontStyle.bold,
+                     'language-italic': params.languageNameFontStyle.italic,
+                     'language-hover-bold': params.languageHoverFontStyle.bold,
+                     'language-hover-italic': params.languageHoverFontStyle.italic,
+                     'language-selected-bold': params.currentLanguageFontStyle.bold,
+                     'language-selected-italic': params.currentLanguageFontStyle.italic,
+                     'isLong': params.showLanguageName,
+                     'isShort': !params.showLanguageName}" language="language" showflags="params.showFlags" showname="params.showLanguageName" first-flag="$first" last-flag="$last" my-event="$event" index="$index" enter-event="navigateToHomeLanguagePage(language)"><div style="display: inline-block; outline: 0px" tabindex="0" role="link" ng-attr-aria-label="{{langLabel}}" id="lang-6" aria-label="Deutsch">
+    <img ng-attr-alt="{{language.language.flag }} Flag" ng-show="showFlags" ng-src="images/flags/Germany.png" tabindex="-1" aria-hidden="true" class="langBorder ng-hide" alt="Germany Flag" src="index_data/Germany.png">
+    <span ng-show="showName" tabindex="-1" class="ng-hide">
+        <span ng-show="language.language.nativeName" tabindex="-1" class="langBorder ng-binding">Deutsch</span>
+        <span ng-show="!language.language.nativeName" tabindex="-1" class="langBorder ng-binding ng-hide">German (GERMANY)</span>
+    </span>
+    <span ng-show="!showName" tabindex="-1" aria-hidden="true" ng-attr-aria-label="{{langLabel}}" aria-label="Deutsch">
+        <span tabindex="-1" class="langBorder ng-binding">DE</span>
+    </span>
+</div></language><!-- end ngRepeat: language in params.siteLanguages -->
+</div></div>
+
+<script src="index_data/jquery.js"></script>
+<script src="index_data/angular.js"></script>
+<script src="index_data/angular-route.js"></script>
+
+<script src="index_data/4017b157.js"></script>
+
+
+</body></html>

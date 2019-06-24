@@ -1,0 +1,1 @@
+var url=document.URL,ua=navigator.userAgent;url.match(/about/)?redirectPass="/sp/about/":redirectPass="/sp/",(-1!=ua.search(/iPhone/)||-1!=ua.search(/iPad/)||-1!=ua.search(/iPod/)||-1!=ua.search(/Android/))&&(location.href=redirectPass);

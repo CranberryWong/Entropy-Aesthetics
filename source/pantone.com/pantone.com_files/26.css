@@ -1,0 +1,90 @@
+section {
+    border-bottom: 0 !important;
+}
+
+.productContainer h4 {
+    width: 100% !important;
+}
+
+.tile.productItem {
+    width: 30%;
+}
+
+.tile.productItem .image {
+    width: 100%;
+    height: 363px;
+}
+
+    .tile.productItem .image img {
+        max-width: 363px;
+    }
+
+.tile.productItem .ribbon-wrapper {
+    top: 10px;
+}
+
+.tile.productItem #prodDescrip .price {
+    display: none;
+}
+
+@media only screen and (max-width : 1200px) {
+    .tile.productItem .image img {
+        width: 100%;
+    }
+
+    .tile.productItem .image {
+        height: 360px;
+    }
+}
+
+@media only screen and (max-width : 995px) {
+    .tile.productItem {
+        width: 45%;
+    }
+
+        .tile.productItem .image {
+            height: 360px;
+        }
+}
+
+@media only screen and (max-width : 780px) {
+    .tile.productItem .image {
+        height: 320px;
+    }
+}
+
+@media only screen and (max-width : 700px) {
+    .tile.productItem .image {
+        height: 290px;
+    }
+}
+
+@media only screen and (max-width : 600px) {
+    .tile.productItem .image {
+        height: 250px;
+    }
+}
+
+@media only screen and (max-width : 500px) {
+    .tile.productItem .image {
+        height: 200px;
+    }
+}
+
+@media only screen and (max-width : 450px) {
+    .tile.productItem .image {
+        height: 180px;
+    }
+}
+
+@media only screen and (max-width : 350px) {
+    .tile.productItem .image {
+        height: 130px;
+    }
+}
+
+div.ctnPresenceHold {
+	padding-left: 0px;
+}
+
+h3.offerDetails a { color: #fff !important; } 

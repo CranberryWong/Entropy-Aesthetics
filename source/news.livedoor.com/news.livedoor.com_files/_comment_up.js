@@ -1,0 +1,3 @@
+var comment_up=(function(){return{click:function(comment_id){var timeout_msec=5000;var message={'default':'<li>更新に失敗しました。時間をおいて再度お試しください。</li>','comment_id_required':"<li>不正なパラメーターです。</li>",'comment_id_invalid':"<li>不正なパラメーターです。</li>",'cpost_continued':"<li>短時間での変更は出来ません。時間をおいて再度お試しください。</li>"};$.ajax({type:'POST',url:"/user/comment/up",data:{comment_id:comment_id},success:function(json){if(json.status=="success"){comment_up.display(comment_id,json);}
+else if(message[json.message]){$("#up_status"+comment_id).html(message[json.message]);}
+else{$("#up_status"+comment_id).html(message['default']);}},dataType:'json'});},display:function(comment_id,json){$("#up_count"+comment_id).html(json.current_up_count+"そうだね");}}})();

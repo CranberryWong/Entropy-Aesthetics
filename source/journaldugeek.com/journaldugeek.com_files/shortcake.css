@@ -1,0 +1,23 @@
+/* Admin style */
+.add-shortcode-list .shortcode-list-item .add-shortcode-list-item-icon .dashicons {
+    width: 150px !important;
+    height: 150px !important;
+}
+
+.add-shortcode-list .shortcode-list-item .add-shortcode-list-item-icon .dashicons, .add-shortcode-list .shortcode-list-item .add-shortcode-list-item-icon img {
+    max-height: 100% !important;
+    max-width: 100% !important;
+}
+
+/* Thumbs */
+.dashicons.dashicons-thumbnail-jdg-quote {
+    background: url("../img/thumb-jdg-quote.png") !important;
+}
+
+.dashicons.dashicons-thumbnail-jdg-read-also {
+    background: url("../img/thumb-jdg-read-also.png") !important;
+}
+
+.dashicons.dashicons-thumbnail-jdg-promo {
+    background: url("../img/thumb-jdg-promo.png") !important;
+}

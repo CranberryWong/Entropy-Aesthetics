@@ -1,0 +1,2109 @@
+/* CSS Document */
+
+/********************************************************************/
+/* 大外 */
+#container {
+	width: 860px;
+	background-color: #FFFFFF;
+	border-right: 1px solid #CCCCCC;
+	border-left: 1px solid #CCCCCC;
+}
+
+/********************************************************************/
+/* ヘッダー */
+#header {
+	width: 840px;
+	height: 50px;
+	background-image: url(img/header-bg.gif);
+	margin: 0px;
+	padding: 10px;
+}
+
+/* ヘッダー下ライン */
+#bline {
+	width: 860px;
+	height: 5px;
+	margin: 0px;
+	padding: 0px;
+	background-color:#663322;
+}
+
+/********************************************************************/
+/* キャッチコピー */
+#copy {
+	width: 855px;
+	background-color: #AA5555;
+	margin: 0px;
+	padding: 5px 0px 5px 5px;
+	font-size: 10px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+/* キャッチコピーリンク設定有り */
+#copy A:link {
+	font-size: 10px;
+	color:#FFFFFF;
+}
+
+#copy A:active {
+	font-size: 10px;
+	color:#FFFFFF;
+}
+
+#copy A:visited {
+	font-size: 10px;
+	color:#FFFFFF;
+}
+
+#copy A:hover {
+	font-size: 10px;
+	color:#FFFFFF;
+} 
+
+/********************************************************************/
+/* ショップロゴ画像の場合使用 */
+.shoplogo {
+	width: 350px;
+	float: left;
+}
+
+/* ショップロゴテキストの場合使用 */
+.shoptext {
+	width: 350px;
+	margin: 10px 0px 0px 0px;
+	font-weight: bold;
+	float: left;
+	color:#FFFFFF;
+}
+
+.shoptext A:link {
+	color:#FFFFFF;
+}
+
+.shoptext A:active {
+	color:#FFFFFF;
+}
+
+.shoptext A:visited {
+	color:#FFFFFF;
+}
+
+.shoptext A:hover {
+	color:#FFFFFF;
+} 
+
+/********************************************************************/
+/* サブナビゲーション */
+.subnavi {
+	width: 440px;
+	background-color: #FFFFFF;
+	padding: 10px;
+	border: 4px solid #AA5555;
+	float: left;
+}
+
+/* ご利用案内アイコン　
+※アイコンサイズ横15px×縦15px
+※アイコン系はalignでなく左マージンで右にあわせる */
+.subicon01 {
+	height: 15px;
+	background-image: url(img/icon01.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 16px;
+}
+
+/* お問い合わせアイコン　
+※アイコンサイズ横15px×縦15px */
+.subicon02 {
+	height: 15px;
+	background-image: url(img/icon02.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 16px;
+	margin-right: 10px;
+}
+
+/* その他順行系アイコン　
+※アイコンサイズ横15px×縦15px */
+.subicon03 {
+	height: 15px;
+	background-image: url(img/icon03.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 16px;
+}
+
+/* 画面を閉じるアイコン　
+※アイコンサイズ横15px×縦15px */
+.subicon04 {
+	height: 15px;
+	background-image: url(img/icon_winclose.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+	padding-left: 16px;
+}
+
+/********************************************************************/
+/* 横幅ボックス */
+
+/* 左、右用枠160 */
+.side_box {
+	width: 159px;
+	margin: 0px 0px 10px;
+	padding: 0px;
+}
+
+/* 中央用枠160 */
+.center_box {
+	width: 490px;
+	margin: 0px 0px 10px;
+	padding: 0px;
+}
+
+/********************************************************************/
+/* 左領域 */
+
+/* カテゴリ一覧 */
+
+/* カテゴリ一覧タイトル　
+※背景画像横160px、縦は設定、空白は高さ指定 */
+.category_title {
+	width: auto;
+	height: 20px;
+	margin: 0px;
+	padding: 5px 0px 0px 18px;
+	background-image: url(img/menu_bg01.gif);
+}
+
+/* カテゴリ一覧部分 */
+.category_list {
+	width: auto;
+	margin: 0px;
+	padding: 5px 0px 0px;
+	color: #443311;
+	font-weight: bold;
+	background-color: #FFFFFF;
+}
+
+.category_list A:link {
+	color: #443311;
+}
+
+.category_list A:active {
+	color: #443311;
+}
+
+.category_list A:visited {
+	color: #443311;
+}
+
+.category_list A:hover {
+	color: #996633;
+}
+
+/*　親カテゴリの色※特集も共通 */
+.mcategory A:link {
+	color: #443311;
+}
+
+.mcategory A:active {
+	color: #443311;
+}
+
+.mcategory A:visited {
+	color: #443311;
+}
+
+.mcategory A:hover {
+	color: #996633;
+}
+
+/********************************************************************/
+/* 特集 */
+
+/* タイトル　
+※背景画像横160px、縦は設定、空白は高さ指定 */
+.pickup_category_title {
+	width: auto;
+	height: 20px;
+	margin: 0px;
+	padding: 5px 0px 0px 18px;
+	background-image: url(img/menu_bg01.gif);
+}
+
+/* 内容 */
+.pickup_category_list {
+	width: auto;
+	margin: 0px;
+	padding: 5px 0px 0px;
+	color: #443311;
+	font-weight: bold;
+	background-color: #FFFFFF;
+}
+
+.pickup_category_list A:link {
+	color: #443311;
+}
+
+.pickup_category_list A:active {
+	color: #443311;
+}
+
+.pickup_category_list A:visited {
+	color: #443311;
+}
+
+.pickup_category_list A:hover {
+	color: #996633;
+}
+
+/********************************************************************/
+/* ナビゲーション　
+※背景画像横160px、縦は設定、空白は高さ指定 */
+.navi {
+	width: auto;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* ナビゲーションリンク文字色 */
+.navi A:link {
+	color: #FFFFFF;
+}
+
+.navi A:active {
+	color: #FFFFFF;
+}
+
+.navi A:visited {
+	color: #FFFFFF;
+}
+
+.navi A:hover {
+	color: #FFFFFF;
+}
+
+/* ショップ通信 */
+.shop {
+	width: auto;
+	height: 20px;
+	margin: 0px 0px 1px;
+	padding: 5px 0px 0px 18px;
+	background-image: url(img/menu_bg02.gif);
+}
+
+/* 店長日記 */
+.diary {
+	width: auto;
+	height: 20px;
+	margin: 0px 0px 1px;
+	padding: 5px 0px 0px 18px;
+	background-image: url(img/menu_bg02.gif);
+}
+
+/* リンク集 */
+.link {
+	width: auto;
+	height: 20px;
+	margin: 0px 0px 1px;
+	padding: 5px 0px 0px 18px;
+	background-image: url(img/menu_bg02.gif);
+}
+
+/* 掲示板 */
+.bbs {
+	width: auto;
+	height: 20px;
+	margin: 0px 0px 1px;
+	padding: 5px 0px 0px 18px;
+	background-image: url(img/menu_bg02.gif);
+}
+
+/* フリー */
+.free_menu {
+	width: auto;
+	height: 20px;
+	margin: 0px 0px 1px;
+	padding: 5px 0px 0px 18px;
+	background-image: url(img/menu_bg02.gif);
+}
+
+/* yahooオークション */
+.yahoo {
+	width: auto;
+	height: 20px;
+	margin: 0px 0px 1px;
+	padding: 5px 0px 0px 18px;
+	background-image: url(img/menu_bg02.gif);
+}
+
+/* 楽天オークション */
+.rakuten {
+	width: auto;
+	height: 20px;
+	margin: 0px 0px 1px;
+	padding: 5px 0px 0px 18px;
+	background-image: url(img/menu_bg02.gif);
+}
+
+/* ビッダーズオークション */
+.bidders {
+	width: auto;
+	height: 20px;
+	margin: 0px 0px 1px;
+	padding: 5px 0px 0px 18px;
+	background-image: url(img/menu_bg02.gif);
+}
+
+/* オークションリンク文字サイズ */
+.yahoo A:link {
+	font-size: 10px;
+}
+
+.yahoo A:active {
+	font-size: 10px;
+}
+
+.yahoo A:visited {
+	font-size: 10px;
+}
+
+.yahoo A:hover {
+	font-size: 10px;
+}
+
+.rakuten A:link {
+	font-size: 10px;
+}
+
+.rakuten A:active {
+	font-size: 10px;
+}
+
+.rakuten A:visited {
+	font-size: 10px;
+}
+
+.rakuten A:hover {
+	font-size: 10px;
+}
+.bidders A:link {
+	font-size: 10px;
+}
+
+.bidders A:active {
+	font-size: 10px;
+}
+
+.bidders A:visited {
+	font-size: 10px;
+}
+
+.bidders A:hover {
+	font-size: 10px;
+}
+
+/********************************************************************/
+/* ショッピングカート */
+
+/* カートタイトル　
+※背景画像横160px、縦は設定、空白は高さ指定 */
+.shopc_title {
+	width: auto;
+	height: 20px;
+	margin: 0px;
+	padding: 5px 0px 0px 18px;
+	background-image: url(img/menu_bg01.gif);
+}
+
+/* カートの中身大枠 */
+.shopc_list {
+	width: auto;
+	background-color: #FFFFFF;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* カートの中身タイトル　
+※アイコンサイズ横25px×縦20px */
+.shopc_in_title {
+	width: auto;
+	height: 19px;
+	margin: 0px;
+	padding-left: 25px;
+	padding-top: 6px;
+	background-image: url(img/cart.gif);
+	background-repeat: no-repeat;
+	background-position: left center;
+	font-size: 10px;
+}
+
+/* カートの中身商品リスト */
+.shopc_in {
+	width: auto;
+	background-color: #EEDDBB;
+	margin: 0px 0px 1px;
+	padding: 5px;
+	font-size: 10px;
+}
+
+.shopc_in A:link {
+	color: #443311;
+}
+
+.shopc_in A:active {
+	color: #443311;
+}
+
+.shopc_in A:visited {
+	color: #443311;
+}
+
+.shopc_in A:hover{
+	color: #996633;
+}
+
+/* レジに行く */
+.shopc_go {
+	width: auto;
+	background-color: #FFFFFF;
+	margin: 0px;
+	padding: 5px;
+	color: #990000;
+	text-align: center;
+}
+
+/********************************************************************/
+/* メインコンテンツ領域 */
+
+/* メイン写真 */
+#photo {
+	width: 700px;
+	height: 130px;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* 左td */
+#lefttd {
+    width: 159px;
+	padding: 0px;
+	margin: 0px;
+	background: #E3E3E3;
+	border-right:1px solid #CCCCCC;
+}
+
+/* 中央td */
+#centertd {
+    width: 490px;
+	padding: 15px 10px 15px 15px;
+	margin: 0px;
+}
+
+/* 右td */
+#righttd {
+    width: 160px;
+	padding: 15px 15px 15px 5px;
+	margin: 0px;
+}
+
+/* 内部ページtd 
+#pagetd {
+}
+*/
+
+/* 写真影 */
+.photo_line_80 {
+	width: 80px;
+	height: auto;
+	border-right: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+	margin: 0px;
+	padding: 0px;
+}
+
+.photo_line_140 {
+	width: 140px;
+	height: auto;
+	border-right: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+	margin: 0px;
+	padding: 0px;
+}
+
+.photo_line_250 {
+	width: 250px;
+	height: auto;
+	border-right: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+	margin: 0px;
+	padding: 0px;
+}
+
+.photo_line {
+	width: auto;
+	height: auto;
+	border-right: 1px solid #666666;
+	border-bottom: 1px solid #666666;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* リンク用枠※買い物かご等の下ボタン枠 */
+.link_bot_box {
+	width: auto;
+	padding: 5px;
+	margin: 5px 200px 5px 200px;
+	background-color: #EEDDBB;
+	border: 5px solid #BB9966;
+	text-align: center;
+}
+
+/* トップテーブル幅 */
+.auto {
+    width:100%;
+}
+
+/********************************************************************/
+/* Welcome */
+
+/* 大枠上　
+※背景画像横490px、縦は設定、空白は高さ指定 */
+.welcome_top {
+	width: auto;
+	background-color: #CC9595;
+	border-top: 5px solid #AA5555;
+	border-right: 5px solid #AA5555;
+	border-left: 5px solid #AA5555;
+	margin: 0px;
+	padding: 5px 5px 0px 5px;
+	color: #FFFFFF;
+}
+
+/* 大枠中 */
+.welcome_middle {
+	width: auto;
+	background-color: #CC9595;
+	border-right: 5px solid #AA5555;
+	border-bottom: 5px none #AA5555;
+	border-left: 5px solid #AA5555;
+	margin: 0px;
+	padding: 5px;
+	color: #FFFFFF;
+}
+
+/* リンク色 */
+.welcome_middle A:link {
+	color: #FFFFFF;
+}
+
+.welcome_middle A:active {
+	color: #FFFFFF;
+}
+
+.welcome_middle A:visited {
+	color: #FFFFFF;
+}
+
+.welcome_middle A:hover {
+	color: #FFFFFF;
+}
+
+/* 大枠下 */
+.welcome_bottom {
+	width: auto;
+	background-color: #CC9595;
+	border-right: 5px solid #AA5555;
+	border-bottom: 5px solid #AA5555;
+	border-left: 5px solid #AA5555;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* 写真 */
+.photo_welcome {
+	width: auto;
+	margin: 0px 5px 0px 0px;
+	float:left;
+}
+
+/********************************************************************/
+/* 最新情報 */
+
+/* 大枠上　
+※背景画像横490px、縦は設定、空白は高さ指定 */
+.whatnew_top {
+	width: auto;
+	height: 20px;
+	margin: 0px;
+	padding: 0px;
+	font-size: 14px;
+	color: #663322;
+	font-weight: bold;
+}
+
+/* 大枠中 */
+.whatnew_middle {
+	width: auto;
+	border-top: 1px solid #CCCCCC;
+	border-right: 1px solid #CCCCCC;
+	border-left: 1px solid #CCCCCC;
+	margin: 0px;
+	padding: 5px 0px 0px 0px;
+	color:#443311;
+}
+
+/* 大枠下 */
+.whatnew_bottom {
+	width: auto;
+	border-right: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+	border-left: 1px solid #CCCCCC;
+	margin: 0px;
+	padding: 0px;
+}
+
+/********************************************************************/
+/* 商品関連レイアウト */
+
+/* スタイル1　中央上 */
+
+/* 大枠上 
+※背景画像横490px、縦は設定、空白は高さ指定 */
+.style1_top {
+	width: 472px;
+	height: 27px;
+	background-image: url(img/top_title_bg.gif);
+	margin: 0px;
+	padding: 8px 0px 0px 18px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+/* 大枠中 */
+.style1_middle {
+	width: 478px;
+	background-color: #FFFFFF;
+	border-top: 1px solid #CCCCCC;
+	border-right: 1px solid #CCCCCC;
+	border-left: 1px solid #CCCCCC;
+	margin: 2px 0px 0px;
+	padding: 5px;
+}
+
+/* 大枠下 */
+.style1_bottom {
+	width: auto;
+	background-color: #FFFFFF;
+	border-right: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+	border-left: 1px solid #CCCCCC;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* コピー */
+.style1_copy {
+	width: auto;
+	background-color: #EECCBB;
+	margin: 0px;
+	padding: 5px;
+	font-size: 10px;
+}
+
+/* 各テーブル枠上　
+※背景画像横478px(外ボーダーにより変動)、縦は設定、空白は高さ指定 */
+.style1_table_top {
+    width: auto;
+	margin-top: 5px;
+    padding: 0px;
+}
+
+/* 各テーブル枠中 */
+.style1_table_middle {
+    width: auto;
+	background-color: #CC9595;
+	margin: 0px;
+	padding: 5px;
+}
+
+/* 各テーブル枠下 */
+.style1_table_bottom {
+    width: auto;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* テーブル */
+.style1_table {
+	width: 468px;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* 写真 */
+.style1_photo {
+	width: auto;
+	margin: 0px 5px 0px 0px;
+	padding: 0px;
+}
+
+/* 説明 */
+.style1_text {
+	width: auto;
+	background-color: #FFFFFF;
+	margin: 0px;
+	padding: 5px;
+	font-size: 10px;
+}
+
+/* 商品名 */
+.item_name {
+	font-size: 14px;
+	font-weight: bold;
+}
+
+/* 価格 */
+.price {
+	font-size: 10px;
+	color: #669900;
+	font-weight: bold;
+}
+
+/* 価格大 */
+.priceb {
+	font-size: 12px;
+	color: #669900;
+	font-weight: bold;
+}
+
+/* 在庫ありなし */
+.stock {
+	color: #888888;
+}
+
+/********************************************************************/
+/* スタイル2　中央下 */
+
+/* 大枠上 
+※背景画像横490px、縦は設定、空白は高さ指定 */
+.style2_top {
+	width: 472px;
+	height: 27px;
+	background-image: url(img/top_title_bg.gif);
+	margin: 0px;
+	padding: 8px 0px 0px 18px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+/* 大枠中 */
+.style2_middle {
+	width: 478px;
+	background-color: #FFFFFF;
+	border-top: 1px solid #CCCCCC;
+	border-right: 1px solid #CCCCCC;
+	border-left: 1px solid #CCCCCC;
+	margin: 2px 0px 0px;
+	padding: 5px;
+}
+
+/* 大枠下 */
+.style2_bottom {
+	width: auto;
+	background-color: #FFFFFF;
+	border-right: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+	border-left: 1px solid #CCCCCC;
+	margin: 0px;
+	padding: 0px;
+}
+
+/*　コピー　*/
+.style2_copy {
+	width: auto;
+	background-color: #EECCBB;
+	margin: 0px;
+	padding: 5px;
+	font-size: 10px;
+}
+
+/* 各テーブル枠上　
+※背景画像横478px(外ボーダーにより変動)、縦は設定、空白は高さ指定 */
+.style2_table_top {
+    width: auto;
+	margin-top: 5px;
+    padding: 0px;
+}
+
+/* 各テーブル枠中 */
+.style2_table_middle {
+    width: auto;
+	background-color: #CC9595;
+	margin: 0px;
+	padding: 5px;
+}
+
+/* 各テーブル枠下 */
+.style2_table_bottom {
+    width: auto;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* テーブル */
+.style2_table {
+	width: 468px;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* 写真 */
+.style2_photo {
+	width: auto;
+	margin: 0px 5px 0px 0px;
+	padding: 0px;
+}
+
+/* 説明 */
+.style2_text {
+	width: auto;
+	background-color: #FFFFFF;
+	margin: 0px;
+	padding: 5px;
+	font-size: 10px;
+}
+
+/* 2-5位テーブル */
+.style2_rank_table {
+	width: 468px;
+	background-color: #CC9595;
+	margin-top: 0px;
+	padding: 0px;
+}
+
+/* 2-5位テーブルの各ｔｄ */
+.style2_rank_table td {
+    width: 117px;
+}
+
+/* 2-5位セル */
+.style2_rank {
+	width: auto;
+	background-color: #FFFFFF;
+	margin: 0px 2px 0px 2px;
+	padding: 5px;
+	font-size: 10px;
+}
+
+/* 2-5位写真 */
+.style2_rank_photo {
+	width: 80px;
+	margin: 0px 10px;
+	padding: 0px;
+}
+
+/* 2-5位説明 */
+.style2_rank_text {
+	width: 80px;
+	background-color: #FFFFFF;
+	margin: 0px 8px;
+	padding: 0px;
+	font-size: 10px;
+}
+
+/* 1位テキスト */
+.rank1 {
+	font-size: 14px;
+	color: #FFFFFF;
+	font-weight: bold;
+	width: auto;
+	padding-left: 5px;
+}
+
+/* 2-5位テキスト */
+.rank2-5 {
+	font-size: 10px;
+	color: #CC9595;
+	font-weight: bold;
+}
+
+/********************************************************************/
+/* 右領域 */
+
+/* スタイル3 */
+
+/* 大枠上 
+※背景画像横160px、縦は設定、空白は高さ指定 */
+.style3_top {
+	width: auto;
+	height: 20px;
+	background-image: url(img/menu_bg04.gif);
+	margin: 0px;
+	padding: 10px 0px 0px 23px;
+}
+
+/* 大枠中 */
+.style3_middle {
+	width: auto;
+	background-color: #443311;
+	border-right: 5px solid #443311;
+	border-left: 5px solid #443311;
+	margin: 0px;
+	padding: 5px;
+}
+
+/* 大枠下 */
+.style3_bottom {
+	width: auto;
+	background-color: #443311;
+	border-right: 5px solid #443311;
+	border-bottom: 5px solid #443311;
+	border-left: 5px solid #443311;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* コピー */
+.style3_copy {
+	width: auto;
+	background-color: #BB9966;
+	margin: 0px;
+	padding: 2px;
+	font-size: 10px;
+	color:#FFFFFF;
+	text-align: center;
+}
+
+/* テーブル */
+.style3_table {
+	width: auto;
+	background-color: #FFFFFF;
+	margin-top: 5px;
+	padding: 5px;
+}
+
+/* 写真 */
+.style3_photo {
+	width: 80px;
+	margin: 0px;
+	padding: 0px 22px;
+}
+
+/* 説明 */
+.style3_text {
+	width: auto;
+	background-color: #FFFFFF;
+	margin: 0px;
+	padding: 5px;
+	font-size: 10px;
+}
+
+/********************************************************************/
+/* メルマガ */
+
+/* 大枠上 
+※背景画像横160px、縦は設定、空白は高さ指定 */
+.melmaga_top {
+	width: auto;
+	height: 20px;
+	background-image: url(img/menu_bg05.gif);
+	margin: 0px;
+	padding: 10px 0px 0px 23px;
+}
+
+/* 大枠中 */
+.melmaga_middle {
+	width: auto;
+	background-color: #663322;
+	padding: 10px;
+	margin: 0px;
+}
+
+/* 大枠下 */
+.melmaga_bottom {
+	width: auto;
+	background-color: #663322;
+	margin: 0px;
+    padding: 0px;
+}
+
+/* 内容 */
+.mdata {
+	font-size: 10px;
+	color: #FFFFFF;
+	line-height: 140%;	
+}
+
+/********************************************************************/
+/* 私が店長です */
+
+/* 大枠上 
+※背景画像横160px、縦は設定、空白は高さ指定 */
+.tdiary_top {
+	width: auto;
+	height: 20px;
+	background-image: url(img/menu_bg05.gif);
+	margin: 0px;
+	padding: 10px 0px 0px 23px;
+}
+
+/* 大枠中 */
+.tdiary_middle {
+	width: auto;
+	background-color: #663322;
+	margin: 0px;
+	padding: 10px;
+	font-size: 10px;
+	color: #FFFFFF;
+}
+
+/* 大枠下 */
+.tdiary_bottom {
+	width: auto;
+	background-color: #663322;
+	margin: 0px;
+    padding: 0px;
+}
+
+/* 写真 */
+.tphoto {
+	width: 60px;
+	float: left;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* プロフィール */
+.tdata {
+	width: 60px;
+	float: left;
+	margin: 0px 0px 0px 5px;
+	padding: 0px;
+}
+
+/* プロフィールタイトル */
+.ttitle {
+	margin: 0px;
+	padding: 0px;
+	font-weight: bold;
+}
+
+/* コメント */
+.tcom {
+	margin: 5px 0px 0px;
+	padding: 5px;
+	background-color: #CC9595;
+}
+
+/**********************************/
+/* 第二階層 */
+
+/* 第二階層パンクズ下大枠 */
+#pagemain {
+	width: 670px;
+	margin: 0px;
+	padding: 0px 15px 15px;
+}
+
+/* 第二階層パンクズ */
+#pan {
+	padding: 5px;
+    width: auto;
+}
+
+/* 第二階層タイトル 
+※背景画像横670px、縦は設定(15px以上)、空白は高さ指定 */
+.ptitle {
+	width: 652px;
+	height: 26px;
+	background-image: url(img/page_title_bg01.gif);
+	margin-top: 5px;
+	padding: 9px 0px 0px 18px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+/* 第二階層中 */
+.pmiddle {
+	width: 658px;
+	background-color: #FFFFFF;
+	border-top: 1px solid #CCCCCC;
+	border-right: 1px solid #CCCCCC;
+	border-left: 1px solid #CCCCCC;
+	margin: 2px 0px 0px;
+	padding: 5px;
+}
+
+/* 第二階層下 */
+.pbottom {
+	width: 658px;
+	background-color: #FFFFFF;
+	border-right: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+	border-left: 1px solid #CCCCCC;
+	margin: 0px;
+	padding: 5px;
+}
+
+/* カートに入れる・お問い合わせボタン枠 */
+.item_bot_box {
+	background-color: #EECCBB;
+	margin: 0px;
+	padding: 5px 5px 5px 5px;
+}
+
+.item_bot_box2 {
+	border-top: 1px solid #FFFFFF;
+	margin: 0px;
+	padding: 5px 5px 5px 5px;
+}
+
+/********************************************************************/
+/* 商品一覧ページ */
+
+/* 商品一覧タイトル　
+※アイコンサイズ横35px×縦35px */
+.list_name {
+	width: 255px;
+	height: auto;
+	background-image: url(img/icon_sub_title01.gif);
+	background-repeat: no-repeat;
+	margin: 0px;
+	padding: 10px 0px 0px 15px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #AA5555;
+	float: left;
+}
+
+/* ソート */
+.list_soat {
+	width: 300px;
+	margin-left: 340px;
+	padding: 7px 0px 0px 15px;
+}
+
+/* 商品数 */
+.list_count {
+	width: auto;
+	border-top: 1px solid #CCCCCC;
+	margin: 0px 10px 5px;
+	padding: 5px 0px 0px 5px;
+}
+
+/* 各テーブル枠上　
+※背景画像横638px(外ボーダーにより変動)、縦は設定(15px以上)、空白は高さ指定 */
+.list_table_top {
+    width: auto;
+	margin: 10px 10px 0px 10px;
+    padding: 0px;
+}
+
+/* 各テーブル枠中 */
+.list_table_middle {
+    width: auto;
+	background-color: #CC9595;
+	margin: 0px 10px 0px 10px;
+	padding: 5px;
+}
+
+/* 各テーブル枠下 */
+.list_table_bottom {
+    width: auto;
+	margin: 0px 10px 0px 10px;
+	padding: 0px;
+}
+
+/* 商品一覧テーブル */
+.list_item_table {
+	width: 628px;
+	background-color: #CC9595;
+	margin: 0px;
+	padding: 0px;
+}
+
+/********************************************************************/
+/* 商品詳細ページ */
+
+/* テーブル枠上　
+※背景画像横638px(外ボーダー設定により変動)、縦は設定(15px以上)、空白は高さ指定 */
+.detail_table_top {
+	width: auto;
+	background-color: #CC9595;
+	padding: 0px;
+	margin: 10px 10px 0px 10px;
+}
+
+/* テーブル枠中 */
+.detail_table_middle {
+	width: auto;
+	background-color: #CC9595;
+	padding: 10px;
+	margin: 0px 10px 0px 10px;
+}
+
+/* テーブル枠下 */
+.detail_table_bottom {
+	width: auto;
+	background-color: #CC9595;
+	padding: 0px;
+	margin: 0px 10px 0px 10px;
+}
+
+/* 商品詳細テーブル */
+.detail_item_table {
+	width: 618px;
+	background-color: #CC9595;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* 商品詳細商品説明 */
+.detail_item_text {
+	width: auto;
+	background-color: #FFFFFF;
+	margin: 0px;
+	padding: 5px;
+	font-size: 12px;
+	color: #525236;
+	line-height: 160%;
+}
+
+/* 商品詳細サブタイトル 
+※背景画像横638px(外ボーダー設定により変動)、縦は設定(15px以上)、空白は高さ指定 */
+.detail_sub_title {
+	width: auto;
+	height: 26px;
+	background-image: url(img/page_title_bg01.gif);
+	margin: 5px 0px;
+	padding: 9px 0px 0px 18px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+/* 詳細説明 */
+.detail_sub_table {
+	width: 618px;
+	background-color: #CC9595;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* 他の写真 */
+.detail_sub_table02 {
+	width: 618px;
+	background-color: #CC9595;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* 詳細説明テキスト */
+.detail_sub_text {
+	width: auto;
+	background-color: #FFFFFF;
+	margin: 0px;
+	padding: 5px;
+}
+
+/* 他の写真サブセル */
+.sub_item {
+	width: auto;
+	margin: 0px 5px 5px;
+	padding: 5px;
+	background-color: #FFFFFF;
+}
+
+/* セル幅 */
+.detail_sub_table02 td {
+    width: 206px;
+}
+
+/* 他の商品写真 */
+.sub_item_photo {
+	width: auto;
+	height: auto;
+	margin: 5px 22px;
+	padding: 0px;
+}
+
+/********************************************************************/
+/* 内部ページのテーブル　※ptitle～pbottomの内側で使用 */
+
+/* 内部ページの上　
+※背景画像横618px(外ボーダー設定により変動)、縦は設定(15px以上)、空白は高さ指定 */
+.page_table_top {
+	width: auto;
+	height: 18px;
+	background-image: url(img/sub_menu_bg01.gif);
+	margin: 10px 20px 0px;
+	padding: 7px 5px 5px 18px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+/* 内部ページの中 */
+.page_table_middle {
+	width: auto;
+	background-color: #FFFFFF;
+	border-right: 1px solid #CCCCCC;
+	border-top: 1px solid #CCCCCC;
+	border-left: 1px solid #CCCCCC;
+	margin: 2px 20px 0px 20px;
+	padding: 10px 10px 0px 10px;
+}
+
+/* 内部ページの下 */
+.page_table_bottom {
+	width: auto;
+	height: 10px;
+	background-color: #FFFFFF;
+	border-right: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+	border-left: 1px solid #CCCCCC;
+	margin: 0px 20px 0px 20px;
+	padding: 0px;
+}
+
+/* 内部ページの上※デザイン違い
+かごSTEP1お客様情報の入力、STEP3、4の確認画面で使用 */
+.page_table2_top {
+	width: auto;
+	height: 17px;
+	background-image: url(img/sub_menu_bg02.gif);
+	margin: 10px 20px 0px;
+	padding: 7px 5px 5px 18px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+/* 内部ページの中 */
+.page_table2_middle {
+	width: auto;
+	background-color: #FFFFFF;
+	border-right: 1px solid #CCCCCC;
+	border-top: 1px solid #CCCCCC;
+	border-left: 1px solid #CCCCCC;
+	margin: 2px 20px 0px 20px;
+	padding: 10px 10px 0px 10px;
+}
+
+/* 内部ページの下 */
+.page_table2_bottom {
+	width: auto;
+	height: 10px;
+	background-color: #FFFFFF;
+	border-right: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+	border-left: 1px solid #CCCCCC;
+	margin: 0px 20px 0px 20px;
+	padding: 0px;
+}
+
+/* 内部ページbbs用 
+背景画像横幅522px　middleボーダー設定なしの場合520px */
+.page_table3_top {
+	width: auto;
+	height: 17px;
+	background-image: url(img/sub_menu_bg01.gif);
+	margin: 10px 20px 0px;
+	padding: 7px 5px 5px 18px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+/* 内部ページの中 */
+.page_table3_middle {
+	width: auto;
+	background-color: #FFFFFF;
+	border-right: 1px solid #CCCCCC;
+	border-top: 1px solid #CCCCCC;
+	border-left: 1px solid #CCCCCC;
+	margin: 2px 20px 0px 20px;
+	padding: 10px 10px 0px 10px;
+}
+
+/* 内部ページの下 */
+.page_table3_bottom {
+	width: auto;
+	height: 10px;
+	background-color: #FFFFFF;
+	border-right: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+	border-left: 1px solid #CCCCCC;
+	margin: 0px 20px 0px 20px;
+	padding: 0px;
+}
+
+
+/* 内部ページサブ上　
+※アイコンサイズ横35px×縦35px */
+.page_sub_top {
+	width: auto;
+	height: 25px;
+	background-image: url(img/icon_sub_title01.gif);
+	background-repeat: no-repeat;
+	border-bottom: 1px solid #CC9595;
+	margin-bottom: 5px;
+	padding: 9px 0px 0px 18px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #AA5555;
+}
+
+/* 内部ページサブ上　
+※アイコンサイズ横35px×縦35px
+ご利用案内で使用 */
+.page_sub2_top {
+	width: auto;
+	height: 25px;
+	background-image: url(img/icon_sub_title02.gif);
+	background-repeat: no-repeat;
+	border-bottom: 1px solid #DDBB66;
+	margin-bottom: 5px;
+	padding: 9px 0px 0px 18px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #996633;
+}
+
+/* 内部テーブルフレーム */
+.table_fream {
+    width: 595px ;
+}
+
+/********************************************************************/
+/* カートの中身 */
+
+/* カートの中身テーブル */
+.cart_table {
+	width: 595px;
+	margin-bottom:5px;
+}
+
+/* カートの中身テーブル　
+※配置がそのテーブル内で最も下の場合 */
+.cart_table_bottom {
+    width: 595px;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* カート注意書き、パスワード、新しいカード情報、ご利用ガイド */
+.point_box {
+	width: auto;
+	background-color:#EECCBB;
+	border: 1px solid #CC9595;
+	margin: 5px 5px 0px 0px;
+	padding: 10px;
+}
+
+.point_box2 {
+	width: auto;
+	background-color:#FFFFFF;
+	border-right: 1px solid #CC9595;
+	border-left: 1px solid #CC9595;
+	border-bottom: 1px solid #CC9595;
+	margin: 0px 5px 5px 0px;
+	padding: 5px;
+}
+
+.point_box3 {
+	width: auto;
+	background-color:#FFFFFF;
+	border: 5px solid #EECCBB;
+	margin: 10px;
+	padding: 5px;
+	text-align: center;
+}
+
+/* エラーボックス */
+.error_box {
+	width: auto;
+	background-color:#EECCBB;
+	border: 5px solid #AA5555;
+	margin: 5px 40px 0px 40px;
+	padding: 10px;
+}
+
+/* エラーテキスト */
+.error_text {
+    color: #669900;
+	font-weight: bold;
+}
+
+/* テーブルパティング　
+※各項目divに設定 */
+.box_padding {
+	padding: 2px;
+}
+
+/* カート金額 */
+.cart_price_box {
+	width: 150px;
+	background-color:#FFFFFF;
+	border-bottom: 1px solid #CC9595;
+	margin: 0px 0px 0px 5px;
+	padding: 5px;
+	text-align: right;
+}
+
+/* カートステップテーブル */
+.cart_step_table {
+	width: auto;
+	margin-left: 5px;
+}
+
+/* カートステップ 
+※現ページはcheck 画像サイズ横幅160px */
+.cart_step_1 {
+	width: auto;
+	background-color:#FFFFFF;
+	border-top: 1px solid #AA5555;
+	border-left: 1px solid #AA5555;
+	border-right: 1px solid #AA5555;
+	border-bottom: 1px solid #AA5555;
+	padding: 5px;
+}
+
+.cart_step_2 {
+	width: auto;
+    background-color:#FFFFFF;
+	border-top: 1px solid #AA5555;
+	border-right: 1px solid #AA5555;
+	border-bottom: 1px solid #AA5555;
+	padding: 5px;
+}
+
+.cart_step_3 {
+	width: auto;
+    background-color:#FFFFFF;
+	border-top: 1px solid #AA5555;
+	border-right: 1px solid #AA5555;
+	border-bottom: 1px solid #AA5555;
+	padding: 5px;
+}
+
+.cart_step_4 {
+	width: auto;
+    background-color:#FFFFFF;
+	border-top: 1px solid #AA5555;
+	border-right: 1px solid #AA5555;
+	border-bottom: 1px solid #AA5555;
+	padding: 5px;
+}
+
+.cart_step_1_check {
+	width: auto;
+	background-color:#EECCBB;
+	border-top: 1px solid #AA5555;
+	border-left: 1px solid #AA5555;
+	border-right: 1px solid #AA5555;
+	border-bottom: 1px solid #AA5555;
+	padding: 5px;
+	color: #AA5555;
+}
+
+.cart_step_2_check {
+	width: auto;
+    background-color:#EECCBB;
+	border-top: 1px solid #AA5555;
+	border-right: 1px solid #AA5555;
+	border-bottom: 1px solid #AA5555;
+	padding: 5px;
+	color: #AA5555;
+}
+
+.cart_step_3_check {
+	width: auto;
+    background-color:#EECCBB;
+	border-top: 1px solid #AA5555;
+	border-right: 1px solid #AA5555;
+	border-bottom: 1px solid #AA5555;
+	padding: 5px;
+	color: #AA5555;
+}
+
+.cart_step_4_check {
+	width: auto;
+    background-color:#EECCBB;
+	border-top: 1px solid #AA5555;
+	border-right: 1px solid #AA5555;
+	border-bottom: 1px solid #AA5555;
+	padding: 5px;
+	color: #AA5555;
+}
+
+/* 内容確認用テキスト */
+.bottom_check {
+	width: 608px;
+	text-align: center;
+	margin: 10px 20px 0px;
+	padding: 5px;
+	border-bottom: 1px solid #CCCCCC;
+}
+
+/* フォーム系td背景 */
+.td_color1 {
+    background-color:#AA5555;
+	border-top: 1px solid #FFFFFF;
+	border-left: 1px solid #FFFFFF;
+	padding: 5px;
+	color: #FFFFFF;
+}
+
+.td_color2 {
+    background-color:#EECCBB;
+	border-top: 1px solid #FFFFFF;
+	border-left: 1px solid #FFFFFF;
+	padding: 5px;
+}
+
+.td_color3 {
+    background-color:#CC9595;
+	border-top: 1px solid #FFFFFF;
+	border-left: 1px solid #FFFFFF;
+	padding: 5px;
+	color: #FFFFFF;
+}
+
+/********************************************************************/
+/* 店長日記・最新ニュース */
+
+/* 各テーブル枠上　
+※背景画像横618px(外ボーダー設定により変動)、縦は設定(15px以上)、空白は高さ指定 */
+.tdiary_news_table_top {
+	width: auto;
+	height: 17px;
+	background-image: url(img/sub_menu_bg01.gif);
+	margin: 10px 20px 0px;
+	padding: 8px 5px 5px 18px;
+	font-size: 14px;
+	font-weight: bold;
+	color: #FFFFFF;
+}
+
+/* 各テーブル枠中 */
+.tdiary_news_table_middle {
+	width: auto;
+	background-color: #DDBB66;
+	margin: 5px 20px 0px 20px;
+	padding: 0px 10px 0px 10px;
+}
+
+/* 各テーブル枠下 */
+.tdiary_news_table_bottom {
+	width: auto;
+	height: 10px;
+	background-color: #DDBB66;
+	margin: 0px 20px 0px 20px;
+	padding: 0px;
+}
+
+/* テーブル */
+.tdiary_news_table {
+	width: 595px;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* テキスト部分 */
+.tdiary_news_text {
+	width: auto;
+	background-color:#FFFFFF;
+	margin: 10px 0px 0px 0px;
+	padding: 10px;
+}
+
+/* 写真部分 */
+.tdiary_news_photo {
+	width: auto;
+	margin: 0px;
+	padding: 10px 5px 0px 0px;
+}
+
+/********************************************************************/
+/* リンク集・ショップのご案内 */
+
+/* td左 */
+.td_link_shop1 {
+    width: 150px;
+    background-color:#DDBB66;
+	border-bottom: 1px solid #FFFFFF;
+    border-right: 1px solid #FFFFFF;
+	padding: 5px;
+	color: #FFFFFF;
+}
+
+/* td右 */
+.td_link_shop2 {
+    width: auto;
+    background-color:#EEDDBB;
+	border-bottom: 1px solid #FFFFFF;
+	padding: 5px;
+}
+
+/* 大枠 */
+.link_shop {
+	background-color:#FFFFFF;
+    margin: 10px 5px 0px 5px;
+	padding: 10px 10px 0px 10px;
+}
+
+/* テーブル */
+.link_shop_table {
+	width: 625px;
+	margin: 0px;
+	padding: 10px;
+}
+
+/* ショップタイトル項目 */
+.shop_title {
+	width: auto;
+	height: 28px;
+	background-image: url(img/icon_sub_title02.gif);
+	background-repeat: no-repeat;
+	margin-bottom: 5px;
+	padding: 9px 0px 0px 15px;
+	font-size: 14px;
+	font-weight: bold;
+	color:#443311;
+}
+
+/* リンクタイトル項目 */
+.link_title {
+	width: auto;
+	margin-bottom: 5px;
+	padding: 9px 0px 0px 15px;
+}
+
+/* テキスト部分 */
+.shop_link_text {
+	width: auto;
+	margin: 0px;
+	padding: 10px;
+}
+
+/********************************************************************/
+/* ご利用ガイド */
+.guide_text {
+	width: auto;
+	margin: 0px;
+	padding: 0px 10px 5px 10px;
+}
+
+/********************************************************************/
+/* フッター */
+#footer {
+	padding: 10px 0px 10px 0px;
+	margin-top: 0px;
+	background: url(img/footer_bg.gif) #CC9595;
+	font-size: 10px;
+	color: #FFFFFF;
+	text-align: center;
+}
+
+/* おちゃのこ */
+/* 「おちゃのこネット ホームページ作成とショッピングカート付きネットショップ開業サービス」
+※上記の文言は必須項目ですので、削除する事は許可されていません。 */
+#ochanoko {
+	padding: 5px 15px 5px 0px;
+}
+
+/********************************************************************/
+/* ウィンドウを閉じる */
+.win_close {
+	padding-left: 10px;
+}
+
+
+/********************************************************************/
+/* 掲示板 */
+
+/* 大枠上　
+※背景画像横618px(外ボーダー設定により変動)、縦は設定(15px以上)、空白は高さ指定 */
+.bbs_table_top {
+	width: auto;
+	background-color: #CC9595;
+	margin: 20px 20px 0px 20px;
+	padding: 5px;
+}
+
+/* 大枠中 */
+.bbs_table_middle {
+	width: auto;
+	background-color: #CC9595;
+	margin: 0px 20px 0px 20px;
+	padding: 0px 10px 0px 10px;
+}
+
+/* 大枠下 */
+.bbs_table_bottom {
+	width: auto;
+	height: 10px;
+	background-color: #CC9595;
+	margin: 0px 20px 0px 20px;
+	padding: 0px;
+}
+
+/* テーブル小 */
+.bbs_table_stop {
+	width: 500px;
+	margin-left: 50px;
+	padding: 0px;
+}
+
+/* テーブル小 */
+.bbs_table_s {
+	width: 500px;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* テーブル */
+.bbs_table {
+	width: 598px;
+	margin: 0px;
+	padding: 0px;
+}
+
+/* tdカラー */
+.bbs_td_color1 {
+    width: 20px;
+	background-color:#AA5555;
+	padding: 5px;
+	color: #FFFFFF;
+}
+
+.bbs_td_color2 {
+    background-color:#FFFFFF;
+	padding: 5px;
+}
+
+.bbs_td_color3 {
+    width: 30px;
+    background-color:#FFFFFF;
+	padding: 5px;
+	color: #FFFFFF;
+}
+
+/* テキスト */
+.bbs_text {
+	width: auto;
+	background-color: #FFFFFF;
+	margin: 5px 5px 15px 5px;
+	padding: 10px;
+}
+
+/* ページ送り */
+.sec_line_top {
+	width: auto;
+	text-align: right;
+	margin: 10px 20px 0px;
+	padding: 5px;
+	border-top: 1px solid #CCCCCC;
+	border-bottom: 1px solid #CCCCCC;
+}
+
+/* リンク色 */
+.sec_line_top A:link {
+	font-weight: normal;
+	text-decoration: underline;
+	font-size: 12px;
+	line-height: 140%;
+}
+
+.sec_line_top A:active {
+	text-decoration: underline;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 140%;
+}
+
+.sec_line_top A:visited {
+	text-decoration: underline;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 140%;
+}
+
+.sec_line_top A:hover {
+	text-decoration: none;
+	font-size: 12px;
+	font-weight: normal;
+	line-height: 140%;
+}
+
+/********************************************************************/
+/* フォームボタン強調 */
+.bot_b input {
+    padding: 2px;
+	background: url(img/bot_bg.gif) #FFFFFF;
+	color: #FFFFFF;
+	font-weight: bold;
+}
+
+/********************************************************************/
+/* HTMLタグ要素 */
+body {
+	background-image: url(img/bg.gif);
+	word-break: break-all;
+	margin: 0px;
+	padding: 0px;
+	font-size: 12px;
+	color: #666666;
+	line-height: 140%;
+}
+
+A:link {
+	font-weight: bold;
+	text-decoration: underline;
+	font-size: 12px;
+	color: #663322;
+	line-height: 140%;
+}
+
+A:active {
+	text-decoration: underline;
+	font-size: 12px;
+	font-weight: bold;
+	color: #663322;
+	line-height: 140%;
+}
+
+A:visited {
+	text-decoration: underline;
+	font-size: 12px;
+	font-weight: bold;
+	color: #663322;
+	line-height: 140%;
+}
+
+A:hover {
+	text-decoration: none;
+	font-size: 12px;
+	font-weight: bold;
+	color: #AA5555;
+	line-height: 140%;
+}
+
+h1 {
+	margin: 0px;
+	padding: 0px;
+	font-size: 12px;
+	font-weight: normal;
+}
+
+h2 {
+	margin: 0px;
+	padding: 0px;
+	font-size: 12px;
+}
+
+h3 {
+	font-size: 12px;
+	color: #FFFFFF;
+	margin: 0px;
+	padding: 0px;
+}
+
+ul {
+	list-style-position: outside;
+	margin: 0px;
+	padding: 0px 3px 0px 25px;
+}
+
+/* ナビゲーション用リストアイコン
+注意：リストのため画像位置が上にずれる */
+.category_list li {
+	padding-bottom: 5px;
+	list-style-image: url(img/icon04.gif);
+}
+
+/* 特集用リストアイコン
+注意：リストのため画像位置が上にずれる */
+.pickup_category_list li {
+	padding-bottom: 5px;
+	list-style-image: url(img/icon04.gif);
+}
+
+li {
+	padding-bottom: 5px;
+}
+
+form {
+	margin: 0px;
+	padding: 0px;
+	display: inline;
+}
+
+/********************************************************************/
+/* 回り込み回避用スタイル */
+.clear-both {
+	clear: both;
+	height: 1px;
+	font-size: 1px;
+	text-align: center;
+	overflow: hidden;
+	visibility: hidden;
+}
+
+/********************************************************************/
+/* フォント */
+
+/* ボールド */
+.text-bold {
+	font-weight: bold;
+}
+
+/* ノーマル */
+.text-normal { 
+    font-weight:normal;
+}
+
+/* ボールド大 */
+.text-bold-b {
+	font-weight: bold;
+	font-size: 14px;
+}
+
+/* パンクズ現ページ */
+.thispage {
+    color: #AA5555;
+	font-weight: bold;
+}
+
+/* リンク文字かご関連 */
+.text-link-bot-b {
+	font-size: 14px;
+}
+
+/* サイズ小用 */
+.text-11 {
+	font-size: 10px;
+}
+
+/* サイズ大用 */
+.text-14 {
+	font-size: 14px;
+}
+
+/* ショップロゴ用 */
+.text-18 {
+	font-size: 20px;
+	line-height: 100%;
+}
+
+/* 掲示板テキスト用カラー */
+.bbs_color {
+	color: #AA5555;
+}

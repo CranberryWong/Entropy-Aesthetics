@@ -1,0 +1,22 @@
+if(!!self._AN && !!self._AN.cbo){_AN.cbo({"shse":"",
+"ccnt":0,
+"pitv":0,
+"prpg":"",
+"ditv":0,
+"rflg":0,
+"entp":"",
+"entr":"",
+"lstr":"",
+"lgs":"e"
+},{"lgse":"",
+"mid":"",
+"faxs":0,
+"axst":0,
+"treq":0,
+"axsc":0,
+"axsd":0,
+"arec":"",
+"lstp":"",
+"rcm_h":"",
+"rcm_s":""
+},0);}

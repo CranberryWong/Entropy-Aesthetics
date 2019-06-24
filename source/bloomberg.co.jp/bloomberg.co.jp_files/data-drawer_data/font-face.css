@@ -1,0 +1,39 @@
+
+@font-face {
+    font-family: 'BWHaasText-55Roman';
+    
+    
+    
+    src: url('https://assets.bwbx.io/s3/fontservice/fonts/BWHaasText-55Roman-2558d87ee8.woff2') format('woff2'),
+         url('https://assets.bwbx.io/s3/fontservice/fonts/BWHaasText-55Roman-887c01ff69.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'BWHaasHead-95Black';
+    
+    
+    
+    src: url('https://assets.bwbx.io/s3/fontservice/fonts/BWHaasHead-95Black-d9b9c8bdda.woff2') format('woff2'),
+         url('https://assets.bwbx.io/s3/fontservice/fonts/BWHaasHead-95Black-576df53533.woff') format('woff');
+}
+
+@font-face {
+    font-family: 'Bloomberg';
+    
+    
+    src: url('https://assets.bwbx.io/s3/fontservice/fonts/Bloomberg-80751bb787.eot');
+    src: local('?'),
+         url('https://assets.bwbx.io/s3/fontservice/fonts/Bloomberg-61ac703bc1.woff2') format('woff2'),
+         url('https://assets.bwbx.io/s3/fontservice/fonts/Bloomberg-fc130197c4.woff') format('woff'),
+         url('https://assets.bwbx.io/s3/fontservice/fonts/Bloomberg-b8114e15f3.svg') format('svg'),
+         url('https://assets.bwbx.io/s3/fontservice/fonts/Bloomberg-33a81294bf.ttf') format('truetype');
+}
+
+@font-face {
+    font-family: 'BWHaasHead-75Bold';
+    
+    
+    
+    src: url('https://assets.bwbx.io/s3/fontservice/fonts/BWHaasHead-75Bold-f38aa54387.woff2') format('woff2'),
+         url('https://assets.bwbx.io/s3/fontservice/fonts/BWHaasHead-75Bold-a8669e9538.woff') format('woff');
+}

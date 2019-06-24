@@ -1,0 +1,188 @@
+@charset "utf-8";
+
+/* reset
+==============================*/
+
+html,
+body,
+div,
+span,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+abbr,
+address,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+samp,
+small,
+strong,
+sub,
+sup,
+var,
+b,
+i,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	outline: 0;
+	font-size: 100%;
+	vertical-align: baseline;
+	background: transparent;
+}
+
+body {
+/*	overflow-x: hidden;*/
+	width: 100%;
+	-webkit-text-size-adjust: 100%;
+}
+
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+
+ul,
+ol {
+	list-style: none;
+}
+
+blockquote,
+q {
+	quotes: none;
+}
+
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: '';
+	content: none;
+}
+
+a {
+	background: transparent;
+	vertical-align: baseline;
+	font-size: 100%;
+	padding: 0;
+	margin: 0;
+	text-decoration: none;
+}
+
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+img {
+	vertical-align: top;
+	width: 100%;
+	font-size: 0;
+	line-height: 0;
+}
+
+/* basic structure
+==============================*/
+
+html {
+	font-size: 62.5%;
+}
+
+body {
+	font-size: 1.3rem;
+	font-size: 13px;
+	color: #000;
+	font-family: "Hiragino Kaku Gothic Pro","Hiragino Kaku Gothic ProN","メイリオ","ＭＳ Ｐゴシック","MS P Gothic","Meiryo",Helvetica, sans-serif;
+	min-width: 1040px;
+	position: relative;
+}
+
+/*common element
+==============================*/
+header,
+article,
+footer{
+	margin: 0 auto;
+	box-sizing: border-box;
+	padding: 8px;
+}
+h1{
+	font-size: 16px;
+}
+a {
+}
+
+table {
+}
+
+th {
+}
+
+td {
+}
+/* 画面の横幅が748以下
+==============================*/
+@media screen and (max-width: 748px) {
+    body{
+        min-width: inherit;
+    }
+}

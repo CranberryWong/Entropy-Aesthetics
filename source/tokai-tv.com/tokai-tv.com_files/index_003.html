@@ -1,0 +1,672 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><style type="text/css">html {
+    height: 100%;
+}
+
+body {
+    margin: 0;
+    overflow: hidden;
+    user-select: none;
+    -moz-user-select: none;
+    -ms-user-select: none;
+    -webkit-user-select: none;
+    border: 0;
+    outline: 0;
+    -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+    text-align: center;
+    -webkit-transform-style: preserve-3d;
+    transform-style: preserve-3d;
+    font-size: 14px;
+}
+
+.hidden {
+    display: none;
+}
+
+.video_control_overlay {
+    height: 100%;
+    width: 100%;
+    position: absolute;
+    top: 0;
+    left: 0;
+    cursor: pointer;
+    z-index: 9100;
+}
+
+.video_control_overlay.controls_only {
+    height: 0;
+    width: 0;
+    position: absolute;
+    bottom: 0;
+    top: 100%;
+    left: 0;
+}
+
+.video_paused_overlay {
+    background: black;
+    opacity: 0.6;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    cursor: pointer;
+    z-index: 9100;
+}
+
+.spinner {
+    -webkit-animation: rotator 1.4s linear infinite;
+    animation: rotator 1.4s linear infinite;
+    top: 50%;
+    position: absolute;
+    left: 50%;
+    margin-top: -32px;
+    margin-left: -33px;
+}
+
+@-webkit-keyframes rotator {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(270deg);
+        transform: rotate(270deg);
+    }
+}
+
+@keyframes rotator {
+    0% {
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg);
+    }
+    100% {
+        -webkit-transform: rotate(270deg);
+        transform: rotate(270deg);
+    }
+}
+
+.path {
+    stroke-dasharray: 187;
+    stroke-dashoffset: 0;
+    -webkit-transform-origin: 33px 33px;
+    -ms-transform-origin: 33px 33px;
+    transform-origin: 33px 33px;
+    -webkit-animation: dash 1.4s ease-in-out infinite, colors 5.6s ease-in-out infinite;
+    animation: dash 1.4s ease-in-out infinite, colors 5.6s ease-in-out infinite;
+}
+
+@-webkit-keyframes colors {
+    0% {
+        stroke: #CCCCCC;
+    }
+    50% {
+        stroke: #FFFFFF;
+    }
+    100% {
+        stroke: #CCCCCC;
+    }
+}
+
+@keyframes colors {
+    0% {
+        stroke: #CCCCCC;
+    }
+    50% {
+        stroke: #FFFFFF;
+    }
+    100% {
+        stroke: #CCCCCC;
+    }
+}
+
+@-webkit-keyframes dash {
+    0% {
+        stroke-dashoffset: 187;
+    }
+    50% {
+        stroke-dashoffset: 46.75;
+        -webkit-transform: rotate(135deg);
+        transform: rotate(135deg);
+    }
+    100% {
+        stroke-dashoffset: 187;
+        -webkit-transform: rotate(450deg);
+        transform: rotate(450deg);
+    }
+}
+
+@keyframes dash {
+    0% {
+        stroke-dashoffset: 187;
+    }
+    50% {
+        stroke-dashoffset: 46.75;
+        -webkit-transform: rotate(135deg);
+        transform: rotate(135deg);
+    }
+    100% {
+        stroke-dashoffset: 187;
+        -webkit-transform: rotate(450deg);
+        transform: rotate(450deg);
+    }
+}
+
+.video_paused_overlay div.control {
+    left: 50%;
+    top: 50%;
+    position: absolute;
+    z-index: 1;
+    overflow: hidden;
+    padding: 0;
+    margin: -50px -25px 0.25em;
+    float: left;
+}
+
+.video_paused_overlay div.control div {
+    width: auto;
+    height: auto;
+    position: static;
+    margin-top: 0px;
+}
+
+.video_paused_overlay .play span {
+    padding-top: 70px;
+    padding-left: 70px;
+}
+
+.video_paused_overlay .play span:before {
+    left: 2px;
+    border: 32px solid transparent;
+    border-width: 44px 64px;
+    border-left-color: #CCCCCC;
+    margin-top: -44px;
+    background: transparent;
+}
+
+.video_paused_overlay .play:hover span:before,
+.video_controls .play div:focus span:before,
+.video_controls .play div:active span:before {
+    border-left-color: #FFFFFF;
+    background: transparent;
+}
+
+.video_control_overlay.mouse_device .video_controls {
+    opacity: 0;
+    -webkit-transition: opacity 0.5s;
+    transition: opacity 0.5s;
+}
+
+body:hover .video_control_overlay.mouse_device .video_controls {
+    opacity: 0.8;
+}
+
+.skip_control {
+    position: fixed;
+    top: 5px;
+    color: #FFFFFF;
+    font-family: sans-serif;
+    z-index: 9101;
+    opacity: 0.8;
+    left: 0;
+    right: 2px;
+    border-radius: 3px;
+    height: 37px;
+}
+
+.skip_control .skip {
+    top: 0px;
+    bottom: 0px;
+    width: 36px;
+    position: absolute;
+    right: 0px;
+}
+
+.skip_control .skip div {
+    margin-left: 4px;
+    height: 25px;
+    width: 25px;
+}
+
+.skip_control .skip div:before {
+    content: '';
+    left: 11px;
+    top: 4px;
+    height: 18px;
+    border-left: 3px solid #fff;
+    position: absolute;
+    transform: rotate(-45deg);
+}
+
+.skip_control .skip div:after {
+    content: '';
+    left: 11px;
+    top: 4px;
+    height: 18px;
+    border-left: 3px solid #fff;
+    position: absolute;
+    transform: rotate(45deg);
+}
+
+.video_controls {
+    position: fixed;
+    bottom: 0;
+    color: #FFFFFF;
+    font-family: sans-serif;
+    z-index: 9101;
+    opacity: 0.8;
+    left: 0;
+    right: 0;
+    border-radius: 3px;
+    height: 37px;
+}
+
+div.control {
+    position: relative;
+    z-index: 1;
+    overflow: hidden;
+    padding: 0;
+    float: left;
+    cursor: pointer;
+}
+
+div.control div {
+    width: 23px;
+    height: 25px;
+    top: 50%;
+    position: absolute;
+    margin-top: -12px;
+    margin-left: 9px;
+    background-color: #000;
+    border-radius: 5px;
+}
+
+div.control.volume, div.control.full, div.control.exit {
+    float: right;
+    margin-left: 0;
+}
+
+div.control div span {
+    display: block;
+    border: 0;
+    padding-left: 20px;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.video_control_overlay.mouse_device div.control div span {
+    color: #CCCCCC;
+}
+
+div.control div:hover span, div.control div:focus span, div.control div:active span {
+    color: #FFFFFF;
+    background: transparent;
+}
+
+div.control div:before, div.control div:after, div.control div span:before, div.control div span:after {
+    content: "";
+    position: absolute;
+    top: 50%;
+    left: 4px;
+}
+
+div.control span:before, div.control span:after {
+    margin: -8px 0 0;
+}
+
+.video_controls .play, .video_controls .pause {
+    width: 35px;
+    margin: 0;
+    position: absolute;
+    top: -27px;
+    bottom: -20px;
+    left: 0px;
+}
+
+.video_controls .play span, .video_controls .pause span {
+    padding-top: 25px;
+}
+
+.video_controls .play span:before {
+    left: 6px;
+    border: 8px solid transparent;
+    border-width: 8px 12px;
+    border-left-color: #CCCCCC;
+    margin-top: -8px;
+    background: transparent;
+}
+
+.video_control_overlay.mouse_device .video_controls .play span:before {
+    border-left-color: #CCCCCC;
+}
+
+.video_control_overlay .video_controls .play:hover span:before, .video_control_overlay .video_controls .play:focus span:before,
+.video_control_overlay .video_controls .play:active span:before, .video_control_overlay .video_controls .play:hover span:after,
+.video_control_overlay .video_controls .play:focus span:after, .video_control_overlay .video_controls .play:active span:after,
+.video_control_overlay .video_controls .play span:hover:before, .video_control_overlay .video_controls .play span:focus:before,
+.video_control_overlay .video_controls .play span:active:before, .video_control_overlay .video_controls .play span:hover:after,
+.video_control_overlay .video_controls .play span:focus:after, .video_control_overlay .video_controls .play span:active:after {
+    border-left-color: #FFFFFF;
+    background: transparent;
+}
+
+.video_controls .pause span:before {
+    left: 6px;
+    width: 0px;
+    height: 10px;
+    border: 2px solid #FFFFFF;
+    margin-top: -7px;
+    background: transparent;
+    border-radius: 2px 2px;
+}
+
+.video_control_overlay.mouse_device .video_controls .pause span:before {
+    border-color: #CCCCCC;
+}
+
+.video_controls .pause span:after {
+    left: 13px;
+    width: 0px;
+    height: 10px;
+    border: 2px solid #FFFFFF;
+    margin-top: -7px;
+    background: transparent;
+    border-radius: 2px 2px;
+}
+
+.video_control_overlay.mouse_device .video_controls .pause span:after {
+    border-color: #CCCCCC;
+}
+
+.video_control_overlay .video_controls .pause:hover span:before, .video_control_overlay .video_controls .pause:focus span:before,
+.video_control_overlay .video_controls .pause:active span:before, .video_control_overlay .video_controls .pause:hover span:after,
+.video_control_overlay .video_controls .pause:focus span:after, .video_control_overlay .video_controls .pause:active span:after {
+    border-color: #FFFFFF;
+    background: transparent;
+}
+
+.video_controls .volume {
+    width: 40px;
+    top: -27px;
+    bottom: -20px;
+    position: absolute;
+    right: 36px;
+}
+
+.video_controls .volume div {
+    margin-left: 11px;
+}
+
+.video_controls .volume span {
+    width: 0;
+}
+
+.video_controls .volume span:before {
+    right: 10px;
+    border: 7px solid transparent;
+    border-right-color: #FFFFFF;
+    margin-top: -7px;
+    background: transparent;
+    left: auto;
+}
+
+.video_control_overlay.mouse_device .video_controls .volume span:before {
+    border-right-color: #CCCCCC;
+}
+
+.video_controls .volume span:after {
+    right: 13px;
+    width: 4px;
+    height: 6px;
+    margin-top: -3px;
+    left: auto;
+    background: #FFFFFF;
+}
+
+.video_control_overlay.mouse_device .video_controls .volume span:after {
+    background: #CCCCCC;
+}
+
+.video_controls .volume:not(.volume-on) span:before {
+    right: 8px;
+    border: 8px solid transparent;
+    border-right-color: #FFFFFF;
+    margin-top: -9px;
+    background: transparent;
+    left: 0px;
+}
+
+.video_control_overlay.mouse_device .video_controls .volume:not(.volume-on) span:before {
+    border-right-color: #CCCCCC;
+}
+
+.video_controls .volume:not(.volume-on) span:after {
+    right: 13px;
+    width: 6px;
+    height: 6px;
+    margin-top: -3px;
+    left: 6px;
+}
+
+.video_controls .volume:not(.volume-on) div:after {
+    background-color: #FFFFFF;
+    border: 1px solid #000000;
+    width: 1px;
+    height: 18px;
+    top: 3px;
+    left: 10px;
+    -webkit-transform: rotate(30deg);
+    transform: rotate(30deg);
+}
+
+.video_control_overlay.mouse_device .video_controls .volume:not(.volume-on) div:after {
+    background-color: #CCCCCC;
+}
+
+.video_control_overlay .video_controls .volume:not(.volume-on):hover span:before, .video_control_overlay .video_controls .volume:not(.volume-on):focus span:before,
+.video_control_overlay .video_controls .volume:not(.volume-on):active span:before {
+    border-right-color: #FFFFFF;
+    background: transparent;
+}
+
+.video_control_overlay .video_controls .volume:not(.volume-on):hover span:after, .video_control_overlay .video_controls .volume:not(.volume-on):focus span:after,
+.video_control_overlay .video_controls .volume:not(.volume-on):active span:after, .video_control_overlay .video_controls .volume:not(.volume-on):hover div:after,
+.video_control_overlay .video_controls .volume:not(.volume-on):focus div:after, .video_control_overlay .video_controls .volume:not(.volume-on):active div:after {
+    background: #FFFFFF;
+}
+
+.video_controls .volume-on div:before {
+    right: 1px;
+    left: auto;
+    width: 6px;
+    height: 6px;
+    margin-top: -5px;
+    border: 4px double #1B9DD0;
+    border-width: 4px 4px 0 0; /* css3 */
+    border-radius: 0 15px 0 0;
+    -webkit-transform: rotate(45deg);
+    transform: rotate(45deg);
+}
+
+.video_control_overlay .video_controls .volume.volume-on div:before, .video_control_overlay .video_controls .volume.volume-on div:after {
+    border-color: #1B9DD0;
+}
+
+.video_control_overlay .video_controls .volume.volume-on span:before {
+    border-right-color: #1B9DD0;
+}
+
+.video_control_overlay .video_controls .volume.volume-on span:after {
+    background: #1B9DD0;
+}
+
+.video_control_overlay .video_controls .volume.volume-on:hover div:before {
+    border-color: #2BDDFF;
+}
+
+.video_control_overlay .video_controls .volume.volume-on:hover div:before, .video_controls .volume.volume-on:hover div:after {
+    border-color: #2BDDFF;
+}
+
+.video_control_overlay .video_controls .volume.volume-on:hover span:before {
+    border-right-color: #2BDDFF;
+}
+
+.video_control_overlay .video_controls .volume.volume-on:hover span:after {
+    background: #2BDDFF;
+}
+
+.video_controls .full, .video_controls .exit {
+    top: -27px;
+    bottom: -20px;
+    margin-right: 0px;
+    width: 36px;
+    position: absolute;
+    right: 0px;
+}
+
+.video_controls .full div, .video_controls .exit div {
+    margin-left: 4px;
+}
+
+.video_controls .full span {
+    width: 0;
+}
+
+.video_controls .full div:before, .video_controls .full div:after {
+    z-index: 12;
+    left: 9px;
+    width: 5px;
+    height: 7px;
+    border: 5px solid #000;
+    border-width: 5px 0;
+    margin-top: -8px; /* css3 */
+}
+
+.video_controls .full span:before, .video_controls .full span:after {
+    z-index: 10;
+    width: 11px;
+    height: 2px;
+    border-width: 2px 2px 0;
+    border-style: solid;
+    border-color: #FFFFFF #FFFFFF transparent;
+    margin-top: -6px;
+    background: transparent;
+}
+
+.video_control_overlay.mouse_device .video_controls .full span:before, .video_control_overlay.mouse_device .video_controls .full span:after {
+    border-color: #CCCCCC #CCCCCC transparent;
+}
+
+.video_controls .full span:after {
+    border-width: 0 2px 2px;
+    border-color: transparent #FFFFFF #FFFFFF;
+    margin-top: 3px;
+}
+
+.video_control_overlay.mouse_device .video_controls .full span:after {
+    border-color: transparent #CCCCCC #CCCCCC;
+}
+
+.video_control_overlay .video_controls .full:hover span:before, .video_control_overlay .video_controls .full:focus span:before,
+.video_control_overlay .video_controls .full:active span:before {
+    border-color: #FFFFFF #FFFFFF transparent;
+    background: transparent;
+}
+
+.video_control_overlay .video_controls .full:hover span:after, .video_control_overlay .video_controls .full:focus span:after,
+.video_control_overlay .video_controls .full:active span:after {
+    border-color: transparent #FFFFFF #FFFFFF;
+    background: transparent;
+}
+
+.video_controls .exit span {
+    width: 0;
+}
+
+.video_controls .exit div:before, .video_controls .exit div:after {
+    z-index: 17;
+    top: 16px;
+    left: 3px;
+    width: 4px;
+    height: 9px;
+    border: 5px solid #000;
+    border-width: 5px 0;
+    margin-top: -13px;
+}
+
+.video_controls .exit div:after {
+    left: 16px;
+}
+
+.video_controls .exit span:before, .video_controls .exit span:after {
+    z-index: 10;
+    left: 4px;
+    width: 5px;
+    border-width: 0px 5px;
+    border-style: solid;
+    border-color: #FFFFFF;
+    margin-top: -5px;
+    background: transparent;
+    height: 5px;
+    top: 10px;
+}
+
+.video_control_overlay.mouse_device .video_controls .exit span:before, .video_control_overlay.mouse_device .video_controls .exit span:after {
+    border-color: #CCCCCC;
+}
+
+.video_controls .exit span:after {
+    top: 20px;
+}
+
+.video_control_overlay .video_controls .exit:hover span:before, .video_control_overlay .video_controls .exit:focus span:before,
+.video_control_overlay .video_controls .exit:active span:before, .video_control_overlay .video_controls .exit:hover span:after,
+.video_control_overlay .video_controls .exit:focus span:after, .video_control_overlay .video_controls .exit:active span:after {
+    border-color: transparent #FFFFFF;
+    background: transparent;
+}
+
+.progress-bar {
+    height: 5px;
+    overflow: hidden;
+    background-color: #000000;
+    border-radius: 4px;
+    position: absolute;
+    bottom: 0px;
+    left: 0px;
+    right: 0px;
+}
+
+.progress-fill {
+    float: left;
+    width: 0;
+    height: 100%;
+    font-size: 12px;
+    line-height: 20px;
+    color: #8EC641;
+    text-align: center;
+    background-color: #8EC641;
+}</style></head><div id="moatPxDiv884628" style="width: 0px; height: 0px; position: absolute; top: 0px; left: 0px;"><iframe style="position: absolute; width: 8px; height: 4.939999999999998px; z-index: -9999; border-style: none;left: 0px; top: 0px;" id="MoatPxIOPT1_34297116" scrolling="no" width="8" height="4.939999999999998"></iframe></div><div id="moatPxDiv412158" style="width: 0px; height: 0px; position: absolute; top: 0px; left: 0px;"><iframe style="position: absolute; width: 8px; height: 4.94px; z-index: -9999; border-style: none; left: 342px; top: 0px;" id="MoatPxIOPT1_95006185" scrolling="no" width="8" height="4.939999999999998"></iframe></div><div id="moatPxDiv855606" style="width: 0px; height: 0px; position: absolute; top: 0px; left: 0px;"><iframe style="position: absolute; width: 8px; height: 4.94px; z-index: -9999; border-style: none; left: 0px; top: 192px;" id="MoatPxIOPT1_97710829" scrolling="no" width="8" height="4.939999999999998"></iframe></div><div id="moatPxDiv570076" style="width: 0px; height: 0px; position: absolute; top: 0px; left: 0px;"><iframe style="position: absolute; width: 8px; height: 4.94px; z-index: -9999; border-style: none; left: 341px; top: 191px;" id="MoatPxIOPT1_51164533" scrolling="no" width="8" height="4.939999999999998"></iframe></div><body style="height:100%; margin:0; cursor: pointer"><script type="text/javascript" src="index_data_003/moatvideo.js"></script><div id="spotx_click_overlay" style="height:100%; margin:0; cursor: pointer"><video style="width: 350px; height: 196.867px; background-color: rgb(0, 0, 0); display: block;" webkit-playsinline="true" playsinline="true" preload="auto" src="index_data_003/5b323406-ff08-495f-a2e3-700d0a920009-1500.mp4"><source src="index_data_003/5b323406-ff08-495f-a2e3-700d0a920009-1500.mp4" type="video/mp4"><source src="index_data_003/5b323406-ff08-495f-a2e3-700d0a920009-450.mp4" type="video/mp4"></video></div><script type="text/javascript" src="https://geo.moatads.com/n.js?e=35&amp;ud=1&amp;qn=(%2BIb%7Cj8o%3FJei%2F*%5EJqD(aD%5Bqir1fcSC%3AU%3FWOvTh%7CzFK%3F%5B%22l!j%3F%5DNCLmT%23%3CF%2B1S%2BapY%3C%5ECUo1vOJ%3D%3A9)NpU7ef%2C%7B%3BHm%24t3c%40%7CiF%3D%5EI5%5Dm%22%2Bx%7CoGq%3BR20qx7jQ8%24B2b%60RW3%3B%5Bixjrz2KD5pf5%5BG0&amp;qp=01000&amp;is=voqBBBBBBBHhBBBBBBBBBBRCqUCY3CTCcB7XwUcBBgBCBS9lYBBBCCBpYFmR4BOZBBgSJTcBB8lbNBBHUoBOF0yB7BB3CBBmv5BimpIe9oeCCClXqBvB8fBBBBBBBBBBBBBBCBMBa8BBrkKzBClBeaBBBBBBC5iMPzyHVY9zqxknZlysGBBBBBBBB9CBBBRpnICyBfBBRbBBBBBBBBBBC9ThFF3cOKBCBByBBBBBBBfLz1Be7fBBBpkBJ0BlDCSBCDDCCDDCDDCCCCCCCBdh2eBBBGI57kN08DJoBBBBBCBBBBB&amp;iv=6&amp;qt=0&amp;gz=0&amp;hh=0&amp;hn=0&amp;tw=&amp;qc=1920&amp;qd=1031&amp;qf=1920&amp;qe=902&amp;qh=1920&amp;qg=1009&amp;qm=-540&amp;qa=3840&amp;qb=2160&amp;qi=3840&amp;qj=2072&amp;qr=0&amp;i=SPOTXCHANGEJSVIDEO1&amp;hp=1&amp;cm=23&amp;kq=1&amp;hq=0&amp;hs=0&amp;hu=0&amp;hr=1&amp;ht=0&amp;dnt=0&amp;bq=8&amp;f=0&amp;j=&amp;o=3&amp;t=1532939331531&amp;de=564883232889&amp;m=0&amp;ar=b5e6c1a-clean&amp;q=2&amp;cb=0&amp;cu=1532939331531&amp;ll=7&amp;lm=0&amp;ln=1&amp;r=30.0.0&amp;em=0&amp;en=0&amp;d=225100%3A229108%3A1%3A36f4c.30fde.bb9e&amp;zMoatImpressionId=939d993b93d211e894621d7a88fc0007&amp;zMoatAD=unknown&amp;zMoatFD=-&amp;qs=1&amp;gu=http%3A%2F%2Ftokai-tv.com%2Findex.html&amp;bo=tokai-tv.com&amp;bd=undefined&amp;zMoatDomain=tokai-tv.com&amp;zMoatSubdomain=tokai-tv.com&amp;gw=spotxchangejsvideo759622536126&amp;fd=1&amp;ac=1&amp;it=500&amp;fs=148813&amp;na=2058578796&amp;cs=0&amp;callback=MoatSuperV26.gna457567"></script><div class="video_control_overlay mouse_device">&nbsp;<div class="video_paused_overlay" style="display: none;">
+    <svg class="spinner" width="65px" height="65px" viewBox="0 0 66 66" xmlns="http://www.w3.org/2000/svg" style="display: none;">
+        <circle class="path" fill="none" stroke-width="6" stroke-linecap="round" cx="33" cy="33" r="30"></circle>
+    </svg>
+    <div class="control play" style="">
+        <div><span>&nbsp;</span></div>
+    </div>
+</div>
+<div class="skip_control" style="display: none;">
+    <div class="control skip"><div><span>&nbsp;</span></div></div>
+</div>
+<div class="video_controls">
+    <div class="control play" style="display: none;">
+        <div><span></span></div>
+    </div>
+    <div class="control pause" style="">
+        <div><span></span></div>
+    </div>
+    <div class="progress-bar"><div class="progress-fill" style="width: 19.0092%;"></div></div>
+    <div class="control full"><div><span>&nbsp;</span></div></div>
+    <div class="control exit" style="display:none"><div><span>&nbsp;</span></div></div>
+    <div class="control volume volume-on"><div><span>&nbsp;</span></div></div>
+</div></div></body></html>

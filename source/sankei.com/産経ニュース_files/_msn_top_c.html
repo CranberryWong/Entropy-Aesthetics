@@ -1,0 +1,111 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Strict//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-strict.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml" xml:lang="ja-JP" class=" js flexbox canvas canvastext webgl no-touch geolocation postmessage no-websqldatabase indexeddb hashchange history draganddrop websockets rgba hsla multiplebgs backgroundsize borderimage borderradius boxshadow textshadow opacity cssanimations csscolumns cssgradients no-cssreflections csstransforms csstransforms3d csstransitions fontface generatedcontent video audio localstorage sessionstorage webworkers applicationcache svg inlinesvg smil svgclippaths" lang="ja-JP"><head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex">
+<title>試合速報・結果 - 産経ニュース</title>
+<link href="_msn_top_c_data/common.css" rel="stylesheet" type="text/css">
+<link href="_msn_top_c_data/sidebar.css" rel="stylesheet" type="text/css">
+<style>
+#Sidebar {
+	width: 270px;
+}
+
+#Sidebar .SideberTitle01 {
+	display: none;
+}
+
+#Sidebar #SidebarScoreBoardSection .ScoreBoard {
+	width: 100%;
+	border:1px solid #ffffff;
+	padding: 10px 0 0;
+}
+
+#Sidebar #SidebarScoreBoardSection .ScoreBoard .LocalNavigation {
+	width: 272px;
+	background-image: none;
+}
+#SidebarScoreBoardSection .ui-state-default,
+#SidebarScoreBoardSection .ui-state-active {
+	width: 64px;
+	background-image: none;
+	border: 1px solid #e6e6e6;
+	border-top-left-radius: 3px;
+	border-top-right-radius: 3px;
+}
+
+#SidebarScoreBoardSection .ui-state-active {
+	background-color: #ECEBEB;
+}
+
+
+#SidebarScoreBoardSection .ui-tabs .ui-tabs-nav li a, .ui-tabs.ui-tabs-collapsible .ui-tabs-nav li.ui-tabs-selected a { width: 57px;}
+
+#Sidebar #SidebarScoreBoardSection .ScoreBoard .score {
+	width:268px;
+	border-top:1px solid #E6E6E6 !important;
+
+}
+
+#Sidebar #SidebarScoreBoardSection .ScoreBoard .score table.detail01 {
+	width: 258px;
+	margin: 10px auto 0;
+}
+
+#Sidebar #SidebarScoreBoardSection .ScoreBoard .score table.detail01 td.team {
+	width:60px;
+}
+
+#SidebarScoreBoardSection .score .all {
+	width: 270px;
+	margin: 0 0 0 -1px !important;
+}
+
+#Sidebar #SidebarScoreBoardSection .ScoreBoard .score table.detail02 {
+	width: 258px;
+}
+
+/* color */
+#Sidebar #SidebarScoreBoardSection .ScoreBoard .score table.detail01 th ,
+#Sidebar #SidebarScoreBoardSection .ScoreBoard .score table.detail02 th {
+	background: #035380;
+}
+
+</style>
+
+<script type="text/javascript" src="_msn_top_c_data/jquery-1.js"></script>
+<script type="text/javascript" src="_msn_top_c_data/modernizr.js"></script>
+<script id="scmsFlashModule" src="_msn_top_c_data/flashModule.js"></script><script src="_msn_top_c_data/ui.js"></script><script src="_msn_top_c_data/jquery.js"></script>
+
+<script>
+
+
+$(function(){
+
+	var board = $("#SidebarScoreBoardSection");
+
+	$("#SidebarScoreBoardSection").on("click","table.detail01 a,table.detail02 a,p.more a",function(evt){
+
+		evt.preventDefault();
+		
+		var link = $(evt.target);
+		try{
+			top.window.location.href = link.attr("href");
+		}catch(e){
+			parent.location  = link.attr("href");
+		
+		}
+	});
+});
+
+
+</script>
+
+<script src="_msn_top_c_data/ui_002.js"></script><script src="_msn_top_c_data/getFlashModule.js"></script></head>
+<body>
+<!-- ***********Sidebar start*********** -->
+<div id="Sidebar">
+<div id="SidebarScoreBoardSection"><div class="SideberTitle01"><h2>「サッカー」の試合速報・結果</h2></div><div id="GameBoard" class="ScoreBoard ui-tabs ui-widget ui-widget-content ui-corner-all"><ul id="LocalNavigation" class="LocalNavigation ui-tabs-nav ui-helper-reset ui-helper-clearfix ui-widget-header ui-corner-all"><li class="ui-state-default ui-corner-top"><a href="#GameBoard_baseball">野球</a></li><li class="ui-state-default ui-corner-top ui-tabs-selected ui-state-active"><a href="#GameBoard_soccer">サッカー</a></li><li class="ui-state-default ui-corner-top"><a href="#GameBoard_rugby">ラグビー</a></li></ul><div id="GameBoard_baseball" class="score ui-tabs-panel ui-widget-content ui-corner-bottom ui-tabs-hide"></div><div id="GameBoard_soccer" class="score ui-tabs-panel ui-widget-content ui-corner-bottom"><ul class="SubNavigation"><li><a href="#sc_jp" class="selected">日本代表</a></li><li><a href="#sc_j1">Ｊ１</a></li><li><a href="#sc_j2">Ｊ２</a></li><li><a href="#sc_j3">Ｊ３</a></li><li><a href="#sc_jn">ルヴァン杯</a></li><li><a href="#sc_oh">天皇杯</a></li></ul><table class="detail01"><tbody><tr><th colspan="6">4カ国対抗（30日）</th></tr><tr class="bg01"><td class="team"><a href="https://www.sanspo.com/soccer/japan/women/player/20180713.html">日本女子</a></td><td class="flag"><a href="https://www.sanspo.com/soccer/japan/women/player/20180713.html"><img src="_msn_top_c_data/12_jpn.gif"></a></td><td><a href="https://www.sanspo.com/soccer/four_countries/2018/game/20180730/18774/com/detail.html">1 - 2</a></td><td class="flag"><img src="_msn_top_c_data/12_bra.gif"></td><td class="team">ブラジル女子</td><td class="status">終了</td></tr></tbody></table></div><div id="GameBoard_rugby" class="score ui-tabs-panel ui-widget-content ui-corner-bottom ui-tabs-hide"></div><p class="more"><a href="https://www.sanspo.com/soccer/japan/women/2018schedule.html">試合日程へ</a></p></div></div>
+</div>
+
+
+</body></html>

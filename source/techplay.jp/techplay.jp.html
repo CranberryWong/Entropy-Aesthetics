@@ -1,0 +1,914 @@
+<!DOCTYPE html>
+<html lang="ja"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="utf-8">
+    <title>TECH PLAY［テックプレイ］ - IT勉強会・セミナーなどのイベント情報検索サービス</title>
+    <meta name="author" content="techplay.jp">
+    <meta name="keywords" content="TECH PLAY,テックプレイ,IT勉強会,ITセミナー,ITイベント,エンジニア勉強会,技術勉強会,IT勉強会カレンダー,求人,転職">
+    <meta name="description" content="IT勉強会・セミナーを探すならTECH PLAY［テックプレイ］。点在している技術勉強会、セミナー情報をまとめて掲載しています。技術用語検索、地域検索、開催日時検索から興味のある勉強会をカンタンに探せるサービスです。">
+    <meta property="fb:app_id" content="703735426307641">
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="TECH PLAY［テックプレイ］ - IT勉強会・セミナーなどのイベント情報検索サービス">
+    <meta property="og:description" content="IT勉強会・セミナーを探すならTECH PLAY［テックプレイ］。点在している技術勉強会、セミナー情報をまとめて掲載しています。技術用語検索、地域検索、開催日時検索から興味のある勉強会をカンタンに探せるサービスです。">
+    <meta property="og:image" content="https://techplay.jp/images/thumbnail.png">
+    <meta property="og:url" content="https://techplay.jp">
+    <meta property="og:site_name" content="TECH PLAY">
+    <meta property="og:locale" content="ja_JP">
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:site" content="@techplayjp">
+    <meta name="twitter:title" content="TECH PLAY［テックプレイ］ - IT勉強会・セミナーなどのイベント情報検索サービス">
+    <meta name="twitter:description" content="IT勉強会・セミナーを探すならTECH PLAY［テックプレイ］。点在している技術勉強会、セミナー情報をまとめて掲載しています。技術用語検索、地域検索、開催日時検索から興味のある勉強会をカンタンに探せるサービスです。">
+    <meta name="twitter:image:src" content="https://techplay.jp/images/thumbnail.png">
+
+    <meta name="google-site-verification" content="JyIS53aQS5AmLZ6p4K0-xql1y8IzZQWz8Geqnpz_DLc">
+    <meta name="csrf-token" content="xGdQ1UVOWq63cGY2PMFSSyqltsIDylG1KXPselSR">
+    <meta name="viewport" content="width=device-width, maximum-scale=1">
+    <link rel="apple-touch-icon" sizes="144x144" href="https://techplay.jp/images/apple-touch-icon-144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="https://techplay.jp/images/apple-touch-icon-152.png">
+    <link rel="icon" type="image/x-icon" href="https://techplay.jp/images/favicon.ico">
+    <link rel="manifest" href="https://techplay.jp/manifest.json">
+    <link rel="stylesheet" href="techplay.jp_files/frontend.css">
+<style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, "hiragino kaku gothic pro",meiryo,"ms pgothic",sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_loader{background-color:#f6f7f9;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{width:auto;height:auto;min-height:initial;min-width:initial;background:none}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{color:#fff;display:block;padding-top:20px;clear:both;font-size:18px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;bottom:0;left:0;right:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:-webkit-sticky;top:0}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #29487d;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f9;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-repeat:no-repeat;background-position:50% 50%;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}
+.fb_customer_chat_bounce_in_v1{animation-duration:250ms;animation-name:fb_bounce_in_v1}.fb_customer_chat_bounce_out_v1{animation-duration:250ms;animation-name:fb_bounce_out_v1}.fb_customer_chat_bounce_in_v2{animation-duration:300ms;animation-name:fb_bounce_in_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_v2{animation-duration:300ms;animation-name:fb_bounce_out_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_in_v2_mobile_chat_started{animation-duration:300ms;animation-name:fb_bounce_in_v2_mobile_chat_started;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_v2_mobile_chat_started{animation-duration:300ms;animation-name:fb_bounce_out_v2_mobile_chat_started;transition-timing-function:ease-in}.fb_customer_chat_bubble_pop_in{animation-duration:250ms;animation-name:fb_customer_chat_bubble_bounce_in_animation}.fb_customer_chat_bubble_animated_no_badge{box-shadow:0 3px 12px rgba(0, 0, 0, .15);transition:box-shadow 150ms linear}.fb_customer_chat_bubble_animated_no_badge:hover{box-shadow:0 5px 24px rgba(0, 0, 0, .3)}.fb_customer_chat_bubble_animated_with_badge{box-shadow:-5px 4px 14px rgba(0, 0, 0, .15);transition:box-shadow 150ms linear}.fb_customer_chat_bubble_animated_with_badge:hover{box-shadow:-5px 8px 24px rgba(0, 0, 0, .2)}.fb_invisible_flow{display:inherit;height:0;overflow-x:hidden;width:0}.fb_mobile_overlay_active{background-color:#fff;height:100%;overflow:hidden;position:fixed;visibility:hidden;width:100%}@keyframes fb_bounce_in_v1{0%{opacity:0;transform:scale(.8, .8);transform-origin:bottom right}80%{opacity:.8;transform:scale(1.03, 1.03)}100%{opacity:1;transform:scale(1, 1)}}@keyframes fb_bounce_in_v2{0%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}50%{transform:scale(1.03, 1.03);transform-origin:bottom right}100%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}}@keyframes fb_bounce_in_v2_mobile_chat_started{0%{opacity:0;top:20px}100%{opacity:1;top:0}}@keyframes fb_bounce_out_v1{from{opacity:1}to{opacity:0}}@keyframes fb_bounce_out_v2{0%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}100%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}}@keyframes fb_bounce_out_v2_mobile_chat_started{0%{opacity:1;top:0}100%{opacity:0;top:20px}}@keyframes fb_customer_chat_bubble_bounce_in_animation{0%{bottom:6pt;opacity:0;transform:scale(0, 0);transform-origin:center}70%{bottom:18pt;opacity:1;transform:scale(1.2, 1.2)}100%{transform:scale(1, 1)}}</style></head>
+<body>
+
+<script type="text/javascript" async="" src="techplay.jp_files/js"></script><script async="" src="techplay.jp_files/analytics.js"></script><script type="text/javascript" async="" src="techplay.jp_files/mixpanel-2-latest.dms"></script><script type="text/javascript" async="" src="techplay.jp_files/analytics.js"></script><script src="techplay.jp_files/255118864997831.js" async=""></script><script async="" src="techplay.jp_files/fbevents.js"></script><script type="text/javascript" async="" src="techplay.jp_files/td.js"></script><script id="facebook-jssdk" async="" src="techplay.jp_files/sdk.js"></script><script async="" src="techplay.jp_files/gtm.js"></script><script>
+            var dots_login = 'no';
+        var dots_number = 0;
+        var dataLayer = dataLayer || [];
+    dataLayer.push({
+                    'login': 'no',
+            'number': 0
+            });
+        var d_hash = "5445b4b5682156b3";
+        </script>
+<noscript><iframe src="//www.googletagmanager.com/ns.html?id=GTM-K37XWQ"
+        height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+        new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+        j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+        '//www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+    })(window,document,'script','dataLayer','GTM-K37XWQ');</script>
+
+
+<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_https" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" style="border: medium none;" src="techplay.jp_files/bSTT5dUx9MY.html" frameborder="0"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div>
+<script>(function(d, s, id) {
+var js, fjs = d.getElementsByTagName(s)[0];
+if (d.getElementById(id)) return;
+js = d.createElement(s); js.id = id; js.async = true;
+js.src = "//connect.facebook.net/ja_JP/sdk.js#xfbml=1&version=v2.10&appId=703735426307641}";
+fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="wrap-body" id="mainContentArea">
+    <div class="scroll-top-wrapper"><i class="fa fa-angle-double-up fa-lg"></i><p>TOP</p></div>
+
+<header id="js-pageheader" class="pageheader pageheader-default">
+    <div class="pageheader-inner">
+        <div class="pageheader-col">
+            <h1 class="pageheader-logo">
+                <a href="https://techplay.jp/"><img src="techplay.jp_files/logo.png" alt="TECH PLAY"></a>
+            </h1>
+            <div class="pageheader-search">
+                <form method="get" name="event" action="https://techplay.jp/event/search">
+    <input class="pageheader-search-input" id="kw_search" name="keyword" autocomplete="off" placeholder="イベント検索" type="text">
+    <div id="suggest" style="display: none;"></div>
+    <button id="searchBtn" class="pageheader-search-btn" type="submit">
+        <i class="fa fa-search" aria-label="キーワード検索する"></i>
+    </button>
+</form>
+            </div>
+            <nav class="pageheader-nav">
+                <ul class="pageheader-nav-list">
+                    <li class="">
+                        <a href="https://techplay.jp/calendar">カレンダー</a>
+                    </li>
+                    <li class="pageheader-nav-new ">
+                        <a href="https://techplay.jp/column">マガジン<span class="pageheader-nav-iconBadge iconBadge iconBadge-warning">new</span></a>
+                    </li>
+                    <li class="">
+                        <a href="https://techplay.jp/community">グループ</a>
+                    </li>
+                    <li class="pageheader-nav-new ">
+                        <a href="https://techplay.jp/position">キャリア<span class="pageheader-nav-iconBadge iconBadge iconBadge-warning">new</span></a>
+                    </li>
+                </ul>
+            </nav>
+        </div>
+        <div class="pageheader-col">
+                        <div class="js-modal-analysis pageheader-login login-modal-open" data-analysis="header">
+                <div class="pageheader-login-icon" style="background-image:url('https://techplay.jp/images/top/icon_user_login.png');"></div>
+                <div class="pageheader-login-text">ログイン・新規会員登録</div>
+            </div>
+                    </div>
+    </div>
+</header>
+
+
+
+
+<section>
+        <div class="mB40">
+        <section class="top-main">
+    <div class="top-contents top-main-wrap">
+        <div class="top-main-center">
+            <h2 class="top-main-heading">テクノロジーと共に成長しよう、活躍しよう。</h2>
+            <div class="top-main-text">スキルアップできるIT勉強会・イベント情報や、キャリアアップのための情報を提供しています。</div>
+            <div class="mT40 js-modal-analysis login-modal-open">
+                <span class="btn-round btn-round-m btn-gradation btn-gradation-blueGreen top-main-btn">ログイン・新規会員登録（無料）</span>
+            </div>
+        </div>
+    </div>
+        <div class="top-slider slick-initialized slick-slider"><div class="slick-list draggable"><div class="slick-track" style="opacity: 1; width: 5760px;"><div class="slick-slide" data-slick-index="0" aria-hidden="true" style="width: 1920px; position: relative; left: 0px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms ease 0s;" tabindex="-1"><div><div style="width: 100%; display: inline-block;"><div style="background: url(https://techplay.jp/images/top/banner_1.jpg) no-repeat center; background-size: cover;"></div></div></div></div><div class="slick-slide" data-slick-index="1" aria-hidden="true" style="width: 1920px; position: relative; left: -1920px; top: 0px; z-index: 998; opacity: 0; transition: opacity 500ms ease 0s;" tabindex="-1"><div><div style="width: 100%; display: inline-block;"><div style="background: url(https://techplay.jp/images/top/banner_2.jpg) no-repeat center; background-size: cover;"></div></div></div></div><div class="slick-slide slick-current slick-active" data-slick-index="2" aria-hidden="false" style="width: 1920px; position: relative; left: -3840px; top: 0px; z-index: 999; opacity: 1;"><div><div style="width: 100%; display: inline-block;"><div style="background: url(https://techplay.jp/images/top/banner_3.jpg) no-repeat center; background-size: cover;"></div></div></div></div></div></div></div>
+</section>
+    </div>
+        <div class="wrap-full-banner banner-initialized banner_view" id="top-banner">
+        <div class="wrap-full-banner-top slick-initialized slick-slider"><div class="slick-list draggable" style="padding: 0px;"><div class="slick-track" style="opacity: 1; width: 20000px; transform: translate3d(-1441px, 0px, 0px);"><div class="slick-slide slick-cloned" data-slick-index="-2" aria-hidden="true" tabindex="-1"><div><div class="wrap-full-banner-item top-banner-item" style="width: 100%; display: inline-block;"><a href="https://techplay.jp/event/684701" tabindex="-1"><img src="techplay.jp_files/6f6dfdf3263cd6b5af35c0377899edbf3aabc1d3.jpg" alt="技術が変わり、金融ビジネスが変わる - RPA、AI、Agilityで変革するプロジェクト事例 -" onclick="dataLayer.push({'eventCategory':'topBanner_3', 'event':'eventTracking', 'eventUrl':'https://techplay.jp/event/684701'});" data-banner-num="3" id=""></a></div></div></div><div class="slick-slide slick-cloned" data-slick-index="-1" aria-hidden="true" tabindex="-1"><div><div class="wrap-full-banner-item top-banner-item" style="width: 100%; display: inline-block;"><a href="https://techplay.jp/event/685399" tabindex="-1"><img src="techplay.jp_files/ab36a903bbfe9f2a17a781562571a8af19752c7f.png" alt="見えない魅力の引き出し方 - CXO Night #4" onclick="dataLayer.push({'eventCategory':'topBanner_4', 'event':'eventTracking', 'eventUrl':'https://techplay.jp/event/685399'});" data-banner-num="4" id=""></a></div></div></div><div class="slick-slide" data-slick-index="0" aria-hidden="true" tabindex="-1"><div><div class="wrap-full-banner-item top-banner-item" style="width: 100%; display: inline-block;"><a href="https://techplay.jp/event/687031" tabindex="-1"><img src="techplay.jp_files/c54fa1d3ee6693fb0f2f062990279eeef64ad391.jpg" alt="Mercari Tech Meetup #1 〜 Microservices 始めました！ 〜" onclick="dataLayer.push({'eventCategory':'topBanner_1', 'event':'eventTracking', 'eventUrl':'https://techplay.jp/event/687031'});" data-banner-num="1" id="top-banner-img"></a></div></div></div><div class="slick-slide slick-current slick-active slick-center" data-slick-index="1" aria-hidden="false"><div><div class="wrap-full-banner-item top-banner-item" style="width: 100%; display: inline-block;"><a href="https://techplay.jp/column/313" tabindex="0"><img src="techplay.jp_files/9d93351f2f4f2d706f94755f3386f3e5ba41745e.jpg" alt="8月（前半）に開催する注目のITイベント・勉強会まとめ 19選" onclick="dataLayer.push({'eventCategory':'topBanner_2', 'event':'eventTracking', 'eventUrl':'https://techplay.jp/column/313'});" data-banner-num="2" id="top-banner-img"></a></div></div></div><div class="slick-slide" data-slick-index="2" aria-hidden="true" tabindex="-1"><div><div class="wrap-full-banner-item top-banner-item" style="width: 100%; display: inline-block;"><a href="https://techplay.jp/event/684701" tabindex="-1"><img src="techplay.jp_files/6f6dfdf3263cd6b5af35c0377899edbf3aabc1d3.jpg" alt="技術が変わり、金融ビジネスが変わる - RPA、AI、Agilityで変革するプロジェクト事例 -" onclick="dataLayer.push({'eventCategory':'topBanner_3', 'event':'eventTracking', 'eventUrl':'https://techplay.jp/event/684701'});" data-banner-num="3" id="top-banner-img"></a></div></div></div><div class="slick-slide" data-slick-index="3" aria-hidden="true" tabindex="-1"><div><div class="wrap-full-banner-item top-banner-item" style="width: 100%; display: inline-block;"><a href="https://techplay.jp/event/685399" tabindex="-1"><img src="techplay.jp_files/ab36a903bbfe9f2a17a781562571a8af19752c7f.png" alt="見えない魅力の引き出し方 - CXO Night #4" onclick="dataLayer.push({'eventCategory':'topBanner_4', 'event':'eventTracking', 'eventUrl':'https://techplay.jp/event/685399'});" data-banner-num="4" id="top-banner-img"></a></div></div></div><div class="slick-slide slick-cloned" data-slick-index="4" aria-hidden="true" tabindex="-1"><div><div class="wrap-full-banner-item top-banner-item" style="width: 100%; display: inline-block;"><a href="https://techplay.jp/event/687031" tabindex="-1"><img src="techplay.jp_files/c54fa1d3ee6693fb0f2f062990279eeef64ad391.jpg" alt="Mercari Tech Meetup #1 〜 Microservices 始めました！ 〜" onclick="dataLayer.push({'eventCategory':'topBanner_1', 'event':'eventTracking', 'eventUrl':'https://techplay.jp/event/687031'});" data-banner-num="1" id=""></a></div></div></div><div class="slick-slide slick-cloned" data-slick-index="5" aria-hidden="true" tabindex="-1"><div><div class="wrap-full-banner-item top-banner-item" style="width: 100%; display: inline-block;"><a href="https://techplay.jp/column/313" tabindex="-1"><img src="techplay.jp_files/9d93351f2f4f2d706f94755f3386f3e5ba41745e.jpg" alt="8月（前半）に開催する注目のITイベント・勉強会まとめ 19選" onclick="dataLayer.push({'eventCategory':'topBanner_2', 'event':'eventTracking', 'eventUrl':'https://techplay.jp/column/313'});" data-banner-num="2" id=""></a></div></div></div><div class="slick-slide slick-cloned" data-slick-index="6" aria-hidden="true" tabindex="-1"><div><div class="wrap-full-banner-item top-banner-item" style="width: 100%; display: inline-block;"><a href="https://techplay.jp/event/684701" tabindex="-1"><img src="techplay.jp_files/6f6dfdf3263cd6b5af35c0377899edbf3aabc1d3.jpg" alt="技術が変わり、金融ビジネスが変わる - RPA、AI、Agilityで変革するプロジェクト事例 -" onclick="dataLayer.push({'eventCategory':'topBanner_3', 'event':'eventTracking', 'eventUrl':'https://techplay.jp/event/684701'});" data-banner-num="3" id=""></a></div></div></div><div class="slick-slide slick-cloned" data-slick-index="7" aria-hidden="true" tabindex="-1"><div><div class="wrap-full-banner-item top-banner-item" style="width: 100%; display: inline-block;"><a href="https://techplay.jp/event/685399" tabindex="-1"><img src="techplay.jp_files/ab36a903bbfe9f2a17a781562571a8af19752c7f.png" alt="見えない魅力の引き出し方 - CXO Night #4" onclick="dataLayer.push({'eventCategory':'topBanner_4', 'event':'eventTracking', 'eventUrl':'https://techplay.jp/event/685399'});" data-banner-num="4" id=""></a></div></div></div></div></div></div>
+        <div class="wrap-full-banner-btn"><button type="button" class="banner-prev slick-arrow" style="display: block;"><i class="fa fa-chevron-left" aria-label="前へ"></i></button><button type="button" class="banner-next slick-arrow" style="display: block;"><i class="fa fa-chevron-right" aria-label="次へ"></i></button></div>
+    </div>
+
+        <div class="wrap-content mT40">
+        <div id="main-content">
+                    <div class="pickupEvents">
+                <div class="content-section-header">
+                    <h2 class="content-heading">新着イベント</h2>
+                </div>
+                <div>
+                                    <div class="eventlist clearFix">
+    <div class="date">
+                    <div class="year">2018</div>
+            <div class="day">08/23(木)</div>
+            <div class="time">19:45〜22:00</div>
+                <div class="apilogo"><img src="techplay.jp_files/apilogo_dots.png"></div>
+    </div>
+    <div class="eventlist-right">
+                    <div class="event-owner">
+                                    <a href="https://techplay.jp/community/to-kei" class="event-owner-item">
+                        <span class="event-owner-thumbs" style="background-image: url(https://s3.techplay.jp/tp-images/organizer/c38829ed236d14cd0ed3e4477bccaaf3d251d7e6.png);"></span><span class="event-owner-name">全人類がわかる統計学</span>
+                    </a>
+                            </div>
+                            <div class="image"><a href="https://techplay.jp/event/687904" target="_blank"><img src="techplay.jp_files/no_image.png" alt="event image" width="120"></a></div>
+                <div class="title">
+                            <div class="labels clearFix">
+                                        <span class="new">New</span>
+                </div>
+                        <h3><a href="https://techplay.jp/event/687904" target="_blank">R言語で代表的な統計的手法を色々実装するセミナー</a></h3>
+                        <div class="address"><i class="fa fa-map-marker"></i> 東京都渋谷区鶯谷町5-7 第２ヴィラ青山 302</div>
+                                        <div class="tags">
+                                                                                        <a href="https://techplay.jp/tag/beginner" class="tags-item">初心者</a>
+                                                                    <a href="https://techplay.jp/tag/rlang" class="tags-item">R言語</a>
+                                                                    <a href="https://techplay.jp/tag/machinelearning" class="tags-item">機械学習</a>
+                                                                    <a href="https://techplay.jp/tag/dataanalysis" class="tags-item">データ分析</a>
+                                                                    <a href="https://techplay.jp/tag/handson" class="tags-item">ハンズオン</a>
+                                    </div>
+                                            </div>
+        <div class="num">
+            <div class="js-modal-analysis btn clip clipDisableBtn" data-analysis="clip" data-size="large"><i class="fa fa-paperclip fa-flip-vertical" aria-hidden="true"></i>クリップ</div>
+                                        <div class="count">
+                                                                        <span class="accepted">
+                                                    2人</span><br>
+                                                                定員12人
+                                    </div>
+                    </div>
+    </div>
+</div>
+                                    <div class="eventlist clearFix">
+    <div class="date">
+                    <div class="year">2018</div>
+            <div class="day">08/17(金)</div>
+            <div class="time">19:45〜22:00</div>
+                <div class="apilogo"><img src="techplay.jp_files/apilogo_dots.png"></div>
+    </div>
+    <div class="eventlist-right">
+                    <div class="event-owner">
+                                    <a href="https://techplay.jp/community/to-kei" class="event-owner-item">
+                        <span class="event-owner-thumbs" style="background-image: url(https://s3.techplay.jp/tp-images/organizer/c38829ed236d14cd0ed3e4477bccaaf3d251d7e6.png);"></span><span class="event-owner-name">全人類がわかる統計学</span>
+                    </a>
+                            </div>
+                            <div class="image"><a href="https://techplay.jp/event/687903" target="_blank"><img src="techplay.jp_files/no_image.png" alt="event image" width="120"></a></div>
+                <div class="title">
+                            <div class="labels clearFix">
+                                        <span class="new">New</span>
+                </div>
+                        <h3><a href="https://techplay.jp/event/687903" target="_blank">データ分析のためのR言語文法講座</a></h3>
+                        <div class="address"><i class="fa fa-map-marker"></i> 東京都渋谷区鶯谷町5-7 第２ヴィラ青山 302</div>
+                                        <div class="tags">
+                                                                                        <a href="https://techplay.jp/tag/beginner" class="tags-item">初心者</a>
+                                                                    <a href="https://techplay.jp/tag/rlang" class="tags-item">R言語</a>
+                                                                    <a href="https://techplay.jp/tag/machinelearning" class="tags-item">機械学習</a>
+                                                                    <a href="https://techplay.jp/tag/dataanalysis" class="tags-item">データ分析</a>
+                                                                    <a href="https://techplay.jp/tag/handson" class="tags-item">ハンズオン</a>
+                                    </div>
+                                            </div>
+        <div class="num">
+            <div class="js-modal-analysis btn clip clipDisableBtn" data-analysis="clip" data-size="large"><i class="fa fa-paperclip fa-flip-vertical" aria-hidden="true"></i>クリップ</div>
+                                        <div class="count">
+                                                                        <span class="accepted">
+                                                    3人</span><br>
+                                                                定員12人
+                                    </div>
+                    </div>
+    </div>
+</div>
+                                    <div class="eventlist clearFix">
+    <div class="date">
+                    <div class="year">2018</div>
+            <div class="day">08/16(木)</div>
+            <div class="time">19:45〜22:00</div>
+                <div class="apilogo"><img src="techplay.jp_files/apilogo_dots.png"></div>
+    </div>
+    <div class="eventlist-right">
+                    <div class="event-owner">
+                                    <a href="https://techplay.jp/community/to-kei" class="event-owner-item">
+                        <span class="event-owner-thumbs" style="background-image: url(https://s3.techplay.jp/tp-images/organizer/c38829ed236d14cd0ed3e4477bccaaf3d251d7e6.png);"></span><span class="event-owner-name">全人類がわかる統計学</span>
+                    </a>
+                            </div>
+                            <div class="image"><a href="https://techplay.jp/event/687902" target="_blank"><img src="techplay.jp_files/no_image.png" alt="event image" width="120"></a></div>
+                <div class="title">
+                            <div class="labels clearFix">
+                                        <span class="new">New</span>
+                </div>
+                        <h3><a href="https://techplay.jp/event/687902" target="_blank">R言語データ分析入門</a></h3>
+                        <div class="address"><i class="fa fa-map-marker"></i> 東京都渋谷区鶯谷町5-7 第２ヴィラ青山 302</div>
+                                        <div class="tags">
+                                                                                        <a href="https://techplay.jp/tag/rlang" class="tags-item">R言語</a>
+                                                                    <a href="https://techplay.jp/tag/machinelearning" class="tags-item">機械学習</a>
+                                                                    <a href="https://techplay.jp/tag/dataanalysis" class="tags-item">データ分析</a>
+                                                                    <a href="https://techplay.jp/tag/beginner" class="tags-item">初心者</a>
+                                                                    <a href="https://techplay.jp/tag/handson" class="tags-item">ハンズオン</a>
+                                    </div>
+                                            </div>
+        <div class="num">
+            <div class="js-modal-analysis btn clip clipDisableBtn" data-analysis="clip" data-size="large"><i class="fa fa-paperclip fa-flip-vertical" aria-hidden="true"></i>クリップ</div>
+                                        <div class="count">
+                                                                        <span class="accepted">
+                                                    4人</span><br>
+                                                                定員12人
+                                    </div>
+                    </div>
+    </div>
+</div>
+                                    <div class="eventlist clearFix">
+    <div class="date">
+                    <div class="year">2018</div>
+            <div class="day">08/04(土)</div>
+            <div class="time">13:00〜18:00</div>
+                <div class="apilogo"><img src="techplay.jp_files/apilogo_dots.png"></div>
+    </div>
+    <div class="eventlist-right">
+                    <div class="event-owner">
+                                    <a href="https://techplay.jp/community/e2d3" class="event-owner-item">
+                        <span class="event-owner-thumbs" style="background-image: url(https://s3.techplay.jp/images/organizer/d369c817b594cfe17d7cbd359bb1fcfdde58f3d6.png);"></span><span class="event-owner-name">TECH PLAY E2D3部 </span>
+                    </a>
+                            </div>
+                            <div class="image"><a href="https://techplay.jp/event/687900" target="_blank"><img src="techplay.jp_files/3487f6a0bb3f0c3b2f0f994c148039fd1c446904.png" alt="event image" width="120"></a></div>
+                <div class="title">
+                            <div class="labels clearFix">
+                                        <span class="new">New</span>
+                </div>
+                        <h3><a href="https://techplay.jp/event/687900" target="_blank">【E2D3】データビジュアライゼーションもくもく会 vol. 25！</a></h3>
+                        <div class="address"><i class="fa fa-map-marker"></i> 東京都渋谷区宇田川町20-17 NMF渋谷公園通りビル 8F</div>
+                                        <div class="tags">
+                                                                                        <a href="https://techplay.jp/tag/javascript" class="tags-item">JavaScript</a>
+                                                                    <a href="https://techplay.jp/tag/d3js" class="tags-item">D3.js</a>
+                                                                    <a href="https://techplay.jp/tag/html5" class="tags-item">HTML5</a>
+                                                                    <a href="https://techplay.jp/tag/python" class="tags-item">Python</a>
+                                                                    <a href="https://techplay.jp/tag/machinelearning" class="tags-item">機械学習</a>
+                                    </div>
+                                            </div>
+        <div class="num">
+            <div class="js-modal-analysis btn clip clipDisableBtn" data-analysis="clip" data-size="large"><i class="fa fa-paperclip fa-flip-vertical" aria-hidden="true"></i>クリップ</div>
+                                        <div class="count">
+                                                                        <span class="accepted">
+                                                    2人</span><br>
+                                                                定員10人
+                                    </div>
+                    </div>
+    </div>
+</div>
+                                    <div class="eventlist clearFix">
+    <div class="date">
+                    <div class="year">2018</div>
+            <div class="day">08/29(水)</div>
+            <div class="time">16:00〜17:30</div>
+                <div class="apilogo"><img src="techplay.jp_files/apilogo_dots.png"></div>
+    </div>
+    <div class="eventlist-right">
+                    <div class="event-owner">
+                                    <a href="https://techplay.jp/community/ZENoffice" class="event-owner-item">
+                        <span class="event-owner-thumbs" style="background-image: url(https://s3.techplay.jp/tp-images/organizer/cb2907c0448d07ccf926113e5cbebcbab37cc516.png);"></span><span class="event-owner-name">デジタルマーケティングセミナー</span>
+                    </a>
+                            </div>
+                            <div class="image"><a href="https://techplay.jp/event/687848" target="_blank"><img src="techplay.jp_files/no_image.png" alt="event image" width="120"></a></div>
+                <div class="title">
+                        <h3><a href="https://techplay.jp/event/687848" target="_blank">【無料体験会開催中】デジタルマーケティング人材育成講座「DMU」6ヶ月で取得するB2Bマーケティングプログラムをスタート！〜デジタルの力で個人の可能性を最大限に〜</a></h3>
+                        <div class="address"><i class="fa fa-map-marker"></i> 大阪市中央区備後町3-2-15　モレスコ本町ビル5階</div>
+                                        <div class="tags">
+                                                                                        <a href="https://techplay.jp/tag/googleanalytics" class="tags-item">Google Analytics</a>
+                                                                    <a href="https://techplay.jp/tag/seo" class="tags-item">SEO</a>
+                                                                    <a href="https://techplay.jp/tag/desitalmarketing" class="tags-item">デジタルマーケティング</a>
+                                                                    <a href="https://techplay.jp/tag/webmarketing" class="tags-item">Webマーケティング</a>
+                                                                    <a href="https://techplay.jp/tag/ma" class="tags-item">MA</a>
+                                    </div>
+                                            </div>
+        <div class="num">
+            <div class="js-modal-analysis btn clip clipDisableBtn" data-analysis="clip" data-size="large"><i class="fa fa-paperclip fa-flip-vertical" aria-hidden="true"></i>クリップ</div>
+                                        <div class="count">
+                                                                        <span class="accepted">
+                                                    0人</span><br>
+                                                                定員6人
+                                    </div>
+                    </div>
+    </div>
+</div>
+                                    <div class="eventlist clearFix">
+    <div class="date">
+                    <div class="year">2018</div>
+            <div class="day">08/28(火)</div>
+            <div class="time">19:00〜20:30</div>
+                <div class="apilogo"><img src="techplay.jp_files/apilogo_dots.png"></div>
+    </div>
+    <div class="eventlist-right">
+                    <div class="event-owner">
+                                    <a href="https://techplay.jp/community/ZENoffice" class="event-owner-item">
+                        <span class="event-owner-thumbs" style="background-image: url(https://s3.techplay.jp/tp-images/organizer/cb2907c0448d07ccf926113e5cbebcbab37cc516.png);"></span><span class="event-owner-name">デジタルマーケティングセミナー</span>
+                    </a>
+                            </div>
+                            <div class="image"><a href="https://techplay.jp/event/687847" target="_blank"><img src="techplay.jp_files/no_image.png" alt="event image" width="120"></a></div>
+                <div class="title">
+                        <h3><a href="https://techplay.jp/event/687847" target="_blank">【無料体験会開催中】デジタルマーケティング人材育成講座「DMU」6ヶ月で取得するB2Bマーケティングプログラムをスタート！〜デジタルの力で個人の可能性を最大限に〜</a></h3>
+                        <div class="address"><i class="fa fa-map-marker"></i> 大阪市中央区備後町3-2-15　モレスコ本町ビル5階</div>
+                                        <div class="tags">
+                                                                                        <a href="https://techplay.jp/tag/googleanalytics" class="tags-item">Google Analytics</a>
+                                                                    <a href="https://techplay.jp/tag/seo" class="tags-item">SEO</a>
+                                                                    <a href="https://techplay.jp/tag/desitalmarketing" class="tags-item">デジタルマーケティング</a>
+                                                                    <a href="https://techplay.jp/tag/webmarketing" class="tags-item">Webマーケティング</a>
+                                                                    <a href="https://techplay.jp/tag/ma" class="tags-item">MA</a>
+                                    </div>
+                                            </div>
+        <div class="num">
+            <div class="js-modal-analysis btn clip clipDisableBtn" data-analysis="clip" data-size="large"><i class="fa fa-paperclip fa-flip-vertical" aria-hidden="true"></i>クリップ</div>
+                                        <div class="count">
+                                                                        <span class="accepted">
+                                                    0人</span><br>
+                                                                定員6人
+                                    </div>
+                    </div>
+    </div>
+</div>
+                                    <div class="eventlist clearFix">
+    <div class="date">
+                    <div class="year">2018</div>
+            <div class="day">08/25(土)</div>
+            <div class="time">11:00〜12:30</div>
+                <div class="apilogo"><img src="techplay.jp_files/apilogo_dots.png"></div>
+    </div>
+    <div class="eventlist-right">
+                    <div class="event-owner">
+                                    <a href="https://techplay.jp/community/ZENoffice" class="event-owner-item">
+                        <span class="event-owner-thumbs" style="background-image: url(https://s3.techplay.jp/tp-images/organizer/cb2907c0448d07ccf926113e5cbebcbab37cc516.png);"></span><span class="event-owner-name">デジタルマーケティングセミナー</span>
+                    </a>
+                            </div>
+                            <div class="image"><a href="https://techplay.jp/event/687846" target="_blank"><img src="techplay.jp_files/no_image.png" alt="event image" width="120"></a></div>
+                <div class="title">
+                        <h3><a href="https://techplay.jp/event/687846" target="_blank">【無料体験会開催中】デジタルマーケティング人材育成講座「DMU」6ヶ月で取得するB2Bマーケティングプログラムをスタート！〜デジタルの力で個人の可能性を最大限に〜</a></h3>
+                        <div class="address"><i class="fa fa-map-marker"></i> 大阪市中央区備後町3-2-15　モレスコ本町ビル5階</div>
+                                        <div class="tags">
+                                                                                        <a href="https://techplay.jp/tag/googleanalytics" class="tags-item">Google Analytics</a>
+                                                                    <a href="https://techplay.jp/tag/seo" class="tags-item">SEO</a>
+                                                                    <a href="https://techplay.jp/tag/desitalmarketing" class="tags-item">デジタルマーケティング</a>
+                                                                    <a href="https://techplay.jp/tag/webmarketing" class="tags-item">Webマーケティング</a>
+                                                                    <a href="https://techplay.jp/tag/ma" class="tags-item">MA</a>
+                                    </div>
+                                            </div>
+        <div class="num">
+            <div class="js-modal-analysis btn clip clipDisableBtn" data-analysis="clip" data-size="large"><i class="fa fa-paperclip fa-flip-vertical" aria-hidden="true"></i>クリップ</div>
+                                        <div class="count">
+                                                                        <span class="accepted">
+                                                    0人</span><br>
+                                                                定員6人
+                                    </div>
+                    </div>
+    </div>
+</div>
+                                    <div class="eventlist clearFix">
+    <div class="date">
+                    <div class="year">2018</div>
+            <div class="day">08/23(木)</div>
+            <div class="time">19:00〜20:30</div>
+                <div class="apilogo"><img src="techplay.jp_files/apilogo_dots.png"></div>
+    </div>
+    <div class="eventlist-right">
+                    <div class="event-owner">
+                                    <a href="https://techplay.jp/community/ZENoffice" class="event-owner-item">
+                        <span class="event-owner-thumbs" style="background-image: url(https://s3.techplay.jp/tp-images/organizer/cb2907c0448d07ccf926113e5cbebcbab37cc516.png);"></span><span class="event-owner-name">デジタルマーケティングセミナー</span>
+                    </a>
+                            </div>
+                            <div class="image"><a href="https://techplay.jp/event/687845" target="_blank"><img src="techplay.jp_files/no_image.png" alt="event image" width="120"></a></div>
+                <div class="title">
+                        <h3><a href="https://techplay.jp/event/687845" target="_blank">【無料体験会開催中】デジタルマーケティング人材育成講座「DMU」6ヶ月で取得するB2Bマーケティングプログラムをスタート！〜デジタルの力で個人の可能性を最大限に〜</a></h3>
+                        <div class="address"><i class="fa fa-map-marker"></i> 大阪市中央区備後町3-2-15　モレスコ本町ビル5階</div>
+                                        <div class="tags">
+                                                                                        <a href="https://techplay.jp/tag/googleanalytics" class="tags-item">Google Analytics</a>
+                                                                    <a href="https://techplay.jp/tag/seo" class="tags-item">SEO</a>
+                                                                    <a href="https://techplay.jp/tag/desitalmarketing" class="tags-item">デジタルマーケティング</a>
+                                                                    <a href="https://techplay.jp/tag/webmarketing" class="tags-item">Webマーケティング</a>
+                                                                    <a href="https://techplay.jp/tag/ma" class="tags-item">MA</a>
+                                    </div>
+                                            </div>
+        <div class="num">
+            <div class="js-modal-analysis btn clip clipDisableBtn" data-analysis="clip" data-size="large"><i class="fa fa-paperclip fa-flip-vertical" aria-hidden="true"></i>クリップ</div>
+                                        <div class="count">
+                                                                        <span class="accepted">
+                                                    0人</span><br>
+                                                                定員6人
+                                    </div>
+                    </div>
+    </div>
+</div>
+                                    <div class="eventlist clearFix">
+    <div class="date">
+                    <div class="year">2018</div>
+            <div class="day">08/22(水)</div>
+            <div class="time">16:00〜17:30</div>
+                <div class="apilogo"><img src="techplay.jp_files/apilogo_dots.png"></div>
+    </div>
+    <div class="eventlist-right">
+                    <div class="event-owner">
+                                    <a href="https://techplay.jp/community/ZENoffice" class="event-owner-item">
+                        <span class="event-owner-thumbs" style="background-image: url(https://s3.techplay.jp/tp-images/organizer/cb2907c0448d07ccf926113e5cbebcbab37cc516.png);"></span><span class="event-owner-name">デジタルマーケティングセミナー</span>
+                    </a>
+                            </div>
+                            <div class="image"><a href="https://techplay.jp/event/687844" target="_blank"><img src="techplay.jp_files/no_image.png" alt="event image" width="120"></a></div>
+                <div class="title">
+                        <h3><a href="https://techplay.jp/event/687844" target="_blank">【無料体験会開催中】デジタルマーケティング人材育成講座「DMU」6ヶ月で取得するB2Bマーケティングプログラムをスタート！〜デジタルの力で個人の可能性を最大限に〜</a></h3>
+                        <div class="address"><i class="fa fa-map-marker"></i> 大阪市中央区備後町3-2-15　モレスコ本町ビル5階</div>
+                                        <div class="tags">
+                                                                                        <a href="https://techplay.jp/tag/googleanalytics" class="tags-item">Google Analytics</a>
+                                                                    <a href="https://techplay.jp/tag/seo" class="tags-item">SEO</a>
+                                                                    <a href="https://techplay.jp/tag/desitalmarketing" class="tags-item">デジタルマーケティング</a>
+                                                                    <a href="https://techplay.jp/tag/webmarketing" class="tags-item">Webマーケティング</a>
+                                                                    <a href="https://techplay.jp/tag/ma" class="tags-item">MA</a>
+                                    </div>
+                                            </div>
+        <div class="num">
+            <div class="js-modal-analysis btn clip clipDisableBtn" data-analysis="clip" data-size="large"><i class="fa fa-paperclip fa-flip-vertical" aria-hidden="true"></i>クリップ</div>
+                                        <div class="count">
+                                                                        <span class="accepted">
+                                                    0人</span><br>
+                                                                定員6人
+                                    </div>
+                    </div>
+    </div>
+</div>
+                                    <div class="eventlist clearFix">
+    <div class="date">
+                    <div class="year">2018</div>
+            <div class="day">08/18(土)</div>
+            <div class="time">11:00〜12:30</div>
+                <div class="apilogo"><img src="techplay.jp_files/apilogo_dots.png"></div>
+    </div>
+    <div class="eventlist-right">
+                    <div class="event-owner">
+                                    <a href="https://techplay.jp/community/ZENoffice" class="event-owner-item">
+                        <span class="event-owner-thumbs" style="background-image: url(https://s3.techplay.jp/tp-images/organizer/cb2907c0448d07ccf926113e5cbebcbab37cc516.png);"></span><span class="event-owner-name">デジタルマーケティングセミナー</span>
+                    </a>
+                            </div>
+                            <div class="image"><a href="https://techplay.jp/event/687843" target="_blank"><img src="techplay.jp_files/no_image.png" alt="event image" width="120"></a></div>
+                <div class="title">
+                        <h3><a href="https://techplay.jp/event/687843" target="_blank">【無料体験会開催中】デジタルマーケティング人材育成講座「DMU」6ヶ月で取得するB2Bマーケティングプログラムをスタート！〜デジタルの力で個人の可能性を最大限に〜</a></h3>
+                        <div class="address"><i class="fa fa-map-marker"></i> 大阪市中央区備後町3-2-15　モレスコ本町ビル5階</div>
+                                        <div class="tags">
+                                                                                        <a href="https://techplay.jp/tag/googleanalytics" class="tags-item">Google Analytics</a>
+                                                                    <a href="https://techplay.jp/tag/seo" class="tags-item">SEO</a>
+                                                                    <a href="https://techplay.jp/tag/desitalmarketing" class="tags-item">デジタルマーケティング</a>
+                                                                    <a href="https://techplay.jp/tag/webmarketing" class="tags-item">Webマーケティング</a>
+                                                                    <a href="https://techplay.jp/tag/ma" class="tags-item">MA</a>
+                                    </div>
+                                            </div>
+        <div class="num">
+            <div class="js-modal-analysis btn clip clipDisableBtn" data-analysis="clip" data-size="large"><i class="fa fa-paperclip fa-flip-vertical" aria-hidden="true"></i>クリップ</div>
+                                        <div class="count">
+                                                                        <span class="accepted">
+                                                    0人</span><br>
+                                                                定員6人
+                                    </div>
+                    </div>
+    </div>
+</div>
+                                </div>
+                <div class="load-more">
+                    <a href="https://techplay.jp/event/search?sort=created_desc&amp;api_dots=1" onclick="dataLayer.push({'eventCategory':'logoutTopMoreEvent', 'event':'eventTracking', 'eventUrl':'https://techplay.jp/event/search?sort=created_desc&amp;api_dots=1'});" class="cBL moreBtn">新着イベントを全て見る</a>
+                </div>
+            </div>
+        
+        <div class="mT40">
+        <div class="content-section-header">
+            <h2 class="content-heading">注目のコラム</h2>
+        </div>
+        <div class="column-row">
+                            <article class="column-card">
+    <div class="column-card-inner">
+        <header class="column-card-header">
+            <h2 class="column-card-heading">
+                <a href="https://techplay.jp/column/309" onclick="dataLayer.push({'eventCategory':'columnList_1', 'event':'eventTracking', 'eventUrl':'https://techplay.jp/column/309'});">メルペイ青柳氏・ヘイ佐藤氏・バンク光本氏が語る「お金の価値はどう変わる？」―日本のお金をアップデートする#01</a>
+            </h2>
+            <div class="column-card-header-inner">
+                <b class="column-card-category">イベント</b>
+                <time class="column-card-time" datetime="2018-07-30 12:13:56">2018/07/30</time>
+            </div>
+        </header>
+        <div class="column-card-body">
+            <p class="column-card-description">決済・送金、会計・経理、投資・資産運用、ビットコインに代表される仮想通貨など、テクノロジーを活用した金融サービ...</p>
+                            <div class="column-card-tags tags">
+                                            <span class="tags-item">Fintech</span>
+                                    </div>
+                    </div>
+                    <footer class="column-card-footer">
+                <a class="column-card-group" href="https://techplay.jp/community/techplay">
+                    <div class="column-card-group-logo"><img src="techplay.jp_files/490f2c89e09d5571342bf9a179c3576d17853356.png" alt="TECH PLAY"></div>
+                    <p class="column-card-group-name">TECH PLAY</p>
+                </a>
+            </footer>
+            </div>
+    <a class="column-card-thumbnail" href="https://techplay.jp/column/309" onclick="dataLayer.push({'eventCategory':'columnList_1', 'event':'eventTracking', 'eventUrl':'https://techplay.jp/column/309'});" style="background-image: url(https://s3-ap-northeast-1.amazonaws.com/s3.techplay.jp/tp-images/column/1/77e50b5224ed2eee994a4bdb62b11189b2667e1b.jpg);">メルペイ青柳氏・ヘイ佐藤氏・バンク光本氏が語る「お金の価値はどう変わる？」―日本のお金をアップデートする#01</a>
+</article>
+                            <article class="column-card">
+    <div class="column-card-inner">
+        <header class="column-card-header">
+            <h2 class="column-card-heading">
+                <a href="https://techplay.jp/column/315" onclick="dataLayer.push({'eventCategory':'columnList_2', 'event':'eventTracking', 'eventUrl':'https://techplay.jp/column/315'});">【レポート】NISSAN流 未来の自動車のカタチ − 技術をつかった未来の移動手段を一緒に考えよう − </a>
+            </h2>
+            <div class="column-card-header-inner">
+                <b class="column-card-category">イベント</b>
+                <time class="column-card-time" datetime="2018-07-27 10:27:23">2018/07/27</time>
+            </div>
+        </header>
+        <div class="column-card-body">
+            <p class="column-card-description">2018年3月28日（水）19時30分より、「【20代・30代エンジニア向けワークショップ】技術をつかった未来の移動手段を一...</p>
+                            <div class="column-card-tags tags">
+                                            <span class="tags-item">ワークショップ</span>
+                                    </div>
+                    </div>
+                    <footer class="column-card-footer">
+                <a class="column-card-group" href="https://techplay.jp/community/nissanR-D">
+                    <div class="column-card-group-logo"><img src="techplay.jp_files/b10667204705e24d78d757a145fdc53f54664281.jpg" alt="日産自動車"></div>
+                    <p class="column-card-group-name">日産自動車</p>
+                </a>
+            </footer>
+            </div>
+    <a class="column-card-thumbnail" href="https://techplay.jp/column/315" onclick="dataLayer.push({'eventCategory':'columnList_2', 'event':'eventTracking', 'eventUrl':'https://techplay.jp/column/315'});" style="background-image: url(https://s3-ap-northeast-1.amazonaws.com/s3.techplay.jp/tp-images/column/1/8a3e02f682b4bef13c31bad5c7f8b6517467a990.jpg);">【レポート】NISSAN流 未来の自動車のカタチ − 技術をつかった未来の移動手段を一緒に考えよう − </a>
+</article>
+                            <article class="column-card">
+    <div class="column-card-inner">
+        <header class="column-card-header">
+            <h2 class="column-card-heading">
+                <a href="https://techplay.jp/column/314" onclick="dataLayer.push({'eventCategory':'columnList_3', 'event':'eventTracking', 'eventUrl':'https://techplay.jp/column/314'});">【レポート】未来を変える、移動手段の開発技術 #NISSAN Meetup</a>
+            </h2>
+            <div class="column-card-header-inner">
+                <b class="column-card-category">イベント</b>
+                <time class="column-card-time" datetime="2018-07-26 13:33:38">2018/07/26</time>
+            </div>
+        </header>
+        <div class="column-card-body">
+            <p class="column-card-description">2018年3月5日（月）19時30分より、「未来を変える、移動手段の開発技術 #NISSAN Meetup」が開催されました。...</p>
+                            <div class="column-card-tags tags">
+                                            <span class="tags-item">C++</span>
+                                    </div>
+                    </div>
+                    <footer class="column-card-footer">
+                <a class="column-card-group" href="https://techplay.jp/community/nissanR-D">
+                    <div class="column-card-group-logo"><img src="techplay.jp_files/b10667204705e24d78d757a145fdc53f54664281.jpg" alt="日産自動車"></div>
+                    <p class="column-card-group-name">日産自動車</p>
+                </a>
+            </footer>
+            </div>
+    <a class="column-card-thumbnail" href="https://techplay.jp/column/314" onclick="dataLayer.push({'eventCategory':'columnList_3', 'event':'eventTracking', 'eventUrl':'https://techplay.jp/column/314'});" style="background-image: url(https://s3-ap-northeast-1.amazonaws.com/s3.techplay.jp/tp-images/column/835/784aa7feb7502aef71c88e3c0a36dee17b9717f6.jpg);">【レポート】未来を変える、移動手段の開発技術 #NISSAN Meetup</a>
+</article>
+                    </div>
+        <div class="jumpLink">
+            <a href="https://techplay.jp/column"><i class="fa fa-caret-right"></i>コラム一覧を見る</a>
+        </div>
+    </div>
+        </div>
+                <div id="side-content">
+    <div class="box">
+    <div id="v-randomBanner" class="randomBanner"><a href="https://techplay.jp/career" onclick="dataLayer.push({'eventCategory':'adsCareerLP', 'event':'eventTracking', 'eventUrl':'https://techplay.jp/career'});" target="_blank"><img src="techplay.jp_files/7c4943cbb086c84bdaa85e0cdf64c0d52870bcf5.jpg" alt="TECH PLAY Career 今よりもっと活躍できるキャリアに出会える。スカウトサービス事前登録スタート！"></a></div>
+</div>
+        <div class="box">
+        <div class="heading"><h2 class="title">ランキング</h2></div>
+        <div class="content">
+            <div class="panel">
+                <h3 class="title">イベントランキング</h3>
+                                <ul class="ranking">
+                                                            <li class="list">
+                        <a href="https://techplay.jp/event/686846" target="_blank" onclick="dataLayer.push({'eventCategory':'rightColumnFutureEventRank_1', 'event':'eventTracking', 'eventUrl':'https://techplay.jp/event/686846'});">
+                            <span class="num num1">1</span>GDG DevFest Tokyo 2018</a>
+                    </li>
+                                        <li class="list">
+                        <a href="https://techplay.jp/event/682976" target="_blank" onclick="dataLayer.push({'eventCategory':'rightColumnFutureEventRank_2', 'event':'eventTracking', 'eventUrl':'https://techplay.jp/event/682976'});">
+                            <span class="num num2">2</span>PyCon JP 2018</a>
+                    </li>
+                                        <li class="list">
+                        <a href="https://techplay.jp/event/685399" target="_blank" onclick="dataLayer.push({'eventCategory':'rightColumnFutureEventRank_3', 'event':'eventTracking', 'eventUrl':'https://techplay.jp/event/685399'});">
+                            <span class="num num3">3</span>見えない魅力の引き出し方 - CXO Night #4</a>
+                    </li>
+                                        <li class="list">
+                        <a href="https://techplay.jp/event/687068" target="_blank" onclick="dataLayer.push({'eventCategory':'rightColumnFutureEventRank_4', 'event':'eventTracking', 'eventUrl':'https://techplay.jp/event/687068'});">
+                            <span class="num">4</span>BIT VALLEY 2018</a>
+                    </li>
+                                        <li class="list">
+                        <a href="https://techplay.jp/event/685191" target="_blank" onclick="dataLayer.push({'eventCategory':'rightColumnFutureEventRank_5', 'event':'eventTracking', 'eventUrl':'https://techplay.jp/event/685191'});">
+                            <span class="num">5</span>【増席】RPA勉強＆LT会！RPALT vol4 with Tech Night！@ソフトバンク</a>
+                    </li>
+                                    </ul>
+                <div class="jumpLink"><a href="https://techplay.jp/ranking/future_event" onclick="dataLayer.push({'eventCategory':'rightColumnFutureEvent', 'event':'eventTracking', 'eventUrl':'https://techplay.jp/ranking/future_event'});"><i class="fa fa-caret-right"></i>イベントランキングを見る</a></div>
+                            </div>
+            <div class="panel">
+                <h3 class="title">タグランキング</h3>
+                                <ul class="ranking">
+                                                            <li class="list">
+                        <a href="https://techplay.jp/tag/python" target="_blank" onclick="dataLayer.push({'eventCategory':'rightColumnDailyTagRank_1', 'event':'eventTracking', 'eventUrl':'https://techplay.jp/tag/python'});">
+                            <span class="num num1">1</span>Python</a>
+                    </li>
+                                        <li class="list">
+                        <a href="https://techplay.jp/tag/meetup" target="_blank" onclick="dataLayer.push({'eventCategory':'rightColumnDailyTagRank_2', 'event':'eventTracking', 'eventUrl':'https://techplay.jp/tag/meetup'});">
+                            <span class="num num2">2</span>Meetup</a>
+                    </li>
+                                        <li class="list">
+                        <a href="https://techplay.jp/tag/javascript" target="_blank" onclick="dataLayer.push({'eventCategory':'rightColumnDailyTagRank_3', 'event':'eventTracking', 'eventUrl':'https://techplay.jp/tag/javascript'});">
+                            <span class="num num3">3</span>JavaScript</a>
+                    </li>
+                                        <li class="list">
+                        <a href="https://techplay.jp/tag/machinelearning" target="_blank" onclick="dataLayer.push({'eventCategory':'rightColumnDailyTagRank_4', 'event':'eventTracking', 'eventUrl':'https://techplay.jp/tag/machinelearning'});">
+                            <span class="num">4</span>機械学習</a>
+                    </li>
+                                        <li class="list">
+                        <a href="https://techplay.jp/tag/dataanalysis" target="_blank" onclick="dataLayer.push({'eventCategory':'rightColumnDailyTagRank_5', 'event':'eventTracking', 'eventUrl':'https://techplay.jp/tag/dataanalysis'});">
+                            <span class="num">5</span>データ分析</a>
+                    </li>
+                                    </ul>
+                <div class="jumpLink"><a href="https://techplay.jp/ranking/daily_tag" onclick="dataLayer.push({'eventCategory':'rightColumnDailyTag', 'event':'eventTracking', 'eventUrl':'https://techplay.jp/ranking/daily_tag'});"><i class="fa fa-caret-right"></i>タグランキングを見る</a></div>
+                            </div>
+        </div>
+    </div>
+        <div class="box">
+        <div class="heading"><h2 class="title">レポート</h2></div>
+        <div class="content">
+                        <div class="sideReportList">
+                <div class="labels"><span class="new">New</span></div>                <h3 class="sideReportList-title"><a href="https://techplay.jp/eventreport/676489" target="_blank" onclick="dataLayer.push({'eventCategory':'rightColumnReport_1', 'event':'eventTracking', 'eventUrl':'https://techplay.jp/eventreport/676489'});">サポートエンジニアNight vol.3 presented by TREASURE DATA “PLAZMA”</a></h3>
+                <div class="sideReportList-contents">
+                    <span class="sideReportList-contents-item"><i class="fa fa-file-text"></i>スライド 6件</span>
+                    <span class="sideReportList-contents-item"><i class="fa fa-camera"></i>写真 7件</span>
+                    <span class="sideReportList-contents-item"><i class="fa fa-comments"></i>ブログ 2件</span>
+                </div>
+                <p class="sideReportList-date">最終更新：2018/07/23</p>
+            </div>
+                        <div class="sideReportList">
+                                <h3 class="sideReportList-title"><a href="https://techplay.jp/eventreport/678298" target="_blank" onclick="dataLayer.push({'eventCategory':'rightColumnReport_2', 'event':'eventTracking', 'eventUrl':'https://techplay.jp/eventreport/678298'});">テクノロジーで業界の未来を変える #01 - 創造と破壊を繰り返すプロダクト開発力 -</a></h3>
+                <div class="sideReportList-contents">
+                    <span class="sideReportList-contents-item"><i class="fa fa-file-text"></i>スライド 1件</span>
+                    <span class="sideReportList-contents-item"><i class="fa fa-camera"></i>写真 5件</span>
+                    <span class="sideReportList-contents-item"><i class="fa fa-comments"></i>ブログ 1件</span>
+                </div>
+                <p class="sideReportList-date">最終更新：2018/07/19</p>
+            </div>
+                        <div class="sideReportList">
+                                <h3 class="sideReportList-title"><a href="https://techplay.jp/eventreport/675288" target="_blank" onclick="dataLayer.push({'eventCategory':'rightColumnReport_3', 'event':'eventTracking', 'eventUrl':'https://techplay.jp/eventreport/675288'});">【南青山発信のエンジニア向け勉強会】Minami Aoyama Night#6 〜今回のテーマはアンチパターン(失敗談)です!〜</a></h3>
+                <div class="sideReportList-contents">
+                    <span class="sideReportList-contents-item"><i class="fa fa-file-text"></i>スライド 4件</span>
+                    <span class="sideReportList-contents-item"><i class="fa fa-camera"></i>写真 4件</span>
+                    <span class="sideReportList-contents-item"><i class="fa fa-comments"></i>ブログ 0件</span>
+                </div>
+                <p class="sideReportList-date">最終更新：2018/07/18</p>
+            </div>
+                        <div class="jumpLink"><a href="https://techplay.jp/event/search?report=1" onclick="dataLayer.push({'eventCategory':'rightColumnEventReport', 'event':'eventTracking', 'eventUrl':'https://techplay.jp/event/search?report=1'});"><i class="fa fa-caret-right"></i>イベントレポートをすべて見る</a></div>
+        </div>
+    </div>
+    
+    <div class="box">
+    <div class="heading"><h2 class="title">Facebookページ</h2></div>
+    <div class="fb-page fb_iframe_widget" data-href="https://www.facebook.com/285819165154880/" data-tabs="timeline" data-height="600" data-small-header="false" data-adapt-container-width="true" data-hide-cover="false" data-show-facepile="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="adapt_container_width=true&amp;app_id=&amp;container_width=320&amp;height=600&amp;hide_cover=false&amp;href=https%3A%2F%2Fwww.facebook.com%2F285819165154880%2F&amp;locale=ja_JP&amp;sdk=joey&amp;show_facepile=true&amp;small_header=false&amp;tabs=timeline"><span style="vertical-align: bottom; width: 320px; height: 600px;"><iframe name="fef7698c305884" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" title="fb:page Facebook Social Plugin" style="border: medium none; visibility: visible; width: 320px; height: 600px;" src="techplay.jp_files/page.html" class="" width="1000px" height="600px" frameborder="0"></iframe></span></div>
+</div>
+
+</div>
+    </div>
+</section>
+
+<aside class="featuredTagArea">
+    <header class="featuredTagArea-header">
+        <h2 class="featuredTagArea-heading">注目のタグからイベントを探す</h2>
+        <div class="featuredTagArea-link"><a href="https://techplay.jp/community_entry" class="btn-blue-line" onclick="dataLayer.push({'eventCategory':'communityEntry', 'event':'eventTracking'});">イベント・グループを作る</a></div>
+    </header>
+    <div class="featuredTagArea-main tags">
+        <a class="tags-item" href="https://techplay.jp/tag/iot" onclick="dataLayer.push({'eventCategory':'pickupTag_iot', 'event':'eventTracking', 'eventUrl':'https://techplay.jp/tag/iot'});">IoT</a>
+<a class="tags-item" href="https://techplay.jp/tag/python" onclick="dataLayer.push({'eventCategory':'pickupTag_python', 'event':'eventTracking', 'eventUrl':'https://techplay.jp/tag/python'});">Python</a>
+<a class="tags-item" href="https://techplay.jp/tag/javascript" onclick="dataLayer.push({'eventCategory':'pickupTag_javascript', 'event':'eventTracking', 'eventUrl':'https://techplay.jp/tag/javascript'});">JavaScript</a>
+<a class="tags-item" href="https://techplay.jp/tag/azure" onclick="dataLayer.push({'eventCategory':'pickupTag_azure', 'event':'eventTracking', 'eventUrl':'https://techplay.jp/tag/azure'});">Azure</a>
+<a class="tags-item" href="https://techplay.jp/tag/machinelearning" onclick="dataLayer.push({'eventCategory':'pickupTag_machinelearning', 'event':'eventTracking', 'eventUrl':'https://techplay.jp/tag/machinelearning'});">機械学習</a>
+<a class="tags-item" href="https://techplay.jp/tag/kotlin" onclick="dataLayer.push({'eventCategory':'pickupTag_kotlin', 'event':'eventTracking', 'eventUrl':'https://techplay.jp/tag/kotlin'});">Kotlin</a>
+<a class="tags-item" href="https://techplay.jp/tag/android" onclick="dataLayer.push({'eventCategory':'pickupTag_android', 'event':'eventTracking', 'eventUrl':'https://techplay.jp/tag/android'});">Android</a>
+<a class="tags-item" href="https://techplay.jp/tag/ai" onclick="dataLayer.push({'eventCategory':'pickupTag_ai', 'event':'eventTracking', 'eventUrl':'https://techplay.jp/tag/ai'});">人工知能</a>
+<a class="tags-item" href="https://techplay.jp/tag/webmarketing" onclick="dataLayer.push({'eventCategory':'pickupTag_webmarketing', 'event':'eventTracking', 'eventUrl':'https://techplay.jp/tag/webmarketing'});">Webマーケティング</a>
+<a class="tags-item" href="https://techplay.jp/tag/ios" onclick="dataLayer.push({'eventCategory':'pickupTag_ios', 'event':'eventTracking', 'eventUrl':'https://techplay.jp/tag/ios'});">iOS</a>
+        <a class="tags-item" href="https://techplay.jp/event/taglist" onclick="dataLayer.push({'eventCategory':'pickupEventTag_taglist', 'event':'eventTracking'});"><i class="fa fa-list-ul" aria-hidden="true"></i> タグ一覧から探す</a>
+    </div>
+</aside>
+
+<section class="top-space">
+    <div class="top-contents top-space-wrap">
+        <div class="top-space-info">
+            <div class="top-section-head">
+                <h2 class="top-section-heading">イノベーティブな空間で、<br>テクノロジーを楽しもう。つながろう。</h2>
+            </div>
+            <div class="top-space-description">
+                様々なコミュニティが集まるイベントスペースとしてだけでなく、
+                <br>会議・研修・ミーティングなどのビジネスの場としてもご利用いただけます。
+                <br>様々な用途に応じてお好きな形にレイアウト変更も可能です。
+            </div>
+            <div class="top-space-link">
+                <a href="https://techplay.jp/space" target="_blank">TECH PLAY SHIBUYA 詳細</a>
+            </div>
+        </div>
+        <div class="top-space-image">
+            <img src="techplay.jp_files/cover.jpg" alt="TECH PLAY SHIBUYA">
+        </div>
+    </div>
+</section>
+
+
+<div id="footerArea">
+        <footer class="pageFooter">
+                <div class="pageFooter-menu">
+    <div class="pageFooter-menu-inner">
+        <section class="pageFooter-menu-col">
+            <h4 class="pageFooter-menu-title">contents</h4>
+            <ul class="pageFooter-menu-content">
+                <li><a href="https://techplay.jp/calendar">イベントカレンダー</a></li>
+                <li><a href="https://techplay.jp/event/taglist">タグ一覧</a></li>
+                <li><a href="https://techplay.jp/column">マガジン</a></li>
+                <li><a href="https://techplay.jp/community">グループ</a></li>
+                <li><a href="https://techplay.jp/ranking/future_event">ランキング</a></li>
+                <li><a href="https://techplay.jp/position">キャリア</a></li>
+            </ul>
+        </section>
+        <section class="pageFooter-menu-col">
+            <h4 class="pageFooter-menu-title">about</h4>
+            <ul class="pageFooter-menu-content">
+                <li><a href="https://techplay.jp/about">TECH PLAYとは？</a></li>
+                <li><a href="https://techplay.jp/information">お知らせ</a></li>
+                <li><a href="https://techplay.jp/community_entry" onclick="dataLayer.push({'eventCategory':'communityEntryFooter', 'event':'eventTracking'});">イベント・グループを作る</a></li>
+                <li><a href="https://owner.techplay.jp/auth" target="_blank">グループ管理ログイン</a></li>
+                <li><a href="https://techplay.jp/space" target="_blank">TECH PLAY SHIBUYA</a></li>
+                <li><a href="https://techplay.jp/academy">TECH PLAY Academy</a></li>
+                <li><a href="https://techplay.jp/career">TECH PLAY Career</a></li>
+            </ul>
+        </section>
+        <section class="pageFooter-menu-col">
+            <h4 class="pageFooter-menu-title">support</h4>
+            <ul class="pageFooter-menu-content">
+                <li><a href="https://techplay.jp/faq">よくある質問</a></li>
+                <li><a href="https://techplay.jp/contact">お問い合わせ</a></li>
+                <li><a href="https://techplay.jp/business">法人向けサービス</a></li>
+            </ul>
+        </section>
+        <section class="pageFooter-menu-col">
+            <h4 class="pageFooter-menu-title">policy</h4>
+            <ul class="pageFooter-menu-content">
+                <li><a href="https://techplay.jp/company">運営会社</a></li>
+                <li><a href="https://techplay.jp/terms_of_use">利用規約・個人情報の取扱いについて</a></li>
+                <li><a href="https://techplay.jp/asct">特定商取引に関する法律による表示</a></li>
+            </ul>
+            <p><br></p>
+            <h4 class="pageFooter-menu-title">Application</h4>
+            <ul class="pageFooter-menu-content">
+                <li><a href="https://itunes.apple.com/jp/app/tech-play-plus/id1246719563" target="_blank"><img src="techplay.jp_files/app_store_badge_us.svg"></a></li>
+            </ul>
+        </section>
+    </div>
+</div>
+                <div class="pageFooter-info">
+    <div class="pageFooter-info-inner">
+        <p class="pageFooter-info-copyright"><small>(c) PERSOL CAREER CO., LTD.</small></p>
+        <ul class="pageFooter-info-sns">
+            <li>
+                <a class="pageFooter-info-sns-twitter" href="https://twitter.com/techplayjp" title="Twitter" target="_blank">
+                    <i class="fa fa-twitter" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li>
+                <a class="pageFooter-info-sns-facebook" href="https://www.facebook.com/285819165154880" title="Facebookページ" target="_blank">
+                    <i class="fa fa-facebook" aria-hidden="true"></i>
+                </a>
+            </li>
+            <li>
+                <a class="pageFooter-info-sns-instagram" href="https://www.instagram.com/techplayjp/" title="Instagram" target="_blank">
+                    <i class="fa fa-instagram" aria-hidden="true"></i>
+                </a>
+            </li>
+        </ul>
+    </div>
+</div>
+    </footer>
+</div>
+
+<div id="modal-content" class="login-modal"><input id="undefined" value="" type="hidden"> <section data-modal="socialLogin"><div class="login-modal-header taC"><h1 class="login-modal-heading">ログイン／新規会員登録</h1> <div data-modal="close" class="login-modal-close"><i aria-label="閉じる" class="fa fa-times"></i></div></div> <div class="login-modal-info"><div class="login-modal-textArea">ログインすると、もっと便利にTECH PLAYをご利用いただけます。</div> <ul class="social-login"><li><button class="btn lg fb"><i class="fa fa-facebook"></i><span>Facebookでログイン／登録</span></button></li> <li><button class="btn lg tw"><i class="fa fa-twitter"></i><span>Twitterでログイン／登録</span></button></li> <li><button class="btn lg gp"><i class="fa fa-google-plus"></i><span>Googleでログイン／登録</span></button></li> <li><div data-modal="switch" class="btn lg mail"><i class="fa fa-envelope"></i><span>メールアドレスでログイン</span></div></li></ul> <h2 class="login-modal-subhead"><span>会員登録されていない方</span></h2> <p class="login-modal-button"><button class="btn lg green">
+                    新規会員登録（無料）
+                </button></p></div></section> <section data-modal="mailLogin" class="modal-contnets-hide"><div class="login-modal-header taC"><h1 class="login-modal-heading"><i class="fa fa-envelope"></i>メールアドレスでログイン</h1> <div data-modal="close" class="login-modal-close"><i aria-label="閉じる" class="fa fa-times"></i></div></div> <div class="login-modal-info"><form method="post" action="https://techplay.jp/login"><input name="_token" value="xGdQ1UVOWq63cGY2PMFSSyqltsIDylG1KXPselSR" type="hidden"> <input name="submit_modal" value="1" type="hidden"> <div class="login-modal-input"><input name="login_email" placeholder="メールアドレス" type="email"></div> <div class="login-modal-input"><input name="login_password" placeholder="パスワード" required="required" type="password"></div> <p class="login-modal-submit-btn"><button type="submit" class="btn lg green">ログイン</button></p> <p class="login-modal-cancel-btn"><button type="button" data-modal="cancel" class="btn lg gray">キャンセル</button></p> <p class="login-modal-remarks-password"><a href="https://techplay.jp/password/recovery/request_mail">パスワードをお忘れですか？</a></p></form></div></section></div>
+</div>
+<script src="techplay.jp_files/frontend.js"></script>
+<script>
+    
+            
+        
+        (function() {
+                        var suggestList = [".NET","3D","a-blog cms","A\/B\u30c6\u30b9\u30c8","ActionScript","Adobe Analytics","Aerospike","Agda","AgriTech","Akka","AMP","Android","Android Studio","AngularJS","Ansible","Apache","Apache Cordova","Apache Drill","Apache Mesos","Apache Phoenix","Apache Spark","API","AppGoat","Appium","AR","Arduino","asm.js","Atom","Avro","AWS","AWS Lambda","Azure","Azure Functions","BaaS","Babel","Backbone.js","bash","BASIC","batman.js","BigTable","Blender","Block chain","Bluemix","Bot","Boundary","Broke.js","Bullet","C#","C++","Cacti","CAD","CAE","CakePHP","Camping","Capistrano","Cardboard","Cassandra","Catalyst","CDN","CentOS","Chainer","ChatOps","Chef","CherryPy","Choregraphe","Chrome","CircleCI","Cisco","CivicTech","CleanTech","Click","Clojure","Cloud Foundry","CloudStack","COBOL","Cocoa","Cocos2d-js","Cocos2d-x","CodeIgniter","CoffeeScript","ColdFusion","Compass","concrete5","Coq","Corona SDK","Couchbase","CouchDB","Crate.IO","CreateJS","CSS","CSS3","CUDA","Cylon.js","C\u8a00\u8a9e","D3.js","Dart","Datadog","DB2","Debian","Deep Learning","Deis","Delphi","DeployGate","Derby","DevOps","DevRel","Dialogflow","Django","DNS","Docker","Domo","Drone","Dropwizard","Drupal","D\u8a00\u8a9e","E2D3","Eclipse","EdTech","EFO","Elasticsearch","Electron","Elixir","Elm","Emacs","Ember.js","Embulk","Emmet","Emscripten","enchant.js","Erlang","ERP","Ethereum","Ethna","Express","ExtJS","F#","FaaS","Fabric","FashionTech","fastlane","Fedora","FIDO","FileMaker","Fintech","Firebase","Firefox OS","Flask","Flatiron","Flex","Fluentd","Flutter","flynn","FoodTech","FPGA","FreeBSD","FuelPHP","Geb","Geeklog","GIS","Git","GitHub","GlusterFS","Go","Google Analytics","Google App Engine","Google Apps Script","Google BigQuery","Google Cloud Functions","Google Cloud Platform","GPU","Gradle","GraphQL","Groonga","Groovy","GrowthForecast","Grunt","Gulp","Hadoop","Haml","Haskell","HBase","HealthTech","Heroku","HHVM","Hive","HoloLens","Homekit","HRTech","HTML","HTML5","Hyper-V","Hypertable","IaaS","iBeacon","IIS","Impala","Infrastructure as Code","Intel Edison","Intel Joule","IntelliJ IDEA","Ionic","iOS","IoT","IPython","Java","JavaScript","Jenkins","Jimdo","JINS MEME","JMeter","jQuery","JSF","Jubatus","Julia","JUnit","Jupyter","Kali Linux","Kibana","Kinect","kintone","Knockout.JS","Koa","Kohana","Kotlin","Kubernetes","Kumofs","KVM","Lapis","Laravel","LeanAnalytics","LeanUX","Less","Lift","Limonade","Linux","Lisp","Lithium","Live2D","LogStash","LoRaWAN","LPO","Lua","MA","Mackerel","Mahout","MapR","MariaDB","Matador","MBaaS","MeCab","Meetup","Merb","MESH","Metabase","Meteor","MHA","micro:bit","Microservices","Milkcocoa","Mithril.js","Modelica","Monaca","MongoDB","MovableType","MQTT","MR","Mroonga","Munin","MySQL","Nagios","Neo4j","New Relic","NFC","Nginx","NixOS","Node-RED","Node.js","Norikra","Nuxt.js","Objective-C","OCaml","Oculus Rift","OpenBSD","OpenCL","OpenCV","OpenGL","openHAB","OpenID","OpenNI","OpenStack","OpenStreetMap","OpenWhisk","Oracle","OrientDB","OSS","OSv","OWASP","PaaS","Pascal","PayPal","Pentaho","Pepper","Perl","Phalcon","PhoneGap","Photon","PHP","PhpStorm","Pig","Pinoco","Play Framework","Plone","plotly.js","Polymer","PostgreSQL","Power BI","PowerShell","Presto","Processing","Prolog","Pulse CMS","Puppet","PWA","Pyramid","Python","Q#","Qlik","QML","Qt","RAD Studio","Rancher","Raspberry Pi","React Native","React.js","ReactiveX","Realm","Redash","Redis","Redmine","Redux","RESAS","RethinkDB","Riak","Riot.js","ROS","RPA","Ruby","Ruby on Rails","RubyMotion","Rust","R\u8a00\u8a9e","SaaS","Salesforce","SAP HANA","SAS","Sass","Scala","Scratch","SDN","SDSoC","Seasar","Selenium","Sencha Touch","Sensu","SEO","Serverless","Serverspec","Shark","Shell","Sinatra","Slim","Smalltalk","SoftLayer","Solaris","Solr","SORACOM","Sota","Sphinx","SportTech","Spring","SQL","SQLite","SQLServer","Sqoop","SRE","Stan","Struts","Sublime Text","SuperCollider","Swift","Symfony","Tableau","TDD","TensorFlow","Terraform","ThingSpeak","three.js","TiDD","Titanium","tmux","Tomcat","TouchDesigner","Travis CI","Treasure Data","Twilio","TypeScript","Ubuntu","UIUX","Unity","Unreal Engine","Vagrant","Vim","VirtualBox","Viscuit","Visual Basic","Visual Studio","Vitess","VMware","VR","VstoneMagic","Vue.js","VUI","Vyatta","Watson","Waves","Web Components","WebAssembly","WebGL","webpack","WebRTC","WebStorm","Web\u30c7\u30b6\u30a4\u30f3","Web\u30de\u30fc\u30b1\u30c6\u30a3\u30f3\u30b0","Wicket","Windows","Wireshark","WordPress","Xamarin","Xcode","Xen","Xojo","Yeoman","Yesod","Yii","Zabbix","Zend Framework","Zope","Zsh","\u30a2\u30fc\u30ad\u30c6\u30af\u30c1\u30e3","\u30a2\u30a4\u30c7\u30a2\u30bd\u30f3","\u30a2\u30af\u30bb\u30b7\u30d3\u30ea\u30c6\u30a3","\u30a2\u30af\u30bb\u30b9\u89e3\u6790","\u30a2\u30b8\u30e3\u30a4\u30eb","\u30a2\u30bb\u30f3\u30d6\u30e9","\u30a2\u30c9\u30c6\u30af","\u30a2\u30eb\u30b4\u30ea\u30ba\u30e0","\u30a4\u30f3\u30d5\u30e9","\u30aa\u30fc\u30d7\u30f3\u30a4\u30ce\u30d9\u30fc\u30b7\u30e7\u30f3","\u30aa\u30fc\u30d7\u30f3\u30c7\u30fc\u30bf","\u30aa\u30e0\u30cb\u30c1\u30e3\u30cd\u30eb","\u30ad\u30c3\u30ba","\u30ad\u30e3\u30ea\u30a2","\u30b0\u30e9\u30d5\u30a3\u30c3\u30af\u30c7\u30b6\u30a4\u30f3","\u30b0\u30ed\u30fc\u30b9\u30cf\u30c3\u30af","\u30b2\u30fc\u30e0","\u30b3\u30fc\u30c9\u30ea\u30fc\u30c7\u30a3\u30f3\u30b0","\u30b3\u30f3\u30c6\u30b9\u30c8","\u30b5\u30fc\u30d0\u30fc\u30b5\u30a4\u30c9","\u30b9\u30af\u30e9\u30e0","\u30b9\u30bf\u30fc\u30c8\u30a2\u30c3\u30d7","\u30b9\u30de\u30fc\u30c8\u30b9\u30d4\u30fc\u30ab\u30fc","\u30bb\u30ad\u30e5\u30ea\u30c6\u30a3","\u30bd\u30d5\u30c8\u30a6\u30a7\u30a2\u30c6\u30b9\u30c8","\u30c1\u30fc\u30e0\u30d3\u30eb\u30c7\u30a3\u30f3\u30b0","\u30c7\u30fc\u30bf\u30d9\u30fc\u30b9","\u30c7\u30fc\u30bf\u30de\u30a4\u30cb\u30f3\u30b0","\u30c7\u30fc\u30bf\u5206\u6790","\u30c7\u30b8\u30bf\u30eb\u30de\u30fc\u30b1\u30c6\u30a3\u30f3\u30b0","\u30c6\u30b9\u30c8","\u30c6\u30b9\u30c8\u30de\u30cd\u30b8\u30e1\u30f3\u30c8","\u30c6\u30b9\u30c8\u8a2d\u8a08","\u30c9\u30e1\u30a4\u30f3\u99c6\u52d5","\u30cd\u30c3\u30c8\u30ef\u30fc\u30af","\u30d1\u30b1\u30c3\u30c8\u30ad\u30e3\u30d7\u30c1\u30e3","\u30cf\u30c3\u30ab\u30bd\u30f3","\u30cf\u30c3\u30ad\u30f3\u30b0","\u30cf\u30f3\u30ba\u30aa\u30f3","\u30d3\u30c3\u30b0\u30c7\u30fc\u30bf","\u30d7\u30ed\u30b0\u30e9\u30df\u30f3\u30b0","\u30d7\u30ed\u30b8\u30a7\u30af\u30c8\u30de\u30cd\u30b8\u30e1\u30f3\u30c8","\u30d7\u30ed\u30c8\u30bf\u30a4\u30d4\u30f3\u30b0","\u30d5\u30ed\u30f3\u30c8\u30a8\u30f3\u30c9","\u30de\u30cd\u30bf\u30a4\u30ba","\u30e1\u30c7\u30a3\u30a2\u30a2\u30fc\u30c8","\u3082\u304f\u3082\u304f\u4f1a","\u30e6\u30fc\u30b6\u30d3\u30ea\u30c6\u30a3","\u30e9\u30a4\u30c8\u30cb\u30f3\u30b0\u30c8\u30fc\u30af","\u30e9\u30a4\u30d5\u30b9\u30bf\u30a4\u30eb","\u30ea\u30fc\u30f3\u30b9\u30bf\u30fc\u30c8\u30a2\u30c3\u30d7","\u30ea\u30fc\u30f3\u958b\u767a","\u30ed\u30dc\u30c3\u30c8","\u30ef\u30fc\u30af\u30b7\u30e7\u30c3\u30d7","\u30ef\u30fc\u30af\u30b9\u30bf\u30a4\u30eb","\u4ea4\u6d41\u4f1a","\u4eba\u5de5\u77e5\u80fd","\u521d\u5fc3\u8005","\u5973\u5b50\u90e8","\u5f62\u614b\u7d20\u89e3\u6790","\u63a2\u7d22\u7684\u30c6\u30b9\u30c8","\u6570\u5b66","\u6a5f\u68b0\u5b66\u7fd2","\u6a5f\u80fd\u30c6\u30b9\u30c8","\u81ea\u7136\u8a00\u8a9e\u51e6\u7406","\u8aad\u66f8\u4f1a","\u91cf\u5b50\u30b3\u30f3\u30d4\u30e5\u30fc\u30bf","\u91cf\u5b50\u30d7\u30ed\u30b0\u30e9\u30df\u30f3\u30b0","\u96fb\u5b50\u5de5\u4f5c","\u975e\u6a5f\u80fd\u30c6\u30b9\u30c8"];
+                        var start = function(){new Suggest.Local("kw_search", "suggest", suggestList);};
+            window.addEventListener ?
+            window.addEventListener('load', start, false) :
+            window.attachEvent('onload', start);
+        })();
+    
+    
+    
+    
+        </script>
+    <script src="techplay.jp_files/user_regist.js" defer="defer"></script>
+<script>
+        
+    
+    (function() {
+    var community_view = [];
+    $("[id^=topCommunity_]").on('inview', function(event, isInView) {
+      var $this = $(this);
+      if (isInView) {
+        $this.addClass("community_view");
+        var category = event.currentTarget.id;
+        if ((category in community_view) === false) {
+          community_view[category] = 0;
+        }
+        if (community_view[category] === 0) {
+            if (typeof(page) !== 'undefined') {
+              dataLayer.push({'eventCategory':category, 'event':'impression', 'eventUrl': $('#' + category).children('a').attr('href') ,'eventValue':page});
+            } else if (typeof(eventId) !== 'undefined') {
+              dataLayer.push({'eventCategory':category, 'event':'impression', 'eventUrl': $('#' + category).children('a').attr('href'),'eventValue':eventId});
+            } else {
+              dataLayer.push({'eventCategory':category, 'event':'impression', 'eventUrl': $('#' + category).children('a').attr('href')});
+            }
+          community_view[category] = 1;
+        }
+      } else {
+        $this.removeClass("community_view");
+      }
+    });
+})();
+
+    $('.wrap-full-banner .wrap-full-banner-top').on('init reInit', function(event, slick, currentSlide, nextSlide){
+        var banner_view = [];
+        $('#top-banner').on('inview', function(event, isInView) {
+            var $this = $(this);
+            if (isInView) {
+                $this.addClass("banner_view");
+                var num =  $('.slick-active').find('img').data('banner-num');
+                var category = 'topBanner_' + num;
+                if ((category in banner_view) === false) {
+                    banner_view[category] = 0;
+                }
+                if (banner_view[category] === 0) {
+                    dataLayer.push({'eventCategory':category, 'event':'impression', 'eventUrl':$('.slick-active').children('a').attr('href')})
+                    banner_view[category] = 1;
+                }
+            } else {
+                $this.removeClass("banner_view");
+            }
+        });
+                    $('.wrap-full-banner .wrap-full-banner-top').on('afterChange', function(event, slick, currentSlide, nextSlide){
+                var num =  $('.slick-active').find('img').data('banner-num');
+                var category = 'topBanner_' + num;
+                if ((category in banner_view) === false) {
+                    banner_view[category] = 0;
+                }
+                if ($('#top-banner').hasClass('banner_view') && banner_view[category] === 0) {
+                    dataLayer.push({'eventCategory':category, 'event':'impression', 'eventUrl':$('.slick-active').children('a').attr('href')})
+                    banner_view[category] = 1;
+                }
+            });
+            });
+</script>
+
+
+<div id="dialogBgArea"><div id="dialogArea"><h2>エラータイトル</h2><p>エラー本文</p><ul class="buttonOne"><li>OK</li></ul><ul class="buttonTwo"><li>いいえ</li><li>はい</li></ul></div></div><script type="text/javascript" id="">!function(b,c){if(void 0===c[b]){c[b]=function(){c[b].clients.push(this);this._init=[Array.prototype.slice.call(arguments)]};c[b].clients=[];for(var a=function(a){return function(){return this["_"+a]=this["_"+a]||[],this["_"+a].push(Array.prototype.slice.call(arguments)),this}},d="addRecord set trackEvent trackPageview trackClicks ready".split(" "),e=0;e<d.length;e++){var f=d[e];c[b].prototype[f]=a(f)}a=document.createElement("script");a.type="text/javascript";a.async=!0;a.src=("https:"===document.location.protocol?
+"https:":"http:")+"//cdn.treasuredata.com/sdk/1.8.4/td.min.js";d=document.getElementsByTagName("script")[0];d.parentNode.insertBefore(a,d)}}("Treasure",this);</script>
+<script type="text/javascript" id="">var td=new Treasure({writeKey:"6653/fa4913a4f20142b12623dbb4c973ee999a57fa16",database:"td_sdk"}),td_table="pageviews";td.set("$global","td_global_id","td_global_id");td.trackPageview(td_table);td.set(td_table,"audience_id","");td.set(td_table,"segment_id","");td.set(td_table,"custom_id","");td.set(td_table,"custom_data","");td.set(td_table,"custom_type","");td.set(td_table,"custom_price","");td.set(td_table,"ad_id","");td.set(td_table,"device_id","");td.set(td_table,"custom_rank","");
+td.set(td_table,"option","");td.set(td_table,"dots_number",google_tag_manager["GTM-K37XWQ"].macro(1));td.set(td_table,"dots_login",google_tag_manager["GTM-K37XWQ"].macro(2));td.set(td_table,"d_hash",google_tag_manager["GTM-K37XWQ"].macro(3));</script>
+<div style="display: none; visibility: hidden;">
+<script>!function(b,e,f,g,a,c,d){b.fbq||(a=b.fbq=function(){a.callMethod?a.callMethod.apply(a,arguments):a.queue.push(arguments)},b._fbq||(b._fbq=a),a.push=a,a.loaded=!0,a.version="2.0",a.queue=[],c=e.createElement(f),c.async=!0,c.src=g,d=e.getElementsByTagName(f)[0],d.parentNode.insertBefore(c,d))}(window,document,"script","https://connect.facebook.net/en_US/fbevents.js");fbq("init","255118864997831");fbq("track","PageView");</script>
+<noscript></noscript>
+
+
+</div><script type="text/javascript" id="_-s-js-_" src="techplay.jp_files/s.js"></script><script type="text/javascript" id="">(function(e,a){if(!a.__SV){var b=window;try{var n,k,l=b.location,g=l.hash;var c=function(a,b){return(n=a.match(RegExp(b+"\x3d([^\x26]*)")))?n[1]:null};g&&c(g,"state")&&(k=JSON.parse(decodeURIComponent(c(g,"state"))),"mpeditor"===k.action&&(b.sessionStorage.setItem("_mpcehash",g),history.replaceState(k.desiredHash||"",e.title,l.pathname+l.search)))}catch(p){}var m,h;window.mixpanel=a;a._i=[];a.init=function(b,c,f){function e(b,a){var c=a.split(".");2==c.length&&(b=b[c[0]],a=c[1]);b[a]=function(){b.push([a].concat(Array.prototype.slice.call(arguments,
+0)))}}var d=a;"undefined"!==typeof f?d=a[f]=[]:f="mixpanel";d.people=d.people||[];d.toString=function(b){var a="mixpanel";"mixpanel"!==f&&(a+="."+f);b||(a+=" (stub)");return a};d.people.toString=function(){return d.toString(1)+".people (stub)"};m="disable time_event track track_pageview track_links track_forms register register_once alias unregister identify name_tag set_config reset people.set people.set_once people.increment people.append people.union people.track_charge people.clear_charges people.delete_user".split(" ");
+for(h=0;h<m.length;h++)e(d,m[h]);a._i.push([b,c,f])};a.__SV=1.2;b=e.createElement("script");b.type="text/javascript";b.async=!0;b.src="undefined"!==typeof MIXPANEL_CUSTOM_LIB_URL?MIXPANEL_CUSTOM_LIB_URL:"file:"===e.location.protocol&&"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js".match(/^\/\//)?"https://cdn.mxpnl.com/libs/mixpanel-2-latest.min.js":"//cdn.mxpnl.com/libs/mixpanel-2-latest.min.js";c=e.getElementsByTagName("script")[0];c.parentNode.insertBefore(b,c)}})(document,window.mixpanel||[]);
+mixpanel.init("b647261ae6d4ca58c3cebcde1595cc0d");</script><script type="text/javascript" id="">(function(a,e,f,g,b,c,d){a.GoogleAnalyticsObject=b;a[b]=a[b]||function(){(a[b].q=a[b].q||[]).push(arguments)};a[b].l=1*new Date;c=e.createElement(f);d=e.getElementsByTagName(f)[0];c.async=1;c.src=g;d.parentNode.insertBefore(c,d)})(window,document,"script","https://www.google-analytics.com/analytics.js","ga");ga("create","UA-43568852-1","auto");ga("require","GTM-NXRQRC9");</script><iframe style="width: 1px; height: 1px; display: none;" src="techplay.jp_files/s.html"></iframe></body></html>

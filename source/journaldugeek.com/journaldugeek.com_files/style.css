@@ -1,0 +1,17 @@
+.graphcomment-wp-error {
+  margin: 2em;
+}
+
+.graphcomment-wp-error .graphcomment-wp-error-inner {
+  max-width: 26em;
+  margin: 0 auto;
+  padding: 0.5em 1em;
+  border-radius: 10px;
+  background: #e72b4a;
+  color: white;
+}
+
+.graphcomment-wp-main-wrapper {
+  width: 100%;
+  min-height: 100%;
+}

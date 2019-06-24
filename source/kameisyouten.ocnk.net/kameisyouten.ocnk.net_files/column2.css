@@ -1,0 +1,108 @@
+@charset "utf-8";
+/* CSS Document */
+
+/********************************************************************/
+/* 2Column */
+
+#column2 .center_box {
+	width: 670px;
+	margin: 0px 0px 10px;
+	padding: 0px;
+}
+
+#column2 #centertd {
+    width: 670px;
+	padding: 15px;
+	margin: 0px;
+}
+
+#lefttd .default_box .whatnew_top {
+    padding-left: 5px;
+}
+
+#lefttd .default_box .whatnew_middle,
+#lefttd .default_box .whatnew_bottom {
+    border: none;
+}
+
+#column2 .style1_top {
+    width: auto;
+	height: 27px;
+	margin: 0px;
+	padding: 8px 0px 0px 18px;
+}
+
+#column2 .style1_middle {
+	width: 658px;
+	margin: 2px 0px 0px;
+	padding: 5px;
+}
+
+#column2 .style1_table {
+	width: 648px;
+	margin: 0px;
+	padding: 0px;
+}
+
+#column2 .style2_top {
+    width: auto;
+	height: 27px;
+	margin: 0px;
+	padding: 8px 0px 0px 18px;
+}
+
+#column2 .style2_middle {
+	width: 658px;
+	margin: 2px 0px 0px;
+	padding: 5px;
+}
+
+#column2 .style2_table {
+	width: 648px;
+	margin: 0px;
+	padding: 0px;
+}
+
+#column2 .style2_rank_table {
+	width: 648px;
+	margin: 0px;
+	padding: 0px;
+}
+
+#column2 .style2_rank_table td {
+    width: 162px;
+}
+
+#column2 .style2_rank_photo {
+	margin: auto;
+}
+
+#column2 .style2_rank_text {
+	text-align: center;
+	margin: auto;
+}
+
+#column2 .rank2-5 {
+	text-align: center;
+}
+
+#lefttd .default_box .style3_photo {
+	padding: 0px 23px;
+}
+
+#lefttd2 {
+	padding: 0px;
+	margin: 0px;
+	background: #E3E3E3;
+	border-right:1px solid #CCCCCC;
+}
+
+.point_box .bot_b .default_bot_b input,
+.link_bot_box .bot_b .default_bot_b input,
+.point_box3 .bot_b .default_bot_b input,
+.td_color1 .bot_b .default_bot_b input {
+    padding: 2px;
+	background: url(img/bot_bg.gif) #FFFFFF;
+	color: #FFFFFF;
+	font-weight: bold;
+}

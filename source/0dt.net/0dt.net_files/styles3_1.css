@@ -1,0 +1,482 @@
+* {margin:0;padding:0;}
+body{font-family:Arial, Helvetica, sans-serif;font-size:12px;background:#FFFFFF;color:#010101;}
+.time{display:none}
+img {border:0;}
+a{color:#4393e;font-size:12px;text-decoration:underline;}
+a:hover {color:#FF0000;font-size:12px;text-decoration:none;}
+h1 {font-family:tahoma, arial;font-size:24px;font-weight:bold;	color:#000000;padding:10px 0 20px 0;}
+h2 {font-family:tahoma, arial;color:#ffffff;font-size:30px;padding:10px;}
+.logo {float:left;padding:20px 20px 20px 0;}
+.slogan {color:#747474;font-size:11px;padding:27px 0 0 0;}
+.buttonStyle {border:0;cursor:pointer;font-size:14px;font-weight:bold;color:#ffffff;background:#413503;padding:2px 7px;}
+#container {width: 1280px;margin: 0 auto;}
+.headerTop {background:#2c2c2c;}
+.headerPic {float:left;padding:0 30px 0 0;}
+.headerSlogan {font-size:36px;color:#f2c411;padding:70px 0 0 0;}
+.menu {float:left;}
+.menu ul {padding:10px 0;margin:0;}
+.menu li {list-style:none;display:inline;padding:0;}
+.menu a {color:#ffffff;font-size:12px;text-decoration:none;padding:10px 20px;} 
+.menu a:hover {color:#ffffff;font-size:12px;background:#ff0000;text-decoration:none;}
+.menu #active a {color:#ffffff;font-size:12px;background:#ff0000;text-decoration:none;} 
+#menu{float:left;list-style:none;padding:0;margin:0;}
+#menu ul {padding:0;margin:0;}
+#menu li{float:left;padding:0;margin:0;text-align:center;background:#2C2C2C;position:relative;list-style:none;z-index: 600;}
+#menu li ul{list-style:none;padding:0;margin:0;display:none;position:absolute;left:0;top:35px;z-index: 601;}
+#menu li ul li{float:none;height:30px;margin:0;text-align:left;width:250px;}
+#menu li a{color:#ffffff;font-size:12px;text-decoration:none;display:block;padding:10px 15px;}
+#menu #active a {color:#ffffff;font-size:12px;background:#ff0000;text-decoration:none;} 
+#menu li:hover ul, #menu li.jshover ul{display:block;}
+#menu li:hover, #menu li.jshover{background:#F00}
+.icons {float:right;background:#FFFFFF;margin:4px 3px 0px 3px;}
+.icons li {list-style:none;display:inline;}
+#sidebar1 {background:#ffffff;float: right;} 
+#sidebar1 ul {}
+#sidebar1 li {list-style:none;font-size:12px;color:#000000;
+background:url(images/p.png) no-repeat left 5px;padding:5px 0 5px 20px;}
+#sidebar1 {float: left;width: 300px;}
+#sidebar1 ul {padding: 0 10px 10px 10px;}
+#sidebar1 li a {font-size:14px;color:#0f0c13;text-decoration:none;}
+#sidebar1 li a:hover {font-size:14px;color:#0f0c13;text-decoration:underline;}
+#sidebarleft {float:  left;width: 250px;}
+#mainContent {margin: 0 0 0 20px; float:  left;}
+.picRight {float:right;padding:0 0 15px 20px;}
+#mainContent p {padding:10px 0 30px 0;}
+.box {float:left;width:160px;padding:0px 0px 5px 0px;margin:0 3px 15px 3px;border-bottom:1px solid #acacac;}
+.boxTitle {color:#515151;padding:5px 0;} 
+.boxPrice {color:#46890b;padding:0 0 5px 0;font-weight:bold;}
+.boxLink a {font-size:12px;font-weight:bold;color:#3d81c7;text-decoration:none;}
+.boxLink a:hover {font-size:12px;font-weight:bold;color:#3d81c7;text-decoration:underline;}
+#footer {background:#2c2c2c;color:#9e9e9e;padding:17px 0;margin:20px 0 0 0;font-size:11px;}
+#footer p {text-align:center;} 
+#footer a {color:#f2c200;text-decoration:underline;font-size:11px;}
+#footer a:hover {color:#f2c200;text-decoration:none;font-size:11px;}
+.clearfloat {clear:both;height:0;font-size: 1px;line-height: 0px;}
+table.contacts { width: 680px; background-color: #fafafa; border: 1px #000000 solid; border-collapse: collapse; border-spacing: 0px; margin-bottom: 15px; font-family: Verdana; }
+table.contacts caption { 	background-color: #99CCCC;  font-family: Verdana; font-weight: bold; font-size: 14px; color: #404040; }
+table.contacts th { background-color: #CCC; border: 1px #000000 solid; font-family: Verdana; font-weight: bold; font-size: 12px; color: #000000; text-align: center; }
+table.contacts td.contactDept { background-color: #262525; border: 1px #000000 solid; font-family: Verdana; font-weight: bold; font-size: 18px; color: #ffffff; }
+table.contacts th.thead {  border: -1px; font-family: Verdana; font-weight: bold; font-size: 18px; color: #ffffff; }
+table.contacts td { border-bottom: 1px #BFDADA dotted; text-align: left; font-family: Verdana, sans-serif, Arial; font-weight: bold; font-size: 14px; color: #404040; background-color: #fafafa; padding-top: 4px; padding-bottom: 4px; padding-left: 4px; padding-right: 0px; }
+table.standing { width: 680px; background-color: #fafafa; border: 1px #000000 solid; border-collapse: collapse; border-spacing: 0px; margin-bottom: 15px; font-family: Verdana; }
+table.standing caption { 	background-color: #99CCCC;  font-family: Verdana; font-weight: bold; font-size: 14px; color: #404040; }
+table.standing th { background-color: #CCC; border: 1px #000000 solid; font-family: Verdana; font-weight: bold; font-size: 12px; color: #000000; text-align: center; }
+table.standing td.contactDept { background-color: #262525; border: 1px #000000 solid; font-family: Verdana; font-weight: bold; font-size: 18px; color: #ffffff; }
+table.standing th.thead {  border: -1px; font-family: Verdana; font-weight: bold; font-size: 18px; color: #ffffff; }
+table.standing td { border-bottom: 1px #BFDADA dotted; text-align: left; font-family: Verdana, sans-serif, Arial; font-weight: bold; font-size: 14px; color: #404040; padding-top: 4px; padding-bottom: 4px; padding-left: 4px; padding-right: 0px; }
+.championsleague{background-color:#9FF;}
+.championsleaguequal{background-color:#9FC;}
+.uefacup{background-color:#9CF;}
+.uefaqual{background-color:#9CC;}
+.promotion{background-color:#CFF;}
+.promotionplayoff{background-color:#CFC;}
+.relegationplayoff{background-color:#F90;}
+.relegation{background-color:#F66;}
+table.games { width: 680px; background-color: #fafafa; border: 1px #000000 solid; border-collapse: collapse; border-spacing: 0px; margin-bottom: 15px; font-family: Verdana; }
+table.games caption { 	background-color: #99CCCC; /*	border: 1px #000000 solid;*/ font-family: Verdana; font-weight: bold; font-size: 14px; color: #404040; }
+table.games th { background-color: #CCC; border: 1px #000000 solid; font-family: Verdana; font-weight: bold; font-size: 12px; color: #000000; text-align: center; }
+table.games td.contactDept { background-color: #262525; border: 1px #000000 solid; font-family: Verdana; font-size: 18px; color: #ffffff; }
+table.games th.thead { border: -1px; font-family: Verdana; font-size: 18px; color: #ffffff; }
+table.games td { border-bottom: 1px #BFDADA dotted; text-align: left; font-family: Verdana, sans-serif, Arial;  font-size: 14px; color: #404040; padding-top: 4px; padding-bottom: 4px; padding-left: 4px; padding-right: 0px; }
+table.games-line { width: 100%; background-color: #fafafa; border:none; font-family: Verdana; }
+table.games-line caption { 	background-color: #99CCCC; font-family: Verdana; font-weight: bold; font-size: 14px; color: #404040; }
+table.games-line th { background-color: #CCC; border: 1px #000000 solid; font-family: Verdana; font-weight: bold; font-size: 12px; color: #000000; text-align: center; }
+table.games-line td.contactDept { background-color: #262525; border: 1px #000000 solid; font-family: Verdana; font-size: 18px; color: #ffffff; }
+table.games-line th.thead {  border: -1px; font-family: Verdana; font-size: 18px; color: #ffffff; }
+table.games-line td { border-bottom:none ; text-align: left; font-family: Verdana, sans-serif, Arial;  font-size: 14px; color: #404040; padding:0 }
+table.games-line a td {  font-family: Verdana, sans-serif, Arial;  font-size: 14px; color:#03F;  }
+ul.dropdown, ul.dropdown li, ul.dropdown ul {list-style: none;margin: 0;padding: 0;}
+ul.dropdown {position: relative;z-index: 597;float: left;}
+ul.dropdown li {float: left;line-height: 1.3em;vertical-align: middle;zoom: 1;}
+ul.dropdown li.hover, ul.dropdown li:hover {position: relative;z-index: 599;cursor: pointer;}
+ul.dropdown li ul {display: none;margin: 10px -20px -8px 0;width: 240px;}
+ul.dropdown ul li {float: none;}
+ul.dropdown ul ul {top: 1px;left: 99%;}
+ul.dropdown li.active > ul {display: block;}
+ul.dropdown-vertical {width: 250px;}
+ul.dropdown-vertical li {float: none;}
+ul.dropdown {font-weight: bold;}
+ul.dropdown li {padding: 7px 10px;border-style: solid;border-width: 1px 1px 1px 0;border-color: #fff #d9d9d9 #d9d9d9;background-color: #f6f6f6;color: #000;}
+ul.dropdown li.hover, ul.dropdown li:hover {background-color: #eee;color: #000;}
+ul.dropdown a:link, ul.dropdown a:visited	{ color: #000; text-decoration: none; }
+ul.dropdown a:hover { color: #000; }
+ul.dropdown a:active { color: #ffa500; }
+ul.dropdown ul {width: 250px;margin-top: 1px;}
+ul.dropdown ul li {font-weight: normal;}
+ul.dropdown *.dir {padding-right: 20px;background-position: 100% 50%;background-repeat: no-repeat;}
+ul.dropdown-horizontal ul *.dir {padding-right: 15px;background-position: 100% 50%;background-repeat: no-repeat;}
+
+ul.dropdown-vertical *.dir, ul.dropdown-upward ul *.dir {background-image: url(/images/nav-arrow-right.png);}
+ul.dropdown-vertical-rtl *.dir {padding-right: 10px;padding-left: 15px;background-position: 0 50%;}
+
+.dblock {display: inline-block;}
+.sp-abali{ background: url(images/cpr.png) 0 0; width: 16px; height: 16px; } 
+.sp-acn{ background: url(images/cpr.png)  0 -21px; width: 20px; height: 19px; } 
+.sp-ad{ background: url(images/cpr.png)  0 -45px; width: 16px; height: 11px; } 
+.sp-ae{ background: url(images/cpr.png)  0 -61px; width: 16px; height: 11px; } 
+.sp-af{ background: url(images/cpr.png)  0 -77px; width: 16px; height: 11px; } 
+.sp-afcup{ background: url(images/cpr.png)  0 -93px; width: 16px; height: 16px; } 
+.sp-ag{ background: url(images/cpr.png)  0 -114px; width: 16px; height: 11px; } 
+.sp-ai{ background: url(images/cpr.png)  0 -130px; width: 16px; height: 11px; } 
+.sp-al{ background: url(images/cpr.png)  0 -146px; width: 16px; height: 11px; } 
+.sp-am{ background: url(images/cpr.png)  0 -162px; width: 16px; height: 11px; } 
+.sp-an{ background: url(images/cpr.png)  0 -178px; width: 16px; height: 11px; } 
+.sp-ao{ background: url(images/cpr.png)  0 -194px; width: 16px; height: 11px; } 
+.sp-ar{ background: url(images/cpr.png)  0 -210px; width: 16px; height: 11px; } 
+.sp-as{ background: url(images/cpr.png)  0 -226px; width: 16px; height: 11px; } 
+.sp-at{ background: url(images/cpr.png)  0 -242px; width: 16px; height: 11px; } 
+.sp-au, .sp-hm{ background: url(images/cpr.png)  0 -258px; width: 16px; height: 11px; } 
+.sp-aw{ background: url(images/cpr.png)  0 -274px; width: 16px; height: 11px; } 
+.sp-ax{ background: url(images/cpr.png)  0 -290px; width: 16px; height: 11px; } 
+.sp-az{ background: url(images/cpr.png)  0 -306px; width: 16px; height: 11px; } 
+.sp-ba{ background: url(images/cpr.png)  0 -322px; width: 16px; height: 11px; } 
+.sp-basketball{ background: url(images/cpr.png)  0 -338px; width: 18px; height: 19px; } 
+.sp-bb{ background: url(images/cpr.png)  0 -362px; width: 16px; height: 11px; } 
+.sp-bbl{ background: url(images/cpr.png)  0 -378px; width: 16px; height: 15px; } 
+.sp-bd{ background: url(images/cpr.png)  0 -398px; width: 16px; height: 11px; } 
+.sp-be{ background: url(images/cpr.png)  0 -414px; width: 16px; height: 11px; } 
+.sp-bf{ background: url(images/cpr.png)  0 -430px; width: 16px; height: 11px; } 
+.sp-bg{ background: url(images/cpr.png)  0 -446px; width: 16px; height: 11px; } 
+.sp-bh{ background: url(images/cpr.png)  0 -462px; width: 16px; height: 11px; } 
+.sp-bi{ background: url(images/cpr.png)  0 -478px; width: 16px; height: 11px; } 
+.sp-bj{ background: url(images/cpr.png)  0 -494px; width: 16px; height: 11px; } 
+.sp-bm{ background: url(images/cpr.png)  0 -510px; width: 16px; height: 11px; } 
+.sp-bn{ background: url(images/cpr.png)  0 -526px; width: 16px; height: 11px; } 
+.sp-bo{ background: url(images/cpr.png)  0 -542px; width: 16px; height: 11px; } 
+.sp-br{ background: url(images/cpr.png)  0 -558px; width: 16px; height: 11px; } 
+.sp-bs{ background: url(images/cpr.png)  0 -574px; width: 16px; height: 11px; } 
+.sp-bt{ background: url(images/cpr.png)  0 -590px; width: 16px; height: 11px; } 
+.sp-bv, .sp-no, .sp-sj{ background: url(images/cpr.png)  0 -606px; width: 16px; height: 11px; } 
+.sp-bw{ background: url(images/cpr.png)  0 -622px; width: 16px; height: 11px; } 
+.sp-by{ background: url(images/cpr.png)  0 -638px; width: 16px; height: 11px; } 
+.sp-bz{ background: url(images/cpr.png)  0 -654px; width: 16px; height: 11px; } 
+.sp-ca{ background: url(images/cpr.png)  0 -670px; width: 16px; height: 11px; } 
+.sp-caf{ background: url(images/cpr.png)  0 -686px; width: 29px; height: 19px; } 
+.sp-cc{ background: url(images/cpr.png)  0 -710px; width: 16px; height: 11px; } 
+.sp-ccfcl{ background: url(images/cpr.png)  0 -726px; width: 27px; height: 25px; } 
+.sp-cd{ background: url(images/cpr.png)  0 -756px; width: 16px; height: 11px; } 
+.sp-cf{ background: url(images/cpr.png)  0 -772px; width: 16px; height: 11px; } 
+.sp-cg{ background: url(images/cpr.png)  0 -788px; width: 16px; height: 11px; } 
+.sp-ch{ background: url(images/cpr.png)  0 -804px; width: 11px; height: 11px; } 
+.sp-che{ background: url(images/cpr.png)  0 -820px; width: 27px; height: 25px; } 
+.sp-chm14{ background: url(images/cpr.png)  0 -850px; width: 23px; height: 22px; } 
+.sp-ci{ background: url(images/cpr.png)  0 -877px; width: 16px; height: 11px; } 
+.sp-ck{ background: url(images/cpr.png)  0 -893px; width: 16px; height: 11px; } 
+.sp-cl{ background: url(images/cpr.png)  0 -909px; width: 16px; height: 11px; } 
+.sp-clock{ background: url(images/cpr.png)  0 -925px; width: 24px; height: 24px; } 
+.sp-cm{ background: url(images/cpr.png)  0 -954px; width: 16px; height: 11px; } 
+.sp-cn{ background: url(images/cpr.png)  0 -970px; width: 16px; height: 11px; } 
+.sp-co{ background: url(images/cpr.png)  0 -986px; width: 16px; height: 11px; } 
+.sp-copa{ background: url(images/cpr.png)  0 -1002px; width: 30px; height: 19px; } 
+.sp-cr{ background: url(images/cpr.png)  0 -1026px; width: 16px; height: 11px; } 
+.sp-cricket{ background: url(images/cpr.png)  0 -1042px; width: 20px; height: 20px; } 
+.sp-cs{ background: url(images/cpr.png)  0 -1067px; width: 16px; height: 11px; } 
+.sp-cu{ background: url(images/cpr.png)  0 -1083px; width: 16px; height: 11px; } 
+.sp-cv{ background: url(images/cpr.png)  0 -1099px; width: 16px; height: 11px; } 
+.sp-cx{ background: url(images/cpr.png)  0 -1115px; width: 16px; height: 11px; } 
+.sp-cy{ background: url(images/cpr.png)  0 -1131px; width: 16px; height: 11px; } 
+.sp-cz{ background: url(images/cpr.png)  0 -1147px; width: 16px; height: 11px; } 
+.sp-de{ background: url(images/cpr.png)  0 -1163px; width: 16px; height: 11px; } 
+.sp-dj{ background: url(images/cpr.png)  0 -1179px; width: 16px; height: 11px; } 
+.sp-dk{ background: url(images/cpr.png)  0 -1195px; width: 16px; height: 11px; } 
+.sp-dm{ background: url(images/cpr.png)  0 -1211px; width: 16px; height: 11px; } 
+.sp-do{ background: url(images/cpr.png)  0 -1227px; width: 16px; height: 11px; } 
+.sp-dz{ background: url(images/cpr.png)  0 -1243px; width: 16px; height: 11px; } 
+.sp-ec{ background: url(images/cpr.png)  0 -1259px; width: 16px; height: 11px; } 
+.sp-ee{ background: url(images/cpr.png)  0 -1275px; width: 16px; height: 11px; } 
+.sp-eg{ background: url(images/cpr.png)  0 -1291px; width: 16px; height: 11px; } 
+.sp-eh{ background: url(images/cpr.png)  0 -1307px; width: 16px; height: 11px; } 
+.sp-el{ background: url(images/cpr.png)  0 -1323px; width: 27px; height: 25px; } 
+.sp-en{ background: url(images/cpr.png)  0 -1353px; width: 16px; height: 11px; } 
+.sp-er{ background: url(images/cpr.png)  0 -1369px; width: 16px; height: 11px; } 
+.sp-es{ background: url(images/cpr.png)  0 -1385px; width: 16px; height: 11px; } 
+.sp-et{ background: url(images/cpr.png)  0 -1401px; width: 16px; height: 11px; } 
+.sp-eu{ background: url(images/cpr.png)  0 -1417px; width: 16px; height: 11px; } 
+.sp-euro{ background: url(images/cpr.png)  0 -1433px; width: 30px; height: 30px; } 
+.sp-euro2012{ background: url(images/cpr.png)  0 -1468px; width: 27px; height: 25px; } 
+.sp-f1{ background: url(images/cpr.png)  0 -1498px; width: 26px; height: 18px; } 
+.sp-fam{ background: url(images/cpr.png)  0 -1521px; width: 16px; height: 11px; } 
+.sp-fi{ background: url(images/cpr.png)  0 -1537px; width: 16px; height: 11px; } 
+.sp-fj{ background: url(images/cpr.png)  0 -1553px; width: 16px; height: 11px; } 
+.sp-fk{ background: url(images/cpr.png)  0 -1569px; width: 16px; height: 11px; } 
+.sp-flag{ background: url(images/cpr.png)  0 -1585px; width: 20px; height: 20px; } 
+.sp-fm{ background: url(images/cpr.png)  0 -1610px; width: 16px; height: 11px; } 
+.sp-fo{ background: url(images/cpr.png)  0 -1626px; width: 16px; height: 11px; } 
+.sp-football, .sp-foots{ background: url(images/cpr.png)  0 -1642px; width: 19px; height: 21px; } 
+.sp-fr, .sp-gf, .sp-re{ background: url(images/cpr.png)  0 -1668px; width: 16px; height: 11px; } 
+.sp-fri{ background: url(images/cpr.png)  0 -1684px; width: 16px; height: 15px; } 
+.sp-ft{ background: url(images/cpr.png)  0 -1704px; width: 18px; height: 18px; } 
+.sp-ga{ background: url(images/cpr.png)  0 -1727px; width: 16px; height: 11px; } 
+.sp-gb{ background: url(images/cpr.png)  0 -1743px; width: 16px; height: 11px; } 
+.sp-gd{ background: url(images/cpr.png)  0 -1759px; width: 16px; height: 11px; } 
+.sp-ge{ background: url(images/cpr.png)  0 -1775px; width: 16px; height: 11px; } 
+.sp-gh{ background: url(images/cpr.png)  0 -1791px; width: 16px; height: 11px; } 
+.sp-gi{ background: url(images/cpr.png)  0 -1807px; width: 16px; height: 11px; } 
+.sp-gl{ background: url(images/cpr.png)  0 -1823px; width: 16px; height: 11px; } 
+.sp-gm{ background: url(images/cpr.png)  0 -1839px; width: 16px; height: 11px; } 
+.sp-gn{ background: url(images/cpr.png)  0 -1855px; width: 16px; height: 11px; } 
+.sp-gp{ background: url(images/cpr.png)  0 -1871px; width: 16px; height: 11px; } 
+.sp-gq{ background: url(images/cpr.png)  0 -1887px; width: 16px; height: 11px; } 
+.sp-gr{ background: url(images/cpr.png)  0 -1903px; width: 16px; height: 11px; } 
+.sp-gs{ background: url(images/cpr.png)  0 -1919px; width: 16px; height: 11px; } 
+.sp-gt{ background: url(images/cpr.png)  0 -1935px; width: 16px; height: 11px; } 
+.sp-gu{ background: url(images/cpr.png)  0 -1951px; width: 16px; height: 11px; } 
+.sp-gw{ background: url(images/cpr.png)  0 -1967px; width: 16px; height: 11px; } 
+.sp-gy{ background: url(images/cpr.png)  0 -1983px; width: 16px; height: 11px; } 
+.sp-hecup{ background: url(images/cpr.png)  -35px 0; width: 16px; height: 8px; } 
+.sp-hk{ background: url(images/cpr.png)  -35px -13px; width: 16px; height: 11px; } 
+.sp-hn{ background: url(images/cpr.png)  -35px -29px; width: 16px; height: 11px; } 
+.sp-hr{ background: url(images/cpr.png)  -35px -45px; width: 16px; height: 11px; } 
+.sp-ht{ background: url(images/cpr.png)  -35px -61px; width: 16px; height: 11px; } 
+.sp-hu{ background: url(images/cpr.png)  -35px -77px; width: 16px; height: 11px; } 
+.sp-icehockey{ background: url(images/cpr.png)  -35px -93px; width: 18px; height: 15px; } 
+.sp-id{ background: url(images/cpr.png)  -35px -113px; width: 16px; height: 11px; } 
+.sp-ie{ background: url(images/cpr.png)  -35px -129px; width: 16px; height: 11px; } 
+.sp-il{ background: url(images/cpr.png)  -35px -145px; width: 16px; height: 11px; } 
+.sp-in{ background: url(images/cpr.png)  -35px -161px; width: 16px; height: 11px; } 
+.sp-io{ background: url(images/cpr.png)  -35px -177px; width: 16px; height: 11px; } 
+.sp-iq{ background: url(images/cpr.png)  -35px -193px; width: 16px; height: 11px; } 
+.sp-ir{ background: url(images/cpr.png)  -35px -209px; width: 16px; height: 11px; } 
+.sp-is{ background: url(images/cpr.png)  -35px -225px; width: 16px; height: 11px; } 
+.sp-it{ background: url(images/cpr.png)  -35px -241px; width: 16px; height: 11px; } 
+.sp-jm{ background: url(images/cpr.png)  -35px -257px; width: 16px; height: 11px; } 
+.sp-jo{ background: url(images/cpr.png)  -35px -273px; width: 16px; height: 11px; } 
+.sp-jp{ background: url(images/cpr.png)  -35px -289px; width: 16px; height: 11px; } 
+.sp-ke{ background: url(images/cpr.png)  -35px -305px; width: 16px; height: 11px; } 
+.sp-kg{ background: url(images/cpr.png)  -35px -321px; width: 16px; height: 11px; } 
+.sp-kh{ background: url(images/cpr.png)  -35px -337px; width: 16px; height: 11px; } 
+.sp-khl{ background: url(images/cpr.png)  -35px -353px; width: 16px; height: 16px; } 
+.sp-ki{ background: url(images/cpr.png)  -35px -374px; width: 16px; height: 11px; } 
+.sp-km{ background: url(images/cpr.png)  -35px -390px; width: 16px; height: 11px; } 
+.sp-kn{ background: url(images/cpr.png)  -35px -406px; width: 16px; height: 11px; } 
+.sp-kp{ background: url(images/cpr.png)  -35px -422px; width: 16px; height: 11px; } 
+.sp-kr{ background: url(images/cpr.png)  -35px -438px; width: 16px; height: 11px; } 
+.sp-kw{ background: url(images/cpr.png)  -35px -454px; width: 16px; height: 11px; } 
+.sp-ky{ background: url(images/cpr.png)  -35px -470px; width: 16px; height: 11px; } 
+.sp-kz{ background: url(images/cpr.png)  -35px -486px; width: 16px; height: 11px; } 
+.sp-la{ background: url(images/cpr.png)  -35px -502px; width: 16px; height: 11px; } 
+.sp-lb{ background: url(images/cpr.png)  -35px -518px; width: 16px; height: 11px; } 
+.sp-lc{ background: url(images/cpr.png)  -35px -534px; width: 16px; height: 11px; } 
+.sp-li{ background: url(images/cpr.png)  -35px -550px; width: 16px; height: 11px; } 
+.sp-lib{ background: url(images/cpr.png)  -35px -566px; width: 16px; height: 15px; } 
+.sp-lk{ background: url(images/cpr.png)  -35px -586px; width: 16px; height: 11px; } 
+.sp-lr{ background: url(images/cpr.png)  -35px -602px; width: 16px; height: 11px; } 
+.sp-ls{ background: url(images/cpr.png)  -35px -618px; width: 16px; height: 11px; } 
+.sp-lt{ background: url(images/cpr.png)  -35px -634px; width: 16px; height: 11px; } 
+.sp-lu{ background: url(images/cpr.png)  -35px -650px; width: 16px; height: 11px; } 
+.sp-lv{ background: url(images/cpr.png)  -35px -666px; width: 16px; height: 11px; } 
+.sp-ly{ background: url(images/cpr.png)  -35px -682px; width: 16px; height: 11px; } 
+.sp-ma{ background: url(images/cpr.png)  -35px -698px; width: 16px; height: 11px; } 
+.sp-mc{ background: url(images/cpr.png)  -35px -714px; width: 16px; height: 11px; } 
+.sp-md{ background: url(images/cpr.png)  -35px -730px; width: 16px; height: 11px; } 
+.sp-me{ background: url(images/cpr.png)  -35px -746px; width: 16px; height: 12px; } 
+.sp-mg{ background: url(images/cpr.png)  -35px -763px; width: 16px; height: 11px; } 
+.sp-mh{ background: url(images/cpr.png)  -35px -779px; width: 16px; height: 11px; } 
+.sp-mk{ background: url(images/cpr.png)  -35px -795px; width: 16px; height: 11px; } 
+.sp-ml{ background: url(images/cpr.png)  -35px -811px; width: 16px; height: 11px; } 
+.sp-mm{ background: url(images/cpr.png)  -35px -827px; width: 16px; height: 11px; } 
+.sp-mn{ background: url(images/cpr.png)  -35px -843px; width: 16px; height: 11px; } 
+.sp-mo{ background: url(images/cpr.png)  -35px -859px; width: 16px; height: 11px; } 
+.sp-motorsports{ background: url(images/cpr.png)  -35px -875px; width: 16px; height: 16px; } 
+.sp-mp{ background: url(images/cpr.png)  -35px -896px; width: 16px; height: 11px; } 
+.sp-mq{ background: url(images/cpr.png)  -35px -912px; width: 16px; height: 11px; } 
+.sp-mr{ background: url(images/cpr.png)  -35px -928px; width: 16px; height: 11px; } 
+.sp-ms{ background: url(images/cpr.png)  -35px -944px; width: 16px; height: 11px; } 
+.sp-mt{ background: url(images/cpr.png)  -35px -960px; width: 16px; height: 11px; } 
+.sp-mu{ background: url(images/cpr.png)  -35px -976px; width: 16px; height: 11px; } 
+.sp-mv{ background: url(images/cpr.png)  -35px -992px; width: 16px; height: 11px; } 
+.sp-mw{ background: url(images/cpr.png)  -35px -1008px; width: 16px; height: 11px; } 
+.sp-mx{ background: url(images/cpr.png)  -35px -1024px; width: 16px; height: 11px; } 
+.sp-my{ background: url(images/cpr.png)  -35px -1040px; width: 16px; height: 11px; } 
+.sp-mz{ background: url(images/cpr.png)  -35px -1056px; width: 16px; height: 11px; } 
+.sp-na{ background: url(images/cpr.png)  -35px -1072px; width: 16px; height: 11px; } 
+.sp-nav-arrow-right{ background: url(images/cpr.png)  -35px -1088px; width: 12px; height: 15px; } 
+.sp-nc{ background: url(images/cpr.png)  -35px -1108px; width: 16px; height: 11px; } 
+.sp-ne{ background: url(images/cpr.png)  -35px -1124px; width: 16px; height: 11px; } 
+.sp-nf{ background: url(images/cpr.png)  -35px -1140px; width: 16px; height: 11px; } 
+.sp-ng{ background: url(images/cpr.png)  -35px -1156px; width: 16px; height: 11px; } 
+.sp-ni{ background: url(images/cpr.png)  -35px -1172px; width: 16px; height: 11px; } 
+.sp-nl{ background: url(images/cpr.png)  -35px -1188px; width: 16px; height: 11px; } 
+.sp-np{ background: url(images/cpr.png)  -35px -1204px; width: 9px; height: 11px; } 
+.sp-nr{ background: url(images/cpr.png)  -35px -1220px; width: 16px; height: 11px; } 
+.sp-nu{ background: url(images/cpr.png)  -35px -1236px; width: 16px; height: 11px; } 
+.sp-nz{ background: url(images/cpr.png)  -35px -1252px; width: 16px; height: 11px; } 
+.sp-om{ background: url(images/cpr.png)  -35px -1268px; width: 16px; height: 11px; } 
+.sp-other{ background: url(images/cpr.png)  -35px -1284px; width: 20px; height: 20px; } 
+.sp-pa{ background: url(images/cpr.png)  -35px -1309px; width: 16px; height: 11px; } 
+.sp-pe{ background: url(images/cpr.png)  -35px -1325px; width: 16px; height: 11px; } 
+.sp-pf{ background: url(images/cpr.png)  -35px -1341px; width: 16px; height: 11px; } 
+.sp-pg{ background: url(images/cpr.png)  -35px -1357px; width: 16px; height: 11px; } 
+.sp-ph{ background: url(images/cpr.png)  -35px -1373px; width: 16px; height: 11px; } 
+.sp-pk{ background: url(images/cpr.png)  -35px -1389px; width: 16px; height: 11px; } 
+.sp-pl{ background: url(images/cpr.png)  -35px -1405px; width: 16px; height: 11px; } 
+.sp-pm{ background: url(images/cpr.png)  -35px -1421px; width: 16px; height: 11px; } 
+.sp-pn{ background: url(images/cpr.png)  -35px -1437px; width: 16px; height: 11px; } 
+.sp-pr{ background: url(images/cpr.png)  -35px -1453px; width: 16px; height: 11px; } 
+.sp-ps{ background: url(images/cpr.png)  -35px -1469px; width: 16px; height: 11px; } 
+.sp-pt{ background: url(images/cpr.png)  -35px -1485px; width: 16px; height: 11px; } 
+.sp-pw{ background: url(images/cpr.png)  -35px -1501px; width: 16px; height: 11px; } 
+.sp-py{ background: url(images/cpr.png)  -35px -1517px; width: 16px; height: 11px; } 
+.sp-qa{ background: url(images/cpr.png)  -35px -1533px; width: 16px; height: 11px; } 
+.sp-ro{ background: url(images/cpr.png)  -35px -1549px; width: 16px; height: 11px; } 
+.sp-rs{ background: url(images/cpr.png)  -35px -1565px; width: 16px; height: 11px; } 
+.sp-ru{ background: url(images/cpr.png)  -35px -1581px; width: 16px; height: 11px; } 
+.sp-rugby{ background: url(images/cpr.png)  -35px -1597px; width: 16px; height: 16px; } 
+.sp-rw{ background: url(images/cpr.png)  -35px -1618px; width: 16px; height: 11px; } 
+.sp-s2{ background: url(images/cpr.png)  -35px -1634px; width: 16px; height: 11px; } 
+.sp-sa{ background: url(images/cpr.png)  -35px -1650px; width: 16px; height: 11px; } 
+.sp-sb{ background: url(images/cpr.png)  -35px -1666px; width: 16px; height: 11px; } 
+.sp-sc{ background: url(images/cpr.png)  -35px -1682px; width: 16px; height: 11px; } 
+.sp-sd{ background: url(images/cpr.png)  -35px -1698px; width: 16px; height: 11px; } 
+.sp-se{ background: url(images/cpr.png)  -35px -1714px; width: 16px; height: 11px; } 
+.sp-sg{ background: url(images/cpr.png)  -35px -1730px; width: 16px; height: 11px; } 
+.sp-sh{ background: url(images/cpr.png)  -35px -1746px; width: 16px; height: 11px; } 
+.sp-si{ background: url(images/cpr.png)  -35px -1762px; width: 16px; height: 11px; } 
+.sp-sk{ background: url(images/cpr.png)  -35px -1778px; width: 16px; height: 11px; } 
+.sp-sl{ background: url(images/cpr.png)  -35px -1794px; width: 16px; height: 11px; } 
+.sp-sm{ background: url(images/cpr.png)  -35px -1810px; width: 16px; height: 11px; } 
+.sp-sn{ background: url(images/cpr.png)  -35px -1826px; width: 16px; height: 11px; } 
+.sp-so{ background: url(images/cpr.png)  -35px -1842px; width: 16px; height: 11px; } 
+.sp-speed{ background: url(images/cpr.png)  -35px -1858px; width: 20px; height: 16px; } 
+.sp-sr{ background: url(images/cpr.png)  -35px -1879px; width: 16px; height: 11px; } 
+.sp-st{ background: url(images/cpr.png)  -35px -1895px; width: 16px; height: 11px; } 
+.sp-sv{ background: url(images/cpr.png)  -35px -1911px; width: 16px; height: 11px; } 
+.sp-sy{ background: url(images/cpr.png)  -35px -1927px; width: 16px; height: 11px; } 
+.sp-sz{ background: url(images/cpr.png)  -35px -1943px; width: 16px; height: 11px; } 
+.sp-tc{ background: url(images/cpr.png)  -35px -1959px; width: 16px; height: 11px; } 
+.sp-td{ background: url(images/cpr.png)  -35px -1975px; width: 16px; height: 11px; } 
+.sp-tennis{ background: url(images/cpr.png)  -35px -1991px; width: 19px; height: 18px; } 
+.sp-tf{ background: url(images/cpr.png)  -70px 0; width: 16px; height: 11px; } 
+.sp-tg{ background: url(images/cpr.png)  -70px -16px; width: 16px; height: 11px; } 
+.sp-th{ background: url(images/cpr.png)  -70px -32px; width: 16px; height: 11px; } 
+.sp-tj{ background: url(images/cpr.png)  -70px -48px; width: 16px; height: 11px; } 
+.sp-tk{ background: url(images/cpr.png)  -70px -64px; width: 16px; height: 11px; } 
+.sp-tl{ background: url(images/cpr.png)  -70px -80px; width: 16px; height: 11px; } 
+.sp-tm{ background: url(images/cpr.png)  -70px -96px; width: 16px; height: 11px; } 
+.sp-tn{ background: url(images/cpr.png)  -70px -112px; width: 16px; height: 11px; } 
+.sp-to{ background: url(images/cpr.png)  -70px -128px; width: 16px; height: 11px; } 
+.sp-tr{ background: url(images/cpr.png)  -70px -144px; width: 16px; height: 11px; } 
+.sp-tt{ background: url(images/cpr.png)  -70px -160px; width: 16px; height: 11px; } 
+.sp-tv{ background: url(images/cpr.png)  -70px -176px; width: 16px; height: 11px; } 
+.sp-tw{ background: url(images/cpr.png)  -70px -192px; width: 16px; height: 11px; } 
+.sp-tz{ background: url(images/cpr.png)  -70px -208px; width: 16px; height: 11px; } 
+.sp-ua{ background: url(images/cpr.png)  -70px -224px; width: 16px; height: 11px; } 
+.sp-uasli, .sp-uaslig{ background: url(images/cpr.png)  -70px -240px; width: 16px; height: 16px; } 
+.sp-ug{ background: url(images/cpr.png)  -70px -261px; width: 16px; height: 11px; } 
+.sp-um{ background: url(images/cpr.png)  -70px -277px; width: 16px; height: 11px; } 
+.sp-us{ background: url(images/cpr.png)  -70px -293px; width: 16px; height: 11px; } 
+.sp-uy{ background: url(images/cpr.png)  -70px -309px; width: 16px; height: 11px; } 
+.sp-uz{ background: url(images/cpr.png)  -70px -325px; width: 16px; height: 11px; } 
+.sp-va{ background: url(images/cpr.png)  -70px -341px; width: 16px; height: 11px; } 
+.sp-vc{ background: url(images/cpr.png)  -70px -357px; width: 16px; height: 11px; } 
+.sp-ve{ background: url(images/cpr.png)  -70px -373px; width: 16px; height: 11px; } 
+.sp-vg{ background: url(images/cpr.png)  -70px -389px; width: 16px; height: 11px; } 
+.sp-vi{ background: url(images/cpr.png)  -70px -405px; width: 16px; height: 11px; } 
+.sp-vn{ background: url(images/cpr.png)  -70px -421px; width: 16px; height: 11px; } 
+.sp-vtb{ background: url(images/cpr.png)  -70px -437px; width: 16px; height: 16px; } 
+.sp-vu{ background: url(images/cpr.png)  -70px -458px; width: 16px; height: 11px; } 
+.sp-wales{ background: url(images/cpr.png)  -70px -474px; width: 16px; height: 11px; } 
+.sp-wf{ background: url(images/cpr.png)  -70px -490px; width: 16px; height: 11px; } 
+.sp-world{ background: url(images/cpr.png)  -70px -506px; width: 24px; height: 24px; } 
+.sp-ws{ background: url(images/cpr.png)  -70px -535px; width: 16px; height: 11px; } 
+.sp-ye{ background: url(images/cpr.png)  -70px -551px; width: 16px; height: 11px; } 
+.sp-yt{ background: url(images/cpr.png)  -70px -567px; width: 16px; height: 11px; } 
+.sp-za{ background: url(images/cpr.png)  -70px -583px; width: 16px; height: 11px; } 
+.sp-zm{ background: url(images/cpr.png)  -70px -599px; width: 16px; height: 11px; } 
+.sp-zw{ background: url(images/cpr.png)  -70px -615px; width: 16px; height: 11px; } 
+
+.menu-partners{
+   float: right;
+   display: inline;
+   margin:0;
+   padding: 0;
+}
+
+.menu-partners{list-style:none;padding:0;margin:0;}
+.menu-partners ul {padding:0;margin:0;}
+.menu-partners li{float:left;padding:0;margin:0;text-align:center;background:#2C2C2C;position:relative;list-style:none;z-index: 600;}
+.menu-partners li ul{list-style:none;padding:0;margin:0;display:none;position:absolute;left:0;top:35px;z-index: 601;}
+.menu-partners li ul li{float:none;height:30px;margin:0;text-align:left;width:250px;}
+.menu-partners li a{color:#ffffff;font-size:12px;text-decoration:none;display:block;padding:10px 20px;}
+.menu-partners li:hover ul, #menu li.jshover ul{display:block;}
+.menu-partners li:hover, #menu li.jshover{background:#F00}
+
+
+.highlight{
+   padding-bottom: 5px; 
+   padding-top: 5px;
+}
+.highlight-left{
+    float:left; 
+    width:297px; 
+    text-align:right
+}
+
+.highlight-right{
+    float:right; 
+    width:297px
+}
+
+.highlight-score{
+    float:left; 
+    width:80px; 
+    text-align:center
+}
+.rankq1{background-color:#9FF;}
+.rankq2{background-color:#9FC;}
+.rankq3{background-color:#9CF;}
+.rankq4{background-color:#9CC;}
+.rankq1{background-color:#CFF;}
+.rankq2{background-color:#CFC;}
+.rankr1{background-color:#F90;}
+.rankr2{background-color:#F66;}
+.rankr3{background-color:#F36;}
+.rankr4{background-color:#F06;}
+
+#team-description{
+    width: 680px;
+}
+
+#team-description p{
+    padding: 5px 0 5px;
+}
+
+.league_tabs {
+  height: 28px;
+  background: #F6F6F6;
+}
+.league_tabs ul {
+  list-style: none;
+}
+.league_tabs li {
+  display: block;
+  float: left;
+    font-family: inherit;
+    text-transform: uppercase;
+ }
+  .league_tabs li span {
+    display: inline-block;
+    padding: 0 25px;
+    line-height: 28px;
+  }
+ .league_tabs li a {
+  float: left;
+  color: #000;
+  border-width: 1px 1px 0;
+  text-decoration: none;
+  font: 12px Arial;
+  padding: 0 25px;
+  line-height: 28px;
+ }
+ .league_tabs ul li.current span, .league_tabs ul li a:hover {
+    background-color: #ccc;
+    color: #000;
+  }
+  .league_tabs ul li.current span {
+    color: #000;
+    font: 12px Arial;
+    line-height: 28px;
+  }
+
+
+  

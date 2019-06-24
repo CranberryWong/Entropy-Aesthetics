@@ -1,0 +1,12 @@
+
+@font-face {
+    font-family: 'Bloomberg';
+    
+    
+    src: url('https://assets.bwbx.io/s3/fontservice/fonts/Bloomberg-80751bb787.eot');
+    src: local('?'),
+         url('https://assets.bwbx.io/s3/fontservice/fonts/Bloomberg-61ac703bc1.woff2') format('woff2'),
+         url('https://assets.bwbx.io/s3/fontservice/fonts/Bloomberg-fc130197c4.woff') format('woff'),
+         url('https://assets.bwbx.io/s3/fontservice/fonts/Bloomberg-b8114e15f3.svg') format('svg'),
+         url('https://assets.bwbx.io/s3/fontservice/fonts/Bloomberg-33a81294bf.ttf') format('truetype');
+}

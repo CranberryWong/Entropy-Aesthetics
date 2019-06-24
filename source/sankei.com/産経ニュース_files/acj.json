@@ -1,0 +1,27 @@
+OX_9785033762({
+  "ads":{
+    "medium":"w",
+    "record_tmpl":"http://delivery-asia-northeast-1.openx.net/{medium}/1.0/{rtype}?ph=b5df81f9413b9e95ee35f8fd2dbf309ec9d0322f&ts={txn_state}",
+    "pixels":"http://jp-u.openx.net/w/1.0/pd?plm=10&ph=b5df81f9413b9e95ee35f8fd2dbf309ec9d0322f&gdpr=0",
+    "oxt": 138.116,
+    "adunits" : [
+      {
+        "auid":"538637380",
+        "idx":"0",
+        "chain":[
+          {
+            "is_fallback":1,
+            "ad_id":"0",
+            "width":"970",
+            "height":"250",
+            "html":"<script src='https://www.googletagservices.com/tag/js/gpt.js'>\n  googletag.pubads().definePassback('/6974/IPM/sn.billboard.01', [970, 250]).display();\n</script>",
+            "target":"_blank",
+            "ts":"2DAABBgABAAECAAIBAAsAAgAAAGUcGApJV25tWmE2SElLHBaSu5K23ZaCwIIBFsvIlonLydj46AEAHBbd4c2utMuG0PIBFoPilZ7d5ZaduwEAFuiT9rULFQIALBwVBgAAHCaI0deBBBUEFQQmuISpgAQW6vqdgAQAAAA",
+            "type":"html",
+            "ad_url":"<script src='https://www.googletagservices.com/tag/js/gpt.js'>\n  googletag.pubads().definePassback('/6974/IPM/sn.billboard.01', [970, 250]).display();\n</script>"
+          }
+        ]
+      }
+    ]
+  }
+});

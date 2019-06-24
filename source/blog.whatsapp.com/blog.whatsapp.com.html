@@ -1,0 +1,836 @@
+<html class="version-d platform-desktop" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <title>WhatsApp Blog</title>
+
+        
+        <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:site" content="@whatsapp">
+
+    <meta property="og:title" content="More changes to forwarding">
+    <meta property="og:image" content="https://www-cdn.whatsapp.net/img/v4/whatsapp-promo.png?v=bec0c07a1">
+    <meta property="og:site_name" content="WhatsApp.com">
+
+        <meta name="description" content="We built WhatsApp as a private messaging app - a simple, secure, and reliable way to communicate with friends and family. And as we've added new features, we've been careful to try and keep that feeling of intimacy, which people say they love.
+A few years back we added a feature to WhatsApp that lets you forward a message to multiple chats at once.
+Today, we're launching a test to limit forwarding that will apply to everyone using WhatsApp.">
+    <meta property="og:description" content="We built WhatsApp as a private messaging app - a simple, secure, and reliable way to communicate with friends and family. And as we've added new features, we've been careful to try and keep that feeling of intimacy, which people say they love.
+A few years back we added a feature to WhatsApp that lets you forward a message to multiple chats at once.
+Today, we're launching a test to limit forwarding that will apply to everyone using WhatsApp.">
+    
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <meta http-equiv="X-UA-Compatible" content="IE=9">
+
+    <meta name="theme-color" content="#1BA691">
+    <meta name="msapplication-navbutton-color" content="#1BA691">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="#1BA691">
+
+    <link id="favicon" rel="shortcut icon" href="https://whatsapp.com/favicon.png" type="image/png">
+
+    <meta name="google-site-verification" content="Cusl-1G4lInGd7xZ55vzhKEF4l3O11umoaqQ-RxTf2w">
+
+        <script id="facebook-jssdk" src="blog.whatsapp.com_files/sdk.js"></script><script async="" src="blog.whatsapp.com_files/analytics.js"></script><script>
+    (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+    (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+    m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+    })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+
+    ga('create', 'UA-8707243-1', {
+        'cookieName' : 'whatsapp_cookie',
+        'cookieDomain' : 'www.whatsapp.com',
+        'cookieExpires' : 60 * 60 * 24 * 365 * 2
+    });
+    ga('send', 'pageview');
+    // delete old cookies
+    document.cookie = '__utma=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+    document.cookie = '__utmc=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+    document.cookie = '__utmz=; expires=Thu, 01 Jan 1970 00:00:01 GMT;';
+    </script>
+
+            <link rel="stylesheet" href="blog.whatsapp.com_files/style.css">
+
+            <script type="text/javascript" src="blog.whatsapp.com_files/jquery-1.js"></script>
+
+
+<script type="text/javascript" charset="utf-8" async="" src="blog.whatsapp.com_files/button.js"></script><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_loader{background-color:#f6f7f9;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{width:auto;height:auto;min-height:initial;min-width:initial;background:none}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{color:#fff;display:block;padding-top:20px;clear:both;font-size:18px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;bottom:0;left:0;right:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:-webkit-sticky;top:0}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #29487d;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f9;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-repeat:no-repeat;background-position:50% 50%;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}
+.fb_customer_chat_bounce_in_v1{animation-duration:250ms;animation-name:fb_bounce_in_v1}.fb_customer_chat_bounce_out_v1{animation-duration:250ms;animation-name:fb_bounce_out_v1}.fb_customer_chat_bounce_in_v2{animation-duration:300ms;animation-name:fb_bounce_in_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_v2{animation-duration:300ms;animation-name:fb_bounce_out_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_in_v2_mobile_chat_started{animation-duration:300ms;animation-name:fb_bounce_in_v2_mobile_chat_started;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_v2_mobile_chat_started{animation-duration:300ms;animation-name:fb_bounce_out_v2_mobile_chat_started;transition-timing-function:ease-in}.fb_customer_chat_bubble_pop_in{animation-duration:250ms;animation-name:fb_customer_chat_bubble_bounce_in_animation}.fb_customer_chat_bubble_animated_no_badge{box-shadow:0 3px 12px rgba(0, 0, 0, .15);transition:box-shadow 150ms linear}.fb_customer_chat_bubble_animated_no_badge:hover{box-shadow:0 5px 24px rgba(0, 0, 0, .3)}.fb_customer_chat_bubble_animated_with_badge{box-shadow:-5px 4px 14px rgba(0, 0, 0, .15);transition:box-shadow 150ms linear}.fb_customer_chat_bubble_animated_with_badge:hover{box-shadow:-5px 8px 24px rgba(0, 0, 0, .2)}.fb_invisible_flow{display:inherit;height:0;overflow-x:hidden;width:0}.fb_mobile_overlay_active{background-color:#fff;height:100%;overflow:hidden;position:fixed;visibility:hidden;width:100%}@keyframes fb_bounce_in_v1{0%{opacity:0;transform:scale(.8, .8);transform-origin:bottom right}80%{opacity:.8;transform:scale(1.03, 1.03)}100%{opacity:1;transform:scale(1, 1)}}@keyframes fb_bounce_in_v2{0%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}50%{transform:scale(1.03, 1.03);transform-origin:bottom right}100%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}}@keyframes fb_bounce_in_v2_mobile_chat_started{0%{opacity:0;top:20px}100%{opacity:1;top:0}}@keyframes fb_bounce_out_v1{from{opacity:1}to{opacity:0}}@keyframes fb_bounce_out_v2{0%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}100%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}}@keyframes fb_bounce_out_v2_mobile_chat_started{0%{opacity:1;top:0}100%{opacity:0;top:20px}}@keyframes fb_customer_chat_bubble_bounce_in_animation{0%{bottom:6pt;opacity:0;transform:scale(0, 0);transform-origin:center}70%{bottom:18pt;opacity:1;transform:scale(1.2, 1.2)}100%{transform:scale(1, 1)}}</style></head>
+<body class="page page--blog page--list" id="top">
+    <div class="header ">
+        <header class="page-header ">
+            <div class="page-header__inner">
+                <a class="page-header__logo" href="https://www.whatsapp.com/"></a>
+
+                <div class="page-header__title">
+                    <a href="https://blog.whatsapp.com/">WhatsApp Blog</a><a>
+                </a></div><a>
+
+                <div class="page-header__menu" onclick="toggle_menu()">
+
+                    <svg version="1.1" id="icon-menu" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="37px" height="37px" viewBox="0 0 37 37" style="enable-background:new 0 0 37 37;" xml:space="preserve">
+                    <path class="icon_white" d="M8,26h21v-1.8H8V26z M8,11v1.8h21V11H8z M8,19.2h21v-1.8H8V19.2z"></path>
+                    </svg>
+
+                </div>
+
+                
+                </a><div class="page-header__language"><a>
+                    
+<div id="lng" onclick="toggle_lng_menu()">
+
+            <svg version="1.1" id="icon-language" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="19px" height="19px" viewBox="0 0 19 19" style="enable-background:new 0 0 19 19;" xml:space="preserve">
+        <style type="text/css">
+            .icon_language_1{fill:#FFFFFF;}
+        </style>
+        <path class="icon_language_1" d="M9.5,2C5.4,2,2,5.4,2,9.5S5.4,17,9.5,17c4.1,0,7.5-3.4,7.5-7.5S13.6,2,9.5,2z M14.7,6.5h-2.2
+            c-0.2-1-0.6-1.8-1.1-2.7C12.8,4.3,14,5.2,14.7,6.5z M9.5,3.5c0.6,0.9,1.1,1.9,1.4,3H8.1C8.4,5.4,8.9,4.4,9.5,3.5z M3.7,11
+            c-0.2-0.5-0.2-1-0.2-1.5C3.5,9,3.5,8.4,3.7,8h2.6C6.2,8.5,6.2,9,6.2,9.5c0,0.5,0.1,1,0.1,1.5H3.7z M4.3,12.5h2.2
+            c0.2,1,0.6,1.8,1.1,2.7C6.2,14.7,5,13.8,4.3,12.5z M6.5,6.5H4.3c0.8-1.3,1.9-2.2,3.2-2.7C7.1,4.7,6.7,5.5,6.5,6.5z M9.5,15.5
+            c-0.6-0.9-1.1-1.9-1.4-3h2.9C10.6,13.6,10.1,14.6,9.5,15.5z M11.2,11H7.8c-0.1-0.5-0.2-1-0.2-1.5c0-0.5,0.1-1,0.2-1.5h3.5
+            c0.1,0.5,0.2,1,0.2,1.5C11.5,10,11.3,10.5,11.2,11z M11.5,15.2c0.5-0.8,0.8-1.7,1.1-2.7h2.2C14,13.8,12.8,14.7,11.5,15.2z M12.8,11
+            c0.1-0.5,0.1-1,0.1-1.5c0-0.5-0.1-1-0.1-1.5h2.6c0.2,0.5,0.2,1,0.2,1.5c0,0.5-0.1,1.1-0.2,1.5H12.8z"></path>
+        </svg>
+
+        <span class="lng-id" dir="auto">en<svg version="1.1" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" class="lng-dropdown" x="0px" y="0px" width="9px" height="20px" viewBox="0 0 9 20" style="enable-background:new 0 0 9 20;" xml:space="preserve"><polygon fill="#ffffff" points="1,9 4.5,12.5 8,9 "></polygon></svg>
+            </span>
+    </div>
+
+</a><div id="lng_open"><a>
+	<div id="select" onclick="toggle_lng_menu()">
+		<span class="dropdown">▾</span>
+		<span class="icon"></span>
+		Select your language	</div>
+	</a><div id="popular"><a>
+		</a><li><a></a><a class="lng-link" data-lng="az" href="https://blog.whatsapp.com/?l=az" dir="auto">Azərbaycanca</a></li><li><a class="lng-link" data-lng="af" href="https://blog.whatsapp.com/?l=af" dir="auto">Afrikaans</a></li><li><a class="lng-link" data-lng="id" href="https://blog.whatsapp.com/?l=id" dir="auto">Bahasa Indonesia</a></li><li><a class="lng-link" data-lng="ms" href="https://blog.whatsapp.com/?l=ms" dir="auto">Bahasa Melayu</a></li><li><a class="lng-link" data-lng="ca" href="https://blog.whatsapp.com/?l=ca" dir="auto">Català</a></li><li><a class="lng-link" data-lng="cs" href="https://blog.whatsapp.com/?l=cs" dir="auto">Česky</a></li><li><a class="lng-link" data-lng="da" href="https://blog.whatsapp.com/?l=da" dir="auto">Dansk</a></li><li><a class="lng-link" data-lng="de" href="https://blog.whatsapp.com/?l=de" dir="auto">Deutsch</a></li><li><a class="lng-link" data-lng="et" href="https://blog.whatsapp.com/?l=et" dir="auto">Eesti</a></li><li class="active"><a class="lng-link" data-lng="en" href="https://blog.whatsapp.com/?l=en" dir="auto">English</a></li><li><a class="lng-link" data-lng="es" href="https://blog.whatsapp.com/?l=es" dir="auto">Español</a></li><li><a class="lng-link" data-lng="fr" href="https://blog.whatsapp.com/?l=fr" dir="auto">Français</a></li><li><a class="lng-link" data-lng="ga" href="https://blog.whatsapp.com/?l=ga" dir="auto">Gaeilge</a></li><li><a class="lng-link" data-lng="hr" href="https://blog.whatsapp.com/?l=hr" dir="auto">Hrvatski</a></li><li><a class="lng-link" data-lng="it" href="https://blog.whatsapp.com/?l=it" dir="auto">Italiano</a></li><li><a class="lng-link" data-lng="sw" href="https://blog.whatsapp.com/?l=sw" dir="auto">Kiswahili</a></li><li><a class="lng-link" data-lng="lv" href="https://blog.whatsapp.com/?l=lv" dir="auto">Latviešu</a></li><li><a class="lng-link" data-lng="lt" href="https://blog.whatsapp.com/?l=lt" dir="auto">Lietuviškai</a></li><li><a class="lng-link" data-lng="hu" href="https://blog.whatsapp.com/?l=hu" dir="auto">Magyar</a></li><li><a class="lng-link" data-lng="nl" href="https://blog.whatsapp.com/?l=nl" dir="auto">Nederlands</a></li><li><a class="lng-link" data-lng="nb" href="https://blog.whatsapp.com/?l=nb" dir="auto">Norsk</a></li><li><a class="lng-link" data-lng="uz" href="https://blog.whatsapp.com/?l=uz" dir="auto">Oʻzbekcha</a></li><li><a class="lng-link" data-lng="fil" href="https://blog.whatsapp.com/?l=fil" dir="auto">Pilipino</a></li><li><a class="lng-link" data-lng="pl" href="https://blog.whatsapp.com/?l=pl" dir="auto">Polski</a></li><li><a class="lng-link" data-lng="pt_br" href="https://blog.whatsapp.com/?l=pt_br" dir="auto">Português (BR)</a></li><li><a class="lng-link" data-lng="pt_pt" href="https://blog.whatsapp.com/?l=pt_pt" dir="auto">Português (PT)</a></li><li><a class="lng-link" data-lng="ro" href="https://blog.whatsapp.com/?l=ro" dir="auto">Română</a></li><li><a class="lng-link" data-lng="sq" href="https://blog.whatsapp.com/?l=sq" dir="auto">Shqip</a></li><li><a class="lng-link" data-lng="sk" href="https://blog.whatsapp.com/?l=sk" dir="auto">Slovenčina</a></li><li><a class="lng-link" data-lng="sl" href="https://blog.whatsapp.com/?l=sl" dir="auto">Slovenščina</a></li><li><a class="lng-link" data-lng="fi" href="https://blog.whatsapp.com/?l=fi" dir="auto">Suomi</a></li><li><a class="lng-link" data-lng="sv" href="https://blog.whatsapp.com/?l=sv" dir="auto">Svensk</a></li><li><a class="lng-link" data-lng="vi" href="https://blog.whatsapp.com/?l=vi" dir="auto">Tiếng Việt</a></li><li><a class="lng-link" data-lng="tr" href="https://blog.whatsapp.com/?l=tr" dir="auto">Türkçe</a></li><li><a class="lng-link" data-lng="el" href="https://blog.whatsapp.com/?l=el" dir="auto">Ελληνικά</a></li><li><a class="lng-link" data-lng="bg" href="https://blog.whatsapp.com/?l=bg" dir="auto">Български</a></li><li><a class="lng-link" data-lng="kk" href="https://blog.whatsapp.com/?l=kk" dir="auto">Қазақша</a></li><li><a class="lng-link" data-lng="mk" href="https://blog.whatsapp.com/?l=mk" dir="auto">Македонски</a></li><li><a class="lng-link" data-lng="ru" href="https://blog.whatsapp.com/?l=ru" dir="auto">Pусский</a></li><li><a class="lng-link" data-lng="sr" href="https://blog.whatsapp.com/?l=sr" dir="auto">Српски</a></li><li><a class="lng-link" data-lng="uk" href="https://blog.whatsapp.com/?l=uk" dir="auto">Українська</a></li><li><a class="lng-link" data-lng="he" href="https://blog.whatsapp.com/?l=he" dir="auto">‏עברית‏</a></li><li><a class="lng-link" data-lng="ar" href="https://blog.whatsapp.com/?l=ar" dir="auto">العربية</a></li><li><a class="lng-link" data-lng="fa" href="https://blog.whatsapp.com/?l=fa" dir="auto">فارسی</a></li><li><a class="lng-link" data-lng="ur" href="https://blog.whatsapp.com/?l=ur" dir="auto">اردو</a></li><li><a class="lng-link" data-lng="bn" href="https://blog.whatsapp.com/?l=bn" dir="auto">বাংলা </a></li><li><a class="lng-link" data-lng="hi" href="https://blog.whatsapp.com/?l=hi" dir="auto">हिंदी</a></li><li><a class="lng-link" data-lng="gu" href="https://blog.whatsapp.com/?l=gu" dir="auto">ગુજરાતી</a></li><li><a class="lng-link" data-lng="kn" href="https://blog.whatsapp.com/?l=kn" dir="auto">ಕನ್ನಡ</a></li><li><a class="lng-link" data-lng="mr" href="https://blog.whatsapp.com/?l=mr" dir="auto">मराठी</a></li><li><a class="lng-link" data-lng="ta" href="https://blog.whatsapp.com/?l=ta" dir="auto">தமிழ்</a></li><li><a class="lng-link" data-lng="te" href="https://blog.whatsapp.com/?l=te" dir="auto">తెలుగు</a></li><li><a class="lng-link" data-lng="ml" href="https://blog.whatsapp.com/?l=ml" dir="auto">മലയാളം</a></li><li><a class="lng-link" data-lng="th" href="https://blog.whatsapp.com/?l=th" dir="auto">ภาษาไทย</a></li><li><a class="lng-link" data-lng="zh_cn" href="https://blog.whatsapp.com/?l=zh_cn" dir="auto">简体中文</a></li><li><a class="lng-link" data-lng="zh_tw" href="https://blog.whatsapp.com/?l=zh_tw" dir="auto">繁體中文</a></li><li><a class="lng-link" data-lng="ja" href="https://blog.whatsapp.com/?l=ja" dir="auto">日本語</a></li><li><a class="lng-link" data-lng="ko" href="https://blog.whatsapp.com/?l=ko" dir="auto">한국어</a></li>		<div class="clear"></div>
+	</div>
+		<div id="helptranslate">
+		<li><a href="https://translate.whatsapp.com/" target="_blank">Help translate WhatsApp into your language</a></li>
+		<div class="clear"></div>
+	</div>
+
+</div>                </div>
+
+                <nav class="page-header__nav">
+                    <ul class="sitenav">
+                                                    <li class="sitenav-item">
+                                <a href="https://web.whatsapp.com/">
+                                    WhatsApp Web                                </a>
+                            </li>
+                                                    <li class="sitenav-item">
+                                <a href="https://www.whatsapp.com/features/">
+                                    Features                                </a>
+                            </li>
+                                                    <li class="sitenav-item">
+                                <a href="https://www.whatsapp.com/download/">
+                                    Download                                </a>
+                            </li>
+                                                    <li class="sitenav-item">
+                                <a href="https://www.whatsapp.com/security/">
+                                    Security                                </a>
+                            </li>
+                                                    <li class="sitenav-item">
+                                <a href="https://faq.whatsapp.com/">
+                                    FAQ                                </a>
+                            </li>
+                                            </ul>
+                </nav>
+            </div>
+
+            <nav class="page-header__drawer drawer">
+                <div class="drawer__inner">
+                    <div class="drawer__close" onclick="toggle_menu()">
+
+                        <svg version="1.1" id="icon-close" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="37px" height="37px" viewBox="0 0 37 37" style="enable-background:new 0 0 37 37;" xml:space="preserve">
+                        <polygon class="icon_white" points="26.7,11.6 25.4,10.3 18.5,17.2 11.6,10.3 10.3,11.6 17.2,18.5 10.3,25.4 11.6,26.7 18.5,19.8
+                            25.4,26.7 26.7,25.4 19.8,18.5 "></polygon>
+                        </svg>
+
+                    </div>
+
+                    <div class="drawer__icon">
+                        <svg version="1.1" id="whatsapp-logo-notext" xmlns="http://www.w3.org/2000/svg" xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" width="39px" height="39px" viewBox="0 0 39 39" style="enable-background:new 0 0 39 39;" xml:space="preserve">
+                        <style type="text/css">
+                            .logo_white{fill:#FFFFFF;}
+                            .logo_green{fill:#00E676;}
+                        </style>
+                        <path class="logo_green" d="M10.7,32.8l0.6,0.3c2.5,1.5,5.3,2.2,8.1,2.2l0,0c8.8,0,16-7.2,16-16c0-4.2-1.7-8.3-4.7-11.3
+                            s-7-4.7-11.3-4.7c-8.8,0-16,7.2-15.9,16.1c0,3,0.9,5.9,2.4,8.4l0.4,0.6l-1.6,5.9L10.7,32.8z"></path>
+                        <path class="logo_white" d="M32.4,6.4C29,2.9,24.3,1,19.5,1C9.3,1,1.1,9.3,1.2,19.4c0,3.2,0.9,6.3,2.4,9.1L1,38l9.7-2.5
+                            c2.7,1.5,5.7,2.2,8.7,2.2l0,0c10.1,0,18.3-8.3,18.3-18.4C37.7,14.4,35.8,9.8,32.4,6.4z M19.5,34.6L19.5,34.6c-2.7,0-5.4-0.7-7.7-2.1
+                            l-0.6-0.3l-5.8,1.5L6.9,28l-0.4-0.6c-4.4-7.1-2.3-16.5,4.9-20.9s16.5-2.3,20.9,4.9s2.3,16.5-4.9,20.9C25.1,33.8,22.3,34.6,19.5,34.6
+                            z M28.3,23.5L27.2,23c0,0-1.6-0.7-2.6-1.2c-0.1,0-0.2-0.1-0.3-0.1c-0.3,0-0.5,0.1-0.7,0.2l0,0c0,0-0.1,0.1-1.5,1.7
+                            c-0.1,0.2-0.3,0.3-0.5,0.3h-0.1c-0.1,0-0.3-0.1-0.4-0.2l-0.5-0.2l0,0c-1.1-0.5-2.1-1.1-2.9-1.9c-0.2-0.2-0.5-0.4-0.7-0.6
+                            c-0.7-0.7-1.4-1.5-1.9-2.4L15,18.4c-0.1-0.1-0.1-0.2-0.2-0.4c0-0.2,0-0.4,0.1-0.5c0,0,0.4-0.5,0.7-0.8c0.2-0.2,0.3-0.5,0.5-0.7
+                            c0.2-0.3,0.3-0.7,0.2-1c-0.1-0.5-1.3-3.2-1.6-3.8c-0.2-0.3-0.4-0.4-0.7-0.5h-0.3c-0.2,0-0.5,0-0.8,0c-0.2,0-0.4,0.1-0.6,0.1
+                            l-0.1,0.1c-0.2,0.1-0.4,0.3-0.6,0.4c-0.2,0.2-0.3,0.4-0.5,0.6c-0.7,0.9-1.1,2-1.1,3.1l0,0c0,0.8,0.2,1.6,0.5,2.3l0.1,0.3
+                            c0.9,1.9,2.1,3.6,3.7,5.1l0.4,0.4c0.3,0.3,0.6,0.5,0.8,0.8c2.1,1.8,4.5,3.1,7.2,3.8c0.3,0.1,0.7,0.1,1,0.2l0,0c0.3,0,0.7,0,1,0
+                            c0.5,0,1.1-0.2,1.5-0.4c0.3-0.2,0.5-0.2,0.7-0.4l0.2-0.2c0.2-0.2,0.4-0.3,0.6-0.5s0.4-0.4,0.5-0.6c0.2-0.4,0.3-0.9,0.4-1.4
+                            c0-0.2,0-0.5,0-0.7C28.6,23.7,28.5,23.6,28.3,23.5z"></path>
+                        </svg>
+                    </div>
+
+                    <ul class="menu menu--drawer">
+                                                    <li class="menu__item">
+                                <a href="https://www.whatsapp.com/download/" class="menu__link">
+                                    Download                                </a>
+                            </li>
+                                                    <li class="menu__item">
+                                <a href="https://www.whatsapp.com/features/" class="menu__link">
+                                    Features                                </a>
+                            </li>
+                                                    <li class="menu__item">
+                                <a href="https://www.whatsapp.com/security/" class="menu__link">
+                                    Security                                </a>
+                            </li>
+                                                    <li class="menu__item">
+                                <a href="https://faq.whatsapp.com/" class="menu__link">
+                                    FAQ                                </a>
+                            </li>
+                                                    <li class="menu__item">
+                                <a href="https://www.whatsapp.com/contact/" class="menu__link">
+                                    Get in touch                                </a>
+                            </li>
+                                                <li class="menu__item menu__item--language">
+                                                        <select onchange="window.location = this.options[this.selectedIndex].value;"><option value="?l=az">Azərbaycanca</option><option value="?l=af">Afrikaans</option><option value="?l=id">Bahasa Indonesia</option><option value="?l=ms">Bahasa Melayu</option><option value="?l=ca">Català</option><option value="?l=cs">Česky</option><option value="?l=da">Dansk</option><option value="?l=de">Deutsch</option><option value="?l=et">Eesti</option><option selected="selected" value="?l=en">English</option><option value="?l=es">Español</option><option value="?l=fr">Français</option><option value="?l=ga">Gaeilge</option><option value="?l=hr">Hrvatski</option><option value="?l=it">Italiano</option><option value="?l=sw">Kiswahili</option><option value="?l=lv">Latviešu</option><option value="?l=lt">Lietuviškai</option><option value="?l=hu">Magyar</option><option value="?l=nl">Nederlands</option><option value="?l=nb">Norsk</option><option value="?l=uz">Oʻzbekcha</option><option value="?l=fil">Pilipino</option><option value="?l=pl">Polski</option><option value="?l=pt_br">Português (BR)</option><option value="?l=pt_pt">Português (PT)</option><option value="?l=ro">Română</option><option value="?l=sq">Shqip</option><option value="?l=sk">Slovenčina</option><option value="?l=sl">Slovenščina</option><option value="?l=fi">Suomi</option><option value="?l=sv">Svensk</option><option value="?l=vi">Tiếng Việt</option><option value="?l=tr">Türkçe</option><option value="?l=el">Ελληνικά</option><option value="?l=bg">Български</option><option value="?l=kk">Қазақша</option><option value="?l=mk">Македонски</option><option value="?l=ru">Pусский</option><option value="?l=sr">Српски</option><option value="?l=uk">Українська</option><option value="?l=he">‏עברית‏</option><option value="?l=ar">العربية</option><option value="?l=fa">فارسی</option><option value="?l=ur">اردو</option><option value="?l=bn">বাংলা </option><option value="?l=hi">हिंदी</option><option value="?l=gu">ગુજરાતી</option><option value="?l=kn">ಕನ್ನಡ</option><option value="?l=mr">मराठी</option><option value="?l=ta">தமிழ்</option><option value="?l=te">తెలుగు</option><option value="?l=ml">മലയാളം</option><option value="?l=th">ภาษาไทย</option><option value="?l=zh_cn">简体中文</option><option value="?l=zh_tw">繁體中文</option><option value="?l=ja">日本語</option><option value="?l=ko">한국어</option></select>                        </li>
+                    </ul>
+                </div>
+
+            </nav>
+
+        </header>
+    </div>
+
+<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_https" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" style="border: medium none;" src="blog.whatsapp.com_files/bSTT5dUx9MY.html" frameborder="0"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div>
+<script>(function(d, s, id) {
+  var js, fjs = d.getElementsByTagName(s)[0];
+  if (d.getElementById(id)) return;
+  js = d.createElement(s); js.id = id;
+  js.src = "//connect.facebook.net/en_US/sdk.js#xfbml=1&version=v2.7";
+  fjs.parentNode.insertBefore(js, fjs);
+}(document, 'script', 'facebook-jssdk'));</script>
+
+<div class="page-main">
+    <div class="page-main__inner">
+        <div class="page-content page-content--single page-content--blog">
+
+        <h2>
+            <a class="page-title page-title--blog" href="https://blog.whatsapp.com/">WhatsApp Blog</a></h2>
+
+                <div class="block block--post">
+            <div class="block__title">
+                <a href="https://blog.whatsapp.com/10000647/More-changes-to-forwarding" rel="bookmark">More changes to forwarding</a>
+            </div>
+
+            <div class="block__text rich-text">
+            <p>We built WhatsApp as a private messaging app - a simple, 
+secure, and reliable way to communicate with friends and family. And as 
+we've added new features, we've been careful to try and keep that 
+feeling of intimacy, which people say they love.</p>
+<p>A few years back we added a feature to WhatsApp that lets you forward a message to multiple chats at once.</p>
+<p>Today, we're launching a test to limit forwarding that will apply to 
+everyone using WhatsApp. In India - where people forward more messages, 
+photos, and videos than any other country in the world - we'll also test
+ a lower limit of 5 chats at once and we'll remove the quick forward 
+button next to media messages.</p>
+<p>We believe that these changes - which we'll continue to evaluate - 
+will help keep WhatsApp the way it was designed to be: a private 
+messaging app.</p>
+<p>We are deeply committed to your safety and privacy which is why 
+WhatsApp is end-to-end encrypted, and we'll continue to improve our app 
+with features like <a href="https://blog.whatsapp.com/10000645/Labeling-Forwarded-Messages">this one</a>. For more information, please visit our <a href="https://www.whatsapp.com/safety">WhatsApp Safety Tips page</a>.</p>
+            </div>
+
+            <div class="clearfix">
+                <a class="post-date left" href="https://blog.whatsapp.com/10000647/More-changes-to-forwarding">July 19, 2018</a>
+
+                <div class="post-share two--social">
+                    <div class="share-facebook post-share__item">
+                            <div class="fb-share-button fb_iframe_widget" data-href="/10000647/More-changes-to-forwarding" data-layout="button_count" data-mobile-iframe="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=&amp;container_width=37&amp;href=https%3A%2F%2Fblog.whatsapp.com%2F10000647%2FMore-changes-to-forwarding&amp;layout=button_count&amp;locale=en_US&amp;mobile_iframe=true&amp;sdk=joey"><span style="vertical-align: bottom; width: 81px; height: 20px;"><iframe name="f20e3dd9a75c24" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" title="fb:share_button Facebook Social Plugin" style="border: medium none; visibility: visible; width: 81px; height: 20px;" src="blog.whatsapp.com_files/share_button.html" class="" width="1000px" height="1000px" frameborder="0"></iframe></span></div>
+                    </div>
+                    <div class="share-tweetmeme post-share__item">
+                        <iframe id="twitter-widget-0" scrolling="no" allowtransparency="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" style="position: static; visibility: visible; width: 61px; height: 20px;" title="Twitter Tweet Button" src="blog.whatsapp.com_files/tweet_button.html" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+                <div class="block block--post">
+            <div class="block__title">
+                <a href="https://blog.whatsapp.com/10000645/Labeling-Forwarded-Messages" rel="bookmark">Labeling Forwarded Messages</a>
+            </div>
+
+            <div class="block__text rich-text">
+            <p>Starting today, WhatsApp will indicate which messages you
+ receive have been forwarded to you. This extra context will help make 
+one-on-one and group chats easier to follow. It also helps you determine
+ if your friend or relative wrote the message they sent or if it 
+originally came from someone else. To see this new forwarded label, you 
+need to have the latest supported version of WhatsApp on your phone.</p>
+<p>WhatsApp cares deeply about your safety. We encourage you to think 
+before sharing messages that were forwarded. As a reminder, you can 
+report spam or block a contact in one tap and can always reach out to 
+WhatsApp directly for help. For more information, please visit our <a href="https://www.whatsapp.com/safety">WhatsApp Safety Tips page</a>.</p>
+<p><img src="blog.whatsapp.com_files/267721456948927.jpeg"></p>
+            </div>
+
+            <div class="clearfix">
+                <a class="post-date left" href="https://blog.whatsapp.com/10000645/Labeling-Forwarded-Messages">July 10, 2018</a>
+
+                <div class="post-share two--social">
+                    <div class="share-facebook post-share__item">
+                            <div class="fb-share-button fb_iframe_widget" data-href="/10000645/Labeling-Forwarded-Messages" data-layout="button_count" data-mobile-iframe="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=&amp;container_width=37&amp;href=https%3A%2F%2Fblog.whatsapp.com%2F10000645%2FLabeling-Forwarded-Messages&amp;layout=button_count&amp;locale=en_US&amp;mobile_iframe=true&amp;sdk=joey"><span style="vertical-align: bottom; width: 81px; height: 20px;"><iframe name="f2d89431a74303c" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" title="fb:share_button Facebook Social Plugin" style="border: medium none; visibility: visible; width: 81px; height: 20px;" src="blog.whatsapp.com_files/share_button_002.html" class="" width="1000px" height="1000px" frameborder="0"></iframe></span></div>
+                    </div>
+                    <div class="share-tweetmeme post-share__item">
+                        <iframe id="twitter-widget-1" scrolling="no" allowtransparency="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" style="position: static; visibility: visible; width: 61px; height: 20px;" title="Twitter Tweet Button" src="blog.whatsapp.com_files/tweet_button_002.html" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+                <div class="block block--post">
+            <div class="block__title">
+                <a href="https://blog.whatsapp.com/10000644/New-Group-Setting-for-Admins" rel="bookmark">New Group Setting for Admins</a>
+            </div>
+
+            <div class="block__text rich-text">
+            <p>Over the last few months, we've added <a href="https://blog.whatsapp.com/10000640/New-Features-for-Groups">new features</a>
+ that improve the groups experience. Some of these include group 
+descriptions, a catch up feature, and protection for people who are 
+being added repeatedly to groups they've left.</p>
+<p>Today, we're launching a new group setting where only admins are able
+ to send messages to a group. One way people use groups is to receive 
+important announcements and information, including parents and teachers 
+at schools, community centers, and non-profit organizations. We've 
+introduced this new setting so admins can have better tools for these 
+use cases.</p>
+<p>To enable this setting, open “Group Info,” tap Group Settings &gt; 
+Send Messages and select “Only Admins.”  This setting is rolling out to 
+all users around the world on the latest supported versions of the app.</p>
+<p><img src="blog.whatsapp.com_files/230235728535716.png"></p>
+            </div>
+
+            <div class="clearfix">
+                <a class="post-date left" href="https://blog.whatsapp.com/10000644/New-Group-Setting-for-Admins">June 29, 2018</a>
+
+                <div class="post-share two--social">
+                    <div class="share-facebook post-share__item">
+                            <div class="fb-share-button fb_iframe_widget" data-href="/10000644/New-Group-Setting-for-Admins" data-layout="button_count" data-mobile-iframe="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=&amp;container_width=37&amp;href=https%3A%2F%2Fblog.whatsapp.com%2F10000644%2FNew-Group-Setting-for-Admins&amp;layout=button_count&amp;locale=en_US&amp;mobile_iframe=true&amp;sdk=joey"><span style="vertical-align: bottom; width: 81px; height: 20px;"><iframe name="f573a900a37d46" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" title="fb:share_button Facebook Social Plugin" style="border: medium none; visibility: visible; width: 81px; height: 20px;" src="blog.whatsapp.com_files/share_button_003.html" class="" width="1000px" height="1000px" frameborder="0"></iframe></span></div>
+                    </div>
+                    <div class="share-tweetmeme post-share__item">
+                        <iframe id="twitter-widget-2" scrolling="no" allowtransparency="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" style="position: static; visibility: visible; width: 61px; height: 20px;" title="Twitter Tweet Button" src="blog.whatsapp.com_files/tweet_button_003.html" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+                <div class="block block--post">
+            <div class="block__title">
+                <a href="https://blog.whatsapp.com/10000640/New-Features-for-Groups" rel="bookmark">New Features for Groups</a>
+            </div>
+
+            <div class="block__text rich-text">
+            <p>Groups have been an important part of the WhatsApp 
+experience, whether it's family members connecting across the globe or 
+childhood friends staying in touch over the years. There are also people
+ coming together in groups on WhatsApp like new parents looking for 
+support, students organizing study sessions, and even city leaders 
+coordinating relief efforts after natural disasters. Today, we're 
+sharing improvements that we've made to groups.</p>
+<p>What's New</p>
+<ul>
+<li><strong>Group description:</strong> A short blurb found under group 
+info that allows you to set the purpose, guidelines, or topics for the 
+group. When a new person joins a group, the description will show up at 
+the top of the chat.</li>
+<li><strong>Admin controls:</strong> In group settings, there's now a 
+control that allows admins to restrict who can change the group's 
+subject, icon, and description.</li>
+<li><strong>Group catch up:</strong> When you've been away from a group 
+chat, quickly catch up on messages that mention or reply to you by 
+tapping on a new @ button that appears at the bottom right corner of the
+ chat.</li>
+<li><strong>Participant search:</strong> Find anyone in a group by searching for participants on the group info page.</li>
+<li>Admins can now remove admin permissions of other group participants,
+ and group creators can no longer be removed from the group they 
+started.</li>
+</ul>
+<p>We've also introduced protection so users can't be repeatedly added 
+to groups they've left. These features are available for Android and 
+iPhone users today. We hope you enjoy these new updates!</p>
+<p><img src="blog.whatsapp.com_files/69335650431589.jpeg"></p>
+            </div>
+
+            <div class="clearfix">
+                <a class="post-date left" href="https://blog.whatsapp.com/10000640/New-Features-for-Groups">May 15, 2018</a>
+
+                <div class="post-share two--social">
+                    <div class="share-facebook post-share__item">
+                            <div class="fb-share-button fb_iframe_widget" data-href="/10000640/New-Features-for-Groups" data-layout="button_count" data-mobile-iframe="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=&amp;container_width=37&amp;href=https%3A%2F%2Fblog.whatsapp.com%2F10000640%2FNew-Features-for-Groups&amp;layout=button_count&amp;locale=en_US&amp;mobile_iframe=true&amp;sdk=joey"><span style="vertical-align: bottom; width: 81px; height: 20px;"><iframe name="f168ce629d12996" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" title="fb:share_button Facebook Social Plugin" style="border: medium none; visibility: visible; width: 81px; height: 20px;" src="blog.whatsapp.com_files/share_button_004.html" class="" width="1000px" height="1000px" frameborder="0"></iframe></span></div>
+                    </div>
+                    <div class="share-tweetmeme post-share__item">
+                        <iframe id="twitter-widget-3" scrolling="no" allowtransparency="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" style="position: static; visibility: visible; width: 61px; height: 20px;" title="Twitter Tweet Button" src="blog.whatsapp.com_files/tweet_button_004.html" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+                <div class="block block--post">
+            <div class="block__title">
+                <a href="https://blog.whatsapp.com/10000639/Updating-Our-Terms-of-Service-and-Privacy-Policy-for-Users-in-the-European-Union" rel="bookmark">Updating Our Terms of Service and Privacy Policy for Users in the European Union</a>
+            </div>
+
+            <div class="block__text rich-text">
+            <p>Next month, the European Union is updating its privacy 
+laws to require greater transparency for how people's information is 
+used online. WhatsApp is updating our <a href="https://www.whatsapp.com/legal?eea=1#terms-of-service">Terms of Service</a> and <a href="https://www.whatsapp.com/legal?eea=1#privacy-policy">Privacy Policy</a> where the law known as the General Data Protection Regulation (GDPR) is taking effect.</p>
+<p>We are not asking for new rights to collect personal information with
+ this update. Our goal is simply to explain how we use and protect the 
+limited information we have about you. There are a few things we want to
+ highlight:</p>
+<ul>
+<li><strong>WhatsApp in Europe</strong>: WhatsApp has established an 
+entity within the European Union to provide your services there and to 
+meet the new high standards of transparency for how we protect the 
+privacy of our users.</li>
+<li><strong>Data sharing</strong>: We are not currently sharing account 
+information to improve your product and ads experience on Facebook. As 
+we have said in the past, we want to work closer with other Facebook 
+companies in the future and we will keep you updated as we develop our 
+plans.</li>
+<li><strong>Staying safe on WhatsApp</strong>: When we receive reports 
+of a bad actor sending unwanted messages - like SPAM or abusive content -
+ on either WhatsApp or Facebook, we share information and can take 
+action including blocking them across both services. You can learn more 
+about how to stay safe on WhatsApp by reviewing these <a href="https://www.whatsapp.com/safety">safety tips</a>.</li>
+</ul>
+<p>WhatsApp cares deeply about your privacy and security. Every message 
+and call is secured by end-to-end encryption so that no one, not even 
+WhatsApp, can read or listen to your conversations. In the coming weeks,
+ you will be able to download and see the limited data that we collect. 
+This feature will be rolling out to all users around the world on the 
+newest version of the app. To learn more, <a href="https://faq.whatsapp.com/general/26000110">click here</a>.</p>
+<p>We welcome your feedback and we thank you for using WhatsApp!</p>
+            </div>
+
+            <div class="clearfix">
+                <a class="post-date left" href="https://blog.whatsapp.com/10000639/Updating-Our-Terms-of-Service-and-Privacy-Policy-for-Users-in-the-European-Union">April 24, 2018</a>
+
+                <div class="post-share two--social">
+                    <div class="share-facebook post-share__item">
+                            <div class="fb-share-button fb_iframe_widget" data-href="/10000639/Updating-Our-Terms-of-Service-and-Privacy-Policy-for-Users-in-the-European-Union" data-layout="button_count" data-mobile-iframe="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=&amp;container_width=37&amp;href=https%3A%2F%2Fblog.whatsapp.com%2F10000639%2FUpdating-Our-Terms-of-Service-and-Privacy-Policy-for-Users-in-the-European-Union&amp;layout=button_count&amp;locale=en_US&amp;mobile_iframe=true&amp;sdk=joey"><span style="vertical-align: bottom; width: 86px; height: 20px;"><iframe name="f382b8f75082f" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" title="fb:share_button Facebook Social Plugin" style="border: medium none; visibility: visible; width: 86px; height: 20px;" src="blog.whatsapp.com_files/share_button_005.html" class="" width="1000px" height="1000px" frameborder="0"></iframe></span></div>
+                    </div>
+                    <div class="share-tweetmeme post-share__item">
+                        <iframe id="twitter-widget-4" scrolling="no" allowtransparency="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" style="position: static; visibility: visible; width: 61px; height: 20px;" title="Twitter Tweet Button" src="blog.whatsapp.com_files/tweet_button_005.html" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+                <div class="block block--post">
+            <div class="block__title">
+                <a href="https://blog.whatsapp.com/10000637/Introducing-the-WhatsApp-Business-App" rel="bookmark">Introducing the WhatsApp Business App</a>
+            </div>
+
+            <div class="block__text rich-text">
+            <p>People all around the world use WhatsApp to connect with 
+small businesses they care about — from online clothing companies in 
+India to auto parts stores in Brazil. But WhatsApp was built for people 
+and we want to improve the business experience. For example, by making 
+it easier for businesses to respond to customers, separating customer 
+and personal messages, and creating an official presence.</p>
+<p>So today we're launching <strong>WhatsApp Business</strong> — a 
+free-to-download Android app for small businesses. Our new app will make
+ it easier for companies to connect with customers, and more convenient 
+for our 1.3 billion users to chat with businesses that matter to them. 
+Here's how:</p>
+<ul>
+<li><strong>Business Profiles:</strong> Help customers with useful information such as a business description, email or store addresses, and website.</li>
+<li><strong>Messaging Tools:</strong> Save time with smart messaging tools — <strong>quick replies</strong> that provide fast answers to frequently asked questions, <strong>greeting messages</strong> that introduce customers to your business, and <strong>away messages</strong> that let them know you're busy. </li>
+<li><strong>Messaging Statistics:</strong> Review simple metrics like the number of messages read to see what's working.</li>
+<li><strong>WhatsApp Web:</strong> Send and receive messages with WhatsApp Business on your desktop.</li>
+<li><strong>Account Type:</strong> People will know that they're talking
+ to a business because you will be listed as a Business Account. Over 
+time, some businesses will have Confirmed Accounts once it’s been 
+confirmed that the account phone number matches the business phone 
+number.</li>
+</ul>
+<p>People can continue using WhatsApp as usual — there's no need to 
+download anything new. And people will continue to have full control 
+over the messages they receive, with the ability to block any number, 
+including businesses, as well as report spam.</p>
+<p>Over 80% of small businesses in India and Brazil say WhatsApp helps 
+them both communicate with customers and grow their business today 
+(Source: Morning Consult study). And WhatsApp Business will make it 
+easier for people to connect with them, and vice versa, in a fast and 
+simple way. </p>
+<p><a href="https://www.whatsapp.com/business">WhatsApp Business</a> is 
+available today and free to download on Google Play in Indonesia, Italy,
+ Mexico, the U.K. and the U.S. The app is rolling out around the world 
+in the coming weeks. This is just the beginning!</p>
+            </div>
+
+            <div class="clearfix">
+                <a class="post-date left" href="https://blog.whatsapp.com/10000637/Introducing-the-WhatsApp-Business-App">January 18, 2018</a>
+
+                <div class="post-share two--social">
+                    <div class="share-facebook post-share__item">
+                            <div class="fb-share-button fb_iframe_widget" data-href="/10000637/Introducing-the-WhatsApp-Business-App" data-layout="button_count" data-mobile-iframe="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=&amp;container_width=37&amp;href=https%3A%2F%2Fblog.whatsapp.com%2F10000637%2FIntroducing-the-WhatsApp-Business-App&amp;layout=button_count&amp;locale=en_US&amp;mobile_iframe=true&amp;sdk=joey"><span style="vertical-align: bottom; width: 86px; height: 20px;"><iframe name="f10e6ec0b2c2902" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" title="fb:share_button Facebook Social Plugin" style="border: medium none; visibility: visible; width: 86px; height: 20px;" src="blog.whatsapp.com_files/share_button_006.html" class="" width="1000px" height="1000px" frameborder="0"></iframe></span></div>
+                    </div>
+                    <div class="share-tweetmeme post-share__item">
+                        <iframe id="twitter-widget-5" scrolling="no" allowtransparency="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" style="position: static; visibility: visible; width: 61px; height: 20px;" title="Twitter Tweet Button" src="blog.whatsapp.com_files/tweet_button_006.html" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+                <div class="block block--post">
+            <div class="block__title">
+                <a href="https://blog.whatsapp.com/10000635/Deleting-Messages-for-Everyone" rel="bookmark">Deleting Messages for Everyone</a>
+            </div>
+
+            <div class="block__text rich-text">
+            <p>Starting today you can now delete messages you sent by 
+mistake — whether to one person or an entire group. Here's how it works:
+ tap and hold on the message, choose "Delete," and then "Delete for 
+everyone." You have seven minutes to delete the message after it's sent.</p>
+<p>This feature is rolling out for users around the world on the latest 
+versions of iPhone, Android, Windows Phone as well as desktop. Both you 
+and the message recipient must be using the latest version of WhatsApp 
+for the message to be successfully deleted.</p>
+<p>You can learn more in our FAQs for <a href="https://faq.whatsapp.com/en/android/26000068/">Android</a>, <a href="https://faq.whatsapp.com/en/iphone/26000069/?category=5245251">iPhone</a>, and <a href="https://faq.whatsapp.com/en/wp/26000070/?category=5245251">Windows Phone</a>.</p>
+            </div>
+
+            <div class="clearfix">
+                <a class="post-date left" href="https://blog.whatsapp.com/10000635/Deleting-Messages-for-Everyone">October 31, 2017</a>
+
+                <div class="post-share two--social">
+                    <div class="share-facebook post-share__item">
+                            <div class="fb-share-button fb_iframe_widget" data-href="/10000635/Deleting-Messages-for-Everyone" data-layout="button_count" data-mobile-iframe="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=&amp;container_width=37&amp;href=https%3A%2F%2Fblog.whatsapp.com%2F10000635%2FDeleting-Messages-for-Everyone&amp;layout=button_count&amp;locale=en_US&amp;mobile_iframe=true&amp;sdk=joey"><span style="vertical-align: bottom; width: 81px; height: 20px;"><iframe name="f16369388be3aaa" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" title="fb:share_button Facebook Social Plugin" style="border: medium none; visibility: visible; width: 81px; height: 20px;" src="blog.whatsapp.com_files/share_button_007.html" class="" width="1000px" height="1000px" frameborder="0"></iframe></span></div>
+                    </div>
+                    <div class="share-tweetmeme post-share__item">
+                        <iframe id="twitter-widget-6" scrolling="no" allowtransparency="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" style="position: static; visibility: visible; width: 61px; height: 20px;" title="Twitter Tweet Button" src="blog.whatsapp.com_files/tweet_button_007.html" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+                <div class="block block--post">
+            <div class="block__title">
+                <a href="https://blog.whatsapp.com/10000634/Share-your-live-location" rel="bookmark">Share your live location</a>
+            </div>
+
+            <div class="block__text rich-text">
+            <p>Today, we’re rolling out a new feature that allows you to
+ share your location in real-time with family or friends. Whether you're
+ meeting up with friends, letting loved ones know you're safe, or 
+sharing your commute, Live Location is a simple and secure way to let 
+people know where you are. This end-to-end encrypted feature lets you 
+control who you share with and for how long. You can choose to stop 
+sharing at any time or let the Live Location timer simply expire.</p>
+<p>Here's how it works. Open a chat with the person or group you want to
+ share with. Under "Location" in the attach button, there's a new option
+ to "Share Live Location." Choose for how long you want to share and tap
+ send. Each person in the chat will be able to see your real-time 
+location on a map. And if more than one person shares their Live 
+Location in the group, all locations will be visible on the same map.</p>
+<p>Live Location is available on both Android and iPhone and will be 
+rolling out in the app in the coming weeks. We hope you like it.</p>
+<p><img src="blog.whatsapp.com_files/95476479824772.png"></p>
+            </div>
+
+            <div class="clearfix">
+                <a class="post-date left" href="https://blog.whatsapp.com/10000634/Share-your-live-location">October 17, 2017</a>
+
+                <div class="post-share two--social">
+                    <div class="share-facebook post-share__item">
+                            <div class="fb-share-button fb_iframe_widget" data-href="/10000634/Share-your-live-location" data-layout="button_count" data-mobile-iframe="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=&amp;container_width=37&amp;href=https%3A%2F%2Fblog.whatsapp.com%2F10000634%2FShare-your-live-location&amp;layout=button_count&amp;locale=en_US&amp;mobile_iframe=true&amp;sdk=joey"><span style="vertical-align: bottom; width: 86px; height: 20px;"><iframe name="f38ed107b9ffd08" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" title="fb:share_button Facebook Social Plugin" style="border: medium none; visibility: visible; width: 86px; height: 20px;" src="blog.whatsapp.com_files/share_button_008.html" class="" width="1000px" height="1000px" frameborder="0"></iframe></span></div>
+                    </div>
+                    <div class="share-tweetmeme post-share__item">
+                        <iframe id="twitter-widget-7" scrolling="no" allowtransparency="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" style="position: static; visibility: visible; width: 61px; height: 20px;" title="Twitter Tweet Button" src="blog.whatsapp.com_files/tweet_button_008.html" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+                <div class="block block--post">
+            <div class="block__title">
+                <a href="https://blog.whatsapp.com/10000633/Building-for-People-and-Now-Businesses" rel="bookmark">Building for People, and Now Businesses</a>
+            </div>
+
+            <div class="block__text rich-text">
+            <p>Over 1 billion people use WhatsApp every day to stay 
+connected with their family and friends, and over time, more people are 
+using the app to communicate with businesses they care about too. In 
+fact, many connections are already taking place every day, whether it's 
+someone placing an order with a local bakery or looking at new styles 
+from a clothing store. But the way this happens now on WhatsApp is 
+pretty rudimentary. We've heard stories of shopkeepers who use WhatsApp 
+to stay in touch with hundreds of customers from a single smartphone, 
+and from people who are unsure about whether or not a business on 
+WhatsApp is authentic. In the coming months, we'll be testing new 
+features that aim to solve some of these challenges, and make it easier 
+for people to communicate with the businesses they want to reach on 
+WhatsApp. Our approach is simple – we want to apply what we've learned 
+helping people connect with each other to helping people connect with <em>businesses</em> that are important to them.</p>
+<p>We know businesses have many different needs. For example, they want 
+an official presence – a verified profile so people can identify a 
+business from another person – and an easier way to respond to messages.
+ We're building and testing new tools via a free WhatsApp Business app 
+for small companies and an enterprise solution for bigger companies 
+operating at a large scale with a global base of customers, like 
+airlines, e-commerce sites, and banks. These businesses will be able to 
+use our solutions to provide customers with useful notifications like 
+flight times, delivery confirmations, and other updates.</p>
+<p>Whether someone is communicating with a business around the corner or
+ around the globe, people expect WhatsApp to be fast, reliable, and 
+secure. We'll be listening carefully to feedback during our test phase 
+and keeping people informed as we make these tools more widely 
+available. It's important that we get this right and are thoughtful 
+about the new experiences we'll provide for businesses and our users. 
+For more information, please read <a href="https://faq.whatsapp.com/en/general/26000067">this FAQ</a>.</p>
+            </div>
+
+            <div class="clearfix">
+                <a class="post-date left" href="https://blog.whatsapp.com/10000633/Building-for-People-and-Now-Businesses">September 5, 2017</a>
+
+                <div class="post-share two--social">
+                    <div class="share-facebook post-share__item">
+                            <div class="fb-share-button fb_iframe_widget" data-href="/10000633/Building-for-People-and-Now-Businesses" data-layout="button_count" data-mobile-iframe="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=&amp;container_width=37&amp;href=https%3A%2F%2Fblog.whatsapp.com%2F10000633%2FBuilding-for-People-and-Now-Businesses&amp;layout=button_count&amp;locale=en_US&amp;mobile_iframe=true&amp;sdk=joey"><span style="vertical-align: bottom; width: 86px; height: 20px;"><iframe name="f2d8ae2ddb5e946" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" title="fb:share_button Facebook Social Plugin" style="border: medium none; visibility: visible; width: 86px; height: 20px;" src="blog.whatsapp.com_files/share_button_009.html" class="" width="1000px" height="1000px" frameborder="0"></iframe></span></div>
+                    </div>
+                    <div class="share-tweetmeme post-share__item">
+                        <iframe id="twitter-widget-8" scrolling="no" allowtransparency="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" style="position: static; visibility: visible; width: 61px; height: 20px;" title="Twitter Tweet Button" src="blog.whatsapp.com_files/tweet_button_009.html" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+                <div class="block block--post">
+            <div class="block__title">
+                <a href="https://blog.whatsapp.com/10000631/Connecting-One-Billion-Users-Every-Day" rel="bookmark">Connecting One Billion Users Every Day</a>
+            </div>
+
+            <div class="block__text rich-text">
+            <p>Just last year, we <a href="https://blog.whatsapp.com/616/One-billion">shared</a> that one billion people around the world use WhatsApp every month. Today, we are excited and proud to share that <strong>one billion</strong> people around the world use WhatsApp <strong>every day</strong> to stay in touch with their family and friends.</p>
+<p>Whether it’s sharing personalized photos and videos, connecting 
+through video calling, or keeping friends updated throughout the day 
+with Status, communicating on WhatsApp has never been easier or more 
+personal. We are humbled that so many people are using these new 
+features to connect with one another in their own special way. </p>
+<p>As we celebrate this milestone, we’re committed more than ever to 
+bringing you more useful features to enjoy, while delivering the 
+reliability, simplicity, and security you expect with WhatsApp. Thank 
+you for your continued support.</p>
+<p><img src="blog.whatsapp.com_files/42908400348478.jpeg"></p>
+            </div>
+
+            <div class="clearfix">
+                <a class="post-date left" href="https://blog.whatsapp.com/10000631/Connecting-One-Billion-Users-Every-Day">July 26, 2017</a>
+
+                <div class="post-share two--social">
+                    <div class="share-facebook post-share__item">
+                            <div class="fb-share-button fb_iframe_widget" data-href="/10000631/Connecting-One-Billion-Users-Every-Day" data-layout="button_count" data-mobile-iframe="true" fb-xfbml-state="rendered" fb-iframe-plugin-query="app_id=&amp;container_width=37&amp;href=https%3A%2F%2Fblog.whatsapp.com%2F10000631%2FConnecting-One-Billion-Users-Every-Day&amp;layout=button_count&amp;locale=en_US&amp;mobile_iframe=true&amp;sdk=joey"><span style="vertical-align: bottom; width: 89px; height: 20px;"><iframe name="f6d7ce89dd2a98" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" title="fb:share_button Facebook Social Plugin" style="border: medium none; visibility: visible; width: 89px; height: 20px;" src="blog.whatsapp.com_files/share_button_010.html" class="" width="1000px" height="1000px" frameborder="0"></iframe></span></div>
+                    </div>
+                    <div class="share-tweetmeme post-share__item">
+                        <iframe id="twitter-widget-9" scrolling="no" allowtransparency="true" class="twitter-share-button twitter-share-button-rendered twitter-tweet-button" style="position: static; visibility: visible; width: 61px; height: 20px;" title="Twitter Tweet Button" src="blog.whatsapp.com_files/tweet_button_010.html" frameborder="0"></iframe>
+                    </div>
+                </div>
+            </div>
+        </div>
+
+
+        
+                    <section class="section section--more">
+                            <div class="next">
+                    <a class="button button--outline" href="https://blog.whatsapp.com/index.php/page/2">
+                        Next Page                    </a>
+                </div>
+                    
+    </section></div></div></div>
+
+
+<footer class="page-footer-container" id="page-footer">
+    <div class="page-footer -primary">
+        <div class="page-footer__inner">
+
+            <div class="four -spaced">
+                                    <div class="block block--footer four__item">
+                        <h4 class="block__title">WhatsApp</h4>
+                        <div class="block__body">
+                            <ul class="list list--footer">
+                                                                    <li class="list__item">
+                                                                                    <a href="https://www.whatsapp.com/features/" class="list__link">
+                                                Features                                            </a>
+                                                                            </li>
+                                                                    <li class="list__item">
+                                                                                    <a href="https://www.whatsapp.com/security/" class="list__link">
+                                                Security                                            </a>
+                                                                            </li>
+                                                                    <li class="list__item">
+                                                                                    <a href="https://www.whatsapp.com/download/" class="list__link">
+                                                Download                                            </a>
+                                                                            </li>
+                                                                    <li class="list__item">
+                                                                                    <a href="https://web.whatsapp.com/" class="list__link">
+                                                WhatsApp Web                                            </a>
+                                                                            </li>
+                                                                    <li class="list__item">
+                                                                                    <a href="https://www.whatsapp.com/business/" class="list__link">
+                                                Business                                            </a>
+                                                                            </li>
+                                                            </ul>
+                        </div>
+                    </div>
+                                    <div class="block block--footer four__item">
+                        <h4 class="block__title">Company</h4>
+                        <div class="block__body">
+                            <ul class="list list--footer">
+                                                                    <li class="list__item">
+                                                                                    <a href="https://www.whatsapp.com/about/" class="list__link">
+                                                About                                            </a>
+                                                                            </li>
+                                                                    <li class="list__item">
+                                                                                    <a href="https://www.whatsapp.com/join/" class="list__link">
+                                                Careers                                            </a>
+                                                                            </li>
+                                                                    <li class="list__item">
+                                                                                    <a href="https://www.whatsappbrand.com/" class="list__link">
+                                                Brand Center                                            </a>
+                                                                            </li>
+                                                                    <li class="list__item">
+                                                                                    <a href="https://www.whatsapp.com/contact/" class="list__link">
+                                                Get in touch                                            </a>
+                                                                            </li>
+                                                                    <li class="list__item">
+                                                                                    <a href="https://blog.whatsapp.com/" class="list__link">
+                                                Blog                                            </a>
+                                                                            </li>
+                                                                    <li class="list__item">
+                                                                                    <span class="list__empty"></span>
+                                                                            </li>
+                                                                    <li class="list__item">
+                                                                                    <span class="list__empty"></span>
+                                                                            </li>
+                                                            </ul>
+                        </div>
+                    </div>
+                                    <div class="block block--footer four__item">
+                        <h4 class="block__title">Download</h4>
+                        <div class="block__body">
+                            <ul class="list list--footer">
+                                                                    <li class="list__item">
+                                                                                    <a href="https://www.whatsapp.com/download/" class="list__link">
+                                                Mac/PC                                            </a>
+                                                                            </li>
+                                                                    <li class="list__item">
+                                                                                    <a href="https://www.whatsapp.com/android/" class="list__link">
+                                                Android                                            </a>
+                                                                            </li>
+                                                                    <li class="list__item">
+                                                                                    <a href="https://www.whatsapp.com/appstore/" class="list__link">
+                                                iPhone                                            </a>
+                                                                            </li>
+                                                                    <li class="list__item">
+                                                                                    <a href="https://www.whatsapp.com/wp/" class="list__link">
+                                                Windows Phone                                            </a>
+                                                                            </li>
+                                                                    <li class="list__item">
+                                                                                    <a href="https://www.whatsapp.com/nokia/" class="list__link">
+                                                Nokia                                            </a>
+                                                                            </li>
+                                                            </ul>
+                        </div>
+                    </div>
+                                    <div class="block block--footer four__item">
+                        <h4 class="block__title">Help</h4>
+                        <div class="block__body">
+                            <ul class="list list--footer">
+                                                                    <li class="list__item">
+                                                                                    <a href="https://faq.whatsapp.com/" class="list__link">
+                                                FAQ                                            </a>
+                                                                            </li>
+                                                                    <li class="list__item">
+                                                                                    <a href="https://twitter.com/whatsapp" class="list__link">
+                                                Twitter                                            </a>
+                                                                            </li>
+                                                                    <li class="list__item">
+                                                                                    <a href="https://www.facebook.com/WhatsApp" class="list__link">
+                                                Facebook                                            </a>
+                                                                            </li>
+                                                                    <li class="list__item">
+                                                                                    <span class="list__empty"></span>
+                                                                            </li>
+                                                                    <li class="list__item">
+                                                                                    <span class="list__empty"></span>
+                                                                            </li>
+                                                                    <li class="list__item">
+                                                                                    <span class="list__empty"></span>
+                                                                            </li>
+                                                            </ul>
+                        </div>
+                    </div>
+                            </div>
+        </div>
+    </div>
+    <div class="page-footer -secondary">
+        <div class="page-footer__inner">
+            <div class="four">
+                <div class="four__item" dir="auto">
+                    2018 © WhatsApp Inc.
+                </div>
+                <div class="four__item -span3">
+                    <a href="https://www.whatsapp.com/legal/" class="page-footer__link">Privacy &amp; Terms</a>
+                </div>
+            </div>
+        </div>
+    </div>
+</footer>
+
+<script>
+    var open = false;
+    var speed = 200;
+    function toggle_lng_menu() {
+        if(open) {
+            $('#lng_open').slideUp(speed);
+            $('.header').removeClass('is-expanded');
+        } else {
+            $('#lng_open').slideDown(speed);
+            $('.header').addClass('is-expanded');
+        }
+        open = !open;
+    }
+
+    function toggle_menu() {
+        $('.page-header__drawer').toggleClass('is-visible');
+    }
+
+    function toggle_search() {
+        $('.page-subheader--search').slideToggle();
+    }
+
+    $(function() {
+                    $(window).scroll(function(e) {
+                  if ($('body').scrollTop() > 0) {
+                $('.header').addClass("fixed");
+              } else {
+                $('.header').removeClass("fixed");
+              }
+            });
+            })
+</script>
+
+
+<script async="" src="blog.whatsapp.com_files/widgets.js" charset="utf-8"></script>
+
+
+<iframe scrolling="no" allowtransparency="true" src="blog.whatsapp.com_files/widget_iframe.html" title="Twitter settings iframe" style="display: none;" frameborder="0"></iframe><iframe id="rufous-sandbox" scrolling="no" allowtransparency="true" allowfullscreen="true" style="position: absolute; visibility: hidden; display: none; width: 0px; height: 0px; padding: 0px; border: medium none;" title="Twitter analytics iframe" frameborder="0"></iframe></body></html>

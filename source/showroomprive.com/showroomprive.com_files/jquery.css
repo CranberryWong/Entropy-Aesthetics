@@ -1,0 +1,208 @@
+/*__________Style pour la smartbanner sur tablette______________*/
+
+
+/*___________________TYPO__________________________*/
+
+@font-face {
+    font-family: 'Avenir LT Std 35 Light';
+    font-style: normal;
+    font-weight: normal;
+    src: local('Avenir LT Std 35 Light'), url('fonts/avenir/AvenirLTStd-Light.woff') format('woff');
+}
+
+
+/*___________________FIN TYPO__________________________*/
+
+.smartbanner {
+    z-index: 9998;
+    /*height: 82px;*/
+    font-family: 'Avenir LT Std 35 Light';
+    -webkit-font-smoothing: antialiased;
+    -webkit-text-size-adjust: none;
+    position: fixed;
+    
+}
+
+.smartbanner a{
+    background-image: linear-gradient( 135deg, #feecf4, #fff);
+    -moz-box-shadow: 0px 0px 4px #999;
+    -webkit-box-shadow: 0px 0px 4px #999;
+    box-shadow: 0px 0px 4px #999;
+}
+
+#smartbanner,
+html.sb-animation {
+    -webkit-transition: all .3s ease;
+    width: 100%;
+    display: table;
+    text-decoration: none;
+    color: #4c4c4c;
+}
+
+.sb-container {
+    display: table-row;
+    height: 82px;
+    /*background: lightgrey;*/
+}
+
+.sb-close,
+.sb-icon,
+.sb-info,
+.sb-button {
+    display: table-cell;
+    vertical-align: middle;
+    padding: inherit;
+    padding-top: 5px;
+    padding-left: 10px;
+}
+
+.sb-close {
+    /*bouton de fermeture*/
+    border: 0;
+    text-decoration: none;
+    background: none;
+    height: 82px;
+    margin: 0 15px;
+}
+
+.sb-close img {
+    width: 10px;
+}
+
+.sb-icon {
+    width: 17%;
+}
+
+.sb-icon img {
+    /* icone de l'appli */
+    height: 60px;
+    width: 60px;
+    -moz-box-shadow: 0px 2px 1px #b9b9b9;
+    -webkit-box-shadow: 0px 2px 1px #b9b9b9;
+    box-shadow: 0px 2px 1px #b9b9b9;
+    border-radius: 11px;
+    border: 1px solid #efefef;
+}
+
+.sb-info {
+    text-align: center;
+    width: 60%;
+}
+
+.tagline {
+    font-size: 15px;
+    line-height: 15px;
+    margin-bottom: 10px;
+   /* position: relative;
+    top: 5px;*/
+}
+
+.tagline span.ligne_2 {
+   /* font-size: 13px;*/
+    /*position: relative;
+    top: -5px;*/
+}
+
+.tagline span.ligne_2 .plus{
+   /* font-size: 17px;*/
+    color: #f71073;
+  /*  position: relative;
+    top: 1px;
+    padding-right: 3px;*/
+}
+
+.note.note_smartbanner img {
+    width: 100px;
+}
+
+.sb-button {
+    width: 25%;
+    text-align: center;
+    /*padding-right: 5%;*/
+}
+
+.sb-button .cta {
+    color: #fff;
+    background-color: #f71073;
+    text-align: center;
+    padding: 5px 12%;
+    font-size: 18px;
+}
+
+.tagline br{
+    display: none;
+}
+
+.tagline div{
+    display: inline-block;
+    margin: 0 10px;
+    
+}
+
+.tagline div:last-child{
+    margin-left: 0;
+    
+}
+
+/*___________________Customisation par pays ______________*/
+
+.smartbanner_it-IT .sb-button .cta,
+.smartbanner_es-ES .sb-button .cta{
+   padding: 5px 16%;
+}
+
+
+.smartbanner_pt-PT .sb-button .cta{
+   padding: 5px 13%;
+}
+
+
+.smartbanner_nl-NL .sb-button .cta,
+.smartbanner_nl-BE .sb-button .cta{
+   padding: 5px 8%;
+   font-size: 17px
+}
+
+.smartbanner_nl-NL .sb-button,
+.smartbanner_nl-BE .sb-button{
+    padding-right: 3%;
+}
+
+
+.smartbanner_pl-PL .sb-button .cta,
+.smartbanner_de-DE .sb-button .cta{
+   padding: 5px 10%;
+   font-size: 17px;
+}
+
+.smartbanner_pl-PL .sb-button,
+.smartbanner_de-DE .sb-button{
+    padding-right: 3%;
+}
+
+.smartbanner_pl-PL .tagline{
+    margin-bottom: 7px;
+}
+
+
+.smartbanner_pl-PL .tagline .texte_rose{
+    color: #f71073;
+    padding-left: 10px;
+}
+
+
+.smartbanner_it-IT .plus{
+    padding-left: 20px;
+}
+
+
+
+
+
+
+
+
+
+
+
+

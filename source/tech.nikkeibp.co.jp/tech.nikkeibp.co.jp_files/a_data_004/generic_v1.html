@@ -1,0 +1,262 @@
+<!DOCTYPE html>
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <title></title>
+
+    <!-- Load cx.js -->
+    <script type="text/javascript">
+        document.write('<scr' + 'ipt type="text/javascript" src="http' + (location.protocol === 'https:' ? 's://s' : '://') + 'cdn.cxense.com/cx.js"></scr' + 'ipt>');
+    </script><script type="text/javascript" src="../cx.js"></script>
+
+    <!-- Get the widget content data -->
+    <script type="text/javascript">
+        var rerenderOnResize = false; // possibly changed in template or head
+        var data, context;
+        cX.insertWidget({
+            synchronous: true,
+            renderFunction: function(data, context) {
+                window.data = data;
+                window.context = context;
+            }
+        });
+    </script>
+
+    <!-- Write head from config-->
+    <script type="text/javascript">
+        if (data.response.head) {
+            document.write(data.response.head + '\n');
+        }
+    </script>
+
+    <!-- Default CSS rules -->
+    <style type="text/css">
+        html, body { margin: 0; padding: 0; outline: 0; border: 0; }
+        #templateElement { display: none; }
+        #targetElement { float: left; }
+    </style>
+
+    <!-- Write CSS rules from config-->
+    <script type="text/javascript">
+        if (data.response.style) {
+            document.write('<style type="text/css">\n' + data.response.style + '\n</style>\n');
+        }
+    </script><style type="text/css">
+html, body, section, div, h2, p, ul, li { margin:0; padding:0; }
+
+body {
+  font-family: "メイリオ","Meiryo","ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro","Verdana","Osaka","ＭＳ Ｐゴシック",sans-serif;
+  background-color: white;
+}
+
+body > div {
+  width: 300px;
+  height: 248px;
+}
+
+section {
+  border: solid 1px #061a40;
+  margin: 0;
+  display: block;
+}
+
+
+h2 {
+  padding: 3px 5px;
+  background-color: #061a40;
+  color: white;
+  font-size: 8pt;
+  text-align: right;
+}
+
+ul {
+  margin: 4px 0; 
+}
+
+ul li {
+  list-style: none;
+  clear: both;
+  padding: 3px 0;
+}
+
+a {
+ display: block;
+ padding: 5px 0;
+ overflow: hidden;
+ text-decoration: none;
+}
+
+
+.thumbnail {
+  background-color: #ccc;
+  margin: 0 3px;
+  width: 120px;
+  max-height: 90px;
+  float: left;
+  border: solid 1px #eee;
+}
+
+.thumbnail img {
+  width: 120px;
+}
+
+.title {
+  text-decoration: none!important; 
+  color: #333;
+  font-size: 11pt;
+  line-height: 1.4;
+}
+
+a:hover .title{
+  text-decoration: underline!important;   
+}
+
+a:hover .thumbnail {
+  border: solid 1px #333;
+  opacity:0.7;
+  filter:alpha(opacity=70);
+  -ms-filter: "alpha( opacity=70)";
+}
+
+.mediumname {
+  text-align: right:
+}
+</style>
+
+
+</head>
+<body>
+
+    <!-- The widget content will be added to this div -->
+    <div id="targetElement"> 
+        <script type="text/javascript">
+            document.write(data.response.template + '\n');
+        </script><div>
+<section>
+   <h2>From 日経 xTECH Special</h2>
+    <ul>
+    
+     <li>
+      <a class="allclick" id="cXLinkIdjk826r9qkt8xn7qe" href="https://special.nikkeibp.co.jp/atclh/NXT/18/abeam0703/?n_cid=nbpad_siad_cxdfp" target="_blank">
+       <div class="thumbnail">
+        <img src="generic_v1_data/top_s_120_90_002.jpg">
+       </div>
+        <p class="title">AI×データで実現するビジネス革命とは?</p>
+      </a>
+     </li>
+    
+     <li>
+      <a class="allclick" id="cXLinkIdjk826r9quezu7d6n" href="https://special.nikkeibp.co.jp/atclh/NXT/18/nttdata0703/?n_cid=nbpad_siad_cxdfp" target="_blank">
+       <div class="thumbnail">
+        <img src="generic_v1_data/top_s_120_90.jpg">
+       </div>
+        <p class="title">自動化技術でAIを業務組込・継続運用!</p>
+      </a>
+     </li>
+    
+   </ul>
+</section>
+</div>
+
+     </div>
+
+    <!-- Write the layout template -->
+    <div id="templateElement">
+        <script type="text/javascript">
+            document.write(data.response.template + '\n');
+        </script><div>
+<section>
+   <h2>From 日経 xTECH Special</h2>
+    <ul>
+    <!--%
+    var items = data.response.items;
+	for (var i = 0; i < items.length; i++) {
+      var item = items[i];   
+      var title = item.title;
+      var url = item.url.replace("http://", "https://")+'?n_cid=nbpad_siad_cxdfp';
+      var click_url = item.click_url+'?n_cid=nbpad_siad_cxdfp';
+      var image = item['nbp-typicalimages'].replace("http://", "https://") || '//tech.nikkeibp.co.jp/dm/images/n/techon/2016/cxense/ad.jpg';
+    %-->
+     <li>
+      <a class="allclick" tmp:id="{{cX.clickTracker(click_url)}}" tmp:href="{{url}}" tmp:target="_blank">
+       <div class="thumbnail">
+        <img tmp:src="{{image}}">
+       </div>
+        <p class="title">{{title}}</p>
+      </a>
+     </li>
+    <!--%
+    }
+    %-->
+   </ul>
+</section>
+</div>
+
+    </div>
+
+    <!-- Render content into target div -->
+    <script type="text/javascript">
+        (function () {
+            var args = cX.parseHashArgs();
+            var givenWidth = args.width === '100%' &&  window.innerWidth;
+            var givenHeight = args.height === '100%' && window.innerHeight;
+            if (givenWidth || givenHeight) {
+                var resizeTimeout;
+                cX.addEventListener(window, 'resize', function () {
+                    clearTimeout(resizeTimeout);
+                    resizeTimeout = setTimeout(function()  {
+                        if ((givenWidth && givenWidth !== (givenWidth = window.innerWidth))
+                            | (givenHeight && givenHeight !== (givenHeight = window.innerHeight))) {
+                            update(rerenderOnResize);
+                        }
+                    }, 100); // throttle resize events
+                });
+            }
+            function update(render) {
+                if (render) cX.renderTemplate('templateElement', 'targetElement', data);
+                if (context.parentElementId && context.resizeToContentSize && (!givenWidth || !givenHeight)) {
+                    // Measure content width and height, and resize this IFRAME now that content size is known:
+                    var bodyEl = document.getElementsByTagName('body')[0];
+
+                    // Add dummy divs to the top and bottom of body to avoid common problems with measuring content size
+                    function createDummyDiv() {
+                        var dummyDiv = document.createElement('div');
+                        dummyDiv.innerHTML = '&nbsp;'; // Avoids vertical collapsing margins
+                        dummyDiv.style.clear = 'both'; // Avoids floated layouts getting 0 height
+                        dummyDiv.style.width = '0';
+                        dummyDiv.style.height = '0';
+                        dummyDiv.style.border = '0';
+                        dummyDiv.style.margin = '0';
+                        dummyDiv.style.padding = '0';
+                        dummyDiv.style.outline = '0';
+                        dummyDiv.style.overflow = 'hidden';
+                        return dummyDiv;
+                    }
+                    var topDummyDiv = createDummyDiv();
+                    var bottomDummyDiv = createDummyDiv();
+                    bodyEl.insertBefore(topDummyDiv, bodyEl.firstChild);
+                    bodyEl.appendChild(bottomDummyDiv);
+
+                    var currentEl = document.getElementById(context.targetElementId);
+                    var contentWidth = bodyEl.clientWidth || bodyEl.offsetWidth;
+                    while (currentEl && currentEl !== bodyEl) {
+                        contentWidth = currentEl.clientWidth || currentEl.offsetWidth;
+                        currentEl = currentEl.offsetParent;
+                    }
+                    var message = 'method=updateAdSpace' +
+                            (givenWidth ? '' : '&contentWidth=' + contentWidth) +
+                            (givenHeight ? '' : '&contentHeight=' + (bodyEl.offsetHeight || bodyEl.clientHeight)) +
+                            '&elementId=' + encodeURIComponent(context.parentElementId);
+                    // It's safe to use '*' as targetOrigin here, because the message content is not secret.
+                    cX.postMessageToParent(message, '*');
+
+                    bodyEl.removeChild(topDummyDiv);
+                    bodyEl.removeChild(bottomDummyDiv);
+                }
+            }
+            update(true);
+        })();
+    </script>
+
+
+
+</body></html>

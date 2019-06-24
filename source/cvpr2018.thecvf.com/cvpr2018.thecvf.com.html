@@ -1,0 +1,564 @@
+<!DOCTYPE html>
+<html class="wf-lato-n3-active wf-lato-n4-active wf-montserrat-n4-active wf-montserrat-n7-active wf-lato-n7-active wf-active"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+  <meta name="viewport" content="width=device-width,initial-scale=1">
+  <script src="cvpr2018.thecvf.com_files/webfont.js"></script><script>
+var WebFontConfig = {
+  google: {
+    families: ['Lato:300,400,700', 'Montserrat:400,700']
+  },
+  timeout: 2000
+};
+(function(d) {
+  var wf = d.createElement('script'), s = d.scripts[0];
+  wf.src = 'https://ajax.googleapis.com/ajax/libs/webfont/1/webfont.js';
+  s.parentNode.insertBefore(wf, s);
+}(document));
+  </script>
+
+  <title>CVPR2018</title>
+  <link rel="stylesheet" media="all" href="cvpr2018.thecvf.com_files/application-db80651491aa2236a28552bcddcaa7ecbfae8bdc19ca429a.css" data-turbolinks-track="true">
+  <link rel="stylesheet" href="cvpr2018.thecvf.com_files/css.css" media="all"><script src="cvpr2018.thecvf.com_files/application-5f48a180b9a2e292d1dbd349b0669e4463cd39c93d94920e9.js" data-turbolinks-track="true"></script>
+  <meta name="csrf-param" content="authenticity_token">
+<meta name="csrf-token" content="AJPxVuH7/DIjnV7WzH38He4PL4vY0LLUvd78FFrIweZknF4Bb4BMqAHv6vhfha4Np6GFoJyZ/lbi26uKW5eL4w==">
+  
+	<!-- cookies -->
+	<script src="cvpr2018.thecvf.com_files/settings.js"></script>
+	<link rel="stylesheet" type="text/css" href="cvpr2018.thecvf.com_files/cookieconsent.css">
+	<script src="cvpr2018.thecvf.com_files/cookieconsent.js"></script>
+	<script>
+	window.addEventListener("load", function(){
+	 window.cookieconsent.initialise(json)
+	});
+	</script>
+
+<style></style></head>
+<body data-no-turbolink=""><div role="dialog" aria-live="polite" aria-label="cookieconsent" aria-describedby="cookieconsent:desc" class="cc-window cc-banner cc-type-info cc-theme-block cc-bottom cc-color-override-170793312 cc-invisible" style="display: none;"><!--googleoff: all--><span id="cookieconsent:desc" class="cc-message">IEEE
+ websites place cookies on your device to give you the best user 
+experience. By using our websites, you agree to the placement of these 
+cookies. To learn more, read our <a aria-label="learn more about cookies" role="button" tabindex="0" class="cc-link" href="https://www.ieee.org/about/help/security_privacy.html" target="_blank">Privacy Policy.</a></span><div class="cc-compliance"><a aria-label="dismiss cookie message" role="button" tabindex="0" class="cc-btn cc-dismiss">Accept &amp; Close</a></div><!--googleon: all--></div>
+
+  <div class="container-fluid whole-container">
+<div class="header-container">
+<a id="main-logo" class="a-no-mods header-svg" href="http://cvpr2018.thecvf.com/"></a>
+<div class="row">
+
+  <div id="main-logo-md-container" class="col-md-3 nav-left red-bottom-bar hidden-xs hidden-sm"><a href="http://cvpr2018.thecvf.com/"><img src="cvpr2018.thecvf.com_files/cvpr18logo_3.jpg" height="74"></a></div>
+
+  <div class="col-md-9 col-sm-12 col-xs-12 no-padding nav-col">
+    <ul class="navbar navbar-default">
+      <div class="container-fluid navbar-fixed no-padding">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#cvpr-navbar-collapse-1" aria-expanded="false">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <div id="main-logo-xs-container" class="hidden-sm hidden-md hidden-lg"></div>
+        </div>
+
+        <div class="collapse navbar-collapse navbar-fixed no-padding" id="cvpr-navbar-collapse-1">
+          <ul class="nav navbar-nav navbar-fixed">
+            <li id="main-logo-md-container" class="hidden-xs hidden-md hidden-lg"></li>
+            <li class="active"><a href="http://cvpr2018.thecvf.com/">HOME</a></li>
+            <li><a href="http://cvpr2018.thecvf.com/organizers">ORGANIZERS</a></li>
+            <li><a href="http://cvpr2018.thecvf.com/sponsors">SPONSORS</a></li>
+	    <li><a href="http://cvpr2018.thecvf.com/submission/timeline">SUBMISSIONS</a></li>
+	    <li><a href="http://cvpr2018.thecvf.com/attend/travel">ATTEND</a></li>
+	    <li><a href="http://cvpr2018.thecvf.com/program/overview">PROGRAM</a></li>
+	    <li><a href="http://cvpr2018.thecvf.com/exhibit/exhibitor_information">EXPO</a></li>
+	    <li><a href="http://cvpr2018.thecvf.com/jobs/job_board">JOBS</a></li>
+			
+          </ul>
+        </div><!-- navbar-collapse -->
+      </div><!-- container -->
+    </ul>
+  </div>
+</div>
+</div><!-- header-container -->
+<div class="body-container">
+
+<!--
+<div id="home-banner" style="height: auto;">
+  <div class="home-top-content">
+  
+    <div class="home-top-inner">
+		
+    </div>
+    <div class="bigtop-header-title">
+      <!--
+	  <h1 class="super hidden-xs">CVPR 2018</h1>
+	  <br><br>
+      <h3>SALT LAKE CITY, UTAH</h3>
+      <h4 class="less-super">June 18<sup>th</sup> - June 22<sup>nd</sup></h4>      
+	  
+    </div>    
+    <div id="inner-home-cta-container"></div>
+  </div>
+</div>
+-->
+<div id="call-to-action-box">
+</div>
+
+<div class="row row-card">
+  <div id="xs-home-banner-container"></div>
+
+  <div class="col-md-3 col-sm-3 col-xs-12 card no-top-padding">
+    <!--<h3>ABOUT</h3>-->
+	<br>
+    <p>CVPR is the premier annual computer vision event comprising the main conference and several
+    co-located workshops and short courses. With its high quality and low cost, it provides an
+    exceptional value for students, academics and industry researchers.</p>
+    
+	<br>
+	
+	<div>
+		
+		<a href="https://www.thecvf.com/" target="_blank"><img src="cvpr2018.thecvf.com_files/cvf_.jpg" width="40%"></a>
+		<a href="https://www.computer.org/" target="_blank"><img src="cvpr2018.thecvf.com_files/ieee_cs_.jpg" width="55%"></a>
+	</div>
+	<br>
+	
+	<div class="social-media hidden-sm">
+		<a href="https://www.facebook.com/CVPR2018/" target="_blank"><i class="fa fa-facebook"></i></a>
+<a href="https://twitter.com/CVPR" target="_blank"><i class="fa fa-twitter"></i></a>
+<a href="https://www.instagram.com/TheCVPR/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a>
+
+    </div>
+	
+  </div> <!-- end of about cvpr -->
+
+  <div class="col-md-12 hidden-md hidden-lg">
+    <div id="outer-home-cta-container"></div>
+  </div>
+
+  <div class="clearfix visible-xs"></div>
+
+  <div id="lg-home-banner-container" class="col-md-9 col-sm-9 col-xs-12 no-padding">
+	<img src="cvpr2018.thecvf.com_files/salt_lake_city_7.jpg" alt="Salt Lake City" width="100%" height="auto">
+  </div>
+</div><!-- end of topleft image and overlay submission -->
+
+
+
+<div class="row">
+  <div class="col-md-3 col-sm-3 col-xs-12 text-center card-fixed light-grey card-popup-animated">
+    <div class="card-fixed-content">
+      <a href="http://cvpr2018.thecvf.com/program/main_conference">
+        <h3 class="dark-h3" style="color:rgb(223,82,3);font-weight:bold">CONFERENCE</h3>
+      </a>
+      <p>June 19 - 21</p>
+    </div>
+  </div>
+  <div class="col-md-3 col-sm-3 col-xs-12 text-center card-fixed card-popup-animated">
+    <div class="card-fixed-content">
+      <a href="http://cvpr2018.thecvf.com/program/tutorials">
+      <h3 class="dark-h3" style="color:rgb(223,82,3);font-weight:bold">TUTORIALS</h3>
+      </a>
+      <p>June 18 and 22</p>
+    </div>
+  </div>
+  <div class="col-md-3 col-sm-3 col-xs-12 text-center card-fixed light-grey card-popup-animated">
+    <div class="card-fixed-content">
+      <a href="http://cvpr2018.thecvf.com/program/workshops">
+      <h3 class="dark-h3" style="color:rgb(223,82,3);font-weight:bold">WORKSHOPS</h3>
+      </a>
+      <p>June 18 and 22</p>
+    </div>
+  </div>
+  <div class="col-md-3 col-sm-3 col-xs-12 text-center card-fixed card-popup-animated">
+    <div class="card-fixed-content">
+      <a href="http://cvpr2018.thecvf.com/exhibit/exhibitor_information">
+      <h3 class="dark-h3" style="color:rgb(223,82,3);font-weight:bold">EXPO</h3>
+      </a>
+      <p>June 19 - 21</p>
+    </div>
+  </div>
+</div> 
+
+
+<!--
+<div class="row">
+  <div class="col-md-3 col-sm-3 col-xs-12 card-popup text-center light-grey card-fixed">
+    <div class="card-fixed-content">
+      
+    </div>
+  </div>
+  <div class="col-md-3 col-sm-3 col-xs-12 card-popup text-center card-fixed">
+    <div class="card-fixed-content">
+      <a href="/files/CVPR_2018_Pocket_Guide_Main_Conference_Final_merged.pdf" target="_blank">
+		<h3 class="dark-h3" style="color:rgb(223,82,3); font-weight:bold">POCKET GUIDE</h3>
+      </a>
+    </div>
+  </div>
+  <div class="col-md-3 col-sm-3 col-xs-12 card-popup text-center light-grey card-fixed">
+    <div class="card-fixed-content">
+      <a href="/files/CVPR_2018_Summary_Main_Conference.pdf" target="_blank">
+		<h3 class="dark-h3" style="color:rgb(223,82,3); font-weight:bold">AT A GLANCE</h3>
+      </a>
+    </div>
+  </div>
+  <div class="col-md-3 col-sm-3 col-xs-12 card-popup text-center card-fixed">
+    <div class="card-fixed-content">
+      
+    </div>
+  </div>
+</div> 
+-->
+<div class="row">
+  
+  <div class="col-md-3 col-sm-3 col-xs-12 text-center card-fixed card-popup-animated">
+    <div class="card-fixed-content">
+      <a href="http://cvpr2018.thecvf.com/files/CVPR_2018_Pocket_Guide_Main_Conference_Final_merged.pdf" target="_blank">
+		<h3 class="dark-h3" style="color:rgb(223,82,3); font-weight:bold">MAIN CONFERENCE POCKET GUIDE</h3>
+      </a>
+	  <a href="http://cvpr2018.thecvf.com/files/CVPR_2018_Summary_Main_Conference.pdf" target="_blank">
+		<h3 class="dark-h3" style="color:rgb(223,82,3); font-weight:bold">AT A GLANCE</h3>
+      </a>
+    </div>
+  </div>
+  
+  <div class="col-md-3 col-sm-3 col-xs-12 text-center card-fixed light-grey card-popup-animated">
+    <div class="card-fixed-content">
+      <a href="http://cvpr2018.thecvf.com/files/CVPR_2018_Pocket_Guide_Workshops_Tutorials_Final_merged_.pdf" target="_blank">
+		<h3 class="dark-h3" style="color:rgb(223,82,3); font-weight:bold">WORKSHOPS &amp; TUTORIALS POCKET GUIDE</h3>
+      </a>
+	  <a href="http://cvpr2018.thecvf.com/files/CVPR_2018_Summary_Workshops_Tutorials.pdf" target="_blank">
+		<h3 class="dark-h3" style="color:rgb(223,82,3); font-weight:bold">AT A GLANCE</h3>
+      </a>
+    </div>
+  </div>
+  
+  <div class="col-md-3 col-sm-3 col-xs-12 text-center card-fixed card-popup-animated">
+    <div class="card-fixed-content">
+      <a href="http://openaccess.thecvf.com/CVPR2018.py" target="_blank">
+		<h3 class="dark-h3" style="color:rgb(223,82,3); font-weight:bold">CVPR 2018 PAPERS</h3>
+      </a>
+	  
+    </div>
+  </div>
+  
+  <div class="col-md-3 col-sm-3 col-xs-12 text-center card-fixed light-grey card-popup-animated">
+    <div class="card-fixed-content">
+      <a href="https://www.cc.gatech.edu/~parikh/citizenofcvpr/" target="_blank">
+		<h3 class="dark-h3" style="color:rgb(223,82,3); font-weight:bold">GOOD CITIZEN OF CVPR</h3>
+      </a>
+	  
+    </div>
+  </div>
+  
+</div> 
+
+<!-- next row: opennig slides, awards, .., ..?
+
+<!--
+<div class="row">
+  
+  <div class="col-md-12 col-sm-12 col-xs-12 card-popup text-center card-fixed-short light-grey">
+    <div class="card-fixed-content light-grey">
+      <a href="/files/CVPR_2018_Pocket_Guide_Main_Conference_Final_merged.pdf" target="_blank">
+		<h3 class="dark-h3 light-grey" style="color:rgb(223,82,3); font-weight:bold">POCKET GUIDE</h3>
+      </a>
+    </div>
+  </div>
+  
+</div> 
+
+<div class="row">
+  
+  <div class="col-md-12 col-sm-12 col-xs-12 card-popup text-center card-fixed-short ">
+    <div class="card-fixed-content">
+      <a href="/files/CVPR_2018_Summary_Main_Conference.pdf" target="_blank">
+		<h3 class="dark-h3" style="color:rgb(223,82,3); font-weight:bold">AT A GLANCE</h3>
+      </a>
+    </div>
+  </div>
+  
+</div> 
+-->
+
+
+<div class="row row-card">
+  <div class="col-md-6 col-sm-6 card card-popup bg-grey">
+    
+	<h3>MESSAGE FROM US</h3>
+	
+	<p>
+	WELCOME TO CVPR 2018
+	</p>
+	
+	<p>
+	CVPR 2018 will take place at the <a class="hyperlinks" href="https://www.visitsaltlake.com/salt-palace-convention-center/" target="_blank"><strong>Calvin L. Rampton Salt Palace Convention Center</strong></a> the
+	week of June 18-22, 2018 in Salt Lake City, Utah.
+	<br>
+	<a class="hyperlinks" href="http://cvpr2018.thecvf.com/program/main_conference"><strong>Main Conference</strong></a> and <a class="hyperlinks" href="http://cvpr2018.thecvf.com/exhibit/exhibitor_information"><strong>Exhibition</strong></a>: June 19-21
+	<br>
+	<a href="http://cvpr2018.thecvf.com/program/workshops"><span class="hyperlinks"><strong>Workshops</strong></span></a> and 
+    <a href="http://cvpr2018.thecvf.com/program/tutorials"><span class="hyperlinks"><strong>Tutorials</strong></span></a>: June 18, 22
+	</p>
+	
+	<p>
+	With over 3300 main-conference paper submissions and 979 accepted
+	papers, CVPR 2018 offers an exciting program covering a wide variety
+	of state-of-the-art work in the field of computer vision. In addition to
+	the main program, CVPR 2018 includes 21 tutorials, 48 workshops, our
+	annual doctoral consortium, and a growing industrial exhibition
+	featuring over 115 companies. We are grateful to our numerous <a class="hyperlinks" href="http://cvpr2018.thecvf.com/sponsors"><strong>sponsors</strong></a> for
+	their continued support.
+	</p>
+	
+	<p>
+	We hope you enjoy CVPR while you're here and take some time either
+	before or after the meeting to <a class="hyperlinks" href="https://www.visitsaltlake.com/" target="_blank"><strong>enjoy the mountains, lakes, national
+	parks, and other attractions of Utah</strong></a>.
+	</p>
+	
+	
+
+	<p>
+	CVPR represents an international community of scholars whose collective
+	efforts are embodied in one of the finest conferences in all of Computer
+	Science.
+	</p>
+	
+	<p>
+	The CVPR organizers take the view that good ideas can come from anyone,
+	anywhere and that these good ideas should be disseminated for the good
+	of all humanity – without exception. The organizing committee will
+	continue to work to ensure that we do all we can to live up to these
+	ideals. Our community knows no boundaries and we will strive to help
+	researchers to participate, no matter where they live and without regard
+	to race, gender, or background.
+	</p>
+	
+	<p>
+	All participants are expected to abide by the meeting's <a class="hyperlinks" href="http://cvpr2018.thecvf.com/attend/code_of_conduct"><strong>Code of Conduct</strong></a>.
+	</p>
+	
+	<p>
+	You do not have to be an author to attend.
+	</p>
+
+  </div>
+  
+  
+  
+  
+  <!--<div class="col-md-6 col-sm-6 card card-popup bg-dark">-->
+    <div class="col-md-6 col-sm-12 col-xs-12 card card-popup lighter-grey">
+    <h3>NEWS AND UPDATES</h3>
+	
+	<h4>Videos are available now.  More to be added.</h4>
+	<p>Videos of the CVPR 2018 conference sessions and some 
+tutorials/workshops are now available on the Computer Vision Foundation 
+YouTube channel (<a class="hyperlinks" href="https://www.youtube.com/channel/UC0n76gicaarsN_Y9YShWwhw"><b>here</b></a>).</p>
+
+	<h4>CVPR 2018 Awards</h4>
+	<p>CVPR 2018 Awards can be found <a class="hyperlinks" href="http://cvpr2018.thecvf.com/program/main_conference#awards"><b>here</b></a>.</p>
+
+	<h4>Opening Slides</h4>
+	<p>The slides from the opening ceremony are available <a class="hyperlinks" href="http://cvpr2018.thecvf.com/files/CVPR%202018%20Opening%202.pdf" target="_blank"><b>here</b></a>, describing statistics about the technical program and the Expo; the best paper award winners; and the PAMI-TC award winners.</p>
+
+	<h4>CVPR 2018 Interactive Data Viz (by GVU Center at Georgia Tech)</h4>
+	<p>A high-level interactive data vizualization of research topics and details for each paper can be found <a class="hyperlinks" href="https://public.tableau.com/views/CVPR2018topicsandschedule/Dashboard1?:embed=y&amp;:display_count=yes" target="_blank"><b>here</b></a>.</p>
+
+
+	<h4>Reminders for Thursday.</h4>
+	<p>On Thursday, we will not have Halls ABC, to reach Halls 1-4, you must go through the corridors.  
+	<br>
+	The Coffee breaks will be in the Expo and the corridors with multiple access points.
+	<br>
+	Please remember to bring your badge - you must have the proper credentials to get into the Expo and the Oral Sessions. 
+	<br>
+	Remember to take your posters down at the end of day.  We will recycle any that are left behind!
+	</p>
+	
+	<h4>CVPR Daily - Wednesday</h4>
+	<p>Today's CVPR Daily magazine is <a class="hyperlinks" href="https://www.rsipvision.com/CVPR2018-Wednesday/" target="_blank"><b>here</b></a>.</p>
+	
+	<h4>PAMI-TC Voting is open now.</h4>
+	<p>You can participate in PAMI-TC Voting <a class="hyperlinks" href="https://www.thecvf.com/voting/" target="_blank"><strong>here</strong></a>.
+	<br>
+	It will close Wednesday 10:00 PM MT.
+	</p>
+	
+	<h4>CVPR 2018 proceedings are available now.</h4>
+	<p>CVPR 2018 proceedings can be downloaded form <a class="hyperlinks" href="http://conferences.computer.org/cvpr/2018" target="_blank"><strong>here</strong></a>.<br>
+	Please download prior to arrival at the convention.  It will be halted during conference hours.<br>
+	Username: cvpr18<br>
+	Password: conf18
+	</p>
+	
+	<h4>The CVPR 2018 App is available now.</h4>
+	<p>
+	Password: cvpr18<br>
+	<a href="https://play.google.com/store/apps/details?id=mobile.appnxajz3zrhm" target="_blank"><img alt="Get it on Google Play" src="cvpr2018.thecvf.com_files/en_badge_web_generic.png" style="vertical-align: center;" width="25%"></a>
+	<a href="https://itunes.apple.com/us/app/conference-publishing-services-conference-app/id1057968328" target="_blank"><img alt="Download on the App Store" src="cvpr2018.thecvf.com_files/appstore.svg" style="vertical-align: center;" width="19%"></a>
+	<br>
+	Web App: <a class="hyperlinks" href="https://event.crowdcompass.com/cvpr18" target="_blank"><strong>here</strong></a>.
+	
+	</p>
+	
+	<h4>CVPR 2018 Papers are available now.</h4>
+	<p>CVPR 2018 Papers can be found <a class="hyperlinks" href="http://openaccess.thecvf.com/CVPR2018.py" target="_blank"><strong>here</strong></a>.</p>
+	
+	<h4>Social media pages and hashtag.</h4>
+	<p>Follow CVPR 2018 social media pages:</p> 
+	<div class="social-media hidden-sm">
+		<a href="https://www.facebook.com/CVPR2018/" target="_blank"><i class="fa fa-facebook"></i></a>
+<a href="https://twitter.com/CVPR" target="_blank"><i class="fa fa-twitter"></i></a>
+<a href="https://www.instagram.com/TheCVPR/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a>
+
+    </div>
+	<p>Use hashtag <b>#CVPR18</b></p>
+	
+	<h4>Accepted demos and demo schedule are available now.</h4>
+	<p>Schedule of accepted demos can be found <a class="hyperlinks" href="http://cvpr2018.thecvf.com/program/demos"><strong>here</strong></a>.</p>
+	
+	<h4>Late spotlight video submissions!</h4>
+	<p>Spotlight video submission deadline <b>WAS</b> Monday, June 11th at 
+9:00 AM, Mountain Daylight Time (MDT). We strongly encourage you to 
+submit your video spotlight presentations within the next few hours. By 
+failing to do so, you will put yourself at a very high risk of missing 
+your spotlight presentation.</p>
+	
+	<h4>Workshops &amp; Tutorials Pocket Guide is available now.</h4>
+	<p>Workshops &amp; Tutorials Pocket Guide can be found <a href="http://cvpr2018.thecvf.com/files/CVPR_2018_Pocket_Guide_Workshops_Tutorials_Final_merged_.pdf" target="_blank"><span class="hyperlinks"><strong>here</strong></span></a>.</p>
+	<p>At-a-glance summary can be found <a href="http://cvpr2018.thecvf.com/files/CVPR_2018_Summary_Workshops_Tutorials.pdf" target="_blank"><span class="hyperlinks"><strong>here</strong></span></a>.</p>
+
+	<h4>Main Conference Pocket Guide is available now.</h4>
+	<p>Main Conference Pocket Guide can be found <a href="http://cvpr2018.thecvf.com/files/CVPR_2018_Pocket_Guide_Main_Conference_Final_merged.pdf" target="_blank"><span class="hyperlinks"><strong>here</strong></span></a>.</p>
+	<p>At-a-glance summary can be found <a href="http://cvpr2018.thecvf.com/files/CVPR_2018_Summary_Main_Conference.pdf" target="_blank"><span class="hyperlinks"><strong>here</strong></span></a>.</p>
+
+	<h4>Presenter Instructions are available now.</h4>
+	<p>Presenter Instructions can be found <a href="http://cvpr2018.thecvf.com/submission/presenter_instructions"><span class="hyperlinks"><strong>here</strong></span></a>.</p>
+	
+	<h4>Outstanding and Emergency Reviewers.</h4>
+	<p>List of Outstanding and Emergency Reviewers can be found <a href="http://cvpr2018.thecvf.com/program/reviewer_acknowledgements"><span class="hyperlinks"><strong>here</strong></span></a>.</p>
+	
+	<h4>Exhibitor Manual is available now.</h4>
+	<p>Exhibitor Manual can be found <a href="http://cvpr2018.thecvf.com/exhibit/exhibitor_manual"><span class="hyperlinks"><strong>here</strong></span></a>.</p>
+	
+	<h4>Announcements from CVPR 2018 Sponsors are available now.</h4>
+	<p>Announcements from Sponsors can be found <a href="http://cvpr2018.thecvf.com/sponsors/sponsor_announcements"><span class="hyperlinks"><strong>here</strong></span></a>.</p>
+	
+	<h4><span style="color:red;"><strong>[NEW]</strong></span> Panel on being a good citizen of CVPR has been scheduled on Friday, June 22, 2018.</h4>
+	<p>Find out more at <a class="hyperlinks" href="https://www.cc.gatech.edu/~parikh/citizenofcvpr/" target="_blank"><strong>Good Citizen of CVPR</strong></a>.</p>
+	
+	<h4>Presentation Schedule is available now.</h4>
+	<p>The presentation schedule can be found <a href="http://cvpr2018.thecvf.com/program/main_conference"><span class="hyperlinks"><strong>here</strong></span></a>.</p>
+	
+	<h4>Camera-Ready Deadline has been extended.</h4>
+	<p>Camera-Ready Deadline is now March 29, 2018 [11:59 p.m. Pacific Standard Time].</p>
+	
+	<h4>List of Accepted Doctoral Consortium Applicants is available now.</h4>
+	<p>List of Accepted DC Applicants can be found <a href="http://cvpr2018.thecvf.com/program/doctoral_consortium"><span class="hyperlinks"><strong>here</strong></span></a>.</p>
+	
+	
+	<h4>Camera-Ready Deadline has been extended.</h4>
+	<p>Camera-Ready Deadline is now March 28, 2018 [11:59 p.m. Pacific Standard Time].</p>
+	
+	<h4>Job Board is available now.</h4>
+	<p>Posted jobs can be viewed <a class="hyperlinks" href="http://cvpr2018.thecvf.com/jobs/job_board"><strong>here</strong></a>. <br>
+	New jobs can be posted <a class="hyperlinks" href="http://cvpr2018.thecvf.com/jobs/post_a_new_job"><strong>here</strong></a>.
+	</p>
+	
+	<h4>Call for Demos is available now.</h4>
+	<p>Call for demos and related dates can be found <a class="hyperlinks" href="http://cvpr2018.thecvf.com/program/demos"><strong>here</strong></a>.</p>
+	
+	<h4>Registration is available now.</h4>
+	<p>Registration link and requirements can be found <a class="hyperlinks" href="http://cvpr2018.thecvf.com/attend/registration"><strong>here</strong></a>.<br>
+	More information about the conference venue and hotels can be found <a class="hyperlinks" href="http://cvpr2018.thecvf.com/attend/travel"><strong>here</strong></a>.<br>
+	Please register EARLY and request a visa letter EARLY so that you have plenty of time to process the application.
+	</p>
+
+	<h4>CVPR 2018 Accepted Papers List is available now.</h4>
+	<p>The list of accepted papers can be found <a class="hyperlinks" href="http://cvpr2018.thecvf.com/files/cvpr_2018_final_accept_list.txt"><strong>here</strong></a>. <br>
+	The final reviews are available on CMT (<a target="_blank" href="https://cmt.research.microsoft.com/CVPR2018"><span class="hyperlinks" target="_blank"><strong>link</strong></span></a>). <br>
+	The decisions of oral/spotlight/poster will be announced soon.</p>
+	
+	<h4>Doctoral consortium applications are now open.</h4>
+	<p>Information about the doctoral consortium can be found <a href="http://cvpr2018.thecvf.com/program/doctoral_consortium"><span class="hyperlinks"><strong>here</strong></span></a>.</p>
+	
+	<h4>Student volunteer applications are now open.</h4>
+	<p>Information and FAQ about student volunteering can be found <a href="http://cvpr2018.thecvf.com/attend/student_volunteer"><span class="hyperlinks"><strong>here</strong></span></a>.</p>
+	
+	<h4>Rebuttal period is closed.</h4>
+	<p>Please check other important dates <a href="http://cvpr2018.thecvf.com/submission/timeline"><span class="hyperlinks"><strong>here</strong></span></a>.</p>
+	
+	<h4>Paper reviews are available now.</h4>
+	<p>Paper reviews can be viewed through the CVPR 2018 CMT website (<a href="https://cmt.research.microsoft.com/CVPR2018"><span class="hyperlinks"><strong>link</strong></span></a>).
+	<br>
+	Rebuttal deadline is January 25, 2018 [11:59 p.m. Pacific Standard Time].
+	<br>
+	Please follow the example in the rebuttal kit when preparing your rebuttal (<a href="http://cvpr2018.thecvf.com/submission/main_conference/author_guidelines#rebuttal_instructions"><span class="hyperlinks"><strong>link</strong></span></a>).
+	</p>
+	
+	<h4>Accepted Tutorials are available now.</h4>
+	<p>Accepted Tutorials can be found <a href="http://cvpr2018.thecvf.com/program/tutorials"><span class="hyperlinks"><strong>here</strong></span></a>.</p>
+	
+	<h4>Accepted Workshops are available now.</h4>
+	<p>Accepted Workshops can be found <a href="http://cvpr2018.thecvf.com/program/workshops"><span class="hyperlinks"><strong>here</strong></span></a>.</p>
+	
+	<h4>Tutorial submissions are now closed.</h4>
+	<p>Tutorial submissions are now closed. Please check other important dates <a href="http://cvpr2018.thecvf.com/submission/timeline"><span class="hyperlinks"><strong>here</strong></span></a>.</p>
+	
+	<h4>Tutorial submission is still open.</h4>
+	<p>Tutorials deadline is November 20, 2017 [11:59 p.m. Pacific Standard Time].<br>
+	Call for tutorials can be found <a href="http://cvpr2018.thecvf.com/submission/tutorial_proposals"><span class="hyperlinks"><strong>here</strong></span></a>.</p>
+	
+	<h4>CMT Submissions Website is now closed.</h4>
+	<p>Paper Submissions are now closed. Please check other important dates <a href="http://cvpr2018.thecvf.com/submission/timeline"><span class="hyperlinks"><strong>here</strong></span></a>.</p>
+	
+	<h4>CMT Submissions Website is now open.</h4>
+    <p>CVPR 2018 CMT site is now open for paper submissions (<a href="https://cmt.research.microsoft.com/CVPR2018"><span class="hyperlinks"><strong>link</strong></span></a>).<br>
+	Paper submission deadline is November 15, 2017 [11:59 p.m. Pacific Standard Time]. <br>
+	There is no paper abstract deadline.</p>
+
+	<!-- Call for Papers -->
+	<h4>Calls for Papers/Workshops/Tutorials are available now.</h4>
+    <p>
+    Call for <a href="http://cvpr2018.thecvf.com/submission/main_conference/author_guidelines#call_for_papers"><span class="hyperlinks"><strong>Papers</strong></span></a>/
+    <a href="http://cvpr2018.thecvf.com/submission/workshop_proposals"><span class="hyperlinks"><strong>Workshops</strong></span></a>/
+    <a href="http://cvpr2018.thecvf.com/submission/tutorial_proposals"><span class="hyperlinks"><strong>Tutorials</strong></span></a>.
+    </p>
+	
+  </div>
+</div>
+
+
+
+
+<div class="row row-card">
+  
+</div><!-- end of speakers -->
+
+
+
+<!-- TODO:  -->
+
+</div><!-- body-container -->
+<div class="footer-container">
+<div class="row">
+  <div class="col-md-12 text-center social-media">
+    <a href="https://www.facebook.com/CVPR2018/" target="_blank"><i class="fa fa-facebook"></i></a>
+<a href="https://twitter.com/CVPR" target="_blank"><i class="fa fa-twitter"></i></a>
+<a href="https://www.instagram.com/TheCVPR/?hl=en" target="_blank"><i class="fa fa-instagram"></i></a>
+
+
+  </div>
+</div>
+<div class="row footer-style">
+    <p>© 2018 CVPR</p>
+</div>
+</div><!-- footer-container -->
+
+
+<script type="text/javascript" src="cvpr2018.thecvf.com_files/home.html"></script>
+
+  </div>
+
+
+
+</body></html>

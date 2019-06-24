@@ -1,0 +1,1415 @@
+<!DOCTYPE html>
+<html xmlns:og="http://ogp.me/ns#" lang="ja"><head>
+<meta http-equiv="content-type" content="text/html; charset=EUC-JP"><script type="text/javascript" src="news.livedoor.com_files/get_002" charset="UTF-8" async=""></script><script src="news.livedoor.com_files/osd.js"></script><script src="news.livedoor.com_files/pubads_impl_rendering_235.js"></script><script type="text/javascript" src="news.livedoor.com_files/get" charset="UTF-8" async=""></script>
+
+
+
+<meta charset="EUC-JP">
+<meta property="fb:pages" content="1411031549129601">
+<title>ライブドアニュース（livedoor ニュース）</title>
+<meta name="description" content="ライブドアニュースは、幅広いジャンルのニュースをいち早くお伝えします。わかりやすさ、読みやすさにこだわり、記事の核心をまとめた要約をつけています。">
+<meta name="keywords" content="ニュース,新聞,写真,雑誌">
+
+<meta http-equiv="Content-Style-Type" content="text/css">
+<meta http-equiv="Content-Script-Type" content="text/javascript">
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="verify-v1" content="1bivxaxGrLBSoWSu7qAOa0M36HWHyewW+8YqCFDlBZQ=">
+<meta property="og:site_name" content="ライブドアニュース">
+<meta property="og:locale" content="ja_JP">
+
+<meta property="og:title" content="ライブドアニュース（livedoor ニュース）">
+<meta property="og:description" content="ライブドアニュースは、幅広いジャンルのニュースをいち早くお伝えします。わかりやすさ、読みやすさにこだわり、記事の核心をまとめた要約をつけています。">
+<meta property="og:type" content="article">
+<meta property="og:url" content="http://news.livedoor.com/">
+<meta property="og:image" content="http://news.livedoor.com/img/fb/news.png?v=20131122">
+
+
+<meta property="fb:app_id" content="177427582354682">
+<meta name="google-site-verification" content="o5tpnnMZcGiZ39mGlvymSKSR_fd_pGPaE67o49icZo8">
+<link rel="canonical" href="http://news.livedoor.com/">
+<link rel="icon" href="http://parts.news.livedoor.com/img/favicon.ico?v=20131002" type="image/x-icon">
+<link rel="Shortcut Icon" href="http://parts.news.livedoor.com/img/favicon.ico?v=20131002" type="img/x-icon">
+<link rel="alternate" type="application/rss+xml" href="http://news.livedoor.com/topics/rss/top.xml" title="RSS主要トピックス">
+<link rel="alternate" type="application/rss+xml" href="http://news.livedoor.com/topics/rss/dom.xml" title="RSS国内トピックス">
+<link rel="alternate" type="application/rss+xml" href="http://news.livedoor.com/topics/rss/int.xml" title="RSS海外トピックス">
+<link rel="alternate" type="application/rss+xml" href="http://news.livedoor.com/topics/rss/eco.xml" title="RSS IT 経済トピックス">
+<link rel="alternate" type="application/rss+xml" href="http://news.livedoor.com/topics/rss/ent.xml" title="RSS芸能トピックス">
+<link rel="alternate" type="application/rss+xml" href="http://news.livedoor.com/topics/rss/spo.xml" title="RSSスポーツトピックス">
+<link rel="alternate" type="application/rss+xml" href="http://news.livedoor.com/rss/summary/52.xml" title="RSS映画新着記事">
+<link rel="alternate" type="application/rss+xml" href="http://news.livedoor.com/topics/rss/gourmet.xml" title="RSSグルメトピックス">
+<link rel="alternate" type="application/rss+xml" href="http://news.livedoor.com/topics/rss/love.xml" title="RSS女子トピックス">
+<link rel="alternate" type="application/rss+xml" href="http://news.livedoor.com/topics/rss/trend.xml" title="RSSトレンドトピックス">
+<link rel="search" type="application/opensearchdescription+xml" title="ライブドアニュース" href="http://news.livedoor.com/open_search/default.xml">
+<link rel="stylesheet" href="news.livedoor.com_files/common.css" type="text/css">
+<link rel="stylesheet" href="news.livedoor.com_files/outbrain_overwrite.css" type="text/css">
+
+
+<script type="text/javascript" charset="utf-8" async="" src="news.livedoor.com_files/popin_discovery5-min_dummy.js"></script><script type="text/javascript" charset="utf-8" async="" src="news.livedoor.com_files/popin-cb-min.js"></script><script type="text/javascript" async="" src="news.livedoor.com_files/bi.js"></script><script id="facebook-jssdk" async="" src="news.livedoor.com_files/sdk.js"></script><script async="" src="news.livedoor.com_files/gtm.js"></script><script async="" src="news.livedoor.com_files/fbevents.js"></script><script async="" src="news.livedoor.com_files/torimochi.js"></script><script async="" src="news.livedoor.com_files/analytics.js"></script><script type="text/javascript" src="news.livedoor.com_files/jquery181.js"></script>
+<script type="text/javascript" src="news.livedoor.com_files/jquery.js"></script>
+<script type="text/javascript" src="news.livedoor.com_files/_comment_up.js"></script>
+<script type="text/javascript" src="news.livedoor.com_files/ads.js"></script>
+<script type="text/javascript" src="news.livedoor.com_files/rewrite.js"></script><style type="text/css"></style>
+<!--[if lt IE 9]>
+<script type="text/javascript" src="/js/html5shiv.js"></script>
+<![endif]-->
+
+<!-- UniversalAnalytics -->
+<script>
+function GAProxy(){
+    this.push = function(args){
+        if(args.length > 5){
+            throw "invalid argument length";
+        }
+        var eventName = args[0];
+        var category = args[1];
+        var action = args[2];
+        var label = args[3];
+        var value = args[4];
+        if(eventName !== '_trackEvent'){ // ignore
+            return;
+        }
+        if(typeof(action) === "undefined"){
+            alert("actionが設定されていません");
+            return;
+        }
+        var params = ["send", "event", category, action, label, value];
+        var filtered_params = params.filter(function(e){
+            return typeof(e) !== "undefined";
+        });
+        if(typeof(ga) !== "undefined"){
+            ga.apply(window, filtered_params);
+        }
+    };
+}
+var _gaq = new GAProxy();
+</script>
+<script>
+  (function(i,s,o,g,r,a,m){i['GoogleAnalyticsObject']=r;i[r]=i[r]||function(){
+  (i[r].q=i[r].q||[]).push(arguments)},i[r].l=1*new Date();a=s.createElement(o),
+  m=s.getElementsByTagName(o)[0];a.async=1;a.src=g;m.parentNode.insertBefore(a,m)
+  })(window,document,'script','//www.google-analytics.com/analytics.js','ga');
+  ga('create', 'UA-27661606-1', 'auto');
+  ga('require', 'displayfeatures');
+  ga('send', 'pageview');
+</script>
+
+
+<script>
+(function(g,d){var v='release/stable';
+g._trmq=[];g._trm=function(){g._trmq.push(arguments)};
+g.onerror=function(m,f,l,c){g._trm('send','exception',m,f,l,c)};
+var h=location.protocol==='https:'?'https://d.line-scdn.net':'http://d.line-cdn.net';
+var s=d.createElement('script');s.async=1;
+s.src=h+'/n/_4/torimochi.js/public/v1/'+v+'/min/torimochi.js';
+var t=d.getElementsByTagName('script')[0];t.parentNode.insertBefore(s,t);
+})(window, document);
+_trm('enable', {
+productKey: 'livedoor-news-real'
+});
+_trm('send', 'pageview');
+</script>
+
+
+<!-- Facebook Pixel Code -->
+<script>
+!function(f,b,e,v,n,t,s){if(f.fbq)return;n=f.fbq=function(){n.callMethod?
+n.callMethod.apply(n,arguments):n.queue.push(arguments)};if(!f._fbq)f._fbq=n;
+n.push=n;n.loaded=!0;n.version='2.0';n.queue=[];t=b.createElement(e);t.async=!0;
+t.src=v;s=b.getElementsByTagName(e)[0];s.parentNode.insertBefore(t,s)}(window,
+document,'script','//connect.facebook.net/en_US/fbevents.js');
+
+fbq('init', '1682225158731376');
+fbq('track', "PageView");</script>
+<noscript><img height="1" width="1" style="display:none"
+src="https://www.facebook.com/tr?id=1682225158731376&ev=PageView&noscript=1"
+/></noscript>
+<!-- End Facebook Pixel Code -->
+
+
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-TQ7LV8X');</script>
+
+
+
+<script async="async" src="news.livedoor.com_files/gpt.js"></script>
+<script>
+  var googletag = googletag || {};
+  googletag.cmd = googletag.cmd || [];
+</script>
+ 
+<script>
+  googletag.cmd.push(function() {
+    googletag.defineSlot('/21627555768/livedoor_NEWS/PC/main_middle_left', [300, 250], 'div-gpt-ad-1523414326394-0').addService(googletag.pubads());
+    googletag.defineSlot('/21627555768/livedoor_NEWS/PC/main_middle_right', [300, 250], 'div-gpt-ad-1523414350660-0').addService(googletag.pubads());
+    googletag.defineSlot('/21627555768/livedoor_NEWS/PC/main_footer_left', [300, 250], 'div-gpt-ad-1523416550419-0').addService(googletag.pubads());
+    googletag.defineSlot('/21627555768/livedoor_NEWS/PC/main_footer_right', [300, 250], 'div-gpt-ad-1523416576776-0').addService(googletag.pubads());
+    googletag.defineSlot('/21627555768/livedoor_NEWS/PC/sbu_1st', [[300, 250], [300, 600]], 'div-gpt-ad-1523416600988-0').addService(googletag.pubads());
+    googletag.defineSlot('/21627555768/livedoor_NEWS/PC/sbu_2nd', [300, 250], 'div-gpt-ad-1523416675106-0').addService(googletag.pubads());
+    googletag.defineSlot('/21627555768/livedoor_NEWS/PC/sbu_3rd', [[300, 250], [300, 600]], 'div-gpt-ad-1523416697491-0').addService(googletag.pubads());
+    googletag.pubads().enableSingleRequest();
+ googletag.pubads().collapseEmptyDivs();
+    googletag.enableServices();
+  });
+</script>
+
+
+<script type="text/javascript" async="async" src="news.livedoor.com_files/outbrain.js"></script>
+
+<script src="news.livedoor.com_files/1682225158731376.js" async=""></script><link rel="preload" href="news.livedoor.com_files/integrator.js" as="script"><script type="text/javascript" src="news.livedoor.com_files/integrator.js"></script><link rel="preload" href="news.livedoor.com_files/integrator_002.js" as="script"><script type="text/javascript" src="news.livedoor.com_files/integrator_002.js"></script><script src="news.livedoor.com_files/pubads_impl_235.js" async=""></script><style type="text/css">.ob-tcolor{color:rgb(45, 45, 45)} .ob-lcolor{color:rgb(35, 85, 165)} .ob-bgtcolor{background-color:rgb(45, 45, 45)} .item-link-container:hover .ob-tcolor{border-color:rgb(45, 45, 45)} </style><style type="text/css">.fb_hidden{position:absolute;top:-10000px;z-index:10001}.fb_reposition{overflow:hidden;position:relative}.fb_invisible{display:none}.fb_reset{background:none;border:0;border-spacing:0;color:#000;cursor:auto;direction:ltr;font-family:"lucida grande", tahoma, verdana, arial, "hiragino kaku gothic pro",meiryo,"ms pgothic",sans-serif;font-size:11px;font-style:normal;font-variant:normal;font-weight:normal;letter-spacing:normal;line-height:1;margin:0;overflow:visible;padding:0;text-align:left;text-decoration:none;text-indent:0;text-shadow:none;text-transform:none;visibility:visible;white-space:normal;word-spacing:normal}.fb_reset>div{overflow:hidden}.fb_link img{border:none}@keyframes fb_transform{from{opacity:0;transform:scale(.95)}to{opacity:1;transform:scale(1)}}.fb_animate{animation:fb_transform .3s forwards}
+.fb_dialog{background:rgba(82, 82, 82, .7);position:absolute;top:-10000px;z-index:10001}.fb_reset .fb_dialog_legacy{overflow:visible}.fb_dialog_advanced{padding:10px;border-radius:8px}.fb_dialog_content{background:#fff;color:#333}.fb_dialog_close_icon{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 0 transparent;cursor:pointer;display:block;height:15px;position:absolute;right:18px;top:17px;width:15px}.fb_dialog_mobile .fb_dialog_close_icon{top:5px;left:5px;right:auto}.fb_dialog_padding{background-color:transparent;position:absolute;width:1px;z-index:-1}.fb_dialog_close_icon:hover{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -15px transparent}.fb_dialog_close_icon:active{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yq/r/IE9JII6Z1Ys.png) no-repeat scroll 0 -30px transparent}.fb_dialog_loader{background-color:#f6f7f9;border:1px solid #606060;font-size:24px;padding:20px}.fb_dialog_top_left,.fb_dialog_top_right,.fb_dialog_bottom_left,.fb_dialog_bottom_right{height:10px;width:10px;overflow:hidden;position:absolute}.fb_dialog_top_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 0;left:-10px;top:-10px}.fb_dialog_top_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -10px;right:-10px;top:-10px}.fb_dialog_bottom_left{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -20px;bottom:-10px;left:-10px}.fb_dialog_bottom_right{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ye/r/8YeTNIlTZjm.png) no-repeat 0 -30px;right:-10px;bottom:-10px}.fb_dialog_vert_left,.fb_dialog_vert_right,.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{position:absolute;background:#525252;filter:alpha(opacity=70);opacity:.7}.fb_dialog_vert_left,.fb_dialog_vert_right{width:10px;height:100%}.fb_dialog_vert_left{margin-left:-10px}.fb_dialog_vert_right{right:0;margin-right:-10px}.fb_dialog_horiz_top,.fb_dialog_horiz_bottom{width:100%;height:10px}.fb_dialog_horiz_top{margin-top:-10px}.fb_dialog_horiz_bottom{bottom:0;margin-bottom:-10px}.fb_dialog_iframe{line-height:0}.fb_dialog_content .dialog_title{background:#6d84b4;border:1px solid #365899;color:#fff;font-size:14px;font-weight:bold;margin:0}.fb_dialog_content .dialog_title>span{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/yd/r/Cou7n-nqK52.gif) no-repeat 5px 50%;float:left;padding:5px 0 7px 26px}body.fb_hidden{-webkit-transform:none;height:100%;margin:0;overflow:visible;position:absolute;top:-10000px;left:0;width:100%}.fb_dialog.fb_dialog_mobile.loading{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/ya/r/3rhSv5V8j3o.gif) white no-repeat 50% 50%;min-height:100%;min-width:100%;overflow:hidden;position:absolute;top:0;z-index:10001}.fb_dialog.fb_dialog_mobile.loading.centered{width:auto;height:auto;min-height:initial;min-width:initial;background:none}.fb_dialog.fb_dialog_mobile.loading.centered #fb_dialog_loader_spinner{width:100%}.fb_dialog.fb_dialog_mobile.loading.centered .fb_dialog_content{background:none}.loading.centered #fb_dialog_loader_close{color:#fff;display:block;padding-top:20px;clear:both;font-size:18px}#fb-root #fb_dialog_ipad_overlay{background:rgba(0, 0, 0, .45);position:absolute;bottom:0;left:0;right:0;top:0;width:100%;min-height:100%;z-index:10000}#fb-root #fb_dialog_ipad_overlay.hidden{display:none}.fb_dialog.fb_dialog_mobile.loading iframe{visibility:hidden}.fb_dialog_mobile .fb_dialog_iframe{position:-webkit-sticky;top:0}.fb_dialog_content .dialog_header{-webkit-box-shadow:white 0 1px 1px -1px inset;background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#738ABA), to(#2C4987));border-bottom:1px solid;border-color:#1d4088;color:#fff;font:14px Helvetica, sans-serif;font-weight:bold;text-overflow:ellipsis;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0;vertical-align:middle;white-space:nowrap}.fb_dialog_content .dialog_header table{-webkit-font-smoothing:subpixel-antialiased;height:43px;width:100%}.fb_dialog_content .dialog_header td.header_left{font-size:12px;padding-left:5px;vertical-align:middle;width:60px}.fb_dialog_content .dialog_header td.header_right{font-size:12px;padding-right:5px;vertical-align:middle;width:60px}.fb_dialog_content .touchable_button{background:-webkit-gradient(linear, 0% 0%, 0% 100%, from(#4966A6), color-stop(.5, #355492), to(#2A4887));border:1px solid #29487d;-webkit-background-clip:padding-box;-webkit-border-radius:3px;-webkit-box-shadow:rgba(0, 0, 0, .117188) 0 1px 1px inset, rgba(255, 255, 255, .167969) 0 1px 0;display:inline-block;margin-top:3px;max-width:85px;line-height:18px;padding:4px 12px;position:relative}.fb_dialog_content .dialog_header .touchable_button input{border:none;background:none;color:#fff;font:12px Helvetica, sans-serif;font-weight:bold;margin:2px -12px;padding:2px 6px 3px 6px;text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog_content .dialog_header .header_center{color:#fff;font-size:16px;font-weight:bold;line-height:18px;text-align:center;vertical-align:middle}.fb_dialog_content .dialog_content{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat 50% 50%;border:1px solid #555;border-bottom:0;border-top:0;height:150px}.fb_dialog_content .dialog_footer{background:#f6f7f9;border:1px solid #555;border-top-color:#ccc;height:40px}#fb_dialog_loader_close{float:left}.fb_dialog.fb_dialog_mobile .fb_dialog_close_button{text-shadow:rgba(0, 30, 84, .296875) 0 -1px 0}.fb_dialog.fb_dialog_mobile .fb_dialog_close_icon{visibility:hidden}#fb_dialog_loader_spinner{animation:rotateSpinner 1.2s linear infinite;background-color:transparent;background-image:url(https://static.xx.fbcdn.net/rsrc.php/v3/yD/r/t-wz8gw1xG1.png);background-repeat:no-repeat;background-position:50% 50%;height:24px;width:24px}@keyframes rotateSpinner{0%{transform:rotate(0deg)}100%{transform:rotate(360deg)}}
+.fb_iframe_widget{display:inline-block;position:relative}.fb_iframe_widget span{display:inline-block;position:relative;text-align:justify}.fb_iframe_widget iframe{position:absolute}.fb_iframe_widget_fluid_desktop,.fb_iframe_widget_fluid_desktop span,.fb_iframe_widget_fluid_desktop iframe{max-width:100%}.fb_iframe_widget_fluid_desktop iframe{min-width:220px;position:relative}.fb_iframe_widget_lift{z-index:1}.fb_hide_iframes iframe{position:relative;left:-10000px}.fb_iframe_widget_loader{position:relative;display:inline-block}.fb_iframe_widget_fluid{display:inline}.fb_iframe_widget_fluid span{width:100%}.fb_iframe_widget_loader iframe{min-height:32px;z-index:2;zoom:1}.fb_iframe_widget_loader .FB_Loader{background:url(https://static.xx.fbcdn.net/rsrc.php/v3/y9/r/jKEcVPZFk-2.gif) no-repeat;height:32px;width:32px;margin-left:-16px;position:absolute;left:50%;z-index:4}
+.fb_customer_chat_bounce_in_v1{animation-duration:250ms;animation-name:fb_bounce_in_v1}.fb_customer_chat_bounce_out_v1{animation-duration:250ms;animation-name:fb_bounce_out_v1}.fb_customer_chat_bounce_in_v2{animation-duration:300ms;animation-name:fb_bounce_in_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_v2{animation-duration:300ms;animation-name:fb_bounce_out_v2;transition-timing-function:ease-in}.fb_customer_chat_bounce_in_v2_mobile_chat_started{animation-duration:300ms;animation-name:fb_bounce_in_v2_mobile_chat_started;transition-timing-function:ease-in}.fb_customer_chat_bounce_out_v2_mobile_chat_started{animation-duration:300ms;animation-name:fb_bounce_out_v2_mobile_chat_started;transition-timing-function:ease-in}.fb_customer_chat_bubble_pop_in{animation-duration:250ms;animation-name:fb_customer_chat_bubble_bounce_in_animation}.fb_customer_chat_bubble_animated_no_badge{box-shadow:0 3px 12px rgba(0, 0, 0, .15);transition:box-shadow 150ms linear}.fb_customer_chat_bubble_animated_no_badge:hover{box-shadow:0 5px 24px rgba(0, 0, 0, .3)}.fb_customer_chat_bubble_animated_with_badge{box-shadow:-5px 4px 14px rgba(0, 0, 0, .15);transition:box-shadow 150ms linear}.fb_customer_chat_bubble_animated_with_badge:hover{box-shadow:-5px 8px 24px rgba(0, 0, 0, .2)}.fb_invisible_flow{display:inherit;height:0;overflow-x:hidden;width:0}.fb_mobile_overlay_active{background-color:#fff;height:100%;overflow:hidden;position:fixed;visibility:hidden;width:100%}@keyframes fb_bounce_in_v1{0%{opacity:0;transform:scale(.8, .8);transform-origin:bottom right}80%{opacity:.8;transform:scale(1.03, 1.03)}100%{opacity:1;transform:scale(1, 1)}}@keyframes fb_bounce_in_v2{0%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}50%{transform:scale(1.03, 1.03);transform-origin:bottom right}100%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}}@keyframes fb_bounce_in_v2_mobile_chat_started{0%{opacity:0;top:20px}100%{opacity:1;top:0}}@keyframes fb_bounce_out_v1{from{opacity:1}to{opacity:0}}@keyframes fb_bounce_out_v2{0%{opacity:1;transform:scale(1, 1);transform-origin:bottom right}100%{opacity:0;transform:scale(0, 0);transform-origin:bottom right}}@keyframes fb_bounce_out_v2_mobile_chat_started{0%{opacity:1;top:0}100%{opacity:0;top:20px}}@keyframes fb_customer_chat_bubble_bounce_in_animation{0%{bottom:6pt;opacity:0;transform:scale(0, 0);transform-origin:center}70%{bottom:18pt;opacity:1;transform:scale(1.2, 1.2)}100%{transform:scale(1, 1)}}</style></head>
+
+<body id="page-top" class="col3">
+
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-TQ7LV8X"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+
+
+
+<div id="fb-root" class=" fb_reset"><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div><iframe name="fb_xdm_frame_http" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" id="fb_xdm_frame_http" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" style="border: medium none;" src="http://staticxx.facebook.com/connect/xd_arbiter/r/bSTT5dUx9MY.js?version=42#channel=f19559987ca135&amp;origin=http%3A%2F%2Fnews.livedoor.com" frameborder="0"></iframe><iframe name="fb_xdm_frame_https" allowtransparency="true" allowfullscreen="true" scrolling="no" allow="encrypted-media" id="fb_xdm_frame_https" aria-hidden="true" title="Facebook Cross Domain Communication Frame" tabindex="-1" style="border: medium none;" src="news.livedoor.com_files/bSTT5dUx9MY_002.html" frameborder="0"></iframe></div></div><div style="position: absolute; top: -10000px; height: 0px; width: 0px;"><div></div></div></div>
+<script>
+  // https://developers.facebook.com/docs/reference/javascript/FB.init/
+  window.fbAsyncInit = function() {
+    // init the FB JS SDK
+    FB.init({
+      appId      : 177427582354682, // App ID from the App Dashboard
+      version    : 'v2.6',
+      //channelUrl : '//WWW.YOUR_DOMAIN.COM/channel.html', // Channel File for x-domain communication
+      status     : true, // check the login status upon init?
+      cookie     : true, // set sessions cookies to allow your server to access the session?
+      xfbml      : true  // parse XFBML tags on this page?
+    });
+
+    // Additional initialization code such as adding Event Listeners goes here
+
+  };
+
+  // Load the SDK's source Asynchronously
+  // Note that the debug version is being actively developed and might
+  // contain some type checks that are overly strict.
+  // Please report such bugs using the bugs tool.
+  (function(d, debug){
+     var js, id = 'facebook-jssdk', ref = d.getElementsByTagName('script')[0];
+     if (d.getElementById(id)) {return;}
+     js = d.createElement('script'); js.id = id; js.async = true;
+     js.src = "//connect.facebook.net/ja_JP/sdk" + (debug ? "/debug" : "") + ".js";
+     ref.parentNode.insertBefore(js, ref);
+   }(document, false));
+</script>
+
+
+
+
+
+
+
+
+<div id="container">
+
+<header id="globalHeader">
+  <div class="headerInner">
+    <div class="headerSearchWrap">
+      <form class="headerSearch" method="get" action="/search/article/">
+        <input value="euc-jp" name="ie" type="hidden">
+        <input name="word" size="30" placeholder="ニュース検索" class="searchText" type="text">
+        <input value="検索" class="searchBtn" type="submit">
+      </form>
+    </div>
+      <h1 class="headerLogo"><a href="http://news.livedoor.com/" onclick="_gaq.push(['_trackEvent', 'ニュース', ' ヘッダー', 'ロゴ/ニュース']);">ライブドアニュース</a></h1>
+    <ul class="headerInfo"><!--
+      
+      --><li class="infoLogin"><a href="http://member.livedoor.com/login/?.next=http%3A%2F%2Fnews.livedoor.com&amp;.sv=news" onclick="_gaq.push(['_trackEvent', 'ニュース', ' ヘッダー', 'ログイン/ログアウト']);">ログイン</a></li><!--
+      
+      --><li class="infoTop"><a href="http://www.livedoor.com/r/news_text" onclick="_gaq.push(['_trackEvent', 'ニュース', ' ヘッダー', 'グローバルヘッダ/LDトップ']);">livedoor</a></li><!--
+    --></ul>
+  </div><!-- /.headerInner -->
+</header><!-- /#header -->
+
+
+<!-- google_ad_section_start -->
+
+
+<div id="content">
+  <div class="contentInner">
+
+    
+
+
+
+    <div id="nav">
+      <div class="navInner">
+        <nav id="globalNav" style="position: static; top: auto; bottom: auto; left: auto;">
+          <ul>
+            <li class="selected">
+              <div class="parent"><a href="http://news.livedoor.com/" onclick="_gaq.push(['_trackEvent', 'ニュース', '左カラム', '一段目/トップ']);">トップ</a></div>
+            </li>
+            <li>
+              <div class="parent"><a href="http://news.livedoor.com/topics/category/main/" onclick="_gaq.push(['_trackEvent', 'ニュース', '左カラム', '一段目/主要']);">主要</a></div>
+            </li>
+            <li>
+              <div class="parent"><a href="http://news.livedoor.com/topics/category/dom/" onclick="_gaq.push(['_trackEvent', 'ニュース', '左カラム', '一段目/国内']);">国内</a></div>
+            </li>
+            <li>
+              <div class="parent"><a href="http://news.livedoor.com/topics/category/world/" onclick="_gaq.push(['_trackEvent', 'ニュース', '左カラム', '一段目/海外']);">海外</a></div>
+            </li>
+            <li>
+              <div class="parent"><a href="http://news.livedoor.com/topics/category/eco/" onclick="_gaq.push(['_trackEvent', 'ニュース', '左カラム', '一段目/IT 経済']);">IT 経済</a></div>
+            </li>
+            <li>
+              <div class="parent"><a href="http://news.livedoor.com/topics/category/ent/" onclick="_gaq.push(['_trackEvent', 'ニュース', '左カラム', '一段目/芸能']);">芸能</a></div>
+            </li>
+            <li>
+              <div class="parent"><a href="http://news.livedoor.com/topics/category/sports/" onclick="_gaq.push(['_trackEvent', 'ニュース', '左カラム', '一段目/スポーツ']);">スポーツ</a></div>
+            </li>
+            <li>
+              <div class="parent"><a href="http://news.livedoor.com/article/category/52/" onclick="_gaq.push(['_trackEvent', 'ニュース', '左カラム', '一段目/映画']);">映画</a></div>
+            </li>
+            <li>
+              <div class="parent"><a href="http://news.livedoor.com/topics/category/gourmet/" onclick="_gaq.push(['_trackEvent', 'ニュース', '左カラム', '一段目/グルメ']);">グルメ</a></div>
+            </li>
+            <li>
+              <div class="parent"><a href="http://news.livedoor.com/topics/category/love/" onclick="_gaq.push(['_trackEvent', 'ニュース', '左カラム', '一段目/女子']);">女子</a></div>
+            </li>
+            <li>
+              <div class="parent"><a href="http://news.livedoor.com/topics/category/trend/" onclick="_gaq.push(['_trackEvent', 'ニュース', '左カラム', '一段目/トレンド']);">トレンド</a></div>
+            </li>
+            <li class="navSeparate">
+              <div class="parent"><a href="http://news.livedoor.com/straight_news/" onclick="_gaq.push(['_trackEvent', 'ニュース', '左カラム', '一段目/今日のできごと']);">今日のニュース</a></div>
+            </li>
+            <li>
+              <div class="parent"><a href="http://news.livedoor.com/ranking/" onclick="_gaq.push(['_trackEvent', 'ニュース', '左カラム', '一段目/ランキング']);">ランキング</a></div>
+            </li>
+            <li>
+                  <div class="parent"><a href="http://news.livedoor.com/social_reaction/" onclick="_gaq.push(['_trackEvent', 'ニュース', '左カラム', '一段目/話題のニュース']);">話題のニュース</a></div>
+            </li>
+            <li>
+                  <div class="parent"><a href="http://news.livedoor.com/category/vender/special/" onclick="_gaq.push(['_trackEvent', 'ニュース', '左カラム', '一段目/インタビュー']);">インタビュー</a></div>
+            </li>
+          </ul>
+        </nav>
+      </div><!-- /.navInner -->
+    </div><!-- /#nav -->
+
+    <div id="main">
+      <div class="mainInner">
+        <section class="mainSec secTopMainTopics">
+          <h2 class="mainTtl"><a href="http://news.livedoor.com/topics/category/main/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム', 'トップ/主要トップ']);">主要ニュース</a></h2>
+          <div class="mainBody">
+            
+
+
+<div class="topTopics">
+  <figure class="topTopicsFigure">
+    <a id="headline_img_link_247682" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15085283/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム','トップ/主要/ヘッドライン']);" style="visibility: visible;"><img id="headline_img_247682" src="news.livedoor.com_files/f3f0d_188_c0a4a4f9_b2c23682-cm.jpg" alt="大沢あかね" onmousedown="return false;" onselectstart="return false;" oncontextmenu="return false;" galleryimg="no"></a>
+    <figcaption>
+      <a id="headline_247682" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15085283/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム','トップ/主要/ヘッドライン']);" style="visibility: visible;">大沢あかねの子育て 母親ら賛否</a>
+    </figcaption>
+  </figure>
+  <div class="topTopicsList">
+    <ul class="topicsList">
+     <li><a id="topics_2189468" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15086372/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム','トップ/主要/トピックス/詳細']);" style="visibility: visible;">愛媛でダム緊急放流 住民ら憤り</a><i class="icon icoNew"></i></li>
+     <li><a id="topics_2189416" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15086166/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム','トップ/主要/トピックス/詳細']);" style="visibility: visible;">てるみ元社員有罪 裁判長の指摘</a></li>
+     <li><a id="topics_2189444" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15085610/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム','トップ/主要/トピックス/詳細']);" style="visibility: visible;">杉田氏擁護の杉並区議も炎上</a><i class="icon icoNew"></i></li>
+     <li><a id="topics_2189336" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15084962/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム','トップ/主要/トピックス/詳細']);" style="visibility: visible;">覚醒剤飲んだ 任意同行後に死亡</a></li>
+     <li><a id="topics_2189322" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15085557/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム','トップ/主要/トピックス/詳細']);" style="visibility: visible;">トイレに金魚流した女性が本音</a></li>
+     <li><a id="topics_2189419" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15086273/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム','トップ/主要/トピックス/詳細']);" style="visibility: visible;">死んだ子どもに寄り添う母シャチ</a></li>
+     <li><a id="topics_2189410" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15085857/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム','トップ/主要/トピックス/詳細']);" style="visibility: visible;">ボクシング界の不正 判定も操作?</a></li>
+     <li><a id="topics_2189464" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15086347/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム','トップ/主要/トピックス/詳細']);" style="visibility: visible;">大阪桐蔭が23点圧勝V 代表出揃う</a><i class="icon icoNew"></i></li>
+     <li><a id="topics_2189401" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15086135/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム','トップ/主要/トピックス/詳細']);" style="visibility: visible;">太田光の「生産性」発言が物議</a></li>
+     <li><a id="topics_2189381" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15085915/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム','トップ/主要/トピックス/詳細']);" style="visibility: visible;">日テレ「PON!」打ち切りを認める</a></li>
+    </ul>
+  </div>
+</div>
+<script type="text/javascript">
+var rand_headline_title_hash = {};
+var rand_headline_category_hash = {};
+var rand_headline_image_link_hash = {};
+var rand_headline_image_link_category_hash = {};
+var rand_headline_image_alt_hash = {};
+var headline_ab_title = new Array();
+rand_headline_title_hash['headline_247682'] = headline_ab_title;
+rand_headline_category_hash['headline_247682'] =  1;
+rand_headline_image_link_hash['headline_img_link_247682'] = headline_ab_title;
+rand_headline_image_link_category_hash['headline_img_link_247682'] =  1;
+rand_headline_image_alt_hash['headline_img_247682'] = headline_ab_title;
+
+var rand_topics_title_hash = {
+"topics_2189381":randomAdv({})
+};
+rewrite_headline_titles(rand_headline_title_hash,rand_headline_category_hash);
+rewrite_headline_link(rand_headline_image_link_hash,rand_headline_image_link_category_hash);
+rewrite_titles_image_alt(rand_headline_image_alt_hash);
+rewrite_topics_titles(rand_topics_title_hash);
+$(".rewrite_ab").css("visibility","visible");
+</script>
+
+
+          </div><!-- /.mainBody -->
+        </section>
+
+        
+
+
+<div class="mainSec separate">
+  <ul class="topImageList">
+    <li class="nth1">
+      <figure class="imageListFigure">
+        <a id="headline_img_link_247686" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15085582/" onclick="_gaq.push(['_trackEvent','ニュース', 'メインカラム', 'トップ/ヘッドライン']);" style="visibility: visible;"><img id="headline_img_247686" src="news.livedoor.com_files/394e9_1469_993d250d_e0353f48-cs.jpg" alt="血だらけのルーニー、アメリカで初ゴール＆初怪我" onmousedown="return false;" onselectstart="return false;" oncontextmenu="return false;" galleryimg="no"></a>
+        <figcaption><a id="headline_247686" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15085582/" onclick="_gaq.push(['_trackEvent','ニュース', 'メインカラム', 'トップ/ヘッドライン']);" style="visibility: visible;">ルーニー 血だらけも初ゴール</a></figcaption>
+      </figure>
+    </li>
+    
+    <li class="nth2">
+      <figure class="imageListFigure">
+        <a id="headline_img_link_247684" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15084974/" onclick="_gaq.push(['_trackEvent','ニュース', 'メインカラム', 'トップ/ヘッドライン']);" style="visibility: visible;"><img id="headline_img_247684" src="news.livedoor.com_files/5368f_555_2c80c9e02c5ae230b90bf6a32bf47420-cs.jpg" alt="「Fate/Grand Order&#10005;天野喜孝」" onmousedown="return false;" onselectstart="return false;" oncontextmenu="return false;" galleryimg="no"></a>
+        <figcaption><a id="headline_247684" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15084974/" onclick="_gaq.push(['_trackEvent','ニュース', 'メインカラム', 'トップ/ヘッドライン']);" style="visibility: visible;">天野喜孝がサーヴァントを描く</a></figcaption>
+      </figure>
+    </li>
+    
+    <li class="nth3">
+      <figure class="imageListFigure">
+        <a id="headline_img_link_247680" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15083898/" onclick="_gaq.push(['_trackEvent','ニュース', 'メインカラム', 'トップ/ヘッドライン']);" style="visibility: visible;"><img id="headline_img_247680" src="news.livedoor.com_files/4c758_1375_28bb81a8_3ab7204b-cs.jpg" alt="おっさんずラブの「優しい世界」" onmousedown="return false;" onselectstart="return false;" oncontextmenu="return false;" galleryimg="no"></a>
+        <figcaption><a id="headline_247680" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15083898/" onclick="_gaq.push(['_trackEvent','ニュース', 'メインカラム', 'トップ/ヘッドライン']);" style="visibility: visible;">おっさんずラブの「優しい世界」</a></figcaption>
+      </figure>
+    </li>
+    
+    <li class="nth4">
+      <figure class="imageListFigure">
+        <a id="headline_img_link_247678" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15086260/" onclick="_gaq.push(['_trackEvent','ニュース', 'メインカラム', 'トップ/ヘッドライン']);" style="visibility: visible;"><img id="headline_img_247678" src="news.livedoor.com_files/1d365_80_35d5b292_29fc437b-cs.jpg" alt="問題となった稲田氏のツイート。すでに削除されている" onmousedown="return false;" onselectstart="return false;" oncontextmenu="return false;" galleryimg="no"></a>
+        <figcaption><a id="headline_247678" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15086260/" onclick="_gaq.push(['_trackEvent','ニュース', 'メインカラム', 'トップ/ヘッドライン']);" style="visibility: visible;">稲田朋美氏 早くもTwitter炎上か</a></figcaption>
+      </figure>
+    </li>
+    
+    <li class="nth5">
+      <figure class="imageListFigure">
+        <a id="headline_img_link_247673" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15085969/" onclick="_gaq.push(['_trackEvent','ニュース', 'メインカラム', 'トップ/ヘッドライン']);" style="visibility: visible;"><img id="headline_img_247673" src="news.livedoor.com_files/7f1e2_620_f2ed2300_3a963b8a-cs.jpg" alt="中国メディアは、日本の伝統的な「海女」について紹介した。（イメージ写真提供：１２３ＲＦ）" onmousedown="return false;" onselectstart="return false;" oncontextmenu="return false;" galleryimg="no"></a>
+        <figcaption><a id="headline_247673" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15085969/" onclick="_gaq.push(['_trackEvent','ニュース', 'メインカラム', 'トップ/ヘッドライン']);" style="visibility: visible;">海女さん 英女王も絶賛した過去</a></figcaption>
+      </figure>
+    </li>
+    
+  </ul>
+</div>
+<script type="text/javascript">
+var rand_headline_title_hash = {};
+var rand_headline_category_hash = {};
+var rand_headline_image_link_hash = {};
+var rand_headline_image_link_category_hash = {};
+var rand_headline_title_image_alt_hash = {};
+var headline_ab_title = new Array();
+rand_headline_title_hash['headline_247686'] = headline_ab_title;
+rand_headline_category_hash['headline_247686'] = 61;
+rand_headline_image_link_hash['headline_img_link_247686'] = headline_ab_title;
+rand_headline_image_link_category_hash['headline_img_link_247686'] =  61;
+rand_headline_title_image_alt_hash['headline_img_247686'] = headline_ab_title;
+var headline_ab_title = new Array();
+rand_headline_title_hash['headline_247684'] = headline_ab_title;
+rand_headline_category_hash['headline_247684'] = 58;
+rand_headline_image_link_hash['headline_img_link_247684'] = headline_ab_title;
+rand_headline_image_link_category_hash['headline_img_link_247684'] =  58;
+rand_headline_title_image_alt_hash['headline_img_247684'] = headline_ab_title;
+var headline_ab_title = new Array();
+rand_headline_title_hash['headline_247680'] = headline_ab_title;
+rand_headline_category_hash['headline_247680'] = 6;
+rand_headline_image_link_hash['headline_img_link_247680'] = headline_ab_title;
+rand_headline_image_link_category_hash['headline_img_link_247680'] =  6;
+rand_headline_title_image_alt_hash['headline_img_247680'] = headline_ab_title;
+var headline_ab_title = new Array();
+rand_headline_title_hash['headline_247678'] = headline_ab_title;
+rand_headline_category_hash['headline_247678'] = 2;
+rand_headline_image_link_hash['headline_img_link_247678'] = headline_ab_title;
+rand_headline_image_link_category_hash['headline_img_link_247678'] =  2;
+rand_headline_title_image_alt_hash['headline_img_247678'] = headline_ab_title;
+var headline_ab_title = new Array();
+rand_headline_title_hash['headline_247673'] = headline_ab_title;
+rand_headline_category_hash['headline_247673'] = 7;
+rand_headline_image_link_hash['headline_img_link_247673'] = headline_ab_title;
+rand_headline_image_link_category_hash['headline_img_link_247673'] =  7;
+rand_headline_title_image_alt_hash['headline_img_247673'] = headline_ab_title;
+var headline_ab_title = new Array();
+rand_headline_title_hash['headline_247671'] = headline_ab_title;
+rand_headline_category_hash['headline_247671'] = 4;
+rand_headline_image_link_hash['headline_img_link_247671'] = headline_ab_title;
+rand_headline_image_link_category_hash['headline_img_link_247671'] =  4;
+rand_headline_title_image_alt_hash['headline_img_247671'] = headline_ab_title;
+var headline_ab_title = new Array();
+rand_headline_title_hash['headline_247658'] = headline_ab_title;
+rand_headline_category_hash['headline_247658'] = 48;
+rand_headline_image_link_hash['headline_img_link_247658'] = headline_ab_title;
+rand_headline_image_link_category_hash['headline_img_link_247658'] =  48;
+rand_headline_title_image_alt_hash['headline_img_247658'] = headline_ab_title;
+var headline_ab_title = new Array();
+rand_headline_title_hash['headline_246727'] = headline_ab_title;
+rand_headline_category_hash['headline_246727'] = 63;
+rand_headline_image_link_hash['headline_img_link_246727'] = headline_ab_title;
+rand_headline_image_link_category_hash['headline_img_link_246727'] =  63;
+rand_headline_title_image_alt_hash['headline_img_246727'] = headline_ab_title;
+var headline_ab_title = new Array();
+rand_headline_title_hash['headline_76149'] = headline_ab_title;
+rand_headline_category_hash['headline_76149'] = '';
+rand_headline_image_link_hash['headline_img_link_76149'] = headline_ab_title;
+rand_headline_image_link_category_hash['headline_img_link_76149'] =  '';
+rand_headline_title_image_alt_hash['headline_img_76149'] = headline_ab_title;
+var headline_ab_title = new Array();
+rand_headline_title_hash['headline_75805'] = headline_ab_title;
+rand_headline_category_hash['headline_75805'] = 10;
+rand_headline_image_link_hash['headline_img_link_75805'] = headline_ab_title;
+rand_headline_image_link_category_hash['headline_img_link_75805'] =  10;
+rand_headline_title_image_alt_hash['headline_img_75805'] = headline_ab_title;
+var headline_ab_title = new Array();
+rand_headline_title_hash['headline_68918'] = headline_ab_title;
+rand_headline_category_hash['headline_68918'] = '';
+rand_headline_image_link_hash['headline_img_link_68918'] = headline_ab_title;
+rand_headline_image_link_category_hash['headline_img_link_68918'] =  '';
+rand_headline_title_image_alt_hash['headline_img_68918'] = headline_ab_title;
+var headline_ab_title = new Array();
+rand_headline_title_hash['headline_65866'] = headline_ab_title;
+rand_headline_category_hash['headline_65866'] = '';
+rand_headline_image_link_hash['headline_img_link_65866'] = headline_ab_title;
+rand_headline_image_link_category_hash['headline_img_link_65866'] =  '';
+rand_headline_title_image_alt_hash['headline_img_65866'] = headline_ab_title;
+var headline_ab_title = new Array();
+rand_headline_title_hash['headline_65855'] = headline_ab_title;
+rand_headline_category_hash['headline_65855'] = '';
+rand_headline_image_link_hash['headline_img_link_65855'] = headline_ab_title;
+rand_headline_image_link_category_hash['headline_img_link_65855'] =  '';
+rand_headline_title_image_alt_hash['headline_img_65855'] = headline_ab_title;
+var headline_ab_title = new Array();
+rand_headline_title_hash['headline_61282'] = headline_ab_title;
+rand_headline_category_hash['headline_61282'] = '';
+rand_headline_image_link_hash['headline_img_link_61282'] = headline_ab_title;
+rand_headline_image_link_category_hash['headline_img_link_61282'] =  '';
+rand_headline_title_image_alt_hash['headline_img_61282'] = headline_ab_title;
+var headline_ab_title = new Array();
+rand_headline_title_hash['headline_51694'] = headline_ab_title;
+rand_headline_category_hash['headline_51694'] = '';
+rand_headline_image_link_hash['headline_img_link_51694'] = headline_ab_title;
+rand_headline_image_link_category_hash['headline_img_link_51694'] =  '';
+rand_headline_title_image_alt_hash['headline_img_51694'] = headline_ab_title;
+var headline_ab_title = new Array();
+rand_headline_title_hash['headline_742'] = headline_ab_title;
+rand_headline_category_hash['headline_742'] = '';
+rand_headline_image_link_hash['headline_img_link_742'] = headline_ab_title;
+rand_headline_image_link_category_hash['headline_img_link_742'] =  '';
+rand_headline_title_image_alt_hash['headline_img_742'] = headline_ab_title;
+var headline_ab_title = new Array();
+rand_headline_title_hash['headline_28458'] = headline_ab_title;
+rand_headline_category_hash['headline_28458'] = '';
+rand_headline_image_link_hash['headline_img_link_28458'] = headline_ab_title;
+rand_headline_image_link_category_hash['headline_img_link_28458'] =  '';
+rand_headline_title_image_alt_hash['headline_img_28458'] = headline_ab_title;
+var headline_ab_title = new Array();
+rand_headline_title_hash['headline_16211'] = headline_ab_title;
+rand_headline_category_hash['headline_16211'] = '';
+rand_headline_image_link_hash['headline_img_link_16211'] = headline_ab_title;
+rand_headline_image_link_category_hash['headline_img_link_16211'] =  '';
+rand_headline_title_image_alt_hash['headline_img_16211'] = headline_ab_title;
+var headline_ab_title = new Array();
+rand_headline_title_hash['headline_5496'] = headline_ab_title;
+rand_headline_category_hash['headline_5496'] = '';
+rand_headline_image_link_hash['headline_img_link_5496'] = headline_ab_title;
+rand_headline_image_link_category_hash['headline_img_link_5496'] =  '';
+rand_headline_title_image_alt_hash['headline_img_5496'] = headline_ab_title;
+rewrite_headline_titles(rand_headline_title_hash,rand_headline_category_hash);
+rewrite_headline_link(rand_headline_image_link_hash,rand_headline_image_link_category_hash);
+rewrite_titles_image_alt(rand_headline_title_image_alt_hash);
+$(".rewrite_ab").css("visibility","visible");
+</script>
+
+
+
+           <div class="mainSec topTopicsCat topTopicsCat1 separate">
+          <section class="topTopicsCatItem topTopicsCatItem odd">
+            <h2 class="mainTtl"><a href="http://news.livedoor.com/topics/category/dom/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム', 'トップ/国内トップ']);">国内</a></h2>
+            <div class="mainBody">
+              
+
+
+<ul class="topicsList">
+  <li><a id="topics_2189463" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15085335/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム', 'トップ/国内/トピックス/詳細']);" style="visibility: visible;">男女2人が自殺 ネットで公開か</a><i class="icon icoNew"></i></li>
+  <li><a id="topics_2189362" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15085166/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム', 'トップ/国内/トピックス/詳細']);" style="visibility: visible;">台風ループか 影響長期化に懸念</a></li>
+  <li><a id="topics_2189345" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15080315/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム', 'トップ/国内/トピックス/詳細']);" style="visibility: visible;">余命宣告も…財産手放し困惑</a></li>
+  <li><a id="topics_2189360" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15084262/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム', 'トップ/国内/トピックス/詳細']);" style="visibility: visible;">橋下徹氏 高校球児は兵士と一緒</a></li>
+  <li><a id="topics_2189373" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15083826/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム', 'トップ/国内/トピックス/詳細']);" style="visibility: visible;">菅野完氏 米から逮捕状出ていた</a></li>
+  <li><a id="topics_2189446" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15084205/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム', 'トップ/国内/トピックス/詳細']);" style="visibility: visible;">「自分の切り売り」は最強の商売</a><i class="icon icoNew"></i></li>
+  <li><a id="topics_2189407" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15082816/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム', 'トップ/国内/トピックス/詳細']);" style="visibility: visible;">大行列「竹島水族館」人気の秘訣</a></li>
+  <li><a id="topics_2189409" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15084342/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム', 'トップ/国内/トピックス/詳細']);" style="visibility: visible;">家が浸水 契約時の説明義務なし</a></li>
+  <li><a id="topics_2189417" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15085481/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム', 'トップ/国内/トピックス/詳細']);" style="visibility: visible;">飲酒の町議 避難所でトラブルか</a><i class="icon icoNew"></i></li>
+  <li><a id="topics_2189470" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15086034/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム', 'トップ/国内/トピックス/詳細']);" style="visibility: visible;">もしも学校にテストがなかったら</a><i class="icon icoNew"></i></li>
+</ul>
+<script type="text/javascript">
+var rand_topics_title_hash = {
+"topics_2189470":randomAdv({})
+};
+rewrite_topics_titles(rand_topics_title_hash);
+$(".rewrite_ab").css("visibility","visible");
+</script>
+
+
+            </div>
+          </section>
+          <section class="topTopicsCatItem topTopicsCatItem even">
+            <h2 class="mainTtl"><a href="http://news.livedoor.com/topics/category/world/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム', 'トップ/海外トップ']);">海外</a></h2>
+            <div class="mainBody">
+              
+
+
+<ul class="topicsList">
+  <li><a id="topics_2189365" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15085519/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム', 'トップ/海外/トピックス/詳細']);" style="visibility: visible;">猛暑の英国 食糧不足に懸念も</a></li>
+  <li><a id="topics_2189388" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15085691/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム', 'トップ/海外/トピックス/詳細']);" style="visibility: visible;">墓地不足 豪で「新ルール」採用</a></li>
+  <li><a id="topics_2189424" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15083289/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム', 'トップ/海外/トピックス/詳細']);" style="visibility: visible;">日本人が秩序を守る理由 中国</a></li>
+  <li><a id="topics_2189425" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15083394/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム', 'トップ/海外/トピックス/詳細']);" style="visibility: visible;">女が空港職員に殴る蹴るの暴行</a><i class="icon icoNew"></i></li>
+  <li><a id="topics_2189427" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15085159/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム', 'トップ/海外/トピックス/詳細']);" style="visibility: visible;">シベリアで太陽が消える異常事態</a><i class="icon icoNew"></i></li>
+  <li><a id="topics_2189432" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15085224/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム', 'トップ/海外/トピックス/詳細']);" style="visibility: visible;">SW次回作にフィッシャーさん登場</a><i class="icon icoNew"></i></li>
+  <li><a id="topics_2189452" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15085864/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム', 'トップ/海外/トピックス/詳細']);" style="visibility: visible;">洗車代ケチり愛車が水没 中国</a><i class="icon icoNew"></i></li>
+  <li><a id="topics_2189390" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15084815/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム', 'トップ/海外/トピックス/詳細']);" style="visibility: visible;">北朝鮮で広がる「統一懐疑論」</a></li>
+  <li><a id="topics_2188957" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15082811/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム', 'トップ/海外/トピックス/詳細']);" style="visibility: visible;">太陽「消滅」シベリアで怪奇現象</a></li>
+  <li><a id="topics_2189250" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15084740/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム', 'トップ/海外/トピックス/詳細']);" style="visibility: visible;">日本人所有の観音像に韓国困惑</a></li>
+</ul>
+<script type="text/javascript">
+var rand_topics_title_hash = {
+"topics_2189250":randomAdv({})
+};
+rewrite_topics_titles(rand_topics_title_hash);
+$(".rewrite_ab").css("visibility","visible");
+</script>
+
+
+            </div>
+          </section>
+        </div>
+        
+        
+<aside class="mainSec">
+  <div class="adsW">
+    <div class="adsW1">
+        
+        <!-- /21627555768/livedoor_NEWS/PC/main_middle_left -->
+        <div id="div-gpt-ad-1523414326394-0" data-google-query-id="CNWGyeCpxtwCFRpsvQodMKkErg">
+            <script>
+                googletag.cmd.push(function() { googletag.display('div-gpt-ad-1523414326394-0'); });
+            </script>
+        <div id="google_ads_iframe_/21627555768/livedoor_NEWS/PC/main_middle_left_0__container__" style="border: 0pt none; display: inline-block; width: 300px; height: 250px;"><iframe style="border: 0px none; vertical-align: bottom;" src="news.livedoor.com_files/container_007.html" id="google_ads_iframe_/21627555768/livedoor_NEWS/PC/main_middle_left_0" title="3rd party ad content" name="" scrolling="no" marginwidth="0" marginheight="0" data-is-safeframe="true" width="300" height="250" frameborder="0"></iframe></div></div>
+        
+    </div>
+    <div class="adsW2">
+        
+        <!-- /21627555768/livedoor_NEWS/PC/main_middle_right -->
+        <div id="div-gpt-ad-1523414350660-0" data-google-query-id="CI-FyeCpxtwCFZmJlgodvswMrg">
+            <script>
+                googletag.cmd.push(function() { googletag.display('div-gpt-ad-1523414350660-0'); });
+            </script>
+        <div id="google_ads_iframe_/21627555768/livedoor_NEWS/PC/main_middle_right_0__container__" style="border: 0pt none; display: inline-block; width: 300px; height: 250px;"><iframe style="border: 0px none; vertical-align: bottom;" src="news.livedoor.com_files/container_007.html" id="google_ads_iframe_/21627555768/livedoor_NEWS/PC/main_middle_right_0" title="3rd party ad content" name="" scrolling="no" marginwidth="0" marginheight="0" data-is-safeframe="true" width="300" height="250" frameborder="0"></iframe></div></div>
+        
+    </div>
+  </div>
+</aside>
+
+        
+           <div class="mainSec topTopicsCat topTopicsCat3 separate">
+          <section class="topTopicsCatItem topTopicsCatItem odd">
+            <h2 class="mainTtl"><a href="http://news.livedoor.com/topics/category/eco/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム', 'トップ/IT 経済トップ']);">IT 経済</a></h2>
+            <div class="mainBody">
+              
+
+
+<ul class="topicsList">
+  <li><a id="topics_2189394" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15083632/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム', 'トップ/IT 経済/トピックス/詳細']);" style="visibility: visible;">無印良品の業績が好調な理由</a><i class="icon icoNew"></i></li>
+  <li><a id="topics_2189308" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15085712/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム', 'トップ/IT 経済/トピックス/詳細']);" style="visibility: visible;">Bluetoothのデータ転送に脆弱性</a></li>
+  <li><a id="topics_2189310" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15081577/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム', 'トップ/IT 経済/トピックス/詳細']);" style="visibility: visible;">お札の向き揃えて金が貯まるのか</a></li>
+  <li><a id="topics_2189294" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15083734/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム', 'トップ/IT 経済/トピックス/詳細']);" style="visibility: visible;">30歳子持ち兼業主婦のお金事情</a></li>
+  <li><a id="topics_2189441" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15084535/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム', 'トップ/IT 経済/トピックス/詳細']);" style="visibility: visible;">なぜ年収750万円で貯金がゼロ?</a><i class="icon icoNew"></i></li>
+  <li><a id="topics_2189206" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15076493/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム', 'トップ/IT 経済/トピックス/詳細']);" style="visibility: visible;">男性の「ショートパンツ」事情</a></li>
+  <li><a id="topics_2189240" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15080870/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム', 'トップ/IT 経済/トピックス/詳細']);" style="visibility: visible;">ZOZO前澤社長に「イラつく」理由</a></li>
+  <li><a id="topics_2189458" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15086331/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム', 'トップ/IT 経済/トピックス/詳細']);" style="visibility: visible;">BMW「X5」190台限定のモデル発売</a><i class="icon icoNew"></i></li>
+  <li><a id="topics_2189465" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15077470/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム', 'トップ/IT 経済/トピックス/詳細']);" style="visibility: visible;">ベンツ「Aクラス セダン」に新型</a><i class="icon icoNew"></i></li>
+  <li><a id="topics_2189241" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15084372/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム', 'トップ/IT 経済/トピックス/詳細']);" style="visibility: visible;">総スカンくらっていたトコット</a></li>
+</ul>
+<script type="text/javascript">
+var rand_topics_title_hash = {
+"topics_2189241":randomAdv({})
+};
+rewrite_topics_titles(rand_topics_title_hash);
+$(".rewrite_ab").css("visibility","visible");
+</script>
+
+
+            </div>
+          </section>
+          <section class="topTopicsCatItem topTopicsCatItem even">
+            <h2 class="mainTtl"><a href="http://news.livedoor.com/topics/category/sports/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム', 'トップ/スポーツトップ']);">スポーツ</a></h2>
+            <div class="mainBody">
+              
+
+
+<ul class="topicsList">
+  <li><a id="topics_2189422" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15085867/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム', 'トップ/スポーツ/トピックス/詳細']);" style="visibility: visible;">イブラがハットトリックで勝利へ</a></li>
+  <li><a id="topics_2189431" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15085804/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム', 'トップ/スポーツ/トピックス/詳細']);" style="visibility: visible;">パス回し 西野J固めた主将の言葉</a><i class="icon icoNew"></i></li>
+  <li><a id="topics_2189342" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15085748/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム', 'トップ/スポーツ/トピックス/詳細']);" style="visibility: visible;">日本を模範にロッカールーム清掃</a></li>
+  <li><a id="topics_2189403" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15085982/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム', 'トップ/スポーツ/トピックス/詳細']);" style="visibility: visible;">MLBでまた…差別ツイートが発覚</a></li>
+  <li><a id="topics_2189346" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15085796/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム', 'トップ/スポーツ/トピックス/詳細']);" style="visibility: visible;">慶応が10年ぶり18度目の夏甲子園</a></li>
+  <li><a id="topics_2189327" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15084916/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム', 'トップ/スポーツ/トピックス/詳細']);" style="visibility: visible;">村田諒太 ボクシング連盟を批判</a></li>
+  <li><a id="topics_2189338" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15084987/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム', 'トップ/スポーツ/トピックス/詳細']);" style="visibility: visible;">ボクシング助成金を孫の口座に?</a></li>
+  <li><a id="topics_2189423" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15083750/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム', 'トップ/スポーツ/トピックス/詳細']);" style="visibility: visible;">ルメール JRA年間100勝に到達</a><i class="icon icoNew"></i></li>
+  <li><a id="topics_2189459" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15085782/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム', 'トップ/スポーツ/トピックス/詳細']);" style="visibility: visible;">バド松友ペアに「モップの洗礼」</a><i class="icon icoNew"></i></li>
+  <li><a id="topics_2189462" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15086244/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム', 'トップ/スポーツ/トピックス/詳細']);" style="visibility: visible;">東京五輪 演出トップに萬斎氏</a><i class="icon icoNew"></i></li>
+</ul>
+<script type="text/javascript">
+var rand_topics_title_hash = {
+"topics_2189462":randomAdv({})
+};
+rewrite_topics_titles(rand_topics_title_hash);
+$(".rewrite_ab").css("visibility","visible");
+</script>
+
+
+            </div>
+          </section>
+        </div>
+           <div class="mainSec topTopicsCat topTopicsCat5 separate">
+          <section class="topTopicsCatItem topTopicsCatItem odd">
+            <h2 class="mainTtl"><a href="http://news.livedoor.com/topics/category/ent/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム', 'トップ/芸能トップ']);">芸能</a></h2>
+            <div class="mainBody">
+              
+
+
+<ul class="topicsList">
+  <li><a id="topics_2189249" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15082288/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム', 'トップ/芸能/トピックス/詳細']);" style="visibility: visible;">高木ブーが語るドリフ時代の青春</a></li>
+  <li><a id="topics_2189279" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15084070/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム', 'トップ/芸能/トピックス/詳細']);" style="visibility: visible;">音楽業界 男性2人組ヒットの法則</a><i class="icon icoNew"></i></li>
+  <li><a id="topics_2189066" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15083882/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム', 'トップ/芸能/トピックス/詳細']);" style="visibility: visible;">寺島進がオフィス北野退社へ</a></li>
+  <li><a id="topics_2189146" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15084240/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム', 'トップ/芸能/トピックス/詳細']);" style="visibility: visible;">人気ナレーター 年収億超えも</a></li>
+  <li><a id="topics_2189034" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15084061/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム', 'トップ/芸能/トピックス/詳細']);" style="visibility: visible;">志らく争奪戦 負けられないTV局</a></li>
+  <li><a id="topics_2188976" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15083293/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム', 'トップ/芸能/トピックス/詳細']);" style="visibility: visible;">アンタッチャブル 復活しない訳</a></li>
+  <li><a id="topics_2189016" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15083300/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム', 'トップ/芸能/トピックス/詳細']);" style="visibility: visible;">内村が目撃 紅白で震えた安室</a></li>
+  <li><a id="topics_2189451" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15085698/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム', 'トップ/芸能/トピックス/詳細']);" style="visibility: visible;">GENERATIONSの「チャリで来た」</a><i class="icon icoNew"></i></li>
+  <li><a id="topics_2189399" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15085769/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム', 'トップ/芸能/トピックス/詳細']);" style="visibility: visible;">剛力彩芽 ユーザーに意見求める</a><i class="icon icoNew"></i></li>
+  <li><a id="topics_2189448" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15086277/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム', 'トップ/芸能/トピックス/詳細']);" style="visibility: visible;">公造氏 小林麻耶の結婚は予想外</a><i class="icon icoNew"></i></li>
+</ul>
+<script type="text/javascript">
+var rand_topics_title_hash = {
+"topics_2189448":randomAdv({})
+};
+rewrite_topics_titles(rand_topics_title_hash);
+$(".rewrite_ab").css("visibility","visible");
+</script>
+
+
+            </div>
+          </section>
+          <section class="topTopicsCatItem topTopicsCatItem even">
+            <h2 class="mainTtl"><a href="http://news.livedoor.com/topics/category/trend/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム', 'トップ/トレンドトップ']);">トレンド</a></h2>
+            <div class="mainBody">
+              
+
+
+<ul class="topicsList">
+  <li><a id="topics_2189467" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15086093/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム', 'トップ/トレンド/トピックス/詳細']);" style="visibility: visible;">余命短い犬にバーガー店が神対応</a><i class="icon icoNew"></i></li>
+  <li><a id="topics_2189454" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15085385/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム', 'トップ/トレンド/トピックス/詳細']);" style="visibility: visible;">「週マガ」の休載理由に称賛の声</a><i class="icon icoNew"></i></li>
+  <li><a id="topics_2189429" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15085902/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム', 'トップ/トレンド/トピックス/詳細']);" style="visibility: visible;">声優の梅原裕一郎 退院を発表</a><i class="icon icoNew"></i></li>
+  <li><a id="topics_2189321" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15085800/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム', 'トップ/トレンド/トピックス/詳細']);" style="visibility: visible;">「野原ひろしフェア」8月に開催</a></li>
+  <li><a id="topics_2189368" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15085182/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム', 'トップ/トレンド/トピックス/詳細']);" style="visibility: visible;">劇場版ヒロアカの特典を一部公開</a></li>
+  <li><a id="topics_2189247" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15085242/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム', 'トップ/トレンド/トピックス/詳細']);" style="visibility: visible;">トイレの便座より菌が多いもの</a></li>
+  <li><a id="topics_2189263" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15084672/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム', 'トップ/トレンド/トピックス/詳細']);" style="visibility: visible;">「風立ちぬ」の知られざる噂</a></li>
+  <li><a id="topics_2189055" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15084280/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム', 'トップ/トレンド/トピックス/詳細']);" style="visibility: visible;">英語力が伸びない人の致命的ミス</a></li>
+  <li><a id="topics_2189317" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15085135/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム', 'トップ/トレンド/トピックス/詳細']);" style="visibility: visible;">住みやすいと思う都道府県ランク</a></li>
+  <li><a id="topics_2189391" class="rewrite_ab" href="http://news.livedoor.com/topics/detail/15085649/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'メインカラム', 'トップ/トレンド/トピックス/詳細']);" style="visibility: visible;">ハーゲンダッツ2種を無料配布へ</a><i class="icon icoNew"></i></li>
+</ul>
+<script type="text/javascript">
+var rand_topics_title_hash = {
+"topics_2189391":randomAdv({})
+};
+rewrite_topics_titles(rand_topics_title_hash);
+$(".rewrite_ab").css("visibility","visible");
+</script>
+
+
+            </div>
+          </section>
+        </div>
+           <div class="mainSec topTopicsCat topTopicsCat7 separate">
+            
+            <div id="ob_holder" style="display: none;"><iframe id="ob_iframe" style="display: none; width: 1px; height: 1px;" src="news.livedoor.com_files/obFrame.html"></iframe><script type="text/javascript" src="news.livedoor.com_files/widgetGlobalEvent_002.json" charset="UTF-8" async=""></script><script type="text/javascript" src="news.livedoor.com_files/widgetGlobalEvent.json" charset="UTF-8" async=""></script></div><div class="OUTBRAIN" data-src="DROP_PERMALINK_HERE" data-widget-id="HPC" data-ob-mark="true" data-browser="firefox" data-os="macintel" data-dynload="" data-idx="0" id="outbrain_widget_0"><div class="ob-widget ob-strip-layout HPC">
+      <style type="text/css">
+      /* dynamic basic css */
+.HPC.ob-widget .ob-widget-items-container {margin:0;padding:0;}
+.HPC.ob-widget .ob-widget-items-container .ob-clearfix {display:block;width:100%;float:none;clear:both;height:0px;line-height:0px;font-size:0px;}
+.HPC.ob-widget .ob-widget-items-container.ob-multi-row {padding-top: 2%;}
+.HPC.ob-widget .ob-dynamic-rec-container {position:relative;margin:0;padding;0;}
+.HPC.ob-widget .ob-dynamic-rec-link,
+.HPC.ob-widget .ob-dynamic-rec-link:hover {text-decoration:none;}
+.HPC.ob-widget .ob-rec-image-container .ob-video-icon-container {position:absolute;left:0;height:30%;width:100%;text-align:center;top:35%;}
+.HPC.ob-widget .ob-rec-image-container .ob-video-icon {display:inline-block;height:100%;float:none;opacity:0.7;transition: opacity 500ms;}
+.HPC.ob-widget .ob-rec-image-container .ob-video-icon:hover {opacity:1;}
+.HPC.ob-widget .ob_what{direction:ltr;clear:both;padding:5px 10px 0px;}
+.HPC.ob-widget .ob_what a{color:#999;font-size:11px;font-family:arial;text-decoration: none;}
+.HPC.ob-widget .ob_what.ob-hover:hover a{text-decoration: underline;}
+.HPC.ob-widget .ob_amelia,
+.HPC.ob-widget .ob_logo,
+.HPC.ob-widget .ob_feed_logo,
+.HPC.ob-widget .ob_sfeed_logo,
+.HPC.ob-widget .ob_text_logo{vertical-align:baseline !important;display:inline-block;vertical-align:text-bottom;padding:0px 5px;box-sizing:content-box;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;}
+.HPC.ob-widget .ob_amelia{background:url('http://widgets.outbrain.com/images/widgetIcons/ob_logo_16x16.png') no-repeat center top;width:16px;height:16px;margin-bottom:-2px;}
+.HPC.ob-widget .ob_logo{background:url('http://widgets.outbrain.com/images/widgetIcons/ob_logo_67x12.png') no-repeat center top;width:67px;height:12px;}
+.HPC.ob-widget .ob_text_logo{background:url('http://widgets.outbrain.com/images/widgetIcons/ob_text_logo_67x22.png') no-repeat center top;width:67px;height:22px;}
+.HPC.ob-widget .ob_feed_logo{background:url('http://widgets.outbrain.com/images/widgetIcons/ob_feed_logo.png') no-repeat center top;width:86px;height:23px;}
+.HPC.ob-widget .ob_sfeed_logo{background:url('http://widgets.outbrain.com/images/widgetIcons/ob_smartFeedLogo.min.svg') no-repeat center top;width:140px;height:21px;}
+@media only screen and (-webkit-min-device-pixel-ratio: 2),(min-resolution: 192dpi) {
+.HPC.ob-widget .ob_amelia{background:url('http://widgets.outbrain.com/images/widgetIcons/ob_logo_16x16@2x.png') no-repeat center top;width:16px;height:16px;margin-bottom:-2px; background-size:16px 32px;}
+.HPC.ob-widget .ob_logo{background:url('http://widgets.outbrain.com/images/widgetIcons/ob_logo_67x12@2x.png') no-repeat center top;width:67px;height:12px; background-size:67px 24px;}
+.HPC.ob-widget .ob_text_logo{background:url('http://widgets.outbrain.com/images/widgetIcons/ob_text_logo_67x22@2x.png') no-repeat center top;width:67px;height:20px; background-size:67px 40px;}
+.HPC.ob-widget .ob_feed_logo{background:url('http://widgets.outbrain.com/images/widgetIcons/ob_feed_logo@2x.png') no-repeat center top;width:86px;height:23px;background-size: 86px 23px;}
+}
+@media only screen and (max-width: 600px) {
+.HPC.ob-widget .ob_sfeed_logo{width:90px;height:20px;background-size:90px 20px;}
+}
+.HPC.ob-widget:hover .ob_amelia,
+.HPC.ob-widget:hover .ob_logo,
+.HPC.ob-widget:hover .ob_text_logo{background-position:center bottom;}
+  .HPC.ob-widget .ob_what{text-align:right;}
+.HPC.ob-widget .ob-rec-image-container .ob-rec-image {display:block;}
+      /* dynamic strip css */
+.HPC.ob-widget .ob-rec-image-container {position:relative;}
+.HPC.ob-widget .ob-rec-image-container .ob-image-ratio {height:0px;line-height:0px;padding-top:100.0%;}
+.HPC.ob-widget .ob-rec-image-container img.ob-rec-image {width:100%;position:absolute;top:0;bottom:0;left:0;right:0;opacity:0;transition:all 750ms;}
+.HPC.ob-widget .ob-rec-image-container img.ob-show {opacity:1;}
+.HPC.ob-widget .ob-rec-image-container .ob-rec-label {position:absolute;bottom:0px;left:0px;padding:0px 3px;background-color:#666;color:white;font-size:10px;line-height:15px;}
+.HPC.ob-widget {width:auto;min-width:300px;}
+.HPC.ob-widget .ob-dynamic-rec-container {display:inline-block;vertical-align:top;min-width:50px;width:18.16%;box-sizing:border-box;-moz-box-sizing:border-box;}
+.HPC.ob-widget .ob-unit.ob-rec-brandName,
+.HPC.ob-widget .ob-unit.ob-rec-brandLogo-container,
+.HPC.ob-widget .ob-rec-brandLogoAndName {display:inline-block;}
+.HPC.ob-widget .ob-rec-brandLogo {width:20px;height:20px;}
+.HPC.ob-widget .ob-rec-brandName {vertical-align:bottom;}
+.HPC.ob-widget .ob-unit.ob-rec-brandName {vertical-align:super;}
+  .HPC.ob-widget .ob-widget-items-container {direction: ltr;}
+  .HPC.ob-widget .ob-dynamic-rec-container {margin-left:0;}
+  .HPC.ob-widget .ob-dynamic-rec-container ~ .ob-dynamic-rec-container {margin:0 0 0 2.3%; }
+.HPC.ob-widget .ob-widget-header {direction:ltr; font-weight:bold;}
+.HPC.ob-widget .ob-unit {display:block;}
+.HPC.ob-widget .ob-rec-text {max-height:53.0px;overflow:hidden;}
+.HPC.ob-widget .ob-rec-source {}
+.HPC.ob-widget .ob-rec-date {font-weight:bold;}
+
+
+
+
+
+      /* dynamic customized css */
+      
+.HPC.ob-strip-layout .ob-widget-header {font-family:inherit;font-size:14px;color:#2d2d2d;padding-bottom:0px;padding-top:0px;}
+.HPC.ob-strip-layout .ob-dynamic-rec-container {max-width:135px;}
+.HPC.ob-strip-layout .ob-rec-text {font-family:inherit;color:#2355a5;padding:0px 0 0px;text-align:left;line-height:1.25;font-size:14px;}
+.HPC.ob-strip-layout .ob-rec-text:hover {color:#2355a5;}
+.HPC.ob-strip-layout .ob-rec-source {font-family:inherit;color:#888;padding:0px 0 0px;text-align:left;font-size:12px;}
+.HPC.ob-strip-layout .ob-rec-date {font-family:inherit;color:black;padding:0px 0 0px;text-align:left;font-size:12px;}
+.HPC.ob-strip-layout .ob-rec-author {font-family:inherit;color:black;padding:0px 0 0px;text-align:left;font-size:12px;}
+.HPC.ob-strip-layout .ob-rec-description {font-family:inherit;color:black;padding:0px 0 0px;text-align:left;font-size:12px;}
+.HPC.ob-strip-layout .ob-rec-brandName {font-family:inherit;padding:0px 0 0px;line-height:1.25;font-size:13px;font-weight:400;}
+.HPC.ob-strip-layout .ob-rec-brandLogo {width:20px;height:20px;}
+    </style>
+    <style type="text/css" class="ob-custom-css">
+      .HPC.ob-widget { clear: both; min-width: 0}.HPC.ob-widget .ob-widget-section .ob-widget-header { display: block}.HPC.ob-widget .ob-widget-section .ob-widget-items-container { padding: 0}.HPC.ob-widget .ob-widget-section .ob-dynamic-rec-container { float: none; max-width: none; width: 18.4%; margin: 2% 0 0 2%; padding: 0; /display: inline; /zoom: 1}.HPC.ob-widget .ob-widget-section .ob-recIdx-0 { margin-left: 0}.HPC.ob-widget .ob-widget-section .ob-dynamic-rec-container .ob-dynamic-rec-link { position: relative}.HPC.ob-widget .ob-widget-section .ob-dynamic-rec-container .ob-rec-image-container { overflow: hidden}.HPC.ob-widget .ob-widget-section .ob-dynamic-rec-container .ob-rec-image { backface-visibility: hidden}.HPC.ob-widget .ob-widget-section .ob-dynamic-rec-container .ob-rec-text { box-sizing: content-box; margin: .3em 0 0; padding: 0; line-height: 1.4; max-height: 4.8em; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3}.HPC.ob-widget .ob-widget-section .ob-dynamic-rec-container .ob-rec-source { box-sizing: content-box; margin: .3em 0 0; line-height: 1.4}.HPC.ob-widget .ob-widget-section .ob-dynamic-rec-container.ob-p .ob-rec-date { display: none}.HPC.ob-widget .ob-widget-section .ob-dynamic-rec-container:hover .ob-rec-image,.HPC.ob-widget .ob-widget-section .ob-dynamic-rec-container:hover .ob-rec-text { opacity: .6}
+    </style>
+    <div class="ob-widget-section ob-first">
+            <div class="ob-widget-header">女子</div>
+            <ul class="ob-widget-items-container">
+        <li class="ob-dynamic-rec-container ob-recIdx-0 ob-o" data-pos="0"><a class="ob-dynamic-rec-link " onclick="" href="http://news.livedoor.com/article/detail/15079314/?obOrigUrl=true" onmousedown="this.href='http://traffic.outbrain.com/network/redir?p=v8C0-sNzbshvYMEAieS0Wx07-re6S-K5X2qAnvZNUi1xPxePGgkbB82Qi5-0ZxScX15JlQOZbrto4S3HO7ktJpq5fP7PhqFs5bGyQqjTj0tjlxgCLnd1sWtRSpnh0ASXAWUTA38iEkFTan8q0kj5e-zbh0pLJMWL65NdmYmS7A5mdqBOLOPvD64tagIYkL17Mr5G_pOO6dezRQIthiXTzgXt1S1sqnL4-xB_R7dwwiZdFFpNcWwjTpumZUHvnM0ajKfsL8twrOWpgR_3N0btCjJNVDOTIOkjpRATZztvK1JEyHR4W5FP0AFJCjZJQ6XtCYhaqJc2BBGq1DKdFIyT29NfYhJR6CsngVqqZF5AmXOYRJXPT-GUytJ7V-EI_RjQUVrn56Qc4gkOfd-EySd2n0K37TENtt5Il1GAoLdo-FVRBRRk_kOzMagoqsjO3HKGZ_oBktShFqukAi1wJbJxPth8d0Fv4x5f3EVWGKUZlaGxEPikLhrqlA4pv29bsuc2e3d6QlBtjk_-KnpxJs0oGee55860e7XNWLJWOlbkAB4AtDQtB-nTRCZxJ5dXyXTTz9wniwyV6c2S119W8OHqmqRPzl33YUa2mcvqeYor-o-HQZ_OFtKk6qUrnBn9Ec74hwUa2mkrW2eUjqZ2fsMHfiFA1KDntBOqvkuRTmRPCOSYvrn8pKm9SShKyG0awztUdaSYJg0lVVjatpnq8_bGy0rVNFU6wkOixzbBrnjfOXbP56Y6bVN9CkM2ovqb92lugfhOgj4oYhyjpRS16nc3dg&amp;c=4d1b135d&amp;v=3';" target="_self" rel="">
+
+      <span class="ob-unit ob-rec-image-container" data-type="Image">
+  <div class="ob-image-ratio"></div>
+    <img class="ob-rec-image ob-show" aria-hidden="true" src="news.livedoor.com_files/eyJpdSI6ImEyMWMxMzdjMDhjMDk0MDlkOWVkN2I1NzYyNzU1ZWIwYWU3ODE2.jpg" onload="this.className+=' ob-show'" alt="デスクで1分！痛気持ちよくて癖になる肩こりエクササイズ" title="デスクで1分！痛気持ちよくて癖になる肩こりエクササイズ" onerror="OBR.extern.imageError(this)">
+          </span>
+
+      <span class="ob-unit ob-rec-text" data-type="Title" title="デスクで1分！痛気持ちよくて癖になる肩こりエクササイズ" style="visibility: visible;">デスクで1分！痛気持ちよくて癖になる肩こりエク...</span>
+      
+          </a>
+</li><li class="ob-dynamic-rec-container ob-recIdx-1 ob-o" data-pos="1"><a class="ob-dynamic-rec-link " onclick="" href="http://news.livedoor.com/article/detail/15045710/?obOrigUrl=true" onmousedown="this.href='http://traffic.outbrain.com/network/redir?p=Xw0SdKeQusE0zkqSDqTXvoN_cJQesmU_-s1JHTH7EtQleKqlRJ3ZAqSd73NdRhReSWbaH42Z_RXHbhEfw2beOA6w8icGL6866_-3Yo1tbKjaVnNvtDqKtcGn7ueXtUtYwpTqZcwihPG7VS6AY8Zm7C5swJrrPnKM03busI_Mbxif59y4gJFDboWlq0qYFeHZvCuVcALiKdXS1YvZBTs9G6nTgNszcK6QkPCeL1tKF4-GtZb0S7IW0Kd6biBicWSDTK0WcDTDyL1E99E1ltmPNbEOua2Usufy4E2y8h1kMC5uzgoWwqH1EaWoSFNHDQ1ZnlzUt8brclZbPYpTXLWR2gM0ImPHRTgwtUZdnzUqYEeyIZnlIVzB8cPrtgNUuZOrdRcuph47Geb1UrUERTn3sC_T3kyU3WuhwY6B6SWf3ISU6D_dhCYFKT_E2mYZd9Xz29ZG-8NukwH3zF4PZoyWqG9zIAayD1Yq-ShI8hobjBff14J__fbgkRnj0W8gUVY77ydNXIsXGZTN6weNrJy7VvknundY8htMsQ-z6hSfVMb-IvM94bSbAZTMzWF6zMxwOMwQSF2PLJvQandp2nXaN3tpjwpWQBTOncMC4GWS3b6JOsT1GUTbf841so0n-hcO3ObWRMVdQsCREZO2JlGGQshQa08jBHzHKsECcHz11Zp5vECaz7az9juWIiuFbXwSCXrWI7HU-fkcywzHOiiMtNAs81hrcAxx4kBmSx3-AyYYPKoWVK_ZBNDq-S4TlmjjtYX8QnKaTStc-1Rp9E8mWQ&amp;c=5ad4a54d&amp;v=3';" target="_self" rel="">
+
+      <span class="ob-unit ob-rec-image-container" data-type="Image">
+  <div class="ob-image-ratio"></div>
+    <img class="ob-rec-image ob-show" aria-hidden="true" src="news.livedoor.com_files/eyJpdSI6IjU1NGU4MWVjZTg0MWI4MThkMzA1NTFjYTU3ZDEyNTRhNzFlM2Uy.jpg" onload="this.className+=' ob-show'" alt="感じてる？彼があなたにベタ惚れしている証拠" title="感じてる？彼があなたにベタ惚れしている証拠" onerror="OBR.extern.imageError(this)">
+          </span>
+
+      <span class="ob-unit ob-rec-text" data-type="Title" title="感じてる？彼があなたにベタ惚れしている証拠" style="visibility: visible;">感じてる？彼があなたにベタ惚れしている証拠</span>
+      
+          </a>
+</li><li class="ob-dynamic-rec-container ob-recIdx-2 ob-o" data-pos="2"><a class="ob-dynamic-rec-link " onclick="" href="http://news.livedoor.com/article/detail/15034816/?obOrigUrl=true" onmousedown="this.href='http://traffic.outbrain.com/network/redir?p=D8Cbf0mRlpq9tWJCg2Dub7NZfzURHp0C4qHA48q_uruZxFravG-5WApukyslS4o5JjIyR4aOIh6cc2h_qm8F6uuPUR_T1w-_N4-GtY3ELkDcubJtq_uZiFnnk-WUeO3thI-Qui-MosBGrpUyiM6sSYT5HwBDSP5UDBj31Bf5ag7h9WkU5NrMsWGktQUVY18piuGwBgRfkutyr8rPhpKjfGIoPLB-y_R5uMyHqed3N8khht7e9AKZY440ZSPIX9xHzNmHYJvYhpyWaUGXIktDr-aWYwPETyOMmDvIlRffowY6IB-DfdUHB7AWvukGlNefx91fiMXgM9OOJ9Zsj4SIzfgKVrAfofoIoQcTEJUkOQtS9R7vglvlOo-nJ2KNOgYEBb7HqiVTmvme182KFMxaRajqqZPddZLSiVXuC-obglGPTxLLRccfwuLdVZFtxtLkj-vuh0m5zhR7yWPe_Ta2bS6VcdS-tnMTJsRiSu9Cc7URe1c7SmKxlVEAJQI0oxjRFUF0Z6a2sTeUALADB61ifLya4ZzIjEun6kBM5UQLDhmqLq4BVik9EpHGWrgXeXiDYtyjbK82UDwNCEAUBCf25IIX_zsBMt6muDMfXbhOCVNYpHndCcuMzdTL2yBii5taks68_WwwSfv8wS43zBEL7hQVKifntXHHX4Xyjf6HuDpWPTtJ88aVqakFOCKLbTL7JUz0Go8JtNkLKpadZ6YC-uv_JriwAEh8APdWZD47ZSc5oXoeWacsP8_sJD4GMiRhi1m7-ipvG401JTfwCAA1OQ&amp;c=a5ae16ff&amp;v=3';" target="_self" rel="">
+
+      <span class="ob-unit ob-rec-image-container" data-type="Image">
+  <div class="ob-image-ratio"></div>
+    <img class="ob-rec-image ob-show" aria-hidden="true" src="news.livedoor.com_files/eyJpdSI6IjcyZDJjZTc5ZjcyMGYzODQxYjZjODM0NGJmOTUyN2JiNGI3YTdi.jpg" onload="this.className+=' ob-show'" alt="男性の「本気でこの子と付き合いたい」サイン" title="男性の「本気でこの子と付き合いたい」サイン" onerror="OBR.extern.imageError(this)">
+          </span>
+
+      <span class="ob-unit ob-rec-text" data-type="Title" title="男性の「本気でこの子と付き合いたい」サイン" style="visibility: visible;">男性の「本気でこの子と付き合いたい」サイン</span>
+      
+          </a>
+</li><li class="ob-dynamic-rec-container ob-recIdx-3 ob-o" data-pos="3"><a class="ob-dynamic-rec-link " onclick="" href="http://news.livedoor.com/article/detail/15079294/?obOrigUrl=true" onmousedown="this.href='http://traffic.outbrain.com/network/redir?p=OxIs_u5pAZupXdM-mnULUCvXUnDwU3d0C-gZShYkGFi4poiwty8wlrcIx_oW77IayZyzbfpz1xmJ6BzIy7376YC2h-v35ogNI62S-6PjvtBRwWOXNx2RxNasKIZu-gVcqlL3h77BMcfkSvemwOAPss2hFrXHE2NuiYkoLy4EHB61jC-iX_0nRUH2Oa8b7OSrYirmgjnzAPY08hljEp7iZy-pAp83a1EFkGwZqnDgLdsXxNT8ttSwcqNhM4LMSggpbQtXnA9q9AXdw8uthwUTrbyIB_vZsxjgqEOPXGSa1ml4WFwLTm4o5486heNIW_YHFz-z07GO93SKdTHNlNOnuiWx6DYhHSUAhu6nKBjfre57uW_J709s8jk3AQw5UAbXf_fLZyS3biaoYV-irq2_ErBlCcQxXh5WXEXgeTBOxsfmx8besg8mg3QAmO5iKgRKvWuxtZvMANSri5mXooCraWNPIWd26BAQ6sq-HzRhcIsWT4q2IZkSbJWAgAJnh41TTl25bq1IkW_xoVz793qr4qKTlUyW-Zx_nIrAKEYvx5XTjOoXo4ZKjeWHOCE43zg1AqsHgoBZgd6r6oT8HfIoVqEwC2VAjBNf7HP0JJVUwKqBLAX-AN4DJiZGbF_vquolZJRTi9rgI4YMJ9bpKuQYq5BgTBtFx3MgxsZHDLJGtSVd-1wDir_Qz6g5xsUuWXYOe3LgvoUyCW2W860QQmCxemuFzmvuYSf7heOdo4_J53YBUn3c4RLglJbAl7ul4t5Y9-WOSDIgNkK6FqaG8p-uyQ&amp;c=925d8446&amp;v=3';" target="_self" rel="">
+
+      <span class="ob-unit ob-rec-image-container" data-type="Image">
+  <div class="ob-image-ratio"></div>
+    <img class="ob-rec-image ob-show" aria-hidden="true" src="news.livedoor.com_files/eyJpdSI6IjYyZjdiMmFmYjI4OTE0N2MwNmM1OTdjNzY5MGNhZTcxM2FjNWRj.jpg" onload="this.className+=' ob-show'" alt="GUの水玉ワンピはプチプラで大人可愛い&#9825;通勤も休日にも大活躍の着回しコーデ4選" title="GUの水玉ワンピはプチプラで大人可愛い&#9825;通勤も休日にも大活躍の着回しコーデ4選" onerror="OBR.extern.imageError(this)">
+          </span>
+
+      <span class="ob-unit ob-rec-text" data-type="Title" title="GUの水玉ワンピはプチプラで大人可愛い&#9825;通勤も休日にも大活躍の着回しコーデ4選" style="visibility: visible;">GUの水玉ワンピはプチプラで大人可愛い&#9825;通勤も...</span>
+      
+          </a>
+</li><li class="ob-dynamic-rec-container ob-recIdx-4 ob-o" data-pos="4"><a class="ob-dynamic-rec-link " onclick="" href="http://news.livedoor.com/article/detail/15079576/?obOrigUrl=true" onmousedown="this.href='http://traffic.outbrain.com/network/redir?p=B1ZKZA0anxaD7FpYDwkZsOJFGbL9oDWJBlKWidkF-MRN2PQxipCyC20spF9ySOsx3_f9eRRThCD4d9rYWz1O6nOKUJTTfeKlFOGCKyW45xWvg28ih9vec7kKkehRXdO9T_dCmnBN1WJRg38eU9Z9Z4L05rXfnrRBErDt0klDrwveMvga9RRLkGvq8EalYbJeVdDhqClJjZoPfyIbGa2as0gWLNeGiBhhOiSACLZWPrnQBaEFYmFgCFRj2TYIKu4w3FXCm6z8xhShRiiYOLrCfOk9Vwk3ifquokRaSe9pcfb-VrRM-DvlYEu45LGYhY_91vrafdq_t6D8ykRbPmocPlQi0yoSFCeyJx0n0r-q-CjgrjvgbLEGviBT01LIeCE9jAUsS4MV2akl48pAnOuwTEpKKOHHSK-sBj8WOm5qQ1Vlu5Jmgg0K_90M0HFHupEiOxNZQpNbjdXLdbHsAwgVZkraexLRMcsu-CIsh_rX1ebhvc8iNYYFHe0ha-RABmFPgH56nXA5joZmoevWqVkEeVM_nYpqYFx785kyBqQAEqyPispP3hjtot6rg-uUM88NJHFcORlWv8ZOojVxd1Jmz7RffcE41FuJzevkGGq8adyzOQcrDRC7Q6k48kpolCm0nb-7WBn0NGh-7NGgdtwjxdposR_V0dYqNiMfqQEwuuiY5000d4stmVCBomu-j4Nz02T_0gXI0s8709VX4-B965g2guVIUSAkbGEUpFBCbTqL8vc-18uwJLpCO1GURieU0WGpfsJxZNpCgwd8NnVFYQ&amp;c=54552894&amp;v=3';" target="_self" rel="">
+
+      <span class="ob-unit ob-rec-image-container" data-type="Image">
+  <div class="ob-image-ratio"></div>
+    <img class="ob-rec-image ob-show" aria-hidden="true" src="news.livedoor.com_files/eyJpdSI6IjM0OGMwNGJkZDkxYTI4OTVjZTJmMzY4ODRkMTMxMGJkODY2MjVk.jpg" onload="this.className+=' ob-show'" alt="男子に聞いた！別れの決定打になった彼女の言動って？" title="男子に聞いた！別れの決定打になった彼女の言動って？" onerror="OBR.extern.imageError(this)">
+          </span>
+
+      <span class="ob-unit ob-rec-text" data-type="Title" title="男子に聞いた！別れの決定打になった彼女の言動って？" style="visibility: visible;">男子に聞いた！別れの決定打になった彼女の言動っ...</span>
+      
+          </a>
+</li>      </ul>
+    </div>
+                    <div class="ob_what">
+			<a href="http://www.outbrain.com/what-is/default/en" rel="nofollow" onclick="OBR.extern.callWhatIs('http://www.outbrain.com/what-is/default/en','',-1,-1, false ,null);return false"></a>
+	</div>
+    <div class="ob-pixels">
+        </div>  </div></div>
+            
+            
+            <div class="OUTBRAIN" data-src="DROP_PERMALINK_HERE" data-widget-id="HPC_2" data-ob-mark="true" data-browser="firefox" data-os="macintel" data-dynload="" data-idx="1" id="outbrain_widget_1"><div class="ob-widget ob-strip-layout HPC_2">
+      <style type="text/css">
+      /* dynamic basic css */
+.HPC_2.ob-widget .ob-widget-items-container {margin:0;padding:0;}
+.HPC_2.ob-widget .ob-widget-items-container .ob-clearfix {display:block;width:100%;float:none;clear:both;height:0px;line-height:0px;font-size:0px;}
+.HPC_2.ob-widget .ob-widget-items-container.ob-multi-row {padding-top: 2%;}
+.HPC_2.ob-widget .ob-dynamic-rec-container {position:relative;margin:0;padding;0;}
+.HPC_2.ob-widget .ob-dynamic-rec-link,
+.HPC_2.ob-widget .ob-dynamic-rec-link:hover {text-decoration:none;}
+.HPC_2.ob-widget .ob-rec-image-container .ob-video-icon-container {position:absolute;left:0;height:30%;width:100%;text-align:center;top:35%;}
+.HPC_2.ob-widget .ob-rec-image-container .ob-video-icon {display:inline-block;height:100%;float:none;opacity:0.7;transition: opacity 500ms;}
+.HPC_2.ob-widget .ob-rec-image-container .ob-video-icon:hover {opacity:1;}
+.HPC_2.ob-widget .ob_what{direction:ltr;clear:both;padding:5px 10px 0px;}
+.HPC_2.ob-widget .ob_what a{color:#999;font-size:11px;font-family:arial;text-decoration: none;}
+.HPC_2.ob-widget .ob_what.ob-hover:hover a{text-decoration: underline;}
+.HPC_2.ob-widget .ob_amelia,
+.HPC_2.ob-widget .ob_logo,
+.HPC_2.ob-widget .ob_feed_logo,
+.HPC_2.ob-widget .ob_sfeed_logo,
+.HPC_2.ob-widget .ob_text_logo{vertical-align:baseline !important;display:inline-block;vertical-align:text-bottom;padding:0px 5px;box-sizing:content-box;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;}
+.HPC_2.ob-widget .ob_amelia{background:url('http://widgets.outbrain.com/images/widgetIcons/ob_logo_16x16.png') no-repeat center top;width:16px;height:16px;margin-bottom:-2px;}
+.HPC_2.ob-widget .ob_logo{background:url('http://widgets.outbrain.com/images/widgetIcons/ob_logo_67x12.png') no-repeat center top;width:67px;height:12px;}
+.HPC_2.ob-widget .ob_text_logo{background:url('http://widgets.outbrain.com/images/widgetIcons/ob_text_logo_67x22.png') no-repeat center top;width:67px;height:22px;}
+.HPC_2.ob-widget .ob_feed_logo{background:url('http://widgets.outbrain.com/images/widgetIcons/ob_feed_logo.png') no-repeat center top;width:86px;height:23px;}
+.HPC_2.ob-widget .ob_sfeed_logo{background:url('http://widgets.outbrain.com/images/widgetIcons/ob_smartFeedLogo.min.svg') no-repeat center top;width:140px;height:21px;}
+@media only screen and (-webkit-min-device-pixel-ratio: 2),(min-resolution: 192dpi) {
+.HPC_2.ob-widget .ob_amelia{background:url('http://widgets.outbrain.com/images/widgetIcons/ob_logo_16x16@2x.png') no-repeat center top;width:16px;height:16px;margin-bottom:-2px; background-size:16px 32px;}
+.HPC_2.ob-widget .ob_logo{background:url('http://widgets.outbrain.com/images/widgetIcons/ob_logo_67x12@2x.png') no-repeat center top;width:67px;height:12px; background-size:67px 24px;}
+.HPC_2.ob-widget .ob_text_logo{background:url('http://widgets.outbrain.com/images/widgetIcons/ob_text_logo_67x22@2x.png') no-repeat center top;width:67px;height:20px; background-size:67px 40px;}
+.HPC_2.ob-widget .ob_feed_logo{background:url('http://widgets.outbrain.com/images/widgetIcons/ob_feed_logo@2x.png') no-repeat center top;width:86px;height:23px;background-size: 86px 23px;}
+}
+@media only screen and (max-width: 600px) {
+.HPC_2.ob-widget .ob_sfeed_logo{width:90px;height:20px;background-size:90px 20px;}
+}
+.HPC_2.ob-widget:hover .ob_amelia,
+.HPC_2.ob-widget:hover .ob_logo,
+.HPC_2.ob-widget:hover .ob_text_logo{background-position:center bottom;}
+  .HPC_2.ob-widget .ob_what{text-align:right;}
+.HPC_2.ob-widget .ob-rec-image-container .ob-rec-image {display:block;}
+      /* dynamic strip css */
+.HPC_2.ob-widget .ob-rec-image-container {position:relative;}
+.HPC_2.ob-widget .ob-rec-image-container .ob-image-ratio {height:0px;line-height:0px;padding-top:100.0%;}
+.HPC_2.ob-widget .ob-rec-image-container img.ob-rec-image {width:100%;position:absolute;top:0;bottom:0;left:0;right:0;opacity:0;transition:all 750ms;}
+.HPC_2.ob-widget .ob-rec-image-container img.ob-show {opacity:1;}
+.HPC_2.ob-widget .ob-rec-image-container .ob-rec-label {position:absolute;bottom:0px;left:0px;padding:0px 3px;background-color:#666;color:white;font-size:10px;line-height:15px;}
+.HPC_2.ob-widget {width:auto;min-width:300px;}
+.HPC_2.ob-widget .ob-dynamic-rec-container {display:inline-block;vertical-align:top;min-width:50px;width:18.16%;box-sizing:border-box;-moz-box-sizing:border-box;}
+.HPC_2.ob-widget .ob-unit.ob-rec-brandName,
+.HPC_2.ob-widget .ob-unit.ob-rec-brandLogo-container,
+.HPC_2.ob-widget .ob-rec-brandLogoAndName {display:inline-block;}
+.HPC_2.ob-widget .ob-rec-brandLogo {width:20px;height:20px;}
+.HPC_2.ob-widget .ob-rec-brandName {vertical-align:bottom;}
+.HPC_2.ob-widget .ob-unit.ob-rec-brandName {vertical-align:super;}
+  .HPC_2.ob-widget .ob-widget-items-container {direction: ltr;}
+  .HPC_2.ob-widget .ob-dynamic-rec-container {margin-left:0;}
+  .HPC_2.ob-widget .ob-dynamic-rec-container ~ .ob-dynamic-rec-container {margin:0 0 0 2.3%; }
+.HPC_2.ob-widget .ob-widget-header {direction:ltr; font-weight:bold;}
+.HPC_2.ob-widget .ob-unit {display:block;}
+.HPC_2.ob-widget .ob-rec-text {max-height:53.0px;overflow:hidden;}
+.HPC_2.ob-widget .ob-rec-source {}
+.HPC_2.ob-widget .ob-rec-date {font-weight:bold;}
+
+
+
+
+
+      /* dynamic customized css */
+      
+.HPC_2.ob-strip-layout .ob-widget-header {font-family:inherit;font-size:14px;color:#2d2d2d;padding-bottom:0px;padding-top:0px;}
+.HPC_2.ob-strip-layout .ob-dynamic-rec-container {max-width:135px;}
+.HPC_2.ob-strip-layout .ob-rec-text {font-family:inherit;color:#2355a5;padding:0px 0 0px;text-align:left;line-height:1.25;font-size:14px;}
+.HPC_2.ob-strip-layout .ob-rec-text:hover {color:#2355a5;}
+.HPC_2.ob-strip-layout .ob-rec-source {font-family:inherit;color:#888;padding:0px 0 0px;text-align:left;font-size:12px;}
+.HPC_2.ob-strip-layout .ob-rec-date {font-family:inherit;color:black;padding:0px 0 0px;text-align:left;font-size:12px;}
+.HPC_2.ob-strip-layout .ob-rec-author {font-family:inherit;color:black;padding:0px 0 0px;text-align:left;font-size:12px;}
+.HPC_2.ob-strip-layout .ob-rec-description {font-family:inherit;color:black;padding:0px 0 0px;text-align:left;font-size:12px;}
+.HPC_2.ob-strip-layout .ob-rec-brandName {font-family:inherit;padding:0px 0 0px;line-height:1.25;font-size:13px;font-weight:400;}
+.HPC_2.ob-strip-layout .ob-rec-brandLogo {width:20px;height:20px;}
+    </style>
+    <style type="text/css" class="ob-custom-css">
+      .HPC_2.ob-widget { clear: both; min-width: 0}.HPC_2.ob-widget .ob-widget-section .ob-widget-header { display: block}.HPC_2.ob-widget .ob-widget-section .ob-widget-items-container { padding: 0}.HPC_2.ob-widget .ob-widget-section .ob-dynamic-rec-container { float: none; max-width: none; width: 18.4%; margin: 2% 0 0 2%; padding: 0; /display: inline; /zoom: 1}.HPC_2.ob-widget .ob-widget-section .ob-recIdx-0 { margin-left: 0}.HPC_2.ob-widget .ob-widget-section .ob-dynamic-rec-container .ob-dynamic-rec-link { position: relative}.HPC_2.ob-widget .ob-widget-section .ob-dynamic-rec-container .ob-rec-image-container { overflow: hidden}.HPC_2.ob-widget .ob-widget-section .ob-dynamic-rec-container .ob-rec-image { backface-visibility: hidden}.HPC_2.ob-widget .ob-widget-section .ob-dynamic-rec-container .ob-rec-text { box-sizing: content-box; margin: .3em 0 0; padding: 0; line-height: 1.4; max-height: 4.8em; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 3}.HPC_2.ob-widget .ob-widget-section .ob-dynamic-rec-container .ob-rec-source { box-sizing: content-box; margin: .3em 0 0; line-height: 1.4}.HPC_2.ob-widget .ob-widget-section .ob-dynamic-rec-container.ob-p .ob-rec-date { display: none}.HPC_2.ob-widget .ob-widget-section .ob-dynamic-rec-container:hover .ob-rec-image,.HPC_2.ob-widget .ob-widget-section .ob-dynamic-rec-container:hover .ob-rec-text { opacity: .6}
+    </style>
+    <div class="ob-widget-section ob-first">
+            <div class="ob-widget-header">グルメ</div>
+            <ul class="ob-widget-items-container">
+        <li class="ob-dynamic-rec-container ob-recIdx-0 ob-o" data-pos="0"><a class="ob-dynamic-rec-link " onclick="" href="http://news.livedoor.com/article/detail/15077205/?obOrigUrl=true" onmousedown="this.href='http://traffic.outbrain.com/network/redir?p=uYzLwFBQFal6iNSlxuJvaYKb8YR8EhDOoIRzeqYxtwnJoV2KssCOJABSYqM8Dg7t_jAaH9vI8dzaWaYefty10w_tGbScIbJTSmXlOe4UZzHAasdDOkNgvnJhPK2AKiuYmWzHaNilOQ-I-lDYCpzYX62qWqkgpKgmG-7IhJ3Wh4B8MCiuz2h4vLwDIWnACZ6JJyc2A0J8doN601wVAqG8LOCE9HUB-cO4qGUXPfBQlBiuvXeT33RALo0Cyw_vy6ex-s-8HJhlw3unJ11BuiXtl0BBcwlXhTawWzRcLyB6002TYzMoopiovg6tq7-uTkKFe_6jTZhLDq4S4wTXSQtf0g31M0-8NbkWFD9T2nOwxywDx_LbYx-hpzELjP53QAknz65KldlxzzTwUXvckRSKRxWyCLgv3evh1PdDJZgDrwTX-FUdQYcawFfk5wuZsv5Jt3VPG0JlJ9ntharmDAsw_UFAt4KmtMzVUzk-V5cTkohzwRePPedaAq0ICUxndxMGgFNULiryWipB5n3EqotBrAFQITvaTLEhCkk2d4UXmUXIeXVFSDh5cueQtpN1nro1MvHfemBX4qWW1XTFUGu4y_YhqMV1PmtbhGYMDSKmDlOb1CCAomQrP3dSDmETbXEiwRNz1ibZOMnOu7rcEqPz0wyXKLmPxmmi9qkYWNIO9UeTGxfXc4FvVGBPtFzBEzmSHwYpvc3kimELLNOVYibzVhLVocfPcb3excBiAE8RjcFwYo5blFXwbWqBxowmZZvLJZv-YH9KiIAjcuLVzMhx0A&amp;c=1389a480&amp;v=3';" target="_self" rel="">
+
+      <span class="ob-unit ob-rec-image-container" data-type="Image">
+  <div class="ob-image-ratio"></div>
+    <img class="ob-rec-image ob-show" aria-hidden="true" src="news.livedoor.com_files/eyJpdSI6IjZlYzRlYTQ2NTk3NzgxNTFlZjJiZmFjNDliYTc1ZDBhMzc2MTNl.jpg" onload="this.className+=' ob-show'" alt="コストコの48貫にぎり寿司『ファミリー盛』はネタ品質もコスパも安心レベル" title="コストコの48貫にぎり寿司『ファミリー盛』はネタ品質もコスパも安心レベル" onerror="OBR.extern.imageError(this)">
+          </span>
+
+      <span class="ob-unit ob-rec-text" data-type="Title" title="コストコの48貫にぎり寿司『ファミリー盛』はネタ品質もコスパも安心レベル" style="visibility: visible;">コストコの48貫にぎり寿司『ファミリー盛』はネ...</span>
+      
+          </a>
+</li><li class="ob-dynamic-rec-container ob-recIdx-1 ob-o" data-pos="1"><a class="ob-dynamic-rec-link " onclick="" href="http://news.livedoor.com/article/detail/15084901/?obOrigUrl=true" onmousedown="this.href='http://traffic.outbrain.com/network/redir?p=IFkdNdkfizhOq-gqWi355URg4BhcdkFXtSI21JcKIYYEqmJoCJIfqEmjmydJdNeZ5kIap2CXH0PE9WM9KmO8EKmHsKcKI8agx86isnwvUUQuT6ETO_pcnalmfsMT7SRbP6aUVXwYY85cbkCif8nE0K-sAW7NCq-KkEnEC4gLufmuG3xXxUyMf2VYsHjck7HJ7T1zpxFNZYlTZsPmv8CCUhpw5Dcf_o4yyd61TBU95HDYhCiyZ6Hrcu-M77vGQXyhE-ZlMZAdD6uWuPdJXd0M-f5Em-_0v2YPq8sblEZx9HyXq_juhpQisWH7ekasrCu4jUF0NwC3371pOyTkc_up89ob1C_6xY-yNxO9M-SZUSUhlYhOTsv4dhl-OJzMm8V2Dj_JZTXAC18efVN_HEYtvs2dvSa4ISLzhno6co_syUqlbICakETROJrEO3S2B3dFnG9hl6hL3rr7HoR0tAAzOON05BNG5uiqSe7RRVQUIS84Vm_NaX7Bw2etiN6I6GiCiSP2RggKT7CuILg7Y3jVrLaLZcIM7Y4bOyAfpJhPfawXy0_Rbvqq6Nz19NEC7HOx9Q8GxAvGXnDv24IRonSLIsXCA7DZeerpVkCNFx-THgsdwteyENeJjsabcG0Xvx4J97GxFY5eOYqeXgpMSN6wKCaoe4yp1gSKJJXCf7lqx7BEdC6tCPmfNu3pWc9oEbTXr_Lp5Da1UP_LRAT_vMUZ4ZS1Ciegcp5NKJHcHCL1-s6BKTelvYOc-B8LOOsud8c82nzFjVlVhqCwXmlxmA880A&amp;c=514b8448&amp;v=3';" target="_self" rel="">
+
+      <span class="ob-unit ob-rec-image-container" data-type="Image">
+  <div class="ob-image-ratio"></div>
+    <img class="ob-rec-image ob-show" aria-hidden="true" src="news.livedoor.com_files/eyJpdSI6IjgyNmEwMTdjNDFiZWU4MjBkZmMyZTY4NDRjZTRkNTIwYjVmNzNi.jpg" onload="this.className+=' ob-show'" alt="先代の味を見事に受け継ぎ県外からの常連もたくさん！日本人の感性に合った南インド料理" title="先代の味を見事に受け継ぎ県外からの常連もたくさん！日本人の感性に合った南インド料理" onerror="OBR.extern.imageError(this)">
+          </span>
+
+      <span class="ob-unit ob-rec-text" data-type="Title" title="先代の味を見事に受け継ぎ県外からの常連もたくさん！日本人の感性に合った南インド料理" style="visibility: visible;">先代の味を見事に受け継ぎ県外からの常連もたくさ...</span>
+      
+          </a>
+</li><li class="ob-dynamic-rec-container ob-recIdx-2 ob-o" data-pos="2"><a class="ob-dynamic-rec-link " onclick="" href="http://news.livedoor.com/article/detail/15024069/?obOrigUrl=true" onmousedown="this.href='http://traffic.outbrain.com/network/redir?p=UkBr4egJaxWsog8dyc7zmrhQrY88q0-emqrgJYzOgTjnGNoKtR8Hgu__kHSSjq-dZvKomoreSnn6QNo80s8BqEgBCwtAbF4sQ1aRvJWY5rLX4fLL1U4nTkd0_k6UMrw45tcloVZRESzJb2pGpB8al5GNG7TetYelWG_t7te_bmaY31FVS7VbLbz8L81A4rBw1il4UnmAnIu5xpGkSY3cbwsA57YQeFkURUaEsue7xsMF8KonDLe8_dcsWRT25JjMNq1k1vOD_WpaxEQOlnaNIPqxaZGVPPISBSgT6Eoe3ck1wdNovx5YzK2J7QwjvdWXRf3KYDYmXTYCJYL8YMzRGW4e1d7p5YGiHZHej5S2yer917HZIVGvveQhAczHWXExWIMl_m71svsHbgjtdK1dUGnRXnsSlK554ANoEhVrzOnCZG8oG3qml8Ph7Yhz1LoKdM_SacUjhY4B7FNVuE3KaAvv6j5x5IZjmv7-KrNshOkDD2OPUV5UVyovR3EuUL-zafd2baCPSQq1R_IeFHsQuIu3VNqhOtSkgqHHRco3e_9nn8HBX-1BQHQZgs3ClGpFxdDJ_hKV8zFaGq_wwjLkgjsHInPsQDJzcacJFcCsIfImtv3KnksRsEmWH8LMWwElIg_1ZIQE7D2LG_oQ3T463DeRYOf9J3zqKuPtGdzmZHzQKWhXXYS86gZQIDnHw8UBEKYgRhWOj1vnYuMJinEEdKJbSleT-lNDUYTHozBAutvAVcRNlcwrkyyqd9tw1_8BIaaelvErJqLHWRQSvP9J_Q&amp;c=5e7e4062&amp;v=3';" target="_self" rel="">
+
+      <span class="ob-unit ob-rec-image-container" data-type="Image">
+  <div class="ob-image-ratio"></div>
+    <img class="ob-rec-image ob-show" aria-hidden="true" src="news.livedoor.com_files/eyJpdSI6IjhjNTE4NmQwNmY2ZGNmNzNkMjc0ZDJhNjE5ZjdiZDU5M2M1NjY4.jpg" onload="this.className+=' ob-show'" alt="“奇跡の親子丼＆激ウマTKG”! 『柿安 奇跡の親子丼』で絶品を手軽に味わおう" title="“奇跡の親子丼＆激ウマTKG”! 『柿安 奇跡の親子丼』で絶品を手軽に味わおう" onerror="OBR.extern.imageError(this)">
+          </span>
+
+      <span class="ob-unit ob-rec-text" data-type="Title" title="“奇跡の親子丼＆激ウマTKG”! 『柿安 奇跡の親子丼』で絶品を手軽に味わおう" style="visibility: visible;">“奇跡の親子丼＆激ウマTKG”! 『柿安 奇跡の親子...</span>
+      
+          </a>
+</li><li class="ob-dynamic-rec-container ob-recIdx-3 ob-o" data-pos="3"><a class="ob-dynamic-rec-link " onclick="" href="http://news.livedoor.com/article/detail/15035621/?obOrigUrl=true" onmousedown="this.href='http://traffic.outbrain.com/network/redir?p=VXKcku6e2zAQEE2mQFqPOvurMMwTkIlBvRiCwJFTdPXHrXyY17tGLuCbx4mcZU4leaTnJmxMcSO64X_hxcyo3cBUHKLgaik0VUgnK_torIHReuqxB-NLUPHXYqZ_VMQ7gyJ2uXErP7jSgcE6R_jBgJZ0H8pvhACyzCfE8ALUmiXIYaAQcB7_-eCn9BxUS6UIWXcnk_QIYM-_Pj7drgkmbk1hQoPbStJv-Q1pmEtRyyY5HhAikGwmry0nc6Kv6jvHJihxqKV3awXdxXtsZAXwSMeVtIpSk3ycmNM7-sU9jz3deuPTqdCAT5s4NL61EVvD2_vcWywfxR8En6cHzGzt8F580ZVD_u_JXsNG1HfnWZJeN9wbuYj8SLWVTzRv8O05UgUxOMs7e2cVydyWU-hzXeFwtVO-OB_JITE9gd14C_OlwymNzx6KGwkYO-KfeFMV6ev1grNlf62dT61nqHddPqyDnCaMAS7HwgkTSFInT5gevzfP7zyWrDvt4gX6EpXgnisDli25VqoeBSwAeV_fuvIj59jlBezuhoGGUd2fcUgmsEZubUXrV3r1xElPEsxpMdi1NDvTU33Cs-VzztAYp-R4x3_SQYXj7Jl0IsFc97FlyiFveFgqrlSkOCKGol7xnDH7xDwt7A9hR7JhS03aWYxo1e82HPZKR-HCZhz4qufXlEvutjjiahxU2cVxNYaxpeMp3bRd1Mvj5dd3T1jSm_YgCwok_ErQrFCji394quZI2Nw8q_vkOGMi0Z8aMPrd&amp;c=4402f438&amp;v=3';" target="_self" rel="">
+
+      <span class="ob-unit ob-rec-image-container" data-type="Image">
+  <div class="ob-image-ratio"></div>
+    <img class="ob-rec-image ob-show" aria-hidden="true" src="news.livedoor.com_files/eyJpdSI6IjRlMThkZjM2MDM2ZjJiMWZiZDMxOTRlZGJkMTU4MjFjMjE2ZDY0.jpg" onload="this.className+=' ob-show'" alt="必見！究極のゆで卵の作り方！" title="必見！究極のゆで卵の作り方！" onerror="OBR.extern.imageError(this)">
+          </span>
+
+      <span class="ob-unit ob-rec-text" data-type="Title" title="必見！究極のゆで卵の作り方！" style="visibility: visible;">必見！究極のゆで卵の作り方！</span>
+      
+          </a>
+</li><li class="ob-dynamic-rec-container ob-recIdx-4 ob-o" data-pos="4"><a class="ob-dynamic-rec-link " onclick="" href="http://news.livedoor.com/article/detail/15029422/?obOrigUrl=true" onmousedown="this.href='http://traffic.outbrain.com/network/redir?p=uzR7gwnlz3VW9lU4-dAmVbbfavjeq2FAXfCGtAN17xwLUG3DD31EbOxI0c1lNlqXGXp5o15V7a4wp7pu6U-i4CWgTCGurDME3CtftpbYpdJDjOJj-cKyZsTTViONLbe9ytBCz9hGT0ms2zadfCoeJPiqImKpYrsuukWLamM8q03GlxKK8w2PkucVjygjtYyOHqulB53vBP3-L2JsRl3W0I0SOKFbutufv90udp_yN6o-DeAmimdyKIho24g5qJ9_zIizdJWNPFzvvNPfYYaazh_Dfc_I9pYsTo-wmhCQrDyOI2GdTOJwB-wzFobOHOwyF07MXMIg-ugb5OUYnF90lgiWFBS2xWryXdgPDFrS_hoRLZa5LssnYBPEzatuF2AqWxaqDPvWwkFyYEy_UDBM-e_CjpJRIOpMeONS1r6WoBFVKmR2_Fh-Pr0JuhTOQNqXa86bmUJgn4u8GUJ7ujklNiJ3_xE9HvuLKTNIqQ45XmRIQauOD5vUfiMx1rfNasIXgwCGwOv8VlFPypGC5GeT-WzqZk7Igw_le2VCQt3fFlTJNprpsJBKiODC-1LBawK_cX-P0eUZ8Jn3mFwGZbyRMFlSqT9yEaoGOQUonE9kGf7_ViPG_bSpJ_MSPcPCbKK-RXCsexbZ9kuKprlnDOFwDyFqOjEBodUVR9-OvtnKs1JcjAjfUJTg_wj97rtxAdBMFdY9t3sLJi6kxcfQMvPv-14HrDV5C_XONuwwvPT_TZ8frZ2me0tgL0mKz2tMwu-jEbBTejEkMt78gSB1FMC7hg&amp;c=9c073066&amp;v=3';" target="_self" rel="">
+
+      <span class="ob-unit ob-rec-image-container" data-type="Image">
+  <div class="ob-image-ratio"></div>
+    <img class="ob-rec-image ob-show" aria-hidden="true" src="news.livedoor.com_files/eyJpdSI6IjUzZjMzMDAyYTc1Y2U0MzQxYThjN2U0NGE5MDZlMzFiYmU1Yzk0.jpg" onload="this.className+=' ob-show'" alt="「この夏絶対食べたい日本のかき氷 ベスト25」が発表！1位は熊本、九州・沖縄から10店舗がランクイン！" title="「この夏絶対食べたい日本のかき氷 ベスト25」が発表！1位は熊本、九州・沖縄から10店舗がランクイン！" onerror="OBR.extern.imageError(this)">
+          </span>
+
+      <span class="ob-unit ob-rec-text" data-type="Title" title="「この夏絶対食べたい日本のかき氷 ベスト25」が発表！1位は熊本、九州・沖縄から10店舗がランクイン！" style="visibility: visible;">「この夏絶対食べたい日本のかき氷 ベスト25」が発...</span>
+      
+          </a>
+</li>      </ul>
+    </div>
+                    <div class="ob_what">
+			<a href="http://www.outbrain.com/what-is/default/en" rel="nofollow" onclick="OBR.extern.callWhatIs('http://www.outbrain.com/what-is/default/en','',-1,-1, false ,null);return false"></a>
+	</div>
+    <div class="ob-pixels">
+        </div>  </div></div>
+            
+        </div>
+
+        
+<aside class="mainSec">
+  <div class="adsW">
+    <div class="adsW1">
+      
+      <!-- /21627555768/livedoor_NEWS/PC/main_footer_left -->
+      <div id="div-gpt-ad-1523416550419-0" data-google-query-id="CIWCyeCpxtwCFQ6BvQodv0sNfg">
+        <script>
+          googletag.cmd.push(function() { googletag.display('div-gpt-ad-1523416550419-0'); });
+        </script>
+      <div id="google_ads_iframe_/21627555768/livedoor_NEWS/PC/main_footer_left_0__container__" style="border: 0pt none; display: inline-block; width: 300px; height: 250px;"><iframe style="border: 0px none; vertical-align: bottom;" src="news.livedoor.com_files/container_007.html" id="google_ads_iframe_/21627555768/livedoor_NEWS/PC/main_footer_left_0" title="3rd party ad content" name="" scrolling="no" marginwidth="0" marginheight="0" data-is-safeframe="true" width="300" height="250" frameborder="0"></iframe></div></div>
+      
+    </div>
+    <div class="adsW2">
+      
+      <!-- /21627555768/livedoor_NEWS/PC/main_footer_right -->
+      <div id="div-gpt-ad-1523416576776-0" data-google-query-id="CL6EyeCpxtwCFQelvQodlZwNsw">
+        <script>
+          googletag.cmd.push(function() { googletag.display('div-gpt-ad-1523416576776-0'); });
+        </script>
+      <div id="google_ads_iframe_/21627555768/livedoor_NEWS/PC/main_footer_right_0__container__" style="border: 0pt none; display: inline-block; width: 300px; height: 250px;"><iframe style="border: 0px none; vertical-align: bottom;" src="news.livedoor.com_files/container_007.html" id="google_ads_iframe_/21627555768/livedoor_NEWS/PC/main_footer_right_0" title="3rd party ad content" name="" scrolling="no" marginwidth="0" marginheight="0" data-is-safeframe="true" width="300" height="250" frameborder="0"></iframe></div></div>
+      
+    </div>
+  </div>
+</aside>
+
+
+      </div><!-- /mainInner -->
+    </div><!-- /#main -->
+
+    
+    <div id="sub">
+      <div class="subInner">
+
+
+        <aside class="subSec">
+          
+            
+            <!-- /21627555768/livedoor_NEWS/PC/sbu_1st -->
+            <div id="div-gpt-ad-1523416600988-0" data-google-query-id="CLKKyeCpxtwCFUc5lgodzfQDUg">
+            <script>
+            googletag.cmd.push(function() { googletag.display('div-gpt-ad-1523416600988-0'); });
+            </script>
+            <div id="google_ads_iframe_/21627555768/livedoor_NEWS/PC/sbu_1st_0__container__" style="border: 0pt none; display: inline-block; width: 300px; height: 600px;"><iframe style="border: 0px none; vertical-align: bottom;" src="news.livedoor.com_files/container_007.html" id="google_ads_iframe_/21627555768/livedoor_NEWS/PC/sbu_1st_0" title="3rd party ad content" name="" scrolling="no" marginwidth="0" marginheight="0" data-is-safeframe="true" width="300" height="600" frameborder="0"></iframe></div></div>
+            
+        </aside>
+
+
+        
+
+
+
+
+
+
+        <aside class="subSec">
+          <div class="subTtlWrap">
+            <h2 class="subTtl">今日のニュース</h2>
+            <p class="more"><a href="http://news.livedoor.com/straight_news/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'サイドカラム','ストレートニュース/一覧']);">一覧</a></p>
+          </div>
+          <div class="subBody">
+            
+
+
+<ul class="subStraightList">
+  <li>
+    <time datetime="2018-07-30 16:02:04" class="straightTime">34分前</time>
+    <p class="straightTtl"><a href="http://news.livedoor.com/topics/detail/15086372/?_clicked=straight_news" onclick="_gaq.push(['_trackEvent', 'ニュース', 'サイドカラム','ストレートニュース/詳細']);NEventer.push(['ニュース', 'サイドカラム','ストレートニュース/詳細']);">愛媛でダム緊急放流 住民ら憤り</a></p>
+  </li>
+  <li>
+    <time datetime="2018-07-30 16:01:16" class="straightTime">35分前</time>
+    <p class="straightTtl"><a href="http://news.livedoor.com/topics/detail/15086347/?_clicked=straight_news" onclick="_gaq.push(['_trackEvent', 'ニュース', 'サイドカラム','ストレートニュース/詳細']);NEventer.push(['ニュース', 'サイドカラム','ストレートニュース/詳細']);">大阪桐蔭が23点圧勝V 代表出揃う</a></p>
+  </li>
+  <li>
+    <time datetime="2018-07-30 15:48:41" class="straightTime">47分前</time>
+    <p class="straightTtl"><a href="http://news.livedoor.com/topics/detail/15086244/?_clicked=straight_news" onclick="_gaq.push(['_trackEvent', 'ニュース', 'サイドカラム','ストレートニュース/詳細']);NEventer.push(['ニュース', 'サイドカラム','ストレートニュース/詳細']);">東京五輪 演出トップに萬斎氏</a></p>
+  </li>
+  <li>
+    <time datetime="2018-07-30 15:17:39" class="straightTime">1時間前</time>
+    <p class="straightTtl"><a href="http://news.livedoor.com/topics/detail/15086170/?_clicked=straight_news" onclick="_gaq.push(['_trackEvent', 'ニュース', 'サイドカラム','ストレートニュース/詳細']);NEventer.push(['ニュース', 'サイドカラム','ストレートニュース/詳細']);">地球帰りたくない 金井氏が回顧</a></p>
+  </li>
+  <li>
+    <time datetime="2018-07-30 14:30:14" class="straightTime">2時間前</time>
+    <p class="straightTtl"><a href="http://news.livedoor.com/topics/detail/15085982/?_clicked=straight_news" onclick="_gaq.push(['_trackEvent', 'ニュース', 'サイドカラム','ストレートニュース/詳細']);NEventer.push(['ニュース', 'サイドカラム','ストレートニュース/詳細']);">MLBでまた…差別ツイートが発覚</a></p>
+  </li>
+  <li>
+    <time datetime="2018-07-30 14:24:18" class="straightTime">2時間前</time>
+    <p class="straightTtl"><a href="http://news.livedoor.com/topics/detail/15085956/?_clicked=straight_news" onclick="_gaq.push(['_trackEvent', 'ニュース', 'サイドカラム','ストレートニュース/詳細']);NEventer.push(['ニュース', 'サイドカラム','ストレートニュース/詳細']);">アイボとの共同生活で犬が成長?</a></p>
+  </li>
+  <li>
+    <time datetime="2018-07-30 14:24:00" class="straightTime">2時間前</time>
+    <p class="straightTtl"><a href="http://news.livedoor.com/topics/detail/15085937/?_clicked=straight_news" onclick="_gaq.push(['_trackEvent', 'ニュース', 'サイドカラム','ストレートニュース/詳細']);NEventer.push(['ニュース', 'サイドカラム','ストレートニュース/詳細']);">ギリシャの森林火災 政府批判も</a></p>
+  </li>
+  <li>
+    <time datetime="2018-07-30 14:19:07" class="straightTime">2時間前</time>
+    <p class="straightTtl"><a href="http://news.livedoor.com/topics/detail/15085915/?_clicked=straight_news" onclick="_gaq.push(['_trackEvent', 'ニュース', 'サイドカラム','ストレートニュース/詳細']);NEventer.push(['ニュース', 'サイドカラム','ストレートニュース/詳細']);">日テレ「PON!」打ち切りを認める</a></p>
+  </li>
+  <li>
+    <time datetime="2018-07-30 13:46:21" class="straightTime">2時間前</time>
+    <p class="straightTtl"><a href="http://news.livedoor.com/topics/detail/15085804/?_clicked=straight_news" onclick="_gaq.push(['_trackEvent', 'ニュース', 'サイドカラム','ストレートニュース/詳細']);NEventer.push(['ニュース', 'サイドカラム','ストレートニュース/詳細']);">パス回し 西野J固めた主将の言葉</a></p>
+  </li>
+  <li>
+    <time datetime="2018-07-30 13:10:44" class="straightTime">3時間前</time>
+    <p class="straightTtl"><a href="http://news.livedoor.com/topics/detail/15085691/?_clicked=straight_news" onclick="_gaq.push(['_trackEvent', 'ニュース', 'サイドカラム','ストレートニュース/詳細']);NEventer.push(['ニュース', 'サイドカラム','ストレートニュース/詳細']);">墓地不足 豪で「新ルール」採用</a></p>
+  </li>
+</ul>
+
+
+          </div>
+        </aside>
+
+        <aside class="subSec">
+          <div class="subTtlWrap">
+            <h2 class="subTtl">話題のニュース</h2>
+            <p class="more"><a href="http://news.livedoor.com/social_reaction/" onclick="_gaq.push(['_trackEvent', 'ニュース', 'サイドカラム','話題のニュース/一覧']);">一覧</a></p>
+          </div>
+          <div class="subBody">
+            
+
+
+<ul class="subSocialReactionList">
+  <li class="hasImg">
+    <a href="http://news.livedoor.com/article/detail/15083826/?_clicked=social_reaction" onclick="_gaq.push(['_trackEvent', 'ニュース', 'サイドカラム','話題のニュース/詳細']);">
+      <p class="socialReactionImg"><img src="news.livedoor.com_files/fa71a_1585_1e040697255b9c11b4ffa1c2e7f2c380-cs.jpg" alt="菅野完氏 米から逮捕状出ていた" onmousedown="return false;" onselectstart="return false;" oncontextmenu="return false;" galleryimg="no"></p>
+      <div class="socialReactionBody">
+        <p class="socialReactionTtl">菅野完氏 米から逮捕状出ていた</p>
+        <ul class="socialReactionCnt">
+          <li><i class="icon icoFb"></i>656</li>
+          <li><i class="icon icoTw"></i>1550</li>
+        </ul>
+        <p class="socialReactionVender">現代ビジネス</p>
+      </div>
+    </a>
+  </li>
+  <li class="hasImg">
+    <a href="http://news.livedoor.com/article/detail/15085649/?_clicked=social_reaction" onclick="_gaq.push(['_trackEvent', 'ニュース', 'サイドカラム','話題のニュース/詳細']);">
+      <p class="socialReactionImg"><img src="news.livedoor.com_files/b6ca4_1315_e5c6b18f5f8557947246fedbbc8e2758-cs.jpg" alt="ハーゲンダッツ2種を無料配布へ" onmousedown="return false;" onselectstart="return false;" oncontextmenu="return false;" galleryimg="no"></p>
+      <div class="socialReactionBody">
+        <p class="socialReactionTtl">ハーゲンダッツ2種を無料配布へ</p>
+        <ul class="socialReactionCnt">
+          <li><i class="icon icoFb"></i>11</li>
+          <li><i class="icon icoTw"></i>1129</li>
+        </ul>
+        <p class="socialReactionVender">東京バーゲンマニア</p>
+      </div>
+    </a>
+  </li>
+  <li class="hasImg">
+    <a href="http://news.livedoor.com/article/detail/15084632/?_clicked=social_reaction" onclick="_gaq.push(['_trackEvent', 'ニュース', 'サイドカラム','話題のニュース/詳細']);">
+      <p class="socialReactionImg"><img src="news.livedoor.com_files/1fd61_760_2116425_20180727_151352_size640wh_1238-s.jpg" alt="解禁された映画『ニセコイ』キャラクタービジュアル（C）2018『ニセコイ』製作委員会" onmousedown="return false;" onselectstart="return false;" oncontextmenu="return false;" galleryimg="no"></p>
+      <div class="socialReactionBody">
+        <p class="socialReactionTtl">映画『ニセコイ』キャラビジュアル解禁　中島健人・中条あやみ・島崎遥香・岸優太ら計8種</p>
+        <ul class="socialReactionCnt">
+          <li><i class="icon icoFb"></i>0</li>
+          <li><i class="icon icoTw"></i>1074</li>
+        </ul>
+        <p class="socialReactionVender">オリコン</p>
+      </div>
+    </a>
+  </li>
+</ul>
+
+
+          </div>
+        </aside>
+
+
+	
+
+
+        <aside class="subSec">
+          
+          <!-- /21627555768/livedoor_NEWS/PC/sbu_2nd -->
+          <div id="div-gpt-ad-1523416675106-0" data-google-query-id="CNb7yOCpxtwCFY6ylgod21YP4A">
+            <script>
+              googletag.cmd.push(function() { googletag.display('div-gpt-ad-1523416675106-0'); });
+            </script>
+          <div id="google_ads_iframe_/21627555768/livedoor_NEWS/PC/sbu_2nd_0__container__" style="border: 0pt none; display: inline-block; width: 300px; height: 250px;"><iframe style="border: 0px none; vertical-align: bottom;" src="news.livedoor.com_files/container_007.html" id="google_ads_iframe_/21627555768/livedoor_NEWS/PC/sbu_2nd_0" title="3rd party ad content" name="" scrolling="no" marginwidth="0" marginheight="0" data-is-safeframe="true" width="300" height="250" frameborder="0"></iframe></div></div>
+          
+        </aside>
+
+
+<aside class="subSec">
+  
+  <!-- /21627555768/livedoor_NEWS/PC/sbu_3rd -->
+  <div id="div-gpt-ad-1523416697491-0" data-google-query-id="CJu6yeCpxtwCFQy8vQodEO8HQg">
+    <script>
+      googletag.cmd.push(function() { googletag.display('div-gpt-ad-1523416697491-0'); });
+    </script>
+  <div id="google_ads_iframe_/21627555768/livedoor_NEWS/PC/sbu_3rd_0__container__" style="border: 0pt none; display: inline-block; width: 300px; height: 250px;"><iframe style="border: 0px none; vertical-align: bottom;" src="news.livedoor.com_files/container_007.html" id="google_ads_iframe_/21627555768/livedoor_NEWS/PC/sbu_3rd_0" title="3rd party ad content" name="" scrolling="no" marginwidth="0" marginheight="0" data-is-safeframe="true" width="300" height="250" frameborder="0"></iframe></div></div>
+  
+</aside>
+
+      </div><!-- /subInner -->
+    </div><!-- /#sub -->
+
+
+
+
+  </div><!-- /.contentInner -->
+</div><!-- /#content -->
+
+<script type="text/javascript">
+$(function() {
+  var cookieName = "ldnews-topics-block";
+  var save_category = function(index) {
+    var d = new Date();
+    d.setTime(d.getTime() + (2 * 60 * 60 * 1000)); // 2 hours
+    $.cookie(cookieName, index, { path: "/", expires: d });
+  }
+  $(".secTopMainTopics").find("a").click(function() {
+    save_category(0);
+  });
+  $(".topTopicsCatItem").each(function() {
+    var index = $(".topTopicsCatItem").index(this);
+    index = index + 1;
+    $(this).find("a").click(function(){
+      save_category(index);
+    });
+  });
+
+  /* LDNEWS-1057 */
+  $(window).load(function(){
+    $('.ob-unit.ob-rec-text').each(function(){
+      var $target = $(this);
+      var html = $target.html();
+      var $clone = $target.clone();
+      $clone
+        .css({
+          display: 'none',
+          position : 'absolute',
+          overflow : 'visible'
+        })
+        .width(114+'px')
+        .height('auto');
+      $target.after($clone);
+      while((html.length > 0) && Math.round($clone.height()/Math.abs(parseInt($clone.css('font-size')))) >= 5) {
+        html = html.substr(0, html.length - 1);
+        $clone.html(html + '...');
+      }
+      $target.html($clone.html());  
+      $target.css({visibility: 'visible'});
+      $clone.remove();
+    });
+  });
+  /* LDNEWS-1057 */
+
+});
+</script>
+
+
+<!-- google_ad_section_end -->
+
+<footer id="globalFooter">
+  <div class="footerInner">
+
+    <div class="footerLower">
+      <ul class="footerLink">
+        <li><a href="http://www.livedoor.com/">livedoorトップ</a></li>
+        <li><a href="https://linecorp.com/career/position/list">採用情報</a></li>
+        <li><a href="http://ad-center.line.me/">広告掲載</a></li>
+        <li><a href="http://docs.livedoor.com/rules/">利用規約</a></li>
+        <li><a href="http://docs.livedoor.com/privacy/">プライバシーポリシー</a></li>
+      </ul>
+      <p class="footerCopyright"><small>&#169; <b>LINE Corporation</b></small></p>
+    </div><!-- /.footerLower -->
+  </div><!-- /.footerInner -->
+
+
+</footer><!-- /#globalFooter -->
+
+
+</div><!-- /#container -->
+
+<script>if(window.unthem_async_loader && window.ads_code) unthem_async_loader(ads_code, "adview_custom");</script>
+<script>
+(function($){
+  $(function() {
+    var agent = navigator.userAgent;
+    if(agent.search(/iPhone/) != -1 || agent.search(/iPad/) != -1 || agent.search(/iPod/) != -1 || agent.search(/Android/) != -1){
+      var is_tablet = 1;
+    }
+    var $w = $(window),
+        hh = $('#globalHeader').innerHeight(),
+        fh = $('#globalFooter').innerHeight(),
+        is_hdr = $('#subHeader').length,
+        is_nav = $('#globalNav').length,
+        is_jack = $('#jackHead').length,
+        nc = is_jack?Math.abs(parseInt($('#globalFooter').css('margin-top'),10))-Math.abs(parseInt($('.contentInner').css('top'),10)):0;
+
+    if(is_nav > 0){
+        var $n = $('#globalNav'),
+            nm = 0,  //globalNav margin
+            nh = $('#globalNav').innerHeight() + nm * 2,
+            nt = $('#globalNav').offset().top - nm;
+    }
+    if(is_hdr > 0) {
+        var ht = $('#subHeader').offset().top,
+            col2 = $('body').hasClass('col2');
+    }
+
+    var navfix = function(){
+      var ws = $w.scrollTop(),
+          wl = $w.scrollLeft(),
+          wh = $w.innerHeight(),
+          dh = $(document).innerHeight();
+
+      if(is_hdr > 0) {
+        //if(ws > ((is_jack && col2) ? 183 : 0)) {
+        if(ws > ((is_jack && col2) ? 241 : 0)) {
+          $("#subHeader").fadeIn(300);
+          $('#subHeader').addClass('fixed');
+        } else {
+          $("#subHeader").fadeOut(300,function(){$('#subHeader').removeClass('fixed');});
+        }
+      }
+
+
+      if(is_nav > 0) {
+        var  nl = $('#nav').offset().left+30;
+
+        if(nh-wh < 0) {
+          if(dh-ws-fh+nc < nh){
+            $n.css({'position':'absolute', 'top':'auto', 'bottom':nm + 'px', 'left':'auto'});
+          }
+          else if(ws > nt){
+            $n.css({'position':'fixed', 'top':nm + 'px', 'bottom':'auto', 'left':(wl-nl) < 0 ? (nl-wl) + 'px' : '-' + (wl-nl) + 'px'});
+          }
+          else{
+            $n.css({'position':'static', 'top':'auto', 'bottom':'auto', 'left':'auto'});
+          }
+        }else{
+          if(dh-ws-wh-fh+nc < 0){
+            $n.css({'position':'absolute', 'top':'auto', 'bottom':nm + 'px', 'left':'auto'});
+          }
+          else if(ws > nt+nh-wh){
+            $n.css({'position':'fixed', 'top':'auto', 'bottom':nm + 'px', 'left':(wl-nl) < 0 ? (nl-wl) + 'px' : '-' + (wl-nl) + 'px'});
+          }
+          else{
+            $n.css({'position':'static', 'top':'auto', 'bottom':'auto', 'left':'auto'});
+          }
+        }
+      }
+    }
+
+    if(!is_tablet) {
+      $w.on('scroll',navfix);
+      $w.on('resize',navfix);
+    }
+    navfix();
+
+  });
+})(jQuery);
+
+</script>
+
+
+<!-- User Insight PCDF Code Start : livedoor.com -->
+<script type="text/javascript">
+<!--
+var _uic = _uic ||{}; var _uih = _uih ||{};_uih['id'] = 51166;
+_uih['lg_id'] = '';
+_uih['fb_id'] = '';
+_uih['tw_id'] = '';
+_uih['uigr_1'] = ''; _uih['uigr_2'] = ''; _uih['uigr_3'] = ''; _uih['uigr_4'] = ''; _uih['uigr_5'] = '';
+_uih['uigr_6'] = ''; _uih['uigr_7'] = ''; _uih['uigr_8'] = ''; _uih['uigr_9'] = ''; _uih['uigr_10'] = '';
+
+/* DO NOT ALTER BELOW THIS LINE */
+/* WITH FIRST PARTY COOKIE */
+(function() {
+var bi = document.createElement('scri'+'pt');bi.type = 'text/javascript'; bi.async = true;
+bi.src = ('https:' == document.location.protocol ? 'https://bs' : 'http://c') + '.nakanohito.jp/b3/bi.js';
+var s = document.getElementsByTagName('scri'+'pt')[0];s.parentNode.insertBefore(bi, s);
+})();
+//-->
+</script>
+<!-- User Insight PCDF Code End : livedoor.com -->
+
+<!-- adblock check start -->
+<script type="text/javascript">
+     (function() {
+         var pa = document.createElement('script'); pa.type = 'text/javascript'; pa.charset = "utf-8"; pa.async = true;
+         pa.src = "https://i.popincdn.com/js/popin-cb-min.js";
+         var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(pa, s);
+     })();
+</script>
+<!-- adblock check end -->
+
+
+
+
+
+<script type="text/javascript" charset="UTF-8" src="news.livedoor.com_files/popin_ad_tester_ver2.js"></script><iframe id="google_osd_static_frame_2927536867694" name="google_osd_static_frame" style="display: none; width: 0px; height: 0px;"></iframe></body></html>

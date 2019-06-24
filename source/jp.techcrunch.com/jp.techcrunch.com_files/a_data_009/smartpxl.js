@@ -1,0 +1,1 @@
+(function(){var a=window.location.hostname+window.location.pathname+window.location.search;var b=''}());

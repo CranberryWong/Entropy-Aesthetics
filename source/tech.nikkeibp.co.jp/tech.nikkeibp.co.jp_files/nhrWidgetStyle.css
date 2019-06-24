@@ -1,0 +1,582 @@
+
+/* ==========================================
+■【PC】HR Widget
+========================================== */
+#nhrWidget{
+	width:300px;
+	/*height:600px;*/
+	background:#00629d;
+	position:relative;
+	margin-bottom: 20px;
+}
+.nhrWidgetArea h2.nhrWidgetHeader{
+	margin:0;
+	padding:0;
+	text-align:center;
+}
+.nhrWidgetArea h2.nhrWidgetHeader a,
+.nhrWidgetArea h2.nhrWidgetHeader a img{
+	width:300px;
+	text-align:center;
+	display:block;
+}
+.nhrWidgetArea .nhrWidgetOptOutButtonArea{
+	width:14px;
+	height:14px;
+	position:absolute;
+	top:0;
+	right:0;
+}
+.nhrWidgetArea .nhrWidgetOptOutButtonArea .nhrWidgetOptOutButton{
+	width:14px;
+	height:14px;
+	border:none;
+	background:0 / 14px 14px url(/images/n/hr/2018/parts/btn_optout.png) no-repeat;
+	cursor: pointer;
+	display:block;
+}
+.nhrWidgetArea div.nhrWidgetInnnerBox{
+	padding:0 7px;
+	font-size:12px;
+	color:#666;
+}
+.nhrWidgetArea div.nhrWidgetInnnerBox ul.nhrWidgetList{
+	width:286px;
+	/*height: 402px;*/
+	margin:0;
+	padding:0;
+	border-bottom:1px solid #ccc;
+	overflow:hidden;
+	/*overflow-y: scroll;*/
+	list-style:none;
+	background:#fff;
+}
+.nhrWidgetArea div.nhrWidgetInnnerBox ul.nhrWidgetList li{
+	margin:0;
+	padding:0;
+	border-bottom:1px solid #ccc;
+	clear:both;
+	overflow:hidden;
+}
+.nhrWidgetArea div.nhrWidgetInnnerBox ul.nhrWidgetList li:last-child{
+	border-bottom:0;
+}
+.nhrWidgetArea div.nhrWidgetInnnerBox ul.nhrWidgetList li a{
+/*	height:51px; */
+	margin:0;
+	padding:8px 7px;
+	display:block;
+	text-decoration:none;
+	position:relative;
+	overflow:hidden;
+}
+.nhrWidgetArea div.nhrWidgetInnnerBox ul.nhrWidgetList li a:hover{
+	background:#eeeeee;
+	/*
+	filter:alpha(opacity=30);
+	-moz-opacity: 0.3;
+	*/
+	opacity: 0.7;
+}
+.nhrWidgetArea div.nhrWidgetInnnerBox ul.nhrWidgetList li p span.nhrWidgetMainWorkLocation{
+	font-weight:bold;
+	margin:0 8px 0 0;
+	color:#666;
+	line-height:16px;
+	background:0 2px / 12px auto url(/images/n/hr/2018/parts/icon_location.png) no-repeat;
+	padding-left:15px;
+}
+.nhrWidgetArea div.nhrWidgetInnnerBox ul.nhrWidgetList li p span.nhrWidgetIncome{
+	font-weight:bold;
+	color:#666;
+	line-height:16px;
+	background:0 2px / 12px auto  url(/images/n/hr/2018/parts/icon_income.png?20180514) no-repeat;
+	padding:0 15px 0 15px;
+}
+.nhrWidgetArea div.nhrWidgetInnnerBox ul.nhrWidgetList li p span.nhrWidgetCompanyName{
+	font-weight:bold;
+	color:#000;
+	line-height:16px;
+}
+.nhrWidgetArea div.nhrWidgetInnnerBox ul.nhrWidgetList li span.nhrWidgetIcon{
+position:absolute;
+left:5px;
+top:5px;
+z-index:1;
+}
+.nhrWidgetArea div.nhrWidgetInnnerBox ul.nhrWidgetList li .nhrWidgetOccupation{
+float:left;
+width:65px;
+}
+.nhrWidgetArea div.nhrWidgetInnnerBox ul.nhrWidgetList li div{
+
+}
+.nhrWidgetArea div.nhrWidgetInnnerBox ul.nhrWidgetList li p.nhrWidgetOfferDistinction{
+/*	height:15px; *//*13から変更*/
+	margin:5px 0;
+	padding:0;
+	font-size:12px;
+	line-height:1.4;
+	overflow:hidden;
+	color:#00629d;
+}
+.nhrWidgetArea div.nhrWidgetInnnerBox ul.nhrWidgetList li p.nhrWidgetOfferDistinction span{
+	margin:2px 0 0 6px;/*2017-0605　0 0 0 4pxから変更*/
+	display:inline-block;
+	height:18px;/*追加*/
+	color:#505050;/*2017-0605　#fffから変更*/
+	line-height:13px;/*2017-0605　13pxから変更*/
+	vertical-align:middle;
+}
+.nhrWidgetArea div.nhrWidgetInnnerBox ul.nhrWidgetList li p.nhrWidgetOfferDistinction span:first-child{
+	margin:2px 0 0 0;
+}
+.nhrWidgetArea div.nhrWidgetInnnerBox ul.nhrWidgetList li p.nhrWidgetProviderSiteName{
+	margin:0;
+	padding:0;
+	font-size:11px;
+	color:#505050;
+	text-align:right;
+	line-height:16px;
+}
+.nhrWidgetArea div.nhrWidgetInnnerBox ul.nhrWidgetList li.nhrWidgetNotLogin{
+	height:16px;
+	margin:0;
+	padding:8px 7px;
+	font-size:13px;
+	text-align:center;
+	line-height:16px;
+	font-weight:bold;
+}
+.nhrWidgetArea div.nhrWidgetUnderBanner{
+	margin:0 auto;
+}
+.nhrWidgetArea div.nhrWidgetUnderBanner a{
+	width:286px;
+	/*height: 80px;*/
+	margin:0 auto;
+	padding-bottom:10px;
+	display:block;
+}
+.nhrWidgetArea div.nhrWidgetUnderBanner a img{
+	display:block;
+	width:286px;
+}
+/* ローダー */
+.nhrWidgetArea .loader{
+	padding:283px 0 0;
+	text-align:center;
+}
+/* エラーメッセージ */
+.nhrWidgetArea .errMsg{
+	padding:283px 0 0;
+	text-align:center;
+}
+
+.nhrWidgetSendMail {
+	text-align: center;
+	margin:10px;
+	color:#fff;
+	clear:both;
+}
+.nhrWidgetSendMail:nth-child(2){
+	border-top:1px dotted #fff;
+}
+.nhrWidgetSendMail a {
+	color: #f0f0f0;
+	font-size: 14px;
+	font-weight: bold;
+	margin-top:10px;
+}
+
+.nhrWidgetSendMail a::before {
+	content: '';
+	display: inline-block;
+	vertical-align: middle;
+	width: 14px;
+	height: 14px;
+	background: url(/images/n/hr/2018/parts/icon_mail.png) no-repeat;
+	background-size: 14px auto;
+	margin-right: 5px;
+}
+#nhrWidgetSP .nhrWidgetSendMail{
+	margin:20px 10px;
+}
+/* ==========================================
+■【SP】HR Widget
+========================================== */
+#nhrWidgetSP{
+	width:100%;
+/*	height:478px;*/
+	margin:0 auto;
+	border:1px solid #999;
+	position:relative;
+	background:#00629d;
+}
+#nhrWidgetSP.nhrWidgetArea h2.nhrWidgetHeader{
+background:0 / 100% 100% url(/images/n/hr/2018/parts/header_bg.png) no-repeat;
+}
+#nhrWidgetSP.nhrWidgetArea h2.nhrWidgetHeader a{
+	text-align:center;
+	display:block;
+	width:100%;
+}
+#nhrWidgetSP.nhrWidgetArea h2.nhrWidgetHeader a img{
+	width:300px;
+	display:inline;
+}
+#nhrWidgetSP.nhrWidgetArea .nhrWidgetOptOutButtonArea{
+width:16px;
+height:16px;
+}
+#nhrWidgetSP.nhrWidgetArea .nhrWidgetOptOutButtonArea .nhrWidgetOptOutButton{
+width:16px;
+height:16px;
+-webkit-appearance: none;
+border-radius: 0;
+background:0 / 16px 16px url(/images/n/hr/2018/parts/btn_optout.png) no-repeat;
+}
+/* ページネーション */
+#nhrWidgetSP div.nhrWidgetInnnerBox div.nhrWidgetPrevBtn{
+	width:43px;
+	height:49px;
+	padding:9px 0 0;
+	display:block;
+	background:#B3B3B3;
+	/*
+	filter:alpha(opacity=80);
+	-moz-opacity: 0.8;
+	*/
+	opacity: 0.8;
+	position:absolute;
+	text-align:center;
+	top:157px;
+	left:0;
+}
+#nhrWidgetSP div.nhrWidgetInnnerBox div.nhrWidgetNextBtn{
+	width:43px;
+	height:49px;
+	padding:9px 0 0;
+	display:block;
+	background:#B3B3B3;
+	/*
+	filter:alpha(opacity=80);
+	-moz-opacity: 0.8;
+	*/
+	opacity: 0.8;
+	position:absolute;
+	text-align:center;
+	top:157px;
+	right:0;
+}
+#nhrWidgetSP div.nhrWidgetInnnerBox ul#nhrWidgetPageNavi{
+	height:26px;
+	margin:0;
+	padding:0;
+	list-style:none;
+	text-align:center;
+}
+#nhrWidgetSP div.nhrWidgetInnnerBox ul#nhrWidgetPageNavi li{
+	width:10px;
+	height:10px;
+	margin:0;
+	padding:8px 0;
+	display:inline-block;
+}
+#nhrWidgetSP div.nhrWidgetInnnerBox ul#nhrWidgetPageNavi li a {
+	display:block;
+}
+#nhrWidgetSP div.nhrWidgetInnnerBox ul#nhrWidgetPageNavi li a img{
+	margin:0;
+	padding:0;
+	display:block;
+}
+/* ボトムバナー */
+#nhrWidgetSP div.nhrWidgetUnderBanner{
+	margin:0 auto 5px;
+}
+#nhrWidgetSP div.nhrWidgetUnderBanner a{
+	width:308px;
+	height:97px;
+	margin:0 auto;
+	display:block;
+}
+#nhrWidgetSP div.nhrWidgetUnderBanner a img{
+	display:block;
+	margin:0 auto;
+}
+/* ローダー */
+#nhrWidgetSP .loader{
+	padding:223px 0 0;
+	text-align:center;
+}
+/* エラーメッセージ */
+#nhrWidgetSP .errMsg{
+	padding:223px 0 0;
+	text-align:center;
+}
+
+/* ==========================================
+■slick
+========================================== */
+.slick-slider{
+    position: relative;
+    display: block;
+    box-sizing: border-box;
+    -webkit-user-select: none;
+       -moz-user-select: none;
+        -ms-user-select: none;
+            user-select: none;
+    -webkit-touch-callout: none;
+    -khtml-user-select: none;
+    -ms-touch-action: pan-y;
+        touch-action: pan-y;
+    -webkit-tap-highlight-color: transparent;
+}
+.slick-list{
+    position: relative;
+    display: block;
+    overflow: hidden;
+    margin: 0;
+    padding: 0;
+    background:#fff;
+}
+.slick-list:focus{
+    outline: none;
+}
+.slick-list.dragging{
+    cursor: pointer;
+    cursor: hand;
+}
+.slick-slider .slick-track,
+.slick-slider .slick-list{
+    -webkit-transform: translate3d(0, 0, 0);
+       -moz-transform: translate3d(0, 0, 0);
+        -ms-transform: translate3d(0, 0, 0);
+         -o-transform: translate3d(0, 0, 0);
+            transform: translate3d(0, 0, 0);
+}
+.slick-track{
+    position: relative;
+    top: 0;
+    left: 0;
+    display: block;
+}
+.slick-track:before,
+.slick-track:after{
+    display: table;
+    content: '';
+}
+.slick-track:after{
+    clear: both;
+}
+.slick-loading .slick-track{
+    visibility: hidden;
+}
+.slick-slide{
+    display: none;
+    float: left;
+    height: 100%;
+    min-height: 1px;
+}
+[dir='rtl'] .slick-slide{
+    float: right;
+}
+.slick-slide img{
+    display: block;
+}
+.slick-slide.slick-loading img{
+    display: none;
+}
+.slick-slide.dragging img{
+    pointer-events: none;
+}
+.slick-initialized .slick-slide{
+    display: block;
+}
+.slick-loading .slick-slide{
+    visibility: hidden;
+}
+.slick-vertical .slick-slide{
+    display: block;
+    height: auto;
+    border: 1px solid transparent;
+}
+.slick-arrow.slick-hidden {
+    display: none;
+}
+
+/* Slider */
+.slick-loading .slick-list{
+    background: #fff url('/images/n/hr/2018/parts/loader.gif') center center no-repeat;
+}
+
+/* Icons */
+@font-face{
+    font-family: 'slick';
+    font-weight: normal;
+    font-style: normal;
+    src: url('/css/n/hr/2018/fonts/slick.eot');
+    src: url('/css/n/hr/2018/fonts/slick.eot?#iefix') format('embedded-opentype'), url('/css/n/hr/2018/fonts/slick.woff') format('woff'), url('/css/n/hr/2018/fonts/slick.ttf') format('truetype'), url('/css/n/hr/2018/fonts/slick.svg#slick') format('svg');
+}
+/* Arrows */
+.slick-prev,
+.slick-next{
+    font-size: 0;
+    line-height: 0;
+    position: absolute;
+    top: 50%;
+    display: block;
+    width: 52px;
+    height: 100px;
+    padding: 0;
+    -webkit-transform: translate(0, -50%);
+    -ms-transform: translate(0, -50%);
+    transform: translate(0, -50%);
+    cursor: pointer;
+    color: transparent;
+    border: none;
+    outline: none;
+    background: gray;
+}
+.slick-prev{
+	z-index:998;
+  opacity: .50;
+  left: -5px;
+	background:#B3B3B3 url(/images/n/hr/2018/parts/btn_prev.png) no-repeat center center;
+}
+.slick-next{
+	z-index:999;
+  opacity: .50;
+  right: -5px;
+	background:#B3B3B3 url(/images/n/hr/2018/parts/btn_next.png) no-repeat center center;
+}
+/* Dots */
+.slick-dots{
+	height:26px;
+	margin:0;
+	padding:0;
+	list-style:none;
+	text-align:center;
+	background:#fff;
+}
+.slick-dots li{
+	padding:8px 0;
+	display:inline-block;
+}
+.slick-dots li button{
+    font-size: 0;
+    line-height: 0;
+    display: block;
+    width: 20px;
+    height: 10px;
+    padding: 0px;
+    cursor: pointer;
+    color: transparent;
+    border: 0;
+    outline: none;
+    background:#fff;
+}
+.slick-dots li button:hover,
+.slick-dots li button:focus{
+    outline: none;
+}
+.slick-dots li button:hover:before,
+.slick-dots li button:focus:before{
+    opacity: 1;
+}
+.slick-dots li button:before{
+    font-family: 'slick';
+    font-size: 10px;
+    line-height: 10px;
+    width: 10px;
+    height: 10px;
+    content: '•';
+    text-align: center;
+    opacity: 1;
+    color: #dcdcdc;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+.slick-dots li.slick-active button:before{
+    opacity: 1;
+    color: #eb5700;
+}
+.tse-wrapper {
+  width: 300px;
+  height:402px;
+}
+#nhrWidgetSP .tse-wrapper {
+  width: 100%;
+  height:auto;
+}
+.tse-wrapper .tse-scrollbar{
+right:8px;
+}
+.nhrWidgetSearchLinks{
+width:286px;
+margin:10px auto;
+overflow:hidden;
+}
+.nhrWidgetSearchLinks li{
+width:88px;
+margin:0 10px 7px 0;
+float:left;
+}
+.nhrWidgetSearchLinks li:nth-child(3n){
+margin-right:0;
+}
+.nhrWidgetSearchLinks li a{
+display:inline-block;
+width:86px;
+color:#fff;
+border:1px solid #fff;
+border-radius:3px;
+text-align:center;
+font-size:11px;
+line-height:18px;
+text-decoration:none;
+background:#0088c3;
+}
+#nhrWidgetSP .nhrWidgetSearchLinks{
+width:95%;
+display:flex;
+flex-wrap: wrap;
+justify-content: space-between;
+}
+#nhrWidgetSP .nhrWidgetSearchLinks li{
+width:31%;
+margin:0 0 7px 0;
+}
+#nhrWidgetSP .nhrWidgetSearchLinks li a{
+width:100%;
+padding:5px 0;
+box-sizing: border-box;
+}
+.nhrWidgetSearchLinks li a:hover{
+background:#fff;
+color:#00629d;
+}
+div.nhrWidgetInnnerBox h5{
+height:20px;
+}
+div.nhrWidgetInnnerBox h5 .nhrWidgetOffer{
+display:inline-block;
+margin-right:5px;
+color:#00629d;
+border:1px solid #00629d;
+border-radius:3px;
+text-align:center;
+font-size:10px;
+line-height:1;
+padding:2px 4px;
+}
+div.nhrWidgetInnnerBox h5 .nhrWidgetCompanyName{
+display:inline;
+font-size:12px;
+line-height:1;
+height:1rem;
+}
+div.nhrWidgetInnnerBox .nhrWidgetSpec{
+margin-left:65px;
+}

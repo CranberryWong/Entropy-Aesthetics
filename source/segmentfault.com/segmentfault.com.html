@@ -1,0 +1,1178 @@
+<!DOCTYPE html>
+<html lang="zh-CN"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><meta charset="UTF-8"><meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1"><meta name="renderer" content="webkit"><meta property="qc:admins" content="15317273575564615446375"><meta property="og:image" content="https://static.segmentfault.com/v-5b5ec8ff/global/img/touch-icon.png"><meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no"><meta name="alexaVerifyID" content="LkzCRJ7rPEUwt6fVey2vhxiw1vQ"><meta name="apple-itunes-app" content="app-id=958101793, app-argument="><title>SegmentFault 思否</title><meta name="description" content="SegmentFault ( www.sf.gg ) 是中国领先的开发者技术社区。 我们希望为编程爱好者提供一个纯粹、高质的技术交流的平台， 与开发者一起学习、交流与成长，创造属于开发者的时代！"><meta name="keywords" content="SegmentFault,思否,黑客马拉松,IT技术社区,编程社区,技术问答,技术文章,技术笔记,技术活动,程序员招聘,开发者,程序员,极客,编程,代码,开源,hackathon"><link rel="search" type="application/opensearchdescription+xml" href="https://segmentfault.com/opensearch.xml" title="SegmentFault"><link rel="shortcut icon" href="https://static.segmentfault.com/v-5b5ec8ff/global/img/favicon.ico"><link rel="apple-touch-icon" href="https://static.segmentfault.com/v-5b5ec8ff/global/img/touch-icon.png"><meta name="msapplication-TileColor" content="#009a61"><meta name="msapplication-square150x150logo" content="https://static.segmentfault.com/v-5b5ec8ff/global/img/touch-icon.png"><link rel="alternate" type="application/atom+xml" title="SegmentFault 最新问题" href="https://segmentfault.com/feeds/questions"><link rel="alternate" type="application/atom+xml" title="SegmentFault 最新文章" href="https://segmentfault.com/feeds/blogs"><link rel="stylesheet" href="segmentfault.com_files/global.css"><link rel="stylesheet" href="segmentfault.com_files/index.css"><link rel="stylesheet" href="segmentfault.com_files/responsive.css"><link rel="preload" href="segmentfault.com_files/integrator_002.js" as="script"><script src="segmentfault.com_files/osd.js"></script><script src="segmentfault.com_files/ca-pub-6330872677300335.js"></script><script type="text/javascript" src="segmentfault.com_files/integrator_002.js"></script><link rel="preload" href="segmentfault.com_files/integrator.js" as="script"><script type="text/javascript" src="segmentfault.com_files/integrator.js"></script></head><body data-mod="index" class="index-index "><!--[if lt IE 9]><div class="alert alert-danger topframe" role="alert">你的浏览器实在<strong>太太太太太太旧了</strong>，放学别走，升级完浏览器再说 <a target="_blank" class="alert-link" href="http://browsehappy.com">立即升级</a></div><![endif]--><img id="icon4weChat" style="height: 0;width: 0;" data-src="https://static.segmentfault.com/v-5b5ec8ff/global/img/touch-icon-512.png"><div id="gridMapHoverBox" style="position:absolute; border: 1px solid #009a61; z-index:99; font-size: 10px; background:#fff"></div><style>
+        #mm_124884735_33830642_146292853 img {max-height: 90px;}
+    </style><div id="mm_124884735_33830642_146292853" class="hidden-xs"></div><i class="fa fa-times-circle close-banner-1111" aria-hidden="true" style="position: absolute; right: 15px; top: 15px; font-size: 18px; cursor: pointer; color: rgba(255,255,255,0.25);"></i><script src="segmentfault.com_files/hm.js"></script><script async="" src="segmentfault.com_files/analytics.js"></script><script>
+        try {
+            let closeStamp = +localStorage.getItem('ad1111')
+            let curStamp = +new Date
+
+            if (!closeStamp || curStamp - closeStamp > 60 * 60 * 24 * 3 * 1000) { // 三天前关闭过
+                document.querySelector('.close-banner-1111').addEventListener('click', function() {
+                    localStorage.setItem('ad1111', +new Date)
+                    document.querySelector('#mm_124884735_33830642_146292853').style.display = 'none'
+                }, false)
+            } else {
+                document.querySelector('#mm_124884735_33830642_146292853').style.display = 'none'
+            }
+        } catch(err) {}
+    </script><div class="global-nav sf-header sf-header--index"><div class="bottom-nav visible-xs visible-sm "><div class="opts"><a class="opts-group active" href="https://segmentfault.com/"><i class="fa fa-home" aria-hidden="true"></i><span>首页</span></a><a class="opts-group " href="https://segmentfault.com/questions"><i class="fa fa-comments" aria-hidden="true"></i><span>问答</span></a><a class="opts-group " href="https://segmentfault.com/blogs"><i class="fa fa-pencil-square" aria-hidden="true"></i><span>专栏</span></a><a class="opts-group " href="https://segmentfault.com/lives"><i class="fa fa-play-circle" aria-hidden="true"></i><span>讲堂</span></a><div class="opts-group"><div class="btn-group dropup"><i class="fa fa-bars dropdown hoverDropdown" data-toggle="dropdown" aria-hidden="true"><span>更多</span></i><ul class="dropdown-menu"><li><a href="https://segmentfault.com/jobs">职位</a></li><li><a href="https://segmentfault.com/events">活动</a></li><li><a href="https://segmentfault.com/tags">标签</a></li><li><a href="https://segmentfault.com/badges">徽章</a></li></ul></div></div></div></div><nav class="container nav"><div class="visible-xs visible-sm header-response"><a href="https://segmentfault.com/search" style="display:block"><i class="fa fa-search" aria-hidden="true"></i></a><div class="sf-header__logo sf-header__logo--response"><h1><a href="https://segmentfault.com/" style="height:24px; background-size: auto 24px;"></a></h1></div><a href="https://segmentfault.com/user/login" class="pull-right login-btn"><i class="fa fa-user" aria-hidden="true"></i></a></div><script>
+mobileScroll(
+    function(direction) { 
+        try {
+            if (direction === 'down') {
+                document.querySelector('.bottom-nav').classList.add('hidden')
+            } else {
+                document.querySelector('.bottom-nav').classList.remove('hidden')
+            }
+        } catch(err) {}
+    }
+);    
+function mobileScroll( fn ) {
+    var beforeScrollTop = document.documentElement.scrollTop || document.body.scrollTop,
+        fn = fn || function() {};
+    window.addEventListener("scroll", function() {
+        var afterScrollTop = document.documentElement.scrollTop || document.body.scrollTop,
+            delta = afterScrollTop - beforeScrollTop;
+        if( delta === 0 ) return false;
+        fn( delta > 0 ? "down" : "up" );
+        beforeScrollTop = afterScrollTop;
+    }, false);
+}
+</script><div class="row hidden-xs hidden-sm"><div class="col-sm-8 col-md-9 col-lg-9"><div class="sf-header__logo"><h1><a href="https://segmentfault.com/">SegmentFault</a></h1></div><div><ul class="menu list-inline pull-left hidden-xs"><li class="menu__item"><a href="https://segmentfault.com/" class="active-nav">首页</a></li><li class="menu__item"><a href="https://segmentfault.com/questions" class="">问答</a></li><li class="menu__item"><a href="https://segmentfault.com/blogs" class="">专栏</a></li><li class="menu__item"><a href="https://segmentfault.com/lives" class="">讲堂</a></li><li class="menu__item menu__item--more dropdown"><a href="##" class="dropdown-toggle dropdownBtn" data-toggle="dropdown">
+                                        发现<i class="fa fa-caret-down" style="font-size: 14px;margin-left: 5px;" aria-hidden="true"></i></a><div class="dropdown-block hidden"><ul class="dropdown-content-menu"><li><a href="https://segmentfault.com/groups">圈子</a></li><li><a href="https://segmentfault.com/events">活动</a></li><li><a href="https://segmentfault.com/tags">标签</a></li><li><a href="https://segmentfault.com/jobs">找工作</a></li><li><a href="https://segmentfault.com/users">排行榜</a></li><li><a href="https://segmentfault.com/badges">徽章</a></li><li><a href="https://segmentfault.com/notes">笔记</a></li><li><a href="https://docs.segmentfault.com/" target="_blank">开发手册<i style="line-height: 20px;font-size: 12px;color: #F5A623;" class="ml10 fa fa-external-link-square"></i></a></li><li><a href="https://business.segmentfault.com/ads?utm_source=sf-header" target="_blank">广告投放<i style="line-height: 20px;font-size: 12px;color: #F5A623;" class="ml10 fa fa-external-link-square"></i></a></li></ul></div></li><li class="menu__item visible-sm-inline-block"><a href="https://segmentfault.com/search"><span class="glyphicon glyphicon-search" style="vertical-align: middle;"></span></a></li></ul><form action="/search" class="header-search  hidden-sm hidden-xs pull-right"><button class="btn btn-link"><span class="sr-only">搜索</span><span class="glyphicon glyphicon-search"></span></button><input id="searchBox" name="q" placeholder="搜索问题或关键字" class="form-control" type="text"></form></div></div><div class="col-sm-4 col-md-3 col-lg-3 text-right"><ul class="opts list-inline hidden-xs"><li class="opts__item"><a href="https://segmentfault.com/user/login" class="SFRegister btn-signin" style="margin-bottom:2px;">立即登录</a><a href="https://segmentfault.com/user/register" class="SFLogin ml10 btn-signup" onclick="_gaq.push(['_trackEvent', 'Button', 'Click', 'Login']);">免费注册</a></li></ul></div></div></nav></div>
+<div class="wrapper">
+  <div class="container mt30">
+    <div class="row">
+      <div class="col-md-2 left">
+        <div class="router-box">
+          <a class="router-box-item active" href="https://segmentfault.com/">
+            <i class="fa fa-newspaper-o" aria-hidden="true"></i>
+            <span class="name">为你推荐</span>
+          </a>
+          <a class="router-box-item " href="https://segmentfault.com/hottest">
+            <i class="fa fa-thumbs-o-up" aria-hidden="true"></i>
+            <span class="name">近期热门</span>
+          </a>
+          <a class="router-box-item " href="https://segmentfault.com/newest">
+            <i class="fa fa-globe" aria-hidden="true"></i>
+            <span class="name">最新内容</span>
+          </a>
+          <a class="router-box-item showChannels visible-xs-block" href="https://segmentfault.com/">
+            <i class="fa fa-server" aria-hidden="true"></i>
+            <span class="name">技术频道</span>
+          </a>
+        </div>
+        <div class="tech-square hidden-xs">
+          <h5 class="tech-square-title mt0 mb15">技术频道</h5>
+        
+          <a class="tech-square-item " href="https://segmentfault.com/channel/frontend">
+            <span class="tech-square-item-icon">
+              <img src="segmentfault.com_files/3997397795-5a6edc1c3167f_small.png">
+            </span>
+            <span>前端</span>
+          </a>
+        
+          <a class="tech-square-item " href="https://segmentfault.com/channel/backend">
+            <span class="tech-square-item-icon">
+              <img src="segmentfault.com_files/1998904068-5a6edc3e40de1_small.png">
+            </span>
+            <span>后端</span>
+          </a>
+        
+          <a class="tech-square-item " href="https://segmentfault.com/channel/bc">
+            <span class="tech-square-item-icon">
+              <img src="segmentfault.com_files/950262627-5a7048175cdc9_small.png">
+            </span>
+            <span>区块链</span>
+          </a>
+        
+          <a class="tech-square-item " href="https://segmentfault.com/channel/ai">
+            <span class="tech-square-item-icon">
+              <img src="segmentfault.com_files/1940304143-5a72802e507db_small.png">
+            </span>
+            <span>人工智能</span>
+          </a>
+        
+          <a class="tech-square-item " href="https://segmentfault.com/channel/android">
+            <span class="tech-square-item-icon">
+              <img src="segmentfault.com_files/3466976217-5a6edc9817073_small.png">
+            </span>
+            <span>Android</span>
+          </a>
+        
+          <a class="tech-square-item " href="https://segmentfault.com/channel/ios">
+            <span class="tech-square-item-icon">
+              <img src="segmentfault.com_files/3641835720-5a6edcc072849_small.png">
+            </span>
+            <span>iOS</span>
+          </a>
+        
+          <a class="tech-square-item " href="https://segmentfault.com/channel/toolkit">
+            <span class="tech-square-item-icon">
+              <img src="segmentfault.com_files/619301590-5a6ee7ff8fee2_small.png">
+            </span>
+            <span>工具</span>
+          </a>
+        
+          <a class="tech-square-item " href="https://segmentfault.com/channel/netsec">
+            <span class="tech-square-item-icon">
+              <img src="segmentfault.com_files/177555825-5a6edd409405a_small.png">
+            </span>
+            <span>安全</span>
+          </a>
+        
+          <a class="tech-square-item " href="https://segmentfault.com/channel/programmer">
+            <span class="tech-square-item-icon">
+              <img src="segmentfault.com_files/46315654-5a6edd4a8f67e_small.png">
+            </span>
+            <span>程序员</span>
+          </a>
+        
+          <a class="tech-square-item " href="https://segmentfault.com/channel/industry">
+            <span class="tech-square-item-icon">
+              <img src="segmentfault.com_files/3509536808-5a6edd577ced0_small.png">
+            </span>
+            <span>行业</span>
+          </a>
+        
+          <a class="tech-square-item " href="https://segmentfault.com/tags">
+            <span class="tech-square-item-icon">
+              <i class="fa fa-tags" aria-hidden="true"></i>
+            </span>
+            <span>更多标签</span>
+          </a>
+        </div>
+      </div>
+
+      <div class="col-md-7 middle">
+        
+        <div class="ad-wrapper" id="mm_124884735_33830642_184038395">
+          <div class="loading">
+            <i class="fa fa-spinner fa-spin fa-2x" aria-hidden="true"></i>
+          </div>
+          <div id="carousel-example-generic" class="carousel slide mb5" data-ride="carousel">
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+              <ol class="carousel-indicators">
+        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+        
+        <li data-target="#carousel-example-generic" data-slide-to="1" class=""></li>
+        
+        <li data-target="#carousel-example-generic" data-slide-to="2" class=""></li>
+        </ol>
+              <div class="carousel-inner" role="listbox">
+        <a href="https://segmentfault.com/reco/1640000015774606?utm_source=ad_index" class="item active" style="background:url(https://sfault-image.b0.upaiyun.com/415/203/4152032512-5b5947d20b24b); background-size: cover">
+          <div class="carousel-caption">
+            <h3 class="title">Iterator：访问数据集合的统一接口</h3>
+            
+          </div>
+        </a>
+        
+        <a href="https://segmentfault.com/reco/1640000015774588?utm_source=ad_index" class="item " style="background:url(https://sfault-image.b0.upaiyun.com/875/939/87593996-5b59475a712cf); background-size: cover">
+          <div class="carousel-caption">
+            <h3 class="title">golang 不到 30 行代码实现依赖注入</h3>
+            
+          </div>
+        </a>
+        
+        <a href="https://segmentfault.com/reco/1640000015774571?utm_source=ad_index" class="item " style="background:url(https://sfault-image.b0.upaiyun.com/346/840/3468400357-5b594703bb99e); background-size: cover">
+          <div class="carousel-caption">
+            <h3 class="title">Spring Boot Web 应用性能优化</h3>
+            
+          </div>
+        </a>
+        </div>
+            </div>
+            <div class="mask"></div>
+          </div>
+        </div>
+        
+        
+                    <div class="feed-option">
+                <h5>为你推荐</h5>
+            </div>
+        
+        <div class="alert alert-info mt15 mb0 hidden" role="alert" id="notice-update"></div>
+
+                <div class="news-list"><div class="news-item stream__item clearfix mt15" data-id="1190000015810835"><div class="news__item-info clearfix"><a target="_blank" href="https://segmentfault.com/a/1190000015810835"><div class="mb5 mt5"><h4 class="news__item-title mt0">koa源码阅读[1]-koa与koa-compose</h4></div><div class="article-excerpt">
+                      接上次挖的坑，对koa2.x相关的源码进行分析 第一篇。 不得不说，koa是一个很轻量、很优雅的http框架，尤其是在2.x以后移除了co的引入，使其代码变得更为清晰。
+                    </div></a><div class="news__item-meta"><span class="pr20 votes-operation " data-id="1190000015810835" data-type="article"><span class="wrap"><i class="fa fa-thumbs-up "></i></span><span class="votes-num  ">1</span><span class="dot ">·</span><span class="votes-word">赞</span></span><span class="bookmark-operation pr20 hidden" data-id="1190000015810835" data-type="article"><i class="fa fa-bookmark pr5"></i><span class="bookmark-word">收藏</span></span><span class="author pr20"><a href="https://segmentfault.com/u/jiasm">贾顺名</a><span class="dot">·</span>7 小时前</span></div></div></div><div class="news-item stream__item clearfix mt15" data-id="1190000015810070"><div class="news__item-info clearfix"><a target="_blank" href="https://segmentfault.com/a/1190000015810070"><div class="mb5 mt5"><h4 class="news__item-title mt0">精读《手写 SQL 编译器 - 回溯》</h4></div><div class="article-excerpt">
+                      我们把语法分析树当作一个迷宫，有直线有岔路，而想要走出迷宫，在遇到岔路时需要提前进行存档，在后面走错时读档换下一个岔路进行尝试，这个功能就叫回溯。
+                    </div></a><div class="news__item-meta"><span class="pr20 votes-operation " data-id="1190000015810070" data-type="article"><span class="wrap"><i class="fa fa-thumbs-up "></i></span><span class="votes-num  ">1</span><span class="dot ">·</span><span class="votes-word">赞</span></span><span class="bookmark-operation pr20 hidden" data-id="1190000015810070" data-type="article"><i class="fa fa-bookmark pr5"></i><span class="bookmark-word">收藏</span></span><span class="author pr20"><a href="https://segmentfault.com/u/aoyangyudakong">黄子毅</a><span class="dot">·</span>8 小时前</span></div></div></div><div class="news-item stream__item clearfix mt15" data-id="1190000015808897"><div class="news__item-info clearfix"><a href="https://segmentfault.com/a/1190000015808897" class="news-img" style="background-image:url(https://segmentfault.com/img/remote/1460000015808900?w=2048&amp;amp;h=1365)"></a><a target="_blank" href="https://segmentfault.com/a/1190000015808897"><div class="mb5 mt5"><h4 class="news__item-title mt0">如何优雅的使用和理解线程池</h4></div><div class="article-excerpt">
+                      平时接触过多线程开发的童鞋应该都或多或少了解过线程池，之前发布的《阿里巴巴 Java 手册》里也有一条：
+                    </div></a><div class="news__item-meta"><span class="pr20 votes-operation " data-id="1190000015808897" data-type="article"><span class="wrap"><i class="fa fa-thumbs-up "></i></span><span class="votes-num  ">6</span><span class="dot ">·</span><span class="votes-word">赞</span></span><span class="bookmark-operation pr20 hidden" data-id="1190000015808897" data-type="article"><i class="fa fa-bookmark pr5"></i><span class="bookmark-word">收藏</span></span><span class="author pr20"><a href="https://segmentfault.com/u/crossoverjie">crossoverJie</a><span class="dot">·</span>8 小时前</span></div></div></div><div class="news-item stream__item clearfix mt15" data-id="1190000015803719"><div class="news__item-info clearfix"><a href="https://segmentfault.com/a/1190000015803719" class="news-img" style="background-image:url(https://segmentfault.com/img/remote/1460000015803722)"></a><a target="_blank" href="https://segmentfault.com/a/1190000015803719"><div class="mb5 mt5"><h4 class="news__item-title mt0">为Spring Cloud Config插上管理的翅膀</h4></div><div class="article-excerpt">
+                      最近一致在更新Spring Cloud 
+Config的相关内容，主要也是为这篇埋个伏笔，相信不少调研过Spring Cloud 
+Config的用户都会吐槽它的管理能力太弱。因此，就有了下面为讲推荐的这个开源项目，希望对已经入坑Spring Cl...
+                    </div></a><div class="news__item-meta"><span class="pr20 votes-operation " data-id="1190000015803719" data-type="article"><span class="wrap"><i class="fa fa-thumbs-up "></i></span><span class="votes-num  ">13</span><span class="dot ">·</span><span class="votes-word">赞</span></span><span class="bookmark-operation pr20 hidden" data-id="1190000015803719" data-type="article"><i class="fa fa-bookmark pr5"></i><span class="bookmark-word">收藏</span></span><span class="author pr20"><a href="https://segmentfault.com/u/coderdd">程序员DD</a><span class="dot">·</span>1 天前</span></div></div></div><div class="news-item stream__item clearfix mt15" data-id="1190000015774465"><div class="news__item-info clearfix"><a target="_blank" href="https://segmentfault.com/a/1190000015774465"><div class="mb5 mt5"><h4 class="news__item-title mt0">ES6 系列之 WeakMap</h4></div><div class="article-excerpt">
+                      前言 我们先从 WeakMap 的特性说起，然后聊聊 WeakMap 的一些应用场景。 特性 1. 
+WeakMap 只接受对象作为键名 {代码...} 2. WeakMap 的键名所引用的对象是弱引用 
+这句话其实让我非常费解，我个人觉得这句话真正想...
+                    </div></a><div class="news__item-meta"><span class="pr20 votes-operation " data-id="1190000015774465" data-type="article"><span class="wrap"><i class="fa fa-thumbs-up hot"></i></span><span class="votes-num hot ">26</span><span class="dot ">·</span><span class="votes-word">赞</span></span><span class="bookmark-operation pr20 hidden" data-id="1190000015774465" data-type="article"><i class="fa fa-bookmark pr5"></i><span class="bookmark-word">收藏</span></span><span class="author pr20"><a href="https://segmentfault.com/u/yayu">冴羽</a><span class="dot">·</span>4 天前</span></div></div></div><div class="news-item stream__item clearfix mt15" data-id="1190000015752299"><div class="news__item-info clearfix"><a target="_blank" href="https://segmentfault.com/a/1190000015752299"><div class="mb5 mt5"><h4 class="news__item-title mt0">golang不到30行代码实现依赖注入</h4></div><div class="article-excerpt">
+                      
+用java的人对于spring框架一定不会陌生，spring核心就是一个IoC(控制反转/依赖注入)容器，带来一个很大的优势是解耦。一般只依赖容
+器，而不依赖具体的类，当你的类有修改时，最多需要改动一下容器相关代码，业务...
+                    </div></a><div class="news__item-meta"><span class="pr20 votes-operation " data-id="1190000015752299" data-type="article"><span class="wrap"><i class="fa fa-thumbs-up hot"></i></span><span class="votes-num hot ">33</span><span class="dot ">·</span><span class="votes-word">赞</span></span><span class="bookmark-operation pr20 hidden" data-id="1190000015752299" data-type="article"><i class="fa fa-bookmark pr5"></i><span class="bookmark-word">收藏</span></span><span class="author pr20"><a href="https://segmentfault.com/u/xialeistudio">xialeistudio</a><span class="dot">·</span>5 天前</span></div></div></div><div class="news-item stream__item clearfix mt15" data-id="1190000015747143"><div class="news__item-info clearfix"><a href="https://segmentfault.com/a/1190000015747143" class="news-img" style="background-image:url(https://segmentfault.com/img/remote/1460000015747146)"></a><a target="_blank" href="https://segmentfault.com/a/1190000015747143"><div class="mb5 mt5"><h4 class="news__item-title mt0">如何实现一个HTTP请求库——axios源码阅读与分析</h4></div><div class="article-excerpt">
+                      在前端开发过程中，我们经常会遇到需要发送异步请求的情况。而使用一个功能齐全，接口完善的HTTP请求库，能够在很大程度上减少我们的开发成本，提高我们的开发效率。
+                    </div></a><div class="news__item-meta"><span class="pr20 votes-operation " data-id="1190000015747143" data-type="article"><span class="wrap"><i class="fa fa-thumbs-up hot"></i></span><span class="votes-num hot ">98</span><span class="dot ">·</span><span class="votes-word">赞</span></span><span class="bookmark-operation pr20 hidden" data-id="1190000015747143" data-type="article"><i class="fa fa-bookmark pr5"></i><span class="bookmark-word">收藏</span></span><span class="author pr20"><a href="https://segmentfault.com/u/hjava">hjava</a><span class="dot">·</span>6 天前</span></div></div></div><div class="news-item stream__item clearfix mt15" data-id="1190000015742857"><div class="news__item-info clearfix"><a target="_blank" href="https://segmentfault.com/a/1190000015742857"><div class="mb5 mt5"><h4 class="news__item-title mt0">Spring Boot Web 应用性能优化</h4></div><div class="article-excerpt">
+                      在大多数 Web 应用场景下，可以选择性地关闭一下自动装配的Spring 组件 Bean，以达到提升性能的目的。
+                    </div></a><div class="news__item-meta"><span class="pr20 votes-operation " data-id="1190000015742857" data-type="article"><span class="wrap"><i class="fa fa-thumbs-up hot"></i></span><span class="votes-num hot ">34</span><span class="dot ">·</span><span class="votes-word">赞</span></span><span class="bookmark-operation pr20 hidden" data-id="1190000015742857" data-type="article"><i class="fa fa-bookmark pr5"></i><span class="bookmark-word">收藏</span></span><span class="author pr20"><a href="https://segmentfault.com/u/mercyblitz">mercyblitz</a><span class="dot">·</span>6 天前</span></div></div></div><div class="news-item stream__item clearfix mt15" data-id="1190000015729074"><div class="news__item-info clearfix"><a href="https://segmentfault.com/a/1190000015729074" class="news-img" style="background-image:url(https://segmentfault.com/img/bVbd9Zt?w=800&amp;amp;h=393)"></a><a target="_blank" href="https://segmentfault.com/a/1190000015729074"><div class="mb5 mt5"><h4 class="news__item-title mt0">基于 HTML5 结合互联网+ 的 3D 隧道</h4></div><div class="article-excerpt">
+                      目前，物资采购和人力成本是隧道业发展的两大瓶颈。比如依靠民间借贷，融资成本很高；采购价格不透明，没有增值税发票；还有项目管控和供应链管理的问题。成本在不断上升，利润在不断下降，隧道产业的“互联网＋”...
+                    </div></a><div class="news__item-meta"><span class="pr20 votes-operation " data-id="1190000015729074" data-type="article"><span class="wrap"><i class="fa fa-thumbs-up hot"></i></span><span class="votes-num hot ">32</span><span class="dot ">·</span><span class="votes-word">赞</span></span><span class="bookmark-operation pr20 hidden" data-id="1190000015729074" data-type="article"><i class="fa fa-bookmark pr5"></i><span class="bookmark-word">收藏</span></span><span class="author pr20"><a href="https://segmentfault.com/u/hightopo">hightopo</a><span class="dot">·</span>7月23日</span></div></div></div><div class="news-item stream__item clearfix mt15" data-id="1190000015727823"><div class="news__item-info clearfix"><a href="https://segmentfault.com/a/1190000015727823" class="news-img" style="background-image:url(https://segmentfault.com/img/remote/1460000015746840?w=1120&amp;amp;h=876)"></a><a target="_blank" href="https://segmentfault.com/a/1190000015727823"><div class="mb5 mt5"><h4 class="news__item-title mt0">精读《手写 SQL 编译器 - 语法分析》</h4></div><div class="article-excerpt">
+                      自顶而下一般采用递归下降方式处理，称为 LL(k)，第一个 L 是指从左到右分析，第二个 L 
+指从左开始推导，k 是指超前查看的数量，如果实现了回溯功能，k 就是无限大的，所以带有回溯功能的 LL(k) 几乎是最强大的。...
+                    </div></a><div class="news__item-meta"><span class="pr20 votes-operation " data-id="1190000015727823" data-type="article"><span class="wrap"><i class="fa fa-thumbs-up hot"></i></span><span class="votes-num hot ">21</span><span class="dot ">·</span><span class="votes-word">赞</span></span><span class="bookmark-operation pr20 hidden" data-id="1190000015727823" data-type="article"><i class="fa fa-bookmark pr5"></i><span class="bookmark-word">收藏</span></span><span class="author pr20"><a href="https://segmentfault.com/u/aoyangyudakong">黄子毅</a><span class="dot">·</span>7月23日</span></div></div></div><div class="news-item stream__item clearfix mt15" data-id="1190000015726870"><div class="news__item-info clearfix"><a href="https://segmentfault.com/a/1190000015726870" class="news-img" style="background-image:url(https://segmentfault.com/img/remote/1460000015726873)"></a><a target="_blank" href="https://segmentfault.com/a/1190000015726870"><div class="mb5 mt5"><h4 class="news__item-title mt0">HashMap? ConcurrentHashMap? 相信看完这篇没人能难住你！</h4></div><div class="article-excerpt">
+                      本篇主要想讨论 ConcurrentHashMap 这样一个并发容器，在正式开始之前我觉得有必要谈谈 HashMap，没有它就不会有后面的 ConcurrentHashMap。
+                    </div></a><div class="news__item-meta"><span class="pr20 votes-operation " data-id="1190000015726870" data-type="article"><span class="wrap"><i class="fa fa-thumbs-up hot"></i></span><span class="votes-num hot ">58</span><span class="dot ">·</span><span class="votes-word">赞</span></span><span class="bookmark-operation pr20 hidden" data-id="1190000015726870" data-type="article"><i class="fa fa-bookmark pr5"></i><span class="bookmark-word">收藏</span></span><span class="author pr20"><a href="https://segmentfault.com/u/crossoverjie">crossoverJie</a><span class="dot">·</span>7月23日</span></div></div></div><div class="news-item stream__item clearfix mt15" data-id="1190000015726155"><div class="news__item-info clearfix"><a target="_blank" href="https://segmentfault.com/a/1190000015726155"><div class="mb5 mt5"><h4 class="news__item-title mt0">Hystrix降级逻辑中如何获取触发的异常</h4></div><div class="article-excerpt">
+                      通过之前Spring Cloud系列教程中的《Spring 
+Cloud构建微服务架构：服务容错保护（Hystrix服务降级）》一文，我们已经知道如何通过Hystrix来保护自己的服务不被外部依赖方拖垮的情
+况。但是实际使用过程中经常碰到...
+                    </div></a><div class="news__item-meta"><span class="pr20 votes-operation " data-id="1190000015726155" data-type="article"><span class="wrap"><i class="fa fa-thumbs-up "></i></span><span class="votes-num  ">6</span><span class="dot ">·</span><span class="votes-word">赞</span></span><span class="bookmark-operation pr20 hidden" data-id="1190000015726155" data-type="article"><i class="fa fa-bookmark pr5"></i><span class="bookmark-word">收藏</span></span><span class="author pr20"><a href="https://segmentfault.com/u/coderdd">程序员DD</a><span class="dot">·</span>7月22日</span></div></div></div><div class="news-item stream__item clearfix mt15" data-id="1190000015701263"><div class="news__item-info clearfix"><a target="_blank" href="https://segmentfault.com/a/1190000015701263"><div class="mb5 mt5"><h4 class="news__item-title mt0">Iterator：访问数据集合的统一接口</h4></div><div class="article-excerpt">
+                      
+遍历器Iterator是ES6为访问数据集合提供的统一接口。任何内部部署了遍历器接口的数据集合，对于用户来说，都可以使用相同方式获取到相应的数据
+结构。如果使用的是最新版Chrome浏览器，那么你要知道——我们所熟悉的...
+                    </div></a><div class="news__item-meta"><span class="pr20 votes-operation " data-id="1190000015701263" data-type="article"><span class="wrap"><i class="fa fa-thumbs-up hot"></i></span><span class="votes-num hot ">32</span><span class="dot ">·</span><span class="votes-word">赞</span></span><span class="bookmark-operation pr20 hidden" data-id="1190000015701263" data-type="article"><i class="fa fa-bookmark pr5"></i><span class="bookmark-word">收藏</span></span><span class="author pr20"><a href="https://segmentfault.com/u/wmaker">wmaker</a><span class="dot">·</span>7月20日</span></div></div></div><div class="news-item stream__item clearfix mt15" data-id="1190000015688023"><div class="news__item-info clearfix"><a href="https://segmentfault.com/a/1190000015688023" class="news-img" style="background-image:url(https://segmentfault.com/img/remote/1460000015688026?w=256&amp;amp;h=102)"></a><a target="_blank" href="https://segmentfault.com/a/1190000015688023"><div class="mb5 mt5"><h4 class="news__item-title mt0">Android 插件化原理学习 —— Hook 机制之动态代理</h4></div><div class="article-excerpt">
+                      为了实现 App 的快速迭代更新，基于 H5 Hybrid 的解决方案有很多，由于 webview 
+本身的性能问题，也随之出现了很多基于 JS 引擎实现的原生渲染的方案，例如 React Native、weex 
+等，而国内一线大厂基本上主要还是...
+                    </div></a><div class="news__item-meta"><span class="pr20 votes-operation " data-id="1190000015688023" data-type="article"><span class="wrap"><i class="fa fa-thumbs-up "></i></span><span class="votes-num  ">11</span><span class="dot ">·</span><span class="votes-word">赞</span></span><span class="bookmark-operation pr20 hidden" data-id="1190000015688023" data-type="article"><i class="fa fa-bookmark pr5"></i><span class="bookmark-word">收藏</span></span><span class="author pr20"><a href="https://segmentfault.com/u/zhaomenghuan">匠心</a><span class="dot">·</span>7月19日</span></div></div></div><div class="news-item stream__item clearfix mt15" data-id="1190000015678155"><div class="news__item-info clearfix"><a href="https://segmentfault.com/a/1190000015678155" class="news-img" style="background-image:url(https://segmentfault.com/img/bVbdWKL?w=848&amp;amp;h=770)"></a><a target="_blank" href="https://segmentfault.com/a/1190000015678155"><div class="mb5 mt5"><h4 class="news__item-title mt0">Hybrid App技术解析 -- 原理篇</h4></div><div class="article-excerpt">
+                      随着 Web 技术和移动设备的快速发展，Hybrid 技术已经成为一种最主流最常见的方案。一套好的 
+Hybrid架构方案 能让 App 既能拥有极致的体验和性能，同时也能拥有 Web技术 灵活的开发模式、跨平台能力以及热更新机...
+                    </div></a><div class="news__item-meta"><span class="pr20 votes-operation " data-id="1190000015678155" data-type="article"><span class="wrap"><i class="fa fa-thumbs-up hot"></i></span><span class="votes-num hot ">90</span><span class="dot ">·</span><span class="votes-word">赞</span></span><span class="bookmark-operation pr20 hidden" data-id="1190000015678155" data-type="article"><i class="fa fa-bookmark pr5"></i><span class="bookmark-word">收藏</span></span><span class="author pr20"><a href="https://segmentfault.com/u/guodongdong_59847d39a0225">郭东东</a><span class="dot">·</span>7月18日</span></div></div></div><div class="news-item stream__item clearfix mt15" data-id="1190000015675945"><div class="news__item-info clearfix"><a href="https://segmentfault.com/a/1190000015675945" class="news-img" style="background-image:url(https://segmentfault.com/img/remote/1460000015675948?w=1120&amp;amp;h=1650)"></a><a target="_blank" href="https://segmentfault.com/a/1190000015675945"><div class="mb5 mt5"><h4 class="news__item-title mt0">ES6 系列之模拟实现一个 Set 数据结构</h4></div><div class="article-excerpt">
+                      Set 函数可以接受一个数组（或者具有 iterable 接口的其他数据结构）作为参数，用来初始化。
+                    </div></a><div class="news__item-meta"><span class="pr20 votes-operation " data-id="1190000015675945" data-type="article"><span class="wrap"><i class="fa fa-thumbs-up hot"></i></span><span class="votes-num hot ">32</span><span class="dot ">·</span><span class="votes-word">赞</span></span><span class="bookmark-operation pr20 hidden" data-id="1190000015675945" data-type="article"><i class="fa fa-bookmark pr5"></i><span class="bookmark-word">收藏</span></span><span class="author pr20"><a href="https://segmentfault.com/u/yayu">冴羽</a><span class="dot">·</span>7月18日</span></div></div></div><div class="news-item stream__item clearfix mt15" data-id="1190000015665465"><div class="news__item-info clearfix"><a href="https://segmentfault.com/a/1190000015665465" class="news-img" style="background-image:url(https://segmentfault.com/img/bVbdTq4?w=393&amp;amp;h=333)"></a><a target="_blank" href="https://segmentfault.com/a/1190000015665465"><div class="mb5 mt5"><h4 class="news__item-title mt0">合并HTTP请求 vs 并行HTTP请求，到底谁更快？</h4></div><div class="article-excerpt">
+                      继续问：浏览器不是可以并行下载资源吗？将多个资源合并成一个资源，只使用一个HTTP请求下载，难道要比用多个HTTP请求并行下载没有合并过的多个资源速度更快？
+                    </div></a><div class="news__item-meta"><span class="pr20 votes-operation " data-id="1190000015665465" data-type="article"><span class="wrap"><i class="fa fa-thumbs-up hot"></i></span><span class="votes-num hot ">142</span><span class="dot ">·</span><span class="votes-word">赞</span></span><span class="bookmark-operation pr20 hidden" data-id="1190000015665465" data-type="article"><i class="fa fa-bookmark pr5"></i><span class="bookmark-word">收藏</span></span><span class="author pr20"><a href="https://segmentfault.com/u/xuchaobei">艾特老干部</a><span class="dot">·</span>7月17日</span></div></div></div><div class="news-item stream__item clearfix mt15" data-id="1190000015659597"><div class="news__item-info clearfix"><a href="https://segmentfault.com/a/1190000015659597" class="news-img" style="background-image:url(https://segmentfault.com/img/remote/1460000015659600?w=560&amp;amp;h=403)"></a><a target="_blank" href="https://segmentfault.com/a/1190000015659597"><div class="mb5 mt5"><h4 class="news__item-title mt0">5种方法教你用Python玩转histogram直方图</h4></div><div class="article-excerpt">
+                      直方图是一个可以快速展示数据概率分布的工具，直观易于理解，并深受数据爱好者的喜爱。大家平时可能见到最多就是 matplotlib，seaborn 等高级封装的库包，类似以下这样的绘图。
+                    </div></a><div class="news__item-meta"><span class="pr20 votes-operation " data-id="1190000015659597" data-type="article"><span class="wrap"><i class="fa fa-thumbs-up hot"></i></span><span class="votes-num hot ">17</span><span class="dot ">·</span><span class="votes-word">赞</span></span><span class="bookmark-operation pr20 hidden" data-id="1190000015659597" data-type="article"><i class="fa fa-bookmark pr5"></i><span class="bookmark-word">收藏</span></span><span class="author pr20"><a href="https://segmentfault.com/u/xiaoyusmd">路远</a><span class="dot">·</span>7月17日</span></div></div></div><div class="news-item stream__item clearfix mt15" data-id="1190000015650360"><div class="news__item-info clearfix"><a href="https://segmentfault.com/a/1190000015650360" class="news-img" style="background-image:url(https://segmentfault.com/img/remote/1460000015650363)"></a><a target="_blank" href="https://segmentfault.com/a/1190000015650360"><div class="mb5 mt5"><h4 class="news__item-title mt0">性能更优越的小程序图片懒加载方式</h4></div><div class="article-excerpt">
+                      懒加载或者可以说是延迟加载，针对非首屏或者用户"看不到"的地方延迟加载，有利于页面首屏加载速度快、节约了流量,用户体验好
+                    </div></a><div class="news__item-meta"><span class="pr20 votes-operation " data-id="1190000015650360" data-type="article"><span class="wrap"><i class="fa fa-thumbs-up hot"></i></span><span class="votes-num hot ">140</span><span class="dot ">·</span><span class="votes-word">赞</span></span><span class="bookmark-operation pr20 hidden" data-id="1190000015650360" data-type="article"><i class="fa fa-bookmark pr5"></i><span class="bookmark-word">收藏</span></span><span class="author pr20"><a href="https://segmentfault.com/u/jayzou">jayzou</a><span class="dot">·</span>7月16日</span></div></div></div><div class="news-item stream__item clearfix mt15" data-id="1190000015648433"><div class="news__item-info clearfix"><a href="https://segmentfault.com/a/1190000015648433" class="news-img" style="background-image:url(https://segmentfault.com/img/remote/1460000015648436?w=1277&amp;amp;h=650)"></a><a target="_blank" href="https://segmentfault.com/a/1190000015648433"><div class="mb5 mt5"><h4 class="news__item-title mt0">Linux服务器下的HTTP抓包分析</h4></div><div class="article-excerpt">
+                      
+说到抓包分析，最简单的办法莫过于在客户端直接安装一个Wireshark或者Fiddler了，但是有时候由于客户端开发人员（可能是第三方）知识欠缺
+或者其它一些原因，无法顺利的在客户端进行抓包分析，这种情况下怎么办呢？
+                    </div></a><div class="news__item-meta"><span class="pr20 votes-operation " data-id="1190000015648433" data-type="article"><span class="wrap"><i class="fa fa-thumbs-up hot"></i></span><span class="votes-num hot ">44</span><span class="dot ">·</span><span class="votes-word">赞</span></span><span class="bookmark-operation pr20 hidden" data-id="1190000015648433" data-type="article"><i class="fa fa-bookmark pr5"></i><span class="bookmark-word">收藏</span></span><span class="author pr20"><a href="https://segmentfault.com/u/mylxsw">mylxsw</a><span class="dot">·</span>7月16日</span></div></div></div><div class="news-item stream__item clearfix mt15" data-id="1190000015646040"><div class="news__item-info clearfix"><a target="_blank" href="https://segmentfault.com/a/1190000015646040"><div class="mb5 mt5"><h4 class="news__item-title mt0">精读《手写 SQL 编译器 - 文法介绍》</h4></div><div class="article-excerpt">
+                      我们将一块语法规则称为 产生式，使用 “Left → Right” 表示任意产生式，用 “Left =&gt; Right” 表示产生式的推导过程，比如对于产生式：
+                    </div></a><div class="news__item-meta"><span class="pr20 votes-operation " data-id="1190000015646040" data-type="article"><span class="wrap"><i class="fa fa-thumbs-up "></i></span><span class="votes-num  ">10</span><span class="dot ">·</span><span class="votes-word">赞</span></span><span class="bookmark-operation pr20 hidden" data-id="1190000015646040" data-type="article"><i class="fa fa-bookmark pr5"></i><span class="bookmark-word">收藏</span></span><span class="author pr20"><a href="https://segmentfault.com/u/aoyangyudakong">黄子毅</a><span class="dot">·</span>7月16日</span></div></div></div><div class="news-item stream__item clearfix mt15" data-id="1190000015644803"><div class="news__item-info clearfix"><a href="https://segmentfault.com/a/1190000015644803" class="news-img" style="background-image:url(https://segmentfault.com/img/bVbdN4p?w=800&amp;amp;h=398)"></a><a target="_blank" href="https://segmentfault.com/a/1190000015644803"><div class="mb5 mt5"><h4 class="news__item-title mt0">基于 HTML5 结合互联网+的电力接线图</h4></div><div class="article-excerpt">
+                      “互联网+”思维让数据的搜集和获取更加便捷，并且随着大数据的深度开发和应用，数据分析预测对于提升用户体验有非常重要的价值，同时也为不同行业、不同领域的合作提供了更广阔的空间。传统的发电企业是一个资金、...
+                    </div></a><div class="news__item-meta"><span class="pr20 votes-operation " data-id="1190000015644803" data-type="article"><span class="wrap"><i class="fa fa-thumbs-up hot"></i></span><span class="votes-num hot ">28</span><span class="dot ">·</span><span class="votes-word">赞</span></span><span class="bookmark-operation pr20 hidden" data-id="1190000015644803" data-type="article"><i class="fa fa-bookmark pr5"></i><span class="bookmark-word">收藏</span></span><span class="author pr20"><a href="https://segmentfault.com/u/hightopo">hightopo</a><span class="dot">·</span>7月16日</span></div></div></div><div class="news-item stream__item clearfix mt15" data-id="1190000015643384"><div class="news__item-info clearfix"><a href="https://segmentfault.com/a/1190000015643384" class="news-img" style="background-image:url(https://segmentfault.com/img/remote/1460000015643387?w=2048&amp;amp;h=1150)"></a><a target="_blank" href="https://segmentfault.com/a/1190000015643384"><div class="mb5 mt5"><h4 class="news__item-title mt0">Guava 源码分析（Cache 原理【二阶段】）</h4></div><div class="article-excerpt">
+                      前言 在上文「Guava 源码分析（Cache 原理）」中分析了 Guava Cache 
+的相关原理。 文末提到了回收机制、移除时间通知等内容，许多朋友也挺感兴趣，这次就这两个内容再来分析分析。 在开始之前先补习下 Java 
+自带...
+                    </div></a><div class="news__item-meta"><span class="pr20 votes-operation " data-id="1190000015643384" data-type="article"><span class="wrap"><i class="fa fa-thumbs-up "></i></span><span class="votes-num  ">5</span><span class="dot ">·</span><span class="votes-word">赞</span></span><span class="bookmark-operation pr20 hidden" data-id="1190000015643384" data-type="article"><i class="fa fa-bookmark pr5"></i><span class="bookmark-word">收藏</span></span><span class="author pr20"><a href="https://segmentfault.com/u/crossoverjie">crossoverJie</a><span class="dot">·</span>7月16日</span></div></div></div><div class="news-item stream__item clearfix mt15" data-id="1190000015611632"><div class="news__item-info clearfix"><a href="https://segmentfault.com/a/1190000015611632" class="news-img" style="background-image:url(https://segmentfault.com/img/bVbdFqK?w=1118&amp;amp;h=480)"></a><a target="_blank" href="https://segmentfault.com/a/1190000015611632"><div class="mb5 mt5"><h4 class="news__item-title mt0">移除注释的完善思路：真的可以用正则实现？</h4></div><div class="article-excerpt">
+                      网上有很多自称能实现移除JS注释的正则表达式，实际上存在种种缺陷。这使人多少有些愕然，也不禁疑惑到：真的可以用正则实现吗？而本篇文章以使用正则移除JS注释为目标，通过实践，由浅及深，遇到问题解决问题，...
+                    </div></a><div class="news__item-meta"><span class="pr20 votes-operation " data-id="1190000015611632" data-type="article"><span class="wrap"><i class="fa fa-thumbs-up hot"></i></span><span class="votes-num hot ">34</span><span class="dot ">·</span><span class="votes-word">赞</span></span><span class="bookmark-operation pr20 hidden" data-id="1190000015611632" data-type="article"><i class="fa fa-bookmark pr5"></i><span class="bookmark-word">收藏</span></span><span class="author pr20"><a href="https://segmentfault.com/u/wmaker">wmaker</a><span class="dot">·</span>7月12日</span></div></div></div><div class="news-item stream__item clearfix mt15" data-id="1190000015603847"><div class="news__item-info clearfix"><a href="https://segmentfault.com/a/1190000015603847" class="news-img" style="background-image:url(https://segmentfault.com/img/bVbdDjJ?w=677&amp;amp;h=236)"></a><a target="_blank" href="https://segmentfault.com/a/1190000015603847"><div class="mb5 mt5"><h4 class="news__item-title mt0">Swoft 源码剖析 - Swoole和Swoft的那些事 (Http/Rpc服务篇)</h4></div><div class="article-excerpt">
+                      作者：bromine链接：[链接]來源：简书著作权归作者所有，本文已获得作者授权转载，并对原文进行了重新的排版。Swoft Github: [链接]
+                    </div></a><div class="news__item-meta"><span class="pr20 votes-operation " data-id="1190000015603847" data-type="article"><span class="wrap"><i class="fa fa-thumbs-up hot"></i></span><span class="votes-num hot ">28</span><span class="dot ">·</span><span class="votes-word">赞</span></span><span class="bookmark-operation pr20 hidden" data-id="1190000015603847" data-type="article"><i class="fa fa-bookmark pr5"></i><span class="bookmark-word">收藏</span></span><span class="author pr20"><a href="https://segmentfault.com/u/huangzhhui">huangzhhui</a><span class="dot">·</span>7月11日</span></div></div></div><div class="news-item stream__item clearfix mt15" data-id="1190000015592863"><div class="news__item-info clearfix"><a href="https://segmentfault.com/a/1190000015592863" class="news-img" style="background-image:url(https://segmentfault.com/img/bVbdAmb?w=1310&amp;amp;h=1204)"></a><a target="_blank" href="https://segmentfault.com/a/1190000015592863"><div class="mb5 mt5"><h4 class="news__item-title mt0">多人协同开发如何保证代码质量！看看这篇《理想中的Jenkins+Sonar+Github代码质量管理》</h4></div><div class="article-excerpt">
+                      前阵子老美的Audit要求各个开发组截图各自repository的Sonar Analysis Report，我跑去Sonarqube一看。。。好家伙！全是红灯，简直惨不忍睹
+                    </div></a><div class="news__item-meta"><span class="pr20 votes-operation " data-id="1190000015592863" data-type="article"><span class="wrap"><i class="fa fa-thumbs-up hot"></i></span><span class="votes-num hot ">85</span><span class="dot ">·</span><span class="votes-word">赞</span></span><span class="bookmark-operation pr20 hidden" data-id="1190000015592863" data-type="article"><i class="fa fa-bookmark pr5"></i><span class="bookmark-word">收藏</span></span><span class="author pr20"><a href="https://segmentfault.com/u/momoko8443">熊丸子</a><span class="dot">·</span>7月10日</span></div></div></div><div class="news-item stream__item clearfix mt15" data-id="1190000015592310"><div class="news__item-info clearfix"><a href="https://segmentfault.com/a/1190000015592310" class="news-img" style="background-image:url(https://segmentfault.com/img/remote/1460000015592313)"></a><a target="_blank" href="https://segmentfault.com/a/1190000015592310"><div class="mb5 mt5"><h4 class="news__item-title mt0">分支预测：为什么有序数组比无序数组快?</h4></div><div class="article-excerpt">
+                      我在一年前(2017年1月) 曾写过一篇文章《JavaScript 
+函数式编程存在性能问题么？》，在文中我对数组高阶函数以及 for-loop 进行了基准测试，得到的结果是 map`reduce` 
+这些函数比原生的 for-loop 大概有 20 倍的...
+                    </div></a><div class="news__item-meta"><span class="pr20 votes-operation " data-id="1190000015592310" data-type="article"><span class="wrap"><i class="fa fa-thumbs-up hot"></i></span><span class="votes-num hot ">30</span><span class="dot ">·</span><span class="votes-word">赞</span></span><span class="bookmark-operation pr20 hidden" data-id="1190000015592310" data-type="article"><i class="fa fa-bookmark pr5"></i><span class="bookmark-word">收藏</span></span><span class="author pr20"><a href="https://segmentfault.com/u/justjavac">justjavac</a><span class="dot">·</span>7月10日</span></div></div></div><div class="news-item stream__item clearfix mt15" data-id="1190000015589926"><div class="news__item-info clearfix"><a target="_blank" href="https://segmentfault.com/a/1190000015589926"><div class="mb5 mt5"><h4 class="news__item-title mt0">对 SegmentFault 社区提问标准的一些解释</h4></div><div class="article-excerpt">
+                      有心的用户应该发现最近 SegmentFault 
+问答的审核趋向严格，甚至一些已经正常展示的问题都会因质量问题提示作者修改。随着社区用户的增长，新进入用户的习惯正逐渐冲击着之前社区形成的默契，我
+们的问答质量出现...
+                    </div></a><div class="news__item-meta"><span class="pr20 votes-operation " data-id="1190000015589926" data-type="article"><span class="wrap"><i class="fa fa-thumbs-up hot"></i></span><span class="votes-num hot ">71</span><span class="dot ">·</span><span class="votes-word">赞</span></span><span class="bookmark-operation pr20 hidden" data-id="1190000015589926" data-type="article"><i class="fa fa-bookmark pr5"></i><span class="bookmark-word">收藏</span></span><span class="author pr20"><a href="https://segmentfault.com/u/joyqi">joyqi</a><span class="dot">·</span>7月10日</span></div></div></div><div class="news-item stream__item clearfix mt15" data-id="1190000015588193"><div class="news__item-info clearfix"><a href="https://segmentfault.com/a/1190000015588193" class="news-img" style="background-image:url(https://segmentfault.com/img/remote/1460000015588196?w=365&amp;amp;h=136)"></a><a target="_blank" href="https://segmentfault.com/a/1190000015588193"><div class="mb5 mt5"><h4 class="news__item-title mt0">CSS魔法堂：更丰富的前端动效by CSS Animation</h4></div><div class="article-excerpt">
+                      
+在《CSS魔法堂：Transition就这么好玩》中我们了解到对于简单的补间动画，我们可以通过transition实现。那到底多简单的动画适合用
+transtion来实现呢？答案就是——我们只需定义动画起始和结束帧的状态的动画。一旦...
+                    </div></a><div class="news__item-meta"><span class="pr20 votes-operation " data-id="1190000015588193" data-type="article"><span class="wrap"><i class="fa fa-thumbs-up hot"></i></span><span class="votes-num hot ">28</span><span class="dot ">·</span><span class="votes-word">赞</span></span><span class="bookmark-operation pr20 hidden" data-id="1190000015588193" data-type="article"><i class="fa fa-bookmark pr5"></i><span class="bookmark-word">收藏</span></span><span class="author pr20"><a href="https://segmentfault.com/u/fsjohnhuang">肥子John</a><span class="dot">·</span>7月10日</span></div></div></div><div class="news-item stream__item clearfix mt15" data-id="1190000015585585"><div class="news__item-info clearfix"><a target="_blank" href="https://segmentfault.com/a/1190000015585585"><div class="mb5 mt5"><h4 class="news__item-title mt0">ES6 系列之迭代器与 for of</h4></div><div class="article-excerpt">
+                      看着很简单，但是再回顾这段代码，实际上我们仅仅是需要数组中元素的值，但是却需要提前获取数组长度，声明索引变量等，尤其当多个循环嵌套的时候，更需要使用多个索引变量，代码的复杂度就会大大增加，比如我们...
+                    </div></a><div class="news__item-meta"><span class="pr20 votes-operation " data-id="1190000015585585" data-type="article"><span class="wrap"><i class="fa fa-thumbs-up hot"></i></span><span class="votes-num hot ">29</span><span class="dot ">·</span><span class="votes-word">赞</span></span><span class="bookmark-operation pr20 hidden" data-id="1190000015585585" data-type="article"><i class="fa fa-bookmark pr5"></i><span class="bookmark-word">收藏</span></span><span class="author pr20"><a href="https://segmentfault.com/u/yayu">冴羽</a><span class="dot">·</span>7月10日</span></div></div></div></div>
+                <div class="text-center">
+          <ul class="pager">
+            <li id="btn-load-more" class="hidden"><a href="javascript:;">点击载入更多</a></li>
+            <li id="btn-loading" class="hidden"><a href="javascript:;"><i class="fa fa-spinner fa-spin" aria-hidden="true"></i> 载入中</a></li>
+          </ul>
+        </div>
+      </div>
+
+      <div class="col-md-3 right">
+                        
+            <div id="notices" class="">
+        <div class="alert alert-warning" role="alert">
+            <a class="report" href="https://segmentfault.com/a/1190000015589926">关于 SegmentFault 社区提问标准的一些解释</a>
+        </div>
+    </div>
+
+
+        <div class="mb25 hidden-md hidden-sm hidden-xs">
+    <img src="segmentfault.com_files/20180730.png" alt="Planets" usemap="#gridsMap" width="255" height="255">
+    <map name="gridsMap" id="gridsMap"><area shape="rect" target="_blank" onmouseover="d(this)" onmouseout="e(this)" onclick="c(1750000015297432)" coords="68,136,170,153" href="https://www.pgyer.com/" stitle="方便快捷的对移动应用进行分发"><area shape="rect" target="_blank" onmouseover="d(this)" onmouseout="e(this)" onclick="c(1750000015407386)" coords="119,170,221,187" href="https://www.tracup.com/" stitle="轻量便捷的Bug管理系统Tracup，让你高效工作，远离加班"><area shape="rect" target="_blank" onmouseover="d(this)" onmouseout="e(this)" onclick="c(1750000015407700)" coords="34,170,85,204" href="https://www.frontjs.com/" stitle="前端错误监控平台FrontJS，一个平台，Web端和小程序错误监控全搞定"><area shape="rect" target="_blank" onmouseover="d(this)" onmouseout="e(this)" onclick="c(1750000015583482)" coords="0,34,119,51" href="https://www.grapecity.com.cn/developer/spreadjs?utm_source=segmentfault&amp;utm_medium=cpt&amp;utm_term=spreadjs&amp;utm_content=spreadjs&amp;ut" stitle="基于HTML5的表格控件，与Excel高度类似，华为重点合作伙伴"><area shape="rect" target="_blank" onmouseover="d(this)" onmouseout="e(this)" onclick="c(1750000015716948)" coords="119,85,136,102" href="https://www.renren.io/?from=segmentfault" stitle="人人开源，免费开源的后台脚手架框架"><area shape="rect" target="_blank" onmouseover="d(this)" onmouseout="e(this)" onclick="c(1750000015772931)" coords="187,51,221,68" href="https://www.accesshub.cn/" stitle="自动化组网产品，满足用户远程接入混合云，云与云VPC互通，企业与云互通需求"><area shape="rect" target="_blank" onmouseover="d(this)" onmouseout="e(this)" onclick="c(1750000015774378)" coords="136,17,255,51" href="http://www.toastenglish.com/1024/english.html" stitle="献给开发者的英文课：坚持21天，读懂英文文档"></map>
+    <div style="text-align: center;"><a style="text-align:center; color:#9E9E9E; font-size:12px" href="https://segmentfault.com/sponsor">想在上方展示你的广告？</a></div>
+    <script>
+        let areaArr = []
+                        var fileUrl = "https://static.segmentfault.com/sponsor/20180730.json"
+        
+                        var viewApi = `https://segmentfault.com/ad/track/view`
+        
+        fetch(fileUrl)
+            .then(res => res.json())
+            .then(data => {
+                fetch(viewApi, {mode: 'no-cors'})
+
+                var sTitle="";
+                window.d = function(o) {
+                  sTitle = o.getAttribute('stitle');
+                  document.getElementById("gridMapHoverBox").style.display = "block"
+                }
+
+                window.e = function(o) {
+                  sTitle = "";
+                  document.getElementById("gridMapHoverBox").style.display = "none"
+                }
+
+                window.c = function(id) {
+                                                            var clickApi = `https://segmentfault.com/ad/track/click?id=${id}`
+                                        
+                    fetch(clickApi, {mode: 'no-cors'})
+                }
+
+                data.forEach(item => {
+                    let html = `<area shape="rect" 
+                        target="_blank"
+                        onmouseover="d(this)"
+                        onmouseout="e(this)"
+                        onclick="c(${item.id})"
+                        coords="${item.area_info.left},${item.area_info.top},${(+item.area_info.left)+(+item.area_info.width)},${(+item.area_info.top)+(+item.area_info.height)}" 
+                        href="${item.link}" 
+                        stitle="${item.title}" />`
+                    areaArr.push(html)
+                })
+                document.getElementById('gridsMap').innerHTML = areaArr.join('')
+
+                
+                
+                document.getElementById('gridsMap').onmousemove = function(e) {
+                    let pos = getMousePos(e)
+
+                    document.getElementById("gridMapHoverBox").style.left = pos.x + 20 + 'px'
+                    document.getElementById("gridMapHoverBox").style.top = pos.y + 20 + 'px'
+
+                    document.getElementById("gridMapHoverBox").innerHTML = sTitle
+
+                }
+            }).catch(err => {
+                console.log('使用了广告屏蔽扩展')
+            })
+
+        function getMousePos(event) {
+            var e = event || window.event;
+            var scrollX = document.documentElement.scrollLeft || document.body.scrollLeft;
+            var scrollY = document.documentElement.scrollTop || document.body.scrollTop;
+            var x = e.pageX || e.clientX + scrollX;
+            var y = e.pageY || e.clientY + scrollY;
+            return { 'x': x, 'y': y };
+        } 
+
+        // 增加 view 统计
+            </script>
+</div>
+
+                <div class="sf-live-recommend">
+    <div class="live-recommend">
+        <div class="live-recommend-header">
+        <h4><a href="https://segmentfault.com/lives">讲座推荐</a></h4>
+        <span class="live-recommend-operation">
+            <i class="fa fa-chevron-circle-left arrow-left arrow" aria-hidden="true"></i>
+            <i class="fa fa-chevron-circle-right arrow-right arrow" aria-hidden="true"></i>
+        </span>
+        </div>
+
+        <div class="live-recommend-wrapper">
+        <div class="live-recommend-detail" style="width: 1464px; left: -424px;">
+        <div class="live-recommend-detail-item">
+          <div class="live-recommend-detail-item-banner">
+            <a href="https://segmentfault.com/l/1500000015338418">
+              <img src="segmentfault.com_files/1410213788-5b2bc9100a9a9_render.png">
+            </a>
+          </div>
+          <h5 class="live-recommend-detail-item-title">
+            <a href="https://segmentfault.com/l/1500000015338418">跨平台移动App开发实战</a>
+          </h5>
+          <div class="mb5">
+            
+            
+            (19 人参与)
+          </div>
+          <span>
+          <span class="cur-price">￥9.90</span>
+          
+        </span></div>
+        
+        <div class="live-recommend-detail-item">
+          <div class="live-recommend-detail-item-banner">
+            <a href="https://segmentfault.com/l/1500000015672594">
+              <img src="segmentfault.com_files/4230207948-5b4e998072247_render.jpg">
+            </a>
+          </div>
+          <h5 class="live-recommend-detail-item-title">
+            <a href="https://segmentfault.com/l/1500000015672594">「Yii2启示录」生命周期 一人撑起千斤担</a>
+          </h5>
+          <div class="mb5">
+            
+            
+            (4 人参与)
+          </div>
+          <span>
+          <span class="cur-price">￥16.90</span>
+          
+        </span></div>
+        
+        <div class="live-recommend-detail-item">
+          <div class="live-recommend-detail-item-banner">
+            <a href="https://segmentfault.com/l/1500000015237807">
+              <img src="segmentfault.com_files/3445122803-5b1bd6d864c8b_render.jpg">
+            </a>
+          </div>
+          <h5 class="live-recommend-detail-item-title">
+            <a href="https://segmentfault.com/l/1500000015237807">浏览器工作原理及在网页性能优化中的应用</a>
+          </h5>
+          <div class="mb5">
+            
+            
+            (66 人参与)
+          </div>
+          <span>
+          <span class="cur-price">￥9.90</span>
+          
+        </span></div>
+        
+        <div class="live-recommend-detail-item">
+          <div class="live-recommend-detail-item-banner">
+            <a href="https://segmentfault.com/l/1500000015338418">
+              <img src="segmentfault.com_files/1410213788-5b2bc9100a9a9_render.png">
+            </a>
+          </div>
+          <h5 class="live-recommend-detail-item-title">
+            <a href="https://segmentfault.com/l/1500000015338418">跨平台移动App开发实战</a>
+          </h5>
+          <div class="mb5">
+            
+            
+            (19 人参与)
+          </div>
+          <span>
+          <span class="cur-price">￥9.90</span>
+          
+        </span></div>
+        
+        <div class="live-recommend-detail-item">
+          <div class="live-recommend-detail-item-banner">
+            <a href="https://segmentfault.com/l/1500000015672594">
+              <img src="segmentfault.com_files/4230207948-5b4e998072247_render.jpg">
+            </a>
+          </div>
+          <h5 class="live-recommend-detail-item-title">
+            <a href="https://segmentfault.com/l/1500000015672594">「Yii2启示录」生命周期 一人撑起千斤担</a>
+          </h5>
+          <div class="mb5">
+            
+            
+            (4 人参与)
+          </div>
+          <span>
+          <span class="cur-price">￥16.90</span>
+          
+        </span></div>
+        
+        <div class="live-recommend-detail-item">
+          <div class="live-recommend-detail-item-banner">
+            <a href="https://segmentfault.com/l/1500000015237807">
+              <img src="segmentfault.com_files/3445122803-5b1bd6d864c8b_render.jpg">
+            </a>
+          </div>
+          <h5 class="live-recommend-detail-item-title">
+            <a href="https://segmentfault.com/l/1500000015237807">浏览器工作原理及在网页性能优化中的应用</a>
+          </h5>
+          <div class="mb5">
+            
+            
+            (66 人参与)
+          </div>
+          <span>
+          <span class="cur-price">￥9.90</span>
+          
+        </span></div>
+        
+        <div class="live-recommend-detail-item">
+          <div class="live-recommend-detail-item-banner">
+            <a href="https://segmentfault.com/l/1500000015338418">
+              <img src="segmentfault.com_files/1410213788-5b2bc9100a9a9_render.png">
+            </a>
+          </div>
+          <h5 class="live-recommend-detail-item-title">
+            <a href="https://segmentfault.com/l/1500000015338418">跨平台移动App开发实战</a>
+          </h5>
+          <div class="mb5">
+            
+            
+            (19 人参与)
+          </div>
+          <span>
+          <span class="cur-price">￥9.90</span>
+          
+        </span></div>
+        </div>
+        </div>
+    </div>
+</div>
+                        <div id="mm_124884735_33830642_169426576"></div>
+                <div class="activity-recommend mb30">
+          <a href="https://segmentfault.com/events" class="more-btn pull-right">更多</a>
+          <div class="activity-title">活动推荐</div>
+          <div class="activity-recommend-area">
+          <a class="activity-recommend-item" href="https://segmentfault.com/e/1160000015788093">
+            <div class="activity-date pull-left">
+              <div class="activity-date-wrapper">
+                <div class="activity-date-up">AUG</div>
+                <div class="activity-date-down">11</div>
+              </div>
+            </div>
+            <div class="activity-detail">
+              <div class="activity-detail-title">Tech Talks 北京站，从技术到管理的高阶进化论！</div>
+              <span class="activity-detail-base">北京</span><span class="dot">·</span>08-11&nbsp;&nbsp;周六<span class="dot">·</span><span class="activity-state">报名中</span>
+            </div>
+          </a>
+        
+          <a class="activity-recommend-item" href="https://segmentfault.com/e/1160000015773416">
+            <div class="activity-date pull-left">
+              <div class="activity-date-wrapper">
+                <div class="activity-date-up">AUG</div>
+                <div class="activity-date-down">14</div>
+              </div>
+            </div>
+            <div class="activity-detail">
+              <div class="activity-detail-title">“飞凤数创”2018物联网数据创新大赛</div>
+              <span class="activity-detail-base">杭州</span><span class="dot">·</span>08-14&nbsp;&nbsp;周二<span class="dot">·</span><span class="activity-state">报名中</span>
+            </div>
+          </a>
+        
+          <a class="activity-recommend-item" href="https://segmentfault.com/e/1160000015646331">
+            <div class="activity-date pull-left">
+              <div class="activity-date-wrapper">
+                <div class="activity-date-up">AUG</div>
+                <div class="activity-date-down">18</div>
+              </div>
+            </div>
+            <div class="activity-detail">
+              <div class="activity-detail-title">《科技改变未来》第二届如皋开源空间黑客松</div>
+              <span class="activity-detail-base">南通</span><span class="dot">·</span>08-18&nbsp;&nbsp;周六<span class="dot">·</span><span class="activity-state">报名中</span>
+            </div>
+          </a>
+        
+          <a class="activity-recommend-item" href="https://segmentfault.com/e/1160000015587163">
+            <div class="activity-date pull-left">
+              <div class="activity-date-wrapper">
+                <div class="activity-date-up">JUL</div>
+                <div class="activity-date-down">31</div>
+              </div>
+            </div>
+            <div class="activity-detail">
+              <div class="activity-detail-title">应变而生·顺势而上——《敏捷实践指南》深度解析</div>
+              <span class="activity-detail-base">北京</span><span class="dot">·</span>07-31&nbsp;&nbsp;周二<span class="dot">·</span><span class="activity-state">报名中</span>
+            </div>
+          </a>
+        
+          <a class="activity-recommend-item" href="https://segmentfault.com/e/1160000015381568">
+            <div class="activity-date pull-left">
+              <div class="activity-date-wrapper">
+                <div class="activity-date-up">AUG</div>
+                <div class="activity-date-down">01</div>
+              </div>
+            </div>
+            <div class="activity-detail">
+              <div class="activity-detail-title">美图短视频实时分类挑战赛</div>
+              <span class="activity-detail-base">广州</span><span class="dot">·</span>08-01&nbsp;&nbsp;周三<span class="dot">·</span><span class="activity-state">报名中</span>
+            </div>
+          </a>
+        </div>
+        </div>
+        
+
+                <div id="mm_124884735_33830642_145404109" class="mb25 ad-should-be-fixed"><div id="ac_wrap_mm_124884735_33830642_145404109" style="width:255px"><script async=""></script>
+<!-- 详情页侧栏矩形（跟随） -->
+<ins class="adsbygoogle" style="display:inline-block;width:255px;height:213px" data-ad-client="ca-pub-6330872677300335" data-ad-slot="9674628595" data-adsbygoogle-status="done"><ins id="aswift_0_expand" style="display:inline-table;border:none;height:213px;margin:0;padding:0;position:relative;visibility:visible;width:255px;background-color:transparent;"><ins id="aswift_0_anchor" style="display:block;border:none;height:213px;margin:0;padding:0;position:relative;visibility:visible;width:255px;background-color:transparent;"><iframe marginwidth="0" marginheight="0" vspace="0" hspace="0" allowtransparency="true" scrolling="no" allowfullscreen="true" onload="var i=this.id,s=window.google_iframe_oncopy,H=s&amp;&amp;s.handlers,h=H&amp;&amp;H[i],w=this.contentWindow,d;try{d=w.document}catch(e){}if(h&amp;&amp;d&amp;&amp;(!d.body||!d.body.firstChild)){if(h.call){setTimeout(h,0)}else if(h.match){try{h=s.upd(h,i)}catch(e){}w.location.replace(h)}}" id="aswift_0" name="aswift_0" style="left:0;position:absolute;top:0;width:255px;height:213px;" width="255" height="213" frameborder="0"></iframe></ins></ins></ins>
+<script>
+(adsbygoogle = window.adsbygoogle || []).push({});
+</script><script type="text/javascript"></script><script type="text/javascript"></script><script type="text/javascript"></script><script type="text/javascript"></script><script type="text/javascript"></script></div></div>
+
+              </div>
+    </div>
+  </div>
+</div>
+
+<script>
+  window.livePngUrl = "https://static.segmentfault.com/v-5b5ec8ff/index/img/live.svg";
+  window.pageType = "recommend";
+  window.pageParam = "";
+  window.timelineOffset = 0;
+  window.timelineBefore = 0;
+  window.timelineRecommendFollow = false;
+</script>
+
+
+
+
+
+
+
+<footer id="footer">
+    <div class="container">
+        <div class="row hidden-xs">
+            <dl class="col-sm-2 site-link">
+                <dt>产品</dt>
+                
+                <dd><a href="https://segmentfault.com/questions/hottest?utm_source=sf-footer&amp;utm_medium=footer-nav&amp;utm_campaign=product&amp;utm_content=footer-links-hottest-questions&amp;utm_term=%E7%83%AD%E9%97%A8%E9%97%AE%E7%AD%94">热门问答</a></dd>
+                <dd><a href="https://segmentfault.com/blogs/hottest?utm_source=sf-footer&amp;utm_medium=footer-nav&amp;utm_campaign=product&amp;utm_content=footer-links-hottest-questions&amp;utm_term=%E7%83%AD%E9%97%A8%E4%B8%93%E6%A0%8F">热门专栏</a></dd>
+                <dd><a href="https://segmentfault.com/lives?utm_source=sf-footer&amp;utm_medium=footer-nav&amp;utm_campaign=product&amp;utm_content=footer-links-hottest-questions&amp;utm_term=%E7%83%AD%E9%97%A8%E8%AE%B2%E5%A0%82">热门讲堂</a></dd>
+                <dd><a href="https://segmentfault.com/events?utm_source=sf-footer&amp;utm_medium=footer-nav&amp;utm_campaign=product&amp;utm_content=footer-links-hottest-questions&amp;utm_term=%E6%9C%80%E6%96%B0%E6%B4%BB%E5%8A%A8">最新活动</a></dd>
+                <dd><a href="https://segmentfault.com/groups?utm_source=sf-footer&amp;utm_medium=footer-nav&amp;utm_campaign=product&amp;utm_content=footer-links-hottest-questions&amp;utm_term=%E5%9C%88%E5%AD%90">圈子</a></dd>
+                <dd><a href="https://segmentfault.com/jobs?utm_source=sf-footer&amp;utm_medium=footer-nav&amp;utm_campaign=product&amp;utm_content=footer-links-hottest-questions&amp;utm_term=%E6%89%BE%E5%B7%A5%E4%BD%9C">找工作</a></dd>
+                <dd><a href="https://segmentfault.com/app?utm_source=sf-footer&amp;utm_medium=footer-nav&amp;utm_campaign=product&amp;utm_content=footer-links-hottest-questions&amp;utm_term=app">移动客户端</a></dd>
+                
+            </dl>
+            
+            <dl class="col-sm-2 site-link">
+                <dt>资源</dt>
+                <dd><a href="https://segmentfault.com/weekly?utm_source=sf-footer&amp;utm_medium=footer-nav&amp;utm_campaign=resource&amp;utm_content=footer-links-weekly&amp;utm_term=%E6%AF%8F%E5%91%A8%E7%B2%BE%E9%80%89">每周精选</a></dd>
+                <dd><a href="https://segmentfault.com/users?utm_source=sf-footer&amp;utm_medium=footer-nav&amp;utm_campaign=resource&amp;utm_content=footer-links-users&amp;utm_term=%E7%94%A8%E6%88%B7%E6%8E%92%E8%A1%8C%E6%A6%9C">用户排行榜</a></dd>
+                <dd><a href="https://segmentfault.com/badges?utm_source=sf-footer&amp;utm_medium=footer-nav&amp;utm_campaign=resource&amp;utm_content=footer-links-badges&amp;utm_term=%E5%BE%BD%E7%AB%A0">徽章</a></dd>
+                <dd><a href="https://segmentfault.com/faq?utm_source=sf-footer&amp;utm_medium=footer-nav&amp;utm_campaign=resource&amp;utm_content=footer-links-faq&amp;utm_term=%E5%B8%AE%E5%8A%A9%E4%B8%AD%E5%BF%83">帮助中心</a></dd>
+                <dd><a href="https://segmentfault.com/repu?utm_source=sf-footer&amp;utm_medium=footer-nav&amp;utm_campaign=resource&amp;utm_content=footer-links-repu&amp;utm_term=%E5%A3%B0%E6%9C%9B%E4%B8%8E%E6%9D%83%E9%99%90">声望与权限</a></dd>
+                <dd><a href="https://segmentfault.com/community?utm_source=sf-footer&amp;utm_medium=footer-nav&amp;utm_campaign=resource&amp;utm_content=footer-links-community&amp;utm_term=%E7%A4%BE%E5%8C%BA%E6%9C%8D%E5%8A%A1%E4%B8%AD%E5%BF%83">社区服务中心</a></dd>
+                <dd><a href="https://docs.segmentfault.com/?utm_source=sf-footer&amp;utm_medium=footer-nav&amp;utm_campaign=resource&amp;utm_content=footer-links-docs&amp;utm_term=%E5%BC%80%E5%8F%91%E6%89%8B%E5%86%8C">开发手册</a></dd>
+
+   
+            </dl>
+
+            <dl class="col-sm-2 site-link">
+                <dt>商务</dt>
+                <dd><a href="https://business.segmentfault.com/services?utm_source=sf-footer&amp;utm_medium=footer-nav&amp;utm_campaign=business&amp;utm_content=footer-links-services-rencai&amp;utm_term=%E4%BA%BA%E6%89%8D%E6%9C%8D%E5%8A%A1" target="_blank">人才服务</a></dd>
+                <dd><a href="https://business.segmentfault.com/services?utm_source=sf-footer&amp;utm_medium=footer-nav&amp;utm_campaign=business&amp;utm_content=footer-links-services-qiyeneixun&amp;utm_term=%E4%BC%81%E4%B8%9A%E6%9C%8D%E5%8A%A1" target="_blank">企业培训</a></dd>
+                <dd><a href="https://business.segmentfault.com/services?utm_source=sf-footer&amp;utm_medium=footer-nav&amp;utm_campaign=business&amp;utm_content=footer-links-services-huodongcehua&amp;utm_term=%E6%B4%BB%E5%8A%A8%E7%AD%96%E5%88%92" target="_blank">活动策划</a></dd>
+                <dd><a href="https://business.segmentfault.com/ads?utm_source=sf-footer&amp;utm_medium=footer-nav&amp;utm_campaign=business&amp;utm_content=footer-links-ads&amp;utm_term=%E5%B9%BF%E5%91%8A%E6%8A%95%E6%94%BE" target="_blank">广告投放</a></dd>
+                <dd><a href="https://business.segmentfault.com/bc?utm_source=sf-footer&amp;utm_medium=footer-nav&amp;utm_campaign=business&amp;utm_content=footer-links-bc&amp;utm_term=%E5%8C%BA%E5%9D%97%E9%93%BE%E8%A7%A3%E5%86%B3%E6%96%B9%E6%A1%88" target="_blank">区块链解决方案</a></dd>
+                <dd><a href="https://business.segmentfault.com/contact?utm_source=sf-footer&amp;utm_medium=footer-nav&amp;utm_campaign=business&amp;utm_content=footer-links-contact&amp;utm_term=%E5%90%88%E4%BD%9C%E8%81%94%E7%B3%BB" target="_blank">合作联系</a></dd>
+            </dl>
+            
+            <dl class="col-sm-2 site-link">
+                <dt>关于</dt>
+                <dd><a href="https://about.segmentfault.com/?utm_source=sf-footer&amp;utm_medium=footer-nav&amp;utm_campaign=about&amp;utm_content=about-index&amp;utm_term=%E5%85%B3%E4%BA%8E%E6%88%91%E4%BB%AC">关于我们</a></dd>
+                <dd><a href="https://about.segmentfault.com/careers.html?utm_source=sf-footer&amp;utm_medium=footer-nav&amp;utm_campaign=about&amp;utm_content=about-careers&amp;utm_term=%E5%8A%A0%E5%85%A5%E6%88%91%E4%BB%AC">加入我们</a></dd>
+                <dd><a href="https://about.segmentfault.com/contact.html?utm_source=sf-footer&amp;utm_medium=footer-nav&amp;utm_campaign=about&amp;utm_content=about-contact&amp;utm_term=%E8%81%94%E7%B3%BB%E6%88%91%E4%BB%AC">联系我们</a></dd>
+            </dl>
+
+            <dl class="col-sm-2 site-link">
+                <dt>关注</dt>
+                                <dd><a href="https://segmentfault.com/blog/segmentfault" target="_blank">产品技术日志</a></dd>
+                                <dd><a href="https://segmentfault.com/blog/community_admin" target="_blank">社区运营日志</a></dd>
+                                <dd><a href="https://segmentfault.com/blog/segmentfault_news" target="_blank">市场运营日志</a></dd>
+                                <dd><a href="https://segmentfault.com/blog/segmentfault_team" target="_blank">团队日志</a></dd>
+                                <dd><a href="https://segmentfault.com/blog/interview" target="_blank">社区访谈</a></dd>
+                                <dd>
+                    <ul class="sn-inline">
+                        <li>
+                            <a class="entypo-wechart icon-sn-weixin weixin-popover-qrcode" data-toggle="popover" data-placement="top" data-content="" data-original-title="" title="">微信</a>
+                        </li>
+                        <li>
+                            <a href="http://weibo.com/segmentfault" target="_blank" class="entypo-weibo icon-sn-weibo">新浪微博</a>
+                        </li>
+                        <li>
+                            <a href="https://github.com/SegmentFault" target="_blank" class="entypo-facebook icon-sn-github">Github</a>
+                        </li>
+                        <li>
+                            <a href="https://twitter.com/segment_fault" target="_blank" class="entypo-twitter icon-sn-twitter">Twitter</a>
+                        </li>
+                    </ul>
+                </dd>
+            </dl>
+
+            <dl class="col-sm-2 site-link" id="license">
+                <dt>条款</dt>
+                <dd><a href="https://segmentfault.com/tos">服务条款</a></dd>
+                <dd><a href="https://creativecommons.org/licenses/by-nc-nd/4.0/" target="_blank">内容许可</a></dd>
+                <dd>
+                    <a href="https://segmentfault.com/app" class="clearfix mt10 block"><img src="segmentfault.com_files/appQrcode.png" class="app-qrcode"></a>
+                    <div class="app-download-desc">
+                        <p>扫一扫下载 App</p>
+                    </div>
+                    
+                </dd>
+            </dl>
+        </div>
+        <div class="copyright">
+            Copyright © 2011-2018 SegmentFault. 当前呈现版本 17.06.16<br>
+            <a href="http://www.miibeian.gov.cn/" rel="nofollow">浙ICP备 15005796号-2</a> &nbsp;
+            <a target="_blank" href="http://www.beian.gov.cn/portal/registerSystemInfo?recordcode=33010602002000" rel="nofollow">浙公网安备 33010602002000号</a>
+            <span class="ml5">杭州堆栈科技有限公司版权所有</span>
+            <p class="mt30">CDN 存储服务由 <a target="_blank" href="https://www.upyun.com/?utm_source=segmentfault&amp;utm_medium=link&amp;utm_campaign=upyun&amp;md=segmentfault">又拍云</a> 赞助提供 </p>
+        </div>
+        <p class="text-center">
+            <a class="js__view--selector hidden-sm hidden-md hidden-lg" data-action="mobile" href="javascript:;">移动版</a>
+            <a class="js__view--selector hidden-sm hidden-md hidden-lg" data-action="desktop" href="javascript:;">桌面版</a>
+        </p>
+    </div>
+</footer>
+
+<div id="fixedTools" class="hidden-xs hidden-sm">
+    <a id="backtop" class="hidden border-bottom" href="#">回顶部</a>
+</div>
+
+    <script id="loginModal" type="text/template">
+    <div class="row bg-white login-modal">
+        <div class="col-md-12 login-wrap">
+            <form action="/api/user/login" method="POST" role="form" class="mt15">
+                <div class="form-group hidden">
+                                        <input type="text" class="form-control" name="remember" value="1"
+                           autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <label for="username" class="control-label">手机号 或 Email</label>
+                    <input type="text" class="form-control" name="username" tabindex="1" required placeholder="11 位手机号 或 Email"
+                           autocomplete="off">
+                </div>
+                <div class="form-group">
+                    <label class="control-label">密码</label><span class="pull-right"><a
+                                href="/user/forgot" tabindex="4">忘记密码</a></span>
+                    <input type="password" class="form-control" name="password" tabindex="2" required placeholder="请输入密码">
+                </div>
+                <div class="form-group">
+                    <a
+                            class="phoneLogin"
+                                                    href="javascript:;"
+                                            >手机验证码登录</a>
+                </div>
+                <div class="form-group clearfix">
+                    <button type="submit" class="btn-block btn btn-primary pull-right pl20 pr20" tabindex="3"
+                            onclick='ga("send", "event", "email login button", "clicked", "login modal");'>登录
+                    </button>
+                </div>
+            </form>
+            <div class="text-muted text-center more-login-area">
+    <span class="more-login-words">更多登录方式</span>
+</div>
+<div class="widget-login mb15 text-center">
+    <a href="/user/oauth/google" class=""
+       onclick='ga("send", "event", "3rd login button", "clicked", "login modal", {media: "google"});'><span
+                class="icon-sn-google"></span></a>
+    <a href="/user/oauth/github" class=""
+       onclick='ga("send", "event", "3rd login button", "clicked", "login modal", {media: "github"});");'><span
+                class="icon-sn-github"></span></a>
+    <a href="/user/oauth/weibo" class=""
+       onclick='ga("send", "event", "3rd login button", "clicked", "login modal", {media: "weibo"});'><span
+                class="icon-sn-weibo"></span></a>
+    <a href="/user/oauth/qq" class=""
+       onclick='ga("send", "event", "3rd login button", "clicked", "login modal", {media: "qq"});'><span
+                class="icon-sn-qq"></span></a>
+    <a href="/user/oauth/weixin" class=""
+       onclick='ga("send", "event", "3rd login button", "clicked", "login modal", {media: "qq"});'><span
+                class="icon-sn-weixin"></span></a>
+    <a href="/user/oauth/linkedin" class=""
+       onclick='ga("send", "event", "3rd login button", "clicked", "login modal", {media: "linkedin"});'><span
+                class="icon-sn-linkedin"></span></a>
+    <span id="loginShowMore" style="cursor: pointer" class="mb5"><span class="icon-sn-dotted"></span></span>
+    <a href="/user/oauth/twitter" class=" hidden"
+       onclick='ga("send", "event", "3rd login button", "clicked", "login modal", {media: "twitter"});'><span
+                class="icon-sn-twitter"></span></a>
+    <a href="/user/oauth/facebook" class=" hidden"
+       onclick='ga("send", "event", "3rd login button", "clicked", "login modal", {media: "facebook"});'><span
+                class="icon-sn-facebook"></span></a>
+    <a href="/user/oauth/douban" class=" hidden"
+       onclick='ga("send", "event", "3rd login button", "clicked", "login modal", {media: "douban"});'><span
+                class="icon-sn-douban"></span></a>
+</div>
+<div class="form-group clearfix">
+    <a class="btn-block btn btn-default pull-right pl20 pr20 
+                        SFLogin
+             "
+
+            
+        onclick='ga("send", "event", "email login button", "clicked", "login modal");'>
+                    注册新账号
+            </a>
+</div>
+<p class="text-muted text-center mb15">登录即表示你同意网站的<a href="/tos" target="_blank">《服务条款》</a></p>        </div>
+    </div>
+</script>
+    <script id="registerModal" type="text/template">
+    <div class="row bg-white login-modal">
+        <div class="col-md-12 login-wrap">
+            
+            <form action="/api/user/register" method="POST" role="form" class="mt15">
+                <div class="form-group">
+                    <label for="name" class="control-label">你的名字</label>
+                    <input type="text" class="form-control" name="name" required placeholder="真实姓名或常用昵称">
+                </div>
+                
+                <div class="form-group">
+                    <label for="mail" class="control-label">手机号 或 Email</label>
+                    <input type="text" class="form-control" id="login-name" name="mail" required placeholder="11 位手机号 或 Email">
+                </div>
+                
+                <input type="text" class="hidden" name="register_type" value="mail">
+
+                <div class="form-group">
+                    <div class="phone-register-only hidden">
+                        <div class="captchaInput mb10">
+                            <input type="text" class="form-control" name="cap" placeholder="右侧的验证码" style="width:50%; display: inline; margin-right: 15px;">
+                            <span class="mt10">
+                                <a id="loginReloadCaptcha" href="javascript:void(0)">
+                                <img src="/user/captcha?w=135&h=34" class="cap" width="135" height="34"/></a>
+                            </span>
+                        </div>
+                        <div class="input-group">
+                            <input name="code" type="text" class="form-control js-user-login__phone-code-value" placeholder="短信验证码">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default js-user-login__phone-vaild-btn" style="width:96px;" type="button">
+                                获取验证码</button>
+                            </span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="form-group">
+                    <label for="password" class="control-label">密码</label>
+                    <input type="password" class="form-control" name="password" required placeholder="不少于 6 位的密码">
+                </div>
+                <div class="form-group clearfix">
+                    <button type="submit" class="btn-block btn btn-primary pl20 pr20 pull-right"
+                            onclick='ga("send", "event", "email register button", "clicked", "login modal");'>注册
+                    </button>
+                </div>
+                                <div class="text-muted text-center more-login-area">
+    <span class="more-login-words">更多登录方式</span>
+</div>
+<div class="widget-login mb15 text-center">
+    <a href="/user/oauth/google" class=""
+       onclick='ga("send", "event", "3rd login button", "clicked", "login modal", {media: "google"});'><span
+                class="icon-sn-google"></span></a>
+    <a href="/user/oauth/github" class=""
+       onclick='ga("send", "event", "3rd login button", "clicked", "login modal", {media: "github"});");'><span
+                class="icon-sn-github"></span></a>
+    <a href="/user/oauth/weibo" class=""
+       onclick='ga("send", "event", "3rd login button", "clicked", "login modal", {media: "weibo"});'><span
+                class="icon-sn-weibo"></span></a>
+    <a href="/user/oauth/qq" class=""
+       onclick='ga("send", "event", "3rd login button", "clicked", "login modal", {media: "qq"});'><span
+                class="icon-sn-qq"></span></a>
+    <a href="/user/oauth/weixin" class=""
+       onclick='ga("send", "event", "3rd login button", "clicked", "login modal", {media: "qq"});'><span
+                class="icon-sn-weixin"></span></a>
+    <a href="/user/oauth/linkedin" class=""
+       onclick='ga("send", "event", "3rd login button", "clicked", "login modal", {media: "linkedin"});'><span
+                class="icon-sn-linkedin"></span></a>
+    <span id="loginShowMore" style="cursor: pointer" class="mb5"><span class="icon-sn-dotted"></span></span>
+    <a href="/user/oauth/twitter" class=" hidden"
+       onclick='ga("send", "event", "3rd login button", "clicked", "login modal", {media: "twitter"});'><span
+                class="icon-sn-twitter"></span></a>
+    <a href="/user/oauth/facebook" class=" hidden"
+       onclick='ga("send", "event", "3rd login button", "clicked", "login modal", {media: "facebook"});'><span
+                class="icon-sn-facebook"></span></a>
+    <a href="/user/oauth/douban" class=" hidden"
+       onclick='ga("send", "event", "3rd login button", "clicked", "login modal", {media: "douban"});'><span
+                class="icon-sn-douban"></span></a>
+</div>
+<div class="form-group clearfix">
+    <a class="btn-block btn btn-default pull-right pl20 pr20 
+                        SFRegister
+             "
+
+            
+        onclick='ga("send", "event", "email login button", "clicked", "login modal");'>
+                    已有账号登录
+            </a>
+</div>
+<p class="text-muted text-center mb15">登录即表示你同意网站的<a href="/tos" target="_blank">《服务条款》</a></p>            </form>
+        </div>
+    </div>
+</script>
+    <script id="phoneLoginModal" type="text/template">
+
+    <div class="row bg-white login-modal phonelogin-modal">
+        <div class="col-md-12 login-wrap">
+            <form action="/api/user/phonelogin" method="POST" role="form" class="mt15">
+                <div class="form-group">
+                    <label for="phone" class="control-label required">手机号</label>
+                    <input type="text" class="form-control phonelogin--phone" name="phone" tabindex="1" required placeholder="11 位手机号"
+                           autocomplete="off">
+                    <span class="help-block"></span>
+                </div>
+
+                <div class="form-group">
+                    <label for="authCode" class="control-label required">验证码</label>
+                    <div class="input-group">
+                        <input type="text" class="form-control bindphone--code" name="authCode" placeholder="短信验证码">
+                        <span class="input-group-btn">
+                            <button class="btn btn-default user-bind__phone-vaild-btn" type="button">获取验证码</button>
+                        </span>
+                    </div>
+                    <div class="col-sm-3"></div>
+                </div>
+
+                <div class="form-group">
+                    <a
+                            class="SFRegister"
+                                                            href="javascript:;"
+                                                >密码登录（手机号或Email）</a>
+                </div>
+                <div class="form-group clearfix">
+                    <button type="submit" class="btn-block btn btn-primary pull-right pl20 pr20" tabindex="3"
+                            onclick='ga("send", "event", "email login button", "clicked", "login modal");'>登录
+                    </button>
+                </div>
+            </form>
+            <div class="text-muted text-center more-login-area">
+    <span class="more-login-words">更多登录方式</span>
+</div>
+<div class="widget-login mb15 text-center">
+    <a href="/user/oauth/google" class=""
+       onclick='ga("send", "event", "3rd login button", "clicked", "login modal", {media: "google"});'><span
+                class="icon-sn-google"></span></a>
+    <a href="/user/oauth/github" class=""
+       onclick='ga("send", "event", "3rd login button", "clicked", "login modal", {media: "github"});");'><span
+                class="icon-sn-github"></span></a>
+    <a href="/user/oauth/weibo" class=""
+       onclick='ga("send", "event", "3rd login button", "clicked", "login modal", {media: "weibo"});'><span
+                class="icon-sn-weibo"></span></a>
+    <a href="/user/oauth/qq" class=""
+       onclick='ga("send", "event", "3rd login button", "clicked", "login modal", {media: "qq"});'><span
+                class="icon-sn-qq"></span></a>
+    <a href="/user/oauth/weixin" class=""
+       onclick='ga("send", "event", "3rd login button", "clicked", "login modal", {media: "qq"});'><span
+                class="icon-sn-weixin"></span></a>
+    <a href="/user/oauth/linkedin" class=""
+       onclick='ga("send", "event", "3rd login button", "clicked", "login modal", {media: "linkedin"});'><span
+                class="icon-sn-linkedin"></span></a>
+    <span id="loginShowMore" style="cursor: pointer" class="mb5"><span class="icon-sn-dotted"></span></span>
+    <a href="/user/oauth/twitter" class=" hidden"
+       onclick='ga("send", "event", "3rd login button", "clicked", "login modal", {media: "twitter"});'><span
+                class="icon-sn-twitter"></span></a>
+    <a href="/user/oauth/facebook" class=" hidden"
+       onclick='ga("send", "event", "3rd login button", "clicked", "login modal", {media: "facebook"});'><span
+                class="icon-sn-facebook"></span></a>
+    <a href="/user/oauth/douban" class=" hidden"
+       onclick='ga("send", "event", "3rd login button", "clicked", "login modal", {media: "douban"});'><span
+                class="icon-sn-douban"></span></a>
+</div>
+<div class="form-group clearfix">
+    <a class="btn-block btn btn-default pull-right pl20 pr20 
+                        SFLogin
+             "
+
+            
+        onclick='ga("send", "event", "email login button", "clicked", "login modal");'>
+                    注册新账号
+            </a>
+</div>
+<p class="text-muted text-center mb15">登录即表示你同意网站的<a href="/tos" target="_blank">《服务条款》</a></p>        </div>
+    </div>
+</script>
+    <script id="bindPhoneModal" type="text/template">
+    <div class="bg-white bindphone-model">
+        <div class="alert alert-warning" role="alert">
+            为了保证账号安全，请先绑定手机
+        </div>
+        <div>
+            <form class="form-horizontal form__bindphone-apply" style="background-color:#fff;padding:0;">
+                <div class="form-group ">
+                    <label for="phoneNumber" class="col-sm-3 control-label required" >手机号码</label>
+                    <div class="col-sm-6">
+                        <input type="text" class="form-control bindphone--phone" id="phoneNumber" name="phone" placeholder="仅只支持大陆手机号">
+                    </div>
+                    <div class="col-sm-3"></div>
+                </div>
+                <div class="form-group">
+                    <label for="authCode" class="col-sm-3 control-label required">验证码</label>
+                    <div class="col-sm-6">
+                        <div class="input-group">
+                            <input type="text" class="form-control bindphone--code" name="code" placeholder="短信验证码">
+                            <span class="input-group-btn">
+                                <button class="btn btn-default user-bind__phone-vaild-btn" type="button">获取验证码</button>
+                            </span>
+                        </div>
+                    </div>
+                    <div class="col-sm-3"></div>
+                </div>
+            </form>
+        </div>
+
+    </div>
+</script>
+
+
+<script>
+    window.serverTime = 1532942934000;
+</script>
+
+<script>
+    (function (w) {
+        w.SF = {
+            staticUrl: "https://static.segmentfault.com/v-5b5ec8ff"
+        };
+        w.SF.token = (function () {
+    var _Qw44n = '60'//'3o'
++'N'//'N'
++//'EKL'
+'94'+//'YRh'
+'7c'+//'3d'
+'6ed'+''///*'w0'*/'w0'
++'4'//'fX'
++//'O'
+'c2'+//'R'
+'R'+''///*'ic'*/'ic'
++//'H'
+'86'+'83'//'yBV'
++//'S'
+'b'+//'S5'
+'0'+//'b5'
+'ea3'+'e'//'D2'
++'48'//'1v'
++''///*'ne'*/'ne'
++'0'//'r'
++'84'//'f'
++'99'//'d3V'
++//'V'
+'a0'+''///*'iJv'*/'iJv'
++'c'//'R3R'
+, _s767SOH = [[2,3],[12,13]];
+
+    for (var i = 0; i < _s767SOH.length; i ++) {
+        _Qw44n = _Qw44n.substring(0, _s767SOH[i][0]) + _Qw44n.substring(_s767SOH[i][1]);
+    }
+
+    return _Qw44n;
+})();;
+    })(window);
+
+                var lock = {
+        type: "",
+        text: '',
+        table: {"ban_post":[1,"\u4f60\u5df2\u7ecf\u88ab\u7981\u8a00, \u65e0\u6cd5\u8fdb\u884c\u6b64\u64cd\u4f5c, \u5982\u6709\u7591\u4e49\u8bf7\u63d0\u4ea4\u7533\u8bc9, \u6216\u8005\u53d1\u90ae\u4ef6\u5230pr@segmentfault.com"]}
+    };
+
+        var ddosMode = false;
+    
+    (function (currentUrl) {
+        if (typeof URL != 'undefined') {
+            // 测试环境
+            if ('https://segmentfault.com' === '//localhost:3000') return
+
+            var baseUrl = new URL('https://segmentfault.com');
+
+            if (baseUrl.protocol != currentUrl.protocol
+                || baseUrl.host != currentUrl.host) {
+                window.location.href = baseUrl.protocol + '//' + baseUrl.host
+                    + currentUrl.pathname + currentUrl.search + currentUrl.hash;
+            }
+        }
+    })(window.location);
+</script>
+             <script crossorigin="" src="segmentfault.com_files/assets.js"></script>
+                 
+        <script crossorigin="" src="segmentfault.com_files/index.js"></script>
+            
+
+
+<script>
+    var _gaq = _gaq || [];
+    _gaq.push(['_setAccount', 'UA-918487-8']);
+    _gaq.push(['_trackPageview']);
+    (function (i, s, o, g, r, a, m) {
+        i['GoogleAnalyticsObject'] = r;
+        i[r] = i[r] || function () {
+                    (i[r].q = i[r].q || []).push(arguments)
+                }, i[r].l = 1 * new Date();
+        a = s.createElement(o),
+                m = s.getElementsByTagName(o)[0];
+        a.async = 1;
+        a.src = g;
+        m.parentNode.insertBefore(a, m)
+    })(window, document, 'script', '//www.google-analytics.com/analytics.js', 'ga');
+
+                
+        
+
+            
+
+    ga('create', 'UA-918487-8', 'auto', {
+        'userID'
+    : 0,
+        'createdTime'
+    : 0,
+        'now'
+    : 1532942934,
+        'allowLinker'
+    : true });
+    ga('require', 'linker');
+    ga('linker:autoLink', ['docs.segmentfault.com'] );
+    ga('set', 'dimension1', 'guest');
+    ga('send', 'pageview');
+
+</script>
+
+<script>
+    var _hmt = _hmt || [];
+    (function () {
+        var hm = document.createElement("script");
+        hm.src = "//hm.baidu.com/hm.js?e23800c454aa573c0ccb16b52665ac26";
+        var s = document.getElementsByTagName("script")[0];
+        s.parentNode.insertBefore(hm, s);
+    })();
+</script>
+
+
+        <script type="text/javascript" src="segmentfault.com_files/k.js"></script>
+            <ins id="ac_js86_mm_124884735_33830642_145404109" style="display: none;"></ins><script>
+                _acM({
+            aid: "mm_124884735_33830642_145404109",
+            format: 1,
+            mode: 1,
+            gid: 1,
+            destid: "mm_124884735_33830642_145404109",
+            sendkeywords: 0,
+            serverbaseurl: "afpeng.alimama.com/"
+        });
+        </script><script></script><script type="text/javascript" src="segmentfault.com_files/ex_003.js" id="ac_js86_$8400484068"></script>
+            <ins id="ac_js86_mm_124884735_33830642_169426576" style="display: none;"></ins><script>
+                _acM({
+            aid: "mm_124884735_33830642_169426576",
+            format: 1,
+            mode: 1,
+            gid: 1,
+            destid: "mm_124884735_33830642_169426576",
+            sendkeywords: 0,
+            serverbaseurl: "afpeng.alimama.com/"
+        });
+        </script><script type="text/javascript" src="segmentfault.com_files/ex.js" id="ac_js86_$8241758733"></script>
+            <ins id="ac_js86_mm_124884735_33830642_169444557" style="display: none;"></ins><script>
+                _acM({
+            aid: "mm_124884735_33830642_169444557",
+            format: 1,
+            mode: 1,
+            gid: 1,
+            destid: "mm_124884735_33830642_169444557",
+            sendkeywords: 0,
+            serverbaseurl: "afpeng.alimama.com/"
+        });
+        </script><script type="text/javascript" src="segmentfault.com_files/ex_002.js" id="ac_js86_$7666391736"></script>
+     
+
+
+
+        <script type="text/javascript" src="segmentfault.com_files/k.js"></script>
+            <ins id="ac_js86_mm_124884735_33830642_146292853" style="display: none;"></ins><script>
+                _acM({
+            aid: "mm_124884735_33830642_146292853",
+            format: 1,
+            mode: 1,
+            gid: 1,
+            destid: "mm_124884735_33830642_146292853",
+            sendkeywords: 0,
+            serverbaseurl: "afpeng.alimama.com/"
+        });
+        </script><script type="text/javascript" src="segmentfault.com_files/ex_004.js" id="ac_js86_$4405172024"></script>
+     
+
+
+<iframe id="google_osd_static_frame_2614585032205" name="google_osd_static_frame" style="display: none; width: 0px; height: 0px;"></iframe></body></html>

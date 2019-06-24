@@ -1,0 +1,1 @@
+_acM.r({"dataArr":[{"pid":"mm_124884735_33830642_169444557","aid":"","sp":"1","bid":"0bb48dab00005b5eda586ffb44e7ab30","width":635,"height":78,"disconfig":{"noAdNotify":"-1","rotatingType":"0","autoDisplay":"0"},"creatives":[]}]})

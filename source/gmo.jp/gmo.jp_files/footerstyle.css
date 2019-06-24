@@ -1,0 +1,210 @@
+@charset "UTF-8";
+@media only screen and (max-device-width: 767px), only screen and (max-width: 767px) {
+  #gmofooter {
+    display: none; } }
+@media screen and (min-width: 768px) {
+  #gmofooter {
+    background: #fefefe;
+    border: #eaeaea solid;
+    border-width: 1px 0 0 0;
+    clear: both;
+    font-family: "游ゴシック", "Yu Gothic", "YuGothic", "メイリオ", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ ProN W3", "Arial", sans-serif !important;
+    font-size: 9.5px;
+    letter-spacing: 0;
+    line-height: 1;
+    margin: 0 auto;
+    padding-bottom: 38px;
+    width: 100%;
+    /* 	min-width: 769px; */
+    /*
+    	.gmofooter_groupservice {
+    		height: 100%;
+    	}
+    	
+    */ }
+  #gmofooter .gmofooter {
+    padding: 15px 10px;
+    text-align: left; }
+  #gmofooter * {
+    font-family: "游ゴシック", "Yu Gothic", "YuGothic", "メイリオ", "Hiragino Kaku Gothic ProN", "Hiragino Kaku Gothic Pro", "ヒラギノ角ゴ ProN W3", "Arial", sans-serif !important;
+    font-weight: normal !important; }
+  #gmofooter a {
+    color: #428bca;
+    text-decoration: none; }
+  #gmofooter a:hover {
+    -webkit-transition: 0.2s ease-in-out !important;
+    -moz-transition: 0.2s ease-in-out !important;
+    -ms-transition: 0.2s ease-in-out !important;
+    -o-transition: 0.2s ease-in-out !important;
+    transition: 0.2s ease-in-out !important;
+    color: #FF6600; }
+  #gmofooter img {
+    border: 0; }
+  #gmofooter ul, #gmofooter li {
+    list-style: none;
+    margin: 0;
+    padding: 0; }
+  #gmofooter dl, #gmofooter dt, #gmofooter dd {
+    margin: 0;
+    padding: 0; }
+  #gmofooter .gmofooter_header {
+    margin-bottom: 20px;
+    overflow: hidden; }
+  #gmofooter .gmofooter_header .gmofooter_logo {
+    float: left; }
+  #gmofooter .gmofooter_header .gmofooter_text {
+    float: right; }
+  #gmofooter .gmofooter_header .gmofooter_text img {
+    width: 248px !important;
+    height: 10px !important; }
+  #gmofooter .gmofooter_heading {
+    clear: both;
+    color: #4d4d4d;
+    font-size: 11.5px;
+    font-weight: bold !important;
+    line-height: 1.5;
+    margin-bottom: 5px; }
+  #gmofooter .gmofooter_relatedservice .gmo_list {
+    padding-bottom: 16px; }
+  #gmofooter .gmofooter_relatedservice .gmo_list li a {
+    color: #333;
+    font-size: 13px;
+    line-height: 1;
+    text-decoration: none; }
+  #gmofooter .gmofooter_relatedservice .gmo_list li a:hover {
+    color: #666;
+    text-decoration: none !important; }
+  #gmofooter .gmofooter_relatedservice .gmo_list li a span.gmo_red {
+    background: #f45656;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    border-radius: 2px;
+    color: #fff;
+    font-size: 12px !important;
+    line-height: 1.4;
+    margin: 0 6px 0 0;
+    padding: 2px 6px 2px 5px;
+    position: relative;
+    text-align: center;
+    text-decoration: none !important; }
+  #gmofooter .gmofooter_relatedservicelist {
+    overflow: hidden;
+    margin-bottom: 15px; }
+  #gmofooter .gmofooter_relatedservicelist ul {
+    margin-left: -15px; }
+  #gmofooter .gmofooter_relatedservicelist ul li {
+    float: left;
+    font-size: 10.5px;
+    margin-left: 15px; }
+  #gmofooter .gmofooter_relatedservicelist ul li:last-child {
+    margin-right: 0; }
+  #gmofooter .gmofooter_relatedservicelist ul li a {
+    font-size: 10.5px; }
+  #gmofooter .gmofooter_relatedservicelist ul li dl {
+    clear: both; }
+  #gmofooter .gmofooter_relatedservicelist ul li dl dt {
+    float: left;
+    line-height: 1.3;
+    margin-right: .5em;
+    white-space: nowrap; }
+  #gmofooter .gmofooter_relatedservicelist ul li dl dt:after {
+    color: #666;
+    content: '-';
+    margin-left: .5em; }
+  #gmofooter .gmofooter_relatedservicelist ul li dl dd {
+    color: #666;
+    float: left;
+    line-height: 1.5;
+    white-space: nowrap; }
+  #gmofooter .gmofooter_groupservice {
+    /* 		display: none; */ }
+  #gmofooter .gmofooter_groupservicelist ul {
+    margin-left: -14px;
+    position: relative; }
+  #gmofooter .gmofooter_groupservicelist ul li {
+    float: left;
+    margin-left: 14px;
+    padding-bottom: 3px;
+    text-align: left;
+    z-index: 1; }
+  #gmofooter .gmofooter_groupservicelist ul li .gmofooter_groupserviceheading {
+    color: #666;
+    font-size: 9.5px;
+    line-height: 1.4; }
+  #gmofooter .gmofooter_groupservicelist ul li .gmofooter_groupserviceheading:after {
+    content: '';
+    border-color: transparent transparent #cccccc;
+    border-style: solid;
+    border-width: 3px;
+    display: inline-block;
+    position: relative;
+    top: -3px;
+    left: 3px;
+    width: 0;
+    height: 0; }
+  #gmofooter .gmofooter_groupservicelist ul li .gmofooter_groupserviceheading:hover {
+    -webkit-transition: 0.2s ease-in-out !important;
+    -moz-transition: 0.2s ease-in-out !important;
+    -ms-transition: 0.2s ease-in-out !important;
+    -o-transition: 0.2s ease-in-out !important;
+    transition: 0.2s ease-in-out !important;
+    cursor: pointer;
+    text-decoration: none; }
+  #gmofooter .gmofooter_groupservicelist ul li .gmofooter_groupserviceheading:hover:after {
+    content: '';
+    border-color: transparent transparent #FF6600;
+    border-style: solid;
+    border-width: 3px;
+    display: inline-block;
+    position: relative;
+    top: -3px;
+    left: 3px;
+    width: 0;
+    height: 0; }
+  #gmofooter .gmofooter_groupservicelist ul li:hover .gmofooter_submenu {
+    display: block; }
+  #gmofooter .gmofooter_groupservicelist ul li .gmofooter_submenu {
+    border-radius: 4px;
+    -webkit-transition: 0.2s ease-in-out !important;
+    -moz-transition: 0.2s ease-in-out !important;
+    -ms-transition: 0.2s ease-in-out !important;
+    -o-transition: 0.2s ease-in-out !important;
+    transition: 0.2s ease-in-out !important;
+    background: #fff;
+    -webkit-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1px 0;
+    -moz-box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1px 0;
+    box-shadow: rgba(0, 0, 0, 0.1) 0px 0px 1px 0;
+    border: solid 1px #eaeaea;
+    display: none;
+    margin-left: -2px;
+    padding: 3px 10px;
+    position: absolute;
+    /*
+    					top: 0;
+    					left: auto;
+    */
+    bottom: 0;
+    overflow: hidden;
+    z-index: 9999;
+    /*
+    					width: auto;
+    					min-width: 120px;
+    */ }
+  #gmofooter .gmofooter_groupservicelist ul li .gmofooter_submenu dl {
+    float: left;
+    margin: 5px 10px 5px 5px; }
+  #gmofooter .gmofooter_groupservicelist ul li .gmofooter_submenu dl dt {
+    font-size: 11.5px;
+    line-height: 1.5;
+    white-space: nowrap; }
+  #gmofooter .gmofooter_groupservicelist ul li .gmofooter_submenu dl dd {
+    font-size: 10.5px;
+    line-height: 1.4;
+    white-space: nowrap; }
+  #gmofooter .gmofooter_groupservicelist ul li .gmofooter_submenu dl dd a {
+    display: block; } }
+/*
+*:first-child+html #gmofooter {
+	display: none;
+}
+*/

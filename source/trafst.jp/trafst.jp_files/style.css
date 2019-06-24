@@ -1,0 +1,415 @@
+@charset "Shift_JIS";
+#base {
+	margin: 0px auto;
+	width: 720px;
+}
+#hedder {
+	width: 720px;
+	margin-bottom: 20px;
+}
+#title {
+	margin: 0px;
+	float: left;
+}
+#menu {
+	clear:both;
+	background-color: #F66;
+
+}
+#menu p{
+	width:119px;
+	border-right-width: 1px;
+	border-right-style: solid;
+	border-right-color: #FFF;
+	float:left;
+	margin: 0px;
+}
+
+#subtitle {
+}
+
+#main{
+	clear: both;
+	width:720px;
+	padding-top: 10px;
+
+}
+
+
+h1 {
+	margin:0px;
+	padding:0px;
+}
+
+#subcontents {
+	width:240px;
+	float: left;
+	
+}
+#topic {
+	background-color:#e0ffe0;
+	border-right-width: 3px;
+	border-right-style: solid;
+	border-right-color: #FFF;
+	margin-top: 0px;
+	margin-bottom: 10px;
+}
+
+#topic h1{
+	font-family: "ƒqƒ‰ƒMƒmŠpƒS Pro W3", "‚l‚r ‚oƒSƒVƒbƒN", Osaka;
+	font-size: 18px;
+	background-color: #366;
+	color: #FFFFFF;
+	padding-bottom: 5px;
+	
+}
+#topic p{
+	font-family: "ƒqƒ‰ƒMƒmŠpƒS Pro W3", "‚l‚r ‚oƒSƒVƒbƒN", Osaka;
+	font-size: 12px;
+	padding: 5px;
+	line-height: 20px;
+	
+}
+#contents{
+	background-color:#f8ffd8;
+	width:480px;
+	float:right;
+}
+
+#contents h1 {
+	font-family: "ƒqƒ‰ƒMƒmŠpƒS Pro W3", "‚l‚r ‚oƒSƒVƒbƒN", Osaka;
+	font-size: 18px;
+	background-color: #7b7;
+	color: #FFFFFF;
+	padding-bottom: 10px;
+}
+#contents h2{
+	font-family: "ƒqƒ‰ƒMƒmŠpƒS Pro W3", "‚l‚r ‚oƒSƒVƒbƒN", Osaka;
+	font-size: 18px;
+	color: #366;
+}
+
+#contents p{
+	font-family: "ƒqƒ‰ƒMƒmŠpƒS Pro W3", "‚l‚r ‚oƒSƒVƒbƒN", Osaka;
+	font-size: 12px;
+	padding: 5px;
+	line-height: 20px;
+}
+
+#footer{
+	clear: both;
+	width:720px;
+	padding-top: 20px;
+	text-align:center;
+
+}
+
+#ad{
+	font-family: "ƒqƒ‰ƒMƒmŠpƒS Pro W3", "‚l‚r ‚oƒSƒVƒbƒN", Osaka;
+	font-size:9pt;
+	border-top:1px solid #999;
+	border-bottom:1px solid #999;
+	line-height: 20px;
+
+}
+#reserved{
+	font-family: "ƒqƒ‰ƒMƒmŠpƒS Pro W3", "‚l‚r ‚oƒSƒVƒbƒN", Osaka;
+	font-size:8pt;
+}
+
+#menu_2 {
+	width: 720px;
+	clear: both;
+}
+#home {
+	width:59px;
+	float:left;
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #FFF;
+	margin: 0px;
+
+}
+#menu_2 p{
+	width:109px;
+	float:left;
+	border-left-width: 1px;
+	border-left-style: solid;
+	border-left-color: #FFF;
+	margin: 0px;
+}
+#subcontents_2 {
+	width: 170px;
+	float: left;
+	font-family: "ƒqƒ‰ƒMƒmŠpƒS Pro W3", "‚l‚r ‚oƒSƒVƒbƒN", Osaka;
+	font-size: 12px;
+	line-height: 20px;
+}
+#contents_2 {
+	float: right;
+	width:548px;
+	border: 1px solid #336666;
+	background-color: #FFFFFF;
+}
+#contents_2 img{
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+}
+
+#contents_2 p{
+	font-family: "ƒqƒ‰ƒMƒmŠpƒS Pro W3", "‚l‚r ‚oƒSƒVƒbƒN", Osaka;
+	font-size: 12px;
+	line-height: 20px;
+	padding-right: 10px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+}
+
+#contents_2 h1 {
+	font-family: "ƒqƒ‰ƒMƒmŠpƒS Pro W3", "‚l‚r ‚oƒSƒVƒbƒN", Osaka;
+	font-size: 18px;
+	background-color: #366;
+	color: #FFFFFF;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+
+#contents_2 h2 {
+	font-family: "ƒqƒ‰ƒMƒmŠpƒS Pro W3", "‚l‚r ‚oƒSƒVƒbƒN", Osaka;
+	font-size: 18px;
+	border-bottom-width: 1px;
+	border-left-width: 10px;
+	border-left-style: solid;
+	border-bottom-style: dotted;
+	margin-bottom: 10px;
+	border-bottom-color: #366;
+	border-left-color: #366;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+#contents_2 h3 {
+	font-family: "ƒqƒ‰ƒMƒmŠpƒS Pro W3", "‚l‚r ‚oƒSƒVƒbƒN", Osaka;
+	font-size: 18px;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+#contents_2 h4 {
+	font-family: "ƒqƒ‰ƒMƒmŠpƒS Pro W3", "‚l‚r ‚oƒSƒVƒbƒN", Osaka;
+	font-size: 12px;
+	line-height: 20px;
+	border-bottom-style: dotted;
+	margin-bottom: 10px;
+	border-bottom-color: #366;
+	border-top-width: thin;
+	border-top-color: #366;
+	border-bottom-width: thin;
+	border-top-style: dotted;
+	margin-right: 5px;
+	margin-left: 5px;
+}
+
+#contents_2 note {
+	font-family: "ƒqƒ‰ƒMƒmŠpƒS Pro W3", "‚l‚r ‚oƒSƒVƒbƒN", Osaka;
+	font-size: 8px;
+	line-height: 14px;
+	padding-right: 10px;
+	padding-bottom: 14px;
+	padding-left: 10px;
+}
+
+#subcontents_3 {
+	width: 170px;
+	float: left;
+	font-family: "ƒqƒ‰ƒMƒmŠpƒS Pro W3", "‚l‚r ‚oƒSƒVƒbƒN", Osaka;
+	font-size: 12px;
+	line-height: 20px;
+}
+
+#contents_3 {
+	float: right;
+	width:548px;
+	border: 1px solid #336666;
+	background-color: #FFFFFF;
+}
+
+#contents_3_hedder{
+	margin-bottom: 40px;
+}
+#contents_3_hedder_l {
+	float: left;
+	width:320px;
+}
+#contents_3_hedder_r {
+	width: 210px;
+	float: right;
+	font-size: 15px;
+	line-height: 20px;
+	font-size: 15px;
+	font-family: "ƒqƒ‰ƒMƒmŠpƒS Pro W3", "‚l‚r ‚oƒSƒVƒbƒN", Osaka;
+	border-top: 0px solid #336666;
+	border-right: 0px solid #336666;
+	border-bottom: 1px solid #336666;
+	border-left: 10px solid #336666;
+	color:  #336666;
+}
+#contents_3 h1 {
+	font-family: "ƒqƒ‰ƒMƒmŠpƒS Pro W3", "‚l‚r ‚oƒSƒVƒbƒN", Osaka;
+	font-size: 18px;
+	color: #336666;
+	margin-bottom: 10px;
+	border-bottom-width: 2px;
+	border-bottom-style: solid;
+	border-bottom-color: #336666;
+	margin-right: 5px;
+	margin-left: 5px;
+	clear: both;
+}
+#contents_3_main {
+	font-family: "ƒqƒ‰ƒMƒmŠpƒS Pro W3", "‚l‚r ‚oƒSƒVƒbƒN", Osaka;
+	font-size: 12px;
+	line-height: 20px;
+	clear: none;
+	margin-right: 5px;
+	margin-left: 5px;
+	
+}
+#contents_3 h2 {
+	font-family: "ƒqƒ‰ƒMƒmŠpƒS Pro W3", "‚l‚r ‚oƒSƒVƒbƒN", Osaka;
+	font-size: 14px;
+	
+}
+#contents_3_r {
+	float: right;
+	width: 205px;
+	height: 100%;
+	background-color: #CCF;
+	margin: 0px;
+	padding-top: 10px;
+	padding-right: 5px;
+	padding-bottom: 10px;
+	padding-left: 5px;
+}
+#contents_3_l {
+	float: left;
+	width:315px;
+	height: 100%;
+	padding-bottom: 10px;
+}
+table {
+	font-family: "ƒqƒ‰ƒMƒmŠpƒS Pro W3", "‚l‚r ‚oƒSƒVƒbƒN", Osaka;
+	font-size: 12px;
+}
+
+#yurucenter{
+    position: relative;
+    left: calc(50% - 137px);
+    /*background: red;*/
+    /*border: black solid 1px;*/
+}
+
+
+#-------------- ’Ç‰Á20061002 --------------------
+
+#base_mini {
+	margin: 0px center;
+	width: 460px;
+}
+
+#hedder_mini {
+	width: 460px;
+	margin-bottom: 20px;
+}
+
+
+#contents_mini {
+	width: 460px;
+	font-family: "ƒqƒ‰ƒMƒmŠpƒS Pro W3", "‚l‚r ‚oƒSƒVƒbƒN", Osaka;
+	font-size: 12px;
+	line-height: 20px;
+	border: 1px solid #336666;
+}
+
+#footer_mini {
+	clear: both;
+	width:460px;
+	padding-top: 20px;
+	text-align:center;
+
+}
+
+#contents_mini img{
+	float: left;
+	margin-right: 10px;
+	margin-bottom: 10px;
+	margin-left: 10px;
+
+}
+#contents_mini p{
+	font-family: "ƒqƒ‰ƒMƒmŠpƒS Pro W3", "‚l‚r ‚oƒSƒVƒbƒN", Osaka;
+	font-size: 12px;
+	line-height: 20px;
+	padding-right: 10px;
+	padding-bottom: 20px;
+	padding-left: 10px;
+}
+#contents_mini h1 {
+	font-family: "ƒqƒ‰ƒMƒmŠpƒS Pro W3", "‚l‚r ‚oƒSƒVƒbƒN", Osaka;
+	font-size: 18px;
+	background-color: #366;
+	color: #FFFFFF;
+	margin-bottom: 10px;
+	padding-bottom: 10px;
+}
+#contents_mini h2 {
+	font-family: "ƒqƒ‰ƒMƒmŠpƒS Pro W3", "‚l‚r ‚oƒSƒVƒbƒN", Osaka;
+	font-size: 18px;
+	border-bottom-width: 1px;
+	border-left-width: 10px;
+	border-left-style: solid;
+	border-bottom-style: dotted;
+	margin-bottom: 10px;
+	border-bottom-color: #366;
+	border-left-color: #366;
+	margin-right: 5px;
+	margin-left: 5px;
+	
+}
+#contents_mini h3 {
+	font-family: "ƒqƒ‰ƒMƒmŠpƒS Pro W3", "‚l‚r ‚oƒSƒVƒbƒN", Osaka;
+	font-size: 18px;
+	margin-right: 5px;
+	margin-left: 5px;
+	
+}
+#contents_mini h4 {
+	font-family: "ƒqƒ‰ƒMƒmŠpƒS Pro W3", "‚l‚r ‚oƒSƒVƒbƒN", Osaka;
+	font-size: 12px;
+	line-height: 20px;
+	border-bottom-style: dotted;
+	margin-bottom: 10px;
+	border-bottom-color: #366;
+	border-top-width: thin;
+	border-top-color: #366;
+	border-bottom-width: thin;
+	border-top-style: dotted;
+	margin-right: 5px;
+	margin-left: 5px;
+	
+}
+
+
+#note{
+	font-family: "ƒqƒ‰ƒMƒmŠpƒS Pro W3", "‚l‚r ‚oƒSƒVƒbƒN", Osaka;
+	font-size: 10px;
+	font-color: #666666;
+	padding: 2px;
+	line-height: 16px;
+}
+
+table{
+	line-height: 140%;
+}

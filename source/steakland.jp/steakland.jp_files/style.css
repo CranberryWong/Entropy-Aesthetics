@@ -1,0 +1,409 @@
+@charset "UTF-8";
+/* CSS Document */
+
+/* ------------------
+      全体にかかるCSS 
+-------------------- */
+
+@import url('css/reset.css');
+
+html {
+	font: 10px/1.5 "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", Osaka, "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	color:#000;
+}
+
+:first-child + html body {
+    font-size: 10px;
+}
+
+* html body {
+    font-size: 10px;
+}
+
+*, ::before, ::after {
+	-webkit-box-sizing: content-box;
+	-moz-box-sizing: content-box;
+	box-sizing: content-box;
+}
+
+body, button, input, select, textarea {
+	color: #000;
+}
+
+strong {
+	font-weight: normal;
+}
+
+/* ---- iPhone -----*/
+
+html{
+	-webkit-text-size-adjust: none;
+}
+
+/* ---- 上記iPhone -----*/
+
+/* ---- Android -----*/
+
+p, li, h2, h3, h4, h5, h6 {
+	background: url('img/common-noshrink.gif')
+}
+
+/* ---- 上記Android -----*/
+
+p{
+	color: #fff;
+	font-size: 12px;
+	font-size: 1.2rem;
+	line-height: 1.333334;
+}
+
+/* ---- Clearfix -----*/
+
+.clearfix:before,
+.clearfix:after {
+    content: " ";
+    display: table;
+}
+
+.clearfix:after {
+    clear: both;
+}
+
+.clearfix {
+    *zoom: 1;
+}
+
+/* ---- Rollover for images -----*/
+
+a:hover img {
+	-moz-opacity: 0.8;
+	opacity: 0.8;
+	filter: alpha(opacity=80);
+}
+/* ---- Theme colors -----*/
+
+.tc02 {
+	color: #b69826;
+}
+
+/* ------------------
+      ページ構造のCSS 
+-------------------- */
+
+body {
+	width: 100%;
+	background: #281d1d url('img/common-backUpper.jpg') top center repeat-x ;
+}
+
+header#pageHeader {
+	width: 100%;
+	min-height: 80px;
+	border-top: #b7272d 4px solid;
+}
+
+header#pageHeader #headerInner {
+	width: 960px;
+	margin: 0 auto;
+	padding: 20px 10px;
+	position: relative;
+}
+
+#main {
+	width: 960px;
+	margin: 0 auto;
+}
+
+footer#pageFooter {
+	width: 100%;
+	min-height: 120px;
+	background: url('img/common-backFooter.gif') top center repeat-x ;
+}
+
+footer#pageFooter #footerInner {
+	width: 960px;
+	height: 96px;
+	margin: 0 auto;
+	padding: 12px 10px;
+	overflow: visible;
+	position: relative;
+}
+
+
+/* ---- 共通ヘッダ -----*/
+
+header#pageHeader #headerInner h1 {
+	margin-left: 12px;
+	width: 520px;
+}
+
+header#pageHeader #headerInner #headerCopy {
+	font-size: 1.4rem;
+	font-size: 14px;
+	width: 340px;
+	position: absolute;
+	top: 20px;
+	right: 0;
+}
+
+/* ---- 共通フッタ -----*/
+
+footer#pageFooter #footerInner #footerLogo {
+	margin-top: 6px;
+}
+footer#pageFooter #footerInner #footerAddr {
+	margin-top: 6px;
+	font-size: 1.4rem;
+	font-size: 14px;
+}
+footer#pageFooter #footerInner #footerContact {
+	position: absolute;
+	width: 326px;
+	top: 10px;
+	right: 0;
+	overflow: visible;
+}
+footer#pageFooter #footerInner #footerContact p {
+	font-size: 1.4rem;
+	font-size: 14px;
+}
+footer#pageFooter #footerInner #footerContact #footerTel {
+	margin-top: 6px;
+}
+footer#pageFooter #footerInner #footerBelow {
+	margin-top: 24px;
+}
+footer#pageFooter #footerInner #footerBelow p {
+	text-align: center;
+	padding-bottom: 12px;
+}
+/* ---- Tel link -----*/
+
+a[href="tel:0783322900"]:hover,
+a[href="tel:0783322900"]:active,
+a[href^="tel:"]:hover,
+a[href^="tel:"]:active {
+	cursor: default;
+}
+
+a[href="tel:0783322900"]:hover img,
+a[href^="tel:"]:hover img {
+	-moz-opacity: 1;
+	opacity: 1;
+	filter: alpha(opacity=100);
+}
+
+/* ------------------
+      トップページのCSS 
+-------------------- */
+
+/* ---- スライダー -----*/
+
+#main.front .flexslider {
+	border: none;
+	box-shadow: none;
+	margin-bottom: 0;
+	background-color: #281d1d ;
+}
+
+#main.front .flexslider .flex-control-nav {
+	bottom: 12px;
+}
+
+/* ---- コンテンツページへのリンク -----*/
+
+#main.front #main-copy {
+	text-align: center;
+	font-size: 1.9rem;
+	font-size: 19px;
+	margin-top: 20px;
+}
+
+#main.front #button-box {
+	list-style: none;
+	margin-top: 20px;
+}
+
+#main.front #button-box li {
+	float: left;
+}
+#main.front #button-box li:first-child {
+	margin-right: 40px;
+}
+
+/* ---- 神戸ビーフについて -----*/
+
+#main.front #kobeBeef {
+	margin: 28px 0 48px;
+}
+#main.front #kobeBeef h2 {
+	color: #fff;
+	font-weight: normal;
+	font-size: 2rem;
+	font-size: 20px;
+}
+#main.front #kobeBeef p {
+	margin-top: 10px;
+	line-height: 1.5;
+}
+
+/* ------------------
+      コンテンツページのCSS 
+-------------------- */
+
+/* ---- ページ内共通設定 -----*/
+
+#main.content section {
+	padding-top: 48px;
+}
+
+#main.content section h2 {
+	color: #fff;
+	font-size: 2.8rem;
+	font-size: 28px;
+	position: relative;
+	height: 28px;
+}
+#main.content section h2:before {
+	width: 960px;
+	height: 1px;
+	background-color: #fff;
+	content: "&nbsp";
+	font-size: 1px;
+	line-height: 1;
+	display: block;
+	position: absolute;
+	top: 13px;
+	left: 0;
+}
+#main.content section h2 span {
+	background-color: #281d1d;
+	position: absolute;
+	z-index: 2;
+	padding-right: 24px;
+}
+#main.content section .inner {
+	width: 460px;
+}
+#main.content section .inner h3 {
+	color: #fff;
+	font-size: 2.1rem;
+	font-size: 21px ;
+	font-weight: bold;
+	margin-top: 24px;
+}
+
+/* ---- メニュー部分 -----*/
+
+#main.content section#menu .inner2 {
+	padding-left: 20px;
+}
+#main.content section#menu .menu-common {
+	font-size: 1.6rem;
+	font-size: 16px ;
+	font-weight: bold;
+	margin: 16px 0;
+}
+#main.content section#menu .menu-item {
+	font-size: 1.6rem;
+	font-size: 16px ;
+	line-height: 2.125;
+	position: relative;
+}
+#main.content section#menu .menu-item .price {
+	display: block;
+	text-align: right;
+	position: absolute;
+	top: 0;
+	right: 0;
+}
+#main.content section#menu .menu-attent {
+	font-size: 1.6rem;
+	font-size: 16px ;
+	line-height: 2.125;
+	text-align: right;
+	margin-top: 10px;
+}
+#main.content section#menu #lunch {
+	background: url('img/cont-menu-img01.png') right 24px no-repeat;
+	padding-bottom: 20px;
+}
+#main.content section#menu #dinner {
+	background: url('img/cont-menu-img02.png') left -72px no-repeat;
+}
+#main.content section#menu #dinner .inner {
+	float: right;
+}
+
+/* ---- アクセス部分 -----*/
+
+#main.content section#access #mapsBox {
+	margin: 36px 0 80px;
+}
+#main.content section#access #mapsBox .mapsItem {
+	width: 300px;
+	display: inline;
+	float: left;
+	margin-right: 30px;
+}
+#main.content section#access #mapsBox .mapsItem:last-child {
+	margin-right: 0;
+}
+#main.content section#access #mapsBox .mapsItem h3 {
+	color: #fff;
+	font-size: 2rem;
+	font-size: 20px;
+	font-weight: bold;
+	margin-top: 20px;
+}
+#main.content section#access #mapsBox .mapsItem .address {
+	font-size: 1.4rem;
+	font-size: 14px;
+	line-height: 1.3571428;
+	margin: 14px 0 10px;
+}
+#main.content section#access #mapsBox .mapsItem .access-tel {
+	font-family:"メイリオ", Meiryo, 'Cantarell', sans-serif;
+	font-size: 1.7rem;
+	font-size: 17px;
+	line-height: 1.4117647;
+	font-weight: bold;
+}
+#main.content section#access #mapsBox .mapsItem .access-tel.color_red {
+	color: #b4272d;
+	/* text-shadow: 1px 1px 0 #fff, -1px 1px 0 #fff, 1px -1px 0 #fff, -1px -1px 0 #fff; */
+}
+#main.content section#access #mapsBox .mapsItem .time {
+	font-size: 1.4rem;
+	font-size: 14px;
+	line-height: 1.3571428;
+	margin-top: 10px;
+}
+#main.content section#access #mapsBox .mapsItem .map-canvas {
+	height: 260px;
+}
+
+
+/* ------------------
+      共通部品のCSS 
+-------------------- */
+
+
+.mt4 {
+	margin-top: 4px;
+}
+.mt8 {
+	margin-top: 8px;
+}
+.mt12 {
+	margin-top: 12px;
+}
+.mt16 {
+	margin-top: 16px;
+}
+.mt20 {
+	margin-top: 20px;
+}
+.mt24 {
+	margin-top: 24px;
+}
+

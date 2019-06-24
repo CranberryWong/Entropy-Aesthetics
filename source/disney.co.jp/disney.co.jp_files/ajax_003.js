@@ -1,0 +1,1 @@
+mboxFactories.get('default').get('SiteCatalyst: event',0).cancelTimeout();mboxFactories.get('default').get('SiteCatalyst: event',0).setOffer(new mboxOfferDefault()).show();

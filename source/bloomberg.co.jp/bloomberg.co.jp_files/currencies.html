@@ -1,0 +1,40 @@
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <!-- base href="https://www.bloomberg.co.jp/markets/components/securities-widget/ja/currencies" -->
+    <meta name="robots" content="noindex">
+    <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="bonds_data/securities_widget_layout-32d1dbc1ac.css">
+  </head>
+
+  <body class="fixed-height">
+    <script src="bonds_data/securities_widget-b38bcad843.js"></script>
+    <div class="securities-widget"><section class="securities-widget__container" lang="ja"> <h1 class="securities-widget__title"> 為替レート </h1><table class="securities-widget__table"> <tbody class="securities-widget__list">  <tr class="securities-widget__security"> <td class="securities-widget__security-name"> <a href="https://www.bloomberg.co.jp/quote/USDJPY:CUR">米ﾄﾞﾙ/円</a> </td> <td class="securities-widget__value-field"> 110.75 </td> <td class="securities-widget__change down"> 0.23 </td> </tr>  <tr class="securities-widget__security"> <td class="securities-widget__security-name"> <a href="https://www.bloomberg.co.jp/quote/EURJPY:CUR">ﾕｰﾛ/円</a> </td> <td class="securities-widget__value-field"> 129.91 </td> <td class="securities-widget__change down"> 0.25 </td> </tr>  <tr class="securities-widget__security"> <td class="securities-widget__security-name"> <a href="https://www.bloomberg.co.jp/quote/EURUSD:CUR">ﾕｰﾛ/米ﾄﾞﾙ</a> </td> <td class="securities-widget__value-field"> 1.17 </td> <td class="securities-widget__change same"> 0.00 </td> </tr>  <tr class="securities-widget__security"> <td class="securities-widget__security-name"> <a href="https://www.bloomberg.co.jp/quote/GBPJPY:CUR">英ﾎﾟﾝﾄﾞ/円</a> </td> <td class="securities-widget__value-field"> 146.19 </td> <td class="securities-widget__change down"> 0.18 </td> </tr>  <tr class="securities-widget__security"> <td class="securities-widget__security-name"> <a href="https://www.bloomberg.co.jp/quote/AUDJPY:CUR">ｵｰｽﾄﾗﾘｱﾄﾞﾙ/円</a> </td> <td class="securities-widget__value-field"> 82.38 </td> <td class="securities-widget__change down"> 0.36 </td> </tr>  <tr class="securities-widget__security"> <td class="securities-widget__security-name"> <a href="https://www.bloomberg.co.jp/quote/CHFJPY:CUR">ｽｲｽﾌﾗﾝ/円</a> </td> <td class="securities-widget__value-field"> 111.69 </td> <td class="securities-widget__change down"> 0.18 </td> </tr>  </tbody> </table><div class="securities-widget__link-container"> <a class="securities-widget__link" href="https://www.bloomberg.co.jp/markets/currencies/asia-pacific">外国為替レート 一覧</a> </div> </section></div>
+  
+
+  <script type="text/javascript">
+      (function() {
+          var $ = require("jquery");
+          var appView = require("components/SecuritiesWidgetView");
+          var appConfig = JSON.parse('{"type":"currencies","locale":"ja","tracking":{"gtm":{"id":"GTM-NV5B7R","schema":{"adCode":"string","contentCategories":"string","contentId":"string","contentSubCategory":"string","contentType":"string","pageBrand":"string","pageSection":"string","pageType":"string","primaryCategory":"string","referrer":"string","typeOfContent":"string"}}}}');
+
+          var locale = appConfig.locale || "en";
+          var type = appConfig.type;
+
+          var SecuritiesWidget = require("code/SecuritiesWidget");
+          var securitiesWidget = new SecuritiesWidget({
+              locale: locale,
+              type: type
+          });
+
+          var app = new appView({
+              model: securitiesWidget,
+              el: $(".securities-widget"),
+              appConfig: appConfig
+          });
+
+          app.setup();
+      })();
+  </script>
+
+
+</body></html>

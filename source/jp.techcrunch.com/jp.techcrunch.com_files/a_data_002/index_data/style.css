@@ -1,0 +1,104 @@
+body {
+  font-family: Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  -moz-user-select: -moz-none;
+  -khtml-user-select: none;
+  -webkit-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+}
+
+button {
+  background-color: #0068FF;
+  border: none;
+  color: white;
+  cursor: pointer;
+  font-family: inherit;
+  font-size: 12px;
+  height: 26px;
+  outline: none;
+  -webkit-tap-highlight-color: rgba(0, 0, 0, 0);
+  user-select: none;
+  width: 108px;
+}
+
+button:hover, button:active {
+  color: #FAF000;
+}
+
+button:active {
+  font-size: 11px;
+}
+
+.centered {
+  position: absolute;
+  margin: auto;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+}
+
+.ad-container {
+  background-color: white;
+  border: 1px solid black;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+html, body {
+  height: 100%;
+}
+
+#billboard {
+  background-image:url(../images/logo.png);
+  background-position: 10px 10px;
+  background-repeat:no-repeat;
+  height: 250px;
+  min-height: 250px;
+  max-height: 600px;
+  position: absolute;
+  width: 970px;
+}
+
+.label {
+  color: #0D2A4D;
+  position: absolute;
+  margin-left: 10px;
+  top: 35px;
+}
+
+#close-button {
+  position: absolute;
+  right: 10px;
+  top: 10px;
+}
+
+.buttons {
+  position: absolute;
+  height: 26px;
+  bottom: 10px;
+  right: 10px;
+}
+
+#expand-button {
+  height: 100%;
+  position: absolute;
+  width: 100%;
+}
+
+.label{
+  font-size: 14px;
+  top: 65px;
+}
+
+.video-container {
+  height: 180px;
+  position: absolute;
+  width: 320px;
+}
+
+video {
+  height: 100%;
+  width: 100%;
+}

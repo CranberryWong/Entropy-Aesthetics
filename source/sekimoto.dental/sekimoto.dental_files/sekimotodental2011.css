@@ -1,0 +1,377 @@
+/* ------------------------------------------------------
+ 関本歯科医院基本レイアウト　sekimotodental.css 
+-------------------------------------------------------*/
+
+body,h1,h2,h3,h4,h5,p,div,ul,ol,li,form,hr,img{
+	margin: 0px;
+	padding: 0px;
+}
+
+body {
+	text-align:center;
+	font-color:#666;
+	-webkit-text-size-adjust: none;
+}
+
+/* ------------------------------------------------------
+ 全体の設定
+ ------------------------------------------------------ */
+
+/* リンク */
+a:link{color: #08A;text-decoration: none}
+a:visited {color: #08A;text-decoration: none}
+a:hover {color: #08A;text-decoration: underline}
+a:active {color: #F00;text-decoration: underline}
+
+/* 強調 */
+strong{
+	color:#900;
+	font-weight: normal;
+}
+
+/*マーク*/
+
+.mark{
+	color:#FFF;
+	font-weight: normal;
+	background-color:#900;
+	padding:2px;
+}
+
+/*テーブル内の標準文字*/
+
+td{
+	color:#333;
+	font-size:12px;
+	line-height:20px;
+}
+
+th{
+	color:#333;
+	font-size:12px;
+	font-weight:bold;
+	line-height:20px;
+}
+
+h1{
+/*	visibility:hidden;	*/
+	font-size:12px;
+	color:#999;
+	margin:5px 0 0 10px;
+}
+
+.catch{
+	width:560px;
+	height:100px;
+	margin:0 0 20px 0;
+	}
+
+.catch h2{
+	visibility:hidden;
+	font-size:1px;
+}
+
+h3{
+	font-size:14px;
+	color:#1F98B2;
+	font-weight:bold;
+	line-height:140%;
+	padding:5px 0 0 0;
+	border-top:1px dotted #1F98B2;
+}
+
+h4{
+	font-size:14px;
+	line-height:140%;
+	color:#333;
+	margin:5px 30px 0 10px;
+}
+
+h5{
+	font-size:14px;
+	line-height:14px;
+	color:#FFF;
+	background-image: url(../images/bg_h5_1.gif);
+	background-repeat: no-repeat;
+	margin:5px 20px 5px 10px;
+	padding:8px 10px;
+}
+
+.sml{	/*小さい文字*/
+	font-size:10px;
+}
+
+.txtl{
+	font-weight:bold;
+	font-size:14px;
+}
+
+/* ------------------------------------------------------
+ 全体のボックス
+------------------------------------------------------ */
+#container{
+	width:760px;
+	margin:auto;
+	text-align:left;
+/*	background-color: #FFF;*/
+/*	background-image: url(../images/bg_02.gif);*/
+/*	background-repeat: repeat-y;*/
+}
+
+/* ------------------------------------------------------
+ ヘッダ
+ ------------------------------------------------------ */
+#header{
+	width:100%;
+	height:120px;
+	background-image: url(../images2/head.jpg);
+/*	background-color:#CCC;*/	/*確認用*/
+}
+
+
+/* ------------------------------------------------------
+ ナビ
+ ------------------------------------------------------ */
+#gnavi{
+	width:760px;
+	height:40px;
+	font-size:1px;
+}
+
+ul#button{
+	list-style:none;
+}
+
+ul#button li{
+	list-style:none;
+	float:left;
+}
+
+ul#button a{
+	display:block;
+	width:152px;
+	height:40px;
+	text-indent:-100px;
+	overflow:hidden;
+}
+
+a.mnu01{	background-image:url(../images2/menu_01.jpg);}
+a:hover.mnu01{	background-position:0px -40px;}
+a.mnu01c{	background-image:url(../images2/menu_01.jpg);background-position:0px -40px;}
+
+a.mnu02{	background-image:url(../images2/menu_02.jpg);}
+a:hover.mnu02{	background-position:0px -40px;}
+a.mnu02c{	background-image:url(../images2/menu_02.jpg);background-position:0px -40px;}
+
+a.mnu03{	background-image:url(../images2/menu_03.jpg);}
+a:hover.mnu03{	background-position:0px -40px;}
+a.mnu03c{	background-image:url(../images2/menu_03.jpg);background-position:0px -40px;}
+
+a.mnu04{	background-image:url(../images2/menu_04.jpg);}
+a:hover.mnu04{	background-position:0px -40px;}
+a.mnu04c{	background-image:url(../images2/menu_04.jpg);background-position:0px -40px;}
+
+a.mnu05{	background-image:url(../images2/menu_05.jpg);}
+a:hover.mnu05{	background-position:0px -40px;}
+a.mnu05c{	background-image:url(../images2/menu_05.jpg);background-position:0px -40px;}
+
+#snavi{
+	width:760px;
+	height:20px;
+	font-size:10px;
+	background-color:#FFF;
+	margin:0 0 0 5px;
+}
+
+
+/* ------------------------------------------------------
+ メインコンテンツエリア
+------------------------------------------------------ */
+#main{
+	width:560px;
+	float:left;
+	padding:10px 0;
+/*	background-color:#EEE;	*/
+}
+
+*html body #main{
+	width:600px;
+	float:left;
+	padding:10px 0;
+}
+
+#main p{
+	color:#333;
+	font-size:12px;
+	line-height:20px;
+	margin:5px 20px 15px 10px;
+}
+
+.tbl1{
+	background-color:#CCC;
+	margin:5px 30px 10px 0;
+}
+
+.tbl1 td{
+	background-color:#FFF;
+	padding:3px;
+}
+
+.tbl1 th{
+	background-color:#EEE;
+	text-align:center;
+	padding:3px;
+}
+
+.imgboxR{
+	font-size:10px;
+	color:#333;
+	float:right;
+	text-align:center;
+	border:1px solid #ccc;
+	padding:8px;
+	margin:3px 20px 3px 10px;
+}
+
+.imgboxL{
+	font-size:10px;
+	color:#333;
+	float:left;
+	text-align:center;
+	border:1px solid #ccc;
+	padding:8px;
+	margin:3px 10px 3px 10px;
+}
+
+
+/* ------------------------------------------------------
+ サブコンテンツエリア
+------------------------------------------------------ */
+
+#sub{
+	width:200px;
+	float:right;
+/*	margin:650px 0 0 10px;
+	background-color:#CCC;*/
+}
+
+*html body #sub{
+	width:200px;
+	float:right;
+/*	margin:650px 0 0 5px;*/
+}
+
+#sub p{
+	color:#333;
+	font-size:12px;
+	line-height:140%;
+/*	margin:10px 10px 0 10px;	*/
+}
+
+#sub h3{
+	margin:10px 10px 0 10px;
+}
+
+
+.hotNews{
+	background-color:;
+	margin:5px 0 5px 10px;
+/*	background-color:#EEE;
+	border:	border:solid 1px #666;*/
+}
+
+.hotNews h4{	/*記事タイトル*/
+	color:#FFF;
+	font-size:12px;
+	line-height:18px;
+	font-weight:bold;
+	background-color:#8FCDDA;
+	margin:0;
+	padding:3px;
+}
+
+.hotNews p{
+	color:#333;
+	font-size:12px;
+	line-height:140%;
+	margin:3px;
+}
+
+
+#hotLink{/*ULに*/
+	font-size:12px;
+	line-height:15px;
+	margin:10px 0 10px 10px;
+}
+
+
+#hotLink li{
+	list-style: none inside; 
+	padding-left:10px;
+	background:url(../images/dot_01.gif) no-repeat left top; 
+	margin:5px;
+}
+
+#hotLink a:link{color: #666;text-decoration: underline}
+#hotLink a:visited {color: #666;text-decoration: underline}
+#hotLink a:hover {color: #F60;text-decoration: underline}
+#hotLink a:active {color: #F00;text-decoration: underline}
+
+
+/* ------------------------------------------------------
+------------------------------------------------------ */
+
+.box1{
+	width:370px;
+	font-size:12px;
+	line-height:140%;
+	background-color:#999;
+	border:1px #ccc solid;
+	margin:10px 10px 0 10px;
+	padding:3px;
+}
+
+.box1 h3{
+	color:#fff;
+	font-size:14px;
+	font-weight:bold;
+	line-height:140%;
+}
+
+.box2{
+	width:370px;
+	font-size:12px;
+	line-height:140%;
+	background-color:#eee;
+	border:1px #ccc solid;
+	margin:0 10px 10px 10px;
+	padding:3px;
+}
+
+
+
+/* ------------------------------------------------------
+ フッタ
+------------------------------------------------------ */
+#footer{
+	width:100%;
+	height:36px;
+	clear:both;
+	border-top:solid 1px #999;
+	border-bottom:solid 2px #999;
+}
+
+#footer p{
+	font-size:10px;
+	color:#999;
+	line-height:140%;
+	text-align:right;
+	margin:10px;
+}
+
+/* クリア */
+.cb{
+	width:100%;
+	clear:both;
+	}
+

@@ -1,0 +1,11 @@
+/*! 伸缩广告 */
+.cps_strech {position: relative}
+.cps_strech .replay {position: absolute; top:0; right: -48px; width: 48px;height: 19px;background-image: url(/static/images/cps_ad/replay.gif);cursor: pointer;display: block;}
+.cps_strech .close {position: absolute; width: 19px; height: 19px; right: 7px; top: 7px; background-image: url(/static/images/cps_ad/close.gif); cursor: pointer;}
+
+/*! 幻灯片 */
+.cps_slide {position: relative}
+
+/*! 对联广告 */
+.cps_sbs {position: absolute; display: none;}
+.cps_sbs .close {cursor: pointer; width: 85px; height: 14px; background: url(/static/images/cps_ad/sbs_close.gif) no-repeat;}

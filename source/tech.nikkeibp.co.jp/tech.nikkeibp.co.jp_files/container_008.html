@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <title>SafeFrame Container</title>
+    <script>
+(function(){var b=String.prototype.trim?function(a){return a.trim()}:function(a){return/^[\s\xa0]*([\s\S]*?)[\s\xa0]*$/.exec(a)[1]},g=function(a,c){return a<c?-1:a>c?1:0};var h;a:{var k=this.navigator;if(k){var l=k.userAgent;if(l){h=l;break a}}h=""};var n=function(a,c){var f=m;return Object.prototype.hasOwnProperty.call(f,a)?f[a]:f[a]=c(a)};var q=-1!=h.indexOf("Opera"),r=-1!=h.indexOf("Trident")||-1!=h.indexOf("MSIE"),t=-1!=h.indexOf("Edge"),u=-1!=h.indexOf("Gecko")&&!(-1!=h.toLowerCase().indexOf("webkit")&&-1==h.indexOf("Edge"))&&!(-1!=h.indexOf("Trident")||-1!=h.indexOf("MSIE"))&&-1==h.indexOf("Edge"),v=-1!=h.toLowerCase().indexOf("webkit")&&-1==h.indexOf("Edge"),w;a:{var x="",y=function(){var a=h;if(u)return/rv:([^\);]+)(\)|;)/.exec(a);if(t)return/Edge\/([\d\.]+)/.exec(a);if(r)return/\b(?:MSIE|rv)[: ]([^\);]+)(\)|;)/.exec(a);if(v)return/WebKit\/(\S+)/.exec(a);if(q)return/(?:Version)[ \/]?(\S+)/.exec(a)}();y&&(x=y?y[1]:"");if(r){var z,A=this.document;z=A?A.documentMode:void 0;if(null!=z&&z>parseFloat(x)){w=String(z);break a}}w=x}var B=w,m={},C=function(a){return n(a,function(){for(var c=0,f=b(String(B)).split("."),O=b(String(a)).split("."),Z=Math.max(f.length,O.length),p=0;0==c&&p<Z;p++){var d=f[p]||"",e=O[p]||"";do{d=/(\d*)(\D*)(.*)/.exec(d)||["","","",""];e=/(\d*)(\D*)(.*)/.exec(e)||["","","",""];if(0==d[0].length&&0==e[0].length)break;c=g(0==d[1].length?0:parseInt(d[1],10),0==e[1].length?0:parseInt(e[1],10))||g(0==d[2].length,0==e[2].length)||g(d[2],e[2]);d=d[3];e=e[3]}while(0==c)}return 0<=c})};var D=u||v||r&&C(11)||t;var aa=/^([^;]+);(\d+);([\s\S]*)$/;try{var E,F=aa.exec(window.name);if(null===F)throw Error("Cannot parse serialized data");var G=+F[2],H=F[3];if(G>H.length)throw Error("Cannot parse serialized data");E={b:F[1],content:H.substr(0,G),a:H.substr(G)};var I;var J=window.location.hash;if(J){var K=J.match(/[&#]eid=([\d,]+)/);I=K?K[1].split(","):[]}else I=[];var ba=I;D&&(window.name="");var L=JSON.parse(E.a);L.goog_safeframe_hlt&&(this.goog_safeframe_hlt=L.goog_safeframe_hlt);L._context&&(this.AMP_CONTEXT_DATA=L._context);this.sf_={v:E.b,exp:ba,cfg:L};var M=E.content,N=window;if(D){var P=N.document;P.open("text/html","replace");P.write(M);P.close()}else{var Q=M,R;if(R=r&&C(7)&&!C(10)){var S=navigator.userAgent.match(/Trident\/([0-9]+.[0-9]+)/);R=6>(S?parseFloat(S[1]):0)}var T;if(T=R)a:{for(var U=0;U<Q.length;++U)if(127<Q.charCodeAt(U)){T=!0;break a}T=!1}if(T){for(var V=unescape(encodeURIComponent(Q)),W=Math.floor(V.length/2),X=[],Y=0;Y<W;++Y)X[Y]=String.fromCharCode(256*V.charCodeAt(2*Y+1)+V.charCodeAt(2*Y));1==V.length%2&&(X[W]=V.charAt(V.length-1));Q=X.join("")}N.goog_content=Q;N.location.replace("javascript:window.goog_content")}}catch(a){};}).call(this);
+    </script><meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"><script>var google_casm=[];</script><script></script><style>html,body,dl,dt,dd,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
+	padding: 0;
+	margin: 0;
+	line-height: 1;
+}
+
+.adwrap {
+	overflow: hidden;
+    border-bottom: 1px solid #e5e5e5;
+	display: table;
+	width: 100%;
+	padding: 5px 0;
+}
+
+.adwrap img {
+	width:60px;
+	vertical-align: middle;
+	border: none;
+	margin: 0 10px 0 0;
+	display: table-cell;
+	background: #fff;
+	float: left;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	position: relative;
+}
+
+.adwrap h3 a {
+	font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック体", YuGothic, "YuGothic M", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+    font-size: 14px;
+    line-height: 21px;
+    font-weight: normal;
+    overflow: hidden;
+	zoom: 1;
+	padding-left: 1px;
+	color: #333;
+	text-decoration: none;
+	text-align: left;
+}
+
+.adwrap h3 a:hover {
+	color:#878787;
+	text-decoration:underline;
+}
+
+.adwrap img:hover {
+	opacity:0.7;
+	filter: "alpha(opacity=70)";
+}
+</style></head><body topmargin="0" marginwidth="0" marginheight="0" leftmargin="0"><script src="container_data_008/ext.js"></script><script>var viewReq = new Array();function vu(u) {var i=new Image();i.src=u.replace("&amp;","&");viewReq.push(i);}</script><script>vu("https://securepubads.g.doubleclick.net/pcs/view?xai\u003dAKAOjsteUl682cYI2Iwx1LWIoYBOAx1XC2m9XUImdcSmwj9boHFJr-q23Couhk1UQ8d6RXoimVQgva8loCdcIgGXlnfBpgVM9Q9YHvaKC3DLU98wOP_qdJces5mqG1miOBwxeILpMFYaX9COYDBvRKv-z0fWjPgfDfMqniqKfKFOzlarpbZSuC7qinjXch7Skk6_PoBBbWQWJk8PNIoy1n_UKjBRNtpzaIVzKv98rwcc79cXS6n1QxoH5getf_00b2vjQosnwbXlJlFaYh0cHAtAq7xYvOk\u0026sai\u003dAMfl-YSzc1S72xB9ORS7LZ-QX7iQnc8BpUk5lECdvfKS_f2sggz1y9NEhR1OU4zARkvTxxkOwrPen-hh6MvAEXczceGhEpQ5Ttg_5bu9L3cSKYzjLv9tP-3-SDxRR6o\u0026sig\u003dCg0ArKJSzOzcuJLYz-wrEAE\u0026urlfix\u003d1\u0026adurl\u003d")</script><div><div class="adwrap"><a href="http://adclick.g.doubleclick.net/pcs/click%253Fxai%253DAKAOjstocjr9MhJQ7W8GUwJ4AKLMiDYmuprRlQ99aV2IjyISc0OQWlHMae6weK3-_8X1kHhiixbc6VupjY4pHLXqlAy6dZgf0l9eooweLjIIhoSK3W4d4PGhd0cYorrLcqi3BrzqW7yHjuO_j9plZDLZGI96Ew5LpUlBm3VZuI3KZo0EO_9-A-eBebiQjUuRWcUg_ZPZOkctQM6WzYrpLZ6P3ZMbPOYdaH5m0RBijGFldwgXFu2xFBKbxKOtXDavAP2kwmN-z_83SEpbYbuuIT0%2526sai%253DAMfl-YSvARrmxw-9wB6VB7aKdZ_U2E_BwwF_KR12YG3iSPxrs43qlGpJMhvE-aLOahcHfYAdBCLD1je5KvjrEC-uIh6AL0fAI5TAThLfiT-3wqFW1CpuILMoHeTlgDE%2526sig%253DCg0ArKJSzCTpi4nHd3mFEAE%2526urlfix%253D1%2526adurl%253Dhttp://special.nikkeibp.co.jp/atcl/NXT/18/MPF2018_OSAKA/index.html%3Fn_cid%3Dnbpad_siad_TKK07814_nxt_inf_0723" target="_blank"><img src="container_data_008/imgad.jpg"></a><h3><a href="http://adclick.g.doubleclick.net/pcs/click%253Fxai%253DAKAOjstocjr9MhJQ7W8GUwJ4AKLMiDYmuprRlQ99aV2IjyISc0OQWlHMae6weK3-_8X1kHhiixbc6VupjY4pHLXqlAy6dZgf0l9eooweLjIIhoSK3W4d4PGhd0cYorrLcqi3BrzqW7yHjuO_j9plZDLZGI96Ew5LpUlBm3VZuI3KZo0EO_9-A-eBebiQjUuRWcUg_ZPZOkctQM6WzYrpLZ6P3ZMbPOYdaH5m0RBijGFldwgXFu2xFBKbxKOtXDavAP2kwmN-z_83SEpbYbuuIT0%2526sai%253DAMfl-YSvARrmxw-9wB6VB7aKdZ_U2E_BwwF_KR12YG3iSPxrs43qlGpJMhvE-aLOahcHfYAdBCLD1je5KvjrEC-uIh6AL0fAI5TAThLfiT-3wqFW1CpuILMoHeTlgDE%2526sig%253DCg0ArKJSzCTpi4nHd3mFEAE%2526urlfix%253D1%2526adurl%253Dhttp://special.nikkeibp.co.jp/atcl/NXT/18/MPF2018_OSAKA/index.html%3Fn_cid%3Dnbpad_siad_TKK07814_nxt_inf_0723" target="_blank">９／１４　あなたの「困った」を解決するものづくり技術が集結</a></h3></div>
+</div><script src="container_data_008/osd_listener.js"></script><script type="text/javascript">osdlfm(-1,'','Bq3aaV9deW5SPLYvhqAG1xbigBQAAAAAQATgByAEJwAIC4AIA4AQBoAYf0ggFCIABEAE','',3812944914,true,'ud\u003d1\u0026la\u003d0\u0026alp\u003dxai\u0026alh\u003d3092926537\u0026xza\u003d1\u0026',3,'CAASEuRov3hF7EFSkCTZe_pTc5uASg','https://pagead2.googlesyndication.com/pcs/activeview?xai\u003dAKAOjsvTgdW4ZyCMbIpIVr2zdAdi-q6BgsICWziyBK7Bm31gnTP4_9sn-f8hQIWKIE93UzOA3z47KXipkPYt7oh5RnJfmpvL2_JNRJw\u0026sig\u003dCg0ArKJSzCn3SEvKeV8rEAE','');</script><script>if (window.top && window.top.postMessage) {window.top.postMessage('{"googMsgType":"adpnt"}','*');}</script><div style="bottom:0;right:0;width:100px;height:100px;background:initial !important;position:absolute !important;max-width:100% !important;max-height:100% !important;pointer-events:none !important;image-rendering:-moz-crisp-edges !important;z-index:2147483647;background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAAWBAMAAACrl3iAAAAABlBMVEUAAAD+AciWmZzWAAAAAnRSTlMAApidrBQAAAB9SURBVBjTbZEBDsAgCAPLD/j/a81aChiHia6xw7MC/xUqfGMUkNxNZHIuFZCXyyj67BrlfVovd7n41b0XSSwS1z7BAOG1FMQ7rYXimxV5GKluB5uSpbbDwXln5lR0SpMWAnO8ExSUODqFjiauBLMyUe9OsDHiTfB5Szv50wFANAWIF3Ad2gAAAABJRU5ErkJggg==') !important"></div>
+  
+  
+  
+
+</body></html>

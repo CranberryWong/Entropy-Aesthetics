@@ -1,0 +1,148 @@
+body{
+	margin:0px;
+	background-color:#fff;
+    background-repeat: no-repeat;
+}
+p{
+	padding:0px;
+	margin:0px;
+}
+div{
+	padding:0px;
+	margin:0px;
+}
+#main{
+    width:728px;
+    height:90px;
+    font-family: 'Nunito Sans', Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+    font-size:14px;
+    color: white;
+    overflow:hidden;
+    background-color: #151515;
+}
+
+#border{
+    position:absolute;
+    width:100%;
+    height:100%;
+    border:1px #000 solid;
+    left: 0px;
+    top: 0px;
+    pointer-events: none;
+    cursor: default;
+    box-sizing: border-box;
+}
+#logo{
+    position:absolute;
+    width: 50px;
+    height: 50px;
+    background: url("logo.svg") no-repeat;
+    right: 10px;
+    bottom: 10px;
+    pointer-events: none;
+    cursor: default;
+}
+
+#line1, #line2, #line3{
+	position:absolute;
+	top: 15px;
+	left: 10px;
+    width: 390px;
+    font-weight: 400;
+	font-size:15px;
+	text-align: left;
+    line-height: 1.2;
+}
+
+#cta_btn{
+    position:absolute;
+    font-weight:600;
+    font-size:14px;
+    color:#ffffff;
+    padding:.5em 1em .5em 1em;
+    cursor:pointer;
+    opacity:0;
+    white-space: nowrap;
+    right:75px;
+    bottom: 10px;
+    border: solid 1px #fff;
+    box-shadow: 0px 0px 5px #fff ;
+    overflow: hidden;
+    background-color: black;
+}
+
+#glare{
+    position: absolute;
+    background: url("cta_glare.png");
+    width: 100px;
+    height: 100px;
+    left: -100px;
+    top:0px;
+
+}
+#glow{
+    position: absolute;
+    background: url("glow.png");
+    width: 25px;
+    height: 25px;
+    opacity: 0;
+    pointer-events: none;
+}
+#cta_btn:hover{
+    background-color:#608e32;
+}
+#legal{
+    position:absolute;
+    width:390px;
+	left:10px;
+	top:20px;
+	font-size:12px;
+	text-align: left;
+	opacity: 0;
+}
+#disclaimer{
+    position:absolute;
+    left:10px;
+    bottom:8px;
+    font-size:12px;
+    text-align: left;
+    pointer-events: none;
+    cursor: default;
+}
+#bg-exit {
+    position: absolute;
+    width:100%;
+    height:100%;
+    top: 0px;
+    left: 0px;
+    cursor: pointer;
+    opacity: 0;
+}
+#laptop{
+    position: absolute;
+    left: 220px;
+    top: -85px;
+    width: 500px;
+    height: 400px;
+    background: url("laptop.jpg");
+    -ms-transform: scale(0.6); /* IE 9 */
+    -webkit-transform: scale(0.6); /* Safari */
+    transform: scale(0.6);
+}
+#shine{
+    position: absolute;
+    left: 0px;
+    top: 0px;
+    width: 500px;
+    height: 70px;
+    background: url("shine_sprite_sheet.jpg") no-repeat;
+    background-position: 0px 0px;
+}
+
+/* timeline */
+.slider { width:296px; height: 100px; background: #cccccc; margin-top: 10px; border: #ccc solid 2px; cursor: pointer; -webkit-tap-highlight-color: rgba(0,0,0,0); position: relative; z-index:1001; opacity:0.5 }
+#progressBtn { width: 50px; height: 100%; background: #FFF; cursor: pointer; -webkit-user-select: none;  -webkit-tap-highlight-color: rgba(0,0,0,0); position: relative; z-index:1001; }
+#playControl { display: inline-block; width: 2.8em; font-family: "HelveticaNeue-CondensedBlack", "Helvetica Neue Condensed Black", "Impact", sans-serif;  font-size:50px; color: #AAAAAA; cursor: pointer; transition: color 0.25s ease; position: relative; z-index:1001; } 
+#playControl:hover { color: #ccc; }
+#feedback { display: inline-block; font-family: "HelveticaNeue-CondensedBlack", "Helvetica Neue Condensed Black", "Impact", sans-serif; font-size:50px; color: #DFDFDF; position: relative; z-index:1001; }

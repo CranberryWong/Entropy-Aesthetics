@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <title>SafeFrame Container</title>
+    <script>
+(function(){var b=String.prototype.trim?function(a){return a.trim()}:function(a){return/^[\s\xa0]*([\s\S]*?)[\s\xa0]*$/.exec(a)[1]},g=function(a,c){return a<c?-1:a>c?1:0};var h;a:{var k=this.navigator;if(k){var l=k.userAgent;if(l){h=l;break a}}h=""};var n=function(a,c){var f=m;return Object.prototype.hasOwnProperty.call(f,a)?f[a]:f[a]=c(a)};var q=-1!=h.indexOf("Opera"),r=-1!=h.indexOf("Trident")||-1!=h.indexOf("MSIE"),t=-1!=h.indexOf("Edge"),u=-1!=h.indexOf("Gecko")&&!(-1!=h.toLowerCase().indexOf("webkit")&&-1==h.indexOf("Edge"))&&!(-1!=h.indexOf("Trident")||-1!=h.indexOf("MSIE"))&&-1==h.indexOf("Edge"),v=-1!=h.toLowerCase().indexOf("webkit")&&-1==h.indexOf("Edge"),w;a:{var x="",y=function(){var a=h;if(u)return/rv:([^\);]+)(\)|;)/.exec(a);if(t)return/Edge\/([\d\.]+)/.exec(a);if(r)return/\b(?:MSIE|rv)[: ]([^\);]+)(\)|;)/.exec(a);if(v)return/WebKit\/(\S+)/.exec(a);if(q)return/(?:Version)[ \/]?(\S+)/.exec(a)}();y&&(x=y?y[1]:"");if(r){var z,A=this.document;z=A?A.documentMode:void 0;if(null!=z&&z>parseFloat(x)){w=String(z);break a}}w=x}var B=w,m={},C=function(a){return n(a,function(){for(var c=0,f=b(String(B)).split("."),O=b(String(a)).split("."),Z=Math.max(f.length,O.length),p=0;0==c&&p<Z;p++){var d=f[p]||"",e=O[p]||"";do{d=/(\d*)(\D*)(.*)/.exec(d)||["","","",""];e=/(\d*)(\D*)(.*)/.exec(e)||["","","",""];if(0==d[0].length&&0==e[0].length)break;c=g(0==d[1].length?0:parseInt(d[1],10),0==e[1].length?0:parseInt(e[1],10))||g(0==d[2].length,0==e[2].length)||g(d[2],e[2]);d=d[3];e=e[3]}while(0==c)}return 0<=c})};var D=u||v||r&&C(11)||t;var aa=/^([^;]+);(\d+);([\s\S]*)$/;try{var E,F=aa.exec(window.name);if(null===F)throw Error("Cannot parse serialized data");var G=+F[2],H=F[3];if(G>H.length)throw Error("Cannot parse serialized data");E={b:F[1],content:H.substr(0,G),a:H.substr(G)};var I;var J=window.location.hash;if(J){var K=J.match(/[&#]eid=([\d,]+)/);I=K?K[1].split(","):[]}else I=[];var ba=I;D&&(window.name="");var L=JSON.parse(E.a);L.goog_safeframe_hlt&&(this.goog_safeframe_hlt=L.goog_safeframe_hlt);L._context&&(this.AMP_CONTEXT_DATA=L._context);this.sf_={v:E.b,exp:ba,cfg:L};var M=E.content,N=window;if(D){var P=N.document;P.open("text/html","replace");P.write(M);P.close()}else{var Q=M,R;if(R=r&&C(7)&&!C(10)){var S=navigator.userAgent.match(/Trident\/([0-9]+.[0-9]+)/);R=6>(S?parseFloat(S[1]):0)}var T;if(T=R)a:{for(var U=0;U<Q.length;++U)if(127<Q.charCodeAt(U)){T=!0;break a}T=!1}if(T){for(var V=unescape(encodeURIComponent(Q)),W=Math.floor(V.length/2),X=[],Y=0;Y<W;++Y)X[Y]=String.fromCharCode(256*V.charCodeAt(2*Y+1)+V.charCodeAt(2*Y));1==V.length%2&&(X[W]=V.charAt(V.length-1));Q=X.join("")}N.goog_content=Q;N.location.replace("javascript:window.goog_content")}}catch(a){};}).call(this);
+    </script><meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"><script>var google_casm=[];</script><script></script><style>html,body,dl,dt,dd,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
+	padding: 0;
+	margin: 0;
+	line-height: 1;
+}
+
+.adwrap {
+	overflow: hidden;
+}
+
+img {
+	width: 110px;
+	float: right;
+	margin: 5px 0 15px 15px;
+	background: #fff;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	position: relative;
+	vertical-align: top;
+	border: none;
+}
+
+h3 a {
+	font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック体", YuGothic, "YuGothic M", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: normal;
+	overflow: hidden;
+	zoom: 1;
+	padding-left: 1px;
+	color: #333;
+	text-decoration: none;
+	text-align: left;
+}
+
+h3 a:hover {
+	color:#878787;
+	text-decoration:underline;
+}
+
+h3 a::before {
+	content: "PR";
+	display: inline-block;
+	background: transparent;
+	border: 1px solid #707070;
+	color: #707070;
+	margin: 0 5px;
+	padding: 2px 4px 0px;
+	border-radius: 2px;
+	font-weight: normal;
+	font-size: 10px;
+	line-height: 10px;
+	vertical-align: 1px;
+}
+
+img:hover {
+	opacity:0.7;
+	filter: "alpha(opacity=70)";
+}</style></head><body topmargin="0" marginwidth="0" marginheight="0" leftmargin="0"><script src="container_data_008/ext.js"></script><script>var viewReq = new Array();function vu(u) {var i=new Image();i.src=u.replace("&amp;","&");viewReq.push(i);}</script><script>vu("https://securepubads.g.doubleclick.net/pcs/view?xai\u003dAKAOjss1m2csfOQoGBg8W1R-EeHwaxjj2s0PuBchsrwu-I-yNAumqi7-3mmDSYwsUV-JxkfZ3CKZOzH10k-AxcKuolobZ662fQzK5fvGVKjcdb5XzG1rFPJA_KwhIzdGovtdgSieU5Mi0paKfqbFgDILUy4vRoczEN1-d4kwcRd_uaSKAwQ08c0SDPU4w9jGpP8IO6idiT-HUYrdWhrIwzYUNxFXRO4zOdZJlJ1PRbbkhm2oTK9IuCLYYk1wYhE3f07pCfi9th6sKLDQFYxuqmrITZp7\u0026sai\u003dAMfl-YTsPsSpzsXrPLFKEk9fYT95CSJzWNYnqbR0txUKLyixtlPBlFW-zXsTIIzplwa-ho9QPe-RSNsxql_2hJddn1CGnmGQpsFDlhilbCK1uhLUQir-czm66U2jCXM\u0026sig\u003dCg0ArKJSzCqGFudWIF7AEAE\u0026urlfix\u003d1\u0026adurl\u003d")</script><div><div class="adwrap">
+<a href="http://adclick.g.doubleclick.net/pcs/click%253Fxai%253DAKAOjsuBhVne66k2_tgwCZrRrjPJugXudlpjht4b1gOP8T5vw1ZvXapdp6BDEs7pnvNCpFGhFS0FWPDiMwdZPoXfRAr7_klb-EjDfiNXhGV1V7BjXztDxMAQSRpqOMhLNojQixF80Uo8AyN0F58GLk1l9ElDqiwugo6ddOM-XtbJUvT0zqxvWHq7NK_v9OjYp4tu78WwXebpvPYvproHzbsVRHmtR7kgj-45m35foLcAj_Cyos-OvMJYA_CIAJxDrIPrGAeBZqATUpqGxsvX%2526sai%253DAMfl-YRD78DZzzuTix7QG_pkTO0-Hfn3VvCbBmRv5TA1QuIov5AinWWKkwsXOQztccTdMnbNmUN9Hy4jME7-LJQiHGzIglyPhIG9HHBGoJOKb_E6sbq7fnZSkVRs4PM%2526sig%253DCg0ArKJSzGgkjca_-h6qEAE%2526urlfix%253D1%2526adurl%253Dhttp://special.nikkeibp.co.jp/atcl/NXT/18/automotive0718/" target="_blank"><img src="container_data_002/imgad.jpg"></a><h3><a href="http://adclick.g.doubleclick.net/pcs/click%253Fxai%253DAKAOjsuBhVne66k2_tgwCZrRrjPJugXudlpjht4b1gOP8T5vw1ZvXapdp6BDEs7pnvNCpFGhFS0FWPDiMwdZPoXfRAr7_klb-EjDfiNXhGV1V7BjXztDxMAQSRpqOMhLNojQixF80Uo8AyN0F58GLk1l9ElDqiwugo6ddOM-XtbJUvT0zqxvWHq7NK_v9OjYp4tu78WwXebpvPYvproHzbsVRHmtR7kgj-45m35foLcAj_Cyos-OvMJYA_CIAJxDrIPrGAeBZqATUpqGxsvX%2526sai%253DAMfl-YRD78DZzzuTix7QG_pkTO0-Hfn3VvCbBmRv5TA1QuIov5AinWWKkwsXOQztccTdMnbNmUN9Hy4jME7-LJQiHGzIglyPhIG9HHBGoJOKb_E6sbq7fnZSkVRs4PM%2526sig%253DCg0ArKJSzGgkjca_-h6qEAE%2526urlfix%253D1%2526adurl%253Dhttp://special.nikkeibp.co.jp/atcl/NXT/18/automotive0718/" target="_blank">東芝の車載ソリューションが“自動車の進化”を最先端で支える</a></h3>
+</div>
+</div><script src="container_data_008/osd_listener.js"></script><script type="text/javascript">osdlfm(-1,'','B-leWV9deW46PLYvhqAG1xbigBQAAAAAQATgByAEJwAIC4AIA4AQBoAYf0ggFCIABEAE','',491047797,true,'ud\u003d1\u0026la\u003d0\u0026alp\u003dxai\u0026alh\u003d578475216\u0026xza\u003d1\u0026',3,'CAASEuRoVoHzXx9Qw_Yw5tDJxfOBkA','https://pagead2.googlesyndication.com/pcs/activeview?xai\u003dAKAOjssljh4x_FGjtwzI_3K-NlF357cINdgSjvsnvXeaNnb4qb4F83XmCkgVqTA8_-xrhuZX0R5GIxtN-Xwns8QyJrNzl2QB4kacw5s\u0026sig\u003dCg0ArKJSzBxR4R36bLZREAE','');</script><script>if (window.top && window.top.postMessage) {window.top.postMessage('{"googMsgType":"adpnt"}','*');}</script><div style="bottom:0;right:0;width:100px;height:100px;background:initial !important;position:absolute !important;max-width:100% !important;max-height:100% !important;pointer-events:none !important;image-rendering:-moz-crisp-edges !important;z-index:2147483647;background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAAWBAMAAACrl3iAAAAABlBMVEUAAAD+AciWmZzWAAAAAnRSTlMAApidrBQAAACESURBVBjTbZBREsBABEPjBrn/aVsk6Eztx64KfQL8R3Qgz2YAq0o9nAVai9JM9lZIlop9Ktt6yq96ZqqrZh+SOCSOnHm5YZKaXd80sQHYz7oCowr1aEuag9o1b/1e/qj7kEje9ENq/gDw2XI51hPpxnl7Jim4IFihnfdse93ujIMSd+cDTUQGEcqM0poAAAAASUVORK5CYII=') !important"></div>
+  
+  
+  
+
+</body></html>

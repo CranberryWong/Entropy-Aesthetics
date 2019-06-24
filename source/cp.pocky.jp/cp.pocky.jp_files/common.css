@@ -1,0 +1,181 @@
+@charset "Shift_JIS";
+
+* { 
+    margin:0;
+    padding:0;
+}
+
+#contents_block {
+    margin:0;
+	padding:0;
+	font-family:"ÉqÉâÉMÉmäpÉS Pro W3", "Hiragino Kaku Gothic Pro", "ÉÅÉCÉäÉI", Meiryo, Osaka, "ÇlÇr ÇoÉSÉVÉbÉN", "MS PGothic", sans-serif;
+}
+#contents_block a {
+    text-decoration:none;
+    display:block;
+    outline: none;
+}
+#contents_block ul {
+    list-style:none;
+}
+#contents_block img {
+    border:0px;
+}
+
+#contents_block .sp { display:none !important; }
+
+#contents_block .fbox {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-content: flex-start;
+    -ms-flex-line-pack: start;
+    align-content: flex-start;
+    -webkit-align-items: flex-start;
+    -ms-flex-align: start;
+    align-items: flex-start;
+}
+#contents_block .fbox_inner {
+    display: -ms-inline-flexbox;
+    display: -webkit-inline-flex;
+    display: inline-flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: wrap;
+    -ms-flex-wrap: wrap;
+    flex-wrap: wrap;
+    -webkit-justify-content: space-between;
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -webkit-align-content: stretch;
+    -ms-flex-line-pack: stretch;
+    align-content: stretch;
+    -webkit-align-items: flex-end;
+    -ms-flex-align: end;
+    align-items: flex-end;
+}
+#contents_block .fbox_center {
+    display: -ms-flexbox;
+    display: -webkit-flex;
+    display: flex;
+    -webkit-flex-direction: row;
+    -ms-flex-direction: row;
+    flex-direction: row;
+    -webkit-flex-wrap: nowrap;
+    -ms-flex-wrap: nowrap;
+    flex-wrap: nowrap;
+    -webkit-justify-content: center;
+    -ms-flex-pack: center;
+    justify-content: center;
+    -webkit-align-content: center;
+    -ms-flex-line-pack: center;
+    align-content: center;
+    -webkit-align-items: center;
+    -ms-flex-align: center;
+    align-items: center;
+}
+
+#contents_block a.rollover:hover,
+#contents_block img.rollover:hover,
+#contents_block .rollover a:hover {
+    background-color:#FFF;
+    filter:alpha(opacity=80);
+    -moz-opacity: 0.8;
+    opacity: 0.8;  
+
+}
+
+#contents_block .hide {
+    text-indent: 100%; 
+    white-space: nowrap; 
+    overflow: hidden;  
+}
+
+/*********************************************
+ÉNÉçÉXÉtÉFÅ[Éh
+*********************************************/
+#contents_block .fadeImg  {
+    position: relative;
+}
+#contents_block .fadeImg > * {
+    position: absolute;
+    top: 0;
+    left: 0;
+    z-index: 8;
+    opacity: 0;
+    display:none;
+    margin:0 auto;
+}
+#contents_block .fadeImg .active {
+        z-index: 10;
+        opacity: 1.0;
+}
+
+#contents_block .fadeImg .last-active {
+        z-index: 9;
+}
+/*********************************************
+ÉVÉFÉAÉ{É^Éì
+*********************************************/
+
+/* shareBox */
+#contents_block .shareBox {
+  width: 980px;
+  clear: both;
+  margin: 20px auto 0;
+  text-align: right;
+}
+
+#contents_block .shareBox img {
+  height: 100%;
+  width: auto;
+}
+
+#contents_block .shareBox_wrap {
+  padding: 4px 20px;
+  display: inline-block;
+  white-space: nowrap;
+  border: solid 1px #999999;
+  letter-spacing: -.40em;
+  text-align: center;
+}
+
+#contents_block .shareBox_wrap * {
+  line-height: 0;
+  vertical-align: bottom;
+  border: none;
+  height:24px;
+}
+
+#contents_block .shareBox h3 {
+  display: inline-block;
+  padding: 2px 0;
+  height: 20px;
+  margin: 0;
+}
+
+#contents_block .shareBox ul {
+  display: inline;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  overflow: hidden;
+  height: 24px;
+}
+
+#contents_block .shareBox li {
+  display: inline-block;
+  margin: 0 0 0 6px;
+  padding: 0;
+  height: 24px;
+}

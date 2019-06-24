@@ -1,0 +1,25 @@
+.article_page_left.presentation_full .presentation_v1.horizontal #top .rightSide .text_height_fix_box .viewport {height: 300px;}
+table.last_content td {
+    margin: 0 22px 0 0;
+}
+table.last_content td.text {
+    width: 430px;
+}
+div.row {
+    width: 100%;
+    float:left;
+}
+div.col-md-4 {
+    float:left;
+    width:30%;
+    padding: 0 10px 0 10px;
+}
+.homepage_grid .grid.podcasts_type .news > div .video_details .interviewTitle,
+.homepage_grid .grid.presentations_type .news > div .video_details .presentationTitle {
+    height: 72px;
+}
+
+.homepage_grid .grid.presentations_type .news > div .video_details,
+.homepage_grid .grid.podcasts_type .news > div .video_details {
+    height: 118px;
+}

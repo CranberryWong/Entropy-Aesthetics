@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+		<meta charset="UTF-8">
+		<script>
+			(function() {
+
+				var pc_cookie_sync_url_list = {
+					"GCM":{
+						value:1,
+						cookie_sync_url:"//cm.g.doubleclick.net/pixel?google_nid=MiAd&google_cm&google_sc"
+					},
+				}
+
+				var sp_cookie_sync_url_list = {
+					"GMCM":{
+						value:1,
+						cookie_sync_url:"//cm.g.doubleclick.net/pixel?google_nid=miad_mb&google_cm&google_ula=626206482"
+					},
+				}
+
+				function getCookieSyncUrlList(target_cookie_sync_url_list){
+					var res_cookie_sync_url_list = [];
+					for (var key in target_cookie_sync_url_list) {
+						var target_cookie_value = target_cookie_sync_url_list[key].value;
+						if (getCookieFromBrowser(key) != target_cookie_value) {
+							var target_url_with_protocol = document.location.protocol + target_cookie_sync_url_list[key].cookie_sync_url;
+							res_cookie_sync_url_list.push(target_url_with_protocol);
+						}
+					}
+					return res_cookie_sync_url_list;
+				}
+
+				function getCookieFromBrowser(target_key){
+					var res_cookie_value = "";
+					var cookies = document.cookie.split( ";" );
+					for (var i = 0; i < cookies.length; i++){
+						var trim_cookie_key_value = cookies[i].replace(/^\s+|\s+$/g,"");
+						var cookie_key = trim_cookie_key_value.split("=")[0];
+						var cookie_value = trim_cookie_key_value.split("=")[1];
+						if (cookie_key === target_key){
+							res_cookie_value = cookie_value;
+							break;
+						}
+					}
+					return res_cookie_value;
+				}
+
+				function hasMicroadCookie(){
+					return getCookieFromBrowser("TR");
+				}
+
+				function isSmartPhone(){
+					return /(iPhone|iPod|iPad|Android)/.test(navigator.userAgent);
+				}
+
+				function appendCookieSyncTag(cookie_sync_url) {
+					var img_elem = document.createElement("img");
+					img_elem.src = cookie_sync_url;
+					img_elem.width = 1;
+					img_elem.height = 1;
+					img_elem.border = 0;
+					img_elem.setAttribute("style", "display: none;");
+					var body = document.getElementsByTagName("body")[0];
+					body.insertBefore(img_elem, null);
+				}
+
+				window.onload = function(){
+					if(hasMicroadCookie()){
+						var cookie_sync_url_list = [];
+						if(isSmartPhone()){
+							cookie_sync_url_list = getCookieSyncUrlList(sp_cookie_sync_url_list);
+						} else {
+							cookie_sync_url_list = getCookieSyncUrlList(pc_cookie_sync_url_list);
+						}
+						for (var i = 0; i < cookie_sync_url_list.length; i++){
+							appendCookieSyncTag(cookie_sync_url_list[i]);
+						}
+					}
+				};
+
+			})();
+		</script>
+	</head>
+	<body>
+	
+
+</body></html>

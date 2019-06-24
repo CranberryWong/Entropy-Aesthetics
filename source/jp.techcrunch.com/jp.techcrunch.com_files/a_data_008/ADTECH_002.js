@@ -1,0 +1,4 @@
+document.write('<a href="https://adserver.adtechjp.com/?adlink/9663.1/3932958/0/170/AdId=8090179;BnId=12;guid=UPd66e07ba-28ef-11e8-80d8-0a634dd1f06a;itime=944877543;key=key1%2Bkey2%2Bkey3%2Bkey4;gdpr=0;" target="_blank"><img src="https://aka-cdn.adtechus.com/images/67/Ad8090179St1Sz170Sq26427684V0Id12.gif" border="0" alt="click here" width="300" height="250"/></a>');
+  
+document.write('<img src="https://atpixelas.alephd.com/post_adtech?QRIKvX8BZbK93-g0yZHYkT18pSdWDXuZX8bR393o8odkYnhvGsz0bOsBhxvL9.AcaBKnQ62uId4koVVVKNWRCYYiIeM5waqEAsk.0PUPpdvJQT4IPnWcNVFVto0H1ixKFJFFBWAqX6lD9mqPzKWlJqUqg8RD42i16HHjt3hlb.sikXcdJZKB28r9RN8WKzm54TcvTqsOx9GSwaurLm9g4NwXDt0uk4RnFqnhQtCK-sLSSSTRdiD4csJUUgVc0SrD" width="1" height="1"  style="display:none;">');
+document.write('<img src="https://sync-tm.everesttech.net/upi/pid/eknnbrON?redir=https%3A%2F%2Fpixel.advertising.com%2Fups%2F55986%2Fsync%3Fuid%3D%24%7BUSER_ID%7D%26_origin%3D0" width="1" height="1" style="display:none;">');

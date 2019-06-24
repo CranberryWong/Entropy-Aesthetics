@@ -1,0 +1,104 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta name="robots" content="noindex,nofollow">
+</head>
+<body style="background-color: transparent; padding: 0px; margin: 0px; text-align: center;">
+
+<div style="margin-left: auto; margin-right: auto;">
+
+<div id="yads-pr-label" style="font-family: 'MS PGothic',sans-serif; font-size: 12px; color: #555555; height:15px; line-height:15px; overflow:hidden; display:none;">PR</div>
+
+<script type="text/javascript">
+function escapeString(in_str, escape_amp) {
+  var escaped_str = in_str.replace(/</g, "&lt;")
+                          .replace(/>/g, "&gt;")
+                          .replace(/"/g, "&quot;")
+                          .replace(/'/g, "&#39;");
+  if (escape_amp) {
+     escaped_str = escaped_str.replace(/&/g, "&amp;");
+  }
+  return escaped_str;
+}
+
+function isSubDomain(in_check, in_trust) {
+  var t = in_trust.split('.');
+  var c = in_check.split('.');
+  if (t.length > c.length) {
+    return false;
+  }
+  for (var i = 0; i < t.length; i++) {
+    if (t[t.length - 1 - i] != c[c.length - 1 - i]) {
+      return false;
+    }
+  }
+  return true;
+}
+
+function parseQuery(in_url) {
+  var ret = {};
+  var tmp = in_url.split('?');
+  if (tmp.length != 2) {
+    return ret;
+  }
+
+  var params = tmp[1].split('&');
+  for (var i = 0; i < params.length; i++) {
+    var fldVal = params[i].split('=');
+    if (fldVal.length == 1) {
+      ret[fldVal[0]] = '';
+    } else {
+      ret[fldVal[0]] = window.decodeURIComponent(fldVal[1]);
+    }
+  }
+  return ret;
+}
+
+var gAdTagCreater = {
+  printScript : function() { 
+    var url_strings = [];
+    var url_params = parseQuery(location.href);
+    var entry = 'https://yads.yjtag.yahoo.co.jp/tag?'
+
+    for (var f in url_params) {
+      if (f != 'tag_path') {
+        if (f.match(/^[\w-]+$/)) {
+          var v = url_params[f];
+          url_strings.push(f + '=' + window.encodeURIComponent(escapeString(v, false)));
+        }
+      }
+    }
+
+    document.write('<script type="text/javascript" src="'
+                   + entry
+                   + url_strings.join('&amp;')
+                   + '"></scr' + 'ipt>' );
+  },
+  set : function() {
+    this.printScript();
+  }
+};
+
+var proto = location.protocol == 'https:' ? "https:" : "http:";
+var url = proto + '//yads.c.yimg.jp/js/yads.js';
+document.write('<script type="text/javascript" src="' + url + '"></scri' + 'pt>');
+</script><script type="text/javascript" src="yads.js"></script><script src="iicon.js" type="text/javascript"></script>
+<script type="text/javascript">
+
+gAdTagCreater.set();
+
+</script><script type="text/javascript" src="yads-iframe_data/tag.js"></script><script type="text/javascript" src="yads-iframe_data/ttj"></script><script language="javascript" src="yads-iframe_data/ttj_002"></script><!-- Creative 40898157 served by Member 3663 via AppNexus. --><script type="text/javascript">
+(function(){function c(g){return g.replace(/</g,"&lt;").replace(/>/g,"&gt;").replace(/"/g,"&quot;").replace(/'/g,"&#39;")}function b(h,n){var j={};var l=h.split(n);if(l.length!=2){return j}var m=l[1].split("&");for(var k=0;k<m.length;k++){var g=m[k].split("=");if(g.length==1){j[g[0]]=""}else{j[g[0]]=c(window.decodeURIComponent(g[1]))}}return j}function e(g){var h=/^(http:\/\/i\.yimg\.jp|https:\/\/s\.yimg\.jp)\/images\/listing\/tool\/yads\/yads-iframe.*\.html/;return h.test(g)}var a=(function(){var k="14467902";var j;if(e(window.location.href)){j=window.location.href}else{try{if(e(window.parent.location.href)){j=window.parent.location.href}else{return k}}catch(i){return k}}var g=b(j,"?");if(typeof(g["sid"])!="undefined"&&g["sid"]!=""){return g["sid"]}var h=b(j,"#");if(typeof(h["sid"])!="undefined"&&h["sid"]!=""){return h["sid"]}return k})();var f=(location.protocol=="https:")?"https:":"http:";var d=f+"//yeas.yahoo.co.jp/a?f="+a+"&l=LREC2&p=jp&jcode=u&c=rp&domain=yimg.jp&rnd="+new Date().getTime();document.write("<sc"+'ript type="text/javascript" src="'+d+'">');document.write("</sc"+"ript>")})();
+</script><script type="text/javascript" src="yads-iframe_data/a.js"></script><script type="text/javascript" src="yads-iframe_data_002/publishertag.js"></script><script type="text/javascript">var Criteo = Criteo || {};Criteo.events = Criteo.events || [];Criteo.events.push(function(){Criteo.DisplayAd({'zoneid':1169112,'async': false})});</script><script type="text/javascript" src="yads-iframe_data/ajs.js"></script><div id="beacon_b3fb482654" style="position: absolute; left: 0px; top: 0px; visibility: hidden;">
+<img src="yads-iframe_data/lg.gif" width="0" height="0">
+</div>
+<script type="text/javascript">
+gCRITEO.passback();
+</script><script src="yads-iframe_data/a_002.js" type="text/javascript"></script><div id="yads_dummy_parent_695642082"><!-- ad --><div data-ydntxt-wrap="" style="display:block;position: relative;height:auto;width: auto;margin:0px 0px 0px 0px ;padding:0;clear:both;float:none;text-align:left;overflow:hidden;box-sizing:content-box;font-size:16px;border-style:solid;border-width:0px 0px 0px 0px ;border-color:#ccc;background-image:none;background-color:#fff;font-family:'メイリオ','Hiragino Kaku Gothic Pro',Meiryo,'ヒラギノ角ゴ Pro W3','MS PGothic','MS UI Gothic',Helvetica,Arial,sans-serif;line-height:1.1" data-i="1" data-i-position="TR" data-i-url="https://feedback.promotionalads.yahoo.co.jp/fdbk?p=.ZNd1JoJPyj_Uj3BqP2otgaiWenIoTmY4SzCDxYs499sMzF2O1bv4N.o._dnhmN9xow-&amp;a1=C95P3rYLN2GHhyRaDfNAoxT8qPALQc8PDnLia3cuX8L9_P9LvoJSBDSHBkEsIjvOYRrwwTR87..WStzFHbGJ1w--&amp;c=8ek7nlkENCv0EbGQLm__N82JcctC" data-i-linktarget="_top"><div style="display:block;margin:0;padding:0;height:auto;line-height:inherit;background:none;font-size:inherit;float:none;clear:both;overflow:hidden;box-sizing:content-box;"><a data-ydntxt-item="1" target="_top" style="display:block;overflow:hidden;background-image: none;box-sizing:content-box;line-height:inherit;font-size:inherit;float:left;width:298px;height:248px;margin: 0px 0px 0px 0px ;padding:0px 0px 0px 0px ;border-style:solid;border-width:1px 1px 1px 1px ;border-color:#ccc;text-decoration:none;background-color:#fff;word-break:break-all;_zoom:1;" onmouseout="this.style.backgroundColor='#fff';document.getElementById('edt_yads_dummy_parent_695642082_0_title').style.color='#03C';document.getElementById('edt_yads_dummy_parent_695642082_0_title').style.textDecoration='none';document.getElementById('edt_yads_dummy_parent_695642082_0_principal').style.color='#888';document.getElementById('edt_yads_dummy_parent_695642082_0_principal').style.textDecoration='none';document.getElementById('edt_yads_dummy_parent_695642082_0_button').style.color='#03C';document.getElementById('edt_yads_dummy_parent_695642082_0_button').style.backgroundColor='#fff';document.getElementById('edt_yads_dummy_parent_695642082_0_button').style.textDecoration='none';" onmouseover="this.style.backgroundColor='#eaeef2';document.getElementById('edt_yads_dummy_parent_695642082_0_title').style.color='#CC3434';document.getElementById('edt_yads_dummy_parent_695642082_0_title').style.textDecoration='underline';document.getElementById('edt_yads_dummy_parent_695642082_0_principal').style.color='#888';document.getElementById('edt_yads_dummy_parent_695642082_0_principal').style.textDecoration='none';document.getElementById('edt_yads_dummy_parent_695642082_0_button').style.color='#CC3434';document.getElementById('edt_yads_dummy_parent_695642082_0_button').style.backgroundColor='#eaeef2';document.getElementById('edt_yads_dummy_parent_695642082_0_button').style.textDecoration='underline';" href="https://rd.ane.yahoo.co.jp/rd?ep=HcBgFIhN4hjEwi2J_EuSRTDhOle3lU7dyXo8KP5Ygap9YGr95FO.Fo96I2x7pHqNZQKCX0ApV6d2yNH5n8rfKf0CNkljqyEDv5xHMTgq3MBzsEbEOtWgDopO6D8RInxfFESJvcCDBAbgbg3oGWpWOk3DKzXPx2es9jTWcObx5R_LwdNY.LtG2D54w.i1x9ya_PzWYX0ThTjBSX.PWoiT6yycvB6angWq4C7lYIZtCS6t8fTfj6yP9kIUvP2Eb55mK9vHDAFoB.cpN_ugXl6nZ4n_TzJ0WoZNQ8DZXtsnS30lXzC88hckqR2R.cFnu2WCuU0bexChFYkCvs19VeU9NQuwCBsuPRPEbbtym7gBdz75DEzMm2vAHPhKdxxi4WaeCspngzIF0VG1qU8iyFdrAdf.KQdTm_UUsrQn_xbSerxw1vgwXaaO1XDGLWqJIlej3.3HbWw6yXTOXspMu3ouPyE0khma79iai555yH_gqi0GOiVxpUO6r7tJiL6cLnXX9K9C9FzslJocfHlZZy12U3B6SOsE&amp;a=ExUOvDU_xD1qkvx2zg--&amp;s=LMt.41c9w2Ydaw--&amp;t=HcTRQqJhwyu7&amp;ifa=VG8mDFM-&amp;cv_label=9fWBYQBN9g.U&amp;tpl_id=qnfPzi08&amp;tpl_path=VG8mDFM-&amp;ctv_optmz=4bAM5jY9&amp;disp_atime=ux.geI09k2wXX._41swM&amp;vflg=qnfPzi08&amp;C=9&amp;D=1&amp;F=0&amp;I=&amp;RI=b68983cfbb2af189356af9a69e46bde5&amp;S=931f0ecd404&amp;as=2&amp;etlid=1001818146&amp;f=64&amp;ff=1&amp;fq_d=1%2C3%2C3%2C0&amp;fq_m=1%2C3%2C3%2C0&amp;fq_w=1%2C3%2C3%2C0&amp;g=4&amp;lp=https%3A%2F%2Fieieieieie.com%2Fgorin1%2F%3Fgr_no%3Da0009%26sid%3D37646%26prm%3DDYDN_tp1200newsa0009&amp;maf=26&amp;mid=3948069&amp;o=9&amp;p=9&amp;qfid=194463&amp;r=&amp;rfm=1_2_2&amp;sfid=194463&amp;skwid=0&amp;tlid=0&amp;u=news.yahoo.co.jp&amp;yads_ds=85285_187195&amp;v=2"><div style="width:auto;height:auto;margin:0;padding:0;line-height:inherit;background:none;overflow:hidden;clear:both;float:none;"><img src="yads-iframe_data/bad97abdf1f631981d639fbcd5a6130c.jpg" alt="" style="width:300px;height:157px;display:block;line-height: 1;-moz-box-sizing:content-box;-webkit-box-sizing:content-box;box-sizing:content-box;width:300px;height:157px;margin:0px 0px 3px 0px ;border-style:none;border-width:0px 0px 0px 0px ;border-color:#fff;"></div><p id="edt_yads_dummy_parent_695642082_0_title" data-ydntxt-title="1" style="float:none;width:auto;height:auto;margin:7px 6px 6px 6px ;padding:0;box-sizing:content-box;background:none;font-size:18px;line-height:inherit;text-align: left;word-break:break-all;text-decoration:none;color:#03C;font-weight:normal;">高知県で土地バブル到来か？</p>  <div style="width:auto;height:auto;margin:0;padding:0;font-size:inherit;background:none;line-height:inherit;text-align: right;clear:both;"><div id="edt_yads_dummy_parent_695642082_0_button" style="display: inline-block;*display: inline; *zoom: 1;width:auto;height:auto;line-height: 1;background-image: none;box-sizing:content-box;margin: 8px 0px 2px 10px ;padding: 0px 8px 6px 6px ;border-radius: 5px;border-style:none;border-width:0px 0px 0px 0px ;border-color:#fff;background-color: #fff;font-size: 14px;font-weight: normal;color: #03C;text-decoration:  none;">詳しくはこちら</div></div>  <p id="edt_yads_dummy_parent_695642082_0_principal" data-ydntxt-host="1" style="margin:-28px 120px 0px 6px ;padding:0;box-sizing:content-box;text-align: left;word-break:break-all;background: none;line-height:inherit;font-size:12px;color:#888;font-weight:normal;text-decoration:none;">かんたん不動産比較</p></a></div><div class="i-ico" style="display: inline; position: absolute; background: transparent none repeat scroll 0% 0%; border: medium none; float: none; width: auto; height: auto; margin: 0px; opacity: 1; padding: 0px; line-height: 1; font-size: inherit; font-weight: inherit; color: inherit; bottom: auto; left: auto; visibility: inherit; text-align: left; right: 0px; top: -0.33px; z-index: auto;"><a href="https://feedback.promotionalads.yahoo.co.jp/fdbk?p=.ZNd1JoJPyj_Uj3BqP2otgaiWenIoTmY4SzCDxYs499sMzF2O1bv4N.o._dnhmN9xow-&amp;a1=C95P3rYLN2GHhyRaDfNAoxT8qPALQc8PDnLia3cuX8L9_P9LvoJSBDSHBkEsIjvOYRrwwTR87..WStzFHbGJ1w--&amp;c=8ek7nlkENCv0EbGQLm__N82JcctC" target="_top" style="display: block; position: relative; background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%; border: medium none; float: none; width: 17px; height: 15px; margin: 0px; opacity: 1; padding: 0px; line-height: inherit; font-size: 11px; font-weight: inherit; color: inherit; top: auto; bottom: auto; left: auto; right: auto; visibility: inherit; cursor: pointer; text-decoration: none; overflow: hidden; transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1) 0s;"><span style="display: inline; position: absolute; background: rgb(255, 255, 255) none repeat scroll 0% 0%; border: medium none; float: none; width: 116.7px; height: 15px; margin: 0px 0px 0px -17px; padding: 0px; line-height: inherit; font-size: inherit; font-weight: inherit; color: inherit; top: auto; bottom: auto; left: auto; right: -99.7px; visibility: inherit; border-bottom-left-radius: 4px; opacity: 0.8; transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1) 0s;"></span><span style="display: block; position: absolute; background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%; border: medium none; float: none; width: 95.7px; height: 15px; margin: 0px; opacity: 1; padding: 0px; line-height: inherit; font-size: inherit; font-weight: inherit; color: inherit; top: auto; bottom: auto; left: auto; visibility: inherit; overflow: hidden; right: 17px;"><svg style="display: block; position: absolute; background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%; border: medium none; float: none; width: 93.7px; height: 15px; margin: 0px; opacity: 1; padding: 0px; line-height: inherit; font-size: inherit; font-weight: inherit; color: inherit; top: auto; bottom: auto; left: auto; right: -116.7px; visibility: inherit; overflow: hidden; transition: all 0.3s cubic-bezier(0.19, 1, 0.22, 1) 0s;"><text style="position: initial; background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%; border: medium none; float: none; width: auto; height: auto; margin: 0px; opacity: 1; padding: 0px; line-height: 17px; font-size: inherit; font-weight: inherit; color: rgb(0, 0, 0); top: auto; bottom: auto; left: auto; right: auto; visibility: inherit; font-family: sans-serif; text-decoration: none; vertical-align: middle; white-space: nowrap; overflow-wrap: normal;" y="12px">Yahoo! JAPAN広告</text></svg></span><i style="display: inline; position: absolute; background: rgba(0, 0, 0, 0) none repeat scroll 0% 0%; border: medium none; float: none; width: auto; height: auto; margin: 1px 2px; opacity: 1; padding: 0px; line-height: inherit; font-size: inherit; font-weight: inherit; color: inherit; top: auto; bottom: auto; left: auto; visibility: inherit; right: 0px;"><svg xmlns:xlink="http://www.w3.org/1999/xlink" width="13" height="13"><image width="13" height="13" style="display:block;position:initial;background:none;border:none;float:none;width:auto;height:auto;margin:0;opacity:1;padding:0;line-height:inherit;font-size:inherit;font-weight:inherit;color:inherit;top:auto;bottom:auto;left:auto;right:auto;visibility:inherit;" xlink:href="data:image/svg+xml;charset=utf-8,%3C%3Fxml%20version%3D%221.0%22%20encoding%3D%22utf-8%22%3F%3E%0D%0A%3C%21--%20Generator%3A%20Adobe%20Illustrator%2016.0.4%2C%20SVG%20Export%20Plug-In%20.%20SVG%20Version%3A%206.00%20Build%200%29%20%20--%3E%0D%0A%3C%21DOCTYPE%20svg%20PUBLIC%20%22-%2F%2FW3C%2F%2FDTD%20SVG%201.0%2F%2FEN%22%20%22http%3A%2F%2Fwww.w3.org%2FTR%2F2001%2FREC-SVG-20010904%2FDTD%2Fsvg10.dtd%22%3E%0D%0A%3Csvg%20version%3D%221.0%22%20id%3D%22layer_1%22%20xmlns%3D%22http%3A%2F%2Fwww.w3.org%2F2000%2Fsvg%22%20xmlns%3Axlink%3D%22http%3A%2F%2Fwww.w3.org%2F1999%2Fxlink%22%20x%3D%220px%22%0D%0A%09%20y%3D%220px%22%20width%3D%2213px%22%20height%3D%2213px%22%20viewBox%3D%220%200%2013%2013%22%20enable-background%3D%22new%200%200%2013%2013%22%20xml%3Aspace%3D%22preserve%22%3E%0D%0A%3Cg%3E%0D%0A%09%3Cpath%20fill%3D%22%23696969%22%20d%3D%22M6.5%2C13c0.685%2C0%2C1.328-0.267%2C1.811-0.75l3.94-3.938c0.999-0.999%2C0.999-2.624%2C0-3.622L8.311%2C0.75%0D%0A%09%09C7.828%2C0.267%2C7.185%2C0%2C6.5%2C0S5.172%2C0.267%2C4.688%2C0.75L0.749%2C4.689c-0.999%2C0.998-0.999%2C2.623%2C0%2C3.622l3.939%2C3.938%0D%0A%09%09C5.172%2C12.733%2C5.815%2C13%2C6.5%2C13z%20M6.498%2C6.135c-0.42%2C0-0.792%2C0.34-0.792%2C0.758v3.904c0%2C0.096-0.039%2C0.186-0.103%2C0.248%0D%0A%09%09c-0.064%2C0.064-0.153%2C0.104-0.25%2C0.104c-0.098%2C0-0.187-0.039-0.251-0.104L1.54%2C7.521c-0.562-0.563-0.562-1.478%2C0-2.04l3.94-3.939%0D%0A%09%09C5.752%2C1.27%2C6.115%2C1.119%2C6.5%2C1.119s0.747%2C0.15%2C1.02%2C0.422l3.94%2C3.939c0.562%2C0.562%2C0.562%2C1.477%2C0%2C2.04l-3.562%2C3.524%0D%0A%09%09c-0.064%2C0.064-0.153%2C0.104-0.251%2C0.104c-0.097%2C0-0.186-0.039-0.25-0.104c-0.063-0.062-0.104-0.152-0.104-0.248V6.893%0D%0A%09%09c0-0.418-0.371-0.758-0.79-0.758H6.498z%22%2F%3E%0D%0A%09%3Ccircle%20fill%3D%22%23696969%22%20cx%3D%226.5%22%20cy%3D%223.922%22%20r%3D%221.146%22%2F%3E%0D%0A%3C%2Fg%3E%0D%0A%3C%2Fsvg%3E"></image></svg></i></a></div></div></div><script id="yads_preloaded_js_308201491" type="text/javascript" src="yads-iframe_data/editorial-vertical_panel.js"></script>
+
+<img src="yads-iframe_data/it.html" style="position:absolute;overflow:hidden;clip:rect(0 0 0 0);height:1px;width:1px;margin:-1px;padding:0;border:0;" width="1" height="1">
+
+</div>
+
+
+</body></html>

@@ -1,0 +1,106 @@
+@charset "Shift_JIS";
+
+body {
+	margin:0;
+	padding:0;
+}
+
+#contents_block {
+	margin:0;
+	padding:0;
+}
+
+
+#contents_block h1,
+#contents_block h2,
+#contents_block p,
+#contents_block img {
+	margin:0;
+	padding:0;
+}
+
+
+img{
+	border:none;
+}
+
+#contents_block .clearfix:after {
+  display: block;
+  clear: both;
+  content: "";
+}
+
+
+#contents_block .header_menu {
+	background-color: #660000;
+	height: 60px;
+	border-bottom: 2px solid #FFF;
+}
+
+#contents_block .footer_menu {
+	background-color: #660000;
+	height: 60px;
+	border-top: 2px solid #FFF;
+}
+
+
+#contents_block .header_menu ul,
+#contents_block .footer_menu ul {
+	width: 982px;
+	display: table;
+	table-layout: fixed;
+	text-align: center;
+	margin: 0 auto;
+	padding: 0;
+}
+
+
+#contents_block .header_menu li,
+#contents_block .footer_menu li {
+	height: 60px;
+	display: table-cell;
+	vertical-align: middle;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+}
+
+#contents_block .header_menu li a,
+#contents_block .footer_menu li a {
+	height: 60px;
+	display: table-cell;
+	vertical-align: middle;
+	text-indent: 100%;
+	white-space: nowrap;
+	overflow: hidden;
+	background-image: url(img/16_about_menu.jpg);
+}
+
+
+#contents_block li.menu_01 a {
+	width: 326px;
+	background-position: 0px 0px;
+}
+#contents_block li.menu_01 a:hover,
+#contents_block li.menu_01 a.mark {
+	background-position: 0px 60px;
+}
+
+
+#contents_block li.menu_02 a {
+	width: 326px;
+	background-position: -326px 0px;
+}
+#contents_block li.menu_02 a:hover,
+#contents_block li.menu_02 a.mark {
+	background-position: -326px 60px;
+}
+
+#contents_block li.menu_03 a {
+	width: 328px;
+	background-position: -652px 0px;
+}
+#contents_block li.menu_03 a:hover,
+#contents_block li.menu_03 a.mark {
+	background-position: -652px 60px;
+}

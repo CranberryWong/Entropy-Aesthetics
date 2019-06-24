@@ -1,0 +1,158 @@
+(function($) {
+    $.fn.extend({
+        cpsAdSlide: function(o) {
+            var defaults = {
+                speed: 5000,
+                animate: 1000
+            };
+            o = $.extend(defaults, o);
+            this.each(function() {
+                var div = $(this);
+                var ul = $(div).find("ul");
+                var li = ul.find("li");
+                var len = $(li).length;
+                var index = 0;
+
+                cpsShowSlide();
+                function cpsShowSlide() {
+                    cpsShowGifStop();
+                    var speed = o.speed;
+                    if ($.type(o.speed) !== 'number') {
+                        speed = $(li).eq(index).attr('delay')
+                    }
+                    $(li).eq(index).find("img:first").attr("src", $(li).eq(index).find("img").attr("src").replace(/gifstop/, ""));
+                    $(li).hide().eq(index).show();
+                    var s = setTimeout(cpsShowSlide, speed);
+                    index++;
+                    if (index == len) {
+                        index = 0
+                    }
+                }
+                function cpsShowGifStop() {
+                    $(li).each(function() {
+                        if ($(this).find("img:first").attr("src").search(/gifstop/) == -1) {
+                            $(this).find("img:first").attr("src", "gifstop" + $(this).find("img").attr("src"));
+                        }
+
+                    })
+                }
+            })
+        }
+    })
+})(jQuery);
+$(function() {
+    var ASY_URL = 'http://asy.cps.com.cn';
+    var LOG_URL = 'http://asy.cps.com.cn';
+    var IMG_URL = 'http://images.cps.com.cn';
+    var posIdArr = new Array();
+    var cId = typeof(catId) == 'undefined' ? 0 : catId;
+    $("div[id^='cps_adpos_']").each(function() {
+        var posId = $(this).attr("id").replace('cps_adpos_', '');
+        posIdArr.push(posId)
+    });
+    $.extend(window._cps_ad_config, {
+        posId: posIdArr.join(',')
+    });
+    $.ajax({
+        url: ASY_URL + '/ads/get/',
+        type: 'post',
+        data: window._cps_ad_config,
+        dataType: 'jsonp',
+        jsonpCallback: "adCallback",
+        success: function(data) {
+            var isFlash = false;
+            var flashWidth = 0,
+            flashHeight = 0;
+            $.each(data,
+            function(index, d) {
+                var adContent = '';
+                if (typeof(d.item) != 'undefined' && d.item.length) {
+                    $.each(d.item,
+                    function(i, ad) {
+                        var width = ad.width - ad.style.border * 2;
+                        var height = ad.height - ad.style.border * 2;
+                        var style = 'style="overflow: hidden; float: left; width: ' + width + 'px; height: ' + height + 'px; border-width: ' + ad.style.border + 'px; border-style: solid; border-color:' + ad.style.border_color + '; padding-top: ' + ad.style.pt + 'px; padding-right: ' + ad.style.pr + 'px;padding-bottom: ' + ad.style.pb + 'px;padding-left: ' + ad.style.pl + 'px; margin-top: ' + ad.style.mt + 'px; margin-right: ' + ad.style.mr + 'px;margin-bottom: ' + ad.style.mb + 'px;margin-left: ' + ad.style.ml + 'px; "';
+                        if (ad.ad_modus == '1') {
+                            adContent += '<div id="cps_ad_' + ad.id + '" ' + style + '><a href="' + LOG_URL + '/log/info/hit/id/' + ad.id + '" target="_blank">' + ad.content.text + '</a></div>'
+                        } else if (ad.ad_modus == '2') {
+													var arr = [261,262,263,264];
+                             adContent += '<div id="cps_ad_' + ad.id + '" ' + style + '><a href="' + LOG_URL + '/log/info/hit/id/' + ad.id + '" style="position: relative;" target="_blank">';
+														adContent += '<img style="max-width: ' + width + 'px; max-height: ' + height + 'px;" src="' + IMG_URL + ad.content.img + '">';
+														if (ad.subscript == 1) {
+																adContent += '<img class="ad-place1" style=" position: absolute;bottom: 9px; right: 4px;" src="' + IMG_URL + '/static/images/20180530/icon/ad-icon.png">';
+														}
+                            adContent += '</a></div>'
+												
+                        } else if (ad.ad_modus == '3') {
+                            adContent += '<style type="text/css">';
+                            adContent += '  .cpsad-carousel{clear:both;overflow:hidden;position:relative;padding:0;margin:0;}';
+                            adContent += '  .cpsad-carousel ul{position:absolute;padding:0;margin:0;}';
+                            adContent += '  .cpsad-carousel ul li{padding:0;margin:0;float:left;overflow:hidden;position:relative;background:#000;}';
+                            adContent += '</style>';
+                            adContent += '<div ' + style + '>';
+                            adContent += '<div id="cpsad-carousel-' + ad.id + '" style="float: left; width: ' + width + 'px; height: ' + height + 'px;" class="cpsad-carousel"><ul>';
+                            $.each(ad.item,
+                            function(c, cad) {
+                                adContent += '<li delay="' + cad.timer + '">';
+                                adContent += '<a href="' + LOG_URL + '/log/info/hit/id/' + cad.id + '" style="position: relative;" target="_blank">';
+																adContent += '<img style="width: ' + width + 'px; height: ' + height + 'px;"  src="' + IMG_URL + cad.content.img + '">';
+																if (ad.subscript == 1) {
+																		adContent += '<img class="ad-place1" style=" position: absolute;bottom: 9px; right: 4px;" src="' + IMG_URL + '/static/images/20180530/icon/ad-icon.png">';
+																}
+                                adContent += '</a></li>'
+                            });
+                            adContent += '</ul></div></div>'
+                        } else if (ad.ad_modus == '4') {
+                            adContent += '<div  ' + style + ' onclick="javascript: ;" >' + ad.content + '</div>'
+                        } else if (ad.ad_modus == '5') {
+                            isFlash = true;
+                            adContent += '<div ' + style + '><div id="cpsad-flash-' + ad.id + '"></div></div>';
+                            if (isFlash === true) {
+                                $.getScript(IMG_URL + '/static/asy/js/swfobject.js',
+                                function() {
+                                    var flashvars = {};
+                                    swfobject.embedSWF(IMG_URL + ad.content.flash, "cpsad-flash-" + ad.id, width, height, "9.0.0", IMG_URL + "/static/asy/swf/expressInstall.swf", flashvars)
+                                })
+                            }
+                        }
+                    })
+                }
+                $("#cps_adpos_" + index).css({
+                    'width': d.pw + 'px',
+                    'height': d.ph + 'px',
+                    'overflow': 'hidden'
+                }).html(adContent);
+
+                if (index == 268) {
+                    $('.hea-img').find('div').css('width', '100%');
+                    $('.hea-img>div img:first').css('position', 'relative');
+                    $('.hea-img>div img:first').css('left', '50%');
+                    $('.hea-img>div img:first').css('margin-left', '-960px');
+                    $('.hea-img>div .ad-place1').hide();
+                    $('.hea-img>img').show();
+										
+										if($("#cps_adpos_" + index).find('a').find('img').length < 1){
+										
+											$(".couplet-le").css("top", "91px");
+											$(".couplet-ri").css("top", "91px");
+											$(".cou-aa").css("top", "398px");
+											$(".couplet-ri1").css("top", "398px");
+										}
+                }
+							
+
+                if (adContent == "") {
+                    $("#cps_adpos_" + index).parents('div[class^=couplet]').hide();
+                    $("#cps_adpos_" + index).parents('.hea-img').hide();
+
+                }
+            });
+            $("div[id^='cpsad-carousel-']").cpsAdSlide({
+                speed: 'delay'
+            })
+        },
+        error: function() {}
+    });
+    with(document) 0[(getElementsByTagName('head')[0] || body).appendChild(createElement('script')).src = LOG_URL + '/log/info/show/id/' + posIdArr.join(',')];
+
+});

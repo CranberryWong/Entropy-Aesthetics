@@ -1,0 +1,127 @@
+/* @override
+	http://staging.swellnet.com.fe2.stg.swellnet.anchor.net.au/assets/lv-event-page.css?* */
+
+/*---------------------------------------------
+// FIX THE CONTAINERS
+/*--------------------------------------------*/
+
+.node-type-event-single-page .block-system-main {
+	position: relative;
+}
+
+.node-type-event-single-page .panel-2col-event .panel-panel,
+.node-type-event-single-page .page-title-small {
+	padding: 0 15px;
+}
+
+/* MOBILE ONLY - FULL WIDTH */
+@media (max-width: 999px) {
+	.node-type-event-single-page .panel-2col-event .panel-panel,
+	.node-type-event-single-page .page-title-small {
+		width: 100%;
+	}
+}
+
+/*---------------------------------------------
+// LIVE DISCUSSION - POSITIONING
+/*--------------------------------------------*/
+
+/* DESKTOP UP */
+@media (min-width: 1000px) {
+	.node-type-event-single-page .panel-panel.panel-col-last {
+		position: absolute;
+		top:  0;
+		right: 0;
+		margin-top: 40px;
+	}
+
+	/* comments reach bottom of viewport */
+	.node-type-event-single-page .swellnet-comments-container-ajax {
+		height: calc(100vh - 550px);
+
+	}
+
+	/* is fixed on scroll */
+	.node-type-event-single-page .panel-panel.panel-col-last.is-fixed .comment-wrapper {
+		position: fixed;
+		top: 0;
+	}
+
+	/* decrease gap in column */
+	.node-type-event-single-page .panel-pane.pane-node-comment-wrapper {
+		margin-left: -10px;
+	}
+}
+
+/* LARGEST UP */
+@media (min-width: 1470px) {
+	/* is fixed on scroll */
+	.node-type-event-single-page .panel-panel.panel-col-last.is-fixed .comment-wrapper {
+		width: 497px;
+	}
+}
+
+/*---------------------------------------------
+// LIVE DISCUSSION - APPEARANCE
+/*--------------------------------------------*/
+
+/* butt up the discussion panel to the line */
+.node-type-event-single-page .comments > hr {
+	margin-bottom: 0;
+}
+
+/* add top padding to compensate */
+.node-type-event-single-page .swellnet-comments-container-ajax {
+	padding-top: 18px; /* looks right */
+	margin-bottom: 20px;
+}
+
+.node-type-event-single-page .swellnet-comments-container-ajax .datestamp + p,
+.node-type-event-single-page .swellnet-comments-container-ajax hr + p {
+	font-weight: bold;
+	margin-bottom: 5px;
+}
+
+/*---------------------------------------------
+// COMMENT FORM
+/*--------------------------------------------*/
+
+/* add bottom spacing below login, subscribe etc */
+.node-type-event-single-page .swellnet-comments-form-ajax > p {
+	margin-bottom: 20px;
+}
+
+.node-type-event-single-page #swellnet-comments-form > div {
+	display:  flex;
+	align-items: flex-end;
+}
+
+.node-type-event-single-page #swellnet-comments-form .form-type-textarea {
+	margin: 0 10px 0 0;
+	width: calc(100% - 90px);
+}
+
+/* textarea */
+.node-type-event-single-page #swellnet-comments-form > div .form-control {
+	height: 60px;
+	margin: 0;
+}
+
+/* button */
+.node-type-event-single-page #swellnet-comments-form > div .form-submit {
+	height: 60px;
+	border:  0;
+	background: #018a93;
+	color: white;
+}
+
+/* button hover */
+.node-type-event-single-page #swellnet-comments-form > div .form-submit:hover {
+	background: #444444;
+}
+
+
+
+
+
+

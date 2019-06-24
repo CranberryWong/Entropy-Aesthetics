@@ -1,0 +1,54 @@
+.node text {
+	pointer-events: none;
+	font: 12px sans-serif;
+}
+
+.node{
+    cursor: pointer;
+}
+.graph {
+	margin: 0 auto;
+	color: #FFF;
+	border: 0px dashed #333;
+	fill: #000;
+}
+
+.journalGraph {
+	margin: 0 auto;
+	color: #FFF;
+	border: 0px dashed #333;
+	fill: #000;
+}
+
+/*Boxplot css*/
+.axis path,.axis line {
+	fill: none;
+	stroke: black;
+	shape-rendering: crispEdges;
+}
+
+.axis text {
+	font-family: sans-serif;
+	font-size: 11px;
+}
+
+body {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+}
+
+#d3_journalBoxplot {
+	text-align: center;
+	margin-top: 5%;
+}
+
+.box {
+	font: 10px sans-serif;
+	padding-right: 0% !important;/*muted the default padding property (originally 50%) as not supported by FF. There is a problrm with moz-box-sizing cinfig of extjs it forces the component inside to have some padding and 50% padding does not work with FF*/
+	margin-right: 7% !important;/*added margin property supported by both FF, Chrome and IE*/
+	display: inline;
+	/*width: 400px !important;!*added to handle width issue in box plots category names were getting cutoff earlier*!*/
+}
+.box .outlier {
+	fill: none;
+	stroke: #ccc;
+}

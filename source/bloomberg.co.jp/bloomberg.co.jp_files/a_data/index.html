@@ -1,0 +1,116 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head>
+	<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+	<title>IG</title>
+    <link href="index_data/css.css" rel="stylesheet">
+	<link href="index_data/main.css" rel="stylesheet">
+	<script type="text/javascript" src="index_data/Enabler_01_221.js"></script>
+
+	<script type="text/javascript">
+        var totalJSFiles = 2;
+        var dynamicData;
+
+        loadBannerTags();
+
+        if (Enabler.isInitialized()) {
+            enablerInitHandler();
+        } else {
+            Enabler.addEventListener(studio.events.StudioEvent.INIT, enablerInitHandler);
+        }
+        function enablerInitHandler() {
+            if (Enabler.isPageLoaded()) {
+                addScripts();
+            } else {
+                Enabler.addEventListener(studio.events.StudioEvent.PAGE_LOADED,	addScripts);
+            }
+        }
+        function addScripts(){
+            loadFile("//cdnjs.cloudflare.com/ajax/libs/gsap/1.18.0/TweenMax.min.js");
+            loadFile("main.js");
+        }
+        function loadFile(url) {
+            var scriptJS = document.createElement('script');
+            scriptJS.setAttribute("type","text/javascript");
+            scriptJS.setAttribute("src", Enabler.getUrl(url));
+            scriptJS.onload = function(event){
+                totalJSFiles--;
+                if ( totalJSFiles < 1 ) {
+                    try{
+                        var event = new Event('banner-ready');
+                        window.dispatchEvent(event);
+                    }catch(e){
+                        //Event not supported
+                    }
+
+                    setupDynamicProfile();
+                    pageLoadedHandler();
+                }
+            };
+            document.getElementsByTagName("head")[0].appendChild(scriptJS);
+        }
+
+        function setupDynamicProfile(){
+            // Dynamic Content variables and sample values
+			Enabler.setProfileId(10037562);
+            var devDynamicContent = {};
+
+            devDynamicContent.JP_NWTP_Update_Template_Sheet1= [{}];
+            devDynamicContent.JP_NWTP_Update_Template_Sheet1[0]._id = 0;
+            devDynamicContent.JP_NWTP_Update_Template_Sheet1[0].ID = 1;
+            devDynamicContent.JP_NWTP_Update_Template_Sheet1[0].MESSAGE_NAME = "NWTP_RESEARCH";
+            devDynamicContent.JP_NWTP_Update_Template_Sheet1[0].BANNER_CODE = "size=300x250||template=Stop_Template||msg1=IG%u8A3C%u5238%u304C%u6E80%u3092%u6301%u3057%u3066%3Cbr%3E%u30EA%u30EA%u30FC%u30B9||msg1FS=22||msg2=%u5168%u3066%u304C%u4E00%u65B0%u3001%20%u5148%u9032%u306EFX\/CFD%u53D6%u5F15%u30B7%u30B9%u30C6%u30E0||msg2FS=22||msg3=%u6700%u9AD8%u306E%u30C8%u30EC%u30FC%u30C9%u4F53%u9A13%u3092%3Cbr%3E%u304A%u5C4A%u3051%u3057%u307E%u3059||msg3FS=22||ctaBtn=%u4ECA%u3059%u3050%u30C1%u30A7%u30C3%u30AF||ctaBtnFS=12||legal=||legalFS=12||disclaimer=||disclaimerFS=12||loop=2||f1sec=3||f2sec=3||f3sec=3||lsec=3";
+            devDynamicContent.JP_NWTP_Update_Template_Sheet1[0].CLICKTHROUGH = {};
+            devDynamicContent.JP_NWTP_Update_Template_Sheet1[0].CLICKTHROUGH.Url = "https://www.ig.com/";
+            devDynamicContent.JP_NWTP_Update_Template_Sheet1[0].CTA_CLICKTHROUGH = {};
+            devDynamicContent.JP_NWTP_Update_Template_Sheet1[0].CTA_CLICKTHROUGH.Url = "https://www.ig.com/";
+            devDynamicContent.JP_NWTP_Update_Template_Sheet1[0].DEFAULT = false;
+            Enabler.setDevDynamicContent(devDynamicContent);
+
+
+            dynamicData = dynamicContent.JP_NWTP_Update_Template_Sheet1[0];
+        }
+        function loadBannerTags(){
+            var xhr = new XMLHttpRequest();
+            xhr.open('GET', 'banner.html', true);
+            xhr.onreadystatechange= function() {
+                if (this.readyState!==4) return;
+                if (this.status!==200) return; // or whatever error handling you want
+                document.getElementById('main').innerHTML= this.responseText;
+                childFile = true;
+            };
+            xhr.send();
+        }
+	</script>
+
+<script type="text/javascript" src="index_data/TweenMax.js"></script><script type="text/javascript" src="index_data/main.js"></script></head>
+
+<body>
+	<div id="main">
+<div id="laptop">
+	<div id="shine" style="background-position: 0px -1820px;"></div>
+</div>
+
+<div id="line1" style="top: 21px; opacity: 0;"><p style="font-size: 18px;"><b>1取引単位以下でも決済可能、 <br>取引画面に新色ブラックが登場 </b></p></div>
+<div id="line2" style="top: 21px; opacity: 1;"><p style="font-size: 18px;"><b>価格変動アラート機能  &amp;<br>ツイッターフィードが新たに追加</b></p></div>     
+<div id="line3" style="top: 31.5px; opacity: 0;"><p style="font-size: 18px;"><b>新しくなったIG証券のFX/CFD取引システム</b></p></div>  
+
+<div id="legal" style="top: 45px;"><p style="font-size: 12px;"></p></div>
+<div id="disclaimer" style="opacity: 1;"><p style="font-size: 14px;"></p></div> 
+
+<div id="bg-exit"></div> 
+
+<div id="cta_btn" class="button" style="display: inline; opacity: 1;"><span id="glare"></span><p style="font-size: 14px;">もっと詳しく</p></div>
+<div id="glow" style="opacity: 0.06; top: 34px; left: 527px;"></div>
+
+<div id="logo"></div>   
+<div id="border"></div> 
+</div>
+
+    <!-- PLAYBACK CONTROL -->
+    <div class="slider" id="progressSlider"><div id="progressBtn" style="margin-left: 103.509px;"></div></div>
+    <div id="playControl">PAUSE</div>
+    <div id="feedback">5.47</div>
+    <!-- / -->
+
+
+</body></html>

@@ -1,0 +1,308 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml"><head><script type="text/javascript" async="" src="docs.opencv.org_files/ga.js"></script><script type="text/javascript">
+
+  var _gaq = _gaq || [];
+  _gaq.push(['_setAccount', 'UA-33108845-1']);
+  _gaq.push(['_setDomainName', 'opencv.org']);
+  _gaq.push(['_trackPageview']);
+
+  (function() {
+    var ga = document.createElement('script'); ga.type = 'text/javascript'; ga.async = true;
+    ga.src = ('https:' == document.location.protocol ? 'https://ssl' : 'http://www') + '.google-analytics.com/ga.js';
+    var s = document.getElementsByTagName('script')[0]; s.parentNode.insertBefore(ga, s);
+  })();
+
+</script>
+
+
+  
+    <meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+    
+    <title>OpenCV-Python Tutorials — OpenCV 3.0.0-dev documentation</title>
+    
+    <link rel="stylesheet" href="docs.opencv.org_files/default.css" type="text/css">
+    <link rel="stylesheet" href="docs.opencv.org_files/pygments.css" type="text/css">
+    
+    <script type="text/javascript">
+      var DOCUMENTATION_OPTIONS = {
+        URL_ROOT:    '../../',
+        VERSION:     '3.0.0-dev',
+        COLLAPSE_INDEX: false,
+        FILE_SUFFIX: '.html',
+        HAS_SOURCE:  true
+      };
+    </script>
+    <script type="text/javascript" src="docs.opencv.org_files/jquery.js"></script>
+    <script type="text/javascript" src="docs.opencv.org_files/underscore.js"></script>
+    <script type="text/javascript" src="docs.opencv.org_files/doctools.js"></script>
+    <script type="text/javascript" src="docs.opencv.org_files/insertIframe.html"></script>
+    <link rel="top" title="OpenCV 3.0.0-dev documentation" href="https://docs.opencv.org/3.0-beta/index.html">
+    <link rel="next" title="Introduction to OpenCV" href="https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_setup/py_table_of_contents_setup/py_table_of_contents_setup.html">
+    <link rel="prev" title="General tutorials" href="https://docs.opencv.org/3.0-beta/doc/tutorials/general/table_of_content_general/table_of_content_general.html">
+    <link href="docs.opencv.org_files/css.css" rel="stylesheet" type="text/css">
+    <style type="text/css">
+      table.right { float: right; margin-left: 20px; }
+      table.right td { border: 1px solid #ccc; }
+    </style>
+    <script type="text/javascript">
+      // intelligent scrolling of the sidebar content
+      $(window).scroll(function() {
+        var sb = $('.sphinxsidebarwrapper');
+        var win = $(window);
+        var sbh = sb.height();
+        var offset = $('.sphinxsidebar').position()['top'];
+        var wintop = win.scrollTop();
+        var winbot = wintop + win.innerHeight();
+        var curtop = sb.position()['top'];
+        var curbot = curtop + sbh;
+        // does sidebar fit in window?
+        if (sbh < win.innerHeight()) {
+          // yes: easy case -- always keep at the top
+          sb.css('top', $u.min([$u.max([0, wintop - offset - 10]),
+                                $(document).height() - sbh - 200]));
+        } else {
+          // no: only scroll if top/bottom edge of sidebar is at
+          // top/bottom edge of window
+          if (curtop > wintop && curbot > winbot) {
+            sb.css('top', $u.max([wintop - offset - 10, 0]));
+          } else if (curtop < wintop && curbot < winbot) {
+            sb.css('top', $u.min([winbot - sbh - offset - 20,
+                                  $(document).height() - sbh - 200]));
+          }
+        }
+      });
+    </script>
+
+  </head>
+    <body><div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="https://docs.opencv.org/3.0-beta/genindex.html" title="General Index" accesskey="I">index</a></li>
+        <li class="right">
+          <a href="https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_setup/py_table_of_contents_setup/py_table_of_contents_setup.html" title="Introduction to OpenCV" accesskey="N">next</a> |</li>
+        <li class="right">
+          <a href="https://docs.opencv.org/3.0-beta/doc/tutorials/general/table_of_content_general/table_of_content_general.html" title="General tutorials" accesskey="P">previous</a> |</li>
+        <li><a href="https://docs.opencv.org/3.0-beta/index.html">OpenCV 3.0.0-dev documentation</a> »</li> 
+      </ul>
+    </div>  
+      <div class="sphinxsidebar">
+        <div class="sphinxsidebarwrapper">
+            <p class="logo"><a href="https://docs.opencv.org/3.0-beta/index.html">
+              <img class="logo" src="docs.opencv.org_files/opencv-logo2.png" alt="Logo">
+            </a></p>
+<div id="searchbox" style="">
+  <h3>Quick search</h3>
+    <form class="search" action="../../search.html" method="get">
+      <input name="q" type="text">
+      <input value="Go" type="submit">
+      <input name="check_keywords" value="yes" type="hidden">
+      <input name="area" value="default" type="hidden">
+    </form>
+</div>
+<script type="text/javascript">$('#searchbox').show(0);</script>
+  <h4>Previous topic</h4>
+  <p class="topless"><a href="https://docs.opencv.org/3.0-beta/doc/tutorials/general/table_of_content_general/table_of_content_general.html" title="previous chapter">General tutorials</a></p>
+  <h4>Next topic</h4>
+  <p class="topless"><a href="https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_setup/py_table_of_contents_setup/py_table_of_contents_setup.html" title="next chapter">Introduction to OpenCV</a></p>
+        </div>
+      </div>
+  
+
+    <div class="document">
+      <div class="documentwrapper">
+        <div class="bodywrapper">
+          <div class="body">
+            
+  <div class="section" id="opencv-python-tutorials">
+<h1>OpenCV-Python Tutorials<a class="headerlink" href="#opencv-python-tutorials" title="Permalink to this headline">¶</a></h1>
+<ul>
+<li><p class="first"><a class="reference internal" href="https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_setup/py_table_of_contents_setup/py_table_of_contents_setup.html#py-table-of-content-setup"><em>Introduction to OpenCV</em></a></p>
+<table class="toctableopencv docutils" border="1">
+<colgroup>
+<col width="17%">
+<col width="83%">
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="https://docs.opencv.org/3.0-beta/_images/intro.png"><img alt="Introduction Icon" src="docs.opencv.org_files/intro.png" style="width: 80pt; height: 80pt;"></a></td>
+<td>Learn how to setup OpenCV-Python on your computer!</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li><p class="first"><a class="reference internal" href="https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_gui/py_table_of_contents_gui/py_table_of_contents_gui.html#py-table-of-content-gui"><em>Gui Features in OpenCV</em></a></p>
+<table class="toctableopencv docutils" border="1">
+<colgroup>
+<col width="10%">
+<col width="90%">
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="https://docs.opencv.org/3.0-beta/_images/gui.jpg"><img alt="gui Icon" src="docs.opencv.org_files/gui.jpg" style="width: 80pt; height: 80pt;"></a></td>
+<td>Here you will learn how to display and save images and videos, control mouse events and create trackbar.</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li><p class="first"><a class="reference internal" href="https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_core/py_table_of_contents_core/py_table_of_contents_core.html#py-table-of-content-core"><em>Core Operations</em></a></p>
+<table class="toctableopencv docutils" border="1">
+<colgroup>
+<col width="7%">
+<col width="93%">
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="https://docs.opencv.org/3.0-beta/_images/core.jpg"><img alt="core Icon" src="docs.opencv.org_files/core.jpg" style="width: 80pt; height: 80pt;"></a></td>
+<td>In this section you will learn basic operations on image like pixel 
+editing, geometric transformations, code optimization, some mathematical
+ tools etc.</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li><p class="first"><a class="reference internal" href="https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_imgproc/py_table_of_contents_imgproc/py_table_of_contents_imgproc.html#py-table-of-content-imgproc"><em>Image Processing in OpenCV</em></a></p>
+<table class="toctableopencv docutils" border="1">
+<colgroup>
+<col width="12%">
+<col width="88%">
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="https://docs.opencv.org/3.0-beta/_images/imgproc.jpg"><img alt="imgproc Icon" src="docs.opencv.org_files/imgproc.jpg" style="width: 80pt; height: 80pt;"></a></td>
+<td>In this section you will learn different image processing functions inside OpenCV.</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li><p class="first"><a class="reference internal" href="https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_feature2d/py_table_of_contents_feature2d/py_table_of_contents_feature2d.html#py-table-of-content-feature2d"><em>Feature Detection and Description</em></a></p>
+<table class="toctableopencv docutils" border="1">
+<colgroup>
+<col width="14%">
+<col width="86%">
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="https://docs.opencv.org/3.0-beta/_images/featureicon.jpg"><img alt="imgproc Icon" src="docs.opencv.org_files/featureicon.jpg" style="width: 80pt; height: 80pt;"></a></td>
+<td>In this section you will learn about feature detectors and descriptors</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li><p class="first"><a class="reference internal" href="https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_video/py_table_of_contents_video/py_table_of_contents_video.html#py-table-of-content-video"><em>Video Analysis</em></a></p>
+<table class="toctableopencv docutils" border="1">
+<colgroup>
+<col width="10%">
+<col width="90%">
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="https://docs.opencv.org/3.0-beta/_images/videoicon.jpg"><img alt="imgproc Icon" src="docs.opencv.org_files/videoicon.jpg" style="width: 80pt; height: 80pt;"></a></td>
+<td>In this section you will learn different techniques to work with videos like object tracking etc.</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li><p class="first"><a class="reference internal" href="https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_calib3d/py_table_of_contents_calib3d/py_table_of_contents_calib3d.html#py-table-of-content-calib"><em>Camera Calibration and 3D Reconstruction</em></a></p>
+<table class="toctableopencv docutils" border="1">
+<colgroup>
+<col width="13%">
+<col width="87%">
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="https://docs.opencv.org/3.0-beta/_images/calib3d_icon.jpg"><img alt="Calib Icon" src="docs.opencv.org_files/calib3d_icon.jpg" style="width: 80pt; height: 80pt;"></a></td>
+<td>In this section we will learn about camera calibration, stereo imaging etc.</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li><p class="first"><a class="reference internal" href="https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_ml/py_table_of_contents_ml/py_table_of_contents_ml.html#py-table-of-content-ml"><em>Machine Learning</em></a></p>
+<table class="toctableopencv docutils" border="1">
+<colgroup>
+<col width="12%">
+<col width="88%">
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="https://docs.opencv.org/3.0-beta/_images/MachineLearnings.jpg"><img alt="ML Icon" src="docs.opencv.org_files/MachineLearnings.jpg" style="width: 80pt; height: 80pt;"></a></td>
+<td>In this section you will learn different image processing functions inside OpenCV.</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li><p class="first"><a class="reference internal" href="https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_photo/py_table_of_contents_photo/py_table_of_contents_photo.html#py-table-of-content-photo"><em>Computational Photography</em></a></p>
+<table class="toctableopencv docutils" border="1">
+<colgroup>
+<col width="10%">
+<col width="90%">
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="https://docs.opencv.org/3.0-beta/_images/photoicon.jpg"><img alt="ML Icon" src="docs.opencv.org_files/photoicon.jpg" style="width: 80pt; height: 80pt;"></a></td>
+<td>In this section you will learn different computational photography techniques like image denoising etc.</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li><p class="first"><a class="reference internal" href="https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_objdetect/py_table_of_contents_objdetect/py_table_of_contents_objdetect.html#py-table-of-content-objdetection"><em>Object Detection</em></a></p>
+<table class="toctableopencv docutils" border="1">
+<colgroup>
+<col width="13%">
+<col width="88%">
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="https://docs.opencv.org/3.0-beta/_images/obj_icon.jpg"><img alt="OD Icon" src="docs.opencv.org_files/obj_icon.jpg" style="width: 80pt; height: 80pt;"></a></td>
+<td>In this section you will object detection techniques like face detection etc.</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li><p class="first"><a class="reference internal" href="https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_bindings/py_table_of_contents_bindings/py_table_of_contents_bindings.html#py-table-of-content-bindings"><em>OpenCV-Python Bindings</em></a></p>
+<table class="toctableopencv docutils" border="1">
+<colgroup>
+<col width="14%">
+<col width="86%">
+</colgroup>
+<tbody valign="top">
+<tr class="row-odd"><td><a class="reference internal" href="https://docs.opencv.org/3.0-beta/_images/obj_icon.jpg"><img alt="OD Icon" src="docs.opencv.org_files/obj_icon.jpg" style="width: 80pt; height: 80pt;"></a></td>
+<td>In this section, we will see how OpenCV-Python bindings are generated</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ul>
+<div class="toctree-wrapper compound">
+</div>
+</div>
+
+
+          </div>
+          <div class="feedback">
+              <h2>Help and Feedback</h2>
+              You did not find what you were looking for?
+              <ul>
+                  
+                  
+                  
+                  <li>Ask a question on the <a href="http://answers.opencv.org/">Q&amp;A forum</a>.</li>
+                  <li>If you think something is missing or wrong in the documentation,
+                  please file a <a href="http://code.opencv.org/">bug report</a>.</li>
+              </ul>
+          </div>
+        </div>
+      </div>
+
+      <div class="clearer"></div>
+    </div>
+    <div class="related">
+      <h3>Navigation</h3>
+      <ul>
+        <li class="right" style="margin-right: 10px">
+          <a href="https://docs.opencv.org/3.0-beta/genindex.html" title="General Index">index</a></li>
+        <li class="right">
+          <a href="https://docs.opencv.org/3.0-beta/doc/py_tutorials/py_setup/py_table_of_contents_setup/py_table_of_contents_setup.html" title="Introduction to OpenCV">next</a> |</li>
+        <li class="right">
+          <a href="https://docs.opencv.org/3.0-beta/doc/tutorials/general/table_of_content_general/table_of_content_general.html" title="General tutorials">previous</a> |</li>
+        <li><a href="https://docs.opencv.org/3.0-beta/index.html">OpenCV 3.0.0-dev documentation</a> »</li> 
+      </ul>
+    </div>
+    <div class="footer">
+        © Copyright 2011-2014, opencv dev team.
+      Last updated on Nov 10, 2014.
+      Created using <a href="http://sphinx-doc.org/">Sphinx</a> 1.2.2.
+      <a href="https://docs.opencv.org/3.0-beta/_sources/doc/py_tutorials/py_tutorials.txt" rel="nofollow">Show this page source.</a>
+    </div>
+  
+</body></html>

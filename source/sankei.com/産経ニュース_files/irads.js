@@ -1,0 +1,19 @@
+document.write('<div id=\"bxvs_ef526b42bf1d43aaad2dda91e5935db1\" style=\"display:none;width:0px;height:0px;\"></div>');document.write('<script type=\"text\/javascript\"> \n');document.write('if (!window.OX_ads) { OX_ads = []; } \n');document.write('OX_ads.push({ \"auid\" : \"538637380\" }); \n');document.write('<\/script> \n');document.write('<script type=\"text\/javascript\"> \n');document.write('document.write(\'<scr\'+\'ipt src=\"\/\/jpmarket-d.openx.net\/w\/1.0\/jstag\"><\\\/scr\'+\'ipt>\'); \n');document.write('<\/script> \n');document.write('<noscript><iframe id=\"94df47be59\" name=\"94df47be59\" src=\"\/\/jpmarket-d.openx.net\/w\/1.0\/afr?auid=538637380&cb=INSERT_RANDOM_NUMBER_HERE\" frameborder=\"0\" scrolling=\"no\" width=\"970\" height=\"250\"><a href=\"\/\/jpmarket-d.openx.net\/w\/1.0\/rc?cs=94df47be59&cb=INSERT_RANDOM_NUMBER_HERE\" ><img src=\"\/\/jpmarket-d.openx.net\/w\/1.0\/ai?auid=538637380&cs=94df47be59&cb=INSERT_RANDOM_NUMBER_HERE\" border=\"0\" alt=\"\"><\/a><\/iframe><\/noscript> \n');
+document.write('<img style=\"position:absolute;visibility:hidden;\" src=\"http://ads.adjust-net.jp/adfrontserver/impbcn?si=ef526b42bf1d43aaad2dda91e5935db1&rv=2&ard=lv:3|st:2000628|fr:2008580|fp:3|pl:0|mn:0|cv:0|at:2|ast:0|nuf:0|ui:b283c4e5bc164a5bb4042c56eb8f4c4f|oof:0|tt:0|jsf:1|gi:3|mgi:0|bd:0|ai:50|mai:0|sm:|msm:|pc:89,111,9,1009,1259,1217|mpc:|ft:|dm:|mdm:|lm:|mlm:|asm:|masm:|ex:1|rmn:0|gbp:0|nbp:0|dep:0x0.0p0|dl:3|isi:200006239|ili:6969|iai:3984|afsifl:0|afsd:|afsreg:30|afsh:902|afsw:1920|afsifr:0|afsdvt:0|afsos:0|afsosv:|afsdvid:|afsddr:4|cpvt:0|bwt:2|bwo:101|bwv:61|va:1|mt:0|vdf:1|vc:0|mdu:7c97d5428055a60d44bb1c51db0ec519|vmf:1|sf:0|iob:1&mh=10c061d1aee3d555984dbc74ff002d3e&ul=http%3A%2F%2Fwww.sankei.com%2F&rful=http%3A%2F%2Fwww.sankei.com%2F&acdm=www.sankei.com&vstev=0&vstevs=0.000&perr=0&et=1\" border=\"0\" width=\"1\" height=\"1\" />');
+document.write("<iframe id='bx-iframe-idsync-ef526b42bf1d43aaad2dda91e5935db1' style='display:none;' data-srcdoc='&lt;img style=&#39;position:absolute;visibility:hidden;&#39; src=&#39;http://cm.g.doubleclick.net/pixel?google_nid=adjust2&amp;google_cm&amp;exid=3&#39; border=&#39;0&#39; width=&#39;1&#39; height=&#39;1&#39; /&gt;' onload='setBxIframe(this)'></iframe>\n");
+function setBxIframe(iframe) {
+    var attr = iframe ? iframe.getAttribute("data-srcdoc") : null;
+    if (attr !== null) {
+        var contentDoc = iframe.contentDocument || iframe.contentWindow.document;
+        contentDoc.open();
+        contentDoc.write('<!doctype html><html lang="ja"><meta charset="utf-8"><body>');
+        contentDoc.write(attr);
+        contentDoc.write('</body></html>');
+        contentDoc.close();
+        iframe.removeAttribute("data-srcdoc");
+        iframe.removeAttribute("onload");
+    }
+}
+document.write('<div data-src=\"//ads.adjust-net.jp/adfrontserver/viewp?si=ef526b42bf1d43aaad2dda91e5935db1&rv=2&ard=lv:3|st:2000628|fr:2008580|fp:3|pl:0|mn:0|cv:0|at:2|ast:0|nuf:0|ui:b283c4e5bc164a5bb4042c56eb8f4c4f|oof:0|tt:0|jsf:1|gi:3|mgi:0|bd:0|ai:50|mai:0|sm:|msm:|pc:89,111,9,1009,1259,1217|mpc:|ft:|dm:|mdm:|lm:|mlm:|asm:|masm:|ex:1|rmn:0|gbp:0|nbp:0|dep:0x0.0p0|dl:3|isi:200006239|ili:6969|iai:3984|afsifl:0|afsd:|afsreg:30|afsh:902|afsw:1920|afsifr:0|afsdvt:0|afsos:0|afsosv:|afsdvid:|afsddr:4|cpvt:0|bwt:2|bwo:101|bwv:61|va:1|mt:0|vdf:1|vc:0|mdu:7c97d5428055a60d44bb1c51db0ec519|vmf:1|sf:0|iob:1&mh=10c061d1aee3d555984dbc74ff002d3e&ul=http%3A%2F%2Fwww.sankei.com%2F&rful=http%3A%2F%2Fwww.sankei.com%2F&acdm=www.sankei.com&vstev=0&vstevs=0.000&perr=0&et=10&veid=\" style=\"display:none;width:0px;height:0px;\">');
+document.write('<scr' + 'ipt src=\"//ads.adjust-net.jp/adserver/ad/bx_viewable_tracking.js?1.1.1\"></scr' + 'ipt>');
+document.write('</div>');

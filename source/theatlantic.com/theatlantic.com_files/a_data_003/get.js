@@ -1,0 +1,1 @@
+kx_partner_segments({"status":"200","body":{"code":"has_segments","kuid":"L3BxF-p2","kuid_long":"srv8zsb10","geo":{"zip":"780-0850","longitude":"133.531","latitude":"33.5625","dma":null,"country":"jp","domain":null,"region":null},"segments":["r1hwk5m27","rah5huzws"]}});

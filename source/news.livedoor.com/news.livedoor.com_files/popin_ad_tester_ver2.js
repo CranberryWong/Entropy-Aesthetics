@@ -1,0 +1,1 @@
+(function(){var b=document.createElement("script");b.type="text/javascript";b.charset="utf-8";b.async=true;b.src=window.location.protocol+"//api.popin.cc/popin_discovery5-min_dummy.js";var a=document.getElementsByTagName("script")[0];a.parentNode.insertBefore(b,a)})();

@@ -1,0 +1,1235 @@
+#categorySelectionView .category-selection{
+    padding: 6px;
+    color: #333 !important;
+    font-size: 14px !important;
+    /*text-transform: lowercase !important;*/
+}
+#categorySelectionView .category-selection span{
+    padding-left: 14px !important;
+}
+.x-grid-row-customchecker{
+    background-image: url(../../common/images/grid-selection/custom-plus.png);
+    background-position: 20px -6px;
+    cursor:pointer;
+}
+.x-grid-row-selected .x-grid-row-customchecker{
+    background-position: -6px -6px;
+    cursor:pointer;
+}
+
+.category-selection {padding: 0px 5px 10px;}
+.category-selection:first-child {padding-top: 10px}
+.categoryJournals {padding-left:3px;}
+.category {font-weight:bold}
+.category_journal_table {padding:5px;margin:5px;background-color:#FFFFFF}
+.category_journal_table td {padding:5px; vertical-align: text-top}
+.category_journal_table th {padding:5px;font-size:13px;}
+.category_journal_table tr td:first-child {font-weight:bold}
+.zzzzzz {list-style-type: disc;}
+.category_journal_table tr {border: thin solid #ededed;}
+
+.x-grid-body
+{
+    background:white;
+    border-width:1px;
+    border-style:solid;
+    border-color:rgb(223, 223, 223);
+}
+
+.x-grid-row .x-grid-cell
+{color:#333;
+    font:normal 14px arial;
+    background:rgb(250, 250, 250)!important;
+    border-color:dbdbdb;
+    border-style:solid;
+    border-width:1px 0;
+    text-align:left;
+    padding-left: 10px;
+    text-decoration: none;
+}
+
+.x-grid-header-ct
+{
+    cursor:default;
+    zoom:1;
+    padding:0;
+    border:1px solid rgb(223, 223, 223);
+    background-image:none;
+    background-color:#F5F5F5;
+}
+
+.x-column-header
+{
+    padding:0;
+    position:absolute;
+    overflow:hidden;
+    border:0 none;
+    text-shadow:0 1px 0 rgba(255,255,255,0.3);
+    color:#333;
+    font:normal 12px arial;
+    font-weight:bold;
+    background-image:none;
+    background-color:#F5F5F5;
+    text-align:right;
+}
+.x-column-header-inner .x-column-header-over{
+    font: 14px Arial Bold #333;
+}
+.x-panel-body .x-grid-body .x-panel-body-default .x-layout-fit .x-panel-body-default{
+    background-color: #ffffff;
+}
+
+.x-column-header-customcheckbox .x-column-header-text{
+    height:13px;
+    width:13px;
+    margin-left:-1px;
+    background-image: url(../../common/images/grid-selection/custom-plus.png);
+    background-position: 20px -6px;
+    display:block;
+    line-height:0;
+    font-size:0;
+
+}
+.x-grid-hd-customchecker-on .x-column-header-text{
+    background-position: -6px -6px;
+    cursor:pointer;
+}
+.infoBtn {
+    background: url(../images/legends/info.gif) no-repeat;
+    cursor: pointer;
+    border: none;
+}
+.jcr-button{
+    background-color: transparent!important;
+    border-bottom-width: 0px!important;
+    border-image-outset: 0px!important;
+    border-image-slice: 0!important;
+    border-image-source: none!important;
+    border-image-width: 0!important;
+    border-left-color: rgb(240, 240, 240)!important;
+    border-left-style: none!important;
+    border-left-width: 0px!important;
+    border-right-color: rgb(240, 240, 240)!important;
+    border-right-style: none!important;
+    border-right-width: 0px!important;
+    border-top-color: rgb(240, 240, 240)!important;
+    border-top-style: none!important;
+    border-top-width: 0px!important;
+    font-size: 11px!important;
+    width:100%;
+    cursor:pointer;
+}
+#categoryScheme-bodyEl
+{
+    padding-top:14px;
+}
+
+.x-boundlist-item
+{
+    cursor:default;
+}
+
+#popupIndicators
+{
+    width: 500px!important;
+}
+
+
+#journalSelection-inputEl, #publisherSelection-inputEl, #countrySelection-inputEl, #quartileJournalSelection-inputEl
+{
+    border: 0px solid;
+}
+
+.checkbox-columns
+{
+    width: 200px!important;
+
+}
+.checkbox-columns-new
+{
+    width: 455px!important;
+
+
+}
+.popup-checkbox-header
+{
+    width: 200px!important;
+}
+.popup-checkbox-header-new
+{
+    width: 455px!important;
+}
+.popup-new
+{
+    display: none;
+}
+.popup-checkbox-header i.icon-close
+{
+    right:27px!important;
+}
+.popup-checkbox-header-new i.icon-close
+{
+    right:27px!important;
+}
+
+.x-css-shadow
+{
+    display:none;
+}
+
+.x-form-radio-group table
+{
+    font-size: 14px;
+    font-style: normal;
+}
+.x-toolbar
+{
+    font-size: 14px;
+    font-style: normal;
+}
+.x-box-inner
+{
+    font-size: 14px;
+    font-style: normal;
+
+}
+.x-btn-inner .x-btn-inner-center
+{
+    font-size: 14px;
+    font-style: normal;
+}
+.x-grid-cell-inner a:link {
+    color: #005a84;
+    width: 209px;
+    text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 13px!important;
+
+}
+
+#journalcitationgrid-body table td
+{
+    background:rgb(250, 250, 250)!important;
+
+}
+#journalcitationgrid-body
+{
+    overflow: hidden!important;
+}
+#categoryProfileGrid-body
+{
+    overflow: hidden!important;
+}
+#searchGrid-body
+{
+    overflow: hidden!important;
+}
+#journalsgrid-body
+{
+    overflow: hidden!important;
+}
+#journalsgrid-body table td
+{
+    background:rgb(250, 250, 250)!important;
+}
+#categoryProfileGrid-body table td
+{
+    background:rgb(250, 250, 250)!important;
+}
+#journalProfileGrid2-body
+{
+    overflow: hidden!important;
+}
+#journalProfileGrid .x-btn-default-small
+{
+    padding: 1px !important;
+}
+#journalInformationGridId-body
+{
+    overflow: hidden!important;
+}
+#journalInformationGridId-body  .x-grid-view {
+    overflow: hidden!important;
+}
+#journalInformationGridId-body .x-grid-table
+{
+    width: 713px !important;
+}
+#categoriesGrid #gridcolumn-1011
+{
+    left: 0px !important;
+}
+
+#mastersearch
+{
+    float: left;
+    padding-top: 10px;
+}
+
+#mastersearchjournal
+{
+    float: left;
+    padding-top: 10px;
+
+}
+
+#searchmaster
+{
+    float: left;
+    width: 198px;
+}
+
+#esiGridTC-body
+{
+    overflow: hidden!important;
+}
+#jcrIFGrid-body
+{
+    overflow: hidden!important;
+}
+
+
+
+
+
+/*--------------CSS Changes Regarding HTML5----------------------*/
+/*------- Special TabPanel-------*/
+.journalTab  A:link {
+    color: #005a84 !important;
+}
+
+/*------- First TabPanel-------*/
+#contentTitle
+{
+    font-weight: 700 !important;
+    font-size: 14px;
+}
+#contentTitle A:visited
+{
+    COLOR: black !important;
+}
+
+/*------Start Second TabPanel------- */
+.tabs
+{
+    display: inline-block;
+    height: 37px;
+    line-height: 37px;
+    background: none repeat scroll 0% 0% transparent;
+    font-weight: bold;
+    padding: 0px 20px;
+    -moz-box-sizing: border-box;
+    font-size: 14px;
+}
+.tabs A:link
+{
+    COLOR: black !important;
+}
+.content-panels-tabs .active a
+{
+    font-size: 14px;
+}
+
+/*------End Second TabPanel------- */
+/*------- Customize indicators------- */
+.checkbox-indicators
+{
+    color: #005a84 !important;
+    text-decoration: none !important;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/*---visualization in Second TabPanel-----*/
+.visualization-hide .show {
+    color: #005a84 !important;
+    width: 134px !important;
+    height: 16px !important;
+    font-size: 14px;
+    font-weight: bold;
+}
+.visualization .hide
+{
+    color: #005a84 !important;
+    width: 128px !important;
+    height: 16px !important;
+    font-size: 14px;
+    font-weight: bold;
+}
+
+/*------Side panels--------*/
+.sidebar-panels A:link {
+    color: #005a84 !important;
+}
+
+/*------Jcr Year -------*/
+.x-body {
+    font-family:Source Sans Pro, sans-serif;
+}
+
+/*------Filter Panel Buttons -------*/
+.secondary-button.small.button-jcr {
+    /*color: #005a84 !important;*/
+}
+
+
+/*----------visualization------------*/
+.node text
+{
+    font-family:Source Sans Pro, sans-serif;
+    font-size: 14px;
+}
+
+
+
+/*---------------Journal Home page Tab------------------*/
+.journalhometab
+{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+
+
+/*----------------Aggregate source data grid------------------*/
+.aggregateDatagrid .x-column-header{
+    font-size: 12px !important;
+    color: #333 !important;
+    font-weight: bold !important;
+    font-family:Source Sans Pro, sans-serif;
+    padding: 5px 0 5px !important;
+}
+
+.aggregateDatagrid .x-grid-cell-inner
+{
+    font-weight: bold !important;
+    font-family:Source Sans Pro, sans-serif;
+    font-size: 13px !important;
+    padding: 10px 6px 13px 14px!important;
+}
+
+.aggregateDatagrid .x-column-header-inner .x-column-header-text
+{
+    padding: 4px 16px !important;
+}
+
+.block-text {
+    padding: 20px 17px;
+    font-size: 12px;
+}
+
+/*----------------Journal source data grid------------------*/
+.journalSourceData .x-column-header{
+    font-size: 13px !important;
+    color: #333 !important;
+    font-weight: bold !important;
+    font-family:Source Sans Pro, sans-serif;
+    padding: 5px 0 5px !important;
+}
+
+.journalSourceData .x-grid-cell-inner
+{
+    font-weight: bold !important;
+    font-family:Source Sans Pro, sans-serif;
+    font-size: 13px !important;
+    padding: 10px 6px 13px 14px!important;
+}
+
+.journalSourceData .x-column-header-inner .x-column-header-text
+{
+    padding: 4px 16px !important;
+}
+
+.block-text {
+    padding: 20px 17px;
+    font-size: 12px;
+}
+
+
+/*----------------Frequency of publication------*/
+.tile-content
+{
+    color: rgba(255, 145, 0, 0);
+}
+
+/*----------------------pop-up calculations(Aggregate impact factor)-----------*/
+.popupcalculations
+{
+    padding: 4px 4px 4px 4px;
+    border-width: 1px;
+    background-color: rgba(244, 244, 244, .96) !important;
+    border: 0px solid rgb(185, 185, 185) !important;
+    box-shadow: rgba(0,0,0, .35) !important;
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+    left: 340px;
+    top: 468px !important;
+    z-index: 999999 !important;
+}
+
+.popupcalculations .x-tool-img
+{
+    background: url("../images/close.JPG") 0 0 !important;
+    width: 31px;
+    height: 31px;
+    left: 486px;
+    margin: -5px;
+    /*margin: -4px 32px -4px 32px;
+    left: 564px;*/
+}
+.popupcalculations .x-box-inner
+{
+    margin-left: 32px;
+    margin-top: 32px;
+    font-weight: bold;
+    font-size: 16px;
+    height: 50px !important;
+    width: 748px !important;
+}
+.popupcalculations .x-tool-close{
+    background-position:10 10;
+}
+#jpopupwindow
+{
+    font-size: 14px;
+    background: none repeat scroll 0% 0% rgb(253, 253, 253);
+    border: 1px solid rgb(187, 187, 187);
+    box-shadow: -1px -1px 7px rgba(0, 0, 0, 0.1) inset;
+    width: 639px;
+    margin: 77px 0px 0px 30px;
+    height: 165px;
+    padding: 5px;
+}
+
+.popupcalculations-header-text-container
+{
+    width: 743px  !important;
+    left: 35px;
+    top: 9px;
+}
+
+#popupokbutton-btnInnerEl
+{
+    color: white !important;
+}
+
+.popupcalculations .x-tool
+{
+    left: 525px !important;
+    margin-left: 76px !important;
+}
+
+.popup-checkbox-journals {
+    width: 250px;
+}
+
+
+/*-----------------Doclist Grid----------------------*/
+#gridBody
+{
+    width:800px !important;
+}
+
+
+#documentListGrid .x-toolbar
+{
+    position: relative;
+    /*height: 36px;*/
+    border: 1px solid rgb(211, 211, 211);
+    background: none repeat scroll 0% 0% rgb(255, 255, 255);
+    box-sizing: border-box;
+}
+
+
+/*-------------------------pagination--------------*/
+
+#pagingtoolBarId1 , #pagingtoolBarId2{line-height: 25px;}
+#pagingtoolBarId1 body, #pagingtoolBarId2 body{font-family:Source Sans Pro, sans-serif;text-align: right;}
+#pagingtoolBarId1 .x-btn, #pagingtoolBarId2 .x-btn{border-style: none !important;}
+#pagingtoolBarId1 .x-btn:hover{background-color: white !important;}
+#pagingtoolBarId1 .x-toolbar-separator, #pagingtoolBarId2 .x-toolbar-separator{visibility: hidden;}
+#pagingtoolBarId1 .x-toolbar-text {left: 54px !important;font-family:Source Sans Pro, sans-serif;font-size:14px;color:#000000;}
+
+#pagingtoolBarId2 .x-toolbar-text{font-family:Source Sans Pro, sans-serif;font-size:14px;color:#000000;}
+
+#pagingtoolBarId1 .x-btn-default-toolbar-small-over
+{
+    background-image: none !important;
+    background-color: none !important;
+}
+#pagingtoolBarId2 .x-btn-default-toolbar-small-over
+{
+    background-color: white !important;
+    background-image: none !important;
+}
+.popup-checkbox-categories {
+    width: 250px;
+}
+
+
+#pagingtoolBarId1 .x-btn-default-toolbar-small-disabled .x-tbar-page-first , #pagingtoolBarId2 .x-btn-default-toolbar-small-disabled .x-tbar-page-first {
+    background-image: url("../images/icons.png") !important;
+    background-position-x: -30px !important;
+    background-position-y: -18px !important;
+
+    /*------Mozilla-------*/
+    background-position: -30px -18px!important;
+
+}
+
+#pagingtoolBarId1 .x-btn-default-toolbar-small-disabled .x-tbar-page-prev , #pagingtoolBarId2 .x-btn-default-toolbar-small-disabled .x-tbar-page-prev {
+    background-image: url("../images/icons.png") !important;
+    background-position-x: -39px !important;
+    background-position-y: -18px !important;
+
+    /*------Mozilla-------*/
+    background-position: -39px -18px!important;
+
+}
+#pagingtoolBarId1 .x-btn-default-toolbar-small-disabled .x-tbar-page-next , #pagingtoolBarId2 .x-btn-default-toolbar-small-disabled .x-tbar-page-next{
+    background-image: url("../images/icons.png") !important;
+    background-position-x: -47px !important;
+    background-position-y: -18px !important;
+
+    /*------Mozilla-------*/
+    background-position: -47px -18px!important;
+
+}
+#pagingtoolBarId1 .x-btn-default-toolbar-small-disabled .x-tbar-page-last , #pagingtoolBarId2 .x-btn-default-toolbar-small-disabled .x-tbar-page-last{
+    background-image: url("../images/icons.png") !important;
+    background-position-x: -56px !important;
+    background-position-y: -18px !important;
+
+    /*------Mozilla-------*/
+    background-position: -56px -18px!important;
+
+}
+
+#pagingtoolBarId1 .x-tbar-page-last:hover, #pagingtoolBarId2 .x-tbar-page-last:hover
+{
+
+    background-image: url("../images/icons.png") !important;
+    background-position-x: -56px !important;
+    background-position-y: -46px !important;
+
+
+    /*------Mozilla-------*/
+    background-position: -56px -46px!important;
+
+}
+
+/*---------customize indicators---*/
+#customizeHome
+{
+    display:inline-block !important;
+    width: 715px !important;
+}
+
+.pagination
+{
+    display:inline-block !important;
+}
+#pagingtoolBarId1 .x-tbar-page-next:hover , #pagingtoolBarId2 .x-tbar-page-next:hover
+{
+
+    background-image: url("../images/icons.png") !important;
+    background-position-x: -47px !important;
+    background-position-y: -46px !important;
+
+    /*------Mozilla-------*/
+    background-position: -47px -46px!important;
+
+}
+
+#pagingtoolBarId1 .x-tbar-page-first:hover , #pagingtoolBarId2 .x-tbar-page-first:hover
+{
+
+    background-image: url("../images/icons.png") !important;
+    background-position-x: -30px !important;
+    background-position-y: -46px !important;
+
+
+    /*------Mozilla-------*/
+    background-position: -30px -46px!important;
+
+}
+
+#pagingtoolBarId1 .x-tbar-page-prev:hover, #pagingtoolBarId2 .x-tbar-page-prev:hover
+{
+
+    background-image: url("../images/icons.png") !important;
+    background-position-x: -39px !important;
+    background-position-y: -47px !important;
+
+
+    /*------Mozilla-------*/
+    background-position: -39px -47px!important;
+
+}
+
+
+#pagingtoolBarId1 .x-tbar-page-first, #pagingtoolBarId2 .x-tbar-page-first
+{
+    background-image: url("../images/icons.png");
+    background-position-x: -30px !important;
+    background-position-y: -32px !important;
+    width: 9px;
+    height: 15px;
+
+
+    /*------Mozilla-------*/
+    background-position: -30px -32px!important;
+}
+
+#pagingtoolBarId1 .x-tbar-page-prev, #pagingtoolBarId2 .x-tbar-page-prev
+{
+    background-image: url("../images/icons.png") !important;
+    background-position-x: -39px !important;
+    background-position-y: -32px !important;
+    width: 9px;
+    height: 15px;
+
+
+    /*------Mozilla-------*/
+    background-position: -39px -32px!important;
+}
+#pagingtoolBarId1 .x-tbar-page-next, #pagingtoolBarId2 .x-tbar-page-next
+{
+    background-image: url("../images/icons.png")!important;
+    background-position-x: -47px !important;
+    background-position-y: -32px !important;
+    width: 9px;
+    height: 15px;
+
+
+    /*------Mozilla-------*/
+    background-position: -47px -32px!important;
+}
+#pagingtoolBarId1 .x-tbar-page-last, #pagingtoolBarId2 .x-tbar-page-last
+{
+    background-image: url("../images/icons.png") !important;
+    background-position-x: -48px !important;
+    background-position-y: -32px !important;
+    width: 9px;
+    height: 15px;
+
+
+    /*------Mozilla-------*/
+    background-position: -48px -32px!important;
+}
+
+
+/*------combobox plugin-*/
+.x-field-default-toolbar .x-form-text
+{
+    font-weight: bold !important;
+}
+#comboPlugin1 .x-form-text
+{
+    background:#f1f1f1 !important;
+}
+
+
+
+#searchpaginationtoolbar  .x-box-inner
+{
+    background: white!important;
+}
+
+#searchpaginationtoolbar .x-toolbar
+{
+    padding: 0px 0px 0px 0px !important;
+}
+
+/*--------------------------------- Jcr Combobox------------*/
+
+
+.filters-item-content-year
+{
+    font-size: 13px !important;
+    font-weight: bold !important;
+    background: center top , rgb(249, 249, 249), rgb(237, 237, 237) repeat scroll 0% 0% transparent;
+    border: 0px solid rgb(170, 170, 170) !important;
+    box-sizing: border-box !important;
+}
+
+
+.x-boundlist-item {
+    cursor: default;
+    font-weight: normal !important;
+    padding: 4px;
+    border-style: none !important;
+}
+
+.x-boundlist-item-over {
+    background: #E3EDF7;
+    color: #000000;
+    cursor: pointer;
+}
+
+.x-boundlist-item-over a {
+    color: #000000;
+}
+
+.x-boundlist-selected {
+    background: #4b749b;
+    background: -moz-linear-gradient(top, #4b749b, #4b749b);
+    background: -webkit-linear-gradient(top, #4b749b 0%, #4b749b 100%);
+    background: -ms-linear-gradient(top, #4b749b, #4b749b);
+    background: linear-gradient(top, #4b749b, #4b749b);
+    color: #fff;
+}
+
+.filters-item-content-year .x-form-focus {
+    border-color: none !important;
+}
+
+/*----For IE--*/
+#jcrYear .x-form-text ,  #trendYear .x-form-text ,#trendmetric .x-form-text ,#quartilemetric  .x-form-text, #quartileYear .x-form-text
+{
+    color: black !important;
+    font-family: sans-serif,Arial !important;
+    font-style: normal !important;
+}
+.x-list-plain
+{
+    border: 0px solid rgb(170, 170, 170) !important;
+    /*background: none repeat scroll 0% 0% rgb(246, 246, 246) !important;
+
+    box-shadow: 6px 6px 20px 0px rgba(107, 107, 107, 0.29) !important;
+
+    box-sizing: border-box;
+    position: absolute !important;*/
+}
+
+
+/*-----------start of addjournal list savepopup-------*/
+
+.addJournalList
+{
+    background-color: rgba(244, 244, 244, .96) !important;
+    border: 0px solid rgb(185, 185, 185) !important;
+    box-shadow: rgba(0,0,0, .35) !important;
+    box-sizing: border-box;
+    color: rgb(51, 51, 51);
+}
+
+
+.addJournalList .x-box-inner  .x-tool-img{
+    background-image: url(../images/close.JPG) !important;
+    width:30px !important;
+    height: 30px !important;
+}
+.addJournalList  .x-box-inner .x-tool-close{
+    background-position: 0 0 !important;
+}
+
+.addJournalList .x-header .x-header-body .x-box-inner .x-tool{
+    left: 455px !important;
+}
+.primary-button-inner-center
+{
+    color: white !important;
+}
+#addListPopup-innerCt
+{
+    background-color: rgba(244, 244, 244, .96)!important;
+    border: 1px solid #bbbbbb;
+}
+#newFile-labelCell
+{
+    /* padding-left: 60px;*/
+    padding-top: 27px;
+    width:50px !important;
+
+}
+#newFile-inputEl
+{
+    width: 250px !important;
+    margin-top: 27px;
+}
+#newFile-labelEl
+{
+    font-size: 14px;
+    font-style: normal;
+}
+
+.addJournalList #addListPopup-innerCt
+{
+    padding: 81px 20px 0px 20px !important
+}
+#addListPopup
+{
+    width:500px!important;
+    left: 507px!important;
+    top: 888px!important;
+    height: 340px!important;
+    display: block;
+}
+.addJournalList-body
+{
+    height: 297px !important;
+}
+.addJournalList .x-toolbar-default-docked-top
+{
+    top: 43px !important;
+}
+.addJournalList .x-box-inner
+{
+    height: 36px !important;
+}
+
+.addJournalList .x-tool-after-title
+{
+    top:9px !important;
+}
+#addListPopup .x-grid-row-selected .x-grid-cell-inner {
+    font-weight: bold;
+    background-color: rgb(255, 133, 0);
+}
+/*----- end of addjournal list savepopup----*/
+
+
+/*---------------- Title Changes--------*/
+.popupcalculations  .x-toolbar
+{
+    border:none;
+
+}
+.popupcalculations .x-toolbar-default-docked-bottom
+{
+    top: 314px !important;
+}
+
+#titleChangesGrid
+{
+    margin-top: 60px;
+}
+/*----compare journals----*/
+
+#panelbuttons
+{
+    padding-left: 8px;
+    padding-bottom: 20px;
+    padding-top: 17px;
+    width: 251px;
+}
+
+#journalTitleChangesPopUp .x-tool-after-title
+{
+    left: 648px !important;
+}
+
+#journalTitleChangesPopUp .x-box-inner
+{
+    top: -12px !important;
+    left: -7px !important;
+}
+#titleChangesGrid  .x-grid-view
+{
+    height: 263px !important;
+}
+#titleChangesGrid  .x-grid-body
+{
+    height: 265px !important;
+}
+
+/*
+#journalTitleChangesPopUp .x-box-inner
+{
+background: url("../images/close.JPG") no-repeat;
+background-position: 711px -4px;
+
+}*/
+
+/*master search*/
+
+.content-header-title
+{
+    font-size: 18px;
+    float: left;
+    margin-top: 15px;
+}
+
+.content-header-search
+{
+    margin-top: 10px;
+}
+
+/*compare journals*/
+
+#trendJcrYear  .x-boundlist  .x-unselectable
+{
+    border: 1px solid #bababa !important;
+}
+
+#quartilemetric
+{
+    border: 1px solid #bababa;
+    width: 133px;
+}
+
+
+
+/*-------------------------Alert Message----------.x-window-default-------*/
+.x-window-default
+{
+    background-color: rgba(244, 244, 244, .96) !important;
+    /* if !important added to below lines, it will break popup display on pressing save button with empty space */
+    z-index: 999999;
+}
+
+.x-message-box .x-window-body
+{
+    background-color: rgba(244, 244, 244, .96) !important;
+}
+
+.x-window-header-default .x-tool-img {
+
+    background: url("../images/close.JPG") 0 0 !important;
+    width: 31px;
+    height: 31px;
+}
+
+.x-window-header-default-top
+{
+    height: 31px;
+    padding: 0px !important;
+}
+/*
+.x-message-box .x-toolbar-footer
+{
+  display: none !important;
+}
+*/
+.x-window-header-body .x-box-inner
+{
+    height: 30px !important;
+    background-color: rgba(244, 244, 244, .96) !important;
+    width: 545px !important;
+}
+
+.x-window-header-text-container-default
+{
+    /*color: black !important;
+    width: 407px !important;
+    padding-left: 5px !important;*/
+    display: none !important;
+}
+
+.x-btn-default-small
+{
+    background-color: #005a84 !important;
+    background-image: none !important;
+}
+
+.x-message-box .x-btn
+{
+    border-width: 0px !important;
+
+    /*display: none !important;*/
+}
+
+.x-box-item
+{
+    position: none !important;
+
+}
+/*
+.x-window-header-default-horizontal .x-tool-after-title
+{
+   left: 357px !important;
+}
+.x-btn-default-small
+{
+  padding: 0px !important;
+
+}
+*/
+.x-btn-default-small-over
+{
+    background-color: #4b749b !important;
+    background-image: none !important;
+}
+
+.x-btn-inner
+{
+    color:white !important;
+}
+
+/*
+.x-window-header-default-horizontal .x-tool-after-title
+{
+left: 513px !important;
+}*/
+.x-window-header-default-horizontal .x-tool-after-title
+{
+    left: 513px !important;
+}
+
+
+.x-jcrhomepagealert .x-window-header-default-horizontal .x-tool-after-title
+{
+    left: 225px !important;
+}
+
+.x-journalhomepagealert .x-window-header-default-horizontal .x-tool-after-title
+{
+    left: 365px !important;
+}
+.x-quartilesavepopup .x-window-header-default-horizontal .x-tool-after-title
+{
+    left: 266px !important;
+}
+.x-form-display-field
+{
+    font: normal 14px arial,sans-serif !important;
+    color: black;
+    line-height: 22px;
+}
+
+/*------------------- Category Description --------------- */
+#catDescription
+{
+    width: 1189px !important;
+}
+
+/*compare journals*/
+
+#compareJournalsQuartileYear
+{
+    display:block;
+
+}
+
+#compareJournalTrendYear
+{
+    display:none;
+
+}
+
+#compareJournalsQuartileMetric
+{
+    display:block;
+
+}
+
+#compareJournalTrendMetric
+{
+    display:none;
+
+}
+
+/*----------- Combobox (Impact factor)------------*/
+#rangeFrom #rangeFrom-triggerWrap
+{
+    width: 75px !important;
+}
+
+#rangeTo #rangeTo-triggerWrap
+{
+    width: 75px !important;
+}
+#rangeFrom
+{
+    float: left;
+}
+
+/*----------- Combobox (JIF Percentile)------------*/
+#jifPercentileRangeFrom #jifPercentileRangeFrom-triggerWrap
+{
+    width: 75px !important;
+}
+
+#jifPercentileRangeTo #jifPercentileRangeTo-triggerWrap
+{
+    width: 75px !important;
+}
+#jifPercentileRangeFrom
+{
+    float: left;
+}
+
+/*-------------- Search Journal in Home Page(mozilla)--------------- */
+
+
+#journalSearch .x-form-text , #publisherSearch .x-form-text , #countrySearch .x-form-text ,#comparejournalSearch .x-form-text
+{
+    padding: 0px 0px 0px 6px!important;
+}
+
+/*--------------JOurnal Title in journal profile page------------------ */
+#jounaltitleid
+{
+    display: -moz-grid !important;
+    width: 714px;
+}
+#journaltitlediv
+{
+    width: 714px;
+}
+ul.actionMessage{padding: 10px 20px 10px 15px;float: right;color: #4b749b;font-size: 1.1em;}
+
+/*--------------quartile savepopup ---------*/
+#quartileSavePopUp   .x-window-body
+{
+    padding-top: 33px;
+    background: #ffffff !important;
+    border: 0px !important;
+}
+
+#quartileSavePopUp   .x-box-inner
+{
+    width: 300px !important;
+}
+.x-toolbar-default
+{
+    border-width: 0px !important;
+}
+
+.x-window-body-default {
+    border-width: 0px;
+    border-style: solid;
+    padding: 10px;
+}
+
+#savepopupAdd .primary-button-wrap , #savepopupCancel .primary-button-wrap
+{
+    line-height: 30px !important;
+    padding-left:0px !important;
+}
+
+#savepopupAdd
+{
+    left: 122px !important;
+}
+#savepopupCancel
+{
+    left: 200px !important;
+}
+
+#quartileSavePopUp .x-tool-after-title
+{
+    left: 266px !important;
+}
+
+/*---- Master search in IE-*/
+
+#popup-checkbox-content {padding: 0px 0px 0px 6px;position: relative;font-style: italic;color: #bbb;}
+#popup-checkbox-content input[type="text"]:-ms-input-placeholder
+{
+    font-family:Source Sans Pro, sans-serif;font-style: italic;color: #bbb;
+}
+.jrcimpactfactor {
+    border-left-style: solid;
+    border-right-width: 10px;
+    border-right-style: solid;
+}
+.jcrimpactfactorsub{
+    border-bottom-width: 5px;
+    border-bottom-style: solid;
+    border-top-style: solid;
+    border-top-width: 5px;
+    border-right-width: 5px;
+    border-right-style: solid;
+}

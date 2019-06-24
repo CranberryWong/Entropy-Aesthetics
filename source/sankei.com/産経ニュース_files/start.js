@@ -1,0 +1,1 @@
+if(location.protocol!="file:"){var _sf_startpt=(new Date()).getTime()};

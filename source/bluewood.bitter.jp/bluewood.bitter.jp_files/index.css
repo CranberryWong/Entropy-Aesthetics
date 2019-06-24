@@ -1,0 +1,39 @@
+@charset "utf-8";
+/* page setting
+--------------------------------------------------------- */
+@import "_cnskin/102b/css/style.css";
+
+#L01 #area-header.noskin,#L02 #area-header.noskin,#L03 #area-header.noskin,#L07 #area-header.noskin,#L08 #area-header.noskin	{ width:825px;}
+#L01 #area-header,#L02 #area-header,#L03 #area-header,#L07 #area-header,#L08 #area-header	{ width:841px;}
+#L01 #area-billboard.noskin,#L02 #area-billboard.noskin,#L03 #area-billboard.noskin,#L07 #area-billboard.noskin,#L08 #area-billboard.noskin	{ width:825px;}
+#L01 #area-billboard,#L02 #area-billboard,#L03 #area-billboard,#L07 #area-billboard,#L08 #area-billboard	{ width:841px;}
+#L01 #area-contents.noskin,#L02 #area-contents.noskin,#L03 #area-contents.noskin,#L07 #area-contents.noskin,#L08 #area-contents.noskin	{ width:825px;}
+#L01 #area-contents,#L02 #area-contents,#L03 #area-contents,#L07 #area-contents,#L08 #area-contents	{ width:841px;}
+#L02 #area-main,#L03 #area-main,#L07 #area-main,#L08 #area-main	{ width:70%;}
+#L02 #area-side-a,#L03 #area-side-a,#L07 #area-side-a,#L08 #area-side-a	{ width:29%;}
+#L01 #area-footer.noskin,#L02 #area-footer.noskin,#L03 #area-footer.noskin,#L07 #area-footer.noskin,#L08 #area-footer.noskin	{ width:825px;}
+#L01 #area-footer,#L02 #area-footer,#L03 #area-footer,#L07 #area-footer,#L08 #area-footer	{ width:841px;}
+
+#L04	{ width:auto; margin:0 auto;}
+#L04 #area-contents	{ width:auto;}
+#L04 #main-group	{ width:100%; margin-left:-240px;}
+#L04 #area-main	{ margin-left:250px;}
+#L04 #area-side-a	{ width:240px;}
+
+#L05	{ width:auto; margin:0 auto;}
+#L05 #area-contents	{ width:auto;}
+#L05 #main-group	{ width:100%; margin-left:-240px;}
+#L05 #main-group .core	{ width:100%; margin-right:-240px;}
+#L05 #area-main	{ margin-left:250px; margin-right:250px;}
+#L05 #area-side-a	{ width:240px;}
+#L05 #area-side-b	{ width:240px;}
+
+#L06	{ width:auto; margin:0 auto;}
+#L06 #area-contents	{ width:auto;}
+#L06 #main-group	{ width:100%; margin-right:-240px;}
+#L06 #area-main { margin-right:250px;}
+#L06 #area-side-a	{ width:240px;}
+
+body { background: #000000; }.wind-bg { background: url(_src/sc453/001.jpg) repeat; }#area-billboard { background: #000000; }#area-main { background: #000000; }#area-contents { background: #000000; }
+
+

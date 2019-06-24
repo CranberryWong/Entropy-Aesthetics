@@ -1,0 +1,174 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<!-- saved from url=(0050)http://blog.sciencenet.cn/plus.php?mod=iframelogin -->
+<html xmlns="http://www.w3.org/1999/xhtml"><head><meta http-equiv="Content-Type" content="text/html; charset=GBK">
+
+<title>科学网-登录</title>
+<style type="text/css">
+<!--
+* {
+	margin:0;
+	padding:0;
+}
+body {
+	font: normal 12px Arial, Helvetica, Sans-Serif, "宋体";
+	line-height: 160%;
+	text-align:left;
+	color: #3a3a3a;
+	margin:0;
+	padding:0;
+}
+img {
+	border:0;
+}
+ul, li {
+	padding:0;
+	margin:0;
+	list-style:none;
+}
+a {
+	text-decoration: none;
+	color:#3a3a3a;
+}
+a:hover {
+	color: #C00;
+}
+.banner {
+	margin-bottom:1px;
+	height:59px;
+}
+.denglu {
+	height:31px;
+	border-bottom:1px solid #FFF;
+	background:#e7e3e4;
+	color:#7b797a;
+}
+.denglu a {
+	color:#7b797a;
+	text-decoration:none;
+}
+.denglu a:hover {
+	color:#C00;
+	text-decoration:underline;
+}
+.denglu .box01 {
+	margin-left:30px;
+	float:left;
+	width:224px;
+	line-height:30px;
+	height:31px;
+}
+.denglu .box02 {
+	width:500px;
+	float:left;
+	color:#000;
+	text-align:right;
+}
+.denglu .box02 input {
+	border:1px #c5c3c3 solid;
+	height:20px;
+	width:88px;
+	background:#FFF;
+	line-height:20px;
+	margin-top:5px;
+}
+.denglu .box02 .button {
+	background:url(./static/image/common/img01.gif) no-repeat;
+	width:50px;
+	height:21px;
+	border:0;
+	color:#4b4b4b;
+	margin:0 5px;
+	font-size:12px;
+	line-height:20px;
+}
+.denglu .box03 {
+	float:right;
+	line-height:30px;
+	height:31px;
+	margin-right:15px;
+}
+.denglu .box03 .font1 {
+	margin-left:20px; 
+}
+.denglu .box03 .font2 {
+	margin-left:10px;
+	background:url(./static/image/common/icon03.jpg) left center no-repeat;
+	padding-left:8px;
+	margin-left:40px;
+}
+-->
+</style>
+<script type="text/javascript">
+function checkform(){
+	if(document.getElementById('username').value==''){
+		alert('请输入用户名');
+		return false;
+	}
+	if(document.getElementById('password').value==''){
+		alert('请输入密码');
+		return false;
+	}
+	document.getElementById('kxwpassword').value = document.getElementById('password').value;
+		
+	return true;
+}
+/*
+function refresh(){
+	//self.window.opener.locaction.reload();
+	window.parent.location.reload(true);
+}
+*/ 
+//add by 7u5
+function selfrefresh() {
+	window.location.reload();
+}
+/*
+function operate()
+{
+    setTimeout("disappeare()",10000);
+}
+function disappeare(){
+    document.getElementById('tishi').style.display = "none";
+}
+*/
+</script>
+</head>
+<body>
+<div id="header">
+  <!--登录-->
+  <div class="denglu">
+    <div class="box01">
+	2018年07月26日 星期四    </div>
+    	 <iframe style="display: none" name="frame_profile" id="frame_profile" src="./saved_resource.html"></iframe>
+     <form method="post" action="http://blog.sciencenet.cn/member.php?mod=logging&amp;action=login2&amp;loginsubmit=yes&amp;infloat=yes" onsubmit="return checkform();">
+     <div class="box02">
+ 	   用户名：<input type="text" name="username" id="username">
+         密码：<input type="password" name="password" id="password">
+			   <input type="hidden" name="kxwpassword" id="kxwpassword">
+         	   <input type="hidden" name="quickforward" value="yes">
+               <input type="hidden" name="handlekey" value="ls">
+               <input type="hidden" name="iflogin" value="plus.php?mod=iframelogin">
+      <span>
+      <input name="input" type="submit" class="button" value="登录" style="cursor:pointer">
+      </span>
+      <span>
+      <input name="input" type="button" class="button" value="注册" style="cursor:pointer" onclick="window.open(&#39;member.php?mod=register&#39;)">
+      </span>
+	  <span>
+              <input name="input" type="button" class="button" value="找回密码" style="cursor:pointer" onclick="window.open(&#39;member.php?mod=logging&amp;action=login&amp;viewlostpw&#39;)">
+      </span>
+      </div>
+      </form>
+    
+    <div class="box03">
+    <span class="font2"><a onclick="this.style.behavior=&#39;url(#default#homepage)&#39;;this.setHomePage(&#39;http://www.sciencenet.cn&#39;);" href="javascript:;">设为首页</a></span>
+    <span class="font1"><a href="http://www.sciencenet.cn/" target="_parent">中文</a> | <a href="http://www.sciencenet.cn/english/" target="_parent">English</a></span>
+    
+    </div>
+ 
+    
+  </div>
+</div>
+
+
+</body></html>

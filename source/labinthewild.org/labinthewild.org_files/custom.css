@@ -1,0 +1,425 @@
+/****************************************
+* custom.css
+*
+* All CSS changes we have made from the
+* original Bootstrap CSS.
+*
+* Author: Jonathan Taratuta-Titus
+* Last Updated: 21 June 2013
+***************************************/
+
+body#top 
+{
+	background-color: #E1EAEA;
+	padding: 10px;
+}
+
+.well
+ {
+     background-color: #FFFFFF;
+     border-style: none;
+     margin: 0px;
+     margin-top: 20px;
+     -webkit-border-radius: 15px;
+     -moz-border-radius: 15px;
+     border-radius: 15px;
+
+ }
+
+
+.navbar-inner
+{
+	background-image: -moz-linear-gradient(top,#fff,#E1EAEA);
+	background-image: -webkit-gradient(linear,0 0,0 100%,from(#fff),to(#E1EAEA));
+	background-image: -webkit-linear-gradient(top,#fff,#E1EAEA);
+	background-image: -o-linear-gradient(top,#fff,#E1EAEA);
+	background-image: linear-gradient(top, #fff, #E1EAEA);
+	border-style: none;
+	margin: 0 auto;
+}
+
+.thumbnail
+{
+	border: 0px;
+	-webkit-box-shadow: none;
+	-moz-box-shadow: none;
+	box-shadow: none;
+	margin-top: 20px;
+  cursor: pointer;
+}
+
+
+.thumbnail img
+{
+    position: absolute;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+    left: 0;
+    right: 0;
+}
+
+.thumbnails .span4
+{
+    height: 340px;
+    position: relative;
+}
+
+.test-title
+{
+    position: relative;
+    top: 110px;
+	min-height: 40px;
+	font-weight: normal;
+}
+
+/*.test-title-no-hover
+{
+	min-height: 20px;
+	font-weight: normal;
+}
+
+.test-title:hover
+{
+	min-height: 20px;
+	font-weight: normal;
+	cursor: pointer; 
+	color: #7AA300; 
+}*/
+
+
+.test-desc
+{
+    position: relative;
+    top: 110px;
+	min-height: 120px;
+}
+
+.test-btn
+{
+    position: relative;
+    top: 100px;
+}
+
+#main-logo
+{
+	max-height: 100px;
+}
+
+#statbox
+{
+	max-height: 82px;
+	min-height: 82px;
+	margin-top: 0px;
+}
+
+#statnum
+{
+	/* font-size: 75px; */
+	font-weight: normal;
+	margin: 0px;
+	line-height: 75px;
+}
+
+#stat-text
+{
+	position: absolute;
+	top: 50px;
+	left: 0;
+}
+.item
+{
+	height: 110px;
+}
+
+#logorow
+{
+	width: 978px;
+}
+
+#logorow > .span8
+{
+	margin-left: 0px;
+}
+
+h3
+{
+	font-weight: normal;
+}
+
+text {
+  font-size: xx-large;
+  font-variant: small-caps;
+  font-weight: 700;
+  font-family: sans-serif;
+  text-anchor: middle;
+}
+
+.enter {
+  fill: #7e8a71;
+
+}
+
+.exit {
+  fill: #7e8a71;
+}
+
+.thumbnails > .blog-post
+{
+	margin-left: 0px;
+	margin-top: 0px;
+}
+
+.blog-post > .thumbnail
+{
+	margin-top: 0px;
+}
+
+.btn-custom-lighten.active {
+  color: rgba(255, 255, 255, 0.75);
+}
+.btn-custom-lighten {
+  color: #ffffff;
+  text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+  background-color: #53a3a3;
+  background-image: -moz-linear-gradient(top, #499898, #61b3b3);
+  background-image: -webkit-gradient(linear, 0 0, 0 100%, from(#499898), to(#61b3b3));
+  background-image: -webkit-linear-gradient(top, #499898, #61b3b3);
+  background-image: -o-linear-gradient(top, #499898, #61b3b3);
+  background-image: linear-gradient(to bottom, #499898, #61b3b3);
+  background-repeat: repeat-x;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ff499898', endColorstr='#ff61b3b3', GradientType=0);
+  border-color: #61b3b3 #61b3b3 #418787;
+  border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+  *background-color: #61b3b3;
+  /* Darken IE7 buttons by default so they stand out more given they won't have borders */
+
+  filter: progid:DXImageTransform.Microsoft.gradient(enabled = false);
+}
+
+
+.btn-custom-lighten:hover,
+.btn-custom-lighten:focus,
+.btn-custom-lighten:active,
+.btn-custom-lighten.active,
+.btn-custom-lighten.disabled,
+.btn-custom-lighten[disabled] {
+    color: #ffffff;
+    background-color: #61b3b3;
+    *background-color: #51a9a9;
+}
+.btn-custom-lighten:active,
+.btn-custom-lighten.active {
+    background-color: #499898 ;
+}
+
+
+
+
+.btn-custom-lighten-community.active {
+    color: rgba(255, 255, 255, 0.75);
+}
+.btn-custom-lighten-community {
+    color: #ffffff;
+    text-shadow: 0 -1px 0 rgba(0, 0, 0, 0.25);
+    background: #cd4949; /* Old browsers */
+    background: -moz-linear-gradient(top, #cd4949 0%, #d66868 100%); /* FF3.6-15 */
+    background: -webkit-linear-gradient(top, #cd4949 0%,#d66868 100%); /* Chrome10-25,Safari5.1-6 */
+    background: linear-gradient(to bottom, #cd4949 0%,#d66868 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
+    filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#cd4949', endColorstr='#d66868',GradientType=0 ); /* IE6-9 */
+}
+
+.btn-custom-lighten-community:hover,
+.btn-custom-lighten-community:focus,
+.btn-custom-lighten-community:active,
+.btn-custom-lighten-community.active,
+.btn-custom-lighten-community.disabled,
+.btn-custom-lighten-community[disabled] {
+    color: #FFFFFF;
+    background: #e16565;
+    *background: #e16565;
+}
+.btn-custom-lighten-community:active,
+.btn-custom-lighten-community.active {
+    background: #de8686;
+}
+
+
+.sharebutt > img
+{
+    width: 32px;
+    height: 32px;
+}
+
+#footer-row a:hover
+{
+	text-decoration: none;
+}
+#footer-row a:focus
+{
+	text-decoration: none;
+}
+
+.navbar
+{
+	width: 978px;
+}
+
+a 
+{
+	color: #79A300;
+}
+a:hover, a:focus
+{
+	color: #4F6A00;
+}
+
+#follow-alert
+{
+	width: 929px;
+}
+
+#email_address
+{
+	margin-bottom: 0px;
+}
+
+.carousel {
+  position: relative;
+  margin-bottom: 20px;
+  line-height: 1;
+}
+
+.carousel-inner {
+  margin-top: -7%;
+  position: relative;
+  width: 100%;
+  overflow: hidden;
+}
+
+.carousel-inner > .item {
+  position: relative;
+  display: none;
+  -webkit-transition: 2.0s ease-in-out left;
+     -moz-transition: 2.0s ease-in-out left;
+       -o-transition: 2.0s ease-in-out left;
+          transition: 2.0s ease-in-out left;
+}
+
+.carousel-inner > .item > img,
+.carousel-inner > .item > a > img {
+  display: block;
+  line-height: 1;
+}
+
+.carousel-inner > .active,
+.carousel-inner > .next,
+.carousel-inner > .prev {
+  display: block;
+}
+
+.carousel-inner > .active {
+  left: 0;
+}
+
+.carousel-inner > .next,
+.carousel-inner > .prev {
+  position: absolute;
+  top: 0;
+  width: 100%;
+}
+
+.carousel-inner > .next {
+  left: 100%;
+}
+
+.carousel-inner > .prev {
+  left: -100%;
+}
+
+.carousel-inner > .next.left,
+.carousel-inner > .prev.right {
+  left: 0;
+}
+
+.carousel-inner > .active.left {
+  left: -100%;
+}
+
+.carousel-inner > .active.right {
+  left: 100%;
+}
+
+.carousel-control {
+  position: absolute;
+  top: 40%;
+  left: 15px;
+  width: 40px;
+  height: 40px;
+  margin-top: -20px;
+  font-size: 60px;
+  font-weight: 100;
+  line-height: 30px;
+  color: #ffffff;
+  text-align: center;
+  background: #222222;
+  border: 3px solid #ffffff;
+  -webkit-border-radius: 23px;
+     -moz-border-radius: 23px;
+          border-radius: 23px;
+  opacity: 0.5;
+  filter: alpha(opacity=50);
+}
+
+.carousel-control.right {
+  right: 15px;
+  left: auto;
+}
+
+.carousel-control:hover,
+.carousel-control:focus {
+  color: #ffffff;
+  text-decoration: none;
+  opacity: 0.9;
+  filter: alpha(opacity=90);
+}
+
+.carousel-indicators {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  z-index: 5;
+  margin: 0;
+  list-style: none;
+}
+
+.carousel-indicators li {
+  display: block;
+  float: left;
+  width: 10px;
+  height: 10px;
+  margin-left: 5px;
+  text-indent: -999px;
+  background-color: #ccc;
+  background-color: rgba(255, 255, 255, 0.25);
+  border-radius: 5px;
+}
+
+.carousel-indicators .active {
+  background-color: #fff;
+}
+
+/*added temporary style for when we make everything a link before localization*/
+
+.main-page-link {
+  color: black;
+}
+
+.main-page-link-img {
+  margin-left: 25%;
+}
+.thumbnail > a:hover {
+  color: black;
+  text-decoration: none;
+}

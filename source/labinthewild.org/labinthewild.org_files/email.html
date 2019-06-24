@@ -1,0 +1,61 @@
+
+
+// email validator - http://www.w3resource.com/javascript/form/email-validation.php#sthash.YaiMT7Vz.dpuf
+function isValidEmail(email)   
+{  
+	return (/^\w+([\.-]?\w+)*@\w+([\.-]?\w+)*(\.\w{2,3})+$/.test(email)); 
+}  
+
+// submits the data from the email addresses with error checking
+function email_submit() 
+{
+	var address_selector = "input[name='address']"; 
+	var address = $(address_selector).val(); 
+	
+	// if not a valid email address, show error messages and make red
+	if(!isValidEmail(address))
+	{
+		$("#email-signup-box").addClass("error");
+		$("#email-help").html("The email address you provided is invalid.");
+		$(address_selector).bind("keydown", function ()
+		{
+			$("#email-signup-box").removeClass("error");
+			$("#email-help").empty(); 
+			$(address_selector).unbind("keydown"); 
+		}); 
+		return; 
+	}
+	// otherwise submit via ajax
+	else
+	{
+		$("#invalid_address").hide();
+		$(address_selector).css('color', 'black'); 
+		
+		// create data to submit
+		var data = {};
+		data["address"] = address; 
+		
+		// ajax
+		$.ajax({
+			type: 'POST',
+			url: 'email/subscribe.php',
+			data: data
+		}).done (function (link) 
+		{
+			// if ajax worked correctly, a link starting with http://... is returned
+			if (link.substring(0, 4) == "http")
+			{
+				$("form[name='email']").hide(); 
+				$("#email_complete").show(); 
+
+				var msg = "To unsubscribe click <a href='" + link + "'>here</a>"; 
+				$("#unsubscribe").html(msg); 
+			}
+			// otherwise alert the failure
+			else
+			{
+				alert(link); 
+			}
+		});
+	}
+}

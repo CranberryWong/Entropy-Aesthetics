@@ -1,0 +1,273 @@
+@charset "UTF-8";
+
+/* トップページ用CSS */
+
+body,div,h1,h2,h3,pre,p,ul,ol,li{
+margin: 0;
+padding: 0;
+}
+
+body{
+color:#333333;
+background-color:#ffffff;
+font-family: 'Avenir','Helvetica Neue','Helvetica','Arial','游ゴシック体', YuGothic, '游ゴシック', 'Yu Gothic', 'メイリオ', sans-serif;
+font-weight: 500;
+min-width: 320px;
+}
+
+img{
+border-width:0px;
+vertical-align:bottom;
+}
+
+#wrapper{
+max-width:720px;
+margin:0px auto;
+border-left:1px solid #e0e0e0;
+border-right:1px solid #e0e0e0;
+background-color:#ffffff;
+}
+
+#pagebody{
+}
+
+#pagebody:after{
+content:".";
+display:block;
+height:0;
+clear:both;
+visibility:hidden;
+}
+
+#rightnavi{
+padding:10px 0;
+background-color:#ffffff;
+}
+
+#leftnavi{
+padding:10px 0;
+background-color:#ffffff;
+}
+
+p{
+font-size:12px;
+}
+
+div.sotowaku{
+border-left:1px solid #DFDFDF;
+border-right:1px solid #DFDFDF;
+border-bottom:1px solid #DFDFDF;
+margin:0 0 10px 0;
+}
+
+h1{
+padding:5px 15px 2px 15px;
+font-size:16px;
+color:#888888;
+background-color:#f8f8f8;
+font-weight:bold;
+border-top:1px solid #e0e0e0;
+border-bottom:1px solid #e0e0e0;
+}
+
+#copyright{
+height:30px;
+margin: 0 auto;
+padding:5px 0;
+text-align:center;
+color:#999999;
+font-size:12px;
+}
+
+a:link{color:#375e8d;}
+a:visited{color:#375e8d;}
+a:hover, a:active{color:#375e8d;}
+
+div.leftmenublock{
+border-left:1px solid #dadada;
+border-right:1px solid #dadada;
+border-bottom:1px solid #dadada;
+padding:10px 5px 10px 5px;
+background-color:#f5f5dc;
+margin:0 0 10px 0;
+}
+
+div.subblock{
+height:21px;
+background-color:#DFDFDF;
+border:1px solid #DFDFDF;
+}
+
+div.subblock p{
+color:#666666;
+margin:3px 0 0 10px;
+font-size:12px;
+font-weight:bold;
+}
+
+div.subblock a:link{color:#666666;}
+div.subblock a:visited{color:#666666;}
+div.subblock a:hover, a:active{color:#666666;}
+
+#policy{
+font-size:12px;
+font-style:normal;
+text-align:center;
+padding:5px;
+background-color:#e6e6fa;
+border-top:1px solid #c0c0c0;
+border-bottom:1px solid #c0c0c0;
+}
+
+ul.leftmenu{
+text-align:left;
+list-style-type:none;
+background-color:#f5f5dc;
+line-height:2;
+}
+
+ul.leftmenu li.title{
+font-size:18px;
+font-weight:bold;
+padding-left:10px;
+}
+
+ul.leftmenu li.detail{
+font-size:12px;
+padding-left:10px;
+line-height:1.6;
+margin-bottom:15px;
+}
+
+ul.leftmenu li.frame_subtitle{
+font-size:12px;
+padding:0 0 0 33px;
+background-image:url("../img/ten.png");
+background-repeat:no-repeat;
+background-position:16px 8px;
+}
+
+/* ---- ヘッダー ---- */
+
+#topbar{
+padding:0;
+width:100%;
+height:62px;
+padding:10px 0 0 0;
+background-color:#f0f0f0;
+}
+
+#logoarea{
+margin:0 auto;
+}
+
+#logoarea:after{
+content:".";
+display:block;
+height:0;
+clear:both;
+visibility:hidden;
+}
+
+#sitelogo{
+float:left;
+width:300px;
+margin:0 0 0 10px;
+}
+
+#sitelogo img{
+margin:0;
+}
+
+/* ---- カスタム検索 ---- */
+
+#searchbox2{
+margin:10px 10px 0 10px;
+}
+
+#searchbox2 td.gsc-input{
+padding-top:2px;
+}
+
+#toppagead{
+padding:10px 10px;
+margin:0 0 10px 0;
+background-color:#f5f5dc;
+text-align:center;
+}
+
+#sponsored{
+padding:10px 0;
+margin:0;
+text-align:center;
+}
+
+/* ソーシャルブックマークボタン */
+
+#socialbox{
+margin:10px 0 0 0;
+}
+
+#socialbox:after{
+content:".";
+display:block;
+height:0;
+clear:both;
+visibility:hidden;
+}
+
+#socialbox img{
+margin:0;
+}
+
+#twitter {
+float:left;
+height:24px;
+margin:5px 0 0 10px;
+}
+
+#facebook {
+float:left;
+height:24px;
+margin:5px 0 0 10px;
+}
+
+/*media Queries
+----------------------------------------------------*/
+@media only screen and (min-width: 740px) {
+  div.subblock{
+  margin:0 10px;
+  }
+
+  div.leftmenublock{
+  margin:0 10px 10px 10px;
+  }
+
+  #rightnavi{
+  float:right;
+  width:360px;
+  }
+
+  #leftnavi{
+  float:left;
+  width:360px;
+  }
+
+  #toppagead{
+  padding:10px 0;
+  margin:0 10px 10px 10px;
+  border-left:1px solid #dadada;
+  border-right:1px solid #dadada;
+  border-bottom:1px solid #dadada;
+  background-color:#f5f5dc;
+  }
+
+  #sponsored{
+  margin:0 10px 10px 10px;
+  border-left:1px solid #dadada;
+  border-right:1px solid #dadada;
+  border-bottom:1px solid #dadada;
+  background-color:#f5f5dc;
+  }
+}
+

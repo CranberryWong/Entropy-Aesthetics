@@ -1,0 +1,6 @@
+(function(w,d){var divName="zone1",zone=w.ABN(divName),media={id:3,poolID:3,width:200,height:30,campaignID:2,zoneID:320,siteID:145, url:ABN.domain+"go?z=320&m=3&c=2&p0=3&n=626613471&h=662512769&u=be99df9955268c62&t=1532580158",
+country:4, path:ABN.protocol+"//n2.cdn.adbetnet.com/uploads/media/9/0/9/"};zone.catID=0;
+media.vars={};
+zone.media=media;zone.write('<style> #adv-logo  {display: block;position:fixed;right:0;width:50px;height:50px;top:50px;z-index:2000;cursor:pointer;-webkit-transition: .2s;-o-transition:.2s;transition:.2s;margin-right:50px;-webkit-transform:translateX(100%);-ms-transform:translateX(100%);-o-transform:translateX(100%);transform:translateX(100%);}#adv-logo:hover{width:200px;-webkit-transform:translateX(0);-ms-transform:translateX(0);-o-transform:translateX(0);transform:translateX(0);margin-right:0;}.adv-logo-container{display:block;width:200px;height:50px;position:relative;}.adv-logo-container iframe,.adv-logo-container .adv-img-cover{width:200px;height:50px;position:absolute;top:0;left:0;}</style><div id="adv-logo" onclick="window.open(\''+media.url+'\')"><div class="adv-logo-container">'+
+'<img src="'+media.path+'v1/adbetnet.png" width="200" height="50"/><div class="adv-logo-img-cover"></div></div></div>');
+})(window, document)

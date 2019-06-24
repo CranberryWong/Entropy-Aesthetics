@@ -1,0 +1,81 @@
+@charset "utf-8";
+
+/* =========================================================================== */
+/* グローバルナビの横幅 */
+div.gnav-201601 ,
+div.gnav-201601 ul#bpGlobalNavi { width: 1000px; }
+
+/* グローバルナビを印刷させたい場合は、下の一行を削除してください */
+@media print { div.gnav-201601 { display: none; } }
+/* =========================================================================== */
+
+.gnav-201601{ background:#e6e6e6; border-bottom:1px solid #c0c0c0; clear: both; padding: 0; margin: 0; *text-align:center; margin:0 auto; position:relative;  }
+.gnav-201601 ul#bpGlobalNavi{ margin:0 auto; padding:0; list-style:none; height:24px; font-size:0px; background:#e6e6e6;}
+.gnav-201601 ul#bpGlobalNavi li{ margin:5px 0 0 0; padding:0 8px 0 8px; font-size:11px !important; float:left; border-left:1px solid #c7c7c7; line-height:14px; font-family:"メイリオ","Meiryo",verdana,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"ＭＳ Ｐゴシック","MS PGothic",sans-serif !important; }
+.gnav-201601 ul#bpGlobalNavi li:first-child{ border:none; padding:0 8px 0 8px;}
+.gnav-201601 ul#bpGlobalNavi li.common{ border:none; }
+.gnav-201601 ul#bpGlobalNavi li > a{ color:#252525; text-decoration:none; line-height:14px; height:14px; display:inline-block; vertical-align:top; font-size:11px !important; }
+.gnav-201601 ul#bpGlobalNavi li > a:hover{ color:#252525; border-bottom:1px solid #696969; }
+.gnav-201601 ul#bpGlobalNavi li.authentication { float:right; margin:0 auto; padding:0; border:none; width:110px; }
+.gnav-201601 ul#bpGlobalNavi li.authentication > a{ background:#006eb0; display:block; width:110px; height:24px; line-height:24px;  margin:0 auto; padding:0; text-align:center; color:#fff; }
+.gnav-201601 ul#bpGlobalNavi li.authentication:last-child > a{ background:url(http://nbp-cre.com/gnav/201601/images/dotline.gif) no-repeat #006eb0 top right; }
+.gnav-201601 ul#bpGlobalNavi li.authentication > a:hover{ background-color:#008de1; border:none; }
+.gnav-201601 ul#bpGlobalNavi li.authentication span{ font-size:10px; }
+/* active */
+.gnav-201601 ul.www li.www a{ border-bottom:1px solid #696969; }
+.gnav-201601 ul.business li.business a{ border-bottom:1px solid #696969; }
+.gnav-201601 ul.pc li.xtech a{ border-bottom:1px solid #696969; }
+.gnav-201601 ul.itpro li.xtech a{ border-bottom:1px solid #696969; }
+.gnav-201601 ul.techon li.xtech a{ border-bottom:1px solid #696969; }
+.gnav-201601 ul.medical li.medical a{ border-bottom:1px solid #696969; }
+.gnav-201601 ul.kenplatz li.xtech a{ border-bottom:1px solid #696969; }
+.gnav-201601 ul.trendy li.trendy a{ border-bottom:1px solid #696969; }
+.gnav-201601 ul.wol li.wol a{ border-bottom:1px solid #696969; }
+.gnav-201601 ul.selection li.selection a{ border-bottom:1px solid #696969; }
+.gnav-201601 ul.nng li.nng a{ border-bottom:1px solid #696969; }
+.gnav-201601 ul.xtech li.xtech a{ border-bottom:1px solid #696969; }
+/* sub */
+.gnav-201601 ul#bpGlobalNavi li.career{ position:relative;  }
+.gnav-201601 ul#bpGlobalNavi li.career.subMenuActive{ height:24px; line-height:24px; margin-top:0; vertical-align:middle;background:#555555;  }
+.gnav-201601 ul#bpGlobalNavi li.career.subMenuActive > a{ background:#555555; height:24px; line-height:24px;  margin:0 auto; padding:0; text-align:center; color:#fff; opacity:0.9; }
+.gnav-201601 ul#bpGlobalNavi li.career.subMenuActive > a:hover{ text-decoration:underline; border:none; }
+.gnav-201601 ul#bpGlobalNavi li ul#bpGlobalNaviSubMenu{ display:none;  position:absolute; top:0; right:38px; width:280px; }
+.gnav-201601 ul#bpGlobalNavi li ul#bpGlobalNaviSubMenu li { float:right; margin:0 auto; padding:0; border:none; }
+.gnav-201601 ul#bpGlobalNavi li ul#bpGlobalNaviSubMenu li > a{ background:#555555; display:block; height:24px; line-height:24px; padding:0 8px 0 8px; text-align:center; color:#fff; opacity:0.9;  }
+.gnav-201601 ul#bpGlobalNavi li ul#bpGlobalNaviSubMenu li > a:hover{ text-decoration:underline; border:none; }
+/* info */
+#bpGlobalInfo{ background:#333; margin:0; padding:0; color:#fff; position:absolute; z-index:999; display:none; top:0; opacity:0.85; }
+#bpGlobalInfo dl{ width:779px; margin:0 auto; font-size:11px !important; padding:0; overflow:hidden; text-align:left; }
+#bpGlobalInfo dl dt{ margin:0 0 0 8px; padding:0; width:160px; float:left; height:24px; line-height:24px; color:#fff; font-size:11px !important; font-family:"メイリオ","Meiryo",verdana,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"ＭＳ Ｐゴシック","MS PGothic",sans-serif !important;}
+#bpGlobalInfo dl dd{ margin:0; padding:0; float:left; line-height:24px; color:#fff; font-size:11px !important; }
+#bpGlobalInfo dl dd ul{ margin:0; padding:0;}
+#bpGlobalInfo dl dd ul li{ margin:6px 0 0 0; padding:0; display:block; width:270px; display:inline-block; height:13px; line-height:13px; font-family:"メイリオ","Meiryo",verdana,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"ＭＳ Ｐゴシック","MS PGothic",sans-serif !important; border-left:2px solid #ffc000; }
+#bpGlobalInfo dl dd ul li a{ color:#fff; text-decoration:none; margin:0; padding-left:5px; line-height:13px; font-size:11px !important; font-family:"メイリオ","Meiryo",verdana,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"ＭＳ Ｐゴシック","MS PGothic",sans-serif !important; }
+#bpGlobalInfo dl dd ul li a:active,#bpGlobalInfo dl dd ul li a:link{ color:#fff;  }
+#bpGlobalInfo dl dd ul li a span{ font-size:11px; }
+#bpGlobalInfo dl dd ul li a:hover{ color:#ffc000; }
+#bpGlobalInfo dl dd#bpInfoClose{ float:right; padding-right:5px; }
+#bpGlobalInfo dl dd a.btnClose{ font-size:12px; float:right; width:16px; height:16px; line-height:16px; display:block; margin:4px 0 0 0; text-align:center; color:#fff; background:#000; border-radius:10px; text-decoration:none; font-family:"メイリオ","Meiryo",verdana,"ヒラギノ角ゴ Pro W3","Hiragino Kaku Gothic Pro",Osaka,"ＭＳ Ｐゴシック","MS PGothic",sans-serif !important; }
+#bpGlobalInfo dl dd a.btnClose:hover{ color:#000;  background:#bbbec1; text-decoration:none; }
+
+#bpGlobalInfo{ animation-duration: 1s; animation-name: slidein; }
+@keyframes slidein { from { top:-30px; } to { top:0; } }
+
+
+/* common */
+div.gnav-201406 ul li.common{ position:absolute; right:0; height:1px; background:none; }
+
+/* footer */
+.globalFooter{ clear:both; overflow:hidden; padding:15px 10px; font-size:12px; max-width:1000px; margin:0 auto; }
+.globalFooter ul{ overflow:hidden; margin:0; padding:0; }
+.globalFooter ul li{ float:left; margin:0; padding:0 0 0 10px; line-height:16px; height:16px; vertical-align: baseline; border-left:1px solid #999; border-right:none!important; list-style: none; }
+.globalFooter ul li.first{ border-left:none; }
+.globalFooter ul li a { padding-right:10px; }
+.globalFooter div.corporateLogo { float:right; padding-right:10px; }
+.globalFooter div.corporateLogo a{ display:block; width:120px; height:20px; background:url(/images/n/gnavi/bp_logo.png) no-repeat; text-indent:100%; white-space:nowrap; overflow:hidden;}
+.globalFooter .globalCopyright{ clear:both; margin:15px 10px; }
+
+/* color valiation */
+div.corporateLogoBlack .globalFooter div.corporateLogo a{ background:url(/images/n/gnavi/bp_logo_black.png) no-repeat;}
+div.corporateLogoWhite .globalFooter div.corporateLogo a{ background:url(/images/n/gnavi/bp_logo_white.png) no-repeat;}
+div.corporateLogoBlueBg .globalFooter div.corporateLogo a{ background:url(/images/n/gnavi/bp_logo_blue_bg.png) no-repeat; height:46px; }

@@ -1,0 +1,351 @@
+
+#header, #footer, .Topic-left-top, .Line-bott, .btn-Home, .Footer-Beam {
+	display: none;
+}
+body {
+	background-image: none;
+}
+.Header-Beam-Yellow {
+	background-image: none;
+	padding: 0px;
+}
+.Header-Beam-Pink {
+	background-image: none;
+	padding: 0px;
+}
+.Header-Beam-Pink h2.ContentsTitle {
+	color: #000000;
+}
+.Header-Beam-Pink h2.ContentsTitle a {
+	color: #000000;
+}
+.ContentsTitle {
+	font-size: 120%;
+	position: relative;
+	left: 0px;
+	top: 0px;
+}
+.btn-Home a {
+	font-size: 75%;
+	line-height: 1.4;
+	padding: 3px 0px 3px 18px;
+	background: url(../img_contents/arrow_home.gif) no-repeat left center;
+}
+.tab-2ndLevel, .tab-3rdLevel, .tab-3rdLevelBott, #PageTop-Footer {
+	display: none;
+}
+th, td {
+	border-top: 1px solid #333333;
+	border-right: 1px solid #333333;
+	border-bottom: 1px solid #333333;
+	border-left: 1px solid #333333;
+}
+.ListABC{
+	list-style-type: lower-alpha;
+	padding-top: 10px;
+}
+.ListKatakana {
+	list-style-type: katakana;
+	padding-top: 10px;
+}
+.ListLatin {
+	list-style-type: upper-latin;
+	padding-top: 10px;
+}
+.ListRoman{
+	list-style-type: upper-roman;
+	padding-top: 10px;
+}
+.ListABC{
+	list-style-type: lower-alpha;
+	padding-top: 10px;
+}
+.ListKanji {
+	list-style-type: cjk-ideographic;
+	padding-top: 10px;
+}
+
+li {
+	margin-bottom: 12px;
+}
+ol, ul {
+	margin-bottom: 48px;
+}
+/***index／NEWS***/
+#main, #Contents-Box {
+	width: auto;
+	padding: 0px;
+	margin: 0px;
+	position: relative;
+	left: 0px;
+	background-color: #FFFFFF;
+	background: none;
+}
+#banner-main {
+	background: none;
+}
+#banner-main img, #banner1, #banner2, #banner3 {
+	border: none;
+}
+#Topic-left-top, .bearm-left-m-bott, #btn-portal-top, #btn-portal-bott, #btn-IR-bott, .btn-right-bott, .btn-right-bott-sub, .WhatsNew-game, .WhatsNew-Shopping, .WhatsNew-FanSite, .WhatsNew-IR, #tab-News-Archive, .Info-Top, .Info-Bott {
+	display: none;
+}
+#main-left, #main-right, .Info-Archive, .News-Archive, #Contents-NewsInfoArchive, #Contents-EventCampaign {
+	float: none;
+	width: auto;
+	border: none;
+	background-color: #FFFFFF;
+	background: none;
+}
+.Info-Archive dl, .News-Archive dl, .Info-Archive dt, .News-Archive dt, .Info-Archive dd, .News-Archive dd {
+	width: auto;
+}
+.info-IR-Body, .info-IR-Body dl, .info-IR-Body dt, .info-IR-Body dd, .info-IR-Body dd a {
+	background-color: #FFFFFF;
+	background: none;
+	width: auto;
+}
+h3.btn-IR {
+	margin: 10px 0px 0px 20px;
+}
+.Event-Frame, .Info-Frame {
+	border: 2px solid #999999;
+	margin: 10px 0px 10px 0px;
+	padding: 5px;
+	background-color: #FFFFFF;
+	background: none;
+	width: 600px;	
+}
+h3.Title-InfoAndNews, h3.Title-InfoAndNews {
+	background-color: #FFFFFF;
+	background: none;
+	color: #0066CC;
+	font-weight: bold;
+	font-size: 18px;
+	padding: 0px;
+	margin: 0px;
+}
+h4.Event-Title, .Event-Body, .ReadTxt, .Event-Bott, .Info-Archive dl {
+	background-color: #FFFFFF;
+	background: none;
+	width: auto;
+}
+ h4.Event-Title a {
+	background-color: #FFFFFF;
+	background: none;
+	padding: 0px; 	
+}
+/***ゲーム＆サービス***/
+dt a {
+	background: none;
+	padding-left: 0px;
+	font-size: 18px;
+}
+dt a:link:after, dt a:visited:after {
+	content: "("attr(href)")";
+}
+.Logo-Portal a:link:after {
+	text-decoration: none;
+	content: "";
+}
+#gamebanner a:link:after {
+	text-decoration: none;
+	content: "";
+}
+.Logo-Portal{
+	float: none;
+	position: relative;
+	right: 0px;
+	padding: 0px;
+}
+dl {
+	float: none;
+	position: relative;
+	left: 0px;
+}
+dt, .Title-Line01, .Title-Line02, .Title-Line03, .Title-Line04, .Title-Line05, .Title-Line06, .Title-Line07, .Title-Line08 {
+	padding: 5px 0px;
+	float: none;
+	background-image: none;
+	font-size: 130%;
+}
+#gamebanner{
+	width: 150;
+	height: 85px;
+	background-image: none;
+	padding: 10px 0px;
+}
+#gamebanner img{
+	margin: 0px;
+}
+h3.Title-Game {
+	padding: 0px;
+	display: inline;
+}
+
+/**アミューズメント**/
+div.BoxRtop, div.BoxRbott {
+	width: 644px;
+	height: 2px;
+	margin: 0px auto 0px auto;
+	background-image: none;
+	background-color: #666666;
+}
+#Contents-AmuseBox {
+	width: auto;
+	padding: 0px;
+	margin: 0px;
+	position: relative;
+	left: 0px;
+}
+#Contents-AmuseBox table, #Contents-AmuseBox table th, #Contents-AmuseBox table td {
+	width: auto;
+}
+.TDcellLeft {
+	white-space: nowrap;
+}
+/**採用情報**/
+#Contents-RecruitBox {
+	width: auto;
+	padding: 0px;
+	margin: 0px;
+	position: relative;
+	left: 0px;
+	background: none;
+}
+#Contents-RecruitContents table {
+	width: 90%;
+}
+#Contents-RecruitDvp, #Contents-RecruitBsn {
+	float: none;
+	width: auto;
+	padding: 5px 0px;
+	margin: 0px;
+}
+#Contents-RecruitContents {
+	float: none;
+	width: auto;
+	padding: 0px;
+	margin: 0px;
+}
+#Contents-RecruitFooter, #Contents-RecruitNavi {
+	display: none;
+}
+h3.KindOfOccupationTEST, ul.recDvpMenuSub, div#attention, h2.ContentsTitle, div#Contents-RecruitNavi, ul#recDvpMenuSubBott {
+	display: none;
+}
+dl.recNewFAQ dt a:link:after {
+	content: "";
+}
+dl.recNewFAQ dt a:link:before {
+	content: "Q：";
+}
+dl.recNewFAQ dt a {
+	text-decoration:none;
+	color:#000000;
+}
+dl.recNewFAQ dd.recNewFaqAnswerElmnts[01] {
+	display: block;
+}
+dl.recNewFAQ dd.recNewFaqAnswer p.close {
+	display: none;
+}
+.recDvpContentsTitle, .recDvpCareerTitle {
+	padding: 4px 2px 4px 6px;
+	border-bottom: 1px solid #000000;
+	border-left: 3px solid #000000;
+}
+form {
+	display: none;
+}
+/*営業・管理部門**新卒採用*/
+dl#NewsBox, dl#NewsBox dt, dl#NewsBox dd {
+	background: #FFFFFF;
+	border: 0px;
+	float: none;
+	width: auto;
+	padding: 5px;
+	margin: 0px 0px 10px 0px;
+}
+#Contents-RecruitContents h4 img {
+	display: none;
+}
+p.stickies, ul.bottBox {
+	float: none;
+	width: auto;
+	padding: 0px;
+	margin: 0px;
+	background: #FFFFFF;
+	border: 0px;
+}
+li.list-Point {
+	margin: 0px 0px 0px 30px;
+}
+.bsnTable th, td {
+	border-top: 1px solid #333333;
+	border-right: 1px solid #333333;
+	border-bottom: 1px solid #333333;
+	border-left: 1px solid #333333;
+}
+dt.tableCellLeft, dd.tableCellRight, dt.idtLeft, dd.idtRight, dt.idtLeft-List, dd.idtRight-Short, dd.idtRight-Middle, dt.idtLeft-ListYellow {
+	float: none;
+	width: auto;
+	padding: 0px;
+	text-align: left;
+	background: none;
+}
+td dl {
+	padding: 20px 0px 20px 0px;
+}
+dt.idtLeft-ListYellow, strong.trgList {
+	color: #CC0000;
+}
+dd.at-clear {
+	float: none;
+	display: none;
+}
+/**サポート**/
+.PddingLeftTop a:link:after, .PddingLeftTop a:visited:after {
+	content: "("attr(href)")";
+}
+#Contents-SoupportBox {
+	width: auto;
+	padding: 0px;
+	margin: 0px;
+	position: relative;
+	left: 0px;
+	background: none;
+}
+#Contents-SupportInfo {
+	float: none;
+	width: auto;
+	padding: 0px;
+	margin: 0px;
+	position: relative;
+	left: 0px;
+	background: none;
+	text-align: left;
+}
+#Contents-SupportInfo h3, #Contents-SupportInfo dl, #Contents-SupportInfo dt, #Contents-SupportInfo dd {
+	margin: 0px;
+	width: 500px;
+}
+.faq-Others {
+	float: left;
+}
+ul.faqList li {
+	font-size: 14px;
+}
+#Contents-atTheWindow {
+	width: auto;
+	padding: 0px;
+	margin: 0px;
+	float: none;
+	background: none;
+}
+#Contents-atTheWindow {
+	border: none;
+}
+h3.title-margin-topbott {
+	clear: both;
+}

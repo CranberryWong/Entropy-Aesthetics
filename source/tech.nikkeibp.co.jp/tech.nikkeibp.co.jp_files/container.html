@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+    <meta charset="UTF-8">
+    <title>SafeFrame Container</title>
+    <script>
+(function(){var b=String.prototype.trim?function(a){return a.trim()}:function(a){return/^[\s\xa0]*([\s\S]*?)[\s\xa0]*$/.exec(a)[1]},g=function(a,c){return a<c?-1:a>c?1:0};var h;a:{var k=this.navigator;if(k){var l=k.userAgent;if(l){h=l;break a}}h=""};var n=function(a,c){var f=m;return Object.prototype.hasOwnProperty.call(f,a)?f[a]:f[a]=c(a)};var q=-1!=h.indexOf("Opera"),r=-1!=h.indexOf("Trident")||-1!=h.indexOf("MSIE"),t=-1!=h.indexOf("Edge"),u=-1!=h.indexOf("Gecko")&&!(-1!=h.toLowerCase().indexOf("webkit")&&-1==h.indexOf("Edge"))&&!(-1!=h.indexOf("Trident")||-1!=h.indexOf("MSIE"))&&-1==h.indexOf("Edge"),v=-1!=h.toLowerCase().indexOf("webkit")&&-1==h.indexOf("Edge"),w;a:{var x="",y=function(){var a=h;if(u)return/rv:([^\);]+)(\)|;)/.exec(a);if(t)return/Edge\/([\d\.]+)/.exec(a);if(r)return/\b(?:MSIE|rv)[: ]([^\);]+)(\)|;)/.exec(a);if(v)return/WebKit\/(\S+)/.exec(a);if(q)return/(?:Version)[ \/]?(\S+)/.exec(a)}();y&&(x=y?y[1]:"");if(r){var z,A=this.document;z=A?A.documentMode:void 0;if(null!=z&&z>parseFloat(x)){w=String(z);break a}}w=x}var B=w,m={},C=function(a){return n(a,function(){for(var c=0,f=b(String(B)).split("."),O=b(String(a)).split("."),Z=Math.max(f.length,O.length),p=0;0==c&&p<Z;p++){var d=f[p]||"",e=O[p]||"";do{d=/(\d*)(\D*)(.*)/.exec(d)||["","","",""];e=/(\d*)(\D*)(.*)/.exec(e)||["","","",""];if(0==d[0].length&&0==e[0].length)break;c=g(0==d[1].length?0:parseInt(d[1],10),0==e[1].length?0:parseInt(e[1],10))||g(0==d[2].length,0==e[2].length)||g(d[2],e[2]);d=d[3];e=e[3]}while(0==c)}return 0<=c})};var D=u||v||r&&C(11)||t;var aa=/^([^;]+);(\d+);([\s\S]*)$/;try{var E,F=aa.exec(window.name);if(null===F)throw Error("Cannot parse serialized data");var G=+F[2],H=F[3];if(G>H.length)throw Error("Cannot parse serialized data");E={b:F[1],content:H.substr(0,G),a:H.substr(G)};var I;var J=window.location.hash;if(J){var K=J.match(/[&#]eid=([\d,]+)/);I=K?K[1].split(","):[]}else I=[];var ba=I;D&&(window.name="");var L=JSON.parse(E.a);L.goog_safeframe_hlt&&(this.goog_safeframe_hlt=L.goog_safeframe_hlt);L._context&&(this.AMP_CONTEXT_DATA=L._context);this.sf_={v:E.b,exp:ba,cfg:L};var M=E.content,N=window;if(D){var P=N.document;P.open("text/html","replace");P.write(M);P.close()}else{var Q=M,R;if(R=r&&C(7)&&!C(10)){var S=navigator.userAgent.match(/Trident\/([0-9]+.[0-9]+)/);R=6>(S?parseFloat(S[1]):0)}var T;if(T=R)a:{for(var U=0;U<Q.length;++U)if(127<Q.charCodeAt(U)){T=!0;break a}T=!1}if(T){for(var V=unescape(encodeURIComponent(Q)),W=Math.floor(V.length/2),X=[],Y=0;Y<W;++Y)X[Y]=String.fromCharCode(256*V.charCodeAt(2*Y+1)+V.charCodeAt(2*Y));1==V.length%2&&(X[W]=V.charAt(V.length-1));Q=X.join("")}N.goog_content=Q;N.location.replace("javascript:window.goog_content")}}catch(a){};}).call(this);
+    </script><meta name="viewport" content="initial-scale=1.0, minimum-scale=1.0, maximum-scale=1.0, user-scalable=no"><script>var google_casm=[];</script><script></script><style>html,body,dl,dt,dd,li,h1,h2,h3,h4,h5,h6,pre,form,fieldset,input,textarea,p,blockquote,th,td {
+	padding: 0;
+	margin: 0;
+	line-height: 1;
+}
+
+.adwrap {
+	overflow: hidden;
+}
+
+img {
+	width: 110px;
+	float: right;
+	margin: 5px 0 15px 15px;
+	background: #fff;
+	-moz-box-sizing: border-box;
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+	position: relative;
+	vertical-align: top;
+	border: none;
+}
+
+h3 a {
+	font-family: "メイリオ", Meiryo, "ヒラギノ角ゴ Pro W3", "Hiragino Kaku Gothic Pro", "游ゴシック体", YuGothic, "YuGothic M", "ＭＳ Ｐゴシック", "MS PGothic", sans-serif;
+	font-size: 14px;
+	line-height: 21px;
+	font-weight: normal;
+	overflow: hidden;
+	zoom: 1;
+	padding-left: 1px;
+	color: #333;
+	text-decoration: none;
+	text-align: left;
+}
+
+h3 a:hover {
+	color:#878787;
+	text-decoration:underline;
+}
+
+h3 a::before {
+	content: "PR";
+	display: inline-block;
+	background: transparent;
+	border: 1px solid #707070;
+	color: #707070;
+	margin: 0 5px;
+	padding: 2px 4px 0px;
+	border-radius: 2px;
+	font-weight: normal;
+	font-size: 10px;
+	line-height: 10px;
+	vertical-align: 1px;
+}
+
+img:hover {
+	opacity:0.7;
+	filter: "alpha(opacity=70)";
+}</style></head><body topmargin="0" marginwidth="0" marginheight="0" leftmargin="0"><script src="container_data_008/ext.js"></script><script>var viewReq = new Array();function vu(u) {var i=new Image();i.src=u.replace("&amp;","&");viewReq.push(i);}</script><script>vu("https://securepubads.g.doubleclick.net/pcs/view?xai\u003dAKAOjstMTIaYRJUfCjAmht6bc_ttQDm_TbD29fAGsmZNphpNds7V7QxxWNyAi2H0s-2RISet-lk3bQgRC35U4GLOBgHMwvHwujKhBPKZhiMLdM6rFmiTbgN9srY1YqF7F5bjSPG6EAtCZBwjHH6pjVBa3_-QioABUA3Oa38OBqehDJyJfqEk_3c9a7Lu440qFmClO02NJ4tgYmZHsBmVnx2ca5A906nJws-tegJdOOZWdhhEyePtIviN3Tzu0eZZd78EdRZj-k956zUI_rutWAXRn-raKw\u0026sai\u003dAMfl-YTBowfRncuRcJs77Fdd4mvkNFNyBf-6KuxuE3by_KgBCz6gDtaRc-O6csLXcwDp8QUKIxqQO5-b_YQYtyBz8n5kOHuFvBNOTGn06LTPnxtqS19P1o5CKPm3LNM\u0026sig\u003dCg0ArKJSzGBKqWAaHcdhEAE\u0026urlfix\u003d1\u0026adurl\u003d")</script><div><div class="adwrap">
+<a href="http://adclick.g.doubleclick.net/pcs/click%253Fxai%253DAKAOjstDQbIz2pvrTb6OP09mX3RyA8bcRu7CiMqEY2f-LNWT4S4Q0snvWAG8v62Q42YWhUYVb4Qo0Z23eojf1ZhiL9xz_xUAyYfZeFpPXgiKu3yleeBzZ_cBoUYu6bOTcNpntAyJ_ocwPDEavmmey9lQISDayuQM_4Y3icJDt-l7N3J7RTitnfVsAvoDmiJjmwYrkpRSkluy_5vH5NUHxBRYb2ds_yJX2veibmR_9039_AKxtiKxF5eQ5ooVYSioAQTVHDdBCFJmoRsksG125g%2526sai%253DAMfl-YRPUentvJ969QEvo0AA1g5WEXmt3QQCfCEC7-ON-EaAzobSykVIshrCNfRTkTPcSwWjiQptddXjplPtCmaXwCycRDjxB5pRv30vE7rVJx6wqA9ensNFbIgXFKE%2526sig%253DCg0ArKJSzGU5RsUjuYclEAE%2526urlfix%253D1%2526adurl%253Dhttp://special.nikkeibp.co.jp/atclh/tomorrowtech/" target="_blank"><img src="container_data/imgad.png"></a><h3><a href="http://adclick.g.doubleclick.net/pcs/click%253Fxai%253DAKAOjstDQbIz2pvrTb6OP09mX3RyA8bcRu7CiMqEY2f-LNWT4S4Q0snvWAG8v62Q42YWhUYVb4Qo0Z23eojf1ZhiL9xz_xUAyYfZeFpPXgiKu3yleeBzZ_cBoUYu6bOTcNpntAyJ_ocwPDEavmmey9lQISDayuQM_4Y3icJDt-l7N3J7RTitnfVsAvoDmiJjmwYrkpRSkluy_5vH5NUHxBRYb2ds_yJX2veibmR_9039_AKxtiKxF5eQ5ooVYSioAQTVHDdBCFJmoRsksG125g%2526sai%253DAMfl-YRPUentvJ969QEvo0AA1g5WEXmt3QQCfCEC7-ON-EaAzobSykVIshrCNfRTkTPcSwWjiQptddXjplPtCmaXwCycRDjxB5pRv30vE7rVJx6wqA9ensNFbIgXFKE%2526sig%253DCg0ArKJSzGU5RsUjuYclEAE%2526urlfix%253D1%2526adurl%253Dhttp://special.nikkeibp.co.jp/atclh/tomorrowtech/" target="_blank">“明日”をつむぐテクノロジーが、人と社会の未来をデザインする</a></h3>
+</div>
+</div><script src="container_data_008/osd_listener.js"></script><script type="text/javascript">osdlfm(-1,'','B9wo-V9deW42PLYvhqAG1xbigBQAAAAAQATgByAEJwAIC4AIA4AQBoAYf0ggFCIABEAE','',1546145998,true,'ud\u003d1\u0026la\u003d0\u0026alp\u003dxai\u0026alh\u003d810229436\u0026xza\u003d1\u0026',3,'CAASEuRonOT30IrB6cZ22T1fFBD47w','https://pagead2.googlesyndication.com/pcs/activeview?xai\u003dAKAOjstaBWwD3H3CkCs2yVvdTeTU-fRqyPCow6JK7sHLmxf6mBFkkoMynec14Bqn5osJxKWUsMHQeXI-96aV2BcYNqG4aDXXdLFVJV0\u0026sig\u003dCg0ArKJSzIfkYWj3hVBgEAE','');</script><script>if (window.top && window.top.postMessage) {window.top.postMessage('{"googMsgType":"adpnt"}','*');}</script><div style="bottom:0;right:0;width:100px;height:100px;background:initial !important;position:absolute !important;max-width:100% !important;max-height:100% !important;pointer-events:none !important;image-rendering:-moz-crisp-edges !important;z-index:2147483647;background-image:url('data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAACsAAAAWBAMAAACrl3iAAAAABlBMVEUAAAD+AciWmZzWAAAAAnRSTlMAApidrBQAAAB4SURBVBjTbVAJDsAwCMIf8P/XLhOkx6aNqREpBfiPUvRl68CediXTVcOUSPdOKNSU7jIvXGhzv7DF7bedUTIh1k03jO/jR0YuKW7zGy3VYtUvDeAmX7pR2bl0xBWeDlYsxOEgER3E5aB0fBxc3EEHjIubydPBmu0HT7MFpG8xJqAAAAAASUVORK5CYII=') !important"></div>
+  
+  
+  
+
+</body></html>

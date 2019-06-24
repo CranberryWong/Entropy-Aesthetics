@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8">
+<meta charset="UTF-8">
+<script>
+	(function() {
+		window.onload = function() {
+			var cookieEnabled = window.navigator.cookieEnabled;
+
+			if (cookieEnabled) {
+				var randomCookieName = 'sp_microad_cookie_random';
+				var random = Math.floor(Math.random() * 10000000000).toString(10);
+				document.cookie = randomCookieName + '=' + escape(random) + '; domain=send.microad.jp; path=/;';
+
+				if (random == getCookie(randomCookieName)) {
+					document.cookie = randomCookieName + '=; max-age=-1; domain=send.microad.jp; path=/;';
+				} else {
+					cookieEnabled = false;
+				}
+			}
+
+			window.parent.postMessage(cookieEnabled, '*');//cross document messaging
+		};
+
+		var getCookie = function(cookieName) {
+			var cookies = document.cookie.split('; ');
+			for ( var i = 0; i < cookies.length; i++) {
+				var arr = cookies[i].split('=');
+				if (arr[0] == cookieName) {
+					return unescape(arr[1]);
+				}
+			}
+		};
+	})();
+</script>
+</head>
+<body>
+
+
+</body></html>

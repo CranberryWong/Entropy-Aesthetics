@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html ng-app="myApp" class="ng-scope" lang="en"><head>
+<meta http-equiv="content-type" content="text/html; charset=UTF-8"><style type="text/css">@charset "UTF-8";[ng\:cloak],[ng-cloak],[data-ng-cloak],[x-ng-cloak],.ng-cloak,.x-ng-cloak,.ng-hide:not(.ng-hide-animate){display:none !important;}ng\:form{display:block;}.ng-animate-shim{visibility:hidden;}.ng-anchor{position:absolute;}</style>
+        <title translate="app_title" class="ng-scope">Use Of Cookies</title>
+    	<meta charset="utf-8">
+    	<meta http-equiv="X-UA-Compatible" content="IE=Edge, Chrome=1"> 
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <script type="text/javascript" src="index_data_002/wix-private.js"></script>
+        <meta name="keywords" content="">
+       	<meta name="description" content="Customize the Cookie Alert Popup to seamlessly match the look and feel of your site.">
+        <link href="a_data/popup.css" media="screen" rel="stylesheet" type="text/css">
+<link href="a_data/widget.css" media="screen" rel="stylesheet" type="text/css">
+<link href="index_data_002/fontFace.css" media="screen" rel="stylesheet" type="text/css">
+<link href="https://eurocookie.galilcloud.wixapps.net/common/plugins/wix/images/favicon.ico" rel="shortcut icon" type="image/vnd.microsoft.icon"><style wix-style="" data-layout="popup-height-style" ng-non-bindable="">
+	.main-popup, .bar-size{
+		background-color: #393F44;
+   	}
+
+	.popup-title , .popup-title-bar{
+    	font:normal normal normal 48px/1.25em helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif;;
+    	style.popupTitleFont;
+    	color: #FFFFFF;
+	}
+
+    .popup-body , .popup-body-bar{
+    	font:normal normal normal 16px/1.55em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif;;
+    	style.textBodyFont;
+    	color: #FFFFFF;
+	}
+
+    .popup-links a , .popup-links-2 a , 
+    .popup-links-bar a , .popup-links-bar-2 a{
+    	font:normal normal normal 16px/1.55em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif;;
+    	style.linksFont;
+    	color: #FFFFFF;
+	}
+
+    .popup-btn , .popup-btn-bar{
+    	font:normal normal normal 16px/1.55em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif;;
+    	style.buttonTxtFont;
+    	color: #FFFFFF;
+    	background: #393F44;
+    	-webkit-border-radius: 5px;
+    	-moz-border-radius: 5px;
+    	border-radius: 5px;
+        border: 1px solid #FFFFFF;
+	}
+
+    .popup-btn:hover , .popup-btn-bar:hover {
+    	background: #393F44;
+	}
+
+    .svgFill {
+    	fill: #FFFFFF;
+        fill-rule: evenodd;
+	}
+</style><style wix-style="" data-layout="main-style" ng-non-bindable="">
+	.container-in .title{
+        font:normal normal normal 20px/1.5em helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif;;
+	    font:normal normal normal 16px/1.55em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif;;
+		color: #6D7377;
+		text-align:  center;
+		margin: auto;
+		text-decoration: underline;
+	}
+</style>    <style wix-style="">.Title{ font:normal normal normal 32px/1.25em helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif; } .Menu{ font:normal normal normal 14px/1.43em "open sans",sans-serif; } .Page-title{ font:normal normal normal 40px/1.25em helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif; } .Heading-XL{ font:normal normal normal 88px/1.14em helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif; } .Heading-L{ font:normal normal normal 72px/1.18em helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif; } .Heading-M{ font:normal normal normal 56px/1.25em helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif; } .Heading-S{ font:normal normal normal 48px/1.25em helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif; } .Body-L{ font:normal normal normal 24px/1.46em helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif; } .Body-M{ font:normal normal normal 20px/1.5em helvetica-w01-bold,helvetica-w02-bold,helvetica-lt-w10-bold,sans-serif; } .Body-S{ font:normal normal normal 16px/1.55em helvetica-w01-roman,helvetica-w02-roman,helvetica-lt-w10-roman,sans-serif; } .Body-XS{ font:normal normal normal 14px/1.43em "open sans",sans-serif; } }</style><link type="text/css" rel="stylesheet" href="index_data_002/languages.css"><style>:focus {
+    outline: none;
+}
+
+.js-focus-visible .focus-visible:focus,
+.js-focus-visible .focus-visible:focus ~ .wixSdkShowFocusOnSibling
+{
+    box-shadow: inset 0 0 0 1px rgba(255, 255, 255, 0.9), 0 0 1px 2px #3899EC;
+}
+</style><script src="index_data_002/focus-visible.js" id="dynamic_script_FOCUS_VISIBLE"></script></head>
+    <body ng-controller="MainController as main" class="ng-scope js-focus-visible"><div widget="" style="height: 100%"><div id="container" ng-class="{'disappear-widget': main.calculateHeight &amp;&amp; main.wixService.isIpad()}">
+    <div tabindex="0" role="button" class="container-in centered" ng-click="main.showPopup()">
+        <div class="title ng-binding" ng-bind="main.settings.textLink" ng-style="{'text-align':main.settings.textLinkAlignment}" style="text-align: left;"></div>
+    </div>
+</div>
+<!--------------------------- this code to get height of popup fixed before I initialize it -------------------------------->
+<!-- ngInclude: '/pages/popup/views/popup-bar.html' --><div ng-include="'/pages/popup/views/popup-bar.html'" ng-show="main.fixedElementToGetHeight &amp;&amp; !main.isPopupLayout()" class="ng-scope"><div class="main-popup-out-bar ng-scope">
+	<div class="popup-connect-in-bar" ng-style="{'text-align':main.settings.textAlignment}" style="text-align: left;">
+	    <div style="display:-webkit-flex; display: flex">
+	        <div class="popup-text-content-side-bar" style="-webkit-align-items: center; align-items: center;" ng-class="{'moveMargin' : main.settings.textAlignment == main.constants.ALIGNMENT_RIGHT}">
+	            <div style="display: table;height: 100%">
+	                <div style="display: table-cell;vertical-align: middle;">
+	                    <div class="popup-title-bar ng-binding ng-hide" ng-bind="main.settings.title.text" ng-show="main.settings.title.show">Use of Cookies</div>
+	                    <span id="__popup-body" class="popup-body-bar ng-binding" ng-bind-html="main.settings.textBody|nl2br">By using this website you agree that we're using cookies to analyze how you're using the website and to optimize it.</span>
+	                    <span role="button" class="popup-links-bar" ng-show="main.settings.link1.show &amp;&amp; main.isValidLink(main.settings.link1.url)">
+		                    <a href="javascript:void(0)" ng-click="main.openWindow(main.settings.link1.url)" ng-bind="main.settings.link1.text" class="ng-binding">Learn more</a>
+		                </span>
+	                    <div role="button" class="popup-links-bar-2 ng-hide" ng-show="main.settings.link2.show &amp;&amp; main.isValidLink(main.settings.link2.url)">
+	                        <a href="javascript:void(0)" ng-click="main.openWindow(main.settings.link2.url)" ng-bind="main.settings.link2.text" class="ng-binding">How to delete cookies</a>
+	                    </div>
+	                </div>
+	            </div>
+	        </div>
+	        <div style="display:-webkit-flex; display:flex; -webkit-align-items: center; align-items: center;">
+	            <span class="popup-warp-button-bar">
+	            	<a role="button" href="javascript:void(0)" ng-click="main.closePopup(true)" class="popup-btn-bar ng-binding" ng-bind="main.getTextBtn()">OK</a>
+	            </span>
+	        </div>
+	    </div>
+	    <span style="display:none" class="ng-binding"></span>
+	</div>
+</div>	</div>
+<!--------------------------- this code to get height of popup center before I initialize it -------------------------------->
+<!-- ngInclude: '/pages/popup/views/popup-center.html' --><div ng-include="'/pages/popup/views/popup-center.html'" style="width: 230px; text-align: left;" ng-style="{'text-align':main.settings.textAlignment}" ng-show="main.popupElementToGetHeight &amp;&amp; main.isPopupLayout()" class="ng-scope ng-hide"><div class="popup-connect-in ng-scope" ng-style="{'text-align':main.settings.textAlignment}" style="text-align: left;">
+    <div class="abovePart">
+        <div class="popup-title ng-binding ng-hide" ng-bind="main.settings.title.text" ng-show="main.settings.title.show">Use of Cookies</div>
+        <div id="__popup-body" class="popup-body ng-binding" ng-bind-html="main.settings.textBody|nl2br">By using this website you agree that we're using cookies to analyze how you're using the website and to optimize it.</div>
+        <div role="button" class="popup-links" ng-show="main.settings.link1.show &amp;&amp; main.isValidLink(main.settings.link1.url)">
+            <a href="javascript:void(0)" ng-click="main.openWindow(main.settings.link1.url)" ng-bind="main.settings.link1.text" class="ng-binding">Learn more</a>
+        </div>
+    </div>
+    <div class="bottomPart">
+        <div class="popup-warp-button">
+            <a role="button" href="javascript:void(0)" ng-click="main.closePopup(true)" class="popup-btn ng-binding" ng-bind="main.getTextBtn()">OK</a>
+        </div>
+        <div role="button" class="popup-links-2 ng-hide" ng-show="main.settings.link2.show &amp;&amp; main.isValidLink(main.settings.link2.url)">
+            <a href="javascript:void(0)" ng-click="main.openWindow(main.settings.link2.url)" ng-bind="main.settings.link2.text" class="ng-binding">How to delete cookies</a>
+        </div>
+    </div>
+    <span style="display:none" class="ng-binding"></span>
+</div></div></div>
+    	<script type="text/javascript">
+    		    		var initialState = {
+    			APP_NAME	 	: 'myApp',
+    			settings  	 	: {"lang":"en","popupSize":0,"textAlignment":"left","title":{"show":0,"text":"Use of Cookies"},"button":{"text":"OK","radius":5},"layout":"bottom","link1":{"show":1,"text":"Learn more","url":"http:\/\/www.aboutcookies.org\/"},"link2":{"show":0,"text":"How to delete cookies","url":"http:\/\/www.aboutcookies.org\/how-to-delete-cookies\/"},"textLink":"","textBody":"By using this website you agree that we're using cookies to analyze how you're using the website and to optimize it.","showPopup":0,"textLinkAlignment":"left","cookiefound":false},
+    			constants 	 	: {"ALIGNMENT_LEFT":"left","ALIGNMENT_CENTER":"center","ALIGNMENT_RIGHT":"right","WIDTH_STANDARD_POPUP":300,"HEIGHT_STANDARD_POPUP":200,"WIDTH_LARGE_POPUP":400,"MAX_HEIGHT_LARGE_POPUP":600,"TOP_LAYOUT":"top","BOTTOM_LAYOUT":"bottom","POPUP_LAYOUT":"popup","DEFAULT_TEXT_BUTTON":"popup_tab_popup_text_button_default_text","DEFAULT_LANGUAGE":"en"} || {}	,
+    			design    	 	: {"popup":{"color":{"name":"bgColor","type":"ColorPickerWithOpacity","value":"color-5","opacity":"100"}},"popupTitle":{"color":{"name":"popupTitleColor","type":"ColorPicker","value":"color-1"},"font":{"name":"popupTitleFont","type":"FontStylePicker","value":"Heading-S"}},"popupBody":{"color":{"name":"textBodyColor","type":"ColorPicker","value":"color-1"},"font":{"name":"textBodyFont","type":"FontStylePicker","value":"Body-S"}},"buttonText":{"color":{"name":"buttonTxtColor","type":"ColorPicker","value":"color-1"},"font":{"name":"buttonTxtFont","type":"FontStylePicker","value":"Body-S"}},"buttonBackground":{"color":{"name":"buttonBgColor","type":"ColorPickerWithOpacity","value":"color-5","opacity":"100"}},"buttonHover":{"color":{"name":"buttonHoverColor","type":"ColorPickerWithOpacity","value":"color-5","opacity":"100"}},"buttonCorners":{"radius":{"name":"buttonCornersRadius","type":"Spinner","value":"5"}},"links":{"color":{"name":"linksColor","type":"ColorPicker","value":"color-1"},"font":{"name":"linksFont","type":"FontStylePicker","value":"Body-S"}},"link":{"color":{"name":"textLinkColor","type":"ColorPicker","value":"color-7"},"font":{"name":"textLinkFont","type":"FontStylePicker","value":"Body-M"}}},
+    			popupSize    	: {"mobileWidth":"100%","mobileHeight":"100%","standardWidth":300,"standardHeight":200,"largeWidth":400,"maxLargeHeight":600},
+				appId 			: '1372a040-d836-0c7b-3e08-b0a4086de594',
+    			origin  		: 'app_widget',
+    			locationParams	: document.location.search
+    		}
+    	</script>
+		<script type="text/javascript" src="a_data/jquery.js"></script>
+<script type="text/javascript" src="a_data/angular.js"></script>
+<script type="text/javascript" src="a_data/angular-translate.js"></script>
+<script type="text/javascript" src="a_data/angular-translate-loader-static-files.js"></script>
+<script type="text/javascript" src="a_data/angular-nl2br.js"></script>
+<script type="text/javascript" src="a_data/validator.js"></script>
+<script type="text/javascript" src="a_data/app.js"></script>
+<script type="text/javascript" src="a_data/directives.js"></script>
+<script type="text/javascript" src="a_data/wixService.js"></script>
+<script type="text/javascript" src="a_data/httpService.js"></script>
+<script type="text/javascript" src="a_data/commonService.js"></script>
+<script type="text/javascript" src="a_data/biService.js"></script>
+<script type="text/javascript" src="a_data/mainController.js"></script>	
+</body></html>
